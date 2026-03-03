@@ -1,0 +1,137 @@
+----------------------------------------------- 2021-10-27 03:34:56:221.662
+UDP message sent (714 bytes):
+
+INVITE sip:reddy2@test2.com SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-28290-1-0
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060
+Call-ID: 1-28290@10.133.39.159
+CSeq: 1 INVITE
+Supported: join, replaces, sdp-anat, timer
+Contact: sip:reddy1@10.133.39.159:6042
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+P-Asserted-Identity: <sip:+499511814633@bt.com>
+Content-Type: application/sdp
+Content-Length:   244
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 41532 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2021-10-27 03:34:56:229.793
+UDP message received [252] bytes :
+
+SIP/2.0 100 Trying
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060
+CSeq: 1 INVITE
+Call-ID: 1-28290@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-28290-1-0
+Av-Secure-Indication: unsecured
+Content-Length: 0
+
+
+----------------------------------------------- 2021-10-27 03:34:56:234.649
+UDP message received [379] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-28290@10.133.39.159
+Contact: <sip:185.247.243.25:5060;transport=udp>
+Record-Route: <sip:185.247.243.25:5060;ipcs-line=8;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-28290-1-0
+Av-Secure-Indication: unsecured
+Content-Length: 0
+
+
+----------------------------------------------- 2021-10-27 03:34:56:237.949
+UDP message received [866] bytes :
+
+SIP/2.0 200 OK
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-28290@10.133.39.159
+Contact: <sip:185.247.243.25:5060;transport=udp>
+Record-Route: <sip:185.247.243.25:5060;ipcs-line=8;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-28290-1-0
+Content-Type: application/sdp
+Av-Secure-Indication: unsecured
+Endpoint-View: <sip:69933@corp.pdo.om;gr=50ba05cbf94df38e2991be5be8d9237f>;local-tag=-3f35cca3609a447660fe49a0_T69933148.151.163.232;call-id=6aec18d4b23541ebb6fe0c291ec95;remote-tag=6aec18b6b23541ebb6fd0c291ec95
+Content-Length: 246
+
+v=0
+o=- 1509186683 1 IN IP4 192.168.56.202
+s=-
+c=IN IP4 185.247.243.25
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 35014 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2021-10-27 03:34:56:238.077
+UDP message sent (401 bytes):
+
+ACK sip:reddy2@192.168.5.12 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-28290-1-4
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060;tag=1
+Call-ID: 1-28290@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:reddy1@10.133.39.159:6042;transport=UDP
+Max-Forwards: 70
+Route: <sip:185.247.243.25:5060;ipcs-line=8;lr;transport=udp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2021-10-27 03:34:56:327.510
+UDP message received [582] bytes :
+
+BYE sip:reddy1@10.133.39.159:6042;transport=UDP SIP/2.0
+From: sip:reddy1@10.133.48.87:5060;tag=1
+To: sip:reddy2@test2.com;tag=1
+CSeq: 2 BYE
+Call-ID: 1-28290@10.133.39.159
+Contact: <sip:reddy1@185.247.243.25:5060;transport=udp>
+Record-Route: <sip:185.247.243.25:5060;ipcs-line=8;lr;transport=udp>
+Record-Route: <sip:192.168.57.2:5060;ipcs-line=8;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 185.247.243.25:5060;branch=z9hG4bK-s1632-001916625268-1--s1632-
+Via: SIP/2.0/UDP 192.168.56.202:6037;branch=z9hG4bK-28287-1-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2021-10-27 03:34:56:327.765
+UDP message sent (345 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 185.247.243.25:5060;branch=z9hG4bK-s1632-001916625268-1--s1632-, SIP/2.0/UDP 192.168.56.202:6037;branch=z9hG4bK-28287-1-6
+From: sip:reddy1@10.133.48.87:5060;tag=1
+To: sip:reddy2@test2.com;tag=1
+Call-ID: 1-28290@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:10.133.39.159:6042;transport=UDP>
+Content-Length: 0
+
+

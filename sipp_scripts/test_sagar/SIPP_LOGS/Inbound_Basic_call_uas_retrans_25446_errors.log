@@ -1,0 +1,22 @@
+sipp: The following events occured:
+2017-05-17	13:23:45:132	1495007625.132485: Aborting call on unexpected message for Call-Id '4b4b196257eab613d6418453e3594606': while expecting 'ACK' (index 9), received 'SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4070@10.133.73.52:5060;tag=x0hxzrih-CC-148
+CSeq: 1 INVITE
+Call-ID: 4b4b196257eab613d6418453e3594606
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-25446-1-8
+Content-Length: 0
+
+'.
+2017-05-17	13:23:45:133	1495007625.133160: Dead call 4b4b196257eab613d6418453e3594606 (aborted at index 9), received 'SIP/2.0 500 Server Internal Error
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4070@10.133.73.52:5060;tag=x0hxzrih-CC-148
+CSeq: 1 INVITE
+Call-ID: 4b4b196257eab613d6418453e3594606
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-25446-1-8
+Content-Length: 0
+
+'.
+2017-05-17	13:43:04:931	1495008784.931309: Aborting call on an unexpected BYE for call: 6943e25457067f7a473301438765e659.
+2017-05-17	13:45:15:946	1495008915.946721: Aborting call on an unexpected BYE for call: 049dd234dc3ac51401ef9d45f7f76a7c.
+2017-05-17	13:47:45:106	1495009065.106939: Aborting call on an unexpected BYE for call: 4b4b196257eab613d6418453e3594606.

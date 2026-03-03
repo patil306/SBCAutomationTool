@@ -1,0 +1,3456 @@
+----------------------------------------------- 2018-10-31 15:38:09:761.049
+TCP message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+Call-ID: 1-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:09:773.307
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 1-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:09:773.398
+TCP message received [347] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4ae00b04e
+CSeq: 1 INVITE
+Call-ID: 1-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-1-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4ae00b04e
+CSeq: 1 INVITE
+Call-ID: 1-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-1-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:09:773.779
+TCP message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4ae00b04e
+Call-ID: 1-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:09:775.205
+TCP message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4ae00b04e
+CSeq: 1 ACK
+Call-ID: 1-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 1-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4ae00b04e
+CSeq: 1 ACK
+Call-ID: 1-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:09:960.019
+TCP message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-2-0
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.149:5060
+Call-ID: 2-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:09:965.426
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 2-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-2-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:09:966.215
+TCP message received [347] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm208b443a4
+CSeq: 1 INVITE
+Call-ID: 2-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-2-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm208b443a4
+CSeq: 1 INVITE
+Call-ID: 2-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-2-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:09:966.354
+TCP message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-2-0
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm208b443a4
+Call-ID: 2-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:09:967.164
+TCP message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm208b443a4
+CSeq: 1 ACK
+Call-ID: 2-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-2-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 2-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm208b443a4
+CSeq: 1 ACK
+Call-ID: 2-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-2-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:161.169
+TCP message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-3-0
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.149:5060
+Call-ID: 3-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:10:169.581
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 3-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-3-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:169.647
+TCP message received [347] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4f35131bd
+CSeq: 1 INVITE
+Call-ID: 3-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-3-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4f35131bd
+CSeq: 1 INVITE
+Call-ID: 3-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-3-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:169.813
+TCP message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-3-0
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4f35131bd
+Call-ID: 3-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:171.071
+TCP message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4f35131bd
+CSeq: 1 ACK
+Call-ID: 3-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-3-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 3-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4f35131bd
+CSeq: 1 ACK
+Call-ID: 3-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-3-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:359.957
+TCP message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-4-0
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.149:5060
+Call-ID: 4-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:10:368.355
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 4-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-4-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:368.407
+TCP message received [347] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm3ddaaa152
+CSeq: 1 INVITE
+Call-ID: 4-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-4-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm3ddaaa152
+CSeq: 1 INVITE
+Call-ID: 4-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-4-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:368.493
+TCP message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-4-0
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm3ddaaa152
+Call-ID: 4-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:370.099
+TCP message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm3ddaaa152
+CSeq: 1 ACK
+Call-ID: 4-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-4-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 4-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm3ddaaa152
+CSeq: 1 ACK
+Call-ID: 4-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-4-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:560.803
+TCP message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-5-0
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.149:5060
+Call-ID: 5-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:10:568.616
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 5-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-5-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:569.417
+TCP message received [347] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm31c1417b8
+CSeq: 1 INVITE
+Call-ID: 5-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-5-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm31c1417b8
+CSeq: 1 INVITE
+Call-ID: 5-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-5-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:569.536
+TCP message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-5-0
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm31c1417b8
+Call-ID: 5-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:570.892
+TCP message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm31c1417b8
+CSeq: 1 ACK
+Call-ID: 5-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-5-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 5-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm31c1417b8
+CSeq: 1 ACK
+Call-ID: 5-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-5-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:760.016
+TCP message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-6-0
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.149:5060
+Call-ID: 6-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:10:768.425
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 6-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-6-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:768.486
+TCP message received [347] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm0e1228226
+CSeq: 1 INVITE
+Call-ID: 6-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-6-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm0e1228226
+CSeq: 1 INVITE
+Call-ID: 6-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-6-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:768.581
+TCP message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-6-0
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm0e1228226
+Call-ID: 6-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:770.099
+TCP message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm0e1228226
+CSeq: 1 ACK
+Call-ID: 6-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-6-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 6-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm0e1228226
+CSeq: 1 ACK
+Call-ID: 6-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-6-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:961.090
+TCP message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-7-0
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.149:5060
+Call-ID: 7-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:10:968.643
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 7-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-7-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:969.305
+TCP message received [347] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme885a96c9
+CSeq: 1 INVITE
+Call-ID: 7-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-7-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme885a96c9
+CSeq: 1 INVITE
+Call-ID: 7-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-7-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:969.418
+TCP message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-7-0
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme885a96c9
+Call-ID: 7-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:10:970.758
+TCP message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme885a96c9
+CSeq: 1 ACK
+Call-ID: 7-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-7-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 7-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme885a96c9
+CSeq: 1 ACK
+Call-ID: 7-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-7-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:161.559
+TCP message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-8-0
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.149:5060
+Call-ID: 8-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:11:169.342
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 8-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-8-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:170.086
+TCP message received [347] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmcb6127349
+CSeq: 1 INVITE
+Call-ID: 8-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-8-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmcb6127349
+CSeq: 1 INVITE
+Call-ID: 8-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-8-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:170.201
+TCP message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-8-0
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmcb6127349
+Call-ID: 8-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:172.726
+TCP message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmcb6127349
+CSeq: 1 ACK
+Call-ID: 8-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-8-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 8-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmcb6127349
+CSeq: 1 ACK
+Call-ID: 8-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-8-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:360.848
+TCP message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-9-0
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.149:5060
+Call-ID: 9-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:11:368.586
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 9-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-9-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:369.192
+TCP message received [347] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7ef486484
+CSeq: 1 INVITE
+Call-ID: 9-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-9-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7ef486484
+CSeq: 1 INVITE
+Call-ID: 9-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-9-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:369.315
+TCP message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-9-0
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7ef486484
+Call-ID: 9-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:371.601
+TCP message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7ef486484
+CSeq: 1 ACK
+Call-ID: 9-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-9-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 9-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7ef486484
+CSeq: 1 ACK
+Call-ID: 9-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-9-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:561.344
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-10-0
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.149:5060
+Call-ID: 10-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:11:569.125
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 10-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-10-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:570.187
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm2b8c23628
+CSeq: 1 INVITE
+Call-ID: 10-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-10-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm2b8c23628
+CSeq: 1 INVITE
+Call-ID: 10-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-10-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:570.322
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-10-0
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm2b8c23628
+Call-ID: 10-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:571.948
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm2b8c23628
+CSeq: 1 ACK
+Call-ID: 10-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-10-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 10-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm2b8c23628
+CSeq: 1 ACK
+Call-ID: 10-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-10-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:761.305
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-11-0
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.149:5060
+Call-ID: 11-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:11:769.363
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 11-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-11-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:770.125
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8a91772ad
+CSeq: 1 INVITE
+Call-ID: 11-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-11-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8a91772ad
+CSeq: 1 INVITE
+Call-ID: 11-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-11-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:770.227
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-11-0
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8a91772ad
+Call-ID: 11-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:771.431
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8a91772ad
+CSeq: 1 ACK
+Call-ID: 11-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-11-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 11-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8a91772ad
+CSeq: 1 ACK
+Call-ID: 11-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-11-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:960.271
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-12-0
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.149:5060
+Call-ID: 12-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:11:967.677
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 12-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-12-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:967.753
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb5f6960ef
+CSeq: 1 INVITE
+Call-ID: 12-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-12-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb5f6960ef
+CSeq: 1 INVITE
+Call-ID: 12-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-12-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:967.872
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-12-0
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb5f6960ef
+Call-ID: 12-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:11:968.890
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb5f6960ef
+CSeq: 1 ACK
+Call-ID: 12-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-12-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 12-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb5f6960ef
+CSeq: 1 ACK
+Call-ID: 12-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-12-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:160.213
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-13-0
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.149:5060
+Call-ID: 13-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:12:167.983
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 13-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-13-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:168.442
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7a2fab394
+CSeq: 1 INVITE
+Call-ID: 13-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-13-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7a2fab394
+CSeq: 1 INVITE
+Call-ID: 13-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-13-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:168.566
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-13-0
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7a2fab394
+Call-ID: 13-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:169.795
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7a2fab394
+CSeq: 1 ACK
+Call-ID: 13-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-13-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 13-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7a2fab394
+CSeq: 1 ACK
+Call-ID: 13-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-13-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:361.500
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-14-0
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.149:5060
+Call-ID: 14-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:12:370.290
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 14-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-14-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:370.886
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb1ec2e2c8
+CSeq: 1 INVITE
+Call-ID: 14-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-14-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb1ec2e2c8
+CSeq: 1 INVITE
+Call-ID: 14-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-14-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:370.986
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-14-0
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb1ec2e2c8
+Call-ID: 14-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:372.352
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb1ec2e2c8
+CSeq: 1 ACK
+Call-ID: 14-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-14-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 14-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb1ec2e2c8
+CSeq: 1 ACK
+Call-ID: 14-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-14-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:560.464
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-15-0
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.149:5060
+Call-ID: 15-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:12:568.367
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 15-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-15-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:569.052
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7e34454ab
+CSeq: 1 INVITE
+Call-ID: 15-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-15-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7e34454ab
+CSeq: 1 INVITE
+Call-ID: 15-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-15-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:569.174
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-15-0
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7e34454ab
+Call-ID: 15-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:570.302
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7e34454ab
+CSeq: 1 ACK
+Call-ID: 15-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-15-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 15-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm7e34454ab
+CSeq: 1 ACK
+Call-ID: 15-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-15-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:760.890
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-16-0
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.149:5060
+Call-ID: 16-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:12:768.781
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 16-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-16-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:769.073
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmd0355925c
+CSeq: 1 INVITE
+Call-ID: 16-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-16-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmd0355925c
+CSeq: 1 INVITE
+Call-ID: 16-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-16-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:769.214
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-16-0
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmd0355925c
+Call-ID: 16-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:770.130
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmd0355925c
+CSeq: 1 ACK
+Call-ID: 16-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-16-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 16-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmd0355925c
+CSeq: 1 ACK
+Call-ID: 16-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-16-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:959.796
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-17-0
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.149:5060
+Call-ID: 17-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:12:969.438
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 17-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-17-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:970.367
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4a913d01a
+CSeq: 1 INVITE
+Call-ID: 17-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-17-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4a913d01a
+CSeq: 1 INVITE
+Call-ID: 17-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-17-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:970.484
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-17-0
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4a913d01a
+Call-ID: 17-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:12:971.790
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4a913d01a
+CSeq: 1 ACK
+Call-ID: 17-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-17-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 17-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm4a913d01a
+CSeq: 1 ACK
+Call-ID: 17-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-17-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:159.960
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-18-0
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.149:5060
+Call-ID: 18-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:13:168.400
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 18-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-18-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:168.809
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmc873cf3b7
+CSeq: 1 INVITE
+Call-ID: 18-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-18-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmc873cf3b7
+CSeq: 1 INVITE
+Call-ID: 18-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-18-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:168.995
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-18-0
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmc873cf3b7
+Call-ID: 18-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:170.272
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmc873cf3b7
+CSeq: 1 ACK
+Call-ID: 18-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-18-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 18-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmc873cf3b7
+CSeq: 1 ACK
+Call-ID: 18-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-18-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:359.902
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-19-0
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.149:5060
+Call-ID: 19-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:13:368.427
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 19-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-19-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:368.482
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm2dfa5147f
+CSeq: 1 INVITE
+Call-ID: 19-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-19-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm2dfa5147f
+CSeq: 1 INVITE
+Call-ID: 19-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-19-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:368.573
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-19-0
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm2dfa5147f
+Call-ID: 19-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:370.228
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm2dfa5147f
+CSeq: 1 ACK
+Call-ID: 19-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-19-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 19-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm2dfa5147f
+CSeq: 1 ACK
+Call-ID: 19-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-19-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:561.189
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-20-0
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.149:5060
+Call-ID: 20-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:13:565.895
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 20-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-20-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:566.225
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8d937c062
+CSeq: 1 INVITE
+Call-ID: 20-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-20-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8d937c062
+CSeq: 1 INVITE
+Call-ID: 20-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-20-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:566.455
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-20-0
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8d937c062
+Call-ID: 20-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:567.122
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8d937c062
+CSeq: 1 ACK
+Call-ID: 20-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-20-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 20-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8d937c062
+CSeq: 1 ACK
+Call-ID: 20-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-20-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:760.522
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-21-0
+From: sip:40005@10.133.39.159;tag=21
+To: sip:40006@10.133.48.149:5060
+Call-ID: 21-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:13:767.680
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=21
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 21-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-21-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:767.734
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=21
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm80cfe366a
+CSeq: 1 INVITE
+Call-ID: 21-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-21-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=21
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm80cfe366a
+CSeq: 1 INVITE
+Call-ID: 21-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-21-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:767.829
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-21-0
+From: sip:40005@10.133.39.159;tag=21
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm80cfe366a
+Call-ID: 21-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:769.022
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=21
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm80cfe366a
+CSeq: 1 ACK
+Call-ID: 21-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-21-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 21-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=21
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm80cfe366a
+CSeq: 1 ACK
+Call-ID: 21-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-21-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:960.739
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-22-0
+From: sip:40005@10.133.39.159;tag=22
+To: sip:40006@10.133.48.149:5060
+Call-ID: 22-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:13:971.523
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=22
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 22-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-22-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:971.578
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=22
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm5713a85a6
+CSeq: 1 INVITE
+Call-ID: 22-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-22-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=22
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm5713a85a6
+CSeq: 1 INVITE
+Call-ID: 22-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-22-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:971.673
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-22-0
+From: sip:40005@10.133.39.159;tag=22
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm5713a85a6
+Call-ID: 22-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:13:973.024
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=22
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm5713a85a6
+CSeq: 1 ACK
+Call-ID: 22-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-22-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 22-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=22
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm5713a85a6
+CSeq: 1 ACK
+Call-ID: 22-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-22-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:160.591
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-23-0
+From: sip:40005@10.133.39.159;tag=23
+To: sip:40006@10.133.48.149:5060
+Call-ID: 23-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:14:169.008
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=23
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 23-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-23-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:169.064
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=23
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm726b607bd
+CSeq: 1 INVITE
+Call-ID: 23-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-23-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=23
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm726b607bd
+CSeq: 1 INVITE
+Call-ID: 23-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-23-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:169.167
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-23-0
+From: sip:40005@10.133.39.159;tag=23
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm726b607bd
+Call-ID: 23-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:170.390
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=23
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm726b607bd
+CSeq: 1 ACK
+Call-ID: 23-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-23-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 23-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=23
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm726b607bd
+CSeq: 1 ACK
+Call-ID: 23-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-23-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:361.319
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-24-0
+From: sip:40005@10.133.39.159;tag=24
+To: sip:40006@10.133.48.149:5060
+Call-ID: 24-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:14:368.507
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=24
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 24-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-24-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:369.186
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=24
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm67d998468
+CSeq: 1 INVITE
+Call-ID: 24-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-24-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=24
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm67d998468
+CSeq: 1 INVITE
+Call-ID: 24-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-24-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:369.314
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-24-0
+From: sip:40005@10.133.39.159;tag=24
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm67d998468
+Call-ID: 24-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:370.594
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=24
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm67d998468
+CSeq: 1 ACK
+Call-ID: 24-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-24-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 24-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=24
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm67d998468
+CSeq: 1 ACK
+Call-ID: 24-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-24-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:560.870
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-25-0
+From: sip:40005@10.133.39.159;tag=25
+To: sip:40006@10.133.48.149:5060
+Call-ID: 25-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:14:567.904
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=25
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 25-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-25-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:568.449
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=25
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8524fa340
+CSeq: 1 INVITE
+Call-ID: 25-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-25-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=25
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8524fa340
+CSeq: 1 INVITE
+Call-ID: 25-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-25-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:568.556
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-25-0
+From: sip:40005@10.133.39.159;tag=25
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8524fa340
+Call-ID: 25-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:569.547
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=25
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8524fa340
+CSeq: 1 ACK
+Call-ID: 25-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-25-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 25-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=25
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm8524fa340
+CSeq: 1 ACK
+Call-ID: 25-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-25-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:760.770
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-26-0
+From: sip:40005@10.133.39.159;tag=26
+To: sip:40006@10.133.48.149:5060
+Call-ID: 26-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:14:768.691
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=26
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 26-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-26-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:768.761
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=26
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm30aa7777d
+CSeq: 1 INVITE
+Call-ID: 26-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-26-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=26
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm30aa7777d
+CSeq: 1 INVITE
+Call-ID: 26-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-26-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:768.904
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-26-0
+From: sip:40005@10.133.39.159;tag=26
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm30aa7777d
+Call-ID: 26-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:770.315
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=26
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm30aa7777d
+CSeq: 1 ACK
+Call-ID: 26-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-26-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 26-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=26
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm30aa7777d
+CSeq: 1 ACK
+Call-ID: 26-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-26-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:960.142
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-27-0
+From: sip:40005@10.133.39.159;tag=27
+To: sip:40006@10.133.48.149:5060
+Call-ID: 27-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:14:967.647
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=27
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 27-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-27-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:968.150
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=27
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm3edea6362
+CSeq: 1 INVITE
+Call-ID: 27-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-27-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=27
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm3edea6362
+CSeq: 1 INVITE
+Call-ID: 27-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-27-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:968.303
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-27-0
+From: sip:40005@10.133.39.159;tag=27
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm3edea6362
+Call-ID: 27-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:14:969.700
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=27
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm3edea6362
+CSeq: 1 ACK
+Call-ID: 27-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-27-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 27-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=27
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm3edea6362
+CSeq: 1 ACK
+Call-ID: 27-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-27-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:160.532
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-28-0
+From: sip:40005@10.133.39.159;tag=28
+To: sip:40006@10.133.48.149:5060
+Call-ID: 28-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:15:168.367
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=28
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 28-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-28-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:168.671
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=28
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme85a9856e
+CSeq: 1 INVITE
+Call-ID: 28-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-28-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=28
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme85a9856e
+CSeq: 1 INVITE
+Call-ID: 28-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-28-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:168.792
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-28-0
+From: sip:40005@10.133.39.159;tag=28
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme85a9856e
+Call-ID: 28-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:170.108
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=28
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme85a9856e
+CSeq: 1 ACK
+Call-ID: 28-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-28-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 28-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=28
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme85a9856e
+CSeq: 1 ACK
+Call-ID: 28-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-28-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:361.585
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-29-0
+From: sip:40005@10.133.39.159;tag=29
+To: sip:40006@10.133.48.149:5060
+Call-ID: 29-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:15:368.637
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=29
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 29-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-29-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:369.153
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=29
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm278e1c311
+CSeq: 1 INVITE
+Call-ID: 29-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-29-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=29
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm278e1c311
+CSeq: 1 INVITE
+Call-ID: 29-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-29-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:369.303
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-29-0
+From: sip:40005@10.133.39.159;tag=29
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm278e1c311
+Call-ID: 29-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:370.371
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=29
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm278e1c311
+CSeq: 1 ACK
+Call-ID: 29-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-29-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 29-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=29
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm278e1c311
+CSeq: 1 ACK
+Call-ID: 29-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-29-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:560.241
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-30-0
+From: sip:40005@10.133.39.159;tag=30
+To: sip:40006@10.133.48.149:5060
+Call-ID: 30-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:15:568.131
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=30
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 30-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-30-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:568.200
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=30
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb190942ca
+CSeq: 1 INVITE
+Call-ID: 30-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-30-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=30
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb190942ca
+CSeq: 1 INVITE
+Call-ID: 30-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-30-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:568.379
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-30-0
+From: sip:40005@10.133.39.159;tag=30
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb190942ca
+Call-ID: 30-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:569.500
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=30
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb190942ca
+CSeq: 1 ACK
+Call-ID: 30-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-30-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 30-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=30
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb190942ca
+CSeq: 1 ACK
+Call-ID: 30-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-30-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:761.361
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-31-0
+From: sip:40005@10.133.39.159;tag=31
+To: sip:40006@10.133.48.149:5060
+Call-ID: 31-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:15:769.583
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=31
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 31-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-31-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:769.636
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=31
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmc905a91e2
+CSeq: 1 INVITE
+Call-ID: 31-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-31-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=31
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmc905a91e2
+CSeq: 1 INVITE
+Call-ID: 31-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-31-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:769.729
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-31-0
+From: sip:40005@10.133.39.159;tag=31
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmc905a91e2
+Call-ID: 31-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:771.003
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=31
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmc905a91e2
+CSeq: 1 ACK
+Call-ID: 31-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-31-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 31-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=31
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmc905a91e2
+CSeq: 1 ACK
+Call-ID: 31-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-31-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:960.445
+TCP message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1495060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-32-0
+From: sip:40005@10.133.39.159;tag=32
+To: sip:40006@10.133.48.149:5060
+Call-ID: 32-3688@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:38:15:968.207
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=32
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 32-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-32-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:968.838
+TCP message received [350] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=32
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb9cd650b7
+CSeq: 1 INVITE
+Call-ID: 32-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-32-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=32
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb9cd650b7
+CSeq: 1 INVITE
+Call-ID: 32-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-32-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:968.947
+TCP message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-32-0
+From: sip:40005@10.133.39.159;tag=32
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb9cd650b7
+Call-ID: 32-3688@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:38:15:970.503
+TCP message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=32
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb9cd650b7
+CSeq: 1 ACK
+Call-ID: 32-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-32-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 32-3688@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=32
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb9cd650b7
+CSeq: 1 ACK
+Call-ID: 32-3688@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3688-32-0
+Content-Length: 0
+
+

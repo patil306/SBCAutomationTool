@@ -1,0 +1,12 @@
+sipp: The following events occured:
+2017-11-02	16:16:07:218	1509619567.218015: Aborting call on unexpected message for Call-Id 'eca2451de3f7bd44b08f580b1e5acd41': while expecting 'INVITE' (index 3), received 'ACK sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15296;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 1 ACK
+Call-ID: eca2451de3f7bd44b08f580b1e5acd41
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001578413073-1--s1632-
+Content-Length: 0
+
+'.

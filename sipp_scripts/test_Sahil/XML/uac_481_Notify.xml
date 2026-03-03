@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+<!--      User-to-User: 00FA080001001056965CFB;encoding=hex -->
+
+<scenario name="Basic Sipstone UAC">
+  <label id="1"/>
+
+  <send retrans="500">
+    <![CDATA[
+      INFO sip:[field1]@192.168.5.12:6025 SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]info[pid]
+      To: sip:[field1]@[remote_ip]:[remote_port];tag=[pid]info[call_number]
+      Call-ID: [call_id]
+      CSeq: 1 INFO
+      Contact: sip:[field0]@[local_ip]:[local_port];transport=[transport]
+      Supported: replaces
+      Max-Forwards: 70
+      Subject: Performance Test
+      User-Agent: pqrxyz
+      Content-Type: application/spark+xml
+      Content-Length: [len]
+      
+      <GetEndpointInfoRequest xmlns="http://xml.avaya.com/endpointAPI">
+      <clientId>442</clientId>
+      <requestId>636</requestId>
+      <targetId>-2</targetId>
+      </GetEndpointInfoRequest>
+    ]]>
+  </send>
+
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<recv response="200" rrs="true">
+</recv> 
+
+
+<!-- definition of the response time repartition table (unit is ms)   -->
+  <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+<!-- definition of the call length repartition table (unit is ms)     -->
+  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+
+</scenario>

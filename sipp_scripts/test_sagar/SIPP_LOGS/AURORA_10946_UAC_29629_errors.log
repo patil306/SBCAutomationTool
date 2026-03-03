@@ -1,0 +1,26 @@
+sipp: The following events occured:
+2018-09-18	14:06:36:816	1537259796.816368: Aborting call on unexpected message for Call-Id '1-29629@10.133.39.159': while expecting 'ACK' (index 10), received 'SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=1
+To: <sip:3001002@10.133.39.59:5076;transport=TCP;user=phone>;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-29629@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-29629-1-0
+Warning: 399 192.168.6.5 "Internal Error 15"
+Content-Length: 0
+
+'.
+2018-09-18	14:06:36:816	1537259796.816693: Dead call 1-29629@10.133.39.159 (aborted at index 10), received 'ACK sip:40005@10.133.39.159:5075;transport=TCP SIP/2.0
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+CSeq: 2 ACK
+Call-ID: 1-29629@10.133.39.159
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=12;lr;transport=tcp>
+Allow: REFER
+Supported: 100rel, histinfo, join, replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-001066684446-1--s1632-;originator
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+'.

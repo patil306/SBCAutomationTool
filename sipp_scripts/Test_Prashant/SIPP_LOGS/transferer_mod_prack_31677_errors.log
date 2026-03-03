@@ -1,0 +1,10 @@
+sipp: The following events occured:
+2018-10-30	19:05:16:539	1540906516.539682: Aborting call on unexpected message for Call-Id '45ce9e3ea5b5546e51281d64d159820e': while expecting '200' (index 14), received 'SIP/2.0 400 Bad Request
+From:  sip:81001001@10.133.73.4:5060;tag=2
+To:  sip:81002001@sbcdev4.com;tag=1
+CSeq: 1 BYE
+Call-ID: 45ce9e3ea5b5546e51281d64d159820e
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-31677-1-13
+Content-Length: 0
+
+'.

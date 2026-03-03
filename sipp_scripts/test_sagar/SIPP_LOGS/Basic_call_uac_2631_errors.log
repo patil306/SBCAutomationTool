@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2018-10-24	16:04:16:692	1540377256.692582: Aborting call on unexpected message for Call-Id '1-2631@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm7849b2447
+CSeq: 1 INVITE
+Call-ID: 1-2631@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2631-1-0
+Warning: 399 10.133.48.155 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.

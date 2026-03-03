@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic UAS responder">
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<recv request="REGISTER" crlf="true">
+</recv>
+
+<!-- The '[last_*]' keyword is replaced automatically by the          -->
+<!-- specified header if it was present in the last message received  -->
+<!-- (except if it was a retransmission). If the header was not       -->
+<!-- present or if no message has been received, the '[last_*]'       -->
+<!-- keyword is discarded, and all bytes until the end of the line    -->
+<!-- are also discarded.                                              -->
+<!--                                                                  -->
+<!-- If the specified header was present several times in the         -->
+<!-- message, all occurences are concatenated (CRLF seperated)        -->
+<!-- to be used in place of the '[last_*]' keyword.                   -->
+
+<send>
+<![CDATA[
+SIP/2.0 401 Unauthorized
+[last_Via:]
+[last_From:]
+[last_To:];tag=[call_number]
+[last_Call-ID:]
+[last_CSeq:]
+Server: AVAYA-SM-8.1.0.0.810007 
+Av-Global-Session-ID: 837003a0-b9ef-11ea-a5fb-005056b0dfc5
+Content-Length: 0
+]]>
+</send>
+
+
+<recv request="REGISTER" crlf="true">
+</recv>
+
+<send>
+<![CDATA[
+SIP/2.0 403 Forbidden (Unauthorized) 
+[last_Via:]
+[last_From:]
+[last_To:];tag=[call_number]
+[last_Call-ID:]
+[last_CSeq:]
+Server: AVAYA-SM-8.1.0.0.810007
+Av-Global-Session-ID: 838894b0-b9ef-11ea-a5fb-005056b0dfc5
+Content-Length: 0
+]]>
+</send>
+
+<send>
+<![CDATA[
+REGISTER sip:sbcdev4.com SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+[last_From:]
+[last_To:];tag=[call_number]
+Call-ID: [call_id]
+CSeq: 3 REGISTER
+Contact: <sip:37645@100.93.126.19:50101;rinstance=0ab27c0c969a066d;transport=tcp>;+sip.instance="<urn:uuid:28727a07-3c88-4c3e-ad18-bfaee6622003>";reg-id=1
+Expires: 1800
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+]]>
+</send>
+
+<recv response="401" />
+
+
+<recv request="INVITE" crlf="true">
+</recv>
+
+<!-- The '[last_*]' keyword is replaced automatically by the          -->
+<!-- specified header if it was present in the last message received  -->
+<!-- (except if it was a retransmission). If the header was not       -->
+<!-- present or if no message has been received, the '[last_*]'       -->
+<!-- keyword is discarded, and all bytes until the end of the line    -->
+<!-- are also discarded.                                              -->
+<!--                                                                  -->
+<!-- If the specified header was present several times in the         -->
+<!-- message, all occurences are concatenated (CRLF seperated)        -->
+<!-- to be used in place of the '[last_*]' keyword.                   -->
+
+<send>
+<![CDATA[
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+</scenario>
+                        

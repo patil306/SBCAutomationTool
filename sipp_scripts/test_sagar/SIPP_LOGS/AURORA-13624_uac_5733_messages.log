@@ -1,0 +1,56 @@
+----------------------------------------------- 2018-08-17 12:24:02:453.599
+TCP message sent (435 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-5733-1-0
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060
+Call-ID: 1-5733@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 12:24:02:852.396
+TCP message received [239] bytes :
+
+SIP/2.0 486 Busy Here
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=zXcVbNm354fee6db
+CSeq: 1 OPTIONS
+Call-ID: 1-5733@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-5733-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 486 Busy Here
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=zXcVbNm354fee6db
+CSeq: 1 OPTIONS
+Call-ID: 1-5733@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-5733-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-17 12:24:02:852.777
+TCP message sent (299 bytes):
+
+BYE  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-5733-1--1
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=zXcVbNm354fee6db
+Call-ID: 1-5733@10.133.39.159
+CSeq: 2 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Content-Length: 0
+
+

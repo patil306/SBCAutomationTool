@@ -1,0 +1,285 @@
+----------------------------------------------- 2018-08-21 17:15:32:70.233
+TCP message sent (675 bytes):
+
+INVITE sip:40006@10.133.48.151:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22960-1-0
+From: sip:40005@10.133.39.159:5075;tag=1
+To: sip:40006@10.133.48.151:5060
+Call-ID: 1-22960@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   202
+
+v=0
+o=user1 53655765 2353687640 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6001 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-08-21 17:15:32:94.403
+TCP message received [227] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159:5075;tag=1
+To: sip:40006@10.133.48.151:5060
+CSeq: 1 INVITE
+Call-ID: 1-22960@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22960-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-21 17:15:34:109.699
+TCP message received [597] bytes :
+
+SIP/2.0 183 Session Progress
+From: sip:40005@10.133.39.159:5075;tag=1
+To: sip:40006@10.133.48.151:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-22960@10.133.39.159
+Contact: <sip:10.133.48.151:5060;transport=tcp>
+Record-Route: <sip:10.133.48.151:5060;ipcs-line=3;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22960-1-0
+Content-Type: application/sdp
+Content-Length: 203
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.151
+s=-
+c=IN IP4 10.133.48.151
+t=0 0
+m=audio 35004 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-08-21 17:15:36:109.842
+TCP message received [610] bytes :
+
+UPDATE sip:40005@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:40006@10.133.48.151:5060;tag=2
+To: sip:40005@10.133.39.159:5075;tag=1
+CSeq: 2 UPDATE
+Call-ID: 1-22960@10.133.39.159
+Contact: <sip:10.133.48.151:5060;transport=tcp>
+Record-Route: <sip:10.133.48.151:5060;ipcs-line=3;lr;transport=tcp>
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.48.151:5060;branch=z9hG4bK-s1632-000894104568-1--s1632-
+Content-Type: application/sdp
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687638 IN IP4 10.133.48.151
+s=-
+c=IN IP4 10.133.48.151
+t=0 0
+m=audio 35004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-08-21 17:15:36:110.068
+TCP message sent (481 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.48.151:5060;branch=z9hG4bK-s1632-000894104568-1--s1632-
+From: sip:40006@10.133.48.151:5060;tag=2
+To: sip:40005@10.133.39.159:5075;tag=1
+Call-ID: 1-22960@10.133.39.159
+CSeq: 2 UPDATE
+Contact: <sip:10.133.39.159:5075;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   149
+
+v=0
+o=user1 53655765 2353687641 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6001 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-08-21 17:15:38:127.081
+TCP message received [610] bytes :
+
+UPDATE sip:40005@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:40006@10.133.48.151:5060;tag=2
+To: sip:40005@10.133.39.159:5075;tag=1
+CSeq: 3 UPDATE
+Call-ID: 1-22960@10.133.39.159
+Contact: <sip:10.133.48.151:5060;transport=tcp>
+Record-Route: <sip:10.133.48.151:5060;ipcs-line=3;lr;transport=tcp>
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.48.151:5060;branch=z9hG4bK-s1632-000587402405-1--s1632-
+Content-Type: application/sdp
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687638 IN IP4 10.133.48.151
+s=-
+c=IN IP4 10.133.48.151
+t=0 0
+m=audio 35004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-08-21 17:15:38:127.316
+TCP message sent (481 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.48.151:5060;branch=z9hG4bK-s1632-000587402405-1--s1632-
+From: sip:40006@10.133.48.151:5060;tag=2
+To: sip:40005@10.133.39.159:5075;tag=1
+Call-ID: 1-22960@10.133.39.159
+CSeq: 3 UPDATE
+Contact: <sip:10.133.39.159:5075;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   149
+
+v=0
+o=user1 53655765 2353687642 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6001 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-08-21 17:15:38:140.975
+TCP message received [530] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159:5075;tag=1
+To: sip:40006@10.133.48.151:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-22960@10.133.39.159
+Contact: <sip:10.133.48.151:5060;transport=tcp>
+Record-Route: <sip:10.133.48.151:5060;ipcs-line=3;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22960-1-0
+Content-Type: application/sdp
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687638 IN IP4 10.133.48.151
+s=-
+c=IN IP4 10.133.48.151
+t=0 0
+m=audio 35004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-08-21 17:15:38:141.329
+TCP message sent (415 bytes):
+
+ACK sip:40006@10.133.48.151:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22960-1-8
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.151:5060;tag=2
+Call-ID: 1-22960@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Max-Forwards: 70
+Route: <sip:10.133.48.151:5060;ipcs-line=3;lr;transport=tcp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-21 17:15:39:142.875
+TCP message sent (460 bytes):
+
+INVITE sip:40006@10.133.48.151:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22960-1-10
+From: sip:40005@10.133.39.159:5075;tag=1
+To: sip:40006@10.133.48.151:5060;tag=2
+Call-ID: 1-22960@10.133.39.159
+CSeq: 2 INVITE
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-21 17:15:39:147.576
+TCP message received [234] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159:5075;tag=1
+To: sip:40006@10.133.48.151:5060;tag=2
+CSeq: 2 INVITE
+Call-ID: 1-22960@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22960-1-10
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-21 17:15:39:151.874
+TCP message received [379] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159:5075;tag=1
+To: sip:40006@10.133.48.151:5060;tag=2
+CSeq: 2 INVITE
+Call-ID: 1-22960@10.133.39.159
+Contact: <sip:10.133.48.151:5060;transport=tcp>
+Record-Route: <sip:10.133.48.151:5060;ipcs-line=3;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22960-1-10
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-21 17:15:39:152.175
+TCP message sent (416 bytes):
+
+ACK sip:40006@10.133.48.151:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22960-1-13
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.151:5060;tag=2
+Call-ID: 1-22960@10.133.39.159
+CSeq: 2 ACK
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Max-Forwards: 70
+Route: <sip:10.133.48.151:5060;ipcs-line=3;lr;transport=tcp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-21 17:15:39:152.297
+TCP message sent (410 bytes):
+
+BYE sip:10.133.48.151:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22960-1-14
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.151:5060;tag=2
+Call-ID: 1-22960@10.133.39.159
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+CSeq: 2 BYE
+Route: <sip:10.133.48.151:5060;ipcs-line=3;lr;transport=tcp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-21 17:15:39:162.316
+TCP message received [334] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.151:5060;tag=2
+CSeq: 2 BYE
+Call-ID: 1-22960@10.133.39.159
+Contact: <sip:10.133.48.151:5060;transport=tcp>
+Record-Route: <sip:10.133.48.151:5060;ipcs-line=3;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22960-1-14
+Content-Length: 0
+
+

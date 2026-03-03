@@ -1,0 +1,14 @@
+sipp: The following events occured:
+2019-06-18	16:07:30:859	1560854250.859580: Aborting call on unexpected message for Call-Id '1-18007@10.133.39.159': while expecting '400' (index 2), received 'SIP/2.0 401 Unauthorized
+From: <sip:1001@10.133.48.238>;tag=1
+To: <sip:1001@10.133.48.238>;tag=399UXHX11Bm2B
+CSeq: 63860 REGISTER
+Call-ID: 1-18007@10.133.39.159
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+User-Agent: FreeSWITCH-mod_sofia/1.6.20~64bit
+Via: SIP/2.0/UDP 10.133.48.180:6000;rport=5060;branch=z9hG4bKPjsveyVyjEpkmjhn6EeQ7pWqM4OFIE0SJV
+WWW-Authenticate: Digest realm="10.133.48.238", nonce="017a8b4e-91b5-11e9-ba2f-cd3dda5858ad", algorithm=MD5, qop="auth"
+Content-Length: 0
+
+'.

@@ -1,0 +1,5 @@
+#!/bin/bash
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/Test_Shobhit/SCRIPTS/ConvConfScripts/UAC_REINVITE_TLS_CONV_CONF.xml 10.133.36.25:5060 -i 10.133.39.159 -p 5060 -t t1  -m 1  -aa -trace_msg  -trace_err -inf /home/sipp/Test_Shobhit/SCRIPTS/ConvConfScripts/UAS_Conv_Conf_RTP_SRTP.csv  
+/home/sipp/sipp.svn/sipp -sf /home/sipp/Test_Shobhit/SCRIPTS/ConvConfScripts/UAC_CONV_CONF1.xml 10.133.36.215:5060 -i 10.133.39.159 -p 5089 -t t1  -m 1 -aa -trace_msg  -trace_err -inf /home/sipp/Test_Shobhit/SCRIPTS/ConvConfScripts/UAS_Conv_Conf_RTP_SRTP1.csv -t t1 
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/Test_Shobhit/SCRIPTS/ConvConfScripts/uac_conv_conf.xml 10.133.39.176:5061 -i 10.133.39.159 -p 5061 -t t1  -m 50000  -r 2 -rp 1000 -aa -trace_msg  -trace_err -inf /home/sipp/Test_Shobhit/SCRIPTS/ConvConfScripts/UAS_Conv_Conf_RTP_SRTP.csv -t t1 
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/Test_Shobhit/SCRIPTS/ConvConfScripts/uac_conv_conf.xml 10.133.39.176:5061 -i 10.133.39.159 -p 5061 -t t1  -m 1 -aa -trace_msg  -trace_err -inf /home/sipp/Test_Shobhit/SCRIPTS/ConvConfScripts/UAS_Conv_Conf_RTP_SRTP.csv -t t1 

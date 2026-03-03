@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+            .flex-container {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 400px;
+            }
+            .flex-container > div {
+                width: 50%;
+                height: 380px;
+                margin: 12px;
+                border-radius: 3px;
+                background-color: #f1f2f0;
+            }
+            .container1 { 
+                border:2px solid #ccc; 
+                width:95%; 
+                height: 350px; 
+                overflow-y: scroll;
+                align-items: left;
+                margin-left: 15px;
+                margin-top: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>Configuration Profile</h1><br>
+            <table>
+                    <tr>
+                    <td>
+                    Add Profile	&nbsp:<br><br>
+                    </td>
+                    <td colspan='3'>
+                    <input type="text" size="35" id="testCase" placeholder='Profile Name'></textarea><br><br>
+                    </td>
+                    </tr> 
+            </table>
+        </center>
+        <div class="flex-container">
+			<div>
+                <div class="container1">
+                    <br><center><b>INGRESS Profile</b></center><br>
+                    <input type="checkbox" /> This is checkbox <br />
+                    <input type="checkbox" /> This is checkbox <br />
+                    <input type="checkbox" /> This is checkbox <br />
+                </div>
+            </div>
+            <div>
+                <div class="container1">
+                    <br><center><b>EGRESS Profile</b></center><br>
+                    <input type="checkbox" /> This is checkbox <br />
+                    <input type="checkbox" /> This is checkbox <br />
+                    <input type="checkbox" /> This is checkbox <br />
+                </div>
+            </div>
+        </div>
+        <br>
+            <center><input type="submit" value="Add Profile" name="submit"></center>
+    </body>
+</html>

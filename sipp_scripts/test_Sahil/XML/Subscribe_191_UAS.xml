@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+
+<scenario name="Late NOTIFY">
+
+<recv request="SUBSCRIBE" crlf="true">
+</recv>
+
+<send>
+<![CDATA[
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:];tag=2[call_id]
+[last_Call-ID:]
+CSeq: 1 SUBSCRIBE
+Contact: <sip:4078@192.168.55.79:[local_port];transport=[transport]>
+Content-Length: 0
+Expires: 60
+]]>
+</send>
+
+
+
+
+<!--
+
+
+<send>
+<![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=2
+[last_Call-ID:]
+CSeq: 2 SUBSCRIBE
+Contact: <sip:sipp@[local_ip]:[local_port]>
+Content-Length: 0
+Expires: 60
+]]>
+</send>
+-->
+
+<!-- definition of the response time repartition table (unit is ms)   -->
+<ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+<!-- definition of the call length repartition table (unit is ms)     -->
+<CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+
+</scenario>

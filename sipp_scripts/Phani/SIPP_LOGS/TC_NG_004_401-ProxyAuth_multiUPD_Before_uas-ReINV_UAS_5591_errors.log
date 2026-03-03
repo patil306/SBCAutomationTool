@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2018-09-12	20:29:54:546	1536764394.546795: Aborting call on unexpected message for Call-Id '3738551a47b0531110644350491e751a': while expecting '200' (index 11), received 'SIP/2.0 408 Request Timeout
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+CSeq: 3 UPDATE
+Call-ID: 3738551a47b0531110644350491e751a
+Via: SIP/2.0/UDP 10.133.39.159:5072;branch=z9hG4bK-5591-1-10
+Content-Length: 0
+
+'.
+2018-09-12	20:32:18:521	1536764538.521732: Aborting call on an unexpected CANCEL for call: 3738551a47b0531110644350491e751a.

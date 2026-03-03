@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2018-10-10	14:17:55:571	1539161275.571367: Aborting call on unexpected message for Call-Id '1-1369@10.133.39.159': while expecting 'INVITE' (index 11), received 'SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=1
+To: <sip:3001002@ci.com;transport=TCP;user=phone>;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-1369@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1369-1-0
+Warning: 399 192.168.6.5 "Internal Error 15"
+Content-Length: 0
+
+'.

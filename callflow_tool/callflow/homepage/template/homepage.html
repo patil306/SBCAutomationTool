@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+	.loader-wrapper{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#fff;opacity:1;z-index:11111;height:100%;overflow:hidden; text-align: center; padding-top: 40vh; color: #093eb6; line-height: 1em; letter-spacing: 1px;}
+.cssload-loader-wrap {padding-left: 1em; padding-right: 1em; margin: auto; display: block; width: 195px; } .cssload-loader {width: 49px; height: 49px; border-radius: 50%; margin: 3em; display: inline-block; position: relative; vertical-align: middle; } .cssload-loader, .cssload-loader:before, .cssload-loader:after {animation: 0.85s infinite ease-in-out; -o-animation: 0.85s infinite ease-in-out; -ms-animation: 0.85s infinite ease-in-out; -webkit-animation: 0.85s infinite ease-in-out; -moz-animation: 0.85s infinite ease-in-out; } .cssload-loader:before, .cssload-loader:after {width: 100%; height: 100%; border-radius: 50%; position: absolute; top: 0; left: 0; } .cssload-loader:before, .cssload-loader:after {content: ""; } .cssload-loader:before, .cssload-loader:after {content: ""; background-color: rgb(9,62,182); transform: scale(0); -o-transform: scale(0); -ms-transform: scale(0); -webkit-transform: scale(0); -moz-transform: scale(0); animation: cssload-animation 1.275s infinite ease-in-out; -o-animation: cssload-animation 1.275s infinite ease-in-out; -ms-animation: cssload-animation 1.275s infinite ease-in-out; -webkit-animation: cssload-animation 1.275s infinite ease-in-out; -moz-animation: cssload-animation 1.275s infinite ease-in-out; } .cssload-loader:after { animation-delay: 0.6375s; -o-animation-delay: 0.6375s; -ms-animation-delay: 0.6375s; -webkit-animation-delay: 0.6375s; -moz-animation-delay: 0.6375s; } @keyframes cssload-animation {0%   { transform: translateX(-100%) scale(0); } 50% { transform: translateX(0%)   scale(1); } 100% { transform: translateX(100%)  scale(0); } } @-o-keyframes cssload-animation {0%   { -o-transform: translateX(-100%) scale(0); } 50% { -o-transform: translateX(0%)    scale(1); } 100% { -o-transform: translateX(100%) scale(0); } } @-ms-keyframes cssload-animation {0%   { -ms-transform: translateX(-100%) scale(0); } 50% { -ms-transform: translateX(0%)   scale(1); } 100% { -ms-transform: translateX(100%)  scale(0); } } @-webkit-keyframes cssload-animation {0%   { -webkit-transform: translateX(-100%) scale(0); } 50% { -webkit-transform: translateX(0%)   scale(1); } 100% { -webkit-transform: translateX(100%)  scale(0); } } @-moz-keyframes cssload-animation {0%   { -moz-transform: translateX(-100%) scale(0); } 50% { -moz-transform: translateX(0%)    scale(1); } 100% { -moz-transform: translateX(100%) scale(0); } }
+
+.loader-wrapper{display: none !important;}
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="AVAYA SBCE TEST PORTAL">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="pragma" content="no-cache" />
+
+	<title>AVAYA sbce barc portal </title>
+
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link href="css/loader.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/font-awesome/font-awesome.min.css">
+	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="js/model_jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="css/model_bootstrap.min.js"></script>
+	 <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+
+	<style>
+		.page {
+			padding: 5em 0;
+		}
+
+		.emblem {
+			max-height: 60px;
+		}
+
+		.home-links a {
+			display: block;
+			box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
+			padding: 2em;
+			margin: 0 2em;
+			border-bottom: 1em solid #093eb6;
+		}
+
+		.home-links a:hover {
+			background-color: #093eb6;
+		}
+
+		.home-links a:hover h2,
+		.home-links a:hover h1 {
+			color: #fff;
+		}
+
+		.home-links a.science {
+			border-color: #FF9800;
+		}
+
+		.home-links a.science h1 {
+			color: #FF9800;
+		}
+
+		.home-links a.science:hover h1 {
+			color: #fff;
+		}
+
+		.home-links a.science:hover {
+			background-color: #FF9800;
+		}
+
+		@media (max-width:991px) {
+			.home-links a {
+				margin: 1em;
+			}
+
+			.page {
+				padding: 0;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.page {
+				padding: 0;
+			}
+
+			.emblem {
+				display: none;
+			}
+		}
+	</style>
+
+</head>
+
+<body class="homepage">
+	<noscript>
+		<style>
+			.wrapper,
+			.loader-wrapper {
+				display: none;
+			}
+
+			.noscript {
+				display: block;
+			}
+		</style>
+	</noscript>
+	
+
+	<div class="wrapper">
+		<header>
+			<div class="header-area">
+				<div class="row logo-top-info">
+					<div class="container">
+					
+						<!-- <div class="col-sm-3 logo" style="padding-top: 25px;text-align: center;font-size: 20px;">
+							<h4>(OCES/DGFS-2019)</h4>
+						</div> -->
+						
+					</div>
+				</div>
+			</div>
+			<div class="bar" style="margin-bottom:1em; background-color:#677078; text-align:center; padding:.5em;">
+				<h4 style="margin:0; color:#fff;">SBC TEST PORTAL</h4>
+			</div>
+		
+		</header>
+
+		
+
+	
+		<section class="page">
+			<div class="container">
+				<div class="row error-page home-links">
+					<div class="col-md-6 text-center">
+						<a href="http://10.133.99.221:9000" id="testreport">
+							<h1><i class="fa fa-cogs"></i></h1>
+							<h2>TEST REPORT</h2>
+						</a>
+					</div>
+					<div class="col-md-6 text-center">
+						<a href="http://10.133.99.221:7000" id="testexec">
+							<h1><i class="fa fa-cogs"></i></h1>
+							<h2>TEST CASE EXECUTION</h2>
+						</a>
+					</div>
+					<div class="col-md-6 text-center">
+						<a href="http://10.133.99.221:8000"  id="tempexec" class="science">
+							<h1><i class="fa fa-flask"></i></h1>
+							<h2>TEMPLATE EXECUTION</h2>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	
+
+
+		<div class="container">
+			<p class="copyright" style="text-align: center;">Copyright � 2022 AVAYA INC. All rights reserved. Best viewed in google Chrome 11
+				browser.</p>
+		</div>
+	</div>
+
+
+	<!-- <script src="js/jquery.min.js"></script> -->
+
+
+	<script>
+		window.onload = function () {
+			if ($('.loader-wrapper').length) {
+				$('.loader-wrapper').fadeOut();
+			}
+		}
+	</script>
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	
+
+</body>
+
+</html>

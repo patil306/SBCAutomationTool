@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+
+<scenario name="Basic Sipstone UAC">
+
+  <send retrans="500">
+    <![CDATA[
+      REGISTER sip:sbcdev4.com SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@sbcdev4.com;tag=[call_number]
+      To: sip:[field0]@sbcdev4.com
+      Call-ID: [call_id]
+      CSeq: 1 REGISTER
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=TLS>;q=1;expires=[field1];avaya-actions="presence.initiate-pubsub";reg-id=[call_number];+sip.instance="<urn:uuid:[field0]e96aa1e6-11a9-550b-a009-[field0]>"
+      Supported: replaces
+      Max-Forwards: 70
+      Subject: Performance Test
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+  <recv response="100" optional="true">
+  </recv>
+
+  <recv response="200">
+  </recv>
+
+<pause milliseconds="60000"/>
+
+  <send retrans="500">
+    <![CDATA[
+      REGISTER sip:sbcdev4.com SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@sbcdev4.com;tag=[call_number]
+      To: sip:[field0]@sbcdev4.com
+      Call-ID: [call_id]
+      CSeq: 1 REGISTER
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=TLS>;q=1;expires=[field1];avaya-actions="presence.initiate-pubsub";reg-id=[call_number];+sip.instance="<urn:uuid:[field0]e96aa1e6-11a9-550b-a009-[field0]>"
+      Supported: replaces
+      Max-Forwards: 70
+      Subject: Performance Test
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+  <recv response="100" optional="true">
+  </recv>
+
+  <recv response="200">
+  </recv>
+
+<pause milliseconds="60000"/>
+
+  <send retrans="500">
+    <![CDATA[
+      REGISTER sip:sbcdev4.com SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@sbcdev4.com;tag=[call_number]
+      To: sip:[field0]@sbcdev4.com
+      Call-ID: [call_id]
+      CSeq: 1 REGISTER
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=TLS>;q=1;expires=[field1];avaya-actions="presence.initiate-pubsub";reg-id=[call_number];+sip.instance="<urn:uuid:[field0]e96aa1e6-11a9-550b-a009-[field0]>"
+      Supported: replaces
+      Max-Forwards: 70
+      Subject: Performance Test
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+  <recv response="100" optional="true">
+  </recv>
+
+  <recv response="200">
+  </recv>
+
+<pause milliseconds="600000"/>
+</scenario>

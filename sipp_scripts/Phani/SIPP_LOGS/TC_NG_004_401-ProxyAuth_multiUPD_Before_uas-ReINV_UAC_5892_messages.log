@@ -1,0 +1,221 @@
+----------------------------------------------- 2018-09-12 21:47:08:527.636
+UDP message sent (657 bytes):
+
+INVITE sip:4079@192.168.6.244:5060;transport=UDP SIP/2.0
+Via: SIP/2.0/UDP 192.168.6.5:5072;branch=z9hG4bK-5892-1-0
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060
+Call-ID: 1-5892@192.168.6.5
+CSeq: 1 INVITE
+Contact: <sip:4078@192.168.6.5:5072;transport=UDP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   198
+
+v=0
+o=user1 53655765 2353687640 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-12 21:47:08:539.828
+UDP message received [217] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060
+CSeq: 1 INVITE
+Call-ID: 1-5892@192.168.6.5
+Via: SIP/2.0/UDP 192.168.6.5:5072;branch=z9hG4bK-5892-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 21:47:10:555.215
+UDP message received [564] bytes :
+
+SIP/2.0 183 Session Progress
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-5892@192.168.6.5
+Contact: <sip:192.168.6.244:5060;transport=udp>
+Supported: replaces
+Via:SIP/2.0/UDP 192.168.6.5:5072;branch=z9hG4bK-5892-1-0
+Require: 100rel
+RSeq: 1
+Content-Type: application/sdp
+Content-Length: 203
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.244
+s=-
+c=IN IP4 192.168.6.244
+t=0 0
+m=audio 35006 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-12 21:47:10:555.740
+UDP message sent (382 bytes):
+
+PRACK sip:192.168.6.244:5060;transport=udp SIP/2.0
+Via: SIP/2.0/transport=UDP 192.168.6.5:5072;branch=z9hG4bK-5892-1-4
+From:  sip:4078@192.168.6.5:5072;tag=1
+To:   sip:4079@192.168.6.244:5060;tag=2
+Call-ID: 1-5892@192.168.6.5
+CSeq: 2 PRACK
+RAck: 1 1 INVITE
+Contact: <sip:4078@192.168.6.5:5072;transport=UDP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 21:47:10:563.610
+UDP message received [328] bytes :
+
+SIP/2.0 200 OK
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060;tag=2
+CSeq: 2 PRACK
+Call-ID: 1-5892@192.168.6.5
+Contact: <sip:192.168.6.244:5060;transport=udp>
+Supported: replaces
+Via:SIP/2.0/transport=UDP 192.168.6.5:5072;branch=z9hG4bK-5892-1-4
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 21:47:12:567.056
+UDP message received [623] bytes :
+
+UPDATE sip:4078@192.168.6.5:5072;transport=udp SIP/2.0
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+CSeq: 3 UPDATE
+Call-ID: 1-5892@192.168.6.5
+Contact: <sip:192.168.6.244:5060;transport=udp>
+Record-Route: <sip:192.168.6.244:5060;ipcs-line=4;lr;transport=udp>
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.6.244:5060;branch=z9hG4bK-s1632-000576789724-1--s1632-
+Content-Type: application/sdp
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687638 IN IP4 192.168.6.244
+s=-
+c=IN IP4 192.168.6.244
+t=0 0
+m=audio 35006 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-12 21:47:12:567.302
+UDP message sent (470 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.6.244:5060;branch=z9hG4bK-s1632-000576789724-1--s1632-
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+Call-ID: 1-5892@192.168.6.5
+CSeq: 3 UPDATE
+Contact: <sip:192.168.6.5:5072;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   145
+
+v=0
+o=user1 53655765 2353687641 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-12 21:47:14:577.096
+UDP message received [623] bytes :
+
+UPDATE sip:4078@192.168.6.5:5072;transport=udp SIP/2.0
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+CSeq: 4 UPDATE
+Call-ID: 1-5892@192.168.6.5
+Contact: <sip:192.168.6.244:5060;transport=udp>
+Record-Route: <sip:192.168.6.244:5060;ipcs-line=4;lr;transport=udp>
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.6.244:5060;branch=z9hG4bK-s1632-000114924565-1--s1632-
+Content-Type: application/sdp
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687638 IN IP4 192.168.6.244
+s=-
+c=IN IP4 192.168.6.244
+t=0 0
+m=audio 35006 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-12 21:47:14:577.371
+UDP message sent (470 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.6.244:5060;branch=z9hG4bK-s1632-000114924565-1--s1632-
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+Call-ID: 1-5892@192.168.6.5
+CSeq: 4 UPDATE
+Contact: <sip:192.168.6.5:5072;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   145
+
+v=0
+o=user1 53655765 2353687642 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-12 21:47:16:589.997
+UDP message received [471] bytes :
+
+UPDATE sip:4078@192.168.6.5:5072;transport=udp SIP/2.0
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+CSeq: 5 UPDATE
+Call-ID: 1-5892@192.168.6.5
+Contact: <sip:192.168.6.244:5060;transport=udp>
+Record-Route: <sip:192.168.6.244:5060;ipcs-line=4;lr;transport=udp>
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.6.244:5060;branch=z9hG4bK-s1632-001109718593-1--s1632-
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 21:47:16:590.313
+UDP message sent (321 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.6.244:5060;branch=z9hG4bK-s1632-001109718593-1--s1632-
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+Call-ID: 1-5892@192.168.6.5
+CSeq: 5 UPDATE
+Contact: <sip:192.168.6.5:5072;transport=UDP>
+Content-Type: application/sdp
+Content-Length: 0
+
+

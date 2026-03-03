@@ -1,0 +1,79 @@
+----------------------------------------------- 2017-07-06 14:40:24:909.238
+TCP message sent (1142 bytes):
+
+INVITE sip:4071@sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-24586-1-0
+From: sip:4070@sbcdev4.com;tag=1
+To: sip:4071@10.133.73.4:5060
+Call-ID: 1-24586@10.133.39.159
+CSeq: 1 INVITE
+Call-Info: <sip:7773503@10.10.107.35;token=1256;gsid=ac1e11a0-0f0e-11e7-ade0-000c29e8fe38>;purpose=isfocus;gsid=AC21BB2F0F0E11E7B490517EE20C303F, <sip:7773503@10.10.107.35>;purpose=ccmp, <http://tryeqnx-confms.avayadxbdemo.ae:80/viewer.php?token=AC247A500F0E11E7B490517EE20C303F&participantId=AC21BB2F0F0E11E7B490517EE20C303F&meeting_id=1256&mode=JOIN&login=73505@10.10.107.35>;purpose=application, <https://tryeqnx-conf.avayadxbdemo.ae:443/uwd/ws?ticket=AC21BB2F0F0E11E7B490517EE20C303F>;purpose=UCCP
+Contact: sip:4070@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   202
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2017-07-06 14:40:24:913.310
+TCP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4070@sbcdev4.com;tag=1
+To: sip:4071@10.133.73.4:5060
+CSeq: 1 INVITE
+Call-ID: 1-24586@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-24586-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2017-07-06 14:40:24:913.504
+TCP message received [250] bytes :
+
+SIP/2.0 503 Service Unavailable
+From: sip:4070@sbcdev4.com;tag=1
+To: sip:4071@10.133.73.4:5060;tag=zXcVbNm5d0662756
+CSeq: 1 INVITE
+Call-ID: 1-24586@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-24586-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 503 Service Unavailable
+From: sip:4070@sbcdev4.com;tag=1
+To: sip:4071@10.133.73.4:5060;tag=zXcVbNm5d0662756
+CSeq: 1 INVITE
+Call-ID: 1-24586@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-24586-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2017-07-06 14:40:24:913.755
+TCP message sent (327 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-24586-1-0
+From: sip:4070@sbcdev4.com;tag=1
+To: sip:4071@10.133.73.4:5060;tag=zXcVbNm5d0662756
+Call-ID: 1-24586@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

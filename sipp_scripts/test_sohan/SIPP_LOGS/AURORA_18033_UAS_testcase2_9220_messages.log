@@ -1,0 +1,174 @@
+----------------------------------------------- 2019-08-14 16:56:29:341.344
+UDP message received [841] bytes :
+
+INVITE sip:40007@192.168.5.12:5097 SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+CSeq: 1 INVITE
+Call-ID: df215b296d7822052c0ebb5e6bc41054
+Contact: sip:4078@192.168.55.75:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=8;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001387344420-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 228
+
+v=0
+o=- 1297654 1 IN IP4 192.168.55.75
+s=-
+c=IN IP4 192.168.55.75
+t=0 0
+m=audio 35010 RTP/AVP 18 101
+c=IN IP4 192.168.55.75
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-08-14 16:56:29:341.669
+UDP message sent (303 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001387344420-1--s1632-
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+Call-ID: df215b296d7822052c0ebb5e6bc41054
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5097;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-14 16:56:29:341.753
+UDP message sent (570 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001387344420-1--s1632-
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097;tag=2
+Call-ID: df215b296d7822052c0ebb5e6bc41054
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5097;transport=UDP>
+Content-Length:   256
+
+v=0
+o=sbc-uk-bs07a 319157248 1564513211 IN IP4 147.152.22.181
+s=sip call
+c=IN IP4 147.152.22.180
+t=0 0
+m=audio 44698 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-08-14 16:57:24:697.578
+UDP message received [293] bytes :
+
+CANCEL sip:40007@10.133.48.238 SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+CSeq: 1 CANCEL
+Call-ID: 78548339ea97af04fb68db3d07dc090c
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001823485585-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-14 16:57:24:698.079
+UDP message sent (299 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001823485585-1--s1632-
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+Call-ID: 78548339ea97af04fb68db3d07dc090c
+CSeq: 1 CANCEL
+Contact: <sip:192.168.5.12:5097;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-14 16:58:22:561.785
+UDP message received [293] bytes :
+
+CANCEL sip:40007@10.133.48.238 SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+CSeq: 1 CANCEL
+Call-ID: b48b951fa11ff7569f1b5c56c59dfd17
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000203252379-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-14 16:58:22:562.097
+UDP message sent (299 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000203252379-1--s1632-
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+Call-ID: b48b951fa11ff7569f1b5c56c59dfd17
+CSeq: 1 CANCEL
+Contact: <sip:192.168.5.12:5097;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-14 16:59:09:416.382
+UDP message received [293] bytes :
+
+CANCEL sip:40007@10.133.48.238 SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+CSeq: 1 CANCEL
+Call-ID: 81a0e3076a8cef2df4854279e0e0965a
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001134712681-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-14 16:59:09:416.670
+UDP message sent (299 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001134712681-1--s1632-
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+Call-ID: 81a0e3076a8cef2df4854279e0e0965a
+CSeq: 1 CANCEL
+Contact: <sip:192.168.5.12:5097;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-14 16:59:29:348.589
+UDP message received [293] bytes :
+
+CANCEL sip:40007@10.133.48.238 SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+CSeq: 1 CANCEL
+Call-ID: df215b296d7822052c0ebb5e6bc41054
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001387344420-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-14 16:59:29:348.954
+UDP message sent (299 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001387344420-1--s1632-
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+Call-ID: df215b296d7822052c0ebb5e6bc41054
+CSeq: 1 CANCEL
+Contact: <sip:192.168.5.12:5097;transport=UDP>
+Content-Length: 0
+
+

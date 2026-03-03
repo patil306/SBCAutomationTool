@@ -1,0 +1,83 @@
+----------------------------------------------- 2019-01-24 18:21:53:386.774
+TCP message sent (677 bytes):
+
+INVITE sip:40006@10.133.48.87:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5097;branch=z9hG4bK-21632-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.87:5060
+Call-ID: 1-21632@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5097;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   217
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/AVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+
+
+----------------------------------------------- 2019-01-24 18:21:53:409.635
+TCP message received [221] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.87:5060
+CSeq: 1 INVITE
+Call-ID: 1-21632@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5097;branch=z9hG4bK-21632-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-01-24 18:22:25:407.916
+TCP message received [323] bytes :
+
+SIP/2.0 503 Service Unavailable
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.87:5060;tag=zXcVbNm9e16504ac
+CSeq: 1 INVITE
+Call-ID: 1-21632@10.133.39.159
+Record-Route: <sip:10.133.48.87:5060;ipcs-line=3;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5097;branch=z9hG4bK-21632-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 503 Service Unavailable
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.87:5060;tag=zXcVbNm9e16504ac
+CSeq: 1 INVITE
+Call-ID: 1-21632@10.133.39.159
+Record-Route: <sip:10.133.48.87:5060;ipcs-line=3;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5097;branch=z9hG4bK-21632-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-01-24 18:22:25:408.752
+TCP message sent (332 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5097;branch=z9hG4bK-21632-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.87:5060;tag=zXcVbNm9e16504ac
+Call-ID: 1-21632@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5097;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

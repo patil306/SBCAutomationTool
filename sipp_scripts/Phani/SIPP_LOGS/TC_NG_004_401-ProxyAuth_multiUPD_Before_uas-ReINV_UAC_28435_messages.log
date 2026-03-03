@@ -1,0 +1,138 @@
+----------------------------------------------- 2018-09-12 15:43:27:496.332
+TCP message sent (659 bytes):
+
+INVITE sip:4079@192.168.6.244:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-28435-1-0
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060
+Call-ID: 1-28435@192.168.6.5
+CSeq: 1 INVITE
+Contact: <sip:4078@192.168.6.5:5072;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   198
+
+v=0
+o=user1 53655765 2353687640 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-12 15:43:27:505.643
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060
+CSeq: 1 INVITE
+Call-ID: 1-28435@192.168.6.5
+Via: SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-28435-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 15:43:27:512.563
+TCP message received [371] bytes :
+
+SIP/2.0 401 Unauthorized
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-28435@192.168.6.5
+Contact: <sip:192.168.6.244:5060;transport=tcp>
+Record-Route: <sip:192.168.6.244:5060;ipcs-line=21;lr;transport=tcp>
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-28435-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 15:43:27:512.751
+TCP message sent (354 bytes):
+
+ACK sip:4079@192.168.6.244:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-28435-1-0
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060;tag=2
+Call-ID: 1-28435@192.168.6.5
+CSeq: 1 ACK
+Contact: <sip:4078@192.168.6.5:5072;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 15:43:30:514.522
+TCP message sent (659 bytes):
+
+INVITE sip:4079@192.168.6.244:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-28435-1-5
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060
+Call-ID: 1-28435@192.168.6.5
+CSeq: 2 INVITE
+Contact: <sip:4078@192.168.6.5:5072;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   198
+
+v=0
+o=user1 53655765 2353687640 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-12 15:43:30:524.778
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060
+CSeq: 2 INVITE
+Call-ID: 1-28435@192.168.6.5
+Via: SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-28435-1-5
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 15:43:30:531.319
+TCP message received [371] bytes :
+
+SIP/2.0 401 Unauthorized
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060;tag=2
+CSeq: 2 INVITE
+Call-ID: 1-28435@192.168.6.5
+Contact: <sip:192.168.6.244:5060;transport=tcp>
+Record-Route: <sip:192.168.6.244:5060;ipcs-line=22;lr;transport=tcp>
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-28435-1-5
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 15:43:30:531.480
+TCP message sent (348 bytes):
+
+ACK sip:4079@192.168.6.244:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-28435-1-5
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060
+Call-ID: 1-28435@192.168.6.5
+CSeq: 1 ACK
+Contact: <sip:4078@192.168.6.5:5072;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

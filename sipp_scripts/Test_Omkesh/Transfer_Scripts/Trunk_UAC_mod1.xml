@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+<!--      User-to-User: 00FA080001001056965CFB;encoding=hex -->
+
+<scenario name="Basic Sipstone UAC">
+
+  <send retrans="500">
+    <![CDATA[
+      INVITE sip:[field1]@[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[local_ip]:[local_port];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port]
+      Call-ID: [call_id]
+      CSeq: 1 INVITE
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      Supported: replaces, timer
+      Max-Forwards: 70
+      Min-SE: 90
+      Session-Expires: 1800;refresher=uac
+      Subject: Performance Test
+      X-InContact-ContactId: 121328474140
+      X-InContact-BusNo: 4597504
+      X-InContact-CallType: BlindXfer
+      X-InteliServe-Term-LOC: DLC
+      User-to-User: 00FA080001001056965CFB;encoding=hex
+      Content-Type: application/sdp
+      Content-Length: [len]
+
+      v=0
+      o=user1 53655765 2353687637 IN IP[local_ip_type] [local_ip]
+      s=-
+      c=IN IP[media_ip_type] [media_ip]
+      t=0 0
+      m=audio [media_port] RTP/AVP 0 8 101
+      a=rtpmap:0 PCMU/8000
+      a=rtpmap:8 PCMA/8000/1
+      a=rtpmap:101 telephone-event/8000
+    ]]>
+  </send>
+
+  <recv response="100" optional="true">
+  </recv>
+
+  <recv response="180" optional="true">
+  </recv>
+
+
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<!-- <recv response="200" rrs="true">
+        <action>
+                   <ereg regexp="sip.*[^>]" search_in="hdr" header="Contact:" assign_to="1"/>
+                           </action>
+                           </recv>  -->
+<recv response="200" rrs="true">
+  </recv>
+<!-- Packet lost can be simulated in any send/recv message by         -->
+<!-- by adding the 'lost = "10"'. Value can be [1-100] percent.       -->
+<!-- ACK sip:[service]@[remote_ip]:[remote_port] SIP/2.0 -->
+
+  <send>
+    <![CDATA[
+      ACK sip:[field1]@[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 1 ACK
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      Max-Forwards: 70
+      [routes]
+      Subject: Performance Test
+      Content-Length: 0
+     ]]>
+  </send>
+
+<!-- Dialog Got Established from Trunk towards the IVR  -->
+
+<!-- Expect Re-INVITE from IVR for HOLD -->
+
+<recv request="INVITE"/>
+
+  <send retrans="500">
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];
+      [last_Call-ID:]
+      [last_CSeq:]
+      Require: timer
+      Session-Expires: 90;refresher=uas
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Content-Type: application/sdp
+      Content-Length: [len]
+
+      v=0
+      o=user1 53655765 2353687637 IN IP[local_ip_type] [local_ip]
+      s=-
+      c=IN IP[media_ip_type] [media_ip]
+      t=0 0
+      m=audio [media_port] RTP/AVP 0
+      a=rtpmap:0 PCMU/8000
+      a=recvonly
+    ]]>
+  </send>
+
+<recv request="ACK" rtd="true" crlf="true"/>
+
+<!-- Expect Re-INVITE from IVR for UN-HOLD -->
+
+<recv request="INVITE" crlf="true">
+        <action>
+                   <ereg regexp="sip.*[^>]" search_in="hdr" header="Contact:" assign_to="2"/>
+                           </action>
+</recv>
+
+<send retrans="500">
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];
+      [last_Call-ID:]
+      [last_CSeq:]
+      Require: timer
+      Session-Expires: 90;refresher=uas
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Content-Type: application/sdp
+      Content-Length: [len]
+
+      v=0
+      o=user1 53655765 2353687637 IN IP[local_ip_type] [local_ip]
+      s=-
+      c=IN IP[media_ip_type] [media_ip]
+      t=0 0
+      m=audio [media_port] RTP/AVP 0
+      a=rtpmap:0 PCMU/8000
+     ]]>
+ </send>
+
+<recv request="ACK" rtd="true" crlf="true"/>
+
+
+<pause milliseconds="15000"/> 
+
+
+<!-- This delay can be customized by the -d command-line option       -->
+<!-- or by adding a 'milliseconds = "value"' option here.             -->
+
+<!-- The 'crlf' option inserts a blank line in the statistics report. -->
+<!-- BYE sip:[service]@[remote_ip]:[remote_port] SIP/2.0 -->
+<!-- original: BYE sip:[field1]@[remote_ip]:[remote_port];transport=TCP SIP/2.0  -->
+<!-- original: Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP -->
+<!-- 
+<pause milliseconds="80000"/> 
+-->
+  <send retrans="500">
+    <![CDATA[
+      BYE [$2] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      CSeq: 3 BYE
+      [routes]
+      Max-Forwards: 70
+      Subject: Performance Test
+      Content-Length: 0
+   ]]>
+  </send>
+  <recv response="200" rtd="true">
+  </recv>
+
+<!-- definition of the response time repartition table (unit is ms)   -->
+  <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+<!-- definition of the call length repartition table (unit is ms)     -->
+  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+
+</scenario>

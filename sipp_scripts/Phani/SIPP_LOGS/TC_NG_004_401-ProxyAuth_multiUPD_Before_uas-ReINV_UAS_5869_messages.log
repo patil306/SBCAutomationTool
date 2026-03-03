@@ -1,0 +1,187 @@
+----------------------------------------------- 2018-09-12 21:42:42:815.324
+UDP message received [937] bytes :
+
+INVITE sip:4079@192.168.6.244:5060;transport=TCP SIP/2.0
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060
+CSeq: 1 INVITE
+Call-ID: 42490a2c69e7fc109083ac1f4476cf5e
+Contact: <sip:4078@10.133.48.152:5060;transport=udp>
+Record-Route: <sip:10.133.48.152:5060;ipcs-line=2;lr;transport=udp>
+Record-Route: <sip:192.168.6.244:5060;ipcs-line=2;lr;transport=tcp>
+Supported: replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-001542098325-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-5871-1-0
+Subject: Performance Test
+Session-Expires: 1201
+Min-SE: 1201
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 201
+
+v=0
+o=user1 53655765 2353687640 IN IP4 192.168.6.5
+s=-
+c=IN IP4 10.133.48.152
+t=0 0
+m=audio 35002 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-12 21:42:42:815.866
+UDP message sent (471 bytes):
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-001542098325-1--s1632-, SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-5871-1-0
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060;tag=2
+Call-ID: 42490a2c69e7fc109083ac1f4476cf5e
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5072;transport=UDP>
+WWW-Authenticate: DIGEST qop="auth",nonce="BroadWorksXjjf7in9jT466g6dBW",realm="ci.com",algorithm=MD5
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 21:42:42:818.314
+UDP message received [422] bytes :
+
+ACK sip:4079@192.168.6.244:5060;transport=TCP SIP/2.0
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060;tag=2
+CSeq: 1 ACK
+Call-ID: 42490a2c69e7fc109083ac1f4476cf5e
+Contact: <sip:4078@10.133.48.152:5060;transport=udp>
+Max-Forwards: 70
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-001542098325-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-5871-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 21:42:42:820.346
+UDP message received [1157] bytes :
+
+INVITE sip:4079@192.168.6.244:5060;transport=TCP SIP/2.0
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060
+CSeq: 2 INVITE
+Call-ID: 42490a2c69e7fc109083ac1f4476cf5e
+Contact: <sip:4078@10.133.48.152:5060;transport=udp>
+Record-Route: <sip:10.133.48.152:5060;ipcs-line=2;lr;transport=udp>
+Record-Route: <sip:192.168.6.244:5060;ipcs-line=2;lr;transport=tcp>
+Supported: replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-000808750772-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-5871-1-0
+Subject: Performance Test
+Authorization: Digest username="4079", realm="ci.com", nonce="BroadWorksXjjf7in9jT466g6dBW", uri="sip:192.168.6.244", response="242d1161bce7bffa1ef1657b95cece4c", algorithm=MD5, cnonce="0a4f113b", qop=auth, nc=00000002
+Session-Expires: 1201
+Min-SE: 1201
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 201
+
+v=0
+o=user1 53655765 2353687640 IN IP4 192.168.6.5
+s=-
+c=IN IP4 10.133.48.152
+t=0 0
+m=audio 35002 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-12 21:42:42:820.671
+UDP message sent (356 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-000808750772-1--s1632-, SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-5871-1-0
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060
+Call-ID: 42490a2c69e7fc109083ac1f4476cf5e
+CSeq: 2 INVITE
+Contact: <sip:10.133.39.159:5072;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 21:42:44:822.771
+UDP message sent (634 bytes):
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-000808750772-1--s1632-, SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-5871-1-0
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060;tag=2
+Call-ID: 42490a2c69e7fc109083ac1f4476cf5e
+CSeq: 2 INVITE
+RSeq: 1
+Require: 100rel
+Contact: <sip:10.133.39.159:5072;transport=UDP>
+Content-Type: application/sdp
+Content-Length:  202
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-12 21:42:44:836.638
+UDP message received [614] bytes :
+
+PRACK sip:10.133.39.159:5072;transport=udp SIP/2.0
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060;tag=2
+CSeq: 3 PRACK
+Call-ID: 42490a2c69e7fc109083ac1f4476cf5e
+Contact: <sip:4078@10.133.48.152:5060;transport=udp>
+Record-Route: <sip:10.133.48.152:5060;ipcs-line=2;lr;transport=udp>
+Record-Route: <sip:192.168.6.244:5060;ipcs-line=2;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-001965219130-1--s1632-
+Via: SIP/2.0/transport=TCP 192.168.6.5:5072;branch=z9hG4bK-5871-1-4
+Subject: Performance Test
+RAck: 1 2 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 21:42:44:836.815
+UDP message sent (400 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-001965219130-1--s1632-, SIP/2.0/transport=TCP 192.168.6.5:5072;branch=z9hG4bK-5871-1-4
+From:  sip:4078@192.168.6.5:5072;tag=1
+To:  sip:4079@192.168.6.244:5060;tag=2
+Call-ID: 42490a2c69e7fc109083ac1f4476cf5e
+CSeq: 3 PRACK
+Contact: <sip:10.133.39.159:5072;transport=UDP>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 21:42:46:837.938
+UDP message sent (512 bytes):
+
+UPDATE sip:4078@10.133.48.152:5060;transport=UDP SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5072;branch=z9hG4bK-5869-1-10
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+Call-ID: 42490a2c69e7fc109083ac1f4476cf5e
+CSeq: 3 UPDATE
+Contact: <sip:10.133.39.159:5072;transport=UDP>
+Content-Type: application/sdp
+Content-Length:  149
+
+v=0
+o=user1 53655765 2353687638 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+

@@ -1,0 +1,169 @@
+----------------------------------------------- 2018-02-09 19:17:58:190.500
+TCP message sent (566 bytes):
+
+INVITE sip:4079@sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-15975-1-0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060
+Call-ID: 1-15975@192.168.6.5
+CSeq: 1 INVITE
+Contact: sip:4078@192.168.6.5:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   133
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 5004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2018-02-09 19:17:58:204.525
+TCP message received [214] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060
+CSeq: 1 INVITE
+Call-ID: 1-15975@192.168.6.5
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-15975-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-02-09 19:17:58:212.902
+TCP message received [374] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-15975@192.168.6.5
+Contact: <sip:192.168.6.223:5060;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=2;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-15975-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-02-09 19:17:58:221.651
+TCP message received [550] bytes :
+
+SIP/2.0 200 OK
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-15975@192.168.6.5
+Contact: <sip:192.168.6.223:5060;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=2;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-15975-1-0
+Content-Type: application/sdp
+Content-Length: 148
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 192.168.6.223
+t=0 0
+m=audio 35002 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-02-09 19:17:58:222.036
+TCP message sent (409 bytes):
+
+ACK sip:4079@192.168.6.223:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-15975-1-4
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=2
+Call-ID: 1-15975@192.168.6.5
+CSeq: 1 ACK
+Contact: sip:4078@192.168.6.5:5060;transport=TCP
+Max-Forwards: 70
+Route: <sip:192.168.6.223:5060;ipcs-line=2;lr;transport=tcp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-02-09 19:17:59:24.451
+TCP message sent (485 bytes):
+
+INVITE sip:4079@sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-15975-1-6
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=2
+Call-ID: 1-15975@192.168.6.5
+CSeq: 2 INVITE
+Contact: sip:4078@192.168.6.5:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Route: <sip:10.133.39.159:5080;lr;transport=tcp>
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-02-09 19:17:59:34.316
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=2
+CSeq: 2 INVITE
+Call-ID: 1-15975@192.168.6.5
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-15975-1-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-02-09 19:18:31:48.037
+TCP message received [337] bytes :
+
+SIP/2.0 503 Service Unavailable
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=2
+CSeq: 2 INVITE
+Call-ID: 1-15975@192.168.6.5
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=2;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-15975-1-6
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 503 Service Unavailable
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=2
+CSeq: 2 INVITE
+Call-ID: 1-15975@192.168.6.5
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=2;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-15975-1-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-02-09 19:18:31:48.745
+TCP message sent (282 bytes):
+
+BYE  SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-15975-1--1
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=2
+Call-ID: 1-15975@192.168.6.5
+CSeq: 3 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@192.168.6.5:5060;transport=TCP>
+Content-Length: 0
+
+

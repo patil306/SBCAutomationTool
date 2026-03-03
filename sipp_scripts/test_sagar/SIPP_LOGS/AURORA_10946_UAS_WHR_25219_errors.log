@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2018-10-22	14:53:38:019	1540200218.019423: Automatic response mode for an unexpected INFO, UPDATE or NOTIFY for call: ff4d3b4bca001d7d01d9c47d8f81517e.
+2018-10-22	14:53:38:063	1540200218.063372: Aborting call on unexpected message for Call-Id 'ff4d3b4bca001d7d01d9c47d8f81517e': while expecting '200' (index 13), received 'SIP/2.0 491 Request Pending
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.242:5060;tag=1
+CSeq: 5 INVITE
+Call-ID: ff4d3b4bca001d7d01d9c47d8f81517e
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-25219-1-11
+Content-Length: 0
+
+'.

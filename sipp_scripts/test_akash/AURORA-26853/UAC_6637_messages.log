@@ -1,0 +1,43 @@
+----------------------------------------------- 2021-06-18 20:36:25:817.441
+UDP message sent (662 bytes):
+
+INVITE sip:reddy2@sip SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-6637-1-0
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060
+Call-ID: 1-6637@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:reddy1@10.133.39.159:6042
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+P-Asserted-Identity: <sip:+499511814633@bt.com>
+Content-Type: application/sdp
+Content-Length:   244
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 41532 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2021-06-18 20:36:26:51.424
+UDP message received [217] bytes :
+
+SIP/2.0 100 Trying
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060
+CSeq: 1 INVITE
+Call-ID: 1-6637@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-6637-1-0
+Content-Length: 0
+
+

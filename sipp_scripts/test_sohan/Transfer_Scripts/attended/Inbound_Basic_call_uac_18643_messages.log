@@ -1,0 +1,62 @@
+----------------------------------------------- 2018-01-12 18:12:05:368.439
+TCP message sent (608 bytes):
+
+INVITE sip:81001002@sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-18643-1-0
+From: sip:81002002@sbcdev4.com;tag=1
+To: sip:81001002@192.168.5.80:5060
+Call-ID: 80c01bb7d5fde71ad2856d2eeb00
+CSeq: 1 INVITE
+Contact: sip:81002002@192.168.5.12:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length:   200
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-01-12 18:12:05:391.410
+TCP message received [231] bytes :
+
+SIP/2.0 100 Trying
+From: sip:81002002@sbcdev4.com;tag=1
+To: sip:81001002@192.168.5.80:5060
+CSeq: 1 INVITE
+Call-ID: 80c01bb7d5fde71ad2856d2eeb00
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-18643-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:12:05:408.105
+TCP message received [495] bytes :
+
+SIP/2.0 200 OK
+From: sip:81002002@sbcdev4.com;tag=1
+To: sip:81001002@192.168.5.80:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 80c01bb7d5fde71ad2856d2eeb00
+Contact: <sip:192.168.5.80:5060;transport=tcp>
+Allow: REFER
+Supported: replaces
+Via:SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-18643-1-0
+Content-Type: application/sdp
+Content-Length: 147
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 192.168.5.80
+t=0 0
+m=audio 35004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+

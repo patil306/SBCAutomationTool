@@ -1,0 +1,40 @@
+sipp: The following events occured:
+2018-10-18	14:38:30:348	1539853710.348091: Aborting call on unexpected message for Call-Id '1cff6810fe83a9068b33e41c0752972f': while expecting '200' (index 6), received 'SIP/2.0 100 Trying
+From: sip:81001001@10.133.39.159:5080;tag=1
+To: sip:81002001@10.133.73.4:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1cff6810fe83a9068b33e41c0752972f
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-6848-1-5
+Content-Length: 0
+
+'.
+2018-10-18	14:38:32:355	1539853712.355746: Dead call 1cff6810fe83a9068b33e41c0752972f (aborted at index 6), received 'SIP/2.0 200 OK
+From: sip:81001001@10.133.39.159:5080;tag=1
+To: sip:81002001@10.133.73.4:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1cff6810fe83a9068b33e41c0752972f
+Contact: <sip:10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=13;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-6848-1-5
+Require: timer
+Session-Expires: 90;refresher=uas
+Content-Type: application/sdp
+Content-Length: 363
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=image 35022 udptl t38
+a=T38FaxVersion:0
+a=T38maxBitRate:14400
+a=T38FaxFillBitRemoval:0
+a=T38FaxTranscodingMMR:0
+a=T38FaxTranscodingJBIG:0
+a=T38FaxRateManagement:transferredTCF
+a=T38FaxMaxBuffer:260
+a=T38FaxUdpEC:t38UDPRedundancy
+a=T38FaxMaxDatagram:72
+a=sendrecv
+'.

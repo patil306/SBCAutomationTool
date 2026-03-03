@@ -1,0 +1,144 @@
+----------------------------------------------- 2021-05-25 19:52:51:493.334
+TCP message received [973] bytes :
+
+INVITE sip:40006@10.133.39.159:5097 SIP/2.0
+From: sip:40006@10.133.48.163:15961;tag=1
+To: <sip:40006@10.133.39.159:5097>
+CSeq: 1 INVITE
+Call-ID: 2465275bb5666f5d770c390a9ffa8b39
+Contact: <sip:40006@10.133.48.163:5062;transport=tcp>
+Record-Route: <sip:10.133.48.163:5062;ipcs-line=1;lr;transport=tcp>
+Allow: UPDATE,PRACK,INFO,NOTIFY,OPTIONS,BYE,INVITE,ACK,CANCEL,REFER
+Supported: 100rel, timer, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.163:5062;branch=z9hG4bK-s1632-002127875748-1--s1632-;originator
+Subject: Performance Test
+Referred-By: sip:50003@10.133.39.159:5097
+Session-Expires: 1800;refresher=uac
+Min-SE: 90
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 227
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.163
+s=-
+c=IN IP4 10.133.48.163
+t=0 0
+m=audio 35004 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2021-05-25 19:52:51:493.859
+TCP message sent (320 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.48.163:5062;branch=z9hG4bK-s1632-002127875748-1--s1632-;originator
+From: sip:40006@10.133.48.163:15961;tag=1
+To: <sip:40006@10.133.39.159:5097>
+Call-ID: 2465275bb5666f5d770c390a9ffa8b39
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5097;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-05-25 19:52:51:493.977
+TCP message sent (655 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/TCP 10.133.48.163:5062;branch=z9hG4bK-s1632-002127875748-1--s1632-;originator
+From: sip:40006@10.133.48.163:15961;tag=1
+To: <sip:40006@10.133.39.159:5097>;tag=1
+Call-ID: 2465275bb5666f5d770c390a9ffa8b39
+CSeq: 1 INVITE
+Require: 100rel
+Rseq: 1
+Supported: 100rel, replaces, timer
+Contact: <sip:10.133.39.159:5097;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   231
+
+v=0
+o=user1 53655766 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6001 RTP/AVP 8 101 111
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=rtpmap:111 X-nt-inforeq/8000
+a=ptime:20
+a=sendrecv
+
+----------------------------------------------- 2021-05-25 19:52:51:526.229
+TCP message received [474] bytes :
+
+PRACK sip:10.133.39.159:5097;transport=TCP;x-b2b-refer-hand-send-hold SIP/2.0
+From: sip:40006@10.133.48.163:15961;tag=1
+To: sip:40006@10.133.39.159:5097;tag=1
+CSeq: 2 PRACK
+Call-ID: 2465275bb5666f5d770c390a9ffa8b39
+Record-Route: <sip:10.133.48.163:5062;ipcs-line=1;lr;transport=tcp>
+Supported: 100rel, replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.163:5062;branch=z9hG4bK-s1632-001622739291-1--s1632-;originator
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-05-25 19:52:51:526.332
+TCP message sent (325 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.48.163:5062;branch=z9hG4bK-s1632-001622739291-1--s1632-;originator
+From: sip:40006@10.133.48.163:15961;tag=1
+To: sip:40006@10.133.39.159:5097;tag=1;tag=1
+Call-ID: 2465275bb5666f5d770c390a9ffa8b39
+CSeq: 2 PRACK
+Contact: <sip:10.133.39.159:5097;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-05-25 19:52:52:527.757
+TCP message sent (666 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.48.163:5062;branch=z9hG4bK-s1632-002127875748-1--s1632-;originator
+Record-Route: <sip:10.133.48.163:5062;ipcs-line=1;lr;transport=tcp>
+From: sip:40006@10.133.48.163:15961;tag=1
+To: sip:40006@10.133.39.159:5097;tag=1;tag=1
+Call-ID: 2465275bb5666f5d770c390a9ffa8b39
+CSeq: 1 INVITE
+Contact: <sip:40006@10.133.39.159:5097;transport=TCP>
+Content-Type: application/sdp
+Content-Length:  231
+
+v=0
+o=user1 53655766 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6001 RTP/AVP 8 101 111
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=rtpmap:111 X-nt-inforeq/8000
+a=ptime:20
+a=sendrecv
+
+----------------------------------------------- 2021-05-25 19:52:52:541.877
+TCP message received [422] bytes :
+
+ACK sip:40006@10.133.39.159:5097;transport=TCP;x-b2b-refer-hand-send-hold SIP/2.0
+From: sip:40006@10.133.48.163:15961;tag=1
+To: sip:40006@10.133.39.159:5097;tag=1
+CSeq: 1 ACK
+Call-ID: 2465275bb5666f5d770c390a9ffa8b39
+Record-Route: <sip:10.133.48.163:5062;ipcs-line=1;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.163:5062;branch=z9hG4bK-s1632-001427650964-1--s1632-;originator
+Content-Length: 0
+
+

@@ -1,0 +1,73 @@
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:/C=US/O=Avaya Inc./OU=Sipera/CN=Avaya SBC Edge
+   i:/C=US/O=Avaya Inc./OU=SIP Product Certificate Authority/CN=SIP Product Certificate Authority
+ 1 s:/C=US/O=Avaya Inc./OU=SIP Product Certificate Authority/CN=SIP Product Certificate Authority
+   i:/C=US/O=Avaya Inc./OU=SIP Product Certificate Authority/CN=SIP Product Certificate Authority
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIEIzCCAwugAwIBAgIBODANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJVUzET
+MBEGA1UEChMKQXZheWEgSW5jLjEqMCgGA1UECxMhU0lQIFByb2R1Y3QgQ2VydGlm
+aWNhdGUgQXV0aG9yaXR5MSowKAYDVQQDEyFTSVAgUHJvZHVjdCBDZXJ0aWZpY2F0
+ZSBBdXRob3JpdHkwHhcNMTExMTE4MjM1MDIxWhcNMjExMTE1MjM1MDIxWjBMMQsw
+CQYDVQQGEwJVUzETMBEGA1UEChMKQXZheWEgSW5jLjEPMA0GA1UECxMGU2lwZXJh
+MRcwFQYDVQQDEw5BdmF5YSBTQkMgRWRnZTCBnzANBgkqhkiG9w0BAQEFAAOBjQAw
+gYkCgYEAych0f5E+sDuOwd7Nir1JAhUEpdsCQItvd84fryLjHXY/FByCGcEgdA//
+DQbPBucWWi+ZS1MKxZo6ycN0fqwvIdQhHwRNKSUzRopyk6EZIa+/W6ini60LszKC
+MMnl2pCmR5i+BCZjjE/gDdGTF/6DMN1ccUZ3y/uJYwecaaUP/KMCAwEAAaOCAWQw
+ggFgMAkGA1UdEwQCMAAwEQYJYIZIAYb4QgEBBAQDAgbAMCwGCWCGSAGG+EIBDQQf
+Fh1PcGVuU1NMIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQUmZquAJGo
+SVcJ3wqiY0JU2fktWogwgaQGA1UdIwSBnDCBmYAUoIIHKVw6oMQpuD3DHbkGVRO+
+ViqhfqR8MHoxCzAJBgNVBAYTAlVTMRMwEQYDVQQKEwpBdmF5YSBJbmMuMSowKAYD
+VQQLEyFTSVAgUHJvZHVjdCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkxKjAoBgNVBAMT
+IVNJUCBQcm9kdWN0IENlcnRpZmljYXRlIEF1dGhvcml0eYIBADA/BgNVHSAEODA2
+MDQGC2CGSAGG/AsHAgEBMCUwIwYIKwYBBQUHAgEWF21haWx0bzpzaXBjYUBhdmF5
+YS5jb207MAsGA1UdDwQEAwIF4DANBgkqhkiG9w0BAQUFAAOCAQEAfv1Vq9XpvZ7P
+pTKdsQVnq3epLGNwZvzV/FMryc/SLhwAUM4s3nzcLEEIhe/aRViXncn+F4N0TSM+
+rNhBud9uk/rGCB1aldUJw8cgMjs2+atP7be1EFcFuKnH16srmph40i17VWHOZx7O
+KAlWfcHbVFN+3lyodz6Y6P4ziDinHetlJXZJxsckwD2M87+CxY2Eky6KIzYgh/ZY
+naTKzAbIckXEaoFK0r7WuZwOBBnInQ2VX56zx37qCZsw7BWtMRERvZAmHzk9Kco3
+Ox2yS4aPgnAl5P+zGjybKKkQo4WR0nU1YcpLZ9klDvlpYmCzfWc3+WQ8J+52Rjj+
+vpg1JIIvxA==
+-----END CERTIFICATE-----
+subject=/C=US/O=Avaya Inc./OU=Sipera/CN=Avaya SBC Edge
+issuer=/C=US/O=Avaya Inc./OU=SIP Product Certificate Authority/CN=SIP Product Certificate Authority
+---
+No client certificate CA names sent
+---
+SSL handshake has read 2782 bytes and written 389 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 1024 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: 02EF37BA0B1B1E3B0807584EC999E64B55D797833F3A31255D7E0A4856F59620
+    Session-ID-ctx: 
+    Master-Key: 945CB68E4352D2A77655319A9AC6123D6BCB51365AD6082287AF074533C48E07282CA4C1EC09DB4A9E7EA0D4A224063C
+    Key-Arg   : None
+    Krb5 Principal: None
+    PSK identity: None
+    PSK identity hint: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - 68 c1 b7 ee e0 ac 3b 43-14 07 24 82 53 5c a7 62   h.....;C..$.S\.b
+    0010 - cb 94 a3 2c ab 0c 0f 18-a7 b5 16 6e 07 9b 9d 68   ...,.......n...h
+    0020 - 73 6a 2f 08 86 a8 e7 0f-9e 8b 30 05 a9 f0 69 5f   sj/.......0...i_
+    0030 - 31 83 6c c5 ac 8f 6c 04-3d 6a c7 e1 9e 37 9a 72   1.l...l.=j...7.r
+    0040 - e9 95 38 40 f8 83 a9 60-b2 d3 05 f7 43 4a 64 a7   ..8@...`....CJd.
+    0050 - bd e2 bd ff 1d 6a 62 6b-49 07 92 25 d3 28 8c 77   .....jbkI..%.(.w
+    0060 - 04 7f 1d 88 0a 9b f1 ba-0f 63 36 ef 93 35 96 37   .........c6..5.7
+    0070 - 63 59 94 e0 55 57 06 81-04 87 44 be 14 27 91 8e   cY..UW....D..'..
+    0080 - 95 e8 77 07 3f 17 13 66-3e ca 31 b8 90 70 9d 00   ..w.?..f>.1..p..
+    0090 - 47 02 64 a9 40 a9 ad 8e-e2 12 9c 00 d0 7a cf cb   G.d.@........z..
+
+    Start Time: 1586687191
+    Timeout   : 300 (sec)
+    Verify return code: 0 (ok)
+---

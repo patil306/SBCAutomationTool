@@ -1,0 +1,222 @@
+----------------------------------------------- 2018-04-11 18:18:06:867.686
+TCP message received [880] bytes :
+
+INVITE sip:4079@sbcdev4.com SIP/2.0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com
+CSeq: 1 INVITE
+Call-ID: 572fe830537c1f6b46549501a322dd3e
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=19;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000845558522-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 342
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35060 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+m=video 0 RTP/AVP 98
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+
+----------------------------------------------- 2018-04-11 18:18:06:868.107
+TCP message sent (288 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000845558522-1--s1632-
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com
+Call-ID: 572fe830537c1f6b46549501a322dd3e
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5065;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-04-11 18:18:06:868.280
+TCP message sent (295 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000845558522-1--s1632-
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+Call-ID: 572fe830537c1f6b46549501a322dd3e
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5065;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-04-11 18:18:06:868.483
+TCP message sent (659 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000845558522-1--s1632-
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+Call-ID: 572fe830537c1f6b46549501a322dd3e
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5065;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   334
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+ptime=20
+m=video 5030 RTP/AVP 98
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+
+----------------------------------------------- 2018-04-11 18:18:06:893.100
+TCP message received [454] bytes :
+
+ACK sip:4079@10.133.39.159:5065;transport=tcp SIP/2.0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+CSeq: 1 ACK
+Call-ID: 572fe830537c1f6b46549501a322dd3e
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=19;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001253412861-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-04-11 18:18:21:903.103
+TCP message received [938] bytes :
+
+INVITE sip:4079@sbcdev4.com SIP/2.0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+CSeq: 2 INVITE
+Call-ID: 572fe830537c1f6b46549501a322dd3e
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Route: <sip:10.133.39.159:5065;lr;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=19;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000189040609-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 344
+
+v=0
+o=user1 53655765 2353687638 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35062 RTP/AVP 8
+a=rtpmap:8 PCMA/8000/1
+a=ptime:20
+m=video 0 RTP/AVP 98
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+
+----------------------------------------------- 2018-04-11 18:18:21:903.362
+TCP message sent (682 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000189040609-1--s1632-
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+Call-ID: 572fe830537c1f6b46549501a322dd3e
+CSeq: 2 INVITE
+Contact: <sip:10.133.39.159:5065;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   335
+Supported: replaces,
+
+
+v=0
+o=user1 53655765 2353687638 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 8
+a=rtpmap:0 PCMA/8000/1
+ptime=20
+m=video 0 RTP/AVP 98
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+
+----------------------------------------------- 2018-04-11 18:18:21:921.681
+TCP message received [454] bytes :
+
+ACK sip:4079@10.133.39.159:5065;transport=tcp SIP/2.0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: 572fe830537c1f6b46549501a322dd3e
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=19;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001032258896-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-04-11 18:18:36:930.495
+TCP message received [449] bytes :
+
+BYE sip:10.133.39.159:5065;transport=tcp SIP/2.0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+CSeq: 3 BYE
+Call-ID: 572fe830537c1f6b46549501a322dd3e
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=19;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001879575967-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-04-11 18:18:36:930.688
+TCP message sent (287 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001879575967-1--s1632-
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+Call-ID: 572fe830537c1f6b46549501a322dd3e
+CSeq: 3 BYE
+Contact: <sip:10.133.39.159:5065;transport=TCP>
+Content-Length: 0
+
+

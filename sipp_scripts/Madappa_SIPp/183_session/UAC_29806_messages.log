@@ -1,0 +1,122 @@
+----------------------------------------------- 2021-09-15 17:12:06:519.556
+UDP message sent (714 bytes):
+
+INVITE sip:reddy2@test2.com SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-29806-1-0
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.36.32:5060
+Call-ID: 1-29806@10.133.39.159
+CSeq: 1 INVITE
+Supported: join, replaces, sdp-anat, timer
+Contact: sip:reddy1@10.133.39.159:5060
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+P-Asserted-Identity: <sip:+499511814633@bt.com>
+Content-Type: application/sdp
+Content-Length:   244
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 41532 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2021-09-15 17:12:06:523.908
+UDP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.36.32:5060
+CSeq: 1 INVITE
+Call-ID: 1-29806@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-29806-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-15 17:12:06:527.695
+UDP message received [576] bytes :
+
+SIP/2.0 183 Session Progress
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.36.32:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-29806@10.133.39.159
+Contact: <sip:10.133.36.32:5060;transport=udp>
+Record-Route: <sip:10.133.36.32:5060;ipcs-line=26;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-29806-1-0
+Content-Type: application/sdp
+Content-Length: 191
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.56.202
+s=-
+c=IN IP4 10.133.36.32
+t=0 0
+m=audio 35034 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2021-09-15 17:12:06:527.830
+UDP message sent (378 bytes):
+
+PRACK sip:10.133.36.32:5060;transport=udp SIP/2.0
+Via:  SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-29806-1-0
+From:  sip:reddy2@10.133.36.32:5060;tag=2
+To:   sip:reddy1@test2.com;tag=1
+Call-ID: 1-29806@10.133.39.159
+CSeq: 2 PRACK
+RAck: 1 1 INVITE
+Contact: <sip:reddy1@10.133.39.159:5060;transport=UDP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-15 17:12:06:528.439
+UDP message received [252] bytes :
+
+SIP/2.0 481 Call/Transaction Does Not Exist
+From:  sip:reddy2@10.133.36.32:5060;tag=2
+To:   sip:reddy1@test2.com;tag=1
+CSeq: 2 PRACK
+Call-ID: 1-29806@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-29806-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected UDP message received:
+
+SIP/2.0 481 Call/Transaction Does Not Exist
+From:  sip:reddy2@10.133.36.32:5060;tag=2
+To:   sip:reddy1@test2.com;tag=1
+CSeq: 2 PRACK
+Call-ID: 1-29806@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-29806-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-15 17:12:06:528.599
+UDP message sent (292 bytes):
+
+BYE  SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-29806-1--1
+From:  sip:reddy2@10.133.36.32:5060;tag=2
+To:   sip:reddy1@test2.com;tag=1
+Call-ID: 1-29806@10.133.39.159
+CSeq: 3 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:5060;transport=UDP>
+Content-Length: 0
+
+

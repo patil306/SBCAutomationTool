@@ -1,0 +1,27 @@
+sipp: The following events occured:
+2017-12-28	15:21:45:101	1514454705.101396: Aborting call on unexpected message for Call-Id 'c39e765e00bf357ecd225c2871a5ec1d': while expecting 'BYE' (index 7), received 'ACK sip:4079@10.133.39.159:5060;transport=tcp SIP/2.0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: c39e765e00bf357ecd225c2871a5ec1d
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=4;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000648307994-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2017-12-28	15:21:53:106	1514454713.106785: Dead call c39e765e00bf357ecd225c2871a5ec1d (aborted at index 7), received 'BYE sip:10.133.39.159:5060;transport=tcp SIP/2.0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+CSeq: 3 BYE
+Call-ID: c39e765e00bf357ecd225c2871a5ec1d
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=4;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001637078056-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.

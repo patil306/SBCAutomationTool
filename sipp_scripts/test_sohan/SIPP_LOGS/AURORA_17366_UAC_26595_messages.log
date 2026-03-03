@@ -1,0 +1,250 @@
+----------------------------------------------- 2019-06-27 16:32:25:503.300
+TCP message sent (344 bytes):
+
+REGISTER sip:10.133.48.238 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-0
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>
+Call-ID: 1-26595@10.133.39.159
+CSeq: 1 REGISTER
+Contact: <sip:4078@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Expires: 1800
+User-Agent: SIPp/Linux
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:25:519.960
+TCP message received [217] bytes :
+
+SIP/2.0 100 Trying
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 REGISTER
+Call-ID: 1-26595@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:29:522.268
+TCP message sent (344 bytes):
+
+REGISTER sip:10.133.48.238 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-0
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>
+Call-ID: 1-26595@10.133.39.159
+CSeq: 1 REGISTER
+Contact: <sip:4078@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Expires: 1800
+User-Agent: SIPp/Linux
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:29:526.209
+TCP message received [217] bytes :
+
+SIP/2.0 100 Trying
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 REGISTER
+Call-ID: 1-26595@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:32:539.847
+TCP message received [286] bytes :
+
+SIP/2.0 200 OK
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>;tag=2
+CSeq: 1 REGISTER
+Call-ID: 1-26595@10.133.39.159
+Contact: <sip:4078@10.133.39.159:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-0
+Expires: 60
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:32:540.029
+TCP message sent (418 bytes):
+
+SUBSCRIBE sip:service@10.133.48.238:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-3
+From: <sip:4078@sbcdev4.com>;tag=26595SIPpTag001
+To: <sip:4078@sbcdev4.com>
+Call-ID: 1-26595@10.133.39.159
+CSeq: 1 SUBSCRIBE
+Contact: <sip:4078@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Event: presence
+Expires: 60
+Accept: application/pidf+xml
+Allow-Events: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:32:546.407
+TCP message received [232] bytes :
+
+SIP/2.0 100 Trying
+From: <sip:4078@sbcdev4.com>;tag=26595SIPpTag001
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 SUBSCRIBE
+Call-ID: 1-26595@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:36:546.685
+TCP message sent (418 bytes):
+
+SUBSCRIBE sip:service@10.133.48.238:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-3
+From: <sip:4078@sbcdev4.com>;tag=26595SIPpTag001
+To: <sip:4078@sbcdev4.com>
+Call-ID: 1-26595@10.133.39.159
+CSeq: 1 SUBSCRIBE
+Contact: <sip:4078@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Event: presence
+Expires: 60
+Accept: application/pidf+xml
+Allow-Events: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:36:553.298
+TCP message received [232] bytes :
+
+SIP/2.0 100 Trying
+From: <sip:4078@sbcdev4.com>;tag=26595SIPpTag001
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 SUBSCRIBE
+Call-ID: 1-26595@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:40:554.948
+TCP message sent (418 bytes):
+
+SUBSCRIBE sip:service@10.133.48.238:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-3
+From: <sip:4078@sbcdev4.com>;tag=26595SIPpTag001
+To: <sip:4078@sbcdev4.com>
+Call-ID: 1-26595@10.133.39.159
+CSeq: 1 SUBSCRIBE
+Contact: <sip:4078@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Event: presence
+Expires: 60
+Accept: application/pidf+xml
+Allow-Events: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:40:559.852
+TCP message received [232] bytes :
+
+SIP/2.0 100 Trying
+From: <sip:4078@sbcdev4.com>;tag=26595SIPpTag001
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 SUBSCRIBE
+Call-ID: 1-26595@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:44:560.826
+TCP message sent (418 bytes):
+
+SUBSCRIBE sip:service@10.133.48.238:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-3
+From: <sip:4078@sbcdev4.com>;tag=26595SIPpTag001
+To: <sip:4078@sbcdev4.com>
+Call-ID: 1-26595@10.133.39.159
+CSeq: 1 SUBSCRIBE
+Contact: <sip:4078@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Event: presence
+Expires: 60
+Accept: application/pidf+xml
+Allow-Events: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:44:563.896
+TCP message received [232] bytes :
+
+SIP/2.0 100 Trying
+From: <sip:4078@sbcdev4.com>;tag=26595SIPpTag001
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 SUBSCRIBE
+Call-ID: 1-26595@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:48:566.201
+TCP message sent (418 bytes):
+
+SUBSCRIBE sip:service@10.133.48.238:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-3
+From: <sip:4078@sbcdev4.com>;tag=26595SIPpTag001
+To: <sip:4078@sbcdev4.com>
+Call-ID: 1-26595@10.133.39.159
+CSeq: 1 SUBSCRIBE
+Contact: <sip:4078@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Event: presence
+Expires: 60
+Accept: application/pidf+xml
+Allow-Events: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:48:571.969
+TCP message received [232] bytes :
+
+SIP/2.0 100 Trying
+From: <sip:4078@sbcdev4.com>;tag=26595SIPpTag001
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 SUBSCRIBE
+Call-ID: 1-26595@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:52:574.552
+TCP message sent (418 bytes):
+
+SUBSCRIBE sip:service@10.133.48.238:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-3
+From: <sip:4078@sbcdev4.com>;tag=26595SIPpTag001
+To: <sip:4078@sbcdev4.com>
+Call-ID: 1-26595@10.133.39.159
+CSeq: 1 SUBSCRIBE
+Contact: <sip:4078@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Event: presence
+Expires: 60
+Accept: application/pidf+xml
+Allow-Events: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 16:32:52:578.309
+TCP message received [232] bytes :
+
+SIP/2.0 100 Trying
+From: <sip:4078@sbcdev4.com>;tag=26595SIPpTag001
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 SUBSCRIBE
+Call-ID: 1-26595@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-26595-1-3
+Content-Length: 0
+
+

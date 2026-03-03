@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+
+<scenario name="Register">
+
+<recv request="REGISTER" crlf="true">
+<action>
+<ereg regexp="subid_ipcs=" search_in="hdr" header="Contact" assign_to="4,5"/>
+<assign assign_to="4" variable="5" />
+</action>
+</recv>
+
+
+<send>
+<![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=2
+[last_Call-ID:]
+CSeq: 1 REGISTER
+Contact: <sip:4078@192.168.55.79:[local_port];subid_ipcs=;transport=[transport]>;+av.sdp.anat
+Content-Length: 0
+Expires: 60
+]]>
+</send>
+
+</scenario>
+

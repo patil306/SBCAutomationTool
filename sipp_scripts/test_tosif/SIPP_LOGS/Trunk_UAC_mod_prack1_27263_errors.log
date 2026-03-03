@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2018-10-29	21:51:42:652	1540830102.652332: Aborting call on unexpected message for Call-Id '1-27263@192.168.5.12': while expecting '180' (index 2), received 'SIP/2.0 500 Server Internal Error
+From: sip:81002001@192.168.5.12:5075;tag=1
+To: sip:81001001@192.168.55.72:5060;tag=zXcVbNm0e20550e2
+CSeq: 1 INVITE
+Call-ID: 1-27263@192.168.5.12
+Via: SIP/2.0/TCP 192.168.5.12:5075;branch=z9hG4bK-27263-1-0
+Warning: 399 192.168.55.72 "Internal Error 26"
+Content-Length: 0
+
+'.

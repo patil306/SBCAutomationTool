@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2018-07-17	12:13:04:453	1531809784.453341: Aborting call on unexpected message for Call-Id '1-25853@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5060;tag=zXcVbNm100aa4517
+CSeq: 1 INVITE
+Call-ID: 1-25853@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5075;branch=z9hG4bK-25853-1-0
+Warning: 304 10.133.48.235 "Media Type is not allowed by codec policy"
+Content-Length: 0
+
+'.

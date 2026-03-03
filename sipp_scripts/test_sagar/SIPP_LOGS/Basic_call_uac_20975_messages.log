@@ -1,0 +1,81 @@
+----------------------------------------------- 2018-11-19 15:27:14:956.777
+TCP message sent (678 bytes):
+
+INVITE sip:40006@10.133.48.149:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-20975-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+Call-ID: 1-20975@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:192.168.25.6:5061;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   217
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/AVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+
+
+----------------------------------------------- 2018-11-19 15:27:14:967.406
+TCP message received [222] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 1-20975@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-20975-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-11-19 15:27:14:967.925
+TCP message received [258] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm770dde625
+CSeq: 1 INVITE
+Call-ID: 1-20975@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-20975-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm770dde625
+CSeq: 1 INVITE
+Call-ID: 1-20975@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-20975-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-11-19 15:27:14:968.231
+TCP message sent (333 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-20975-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm770dde625
+Call-ID: 1-20975@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+<!--      User-to-User: 00FA080001001056965CFB;encoding=hex -->
+
+<scenario name="Basic Sipstone UAC">
+
+  <send retrans="500">
+    <![CDATA[
+      INVITE sip:[field1]@[field3] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port]
+      Call-ID: [call_id]
+      CSeq: 1 INVITE
+      Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP
+      Supported: replaces
+      Max-Forwards: 70
+      Subject: Performance Test
+      User-to-User: 00FA080001001056965CFB;encoding=hex
+      Require: sdp-anat
+      Content-Type: application/sdp
+      Content-Length: [len]
+      
+v=0
+o=sips:66074001@20.20.64.86 9 2 IN IP4 10.133.67.145
+s=-
+b=TIAS:64000
+t=0 0
+a=activetalker:1
+a=group:ANAT 1 2
+m=audio 35196 RTP/AVP 116 9 8 0 110 18 120
+c=IN IP4 10.133.67.145
+a=sendrecv
+a=rtpmap:116 OPUS/48000/2
+a=fmtp:116 maxplaybackrate=16000;sprop-maxcapturerate=16000;maxaveragebitrate=20000;stereo=0;sprop-stereo=0;cbr=0;useinbandfec=1;usedtx=0
+a=minptime:20
+a=maxptime:20
+a=rtpmap:9 G722/8000/1
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:0 PCMU/8000/1
+a=rtpmap:110 G726-32/8000/1
+a=rtpmap:18 G729/8000/1
+a=rtpmap:120 telephone-event/8000
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_256_CM_HMAC_SHA1_80 inline:vT68GUlfbcWUIkrNaWgIDjyATf92lzIi38PdZzR34ukPtIwrdkuQt6Cetn16Fg== UNENCRYPTED_SRTCP
+a=acap:2 crypto:2 AES_CM_128_HMAC_SHA1_80 inline:Yob4tpzO4S4PrSzo1KVewljvpkr8sZX4/NpfS2b7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+a=pcfg:2 t=1 a=2
+a=mid:1
+m=audio 35078 RTP/AVP 116 9 8 0 110 18 120
+c=IN IP6 2a07:2a42:adc0:11f::145
+a=sendrecv
+a=rtpmap:116 OPUS/48000/2
+a=fmtp:116 maxplaybackrate=16000; sprop-maxcapturerate=16000; maxaveragebitrate=20000; stereo=0; sprop-stereo=0; cbr=0; useinbandfec=1; usedtx=0
+a=minptime:20
+a=maxptime:20
+a=rtpmap:9 G722/8000/1
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:0 PCMU/8000/1
+a=rtpmap:110 G726-32/8000/1
+a=rtpmap:18 G729/8000/1
+a=rtpmap:120 telephone-event/8000
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_256_CM_HMAC_SHA1_80 inline:vT68GUlfbcWUIkrNaWgIDjyATf92lzIi38PdZzR34ukPtIwrdkuQt6Cetn16Fg== UNENCRYPTED_SRTCP
+a=acap:2 crypto:2 AES_CM_128_HMAC_SHA1_80 inline:Yob4tpzO4S4PrSzo1KVewljvpkr8sZX4/NpfS2b7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+a=pcfg:2 t=1 a=2
+a=mid:2
+    ]]>
+  </send>
+
+  <recv response="100" optional="true">
+  </recv>
+
+  <recv response="180" optional="true">
+  </recv>
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<recv response="200" rrs="true">
+        <action>
+                   <ereg regexp="sip.*[^>]" search_in="hdr" header="Contact:" assign_to="1"/>
+                           </action>
+                           </recv> 
+<!-- Packet lost can be simulated in any send/recv message by         -->
+<!-- by adding the 'lost = "10"'. Value can be [1-100] percent.       -->
+<!-- ACK sip:[service]@[remote_ip]:[remote_port] SIP/2.0 -->
+
+  <send>
+    <![CDATA[
+      ACK sip:[field1]@[remote_ip]:[remote_port];transport=TCP SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 1 ACK
+      Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP
+      Max-Forwards: 70
+      [routes]
+      Subject: Performance Test
+      Content-Length: 0
+     ]]>
+  </send>
+<pause milliseconds="3000"/> 
+
+ <send retrans="500">
+    <![CDATA[
+      INVITE sip:[field1]@[field3] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port]
+      Call-ID: [call_id]
+      CSeq: 2 INVITE
+      Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP
+      Supported: replaces
+      Max-Forwards: 70
+      Subject: Performance Test
+      User-to-User: 00FA080001001056965CFB;encoding=hex
+      Require: sdp-anat
+      Content-Type: application/sdp
+      Content-Length: [len]
+
+v=0
+o=- 1578639739 3 IN IP4 10.133.67.25
+s=-
+c=IN IP4 10.133.67.145
+b=TIAS:1088000
+t=0 0
+a=group:ANAT 1
+a=group:ANAT 4
+a=group:ANAT 5
+a=activetalker:1
+m=audio 35212 RTP/AVP 0 8 18 9 120
+c=IN IP4 10.133.67.145
+a=sendrecv
+a=fmtp:18 annexb=no
+a=rtpmap:120 telephone-event/8000
+a=mid:1
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_256_CM_HMAC_SHA1_80 inline:SXXpbLR7cekkCjGhUV6x0eE7AXYaTnlQlhexCRtsN6FJHIochPHc+AsMC1NwMQ== UNENCRYPTED_SRTCP
+a=acap:2 crypto:2 AES_CM_128_HMAC_SHA1_80 inline:GQTKL0Z2CErLEGwz0XDvIBvMhRN3K8NmalSn8OfB UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+a=pcfg:2 t=1 a=2
+a=minptime:20
+m=audio 0 RTP/AVP 0
+c=IN IP6 ::
+a=inactive
+a=mid:2
+m=video 35226 RTP/AVP 100 98
+c=IN IP4 10.133.67.145
+b=TIAS:1024000
+a=sendrecv
+a=rtpmap:100 H264/90000
+a=fmtp:100 profile-level-id=640c1f;packetization-mode=1
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f
+a=content:main
+a=label:11
+a=mid:4
+a=tcap:2 RTP/SAVP
+a=acap:3 crypto:1 AES_256_CM_HMAC_SHA1_80 inline:yfCHoBNLnCnZC4is6vablhuAk6/shEgC42tC9IsQrg0OvDcof0bF4LVEx+TFJQ== UNENCRYPTED_SRTCP
+a=acap:4 crypto:2 AES_CM_128_HMAC_SHA1_80 inline:TRJK3rppImwPbA6gSOfoArG2DU7eGL1/6F692OhV UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=3
+a=pcfg:2 t=2 a=4
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+m=application 35228 UDP/BFCP *
+c=IN IP4 10.133.67.145
+a=sendrecv
+a=connection:new
+a=setup:actpass
+a=floorctrl:c-only
+a=mid:5
+]]>
+</send>
+
+  <recv response="100" optional="true">
+  </recv>
+
+  <recv response="180" optional="true">
+  </recv>
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<recv response="200" rrs="true">
+</recv>
+
+  <send>
+    <![CDATA[
+      ACK sip:[field1]@[remote_ip]:[remote_port];transport=TCP SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 2 ACK
+      Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP
+      Max-Forwards: 70
+      [routes]
+      Subject: Performance Test
+      Content-Length: 0
+     ]]>
+  </send>
+<pause milliseconds="3000"/>
+
+
+<!-- This delay can be customized by the -d command-line option       -->
+<!-- or by adding a 'milliseconds = "value"' option here.             -->
+
+<!-- The 'crlf' option inserts a blank line in the statistics report. -->
+<!-- BYE sip:[service]@[remote_ip]:[remote_port] SIP/2.0 -->
+<!-- original: BYE sip:[field1]@[remote_ip]:[remote_port];transport=TCP SIP/2.0  -->
+<!-- original: Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP -->
+
+  <send retrans="500">
+    <![CDATA[
+      BYE [$1] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      CSeq: 3 BYE
+      [routes]
+      Max-Forwards: 70
+      Subject: Performance Test
+      Content-Length: 0
+   ]]>
+  </send>
+  <recv response="200" rtd="true">
+  </recv>
+
+-->
+<!-- definition of the response time repartition table (unit is ms)   -->
+  <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+<!-- definition of the call length repartition table (unit is ms)     -->
+  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+
+</scenario>

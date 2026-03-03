@@ -1,0 +1,293 @@
+#include <cstdio>
+#include <iostream>
+#include <openssl/pem.h>
+#include <openssl/x509.h>
+#include <string.h>
+#include <openssl/bio.h>
+#include  <iomanip>
+
+using namespace std;
+
+
+/* Generates a 2048-bit RSA key. */
+EVP_PKEY * generate_key()
+{
+    /* Allocate memory for the EVP_PKEY structure. */
+    EVP_PKEY * pkey = EVP_PKEY_new();
+    if(!pkey)
+    {
+        std::cerr << "Unable to create EVP_PKEY structure." << std::endl;
+        return NULL;
+    }
+    
+    /* Generate the RSA key and assign it to pkey. */
+    RSA * rsa = RSA_generate_key(2048, RSA_F4, NULL, NULL);
+    if(!EVP_PKEY_assign_RSA(pkey, rsa))
+    {
+        std::cerr << "Unable to generate 2048-bit RSA key." << std::endl;
+        EVP_PKEY_free(pkey);
+        return NULL;
+    }
+    
+    /* The key has been generated, return it. */
+    return pkey;
+}
+
+/* Generates a self-signed x509 certificate. */
+X509 * generate_x509_cert(EVP_PKEY * pkey)
+{
+    /* Allocate memory for the X509 structure. */
+    X509 * x509 = X509_new();
+    if(!x509)
+    {
+        std::cerr << "Unable to create X509 structure." << std::endl;
+        return NULL;
+    }
+    
+    /* Set the serial number. */
+    ASN1_INTEGER_set(X509_get_serialNumber(x509), 1);
+    
+    /* This certificate is valid from now until exactly one year from now. */
+    X509_gmtime_adj(X509_get_notBefore(x509), 0);
+    X509_gmtime_adj(X509_get_notAfter(x509), 31536000L);
+    
+    /* Set the public key for our certificate. */
+    X509_set_pubkey(x509, pkey);
+    
+    /* We want to copy the subject name to the issuer name. */
+    X509_NAME * name = X509_get_subject_name(x509);
+    
+    /* Set the country code and common name. */
+    X509_NAME_add_entry_by_txt(name, "C",  MBSTRING_ASC, (unsigned char *)"CA",        -1, -1, 0);
+    X509_NAME_add_entry_by_txt(name, "O",  MBSTRING_ASC, (unsigned char *)"MyCompany", -1, -1, 0);
+    X509_NAME_add_entry_by_txt(name, "CN", MBSTRING_ASC, (unsigned char *)"localhost", -1, -1, 0);
+    
+    /* Now set the issuer name. */
+    X509_set_issuer_name(x509, name);
+    
+    /* Actually sign the certificate with our key. */
+    if(!X509_sign(x509, pkey, EVP_sha1()))
+    {
+        std::cerr << "Error signing certificate." << std::endl;
+        X509_free(x509);
+        return NULL;
+    }
+    
+    return x509;
+}
+
+bool write_to_disk(EVP_PKEY * pkey, X509 * x509, unsigned char *fprint, unsigned int i, unsigned int m_lines)
+{
+    /* Open the PEM file for writing the key to disk. */
+    static int pair_fp = 0;
+    static int media_port = 49152;
+    string key_file = "key" + to_string((long long unsigned)i) + ".pem";
+    FILE * pkey_file = fopen(key_file.c_str(), "wb");
+    if(!pkey_file)
+    {
+        std::cerr << "Unable to open \"key.pem\" for writing." << std::endl;
+        return false;
+    }
+    
+    /* Write the key to disk. */
+    bool ret = PEM_write_PrivateKey(pkey_file, pkey, NULL, NULL, 0, NULL, NULL);
+    fclose(pkey_file);
+    
+    if(!ret)
+    {
+        std::cerr << "Unable to write private key to disk." << std::endl;
+        return false;
+    }
+    
+    /* Open the PEM file for writing the certificate to disk. */
+    string cert_file = "cert" + to_string((long long unsigned)i)  + ".pem";
+    FILE * x509_file = fopen(cert_file.c_str(), "wb");
+    if(!x509_file)
+    {
+        std::cerr << "Unable to open \"cert.pem\" for writing." << std::endl;
+        return false;
+    }
+    
+    /* Write the certificate to disk. */
+    ret = PEM_write_X509(x509_file, x509);
+    fclose(x509_file);
+    
+    if(!ret)
+    {
+        std::cerr << "Unable to write certificate to disk." << std::endl;
+        return false;
+    }
+    
+    /* Open the PEM file for writing the certificate to disk. */
+    FILE * fprint_file = fopen("finger_print.csv", "awb");
+    if(!fprint_file)
+    {
+        std::cerr << "Unable to open \"fprint_file\" for writing." << std::endl;
+        return false;
+    }
+    if (pair_fp == 0 || m_lines == 1)
+    {
+            if(m_lines == 2)
+            {
+      		fprintf(fprint_file, "%d;", media_port);
+	      	media_port += 2;
+      		fprintf(fprint_file, "%d;", media_port);
+      		media_port += 2;
+    	    }
+   	    else
+    	    {
+      		fprintf(fprint_file, "%d;", media_port);
+      		media_port += 2; 
+    	    }
+        std::cout << "Port set" << std::endl;
+        if (m_lines == 2)
+        pair_fp = 1;
+    }
+    else
+            pair_fp = 0;
+
+    /* Write the certificate to disk. */
+    for (int j=0; j<20; j++) {
+        if (pair_fp == 1 && m_lines == 2)
+        {
+            ret = fprintf(fprint_file, "%02X%c", fprint[j], (j+1 == 20) ?';':':');
+        }
+        else
+        {
+            ret = fprintf(fprint_file, "%02X%c", fprint[j], (j+1 == 20) ?'\n':':');
+        }
+    }
+/*
+    if (pair_fp == 0)
+       pair_fp = 1;
+    else
+       pair_fp = 0;
+*/
+    fclose(fprint_file);
+
+    if(!ret)
+    {
+        std::cerr << "Unable to write certificate to disk." << std::endl;
+        return false;
+    }
+
+    return true;
+}
+
+bool generate_finger_print(X509 * cert, unsigned char *fprint)
+{
+    const EVP_MD *fprint_type = NULL;
+    unsigned int fprint_size = 0;
+    // Set the digest method and calculate the cert fingerprint
+    // SHA-1 creates a 160bit hash, displayed as a 20 byte string
+    fprint_type = EVP_sha1();
+
+    if (!X509_digest(cert, fprint_type, fprint, &fprint_size))
+    {
+        std::cerr << "Error creating the certificate fingerprint" << std::endl;
+        return false;
+    }
+    /*
+    std::cout << "Fingerprint size: " << fprint_size << std::endl;
+
+    BIO               *outbio = NULL;
+    outbio  = BIO_new_fp(stdout, BIO_NOCLOSE);
+    for (int j=0; j<fprint_size; ++j) BIO_printf(outbio, "%02x ", fprint[j]);
+    BIO_printf(outbio,"\n");
+    */
+
+    return true;
+}
+
+int main(int argc, char ** argv)
+{
+    int num_of_calls = 0;
+    int m_lines = 0;
+    if (argc == 3)
+    {
+        num_of_calls = atoi(argv[1]);
+        m_lines = atoi(argv[2]);
+        std::cout << "Number of calls :" << num_of_calls <<" M lines: " << m_lines << std::endl;
+    }
+    else
+    {
+       std::cout << "./openssl_create_cert <number_of_calls> <m_lines>" << std::endl;
+       return 0;
+    }
+    // delete old fingerprint.csv file
+    remove("finger_print.csv");
+    remove("*.pem");
+
+    // Create new csv file
+    FILE * fp;
+    fp = fopen ("finger_print.csv", "w+");
+    fprintf(fp, "%s", "SEQUENTIAL\n"); 
+    fclose(fp);
+
+    for(int i=1; i<=num_of_calls*m_lines; i++)
+    {
+    /* Generate the key. */
+    //std::cout << "Generating RSA key..." << std::endl;
+    
+    EVP_PKEY * pkey = generate_key();
+    if(!pkey)
+        return 1;
+    
+    /* Generate the certificate. */
+    //std::cout << "Generating x509 certificate..." << std::endl;
+    
+    X509 * x509 = generate_x509_cert(pkey);
+    if(!x509)
+    {
+        EVP_PKEY_free(pkey);
+        return 1;
+    }
+    
+    /* Generate the fingerprint. */
+    //std::cout << "Generating certificate fingerprint..." << std::endl;
+
+    unsigned char fprint[EVP_MAX_MD_SIZE];
+    memset(fprint, '\0', sizeof(char)*EVP_MAX_MD_SIZE);
+
+    bool ret = generate_finger_print(x509, fprint);
+
+    /*
+    BIO               *outbio = NULL;
+    outbio  = BIO_new_fp(stdout, BIO_NOCLOSE);
+    for (int j=0; j<20; ++j) BIO_printf(outbio, "%02x ", fprint[j]);
+    BIO_printf(outbio,"\n");
+    /*
+    /* OpenSSL fingerprint-style: uppercase hex bytes with colon */
+    /*
+    for (int j=0; j<20; j++) {
+      BIO_printf(outbio,"%02X%c", fprint[j], (j+1 == 20) ?'\n':':');
+    }
+    char openssl_fprint[EVP_MAX_MD_SIZE];
+    memset(openssl_fprint, '\0', sizeof(char)*EVP_MAX_MD_SIZE);
+    for (int j=0; j<20; j++) {
+        snprintf(openssl_fprint, EVP_MAX_MD_SIZE, "%02X%c", fprint[j], (j+1 == 20) ?'\n':':');
+    }
+    */
+
+    if(!ret)
+    {
+        std::cout << "Error in generating fingerprint" << std::endl;
+        return 1;
+    }
+
+    /* Write the private key and certificate out to disk. */
+    //std::cout << "Writing key and certificate to disk..." << std::endl;
+    
+    ret = write_to_disk(pkey, x509, fprint, i, m_lines);
+    if(!ret)
+    {
+        std::cout << "Error in writing cert in file" << std::endl;
+        return 1;
+    }
+    
+    EVP_PKEY_free(pkey);
+    X509_free(x509);
+    }
+
+    return 0;
+}

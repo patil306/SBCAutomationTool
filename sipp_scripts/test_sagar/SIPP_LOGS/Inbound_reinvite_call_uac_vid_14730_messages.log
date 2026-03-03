@@ -1,0 +1,217 @@
+----------------------------------------------- 2018-04-11 11:58:53:234.634
+TCP message sent (754 bytes):
+
+INVITE sip:4079@sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5063;branch=z9hG4bK-14730-1-0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060
+Call-ID: 1-14730@192.168.6.5
+CSeq: 1 INVITE
+Contact: sip:4078@192.168.6.5:5063;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   321
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 5004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+m=video 5030 RTP/SAVP 98
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+
+----------------------------------------------- 2018-04-11 11:58:53:258.219
+TCP message received [214] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060
+CSeq: 1 INVITE
+Call-ID: 1-14730@192.168.6.5
+Via: SIP/2.0/TCP 192.168.6.5:5063;branch=z9hG4bK-14730-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-04-11 11:58:53:266.949
+TCP message received [360] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=3
+CSeq: 1 INVITE
+Call-ID: 1-14730@192.168.6.5
+Contact: <sip:192.168.6.223:5060;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=7;lr;transport=tcp>
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5063;branch=z9hG4bK-14730-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-04-11 11:58:53:276.777
+TCP message received [711] bytes :
+
+SIP/2.0 200 OK
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=3
+CSeq: 1 INVITE
+Call-ID: 1-14730@192.168.6.5
+Contact: <sip:192.168.6.223:5060;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=7;lr;transport=tcp>
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5063;branch=z9hG4bK-14730-1-0
+Content-Type: application/sdp
+Content-Length: 323
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+m=video 5030 RTP/SAVP 98
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+
+----------------------------------------------- 2018-04-11 11:58:53:277.143
+TCP message sent (409 bytes):
+
+ACK sip:4079@192.168.6.223:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5063;branch=z9hG4bK-14730-1-4
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=3
+Call-ID: 1-14730@192.168.6.5
+CSeq: 1 ACK
+Contact: sip:4078@192.168.6.5:5063;transport=TCP
+Max-Forwards: 70
+Route: <sip:192.168.6.223:5060;ipcs-line=7;lr;transport=tcp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-04-11 11:58:54:78.463
+TCP message sent (810 bytes):
+
+INVITE sip:4079@sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5063;branch=z9hG4bK-14730-1-6
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;;tag=3
+Call-ID: 1-14730@192.168.6.5
+CSeq: 2 INVITE
+Contact: sip:4078@192.168.6.5:5063;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Route: <sip:10.133.39.159:5065;lr;transport=tcp>
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   320
+
+v=0
+o=user1 53655765 2353687638 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 5006 RTP/AVP 8
+a=rtpmap:8 PCMA/8000/1
+m=video 0 RTP/SAVP 98
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+
+----------------------------------------------- 2018-04-11 11:58:54:91.227
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=3
+CSeq: 2 INVITE
+Call-ID: 1-14730@192.168.6.5
+Via: SIP/2.0/TCP 192.168.6.5:5063;branch=z9hG4bK-14730-1-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-04-11 11:58:54:98.627
+TCP message received [432] bytes :
+
+SIP/2.0 200 OK
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=3
+CSeq: 2 INVITE
+Call-ID: 1-14730@192.168.6.5
+Contact: <sip:192.168.6.223:5060;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=7;lr;transport=tcp>
+Supported: replaces,
+Via: SIP/2.0/TCP 192.168.6.5:5063;branch=z9hG4bK-14730-1-6
+Warning: 399 10.133.73.4 "Internal Error 5"
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-04-11 11:58:54:98.940
+TCP message sent (409 bytes):
+
+ACK sip:4079@192.168.6.223:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5063;branch=z9hG4bK-14730-1-9
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=3
+Call-ID: 1-14730@192.168.6.5
+CSeq: 1 ACK
+Contact: sip:4078@192.168.6.5:5063;transport=TCP
+Max-Forwards: 70
+Route: <sip:192.168.6.223:5060;ipcs-line=7;lr;transport=tcp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-04-11 11:59:02:100.366
+TCP message sent (405 bytes):
+
+BYE sip:192.168.6.223:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5063;branch=z9hG4bK-14730-1-11
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=3
+Call-ID: 1-14730@192.168.6.5
+Contact: sip:4078@192.168.6.5:5063;transport=TCP
+CSeq: 3 BYE
+Route: <sip:192.168.6.223:5060;ipcs-line=7;lr;transport=tcp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-04-11 11:59:02:108.971
+TCP message received [353] bytes :
+
+SIP/2.0 200 OK
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=3
+CSeq: 3 BYE
+Call-ID: 1-14730@192.168.6.5
+Contact: <sip:192.168.6.223:5060;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=7;lr;transport=tcp>
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5063;branch=z9hG4bK-14730-1-11
+Content-Length: 0
+
+

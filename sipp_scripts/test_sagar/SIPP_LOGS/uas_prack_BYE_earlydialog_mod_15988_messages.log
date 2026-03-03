@@ -1,0 +1,121 @@
+----------------------------------------------- 2017-11-24 15:29:49:677.915
+TCP message received [758] bytes :
+
+INVITE sip:4079@sbcdev4.com;transport=tcp SIP/2.0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com
+CSeq: 1 INVITE
+Call-ID: 929a3b1b3146876f0e060038d69f7441
+Contact: <sip:4078@10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=8;lr;transport=tcp>
+Supported: replaces, 100rel
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000738994427-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 211
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35014 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2017-11-24 15:29:49:678.171
+TCP message sent (340 bytes):
+
+SIP/2.0 100 Trying
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com
+Call-ID: 929a3b1b3146876f0e060038d69f7441
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000738994427-1--s1632-
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=8;lr;transport=tcp>
+Content-Length: 0
+User-Agent: Avaya one-X Emulator
+
+
+----------------------------------------------- 2017-11-24 15:29:49:678.261
+TCP message sent (721 bytes):
+
+SIP/2.0 183 Session Progress
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+Call-ID: 929a3b1b3146876f0e060038d69f7441
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000738994427-1--s1632-
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=8;lr;transport=tcp>
+Contact: <sip:50001@10.133.39.159:5060;transport=TCP>
+Allow: INVITE,CANCEL,BYE,ACK,SUBSCRIBE,NOTIFY,MESSAGE,INFO,PUBLISH,REFER,UPDATE,PRACK
+User-Agent: Avaya one-X Emulator
+Require: 100rel
+RSeq: 1
+Content-Type: application/sdp
+Content-Length:   162
+
+v=0
+o=user1 1 200 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 120
+a=rtpmap:0 PCMU/8000
+a=rtpmap:120 telephone-event/8000
+
+----------------------------------------------- 2017-11-24 15:29:49:689.452
+TCP message received [464] bytes :
+
+PRACK sip:50001@10.133.39.159:5060;transport=tcp SIP/2.0
+From: sip:4079@sbcdev4.com;tag=1
+To: sip:4078@sbcdev4.com;tag=1
+CSeq: 2 PRACK
+Call-ID: 929a3b1b3146876f0e060038d69f7441
+Contact: <sip:4078@10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=8;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000886661503-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2017-11-24 15:29:49:689.544
+TCP message sent (508 bytes):
+
+SIP/2.0 200 OK
+From: sip:4079@sbcdev4.com;tag=1
+To: sip:4078@sbcdev4.com;tag=1
+Call-ID: 929a3b1b3146876f0e060038d69f7441
+CSeq: 2 PRACK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000886661503-1--s1632-
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=8;lr;transport=tcp>
+Allow: INVITE,CANCEL,BYE,ACK,SUBSCRIBE,NOTIFY,MESSAGE,INFO,PUBLISH,REFER,UPDATE,PRACK
+Contact: <sip:50001@10.133.39.159:5060;transport=TCP>
+Accept-Language: en
+User-Agent: Avaya one-X Emulator
+Content-Length:     0
+
+
+----------------------------------------------- 2017-11-24 15:29:50:690.316
+TCP message sent (509 bytes):
+
+SIP/2.0 200 OK
+From: sip:4079@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+Call-ID: 929a3b1b3146876f0e060038d69f7441
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000738994427-1--s1632-
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=8;lr;transport=tcp>
+Allow: INVITE,CANCEL,BYE,ACK,SUBSCRIBE,NOTIFY,MESSAGE,INFO,PUBLISH,REFER,UPDATE,PRACK
+Contact: <sip:50001@10.133.39.159:5060;transport=TCP>
+Accept-Language: en
+User-Agent: Avaya one-X Emulator
+Content-Length:     0
+
+

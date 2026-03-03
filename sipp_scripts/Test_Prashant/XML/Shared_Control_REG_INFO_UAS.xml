@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic UAS responder">
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<recv request="REGISTER" crlf="true">
+	<action>
+	   <ereg regexp=".*(subid_ipcs=[0-9]*).*" search_in="hdr" header="Contact:" assign_to="1,2"/>
+	   </action>
+</recv>
+<Reference variables="1" />
+
+  <send>
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      [last_Contact:]
+      Content-Length: 0
+
+    ]]>
+
+  </send>
+
+  <send retrans="500">
+    <![CDATA[
+      INFO sips:[field0]@[local_ip]:[local_port];transport=[transport];[$2] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[local_ip:[local_port];tag=[call_number]
+      To: sip:[field1]@sbcdev4.com
+      [last_Call-ID:]
+      CSeq: 1 INFO
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=TLS>;q=1;expires=[field1];avaya-actions="presence.initiate-pubsub";reg-id=[call_number];+sip.instance="<urn:uuid:[field0]e96aa1e6-11a9-550b-a009-[field0]>"
+      Supported: replaces
+      Max-Forwards: 70
+      Subject: Performance Test
+      Content-Type: application/spark+xml
+      Content-Length: [len]
+         
+      <HomeServerUpdatedEvent xmlns="http://xml.avaya.com/endpointAPI">
+      <statusCode>0</statusCode>
+      <ppmServerAddress>[local_ip]</ppmServerAddress>
+      <sipDomain>avaya.com</sipDomain>
+      <sipServerAddress>[local_ip]</sipServerAddress>
+      <transportTypeInfo>
+      <type>tls</type>
+      <port>5061</port>
+      </transportTypeInfo>
+      <transportTypeInfo>
+      <type>tcp</type>
+      <port>5060</port>
+      </transportTypeInfo>
+      <transportTypeInfo>
+      <type>udp</type>
+      <port>5060</port>
+      </transportTypeInfo>
+      </HomeServerUpdatedEvent>
+
+    ]]>
+  </send>
+  
+<!-- The '[last_*]' keyword is replaced automatically by the          -->
+<!-- specified header if it was present in the last message received  -->
+<!-- (except if it was a retransmission). If the header was not       -->
+<!-- present or if no message has been received, the '[last_*]'       -->
+<!-- keyword is discarded, and all bytes until the end of the line    -->
+<!-- are also discarded.                                              -->
+<!--                                                                  -->
+<!-- If the specified header was present several times in the         -->
+<!-- message, all occurences are concatenated (CRLF seperated)        -->
+<!-- to be used in place of the '[last_*]' keyword.                   -->
+
+  <recv response="200">
+  </recv>
+
+</scenario>

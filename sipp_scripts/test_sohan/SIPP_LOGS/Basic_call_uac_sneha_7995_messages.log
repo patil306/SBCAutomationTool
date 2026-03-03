@@ -1,0 +1,84 @@
+----------------------------------------------- 2019-03-28 13:41:36:452.384
+UDP message sent (700 bytes):
+
+INVITE sip:4079@sbcdev4.com SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6032;branch=z9hG4bK-7995-1-0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@10.133.48.238:5060
+Call-ID: 1-7995@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:4078@10.133.39.159:6032;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+MyHeader: SOHAN
+Content-Type: application/sdp
+Content-Length:   246
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 41532 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+
+----------------------------------------------- 2019-03-28 13:41:36:457.352
+UDP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 1-7995@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:6032;branch=z9hG4bK-7995-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-28 13:41:36:457.566
+UDP message received [252] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@10.133.48.238:5060;tag=zXcVbNm5a1b5b3c0
+CSeq: 1 INVITE
+Call-ID: 1-7995@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:6032;branch=z9hG4bK-7995-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected UDP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@10.133.48.238:5060;tag=zXcVbNm5a1b5b3c0
+CSeq: 1 INVITE
+Call-ID: 1-7995@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:6032;branch=z9hG4bK-7995-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-28 13:41:36:458.180
+UDP message sent (327 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6032;branch=z9hG4bK-7995-1-0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@10.133.48.238:5060;tag=zXcVbNm5a1b5b3c0
+Call-ID: 1-7995@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:6032;transport=UDP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

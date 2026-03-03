@@ -1,0 +1,187 @@
+----------------------------------------------- 2019-03-06 15:22:04:71.562
+TCP message received [872] bytes :
+
+INVITE sip:40008@192.168.5.12:5095;transport=tcp SIP/2.0
+From: sip:40006@192.168.55.78;tag=1
+To: <sip:40008@192.168.5.12:5095;transport=TCP>
+CSeq: 1 INVITE
+Call-ID: 3bb45b45b675e47ec9f5967be36f0f5d
+Contact: <sip:40006@192.168.55.78:5060;transport=tcp>
+Record-Route: <sip:192.168.55.78:5060;ipcs-line=4;lr;transport=tcp>
+Allow: REFER
+Supported: replaces, timer, 100rel
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-001036195391-1--s1632-;originator
+Subject: Performance Test
+Referred-By: sip:40006@192.168.5.12:5095
+Session-Expires: 1800;refresher=uac
+Min-SE: 90
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 162
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35002 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-03-06 15:22:04:72.232
+TCP message sent (326 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-001036195391-1--s1632-;originator
+From: sip:40006@192.168.55.78;tag=1
+To: <sip:40008@192.168.5.12:5095;transport=TCP>
+Call-ID: 3bb45b45b675e47ec9f5967be36f0f5d
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5095;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-06 15:22:04:72.408
+TCP message sent (894 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-001036195391-1--s1632-;originator
+From: sip:40006@192.168.55.78;tag=1
+To: <sip:40008@192.168.5.12:5095;transport=TCP>;tag=1
+Call-ID: 3bb45b45b675e47ec9f5967be36f0f5d
+CSeq: 1 INVITE
+RSeq: 22
+Supported: 100rel, replaces, timer
+Require: 100rel
+Record-Route: <sip:SM01@10.96.102.26;av-asset-uid=rw-3a41dd75;lr;transport=TCP>
+Record-Route: <sip:127.0.0.2:15060;transport=tcp;ibmsid=local.1536031164302_139451_139682;lr>
+Record-Route:<sip:192.168.5.12:5095;ipcs-line=4;lr;transport=tcp>
+Contact: <sip:192.168.5.12:5095;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   220
+
+v=0
+o=Agent 34567 8888 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6001 RTP/AVP 8 101 111
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=rtpmap:111 X-nt-inforeq/8000
+a=ptime:20
+a=sendrecv
+
+----------------------------------------------- 2019-03-06 15:22:04:97.770
+TCP message received [690] bytes :
+
+PRACK sip:192.168.5.12:5095;transport=TCP;x-b2b-refer-hand-send-hold SIP/2.0
+From: sip:40006@192.168.55.78;tag=1
+To: <sip:40008@192.168.5.12:5095;transport=TCP>;tag=1
+CSeq: 2 PRACK
+Call-ID: 3bb45b45b675e47ec9f5967be36f0f5d
+Route: <sip:192.168.5.12:5095;ipcs-line=4;lr;transport=tcp>,<sip:127.0.0.2:15060;transport=tcp;ibmsid=local.1536031164302_139451_139682;lr>,<sip:SM01@10.96.102.26;av-asset-uid=rw-3a41dd75;lr;transport=TCP>
+Record-Route: <sip:192.168.55.78:5060;ipcs-line=4;lr;transport=tcp>
+Supported: 100rel, replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-001992044297-1--s1632-;originator
+RAck: 22 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-06 15:22:04:97.960
+TCP message sent (327 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-001992044297-1--s1632-;originator
+From: sip:40006@192.168.55.78;tag=1
+To: <sip:40008@192.168.5.12:5095;transport=TCP>;tag=1
+Call-ID: 3bb45b45b675e47ec9f5967be36f0f5d
+CSeq: 2 PRACK
+Contact: <sip:192.168.5.12:5095;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-06 15:22:04:98.047
+TCP message sent (1083 bytes):
+
+SIP/2.0 200 OK
+Via:  SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-001036195391-1--s1632-;originator
+From:  sip:40006@192.168.55.78;tag=1
+To:  <sip:40008@192.168.5.12:5095;transport=TCP>;tag=1
+Call-ID:  3bb45b45b675e47ec9f5967be36f0f5d
+CSeq:  1 INVITE
+Contact: <sip:192.168.5.12:5095;transport=TCP>
+Session-Expires: 1800;refresher=uac
+Require: timer
+Record-Route: <sip:SM01@10.96.102.26;av-asset-uid=rw-3a41dd75;lr;transport=TCP>
+Record-Route: <sip:127.0.0.2:15060;transport=tcp;ibmsid=local.1536031164302_139451_139682;lr>
+Record-Route: <sip:SM01@10.96.102.25;av-asset-uid=rw-3a41dd75;lr;transport=TCP>
+Record-Route:<sip:192.168.6.5:5096;ipcs-line=4;lr;transport=tcp>
+Record-Route:<sip:192.168.5.12:5095;ipcs-line=4;lr;transport=tcp>
+Supported: 100rel, join, replaces, sdp-anat, timer
+Content-Type: application/sdp
+Content-Length:   220
+
+v=0
+o=Agent 34567 8888 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6001 RTP/AVP 8 101 111
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=rtpmap:111 X-nt-inforeq/8000
+a=ptime:20
+a=sendrecv
+
+----------------------------------------------- 2019-03-06 15:22:04:113.181
+TCP message received [791] bytes :
+
+ACK sip:192.168.5.12:5095;transport=TCP;x-b2b-refer-hand-send-hold SIP/2.0
+From: sip:40006@192.168.55.78;tag=1
+To: <sip:40008@192.168.5.12:5095;transport=TCP>;tag=1
+CSeq: 1 ACK
+Call-ID: 3bb45b45b675e47ec9f5967be36f0f5d
+Route: <sip:192.168.5.12:5095;ipcs-line=4;lr;transport=tcp>,<sip:192.168.6.5:5096;ipcs-line=4;lr;transport=tcp>,<sip:SM01@10.96.102.25;av-asset-uid=rw-3a41dd75;lr;transport=TCP>,<sip:127.0.0.2:15060;transport=tcp;ibmsid=local.1536031164302_139451_139682;lr>,<sip:SM01@10.96.102.26;av-asset-uid=rw-3a41dd75;lr;transport=TCP>
+Record-Route: <sip:192.168.55.78:5060;ipcs-line=4;lr;transport=tcp>
+Supported: 100rel, join, replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-002042008470-1--s1632-;originator
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-06 15:22:13:109.206
+TCP message received [828] bytes :
+
+BYE sip:192.168.5.12:5095;transport=tcp SIP/2.0
+From: sip:40006@192.168.55.78;tag=1
+To: <sip:40008@192.168.5.12:5095;transport=TCP>;tag=1
+CSeq: 3 BYE
+Call-ID: 3bb45b45b675e47ec9f5967be36f0f5d
+Contact: <sip:40006@192.168.55.78:5060;transport=tcp>
+Route: <sip:192.168.5.12:5095;ipcs-line=4;lr;transport=tcp>,<sip:192.168.6.5:5096;ipcs-line=4;lr;transport=tcp>,<sip:SM01@10.96.102.25;av-asset-uid=rw-3a41dd75;lr;transport=TCP>,<sip:127.0.0.2:15060;transport=tcp;ibmsid=local.1536031164302_139451_139682;lr>,<sip:SM01@10.96.102.26;av-asset-uid=rw-3a41dd75;lr;transport=TCP>
+Record-Route: <sip:192.168.55.78:5060;ipcs-line=4;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-000148529440-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-06 15:22:13:109.468
+TCP message sent (314 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-000148529440-1--s1632-
+From: sip:40006@192.168.55.78;tag=1
+To: <sip:40008@192.168.5.12:5095;transport=TCP>;tag=1
+Call-ID: 3bb45b45b675e47ec9f5967be36f0f5d
+CSeq: 3 BYE
+Contact: <sip:192.168.5.12:5095;transport=TCP>
+Content-Length: 0
+
+

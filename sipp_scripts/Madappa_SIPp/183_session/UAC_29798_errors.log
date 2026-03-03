@@ -1,0 +1,10 @@
+sipp: The following events occured:
+2021-09-15	17:10:24:760	1631706024.760344: Aborting call on unexpected message for Call-Id '1-29798@10.133.39.159': while expecting '200' (index 4), received 'SIP/2.0 481 Call/Transaction Does Not Exist
+From:  sip:reddy2@10.133.36.32:5060;tag=2
+To:   sip:reddy1@test2.com;tag=1
+CSeq: 2 PRACK
+Call-ID: 1-29798@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-29798-1-0
+Content-Length: 0
+
+'.

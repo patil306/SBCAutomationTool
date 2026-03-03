@@ -1,0 +1,13 @@
+sipp: The following events occured:
+2017-08-04	18:11:17:550	1501850477.550069: Aborting call on unexpected message for Call-Id '1-16051@192.168.6.5': while expecting '180' (index 2), received 'SIP/2.0 407 Proxy Authentication Required
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060
+CSeq: 1 INVITE
+Call-ID: 1-16051@192.168.6.5
+Contact: <sip:192.168.6.223:5060;transport=tcp>
+Supported: replaces
+Via:SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-16051-1-0
+Proxy-Authenticate: Digest realm="auto.com",qop="auth",opaque="1234567890abcedef",nonce="152afcdf6746b96593b7e0501fa1031db24323effd7",algorithm=MD5,stale=false
+Content-Length: 0
+
+'.

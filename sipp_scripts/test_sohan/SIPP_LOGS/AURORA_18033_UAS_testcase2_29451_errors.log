@@ -1,0 +1,91 @@
+sipp: The following events occured:
+2019-08-19	15:05:25:295	1566207325.295320: Aborting call on unexpected message for Call-Id '1fb15b401528fc5523c21f0fbe69444a': while expecting 'OPTIONS' (index 3), received 'INVITE sip:40007@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:40007@192.168.5.12:5088
+CSeq: 1 INVITE
+Call-ID: 1fb15b401528fc5523c21f0fbe69444a
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=7;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-000610029459-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 267
+
+v=0
+o=- 1297654 1 IN IP4 192.168.55.79
+s=-
+c=IN IP4 192.168.55.79
+t=0 0
+m=audio 35012 RTP/AVP 8 0 18 101 111
+c=IN IP4 192.168.55.79
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=rtpmap:111X-nt-inforeq/8000
+a=sendrecv
+a=ptime:20
+'.
+2019-08-19	15:05:26:297	1566207326.297166: Dead call 1fb15b401528fc5523c21f0fbe69444a (aborted at index 3), received 'INVITE sip:40007@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:40007@192.168.5.12:5088
+CSeq: 1 INVITE
+Call-ID: 1fb15b401528fc5523c21f0fbe69444a
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=7;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-000610029459-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 267
+
+v=0
+o=- 1297654 1 IN IP4 192.168.55.79
+s=-
+c=IN IP4 192.168.55.79
+t=0 0
+m=audio 35012 RTP/AVP 8 0 18 101 111
+c=IN IP4 192.168.55.79
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=rtpmap:111X-nt-inforeq/8000
+a=sendrecv
+a=ptime:20
+'.
+2019-08-19	15:05:28:298	1566207328.298848: Dead call 1fb15b401528fc5523c21f0fbe69444a (aborted at index 3), received 'INVITE sip:40007@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:40007@192.168.5.12:5088
+CSeq: 1 INVITE
+Call-ID: 1fb15b401528fc5523c21f0fbe69444a
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=7;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-000610029459-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 267
+
+v=0
+o=- 1297654 1 IN IP4 192.168.55.79
+s=-
+c=IN IP4 192.168.55.79
+t=0 0
+m=audio 35012 RTP/AVP 8 0 18 101 111
+c=IN IP4 192.168.55.79
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=rtpmap:111X-nt-inforeq/8000
+a=sendrecv
+a=ptime:20
+'.

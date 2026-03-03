@@ -1,0 +1,548 @@
+    1  ./build/bld rhel
+    2  vim ss/http/webua/WebUAUtils.cpp 
+    3  ls -lrt
+    4  cd /home/test/APOLLO_POC/
+    5  ls -lrt
+    6  cd /root/rpmbuild/RPMS/
+    7  ls -lrt
+    8  cd x86_64/
+    9  ls -lrt
+   10  rm -rf sbce-bin-10.0.0.0-*
+   11  cd -
+   12  cd /home/test/APOLLO_POC/
+   13  ls -lrt
+   14  cd savon/
+   15  ./build/bld rhel
+   16  cd build/
+   17  make package-rpm BUILD_VERSION=10.0.0.0 BUILD_RELEASE=4
+   18  cp /root/rpmbuild/RPMS/x86_64/sbce-bin-10.0.0.0-4.x86_64.rpm /home/SSYNDI_IMAGE/
+   19  cd /home/SSYNDI_IMAGE/
+   20  ls -lrt
+   21  docker build -t sip-ua-jul25 -f DockerCrashTest .
+   22  docker tag sip-ua-jul25  gcr.io/avaya-joel-ezell/sip-edge-ua-pod-jul25:1 
+   23  docker tag sip-ua-jul25:latest  gcr.io/avaya-joel-ezell/sip-edge-ua-pod-jul25:1 
+   24  docker image ls
+   25  docker build -t sip-ua-jul25 -f DockerCrashTest .
+   26  docker tag sip-ua-jul25:latest  gcr.io/avaya-joel-ezell/sip-edge-ua-pod-jul25:1 
+   27  docker push gcr.io/avaya-joel-ezell/sip-edge-ua-pod-jul25:1
+   28  df -h
+   29  docker push gcr.io/avaya-joel-ezell/sip-edge-ua-pod-jul25:1
+   30  docker image ls
+   31  docker push gcr.io/avaya-joel-ezell/sip-edge-ua-pod-jul25:1
+   32  docker image rm -f 5bd97ef5c4dc
+   33  docker image ls
+   34  df -g
+   35  df -h
+   36  docker build -t sip-ua-jul25 -f DockerCrashTest .
+   37  docker tag sip-ua-jul25:latest  gcr.io/avaya-joel-ezell/sip-edge-ua-pod-jul25:1 
+   38  docker push gcr.io/avaya-joel-ezell/sip-edge-ua-pod-jul25:1
+   39  cd /
+   40  du -sh *
+   41  cd /var/
+   42  ls -lrt
+   43  du -sh *
+   44  cd log/
+   45  du -sh *
+   46  rm -rf messages-*
+   47  df -h
+   48  cd ..
+   49  du -sh *
+   50  cd cache/
+   51  ls -lrt
+   52  du -sh *
+   53  cd yum/
+   54  ls -lrt
+   55  cd x86_64/
+   56  ls -lrt
+   57  cd 7/
+   58  du -sh *
+   59  cd updates/
+   60  ls -lrt
+   61  du -sh *
+   62  cd packages/
+   63  ls -lrt
+   64  df -h
+   65  cd /home/test/APOLLO_POC/
+   66  cd savon/
+   67  ./build/bld rhel
+   68  cd /root/
+   69  ls -lrt
+   70  du -sh *
+   71  cd rpmbuild/RPMS/
+   72  ls -lrt
+   73  cd x86_64/
+   74  ls -lrt
+   75  rm -rf *
+   76  df -h
+   77  cd ../../
+   78  cd ..
+   79  du -sh *
+   80  cd rpmbuild/
+   81  du -sh *
+   82  cd BUILD
+   83  ls -lrt
+   84  rm -rf *
+   85  df -h
+   86  cd /root/CLOUD_POC/
+   87  ls -lrt
+   88  du -sh *
+   89  cd INGRESS/
+   90  ls -lrt
+   91  cd 7.2.1_hydra_int/savon
+   92  ./build/bld uninstall
+   93  df -h
+   94  kubectl get pods
+   95  kubectl exec -it sip-edge-ua-jul25-f5b877c46-4mztg /bin/bash
+   96  kubectl get pods
+   97  kubectl exec -it sip-edge-ua-jul25-f5b877c46-4mztg /bin/bash
+   98  cd /home/test/APOLLO_POC/
+   99  ls -lrt
+  100  cd savon/
+  101  vim ss/http/webua/WebUAUtils.cpp 
+  102  ./build/bld rhel
+  103  vim ss/http/webua/WebUAUtils.cpp 
+  104  ./build/bld rhel
+  105  vim ss/http/webua/WebUAUtils.cpp 
+  106  ./build/bld rhel
+  107  vim ss/http/webua/WebUAUtils.cpp 
+  108  ./build/bld rhel
+  109  cd /root/rpmbuild/RPMS/
+  110  ls -lrt
+  111  cd x86_64/
+  112  ls -lrt
+  113  cd /home/test/APOLLO_POC/
+  114  cd savon/
+  115  cd build/
+  116  make package-rpm BUILD_VERSION=10.0.0.0 BUILD_RELEASE=4
+  117  cp /root/rpmbuild/RPMS/x86_64/sbce-bin-10.0.0.0-4.x86_64.rpm /home/SSYNDI_IMAGE/
+  118  cd /home/SSYNDI_IMAGE/
+  119  docker image ls
+  120  docker image rm -f 69754943d22b
+  121  docker image ls
+  122  docker build -t sip-ua-jul26 -f DockerCrashTest .
+  123  docker tag sip-ua-jul26:latest  gcr.io/avaya-joel-ezell/sip-edge-ua-pod-jul26:1 
+  124  docker push gcr.io/avaya-joel-ezell/sip-edge-ua-pod-jul26:1
+  125  kubectl get pods
+  126  kubectl get pods
+  127  kubectl exec -it sip-edge-ua-jul25-f5b877c46-4mztg /bin/bash
+  128  cd /home/test/APOLLO_POC/
+  129  ls -lt
+  130  cd savon/
+  131  vim ss/http/webua/WebUAUtils.cpp 
+  132  kubectl get pods
+  133  kubectl exec -it sip-edge-ua-jul25-f5b877c46-4mztg /bin/bash
+  134  kubeccd 
+  135  kubectl get pods
+  136  kubectl get pods 
+  137  kubectl describe pod edge-lb-jun7-78f8bbb585-b4cxn
+  138  kubectl logs edge-lb-jun7-78f8bbb585-b4cxn -c edge-discovery-sha256  
+  139  kubectl get pods 
+  140  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-wnfnm /bin/bash
+  141  kubectl get pods
+  142  kubectl describe pod edge-lb-jun7-78f8bbb585-b4cxn
+  143  kubectl exec -it edge-lb-jun7-78f8bbb585-b4cxn -c sip-edge-lb-service-jun7@sha256 /bin/bash
+  144  kubectl exec -it edge-lb-jun7-78f8bbb585-b4cxn -c sip-edge-lb-service-jun7-sha256 /bin/bash
+  145  kubectl get pods
+  146  kubectl delete pod edge-lb-jun7-78f8bbb585-b4cxn
+  147  kubectl get pods
+  148  kubectl exec -it edge-lb-jun7-78f8bbb585-79kpc -c sip-edge-lb-service-jun7-sha256 /bin/bash
+  149  kubectl
+  150  kubectl logs edge-lb-jun7-78f8bbb585-79kpc -c edge-discovery-sha256 /bin/bash
+  151  kubectl logs edge-lb-jun7-78f8bbb585-79kpc -c edge-discovery-sha256 
+  152  kubectl exec -it edge-lb-jun7-78f8bbb585-79kpc -c edge-discovery-sha256 -- /bin/bash -c "kill 1"
+  153  kubectl logs edge-lb-jun7-78f8bbb585-79kpc -c edge-discovery-sha256 
+  154  ls -ltr
+  155  ls -ltr
+  156  kubectl get pods
+  157  cd /home/test/APOLLO_POC/
+  158  ls -ltr
+  159  cd -
+  160  ls -ltr
+  161  vi .bash_history 
+  162  kubectl get pods
+  163  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-2d9qv /bin/bash
+  164  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-jtw82 /bin/bash
+  165  clear
+  166  kubectl get pods
+  167  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-jtw82 /bin/bash
+  168  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-wnfnm /bin/bash
+  169  kubectl get pods
+  170  ls -ltr
+  171  kubectl get pods
+  172  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-wnfnm /bin/bash
+  173  kubectl get pods
+  174  vi .bash_history 
+  175  ls -ltr
+  176  vim EDGEUA.yaml 
+  177  kubectl get pods
+  178  kubectl delete pods sip-edge-ua-jul26-5cb98cbdb9-b72r7 sip-edge-ua-jul26-5cb98cbdb9-dpm8p sip-edge-ua-jul26-5cb98cbdb9-kbdfl sip-edge-ua-jul26-5cb98cbdb9-lvmpr
+  179  kubectl get pods
+  180  ls -ltr
+  181  ls- ltr
+  182  kubectl get pods
+  183  delete pod sip-edge-ua-jul26-5cb98cbdb9-6gksw
+  184  delete pods sip-edge-ua-jul26-5cb98cbdb9-6gksw
+  185  kubectl delete pod sip-edge-ua-jul26-5cb98cbdb9-6gksw
+  186  kubectl get pods
+  187  kubectl delete pods sip-edge-ua-jul26-5cb98cbdb9-8fr26 sip-edge-ua-jul26-5cb98cbdb9-9whhs sip-edge-ua-jul26-5cb98cbdb9-jx47k sip-edge-ua-jul26-5cb98cbdb9-wnfnm sip-edge-ua-jul26-5cb98cbdb9-zcq9t
+  188  kubectl get pods
+  189  kubectl describe sip-edge-ua-jul26-5cb98cbdb9-mlxn9
+  190  kubectl describe
+  191  kubectl describe pod sip-edge-ua-jul26-5cb98cbdb9-mlxn9
+  192  kubectl get rs
+  193  kubectl describe rs sip-edge-ua-jul26-5cb98cbdb9
+  194  kubectl logs pod sip-edge-ua-jul26-5cb98cbdb9-mlxn9
+  195  kubectl logs sip-edge-ua-jul26-5cb98cbdb9-mlxn9
+  196  kubectl describe rs sip-edge-ua-jul26-5cb98cbdb9
+  197  kubectl get pods
+  198  cd /home/test/APOLLO_POC/
+  199  ls -ltr
+  200  kubectl get pods
+  201  ls -ltr
+  202  cd savon/
+  203  ls
+  204  cd ..
+  205  ls
+  206  cd ..
+  207  ls
+  208  ls -ltr
+  209  cd ..
+  210  ls
+  211  cd test
+  212  ls
+  213  ls -ltr
+  214  cd APOLLO_POC/
+  215  ls
+  216  ls -ltr
+  217  cd packages/
+  218  ls
+  219  cd ..
+  220  ls
+  221  ls -ltr
+  222  cd SSYNDI_IMAGE/
+  223  ls
+  224  ls -ltr
+  225  cd ..
+  226  ls -ltr
+  227  cd ~
+  228  ls -lr
+  229  vim .bash_history 
+  230  kubectl get pods
+  231  ls
+  232  pwd
+  233  cd /home/test/APOLLO_POC/
+  234  ls
+  235  pwd
+  236  ls -ltr
+  237  kubectl get pods
+  238  history
+  239  kubectl get pods
+  240  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-mlxn9 -c sip-edge-lb-service-jun7-sha256 /bin/bash
+  241  kubectl get pods --all-namespaces
+  242  kubectl get pods
+  243  kubectl exec -it edge-lb-jun7-78f8bbb585-79kpc -c sip-edge-lb-service-jun7-sha256 /bin/bash
+  244  cd /home/test/APOLLO_POC/
+  245  ls -lrt
+  246  cd savon/
+  247  vim ss/http/webua/WebUA.cpp 
+  248  vim ss/http/webua/WebUAUtils.cpp 
+  249  kubectl get pods
+  250  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-mlxn9 /bin/bash
+  251  cd /home/test/
+  252  ls -lrt
+  253  cd APOLLO_POC/
+  254  ls -lrt
+  255  cd SSYNDI_IMAGE/
+  256  ls -lrt
+  257  cd ..
+  258  ls -lrt
+  259  cd ..
+  260  cd /root
+  261  ls -lrt
+  262  cd CLIENT-GO/
+  263  ls -lrt
+  264  cd ..
+  265  cd go/src/
+  266  cd k8s.io/client-go/examples/
+  267  ls -lrt
+  268  cd in-cluster-client-configuration/
+  269  ls -lrt
+  270  vi main.go 
+  271  find / -name in-cluster-watch
+  272  cd /root/CLOUD_POC/INGRESS/client-go/examples/in-cluster-watch
+  273  ls -lrt
+  274  vim main.go 
+  275  find / -name client-go
+  276  cd /root/go/pkg/linux_amd64/k8s.io/client-go/
+  277  ls -lrt
+  278  cd examples/
+  279  ls -lrt
+  280  cd ..
+  281  cd /root/go/src/k8s.io/client-go
+  282  l -lrt
+  283  ls -lrt
+  284  cd examples/
+  285  ls -lrt
+  286  cd in-cluster-client-configuration/
+  287  ls -lrt
+  288  vim main.go 
+  289  kubectl get pods
+  290  kubectl exec -it edge-lb-jun7-78f8bbb585-79kpc -c sip-edge-lb-service-jun7-sha256 /bin/bash
+  291  kubectl get pods
+  292  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-mlxn9 /bin/bash
+  293  cd /root/CLOUD_POC/INGRESS/client-go/examples/in-cluster-watch 
+  294  ls l-ltr
+  295  ls -ltr
+  296  vim main.go 
+  297  kubectl get pods
+  298  kubectl describe pod sip-edge-ua-jul26-5cb98cbdb9-mlxn9
+  299  kubectl logs sip-edge-ua-jul26-5cb98cbdb9-mlxn9
+  300  kubectl get pods
+  301  kubectl describe pod sip-edge-ua-jul26-5cb98cbdb9-mlxn9
+  302  kubectl get rs
+  303  kubectl describe rs sip-edge-ua-jul26-5cb98cbdb9
+  304  kubectl get Deployments
+  305  kubectl get deployments
+  306  kubectl describe deployments sip-edge-ua-jul26
+  307  kubectl describe rs sip-edge-ua-jul26-5cb98cbdb9
+  308  kubectl get pods
+  309  kubectl describe rs sip-edge-ua-jul26-5cb98cbdb9
+  310  kubectl describe deployments sip-edge-ua-jul26
+  311  kubectl get pods
+  312  cd /root/CLOUD_POC/INGRESS/client-go/examples/in-cluster-watch 
+  313  ls -ltr
+  314  ls -lr
+  315  vim README.md
+  316  vim main.go 
+  317  vim Dockerfile 
+  318  kubctl get pods
+  319  kubectl get pods
+  320  kubectl describe rs sip-edge-ua-jul26-5cb98cbdb9
+  321  kubectl get pods
+  322  kubectl delete pods sip-edge-ua-jul26-5cb98cbdb9-7f42l sip-edge-ua-jul26-5cb98cbdb9-82k9v sip-edge-ua-jul26-5cb98cbdb9-8rzhc sip-edge-ua-jul26-5cb98cbdb9-mlxn9 sip-edge-ua-jul26-5cb98cbdb9-mrwlj
+  323  kubectl get pods
+  324  kubectl get pods
+  325  kubectl logs edge-lb-jun7-78f8bbb585-79kpc -c sip-edge-lb-service-ju
+  326  kubectl get pods
+  327  ls -ltr
+  328  pwd
+  329  cd /home/test/APOLLO_POC/
+  330  ls
+  331  ls -ltr
+  332  cd savon/
+  333  ls
+  334  cscope -d
+  335  ip addr
+  336  kubectl get pods
+  337  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-lzszg /bin/bash
+  338  kubectl get pods
+  339  ls -ltr
+  340  kubectl get pods
+  341  ls
+  342  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-mlxn9
+  343  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-mlxn9 /bin/bash
+  344  pwd
+  345  cd /home/test/APOLLO_POC/
+  346  ls
+  347  cd savon/
+  348  cscope -d
+  349  ps -eaf | grep ssyndi
+  350  ls -ltr
+  351  cd /home/test/APOLLO_POC/
+  352  ls
+  353  cd savon/
+  354  cscope -d
+  355  ./build/bld rhel
+  356  kubectl get pods
+  357  kubectl get pods
+  358  ls -ltr
+  359  kubectl get pods
+  360  history
+  361  cd /root/CLOUD_POC/
+  362  ls -lrt
+  363  cd /home/test/APOLLO_POC/
+  364  ls
+  365  cd savon/
+  366  cscope -d
+  367  cd /home/test/APOLLO_POC/
+  368  ls
+  369  cd savon/
+  370  ./build/bld rhel
+  371  cd build/
+  372  make package-rpm BUILD_VERSION=10.0.0.0 BUILD_RELEASE=4
+  373  kubectl config get-contexts
+  374  kubectl config get-current-context
+  375  kubectl current-context
+  376  kubectl get current-context
+  377  kubectl config current-context
+  378  kubectl config use-context kubernetes-admin@kubernetes
+  379  kubectl get pods
+  380  kubectl get nodes
+  381  netstat -tnlp | grep 6443
+  382  kubectl get nodes
+  383  docker ps -a
+  384  kubectl get nodes
+  385  kubectl config use-context gke_avaya-joel-ezell_us-west1-a_apollo-small-cluster
+  386  kubectl get nodes
+  387  kubectl get nodes -o wide
+  388  cd /home/SSYNDI_IMAGE/
+  389  ls -lrt
+  390  vim SSYNDI.yaml 
+  391  kubectl get deployments
+  392  vim GCP_DEPLOY.yaml
+  393  kubectl describe pod edge-lb-jun7
+  394  kubectl get services
+  395  kubectl get pod
+  396  kubectl describe pod edge-lb-jun7-78f8bbb585-79kpc 
+  397  kubectl get services
+  398  kubectl describe service edge-lb--service
+  399  kubectl get nodes
+  400  kubectl get nodes -o wide
+  401  iptables -S INPUT
+  402  iptables -S KUBE-FIREWALL
+  403  df -h
+  404  iptables -S KUBE-EXTERNAL-SERVICES
+  405  kubectl describe pods 
+  406  kubectl get pods
+  407  kubectl describe pod edge-lb-jun7-78f8bbb585-79kpc
+  408  ls -lrt
+  409  vi DockerTestAppFile
+  410  cd /root/CLOUD_POC/INGRESS/
+  411  ls -lrt
+  412  cd client-go/examples/in-cluster-watch
+  413  ls -lrt
+  414  vi Dockerfile 
+  415  vim main.go 
+  416  ls -ltr
+  417  kubectl get pods
+  418  kubectl desc pod edge-lb-jun7-78f8bbb585-79kpc
+  419  kubectl desc pods edge-lb-jun7-78f8bbb585-79kpc
+  420  kubectl describe  pod edge-lb-jun7-78f8bbb585-79kpc
+  421  kubectl get services
+  422  kubectl get nodes
+  423  kubectl get nodes -o wide
+  424  kubectl get pods
+  425  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-lzszg /bin/bash
+  426  ls
+  427  cd /home/test/APOLLO_POC/
+  428  ls
+  429  cd savon/
+  430  ls
+  431  cscope -d
+  432  ctags -R
+  433  cscope -d
+  434  kubectl get pods
+  435  kubectl get nodes
+  436  kubectl describe node gke-apollo-small-cluster-default-pool-32755d5d-80qr
+  437  kubectl get nodes
+  438  kubectl describe nodes
+  439  kubectl get pod -o=custom-columns=NODE:.spec.nodeName,NAME:.metadata.name --all-namespaces
+  440  kubectl get pods -o wide
+  441  kubectl get pods --all-namespaces
+  442  kubectl get namespace
+  443  kubectl get pods -o wide
+  444  kubectl get pod -o=custom-columns=NODE:.spec.nodeName,NAME:.metadata.name --all-namespaces
+  445  kubectl get pods -o wide
+  446  kubectl get deployments
+  447  kubectl rollout status sip-edge-ua-jul26
+  448  kubectl rollout status deployment
+  449  kubectl get deployments
+  450  kubectl get pods
+  451  kubectl get pods
+  452  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-lzszg /bin/bash
+  453  ls -ltr
+  454  cd /home/test/APOLLO_POC/savon/
+  455  ls
+  456  ls -ltr
+  457  cscope -d
+  458  cd /home/test/APOLLO_POC/savon/
+  459  cscope -d
+  460  cd ~
+  461  vim .viminfo 
+  462  ls -al
+  463  ls -a
+  464  vim .rpmmacros 
+  465  cd -
+  466  cscope -d
+  467  rm -rf ss/http/webua/.WebUA.cpp.swp
+  468  cscope -d
+  469  ./build/bld rhel
+  470  cd /home/test/APOLLO_POC/savon/
+  471  ls
+  472  ls -ltr
+  473  cscope -d
+  474  cd /home/test/APOLLO_POC/savon/
+  475  kubectl get pods
+  476  kubectl exec -it sip-edge-ua-jul26-5cb98cbdb9-lzszg /bin/bash
+  477  cd /home/test/APOLLO_POC/savon/
+  478  cscope -d
+  479  cd /home/test/
+  480  ls -ltr
+  481  cd APOLLO_POC/
+  482  ls
+  483  ls -ltr
+  484  cd savon/
+  485  cscope -d
+  486  cd /home/test/APOLLO_POC/
+  487  ls
+  488  cd savon/
+  489  cscope -d
+  490  cd /home/test/APOLLO_POC/savon/
+  491  cscope -d
+  492  cd /home/test/APOLLO_POC/
+  493  ls
+  494  cd savon/
+  495  ls
+  496  cscope -d
+  497  pwd
+  498  cd /home/test/APOLLO_POC/
+  499  cd savon/
+  500  cscope -d
+  501  ./build/bld rhel
+  502  cd ../
+  503  l
+  504  ls
+  505  cd SSYNDI_IMAGE/
+  506  ls
+  507  vi DockerSipUA 
+  508  cd /usr/local/ipcs/log/ss/logfiles/elog/SSYNDI/
+  509  ls -ltr
+  510  vi SSYNDI_513_ELOG_08_05_2019_17_31_32
+  511  ls -ltr
+  512  vi SSYNDI_513_ELOG_08_05_2019_17_31_32 
+  513  date
+  514  cd /home/test/APOLLO_POC/savon/
+  515  cscope -d
+  516  cd -
+  517  ls -ltr
+  518  vi SSYNDI_513_ELOG_08_05_2019_17_31_32 
+  519  netstat -tnp | grep 443
+  520  ps -eaf | grep ssyndi
+  521  kill -9 20599
+  522  cd /home/test/APOLLO_POC/
+  523  ls
+  524  cd /home/SSYNDI_IMAGE/
+  525  pwd
+  526  ls
+  527  ls -ltr
+  528  docker image ls
+  529  docker rmi sip-ua-jul26
+  530  docker image ls
+  531  docker rmi gcr.io/avaya-joel-ezell/sip-edge-ua-pod-jul26
+  532  docker rmi gcr.io/avaya-joel-ezell/sip-edge-ua-pod-jul26:1
+  533  docker image ls
+  534  ls -ltr
+  535  vi DockerCrashTest 
+  536  pwd
+  537  ls -ltr
+  538  docker build -t sip_edge_ua_aug5 -f DockerCrashTest .
+  539  docker image ls
+  540  docker tag sip_edge_ua_aug5  gcr.io/avaya-joel-ezell/sip-edge-ua-pod-aug5:1
+  541  docker image ls
+  542  docker push gcr.io/avaya-joel-ezell/sip-edge-ua-pod-aug5:1
+  543  kubectl get deployement
+  544  kubectl get deployements
+  545  kubectl get deployments
+  546  kubectl edit deployment sip-edge-ua-jul26
+  547  kubectl get pods
+  548  history > cmds.txt

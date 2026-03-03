@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Late NOTIFY">
+
+<send>
+<![CDATA[
+NOTIFY sip:[field1]@[remote_ip]:[remote_port] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];rport;branch=z9hG4bK-s1632-001174722495-1--s1632-
+From: <sip:[field1]@[local_ip]>;tag=5
+To:[field1] <sip:[field1]@[field3]>
+Call-ID: [call_id]
+Contact: <sip:sipp@[local_ip]:[local_port]>;transport=tcp>;expires=300
+Max-Forwards: 70
+CSeq: 11 NOTIFY
+Subscription-State: active;expires=2000
+Server: Avaya Aura Presence Services 7.1.2.0-SNAPSHOT-230
+Event: avaya-cm-feature-status
+Content-Length: [len]
+
+<?xml version="1.0"?>\r\n
+<feature-status entity="sip:5212004@avaya.com" version="1" state="partial">\r\n
+<feature name="service-observing" status="on"/>\r\n
+</feature-status>\r\n
+]]>
+</send>
+
+</scenario>

@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2019-08-22	20:50:39:267	1566487239.267933: Aborting call on UDP retransmission timeout for Call-ID '1-12510@10.133.39.159'.
+2019-08-22	20:50:39:269	1566487239.269288: Dead call 1-12510@10.133.39.159 (aborted at index 14), received 'SIP/2.0 400 Bad Request
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@10.133.48.87:5060;tag=2
+CSeq: 3 BYE
+Call-ID: 1-12510@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5097;branch=z9hG4bK-12510-1--1
+Content-Length: 0
+
+'.

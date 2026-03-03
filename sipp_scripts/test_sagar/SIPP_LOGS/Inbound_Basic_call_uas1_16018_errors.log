@@ -1,0 +1,13 @@
+sipp: The following events occured:
+2017-08-04	18:10:54:470	1501850454.470144: Aborting call on unexpected message for Call-Id 'd41aae1851283f597919550053f6c20c': while expecting 'INVITE' (index 3), received 'ACK sip:4079@sbcdev4.com SIP/2.0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060
+CSeq: 1 ACK
+Call-ID: d41aae1851283f597919550053f6c20c
+Contact: sip:4078@10.133.73.241:5060;transport=tcp;transport=TCP
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.241:5060;branch=z9hG4bK-s1632-000530711708-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-16045-1-0
+Content-Length: 0
+
+'.

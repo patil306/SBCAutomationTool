@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!-- This program is free software; you can redistribute it and/or      -->
+
+<scenario name="RTP Echo pause / start test UAC">
+<!-- In client mode (sipp placing calls), the Call-ID MUST be         -->
+  <send retrans="500" start_txn="notify">
+    <![CDATA[
+
+      NOTIFY sip:[field1]@[remote_ip]:[remote_port]; transport=[transport] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field1]@[local_ip]:[local_port];tag=[pid]SIPpTag00[call_number]
+      To: sip:reddy2@10.133.48.149:5060 
+      Allow: INVITE,ACK,BYE,REFER,NOTIFY,CANCEL,INFO,SUBSCRIBE,UPDATE,OPTIONS 
+      Call-ID: [call_id]
+      CSeq: [cseq] NOTIFY 
+      Contact: sip:[field1]@[local_ip]:[local_port];transport=[transport]
+      Subscription-State: active
+      Supported: timer,replaces
+      Max-Forwards: 70 
+      Event: message-summary 
+      Content-Type: application/simple-message-summary
+      Content-Length: [len]
+       
+      Messages-Waiting: yes
+      Message-Account: sip:reddy2@10.133.48.149:5060 
+    ]]>
+  </send>
+
+
+  <recv response="200" rrs="true" response_txn="notify"/>
+
+</scenario>

@@ -1,0 +1,29 @@
+----------------------------------------------- 2021-01-06 22:13:48:742.556
+TCP message received [477] bytes :
+
+OPTIONS sip:sbcdev.com:5063 SIP/2.0
+From: <sip:abc@192.168.5.223:19047>;tag=214b7e718867
+To: <sip:abc@sbcdev.com>
+CSeq: 20 OPTIONS
+Call-ID: 7b20d938fb130c72e9617a3127a3c805d39efbae2788a464729c3ff4034c5ac
+Contact: <sip:abc@192.168.5.223:5060;transport=tcp>
+Record-Route: <sip:192.168.5.223:5060;ipcs-line=20;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.5.223:5060;branch=z9hG4bK-s1632-001889947516-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2021-01-06 22:13:48:742.943
+TCP message sent (358 bytes):
+
+SIP/2.0 400 Bad Request
+Via: SIP/2.0/TCP 192.168.5.223:5060;branch=z9hG4bK-s1632-001889947516-1--s1632-
+From: <sip:abc@192.168.5.223:19047>;tag=214b7e718867
+To: <sip:abc@sbcdev.com>;tag=1
+Call-ID: 7b20d938fb130c72e9617a3127a3c805d39efbae2788a464729c3ff4034c5ac
+CSeq: 20 OPTIONS
+Contact: <sip:abc@192.168.5.223:5060;transport=tcp>
+Content-Length: 0
+
+

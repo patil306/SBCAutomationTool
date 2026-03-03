@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script>
+  </head>
+  <body>
+  <div id="diagram"></div>
+  <script>
+    
+    var sequence = "Title: Title of sequence\n A->B: Normal line \nB-->C: Dashed line \nC->>D: Open arrow\n D-->>A: Dashed open arrow"
+    var diagram = Diagram.parse(sequence);
+    diagram.drawSVG("diagram", {theme: 'simple'});
+  </script>
+</html>

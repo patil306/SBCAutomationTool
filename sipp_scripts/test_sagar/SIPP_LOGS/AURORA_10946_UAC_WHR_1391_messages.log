@@ -1,0 +1,678 @@
+----------------------------------------------- 2018-10-10 14:24:19:809.992
+TCP message sent (774 bytes):
+
+INVITE sip:40006@10.133.48.149:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+Call-ID: 1-1391@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: 100rel, histinfo, join, replaces, sdp-anat, timer
+Session-Expires: 1200;refresher=uac
+Max-Forwards: 70
+Min-SE: 1200
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   216
+
+v=0
+o=- 1485338250 1 IN IP4 192.168.25.2
+s=-
+c=IN IP4 192.168.25.3
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 6192 RTP/AVP 0 8 127
+a=sendrecv
+a=rtpmap:127 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:19:823.005
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 1-1391@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:19:829.396
+TCP message received [611] bytes :
+
+SIP/2.0 183 Session Progress
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-1391@10.133.39.159
+Contact: <sip:10.133.48.149:5060;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-0
+Require: 100rel
+RSeq: 1
+Content-Type: application/sdp
+Content-Length: 198
+
+v=0
+o=- 1 2 IN IP4 10.133.48.149
+s=-
+c=IN IP4 10.133.48.149
+t=0 0
+m=audio 35000 RTP/AVP 0 127
+a=rtpmap:0 PCMU/8000
+a=rtpmap:127 telephone-event/8000
+a=fmtp:127 0-15
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:19:829.534
+TCP message sent (381 bytes):
+
+PRACK sip:40006@10.133.48.149:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+Call-ID: 1-1391@10.133.39.159
+RAck: 1 1 INVITE
+CSeq: 2 PRACK
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:19:834.464
+TCP message received [339] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+CSeq: 2 PRACK
+Call-ID: 1-1391@10.133.39.159
+Contact: <sip:10.133.48.149:5060;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:19:836.171
+TCP message received [475] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-1391@10.133.39.159
+Contact: <sip:10.133.48.149:5060;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Allow: INVITE, CANCEL, BYE, ACK, PRACK, SUBSCRIBE, NOTIFY, REFER, OPTIONS, INFO, PUBLISH, UPDATE
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-0
+Session-Expires: 1200;refresher=uac
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:19:836.246
+TCP message sent (419 bytes):
+
+ACK sip:40006@10.133.48.149:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-6
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+Call-ID: 1-1391@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Max-Forwards: 70
+Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:22:847.187
+TCP message received [677] bytes :
+
+INVITE sip:40005@10.133.39.159:5075;transport=TCP SIP/2.0
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-1391@10.133.39.159
+Contact: <sip:10.133.48.149:5060;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-001821640146-1--s1632-;originator
+Min-SE: 1200
+Content-Type: application/sdp
+Content-Length: 198
+
+v=0
+o=- 1 3 IN IP4 10.133.48.149
+s=-
+c=IN IP4 10.133.48.149
+t=0 0
+m=audio 35000 RTP/AVP 0 127
+a=rtpmap:0 PCMU/8000
+a=rtpmap:127 telephone-event/8000
+a=fmtp:127 0-15
+a=sendonly
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:22:847.312
+TCP message sent (306 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-001821640146-1--s1632-;originator
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+Call-ID: 1-1391@10.133.39.159
+CSeq: 2 INVITE
+Contact: <sip:10.133.39.159:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:22:847.389
+TCP message sent (553 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-001821640146-1--s1632-;originator
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+Call-ID: 1-1391@10.133.39.159
+CSeq: 2 INVITE
+Session-Expires: 1201;refresher=uac
+Contact: <sip:10.133.39.159:5075;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   179
+
+v=0
+o=- 1485338250 2 IN IP4 192.168.25.2
+s=-
+c=IN IP4 192.168.25.3
+b=TIAS:64000
+t=0 0
+m=audio 6192 RTP/AVP 0 127
+a=recvonly
+a=rtpmap:127 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:22:854.488
+TCP message received [521] bytes :
+
+ACK sip:40005@10.133.39.159:5075;transport=TCP SIP/2.0
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+CSeq: 2 ACK
+Call-ID: 1-1391@10.133.39.159
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Allow: REFER
+Supported: 100rel, histinfo, join, replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-001040304078-1--s1632-;originator
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:22:858.192
+TCP message received [677] bytes :
+
+INVITE sip:40005@10.133.39.159:5075;transport=TCP SIP/2.0
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+CSeq: 3 INVITE
+Call-ID: 1-1391@10.133.39.159
+Contact: <sip:10.133.48.149:5060;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-000558051708-1--s1632-;originator
+Min-SE: 1200
+Content-Type: application/sdp
+Content-Length: 198
+
+v=0
+o=- 1 4 IN IP4 10.133.48.149
+s=-
+c=IN IP4 10.133.48.149
+t=0 0
+m=audio 35000 RTP/AVP 0 127
+a=rtpmap:0 PCMU/8000
+a=rtpmap:127 telephone-event/8000
+a=fmtp:127 0-15
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:22:858.286
+TCP message sent (306 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-000558051708-1--s1632-;originator
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+Call-ID: 1-1391@10.133.39.159
+CSeq: 3 INVITE
+Contact: <sip:10.133.39.159:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:22:858.359
+TCP message sent (553 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-000558051708-1--s1632-;originator
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+Call-ID: 1-1391@10.133.39.159
+CSeq: 3 INVITE
+Session-Expires: 1201;refresher=uac
+Contact: <sip:10.133.39.159:5075;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   179
+
+v=0
+o=- 1485338250 2 IN IP4 192.168.25.2
+s=-
+c=IN IP4 192.168.25.3
+b=TIAS:64000
+t=0 0
+m=audio 6192 RTP/AVP 0 127
+a=sendrecv
+a=rtpmap:127 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:22:862.859
+TCP message received [521] bytes :
+
+ACK sip:40005@10.133.39.159:5075;transport=TCP SIP/2.0
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+CSeq: 3 ACK
+Call-ID: 1-1391@10.133.39.159
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Allow: REFER
+Supported: 100rel, histinfo, join, replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-001490284917-1--s1632-;originator
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:32:864.882
+TCP message sent (781 bytes):
+
+INVITE sip:40006@10.133.48.149:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-18
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+Call-ID: 1-1391@10.133.39.159
+CSeq: 4 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: 100rel, histinfo, join, replaces, sdp-anat, timer
+Session-Expires: 1200;refresher=uac
+Max-Forwards: 70
+Min-SE: 1200
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   216
+
+v=0
+o=- 1485338250 1 IN IP4 192.168.25.2
+s=-
+c=IN IP4 192.168.25.3
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 6192 RTP/AVP 0 8 127
+a=sendonly
+a=rtpmap:127 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:32:871.235
+TCP message received [227] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+CSeq: 4 INVITE
+Call-ID: 1-1391@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-18
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:32:876.899
+TCP message received [572] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+CSeq: 4 INVITE
+Call-ID: 1-1391@10.133.39.159
+Contact: <sip:10.133.48.149:5060;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-18
+Content-Type: application/sdp
+Content-Length: 198
+
+v=0
+o=- 1 2 IN IP4 10.133.48.149
+s=-
+c=IN IP4 10.133.48.149
+t=0 0
+m=audio 35000 RTP/AVP 0 127
+a=rtpmap:0 PCMU/8000
+a=rtpmap:127 telephone-event/8000
+a=fmtp:127 0-15
+a=recvonly
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:32:877.020
+TCP message sent (420 bytes):
+
+ACK sip:40006@10.133.48.149:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-18
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+Call-ID: 1-1391@10.133.39.159
+CSeq: 4 ACK
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Max-Forwards: 70
+Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:35:878.030
+TCP message sent (781 bytes):
+
+INVITE sip:40006@10.133.48.149:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-23
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+Call-ID: 1-1391@10.133.39.159
+CSeq: 5 INVITE
+Contact: <sip:40005@10.133.39.159:5075;transport=TCP>
+Supported: 100rel, histinfo, join, replaces, sdp-anat, timer
+Session-Expires: 1200;refresher=uac
+Max-Forwards: 70
+Min-SE: 1200
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   216
+
+v=0
+o=- 1485338250 1 IN IP4 192.168.25.2
+s=-
+c=IN IP4 192.168.25.3
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 6192 RTP/AVP 0 8 127
+a=sendrecv
+a=rtpmap:127 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:35:883.076
+TCP message received [227] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+CSeq: 5 INVITE
+Call-ID: 1-1391@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-23
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:35:888.113
+TCP message received [572] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+CSeq: 5 INVITE
+Call-ID: 1-1391@10.133.39.159
+Contact: <sip:10.133.48.149:5060;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-23
+Content-Type: application/sdp
+Content-Length: 198
+
+v=0
+o=- 1 2 IN IP4 10.133.48.149
+s=-
+c=IN IP4 10.133.48.149
+t=0 0
+m=audio 35000 RTP/AVP 0 127
+a=rtpmap:0 PCMU/8000
+a=rtpmap:127 telephone-event/8000
+a=fmtp:127 0-15
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:35:888.228
+TCP message sent (420 bytes):
+
+ACK sip:40006@10.133.48.149:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-23
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+Call-ID: 1-1391@10.133.39.159
+CSeq: 5 ACK
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Max-Forwards: 70
+Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:35:896.221
+TCP message received [839] bytes :
+
+INVITE sip:40005@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+CSeq: 4 INVITE
+Call-ID: 1-1391@10.133.39.159
+Contact: <sip:40006@10.133.48.149:5060;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Supported: 100rel, histinfo, join, replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-000227000133-1--s1632-
+Subject: Performance Test
+Session-Expires: 1200;refresher=uac
+Min-SE: 1200
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 198
+
+v=0
+o=- 1 2 IN IP4 10.133.48.149
+s=-
+c=IN IP4 10.133.48.149
+t=0 0
+m=audio 35000 RTP/AVP 0 127
+a=rtpmap:0 PCMU/8000
+a=rtpmap:127 telephone-event/8000
+a=fmtp:127 0-15
+a=sendonly
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:35:896.357
+TCP message sent (295 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-000227000133-1--s1632-
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+Call-ID: 1-1391@10.133.39.159
+CSeq: 4 INVITE
+Contact: <sip:10.133.39.159:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:35:896.473
+TCP message sent (542 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-000227000133-1--s1632-
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+Call-ID: 1-1391@10.133.39.159
+CSeq: 4 INVITE
+Contact: <sip:10.133.39.159:5075;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   216
+
+v=0
+o=- 1485338250 1 IN IP4 192.168.25.2
+s=-
+c=IN IP4 192.168.25.3
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 6192 RTP/AVP 0 8 127
+a=recvonly
+a=rtpmap:127 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:35:903.954
+TCP message received [460] bytes :
+
+ACK sip:40005@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+CSeq: 4 ACK
+Call-ID: 1-1391@10.133.39.159
+Contact: sip:40006@10.133.48.149:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-000789315979-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:38:909.614
+TCP message received [839] bytes :
+
+INVITE sip:40005@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+CSeq: 5 INVITE
+Call-ID: 1-1391@10.133.39.159
+Contact: <sip:40006@10.133.48.149:5060;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Supported: 100rel, histinfo, join, replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-000028210509-1--s1632-
+Subject: Performance Test
+Session-Expires: 1200;refresher=uac
+Min-SE: 1200
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 198
+
+v=0
+o=- 1 2 IN IP4 10.133.48.149
+s=-
+c=IN IP4 10.133.48.149
+t=0 0
+m=audio 35000 RTP/AVP 0 127
+a=rtpmap:0 PCMU/8000
+a=rtpmap:127 telephone-event/8000
+a=fmtp:127 0-15
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:38:909.726
+TCP message sent (295 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-000028210509-1--s1632-
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+Call-ID: 1-1391@10.133.39.159
+CSeq: 5 INVITE
+Contact: <sip:10.133.39.159:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:38:909.817
+TCP message sent (542 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-000028210509-1--s1632-
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+Call-ID: 1-1391@10.133.39.159
+CSeq: 5 INVITE
+Contact: <sip:10.133.39.159:5075;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   216
+
+v=0
+o=- 1485338250 1 IN IP4 192.168.25.2
+s=-
+c=IN IP4 192.168.25.3
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 6192 RTP/AVP 0 8 127
+a=sendrecv
+a=rtpmap:127 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 14:24:38:918.881
+TCP message received [460] bytes :
+
+ACK sip:40005@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+CSeq: 5 ACK
+Call-ID: 1-1391@10.133.39.159
+Contact: sip:40006@10.133.48.149:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-001612941804-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:54:920.270
+TCP message sent (414 bytes):
+
+BYE sip:40006@10.133.48.149:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-36
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+Call-ID: 1-1391@10.133.39.159
+Contact: sip:10.133.39.159:5075;transport=TCP
+CSeq: 8 BYE
+Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 14:24:54:930.295
+TCP message received [338] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+CSeq: 8 BYE
+Call-ID: 1-1391@10.133.39.159
+Contact: <sip:10.133.48.149:5060;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=1;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-1391-1-36
+Content-Length: 0
+
+

@@ -1,0 +1,127 @@
+----------------------------------------------- 2018-12-07 19:30:07:461.469
+UDP message received [939] bytes :
+
+INVITE sip:Agent@192.168.5.12:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.5.143:5060;tag=1
+To: <sip:Agent@192.168.5.12:5075;transport=UDP>
+CSeq: 1 INVITE
+Call-ID: 1fed104abbc32922b1a52f2f1b5cb71d
+Contact: <sip:81002001@192.168.5.143:5060;transport=udp>
+Record-Route: <sip:192.168.5.143:5060;ipcs-line=3;lr;transport=udp>
+Allow: REFER
+Supported: replaces, 100rel, timer
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-002030563054-1--s1632-;originator
+Subject: Performance Test
+Referred-By: sip:81001001@192.168.5.12:5075
+Session-Expires: 1200
+Min-SE: 1200
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 227
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.143
+s=-
+c=IN IP4 192.168.5.143
+t=0 0
+m=audio 35006 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2018-12-07 19:30:07:462.060
+UDP message sent (334 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-002030563054-1--s1632-;originator
+From: sip:81002001@192.168.5.143:5060;tag=1
+To: <sip:Agent@192.168.5.12:5075;transport=UDP>
+Call-ID: 1fed104abbc32922b1a52f2f1b5cb71d
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5075;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-07 19:30:07:462.230
+UDP message sent (335 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-002030563054-1--s1632-;originator
+From: sip:81002001@192.168.5.143:5060;tag=1
+To: <sip:Agent@192.168.5.12:5075;transport=UDP>
+Call-ID: 1fed104abbc32922b1a52f2f1b5cb71d
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5075;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-07 19:30:12:465.184
+UDP message sent (506 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-002030563054-1--s1632-;originator
+From: sip:81002001@192.168.5.143:5060;tag=1
+To: <sip:Agent@192.168.5.12:5075;transport=UDP>;tag=1
+Call-ID: 1fed104abbc32922b1a52f2f1b5cb71d
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5075;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   135
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6001 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2018-12-07 19:30:12:478.895
+UDP message received [436] bytes :
+
+ACK sip:192.168.5.12:5075;transport=UDP SIP/2.0
+From: sip:81002001@192.168.5.143:5060;tag=1
+To: <sip:Agent@192.168.5.12:5075;transport=UDP>;tag=1
+CSeq: 1 ACK
+Call-ID: 1fed104abbc32922b1a52f2f1b5cb71d
+Record-Route: <sip:192.168.5.143:5060;ipcs-line=3;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-000309158908-1--s1632-;originator
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-07 19:30:20:485.221
+UDP message received [514] bytes :
+
+BYE sip:192.168.5.12:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.5.143:5060;tag=1
+To: <sip:Agent@192.168.5.12:5075;transport=UDP>;tag=1
+CSeq: 2 BYE
+Call-ID: 1fed104abbc32922b1a52f2f1b5cb71d
+Contact: <sip:81002001@192.168.5.143:5060;transport=udp>
+Record-Route: <sip:192.168.5.143:5060;ipcs-line=3;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-000820324883-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-07 19:30:20:485.337
+UDP message sent (322 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-000820324883-1--s1632-
+From: sip:81002001@192.168.5.143:5060;tag=1
+To: <sip:Agent@192.168.5.12:5075;transport=UDP>;tag=1
+Call-ID: 1fed104abbc32922b1a52f2f1b5cb71d
+CSeq: 2 BYE
+Contact: <sip:192.168.5.12:5075;transport=UDP>
+Content-Length: 0
+
+

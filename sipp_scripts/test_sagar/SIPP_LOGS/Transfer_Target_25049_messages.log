@@ -1,0 +1,30 @@
+----------------------------------------------- 2017-12-15 13:14:45:8.726
+TCP message received [469] bytes :
+
+BYE sip:81002001@192.168.6.5:5060;transport=tcp SIP/2.0
+From: sip:81001001@192.168.6.223:5060;tag=1
+To: sip:81002001@sbcdev4.com;tag=1
+CSeq: 2 BYE
+Call-ID: 1-25024@192.168.6.5
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=1;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.6.223:5060;branch=z9hG4bK-s1632-002002870117-1--s1632-
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+----------------------------------------------- 2017-12-15 13:14:45:9.506
+TCP message sent (289 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.6.223:5060;branch=z9hG4bK-s1632-002002870117-1--s1632-
+From: sip:81001001@192.168.6.223:5060;tag=1
+To: sip:81002001@sbcdev4.com;tag=1
+Call-ID: 1-25024@192.168.6.5
+CSeq: 2 BYE
+Contact: <sip:192.168.6.5:5060;transport=TCP>
+Content-Length: 0
+
+

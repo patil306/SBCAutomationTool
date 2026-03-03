@@ -1,0 +1,135 @@
+----------------------------------------------- 2018-12-20 13:28:50:50.292
+TCP message received [808] bytes :
+
+INVITE sip:40006@192.168.5.12:5075;transport=tcp SIP/2.0
+From: sip:40005@192.168.55.80;tag=1
+To: sip:40006@192.168.5.12:5075
+CSeq: 1 INVITE
+Call-ID: 1-31238@10.133.39.159
+Contact: <sip:192.168.55.80:5060;transport=tcp>;+av.sip.iptolerance
+Record-Route: <sip:192.168.55.80:5060;ipcs-line=4;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-002053754333-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 228
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.80
+s=-
+c=IN IP4 192.168.55.80
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 35006 RTP/AVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-12-20 13:28:50:50.565
+TCP message sent (288 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-002053754333-1--s1632-
+From: sip:40005@192.168.55.80;tag=1
+To: sip:40006@192.168.5.12:5075
+Call-ID: 1-31238@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-20 13:28:50:50.640
+TCP message sent (295 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-002053754333-1--s1632-
+From: sip:40005@192.168.55.80;tag=1
+To: sip:40006@192.168.5.12:5075;tag=1
+Call-ID: 1-31238@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-20 13:28:50:50.708
+TCP message sent (489 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-002053754333-1--s1632-
+From: sip:40005@192.168.55.80;tag=1
+To: sip:40006@192.168.5.12:5075;tag=1
+Call-ID: 1-31238@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5075;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   164
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6000 RTP/AVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-12-20 13:28:50:76.034
+TCP message received [427] bytes :
+
+ACK sip:40006@192.168.5.12:5075;transport=tcp SIP/2.0
+From: sip:40005@192.168.55.80;tag=1
+To: sip:40006@192.168.5.12:5075;tag=1
+CSeq: 1 ACK
+Call-ID: 1-31238@10.133.39.159
+Record-Route: <sip:192.168.55.80:5060;ipcs-line=4;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-000949637262-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-20 13:28:55:78.811
+TCP message sent (744 bytes):
+
+BYE sip:40005@192.168.55.80:5060;transport=TCP SIP/2.0 SIP/2.0
+Via: SIP/2.0/TCP 192.168.5.12:5075;branch=z9hG4bK-31236-1-6
+Via: SIP/2.0/TLS 127.0.0.2:15061;rport=25983;ibmsid=local.1536222863252_65680596_65678346;branch=z9hG4bK275291644388129
+Via: SIP/2.0/TLS 172.16.10.6;branch=z9hG4bKbcefbe26d75c41e8a9a2050568d886e-AP;ft=11192297;received=172.16.10.6;rport=34578
+Via: SIP/2.0/TLS 172.16.10.2;branch=z9hG4bKbcefbe26d75c41e8a9a2050568d886e
+From: sip:40006@192.168.5.12;tag=1
+To: sip:40005@192.168.55.80:5060;tag=1
+Call-ID: 1-31238@10.133.39.159
+Contact: sip:192.168.5.12:5075;transport=TCP
+CSeq: 1 BYE
+Route: <sip:192.168.55.80:5060;transport=TCP;ipcs-line=3234;lr>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-20 13:28:55:101.306
+TCP message received [693] bytes :
+
+SIP/2.0 200 OK
+From: sip:40006@192.168.5.12;tag=1
+To: sip:40005@192.168.55.80:5060;tag=1
+CSeq: 1 BYE
+Call-ID: 1-31238@10.133.39.159
+Contact: <sip:192.168.55.80:5060;transport=tcp>
+Record-Route: <sip:192.168.55.80:5060;ipcs-line=4;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.5.12:5075;branch=z9hG4bK-31236-1-6
+Via: SIP/2.0/TLS 127.0.0.2:15061;rport=25983;ibmsid=local.1536222863252_65680596_65678346;branch=z9hG4bK275291644388129
+Via: SIP/2.0/TLS 172.16.10.6;branch=z9hG4bKbcefbe26d75c41e8a9a2050568d886e-AP;ft=11192297;received=172.16.10.6;rport=34578
+Via: SIP/2.0/TLS 172.16.10.2;branch=z9hG4bKbcefbe26d75c41e8a9a2050568d886e
+Content-Length: 0
+
+

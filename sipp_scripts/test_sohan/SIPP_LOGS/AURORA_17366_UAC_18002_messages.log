@@ -1,0 +1,55 @@
+----------------------------------------------- 2019-06-18 16:06:35:729.163
+UDP message sent (509 bytes):
+
+REGISTER sip:10.133.48.238:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.48.180:6000;rport;branch=z9hG4bKPjsveyVyjEpkmjhn6EeQ7pWqM4OFIE0SJV
+Max-Forwards: 70
+From: <sip:1001@10.133.48.238>;tag=1
+To: <sip:1001@10.133.48.238>
+Call-ID: 1-18002@10.133.39.159
+CSeq: 63860 REGISTER
+User-Agent: PJSUA v2.8 Linux-3.10.3.189/x86_64/glibc-2.17
+Contact: <sip:1001@10.133.48.180:6000;ob>
+Expires: 300
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+Content-Length:  0
+
+
+----------------------------------------------- 2019-06-18 16:06:35:740.619
+UDP message received [260] bytes :
+
+SIP/2.0 100 Trying
+From: <sip:1001@10.133.48.238>;tag=1
+To: <sip:1001@10.133.48.238>
+CSeq: 63860 REGISTER
+Call-ID: 1-18002@10.133.39.159
+Via: SIP/2.0/UDP 10.133.48.180:6000;rport=5060;branch=z9hG4bKPjsveyVyjEpkmjhn6EeQ7pWqM4OFIE0SJV
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected UDP message received:
+
+SIP/2.0 100 Trying
+From: <sip:1001@10.133.48.238>;tag=1
+To: <sip:1001@10.133.48.238>
+CSeq: 63860 REGISTER
+Call-ID: 1-18002@10.133.39.159
+Via: SIP/2.0/UDP 10.133.48.180:6000;rport=5060;branch=z9hG4bKPjsveyVyjEpkmjhn6EeQ7pWqM4OFIE0SJV
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-18 16:06:35:741.495
+UDP message sent (309 bytes):
+
+BYE sip:1001@10.133.48.238 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-18002-1--1
+From: <sip:1001@10.133.48.238>;tag=1
+To: <sip:1001@10.133.48.238>
+Call-ID: 1-18002@10.133.39.159
+CSeq: 63861 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:5060;transport=UDP>
+Content-Length: 0
+
+

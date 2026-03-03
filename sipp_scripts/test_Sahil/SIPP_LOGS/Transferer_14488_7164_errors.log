@@ -1,0 +1,10 @@
+sipp: The following events occured:
+2019-03-06	15:06:47:298	1551865007.298973: Aborting call on unexpected message for Call-Id '87831a2360d10043f1fdb635564e4b01': while expecting '202' (index 7), received 'SIP/2.0 481 Call/Transaction Does Not Exist
+From:  sip:40006@192.168.55.78;tag=1
+To:  sip:40006@192.168.5.12:5092;tag=2
+CSeq: 1 REFER
+Call-ID: 87831a2360d10043f1fdb635564e4b01
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-001225287849-1--s1632-
+Content-Length: 0
+
+'.

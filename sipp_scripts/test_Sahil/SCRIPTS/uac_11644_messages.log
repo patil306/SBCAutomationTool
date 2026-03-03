@@ -1,0 +1,2442 @@
+----------------------------------------------- 2020-06-10 15:54:43:280.385
+TCP message sent (562 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-1-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag001
+To: sip:50003@10.133.48.83:5060
+Call-ID: 1-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:43:295.943
+TCP message received [240] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag001
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 1-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:43:305.166
+TCP message received [296] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag001
+To: sip:50003@10.133.48.83:5060;tag=34
+CSeq: 1 INVITE
+Call-ID: 1-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:43:323.314
+TCP message received [534] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag001
+To: sip:50003@10.133.48.83:5060;tag=34
+CSeq: 1 INVITE
+Call-ID: 1-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-1-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35066 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:43:323.523
+TCP message sent (326 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-1-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag001
+To: sip:50003@10.133.48.83:5060;tag=34
+Call-ID: 1-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:44:280.306
+TCP message sent (562 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-2-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag002
+To: sip:50003@10.133.48.83:5060
+Call-ID: 2-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:44:292.819
+TCP message received [240] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag002
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 2-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-2-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:44:299.291
+TCP message received [296] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag002
+To: sip:50003@10.133.48.83:5060;tag=35
+CSeq: 1 INVITE
+Call-ID: 2-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-2-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:44:306.890
+TCP message received [534] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag002
+To: sip:50003@10.133.48.83:5060;tag=35
+CSeq: 1 INVITE
+Call-ID: 2-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-2-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35068 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:44:307.223
+TCP message sent (326 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-2-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag002
+To: sip:50003@10.133.48.83:5060;tag=35
+Call-ID: 2-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:45:279.593
+TCP message sent (562 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-3-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag003
+To: sip:50003@10.133.48.83:5060
+Call-ID: 3-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:45:292.089
+TCP message received [240] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag003
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 3-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-3-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:45:299.189
+TCP message received [296] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag003
+To: sip:50003@10.133.48.83:5060;tag=36
+CSeq: 1 INVITE
+Call-ID: 3-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-3-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:45:308.576
+TCP message received [534] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag003
+To: sip:50003@10.133.48.83:5060;tag=36
+CSeq: 1 INVITE
+Call-ID: 3-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-3-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35070 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:45:308.801
+TCP message sent (326 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-3-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag003
+To: sip:50003@10.133.48.83:5060;tag=36
+Call-ID: 3-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:46:280.257
+TCP message sent (562 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-4-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag004
+To: sip:50003@10.133.48.83:5060
+Call-ID: 4-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:46:296.971
+TCP message received [240] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag004
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 4-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-4-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:46:308.232
+TCP message received [296] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag004
+To: sip:50003@10.133.48.83:5060;tag=37
+CSeq: 1 INVITE
+Call-ID: 4-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-4-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:46:318.483
+TCP message received [534] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag004
+To: sip:50003@10.133.48.83:5060;tag=37
+CSeq: 1 INVITE
+Call-ID: 4-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-4-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35072 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:46:318.676
+TCP message sent (326 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-4-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag004
+To: sip:50003@10.133.48.83:5060;tag=37
+Call-ID: 4-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:47:280.317
+TCP message sent (562 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-5-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag005
+To: sip:50003@10.133.48.83:5060
+Call-ID: 5-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:47:293.508
+TCP message received [240] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag005
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 5-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-5-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:47:299.520
+TCP message received [296] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag005
+To: sip:50003@10.133.48.83:5060;tag=38
+CSeq: 1 INVITE
+Call-ID: 5-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-5-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:47:306.708
+TCP message received [534] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag005
+To: sip:50003@10.133.48.83:5060;tag=38
+CSeq: 1 INVITE
+Call-ID: 5-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-5-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35074 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:47:306.924
+TCP message sent (326 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-5-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag005
+To: sip:50003@10.133.48.83:5060;tag=38
+Call-ID: 5-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:48:279.786
+TCP message sent (562 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-6-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag006
+To: sip:50003@10.133.48.83:5060
+Call-ID: 6-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:48:295.450
+TCP message received [240] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag006
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 6-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-6-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:48:303.818
+TCP message received [296] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag006
+To: sip:50003@10.133.48.83:5060;tag=39
+CSeq: 1 INVITE
+Call-ID: 6-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-6-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:48:313.855
+TCP message received [534] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag006
+To: sip:50003@10.133.48.83:5060;tag=39
+CSeq: 1 INVITE
+Call-ID: 6-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-6-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35076 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:48:314.046
+TCP message sent (326 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-6-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag006
+To: sip:50003@10.133.48.83:5060;tag=39
+Call-ID: 6-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:49:278.800
+TCP message sent (562 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-7-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag007
+To: sip:50003@10.133.48.83:5060
+Call-ID: 7-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:49:291.007
+TCP message received [240] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag007
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 7-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-7-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:49:298.108
+TCP message received [296] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag007
+To: sip:50003@10.133.48.83:5060;tag=40
+CSeq: 1 INVITE
+Call-ID: 7-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-7-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:49:306.562
+TCP message received [534] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag007
+To: sip:50003@10.133.48.83:5060;tag=40
+CSeq: 1 INVITE
+Call-ID: 7-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-7-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35078 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:49:306.752
+TCP message sent (326 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-7-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag007
+To: sip:50003@10.133.48.83:5060;tag=40
+Call-ID: 7-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:50:279.292
+TCP message sent (562 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-8-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag008
+To: sip:50003@10.133.48.83:5060
+Call-ID: 8-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:50:294.015
+TCP message received [240] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag008
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 8-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-8-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:50:303.217
+TCP message received [296] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag008
+To: sip:50003@10.133.48.83:5060;tag=41
+CSeq: 1 INVITE
+Call-ID: 8-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-8-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:50:311.526
+TCP message received [534] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag008
+To: sip:50003@10.133.48.83:5060;tag=41
+CSeq: 1 INVITE
+Call-ID: 8-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-8-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35080 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:50:311.730
+TCP message sent (326 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-8-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag008
+To: sip:50003@10.133.48.83:5060;tag=41
+Call-ID: 8-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:51:279.767
+TCP message sent (562 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-9-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag009
+To: sip:50003@10.133.48.83:5060
+Call-ID: 9-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:51:294.305
+TCP message received [240] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag009
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 9-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-9-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:51:301.460
+TCP message received [296] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag009
+To: sip:50003@10.133.48.83:5060;tag=42
+CSeq: 1 INVITE
+Call-ID: 9-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-9-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:51:310.522
+TCP message received [534] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag009
+To: sip:50003@10.133.48.83:5060;tag=42
+CSeq: 1 INVITE
+Call-ID: 9-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-9-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35082 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:51:310.718
+TCP message sent (326 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-9-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag009
+To: sip:50003@10.133.48.83:5060;tag=42
+Call-ID: 9-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:52:279.360
+TCP message sent (565 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-10-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0010
+To: sip:50003@10.133.48.83:5060
+Call-ID: 10-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:52:295.818
+TCP message received [243] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0010
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 10-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-10-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:52:305.094
+TCP message received [299] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0010
+To: sip:50003@10.133.48.83:5060;tag=43
+CSeq: 1 INVITE
+Call-ID: 10-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-10-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:52:316.149
+TCP message received [537] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0010
+To: sip:50003@10.133.48.83:5060;tag=43
+CSeq: 1 INVITE
+Call-ID: 10-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-10-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35084 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:52:316.369
+TCP message sent (329 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-10-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0010
+To: sip:50003@10.133.48.83:5060;tag=43
+Call-ID: 10-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:53:279.956
+TCP message sent (565 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-11-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0011
+To: sip:50003@10.133.48.83:5060
+Call-ID: 11-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:53:293.325
+TCP message received [243] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0011
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 11-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-11-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:53:299.992
+TCP message received [299] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0011
+To: sip:50003@10.133.48.83:5060;tag=44
+CSeq: 1 INVITE
+Call-ID: 11-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-11-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:53:308.273
+TCP message received [537] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0011
+To: sip:50003@10.133.48.83:5060;tag=44
+CSeq: 1 INVITE
+Call-ID: 11-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-11-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35086 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:53:308.468
+TCP message sent (329 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-11-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0011
+To: sip:50003@10.133.48.83:5060;tag=44
+Call-ID: 11-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:53:326.556
+TCP message sent (354 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-1-7
+From: sip:50003@trk.com;tag=11644SIPpTag001
+To: sip:50003@10.133.48.83:5060;tag=34
+Call-ID: 1-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:53:840.625
+TCP message received [277] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag001
+To: sip:50003@10.133.48.83:5060;tag=34
+CSeq: 2 BYE
+Call-ID: 1-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-1-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:54:278.810
+TCP message sent (565 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-12-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0012
+To: sip:50003@10.133.48.83:5060
+Call-ID: 12-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:54:292.538
+TCP message received [243] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0012
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 12-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-12-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:54:298.887
+TCP message received [299] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0012
+To: sip:50003@10.133.48.83:5060;tag=45
+CSeq: 1 INVITE
+Call-ID: 12-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-12-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:54:306.293
+TCP message received [537] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0012
+To: sip:50003@10.133.48.83:5060;tag=45
+CSeq: 1 INVITE
+Call-ID: 12-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-12-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35088 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:54:306.475
+TCP message sent (329 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-12-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0012
+To: sip:50003@10.133.48.83:5060;tag=45
+Call-ID: 12-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:54:307.740
+TCP message sent (354 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-2-7
+From: sip:50003@trk.com;tag=11644SIPpTag002
+To: sip:50003@10.133.48.83:5060;tag=35
+Call-ID: 2-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:54:824.572
+TCP message received [277] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag002
+To: sip:50003@10.133.48.83:5060;tag=35
+CSeq: 2 BYE
+Call-ID: 2-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-2-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:55:280.589
+TCP message sent (565 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-13-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0013
+To: sip:50003@10.133.48.83:5060
+Call-ID: 13-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:55:290.308
+TCP message received [243] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0013
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 13-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-13-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:55:297.286
+TCP message received [299] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0013
+To: sip:50003@10.133.48.83:5060;tag=46
+CSeq: 1 INVITE
+Call-ID: 13-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-13-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:55:300.343
+TCP message received [537] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0013
+To: sip:50003@10.133.48.83:5060;tag=46
+CSeq: 1 INVITE
+Call-ID: 13-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-13-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35090 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:55:300.518
+TCP message sent (329 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-13-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0013
+To: sip:50003@10.133.48.83:5060;tag=46
+Call-ID: 13-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:55:309.682
+TCP message sent (354 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-3-7
+From: sip:50003@trk.com;tag=11644SIPpTag003
+To: sip:50003@10.133.48.83:5060;tag=36
+Call-ID: 3-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:55:821.720
+TCP message received [277] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag003
+To: sip:50003@10.133.48.83:5060;tag=36
+CSeq: 2 BYE
+Call-ID: 3-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-3-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:56:280.494
+TCP message sent (565 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-14-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0014
+To: sip:50003@10.133.48.83:5060
+Call-ID: 14-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:56:294.544
+TCP message received [243] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0014
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 14-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-14-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:56:301.887
+TCP message received [299] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0014
+To: sip:50003@10.133.48.83:5060;tag=47
+CSeq: 1 INVITE
+Call-ID: 14-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-14-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:56:310.105
+TCP message received [537] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0014
+To: sip:50003@10.133.48.83:5060;tag=47
+CSeq: 1 INVITE
+Call-ID: 14-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-14-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35092 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:56:310.323
+TCP message sent (329 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-14-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0014
+To: sip:50003@10.133.48.83:5060;tag=47
+Call-ID: 14-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:56:320.613
+TCP message sent (354 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-4-7
+From: sip:50003@trk.com;tag=11644SIPpTag004
+To: sip:50003@10.133.48.83:5060;tag=37
+Call-ID: 4-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:56:834.415
+TCP message received [277] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag004
+To: sip:50003@10.133.48.83:5060;tag=37
+CSeq: 2 BYE
+Call-ID: 4-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-4-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:57:279.457
+TCP message sent (565 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-15-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0015
+To: sip:50003@10.133.48.83:5060
+Call-ID: 15-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:57:303.180
+TCP message received [243] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0015
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 15-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-15-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:57:308.017
+TCP message sent (354 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-5-7
+From: sip:50003@trk.com;tag=11644SIPpTag005
+To: sip:50003@10.133.48.83:5060;tag=38
+Call-ID: 5-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:57:324.448
+TCP message received [299] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0015
+To: sip:50003@10.133.48.83:5060;tag=48
+CSeq: 1 INVITE
+Call-ID: 15-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-15-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:57:340.111
+TCP message received [537] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0015
+To: sip:50003@10.133.48.83:5060;tag=48
+CSeq: 1 INVITE
+Call-ID: 15-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-15-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35094 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:57:340.336
+TCP message sent (329 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-15-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0015
+To: sip:50003@10.133.48.83:5060;tag=48
+Call-ID: 15-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:57:858.935
+TCP message received [277] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag005
+To: sip:50003@10.133.48.83:5060;tag=38
+CSeq: 2 BYE
+Call-ID: 5-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-5-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:58:280.597
+TCP message sent (565 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-16-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0016
+To: sip:50003@10.133.48.83:5060
+Call-ID: 16-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:58:295.147
+TCP message received [243] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0016
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 16-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-16-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:58:310.238
+TCP message received [299] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0016
+To: sip:50003@10.133.48.83:5060;tag=49
+CSeq: 1 INVITE
+Call-ID: 16-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-16-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:58:314.946
+TCP message sent (354 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-6-7
+From: sip:50003@trk.com;tag=11644SIPpTag006
+To: sip:50003@10.133.48.83:5060;tag=39
+Call-ID: 6-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:58:319.303
+TCP message received [537] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0016
+To: sip:50003@10.133.48.83:5060;tag=49
+CSeq: 1 INVITE
+Call-ID: 16-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-16-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35096 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:58:319.494
+TCP message sent (329 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-16-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0016
+To: sip:50003@10.133.48.83:5060;tag=49
+Call-ID: 16-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:58:834.802
+TCP message received [277] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag006
+To: sip:50003@10.133.48.83:5060;tag=39
+CSeq: 2 BYE
+Call-ID: 6-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-6-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:59:279.757
+TCP message sent (565 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-17-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0017
+To: sip:50003@10.133.48.83:5060
+Call-ID: 17-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:54:59:294.328
+TCP message received [243] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0017
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 17-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-17-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:59:302.605
+TCP message received [299] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0017
+To: sip:50003@10.133.48.83:5060;tag=50
+CSeq: 1 INVITE
+Call-ID: 17-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-17-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:59:308.449
+TCP message sent (354 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-7-7
+From: sip:50003@trk.com;tag=11644SIPpTag007
+To: sip:50003@10.133.48.83:5060;tag=40
+Call-ID: 7-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:59:311.667
+TCP message received [537] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0017
+To: sip:50003@10.133.48.83:5060;tag=50
+CSeq: 1 INVITE
+Call-ID: 17-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-17-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35098 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:54:59:311.853
+TCP message sent (329 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-17-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0017
+To: sip:50003@10.133.48.83:5060;tag=50
+Call-ID: 17-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:54:59:822.659
+TCP message received [277] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag007
+To: sip:50003@10.133.48.83:5060;tag=40
+CSeq: 2 BYE
+Call-ID: 7-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-7-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:00:280.797
+TCP message sent (565 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-18-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0018
+To: sip:50003@10.133.48.83:5060
+Call-ID: 18-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:55:00:294.444
+TCP message received [243] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0018
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 18-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-18-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:00:301.486
+TCP message received [299] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0018
+To: sip:50003@10.133.48.83:5060;tag=51
+CSeq: 1 INVITE
+Call-ID: 18-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-18-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:00:309.341
+TCP message received [537] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0018
+To: sip:50003@10.133.48.83:5060;tag=51
+CSeq: 1 INVITE
+Call-ID: 18-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-18-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35100 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:55:00:309.604
+TCP message sent (329 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-18-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0018
+To: sip:50003@10.133.48.83:5060;tag=51
+Call-ID: 18-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:00:314.533
+TCP message sent (354 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-8-7
+From: sip:50003@trk.com;tag=11644SIPpTag008
+To: sip:50003@10.133.48.83:5060;tag=41
+Call-ID: 8-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:00:828.217
+TCP message received [277] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag008
+To: sip:50003@10.133.48.83:5060;tag=41
+CSeq: 2 BYE
+Call-ID: 8-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-8-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:01:279.812
+TCP message sent (565 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-19-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0019
+To: sip:50003@10.133.48.83:5060
+Call-ID: 19-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:55:01:293.575
+TCP message received [243] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0019
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 19-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-19-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:01:301.427
+TCP message received [299] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0019
+To: sip:50003@10.133.48.83:5060;tag=52
+CSeq: 1 INVITE
+Call-ID: 19-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-19-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:01:311.530
+TCP message received [537] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0019
+To: sip:50003@10.133.48.83:5060;tag=52
+CSeq: 1 INVITE
+Call-ID: 19-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-19-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35102 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:55:01:311.713
+TCP message sent (329 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-19-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0019
+To: sip:50003@10.133.48.83:5060;tag=52
+Call-ID: 19-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:01:312.978
+TCP message sent (354 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-9-7
+From: sip:50003@trk.com;tag=11644SIPpTag009
+To: sip:50003@10.133.48.83:5060;tag=42
+Call-ID: 9-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:01:830.316
+TCP message received [277] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag009
+To: sip:50003@10.133.48.83:5060;tag=42
+CSeq: 2 BYE
+Call-ID: 9-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-9-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:02:280.820
+TCP message sent (565 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-20-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0020
+To: sip:50003@10.133.48.83:5060
+Call-ID: 20-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:55:02:293.761
+TCP message received [243] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0020
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 20-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-20-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:02:301.924
+TCP message received [299] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0020
+To: sip:50003@10.133.48.83:5060;tag=53
+CSeq: 1 INVITE
+Call-ID: 20-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-20-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:02:310.767
+TCP message received [537] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0020
+To: sip:50003@10.133.48.83:5060;tag=53
+CSeq: 1 INVITE
+Call-ID: 20-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-20-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35104 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:55:02:310.989
+TCP message sent (329 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-20-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0020
+To: sip:50003@10.133.48.83:5060;tag=53
+Call-ID: 20-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:02:317.959
+TCP message sent (357 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-10-7
+From: sip:50003@trk.com;tag=11644SIPpTag0010
+To: sip:50003@10.133.48.83:5060;tag=43
+Call-ID: 10-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:02:830.586
+TCP message received [280] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag0010
+To: sip:50003@10.133.48.83:5060;tag=43
+CSeq: 2 BYE
+Call-ID: 10-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-10-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:03:280.033
+TCP message sent (565 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-21-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0021
+To: sip:50003@10.133.48.83:5060
+Call-ID: 21-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:55:03:292.940
+TCP message received [243] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0021
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 21-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-21-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:03:299.898
+TCP message received [299] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0021
+To: sip:50003@10.133.48.83:5060;tag=54
+CSeq: 1 INVITE
+Call-ID: 21-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-21-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:03:307.576
+TCP message received [537] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0021
+To: sip:50003@10.133.48.83:5060;tag=54
+CSeq: 1 INVITE
+Call-ID: 21-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-21-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35106 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:55:03:307.762
+TCP message sent (329 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-21-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0021
+To: sip:50003@10.133.48.83:5060;tag=54
+Call-ID: 21-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:03:309.047
+TCP message sent (357 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-11-7
+From: sip:50003@trk.com;tag=11644SIPpTag0011
+To: sip:50003@10.133.48.83:5060;tag=44
+Call-ID: 11-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:03:825.096
+TCP message received [280] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag0011
+To: sip:50003@10.133.48.83:5060;tag=44
+CSeq: 2 BYE
+Call-ID: 11-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-11-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:04:279.583
+TCP message sent (565 bytes):
+
+INVITE sip:50003@10.133.48.83:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-22-0
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0022
+To: sip:50003@10.133.48.83:5060
+Call-ID: 22-11644@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   142
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-10 15:55:04:291.982
+TCP message received [243] bytes :
+
+SIP/2.0 100 Trying
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0022
+To: sip:50003@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 22-11644@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-22-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:04:298.578
+TCP message received [299] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0022
+To: sip:50003@10.133.48.83:5060;tag=55
+CSeq: 1 INVITE
+Call-ID: 22-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-22-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:04:306.654
+TCP message received [537] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0022
+To: sip:50003@10.133.48.83:5060;tag=55
+CSeq: 1 INVITE
+Call-ID: 22-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-22-0
+Content-Type: application/sdp
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.55.78
+s=-
+c=IN IP4 192.168.55.78
+t=0 0
+m=audio 35108 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-06-10 15:55:04:306.846
+TCP message sent (329 bytes):
+
+ACK sip:10.133.48.83:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-22-5
+From: sip:50003@10.133.39.159:5098;tag=11644SIPpTag0022
+To: sip:50003@10.133.48.83:5060;tag=55
+Call-ID: 22-11644@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:50003@10.133.39.159:5098;transport=TCP
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:04:306.974
+TCP message sent (357 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-12-7
+From: sip:50003@trk.com;tag=11644SIPpTag0012
+To: sip:50003@10.133.48.83:5060;tag=45
+Call-ID: 12-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:04:824.534
+TCP message received [280] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag0012
+To: sip:50003@10.133.48.83:5060;tag=45
+CSeq: 2 BYE
+Call-ID: 12-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-12-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:05:303.002
+TCP message sent (357 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-13-7
+From: sip:50003@trk.com;tag=11644SIPpTag0013
+To: sip:50003@10.133.48.83:5060;tag=46
+Call-ID: 13-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:05:819.919
+TCP message received [280] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag0013
+To: sip:50003@10.133.48.83:5060;tag=46
+CSeq: 2 BYE
+Call-ID: 13-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-13-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:06:311.010
+TCP message sent (357 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-14-7
+From: sip:50003@trk.com;tag=11644SIPpTag0014
+To: sip:50003@10.133.48.83:5060;tag=47
+Call-ID: 14-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:06:825.194
+TCP message received [280] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag0014
+To: sip:50003@10.133.48.83:5060;tag=47
+CSeq: 2 BYE
+Call-ID: 14-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-14-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:07:342.003
+TCP message sent (357 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-15-7
+From: sip:50003@trk.com;tag=11644SIPpTag0015
+To: sip:50003@10.133.48.83:5060;tag=48
+Call-ID: 15-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:07:856.891
+TCP message received [280] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag0015
+To: sip:50003@10.133.48.83:5060;tag=48
+CSeq: 2 BYE
+Call-ID: 15-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-15-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:08:321.608
+TCP message sent (357 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-16-7
+From: sip:50003@trk.com;tag=11644SIPpTag0016
+To: sip:50003@10.133.48.83:5060;tag=49
+Call-ID: 16-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:08:836.382
+TCP message received [280] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag0016
+To: sip:50003@10.133.48.83:5060;tag=49
+CSeq: 2 BYE
+Call-ID: 16-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-16-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:09:313.906
+TCP message sent (357 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-17-7
+From: sip:50003@trk.com;tag=11644SIPpTag0017
+To: sip:50003@10.133.48.83:5060;tag=50
+Call-ID: 17-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:09:829.878
+TCP message received [280] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag0017
+To: sip:50003@10.133.48.83:5060;tag=50
+CSeq: 2 BYE
+Call-ID: 17-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-17-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:10:311.772
+TCP message sent (357 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-18-7
+From: sip:50003@trk.com;tag=11644SIPpTag0018
+To: sip:50003@10.133.48.83:5060;tag=51
+Call-ID: 18-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:10:826.917
+TCP message received [280] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag0018
+To: sip:50003@10.133.48.83:5060;tag=51
+CSeq: 2 BYE
+Call-ID: 18-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-18-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:11:313.032
+TCP message sent (357 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-19-7
+From: sip:50003@trk.com;tag=11644SIPpTag0019
+To: sip:50003@10.133.48.83:5060;tag=52
+Call-ID: 19-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:11:827.102
+TCP message received [280] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag0019
+To: sip:50003@10.133.48.83:5060;tag=52
+CSeq: 2 BYE
+Call-ID: 19-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-19-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:12:313.489
+TCP message sent (357 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-20-7
+From: sip:50003@trk.com;tag=11644SIPpTag0020
+To: sip:50003@10.133.48.83:5060;tag=53
+Call-ID: 20-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:12:831.479
+TCP message received [280] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag0020
+To: sip:50003@10.133.48.83:5060;tag=53
+CSeq: 2 BYE
+Call-ID: 20-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-20-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:13:308.725
+TCP message sent (357 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-21-7
+From: sip:50003@trk.com;tag=11644SIPpTag0021
+To: sip:50003@10.133.48.83:5060;tag=54
+Call-ID: 21-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:13:824.752
+TCP message received [280] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag0021
+To: sip:50003@10.133.48.83:5060;tag=54
+CSeq: 2 BYE
+Call-ID: 21-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-21-7
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:14:308.266
+TCP message sent (357 bytes):
+
+BYE sip:50003@10.133.48.83:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-22-7
+From: sip:50003@trk.com;tag=11644SIPpTag0022
+To: sip:50003@10.133.48.83:5060;tag=55
+Call-ID: 22-11644@10.133.39.159
+CSeq: 2 BYE
+Contact: <sip:50003@10.133.39.159:5098;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-10 15:55:14:822.771
+TCP message received [280] bytes :
+
+SIP/2.0 200 OK
+From: sip:50003@trk.com;tag=11644SIPpTag0022
+To: sip:50003@10.133.48.83:5060;tag=55
+CSeq: 2 BYE
+Call-ID: 22-11644@10.133.39.159
+Contact: <sip:10.133.48.83:5060;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5098;branch=z9hG4bK-11644-22-7
+Content-Length: 0
+
+

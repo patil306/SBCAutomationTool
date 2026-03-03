@@ -1,0 +1,12 @@
+sipp: The following events occured:
+2019-08-26	22:46:25:087	1566839785.087785: Aborting call on unexpected message for Call-Id '4952106a4052345afe228564d5416844': while pausing (index 2), received 'ACK sip:40007@192.168.5.12:5097 SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+CSeq: 1 ACK
+Call-ID: 4952106a4052345afe228564d5416844
+Contact: sip:4078@192.168.55.75:5060;transport=udp;transport=UDP
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001943573918-1--s1632-
+Content-Length: 0
+
+'.

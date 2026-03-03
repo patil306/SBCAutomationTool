@@ -1,0 +1,14 @@
+sipp: The following events occured:
+2018-10-26	19:14:32:966	1540561472.966877: Aborting call on unexpected message for Call-Id '3ba7f77e6b2a2758227ec8685fd00577': while pausing (index 5), received 'PRACK sip:81001001@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:81002001@10.133.48.157:20189;tag=1
+To: sip:81001001@10.133.39.159:5075;tag=1
+CSeq: 3 PRACK
+Call-ID: 3ba7f77e6b2a2758227ec8685fd00577
+Contact: <sip:10.133.48.157:5060;transport=tcp>
+Record-Route: <sip:10.133.48.157:5060;ipcs-line=6;lr;transport=tcp>
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.48.157:5060;branch=z9hG4bK-s1632-000801023018-1--s1632-
+RAck: 1 1 INVITE
+Content-Length: 0
+
+'.

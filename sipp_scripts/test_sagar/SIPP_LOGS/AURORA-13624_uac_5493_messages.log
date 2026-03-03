@@ -1,0 +1,78 @@
+----------------------------------------------- 2018-08-17 12:15:55:619.916
+TCP message sent (435 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-5493-1-0
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.39.197:5060
+Call-ID: 1-5493@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 12:15:56:633.786
+TCP message received [331] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.39.197:5060
+CSeq: 1 OPTIONS
+Call-ID: 1-5493@10.133.39.159
+Contact: <sip:10.133.39.197:5060;transport=tcp>
+Record-Route: <sip:10.133.39.197:5060;ipcs-line=800;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-5493-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-17 12:15:58:440.274
+TCP message received [583] bytes :
+
+OPTIONS sip:81001001@10.133.39.159:5082 SIP/2.0
+From: sip:81002001@10.133.39.197:16456;tag=1
+To: sip:81001001@10.133.39.159:5082
+CSeq: 1 OPTIONS
+Call-ID: 5629773c6695830ff7d21c618245bc5e
+Contact: sip:81002001@10.133.39.197:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.39.197:5060;ipcs-line=801;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.197:5060;branch=z9hG4bK-s1632-000542193441-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-17 12:15:58:440.769
+TCP message sent (310 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.39.197:5060;branch=z9hG4bK-s1632-000542193441-1--s1632-
+From: sip:81002001@10.133.39.197:16456;tag=1
+To: sip:81001001@10.133.39.159:5082
+Call-ID: 5629773c6695830ff7d21c618245bc5e
+CSeq: 1 OPTIONS
+Contact: <sip:10.133.39.159:5082;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-17 12:15:59:636.921
+TCP message sent (317 bytes):
+
+BYE  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-5493-1230262351--1
+From: sip:81002001@10.133.39.197:16456;tag=1
+To: sip:81001001@10.133.39.159:5082
+Call-ID: 5629773c6695830ff7d21c618245bc5e
+CSeq: 2 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:5082;transport=TCP>
+Content-Length: 0
+
+

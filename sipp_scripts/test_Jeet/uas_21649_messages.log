@@ -1,0 +1,139 @@
+----------------------------------------------- 2021-11-01 09:05:43:1.025
+TCP message received [1015] bytes :
+
+INVITE sip:reddy2@192.168.56.202:6015 SIP/2.0
+From: sip:reddy1@192.168.3.163;tag=1
+To: sip:reddy2@192.168.56.202:6015
+CSeq: 1 INVITE
+Call-ID: 18dd1e0b0ddaaf018edefe3185853a7b
+Contact: <sip:reddy1@192.168.3.163:5060;transport=tcp>
+Record-Route: <sip:192.168.3.163:5060;ipcs-line=25108;lr;transport=tcp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+User-Agent: Avaya J179 IP Phone 4.0.2.1.3 c81fea85c1d6
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.3.163:5060;branch=z9hG4bK-s1632-002141354400-1--s1632-
+Subject: Performance Test
+Remote-LegId: 29995
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Av-Global-Session-ID: 74e899a4-b2eb-4cea-8e33-bb4099ccb01e
+Content-Length: 268
+
+v=0
+o=- 1509186683 1 IN IP4 192.168.3.163
+s=-
+c=IN IP4 192.168.3.163
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 35030 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2021-11-01 09:05:43:1.204
+TCP message sent (305 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 192.168.3.163:5060;branch=z9hG4bK-s1632-002141354400-1--s1632-
+From: sip:reddy1@192.168.3.163;tag=1
+To: sip:reddy2@192.168.56.202:6015
+Call-ID: 18dd1e0b0ddaaf018edefe3185853a7b
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6015;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-11-01 09:05:43:1.258
+TCP message sent (312 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/TCP 192.168.3.163:5060;branch=z9hG4bK-s1632-002141354400-1--s1632-
+From: sip:reddy1@192.168.3.163;tag=1
+To: sip:reddy2@192.168.56.202:6015;tag=1
+Call-ID: 18dd1e0b0ddaaf018edefe3185853a7b
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6015;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-11-01 09:05:43:1.294
+TCP message sent (648 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.3.163:5060;branch=z9hG4bK-s1632-002141354400-1--s1632-
+From: sip:reddy1@192.168.3.163;tag=1
+To: sip:reddy2@192.168.56.202:6015;tag=1
+Call-ID: 18dd1e0b0ddaaf018edefe3185853a7b
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6015;transport=TCP>
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Type: application/sdp
+Content-Length:   246
+
+v=0
+o=- 1509186683 1 IN IP4 192.168.56.202
+s=-
+c=IN IP4 192.168.56.202
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 41532 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2021-11-01 09:05:43:18.317
+TCP message received [573] bytes :
+
+ACK sip:reddy2@192.168.56.202:6015;transport=tcp SIP/2.0
+From: sip:reddy1@192.168.3.163;tag=1
+To: sip:reddy2@192.168.56.202:6015;tag=1
+CSeq: 1 ACK
+Call-ID: 18dd1e0b0ddaaf018edefe3185853a7b
+Contact: sip:reddy1@192.168.3.163:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.3.163:5060;ipcs-line=25108;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.3.163:5060;branch=z9hG4bK-s1632-000151459139-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+Av-Global-Session-ID: 74e899a4-b2eb-4cea-8e33-bb4099ccb01e
+Content-Length: 0
+
+
+----------------------------------------------- 2021-11-01 09:05:48:14.256
+TCP message received [523] bytes :
+
+BYE sip:192.168.56.202:6015;transport=tcp SIP/2.0
+From: sip:reddy1@192.168.3.163;tag=1
+To: sip:reddy2@192.168.56.202:6015;tag=1
+CSeq: 2 BYE
+Call-ID: 18dd1e0b0ddaaf018edefe3185853a7b
+Contact: <sip:reddy1@192.168.3.163:5060;transport=tcp>
+Record-Route: <sip:192.168.3.163:5060;ipcs-line=25108;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.3.163:5060;branch=z9hG4bK-s1632-001665467595-1--s1632-
+Subject: Performance Test
+Av-Global-Session-ID: 74e899a4-b2eb-4cea-8e33-bb4099ccb01e
+Content-Length: 0
+
+
+----------------------------------------------- 2021-11-01 09:05:48:14.377
+TCP message sent (304 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.3.163:5060;branch=z9hG4bK-s1632-001665467595-1--s1632-
+From: sip:reddy1@192.168.3.163;tag=1
+To: sip:reddy2@192.168.56.202:6015;tag=1
+Call-ID: 18dd1e0b0ddaaf018edefe3185853a7b
+CSeq: 2 BYE
+Contact: <sip:192.168.56.202:6015;transport=TCP>
+Content-Length: 0
+
+

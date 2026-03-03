@@ -1,0 +1,3825 @@
+----------------------------------------------- 2018-06-14 12:46:16:370.342
+TLS message received [1487] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: df0a8c00acc0f343c30d1b01570a6b6c
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=1;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=1;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000810786042-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-1-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35000 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35002 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:16:371.248
+TLS message sent (409 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: df0a8c00acc0f343c30d1b01570a6b6c
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000810786042-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-1-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:16:371.869
+TLS message sent (617 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: df0a8c00acc0f343c30d1b01570a6b6c
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000810786042-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-1-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=1;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=1;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:16:573.846
+TLS message sent (1276 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: df0a8c00acc0f343c30d1b01570a6b6c
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000810786042-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-1-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=1;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=1;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49152 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49154 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:16:608.507
+TLS message received [688] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: df0a8c00acc0f343c30d1b01570a6b6c
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=1;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=1;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001602087440-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-1-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:16:726.951
+TLS message received [1389] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: df0a8c00acc0f343c30d1b01570a6b6c
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=1;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=1;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001438823016-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-1-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35004 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35006 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:16:727.382
+TLS message sent (449 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001438823016-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-1-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: df0a8c00acc0f343c30d1b01570a6b6c
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:16:727.642
+TLS message sent (1125 bytes):
+
+SIP/2.0 200 OK
+Call-ID: df0a8c00acc0f343c30d1b01570a6b6c
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001438823016-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-1-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49152 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49154 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:16:752.824
+TLS message received [689] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: df0a8c00acc0f343c30d1b01570a6b6c
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=1;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=1;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001754491145-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-1-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:18:349.960
+TLS message received [1487] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: fd3e02001e0e0253f4026a74f45b871b
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=2;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=2;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000480441861-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-2-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35008 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35010 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:18:350.481
+TLS message sent (409 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: fd3e02001e0e0253f4026a74f45b871b
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000480441861-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-2-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:18:350.673
+TLS message sent (617 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: fd3e02001e0e0253f4026a74f45b871b
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000480441861-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-2-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=2;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=2;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:18:552.436
+TLS message sent (1276 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: fd3e02001e0e0253f4026a74f45b871b
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000480441861-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-2-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=2;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=2;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49156 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49158 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:18:579.301
+TLS message received [688] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: fd3e02001e0e0253f4026a74f45b871b
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=2;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=2;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000791487441-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-2-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:18:692.986
+TLS message received [1389] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: fd3e02001e0e0253f4026a74f45b871b
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=2;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=2;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001978402864-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-2-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35012 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35014 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:18:693.302
+TLS message sent (449 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001978402864-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-2-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: fd3e02001e0e0253f4026a74f45b871b
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:18:693.520
+TLS message sent (1125 bytes):
+
+SIP/2.0 200 OK
+Call-ID: fd3e02001e0e0253f4026a74f45b871b
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001978402864-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-2-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49156 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49158 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:18:709.321
+TLS message received [689] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: fd3e02001e0e0253f4026a74f45b871b
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=2;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=2;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000861739526-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-2-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:20:343.336
+TLS message received [1487] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: 88b8342e0f6ef06bd6f1e37f615d7e2f
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=3;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=3;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000653556774-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-3-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35016 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35018 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:20:343.842
+TLS message sent (409 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: 88b8342e0f6ef06bd6f1e37f615d7e2f
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000653556774-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-3-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:20:344.026
+TLS message sent (617 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 88b8342e0f6ef06bd6f1e37f615d7e2f
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000653556774-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-3-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=3;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=3;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:20:545.911
+TLS message sent (1276 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 88b8342e0f6ef06bd6f1e37f615d7e2f
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000653556774-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-3-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=3;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=3;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49160 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49162 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:20:573.481
+TLS message received [688] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: 88b8342e0f6ef06bd6f1e37f615d7e2f
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=3;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=3;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001082402532-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-3-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:20:689.866
+TLS message received [1389] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: 88b8342e0f6ef06bd6f1e37f615d7e2f
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=3;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=3;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001340919914-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-3-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35020 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35022 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:20:690.158
+TLS message sent (449 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001340919914-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-3-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: 88b8342e0f6ef06bd6f1e37f615d7e2f
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:20:690.377
+TLS message sent (1125 bytes):
+
+SIP/2.0 200 OK
+Call-ID: 88b8342e0f6ef06bd6f1e37f615d7e2f
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001340919914-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-3-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49160 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49162 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:20:707.513
+TLS message received [689] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: 88b8342e0f6ef06bd6f1e37f615d7e2f
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=3;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=3;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000099152460-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-3-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:22:351.414
+TLS message received [1487] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: 7047cb50ca9d7e22a780756ca022fd0c
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=4;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=4;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000214884486-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-4-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35024 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35026 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:22:351.918
+TLS message sent (409 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: 7047cb50ca9d7e22a780756ca022fd0c
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000214884486-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-4-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:22:352.102
+TLS message sent (617 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 7047cb50ca9d7e22a780756ca022fd0c
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000214884486-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-4-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=4;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=4;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:22:553.891
+TLS message sent (1276 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 7047cb50ca9d7e22a780756ca022fd0c
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000214884486-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-4-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=4;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=4;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49164 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49166 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:22:588.131
+TLS message received [688] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: 7047cb50ca9d7e22a780756ca022fd0c
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=4;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=4;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-002050940431-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-4-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:22:708.985
+TLS message received [1389] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: 7047cb50ca9d7e22a780756ca022fd0c
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=4;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=4;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000234887714-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-4-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35028 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35030 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:22:709.335
+TLS message sent (449 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000234887714-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-4-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: 7047cb50ca9d7e22a780756ca022fd0c
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:22:709.550
+TLS message sent (1125 bytes):
+
+SIP/2.0 200 OK
+Call-ID: 7047cb50ca9d7e22a780756ca022fd0c
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000234887714-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-4-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49164 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49166 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:22:742.571
+TLS message received [689] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: 7047cb50ca9d7e22a780756ca022fd0c
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=4;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=4;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001028702107-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-4-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:24:359.253
+TLS message received [1487] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: cfdaf3515ecd6b3e45f33567dfc47131
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=5;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=5;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-002060118254-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-5-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35032 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35034 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:24:359.944
+TLS message sent (409 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: cfdaf3515ecd6b3e45f33567dfc47131
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-002060118254-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-5-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:24:360.188
+TLS message sent (617 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: cfdaf3515ecd6b3e45f33567dfc47131
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-002060118254-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-5-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=5;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=5;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:24:561.783
+TLS message sent (1276 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: cfdaf3515ecd6b3e45f33567dfc47131
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-002060118254-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-5-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=5;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=5;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49168 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49170 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:24:596.391
+TLS message received [688] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: cfdaf3515ecd6b3e45f33567dfc47131
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=5;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=5;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000338591687-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-5-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:24:726.337
+TLS message received [1389] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: cfdaf3515ecd6b3e45f33567dfc47131
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=5;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=5;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001338596431-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-5-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35036 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35038 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:24:726.639
+TLS message sent (449 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001338596431-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-5-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: cfdaf3515ecd6b3e45f33567dfc47131
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:24:726.845
+TLS message sent (1125 bytes):
+
+SIP/2.0 200 OK
+Call-ID: cfdaf3515ecd6b3e45f33567dfc47131
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001338596431-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-5-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49168 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49170 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:24:747.002
+TLS message received [689] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: cfdaf3515ecd6b3e45f33567dfc47131
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=5;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=5;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001309981412-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-5-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:26:341.017
+TLS message received [1487] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: 6d6acb22d8bd7e42b81ab82f3e8ef851
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=6;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=6;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000338738884-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-6-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35040 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35042 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:26:341.560
+TLS message sent (409 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: 6d6acb22d8bd7e42b81ab82f3e8ef851
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000338738884-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-6-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:26:341.774
+TLS message sent (617 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 6d6acb22d8bd7e42b81ab82f3e8ef851
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000338738884-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-6-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=6;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=6;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:26:543.664
+TLS message sent (1276 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 6d6acb22d8bd7e42b81ab82f3e8ef851
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000338738884-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-6-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=6;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=6;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49172 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49174 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:26:568.414
+TLS message received [688] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: 6d6acb22d8bd7e42b81ab82f3e8ef851
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=6;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=6;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000946521609-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-6-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:26:682.305
+TLS message received [1389] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: 6d6acb22d8bd7e42b81ab82f3e8ef851
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=6;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=6;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001662334142-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-6-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35044 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35046 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:26:682.599
+TLS message sent (449 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001662334142-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-6-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: 6d6acb22d8bd7e42b81ab82f3e8ef851
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:26:682.796
+TLS message sent (1125 bytes):
+
+SIP/2.0 200 OK
+Call-ID: 6d6acb22d8bd7e42b81ab82f3e8ef851
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001662334142-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-6-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49172 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49174 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:26:697.002
+TLS message received [689] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: 6d6acb22d8bd7e42b81ab82f3e8ef851
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=6;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=6;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-002028800612-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-6-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:28:341.190
+TLS message received [1487] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: cda2054f3afcd078f3db1d16b2c9890f
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=7;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=7;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001721728657-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-7-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35048 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35050 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:28:341.800
+TLS message sent (409 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: cda2054f3afcd078f3db1d16b2c9890f
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001721728657-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-7-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:28:341.993
+TLS message sent (617 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: cda2054f3afcd078f3db1d16b2c9890f
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001721728657-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-7-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=7;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=7;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:28:544.030
+TLS message sent (1276 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: cda2054f3afcd078f3db1d16b2c9890f
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001721728657-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-7-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=7;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=7;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49176 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49178 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:28:567.060
+TLS message received [688] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: cda2054f3afcd078f3db1d16b2c9890f
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=7;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=7;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001220398244-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-7-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:28:680.901
+TLS message received [1389] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: cda2054f3afcd078f3db1d16b2c9890f
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=7;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=7;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000470208063-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-7-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35052 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35054 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:28:681.203
+TLS message sent (449 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000470208063-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-7-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: cda2054f3afcd078f3db1d16b2c9890f
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:28:681.420
+TLS message sent (1125 bytes):
+
+SIP/2.0 200 OK
+Call-ID: cda2054f3afcd078f3db1d16b2c9890f
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000470208063-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-7-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49176 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49178 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:28:695.081
+TLS message received [689] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: cda2054f3afcd078f3db1d16b2c9890f
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=7;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=7;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000475572792-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-7-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:30:340.876
+TLS message received [1487] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: 096c853edf2ace08b5368626184ac438
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=8;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=8;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000428413972-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-8-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35056 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35058 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:30:341.407
+TLS message sent (409 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: 096c853edf2ace08b5368626184ac438
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000428413972-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-8-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:30:341.607
+TLS message sent (617 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 096c853edf2ace08b5368626184ac438
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000428413972-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-8-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=8;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=8;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:30:542.660
+TLS message sent (1276 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 096c853edf2ace08b5368626184ac438
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000428413972-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-8-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=8;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=8;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49180 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49182 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:30:564.251
+TLS message received [688] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: 096c853edf2ace08b5368626184ac438
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=8;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=8;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000382616834-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-8-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:30:670.158
+TLS message received [1389] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: 096c853edf2ace08b5368626184ac438
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=8;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=8;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001675032144-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-8-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35060 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35062 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:30:670.485
+TLS message sent (449 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001675032144-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-8-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: 096c853edf2ace08b5368626184ac438
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:30:670.668
+TLS message sent (1125 bytes):
+
+SIP/2.0 200 OK
+Call-ID: 096c853edf2ace08b5368626184ac438
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001675032144-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-8-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49180 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49182 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:30:677.446
+TLS message received [689] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: 096c853edf2ace08b5368626184ac438
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=8;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=8;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000865022726-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-8-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:32:342.075
+TLS message received [1487] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: aec342224c26c51ab0e4331a75437136
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=9;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=9;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001757552593-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-9-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35064 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35066 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:32:342.477
+TLS message sent (409 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: aec342224c26c51ab0e4331a75437136
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001757552593-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-9-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:32:342.662
+TLS message sent (617 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: aec342224c26c51ab0e4331a75437136
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001757552593-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-9-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=9;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=9;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:32:545.192
+TLS message sent (1276 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: aec342224c26c51ab0e4331a75437136
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001757552593-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-9-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=9;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=9;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49184 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49186 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:32:569.044
+TLS message received [688] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: aec342224c26c51ab0e4331a75437136
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=9;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=9;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001787724443-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-9-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:32:682.134
+TLS message received [1389] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: aec342224c26c51ab0e4331a75437136
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=9;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=9;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001749589908-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-9-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35068 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35070 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:32:682.463
+TLS message sent (449 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001749589908-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-9-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: aec342224c26c51ab0e4331a75437136
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:32:682.660
+TLS message sent (1125 bytes):
+
+SIP/2.0 200 OK
+Call-ID: aec342224c26c51ab0e4331a75437136
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001749589908-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-9-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49184 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49186 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:32:695.931
+TLS message received [689] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: aec342224c26c51ab0e4331a75437136
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=9;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=9;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001252131385-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-9-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:34:343.436
+TLS message received [1490] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: 6d5dc72af11c5a7a467b525f76233263
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=10;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=10;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000223997192-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-10-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35072 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35074 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:34:343.924
+TLS message sent (410 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: 6d5dc72af11c5a7a467b525f76233263
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000223997192-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-10-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:34:344.106
+TLS message sent (620 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 6d5dc72af11c5a7a467b525f76233263
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000223997192-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-10-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=10;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=10;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:34:547.449
+TLS message sent (1279 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 6d5dc72af11c5a7a467b525f76233263
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000223997192-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-10-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=10;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=10;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49188 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49190 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:34:574.332
+TLS message received [691] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: 6d5dc72af11c5a7a467b525f76233263
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=10;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=10;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001567576495-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-10-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:34:687.335
+TLS message received [1392] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: 6d5dc72af11c5a7a467b525f76233263
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=10;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=10;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001480557994-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-10-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35076 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35078 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:34:687.676
+TLS message sent (450 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001480557994-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-10-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: 6d5dc72af11c5a7a467b525f76233263
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:34:687.866
+TLS message sent (1126 bytes):
+
+SIP/2.0 200 OK
+Call-ID: 6d5dc72af11c5a7a467b525f76233263
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001480557994-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-10-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49188 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49190 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:34:701.974
+TLS message received [692] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: 6d5dc72af11c5a7a467b525f76233263
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=10;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=10;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001238475271-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-10-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:36:344.712
+TLS message received [1490] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: e4811051fa7def5f2fbefe3b884ece19
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=11;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=11;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000745862269-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-11-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35080 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35082 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:36:345.199
+TLS message sent (410 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: e4811051fa7def5f2fbefe3b884ece19
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000745862269-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-11-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:36:345.417
+TLS message sent (620 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: e4811051fa7def5f2fbefe3b884ece19
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000745862269-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-11-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=11;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=11;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:36:546.413
+TLS message sent (1279 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: e4811051fa7def5f2fbefe3b884ece19
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000745862269-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-11-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=11;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=11;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49192 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49194 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:36:572.842
+TLS message received [691] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: e4811051fa7def5f2fbefe3b884ece19
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=11;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=11;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-002079738938-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-11-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:36:685.699
+TLS message received [1392] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: e4811051fa7def5f2fbefe3b884ece19
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=11;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=11;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001482123367-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-11-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35084 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35086 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:36:685.986
+TLS message sent (450 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001482123367-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-11-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: e4811051fa7def5f2fbefe3b884ece19
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:36:686.185
+TLS message sent (1126 bytes):
+
+SIP/2.0 200 OK
+Call-ID: e4811051fa7def5f2fbefe3b884ece19
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001482123367-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-11-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49192 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49194 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:36:698.704
+TLS message received [692] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: e4811051fa7def5f2fbefe3b884ece19
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=11;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=11;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000861364893-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-11-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:38:342.769
+TLS message received [1490] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: 479325615299dd595c02407349d8f377
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=12;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=12;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000981186627-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-12-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35088 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35090 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:38:343.277
+TLS message sent (410 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: 479325615299dd595c02407349d8f377
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000981186627-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-12-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:38:343.525
+TLS message sent (620 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 479325615299dd595c02407349d8f377
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000981186627-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-12-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=12;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=12;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:38:545.818
+TLS message sent (1279 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 479325615299dd595c02407349d8f377
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000981186627-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-12-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=12;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=12;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49196 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49198 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:38:572.467
+TLS message received [691] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: 479325615299dd595c02407349d8f377
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=12;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=12;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001035243426-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-12-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:38:683.833
+TLS message received [1392] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: 479325615299dd595c02407349d8f377
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=12;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=12;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000651113826-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-12-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35092 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35094 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:38:684.121
+TLS message sent (450 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000651113826-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-12-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: 479325615299dd595c02407349d8f377
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:38:684.321
+TLS message sent (1126 bytes):
+
+SIP/2.0 200 OK
+Call-ID: 479325615299dd595c02407349d8f377
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000651113826-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-12-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49196 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49198 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:38:695.255
+TLS message received [692] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: 479325615299dd595c02407349d8f377
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=12;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=12;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001622538266-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-12-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:40:342.230
+TLS message received [1490] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: ae5b9441cadce97ac696681649de222c
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=13;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=13;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001610044240-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-13-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35096 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35098 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:40:342.757
+TLS message sent (410 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: ae5b9441cadce97ac696681649de222c
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001610044240-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-13-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:40:342.943
+TLS message sent (620 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: ae5b9441cadce97ac696681649de222c
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001610044240-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-13-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=13;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=13;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:40:544.958
+TLS message sent (1279 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: ae5b9441cadce97ac696681649de222c
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001610044240-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-13-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=13;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=13;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49200 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49202 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:40:569.134
+TLS message received [691] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: ae5b9441cadce97ac696681649de222c
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=13;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=13;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001664253022-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-13-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:40:680.275
+TLS message received [1392] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: ae5b9441cadce97ac696681649de222c
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=13;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=13;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001628084479-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-13-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35100 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35102 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:40:680.599
+TLS message sent (450 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001628084479-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-13-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: ae5b9441cadce97ac696681649de222c
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:40:680.781
+TLS message sent (1126 bytes):
+
+SIP/2.0 200 OK
+Call-ID: ae5b9441cadce97ac696681649de222c
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001628084479-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-13-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49200 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49202 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:40:693.599
+TLS message received [692] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: ae5b9441cadce97ac696681649de222c
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=13;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=13;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000964479825-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-13-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:42:343.084
+TLS message received [1490] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: f1b5645b9746cf1841fd2b71a007d438
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=14;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=14;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000234478027-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-14-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35104 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35106 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:42:343.606
+TLS message sent (410 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: f1b5645b9746cf1841fd2b71a007d438
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000234478027-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-14-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:42:343.794
+TLS message sent (620 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: f1b5645b9746cf1841fd2b71a007d438
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000234478027-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-14-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=14;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=14;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:42:545.286
+TLS message sent (1279 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: f1b5645b9746cf1841fd2b71a007d438
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000234478027-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-14-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=14;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=14;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49204 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49206 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:42:568.901
+TLS message received [691] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: f1b5645b9746cf1841fd2b71a007d438
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=14;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=14;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001896795201-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-14-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:42:681.523
+TLS message received [1392] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: f1b5645b9746cf1841fd2b71a007d438
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=14;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=14;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000989699913-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-14-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35108 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35110 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:42:681.879
+TLS message sent (450 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000989699913-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-14-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: f1b5645b9746cf1841fd2b71a007d438
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:42:682.081
+TLS message sent (1126 bytes):
+
+SIP/2.0 200 OK
+Call-ID: f1b5645b9746cf1841fd2b71a007d438
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000989699913-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-14-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49204 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49206 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:42:694.315
+TLS message received [692] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: f1b5645b9746cf1841fd2b71a007d438
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=14;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=14;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001699281949-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-14-12
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:44:336.500
+TLS message received [1490] bytes :
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: 431ded1a4cba4721ae9ced5b7d69e316
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=15;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=15;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001109347877-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-15-2
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 765
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35112 RTP/AVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35114 RTP/AVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+
+----------------------------------------------- 2018-06-14 12:46:44:336.961
+TLS message sent (410 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: 431ded1a4cba4721ae9ced5b7d69e316
+Cseq: 2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001109347877-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-15-2
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:44:337.150
+TLS message sent (620 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 431ded1a4cba4721ae9ced5b7d69e316
+Cseq: 2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001109347877-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-15-2
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=15;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=15;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:44:539.367
+TLS message sent (1279 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 431ded1a4cba4721ae9ced5b7d69e316
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001109347877-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-15-2
+Supported: 100rel
+Record-Route: <sip:192.168.5.47:5061;ipcs-line=15;lr;transport=tls>, <sips:10.133.39.176:5061;ipcs-line=15;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   634
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49208 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49210 RTP/SAVP 109 34
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:44:566.942
+TLS message received [691] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: 431ded1a4cba4721ae9ced5b7d69e316
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=15;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=15;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-002040472244-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-15-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-14 12:46:44:679.546
+TLS message received [1392] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: 431ded1a4cba4721ae9ced5b7d69e316
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=15;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=15;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000256180043-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-15-9
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 654
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.47
+s=-
+c=IN IP4 192.168.5.47
+t=0 0
+m=audio 35116 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.47
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 35118 RTP/SAVP 98
+c=IN IP4 192.168.5.47
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:44:679.850
+TLS message sent (450 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000256180043-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-15-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: 431ded1a4cba4721ae9ced5b7d69e316
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:     0
+
+
+----------------------------------------------- 2018-06-14 12:46:44:680.033
+TLS message sent (1126 bytes):
+
+SIP/2.0 200 OK
+Call-ID: 431ded1a4cba4721ae9ced5b7d69e316
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-000256180043-1--s1632-, SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-15-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   630
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 49208 RTP/SAVP 0 8 101
+c=IN IP4 192.168.5.12
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video 49210 RTP/SAVP 98
+c=IN IP4 192.168.5.12
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:z8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-06-14 12:46:44:693.375
+TLS message received [692] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 ACK
+Call-ID: 431ded1a4cba4721ae9ced5b7d69e316
+Contact: <sips:4001@192.168.5.47:5061;transport=tls>
+Record-Route: <sips:192.168.5.47:5061;ipcs-line=15;lr;transport=tls>
+Record-Route: <sips:10.133.39.176:5061;ipcs-line=15;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.5.47:5061;branch=z9hG4bK-s1632-001365189057-1--s1632-
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-29075-15-12
+Subject: Performance Test
+Content-Length: 0
+
+

@@ -1,0 +1,61 @@
+----------------------------------------------- 2021-01-08 19:18:02:932.057
+TCP message received [481] bytes :
+
+OPTIONS sip:sbcdev.com:5063 SIP/2.0
+From: <sip:abc@192.168.5.223:16253>;tag=789779481fe3
+To: <sip:abc@sbcdev.com>
+CSeq: 5839 OPTIONS
+Call-ID: 9a49c62998f237277d7fd72127a3c805d39efbae2788a464729c3ff4034c5ac
+Contact: <sip:abc@192.168.5.223:5060;transport=tcp>
+Record-Route: <sip:192.168.5.223:5060;ipcs-line=5839;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.5.223:5060;branch=z9hG4bK-s1632-001164894563-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2021-01-08 19:18:02:932.452
+TCP message sent (360 bytes):
+
+SIP/2.0 400 Bad Request
+Via: SIP/2.0/TCP 192.168.5.223:5060;branch=z9hG4bK-s1632-001164894563-1--s1632-
+From: <sip:abc@192.168.5.223:16253>;tag=789779481fe3
+To: <sip:abc@sbcdev.com>;tag=1
+Call-ID: 9a49c62998f237277d7fd72127a3c805d39efbae2788a464729c3ff4034c5ac
+CSeq: 5839 OPTIONS
+Contact: <sip:abc@192.168.5.223:5060;transport=tcp>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-01-08 19:18:33:17.351
+TCP message received [481] bytes :
+
+OPTIONS sip:sbcdev.com:5063 SIP/2.0
+From: <sip:abc@192.168.5.223:16253>;tag=a290c8767986
+To: <sip:abc@sbcdev.com>
+CSeq: 5840 OPTIONS
+Call-ID: 9a49c62998f237277d7fd72127a3c805d39efbae2788a464729c3ff4034c5ac
+Contact: <sip:abc@192.168.5.223:5060;transport=tcp>
+Record-Route: <sip:192.168.5.223:5060;ipcs-line=5840;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.5.223:5060;branch=z9hG4bK-s1632-001389179902-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 9a49c62998f237277d7fd72127a3c805d39efbae2788a464729c3ff4034c5ac recieved a TCP message:
+
+OPTIONS sip:sbcdev.com:5063 SIP/2.0
+From: <sip:abc@192.168.5.223:16253>;tag=a290c8767986
+To: <sip:abc@sbcdev.com>
+CSeq: 5840 OPTIONS
+Call-ID: 9a49c62998f237277d7fd72127a3c805d39efbae2788a464729c3ff4034c5ac
+Contact: <sip:abc@192.168.5.223:5060;transport=tcp>
+Record-Route: <sip:192.168.5.223:5060;ipcs-line=5840;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.5.223:5060;branch=z9hG4bK-s1632-001389179902-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+

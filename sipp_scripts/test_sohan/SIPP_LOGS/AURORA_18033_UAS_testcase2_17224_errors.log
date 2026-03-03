@@ -1,0 +1,66 @@
+sipp: The following events occured:
+2019-08-23	20:27:05:241	1566572225.241206: Aborting call on unexpected message for Call-Id '7693d21c705d527c617f9c47b132fe2b': while expecting 'INVITE' (index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-002023387626-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-23	20:27:05:742	1566572225.742926: Dead call 7693d21c705d527c617f9c47b132fe2b (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000165747675-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-23	20:27:06:743	1566572226.743406: Dead call 7693d21c705d527c617f9c47b132fe2b (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001223137972-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-23	20:27:08:744	1566572228.744324: Dead call 7693d21c705d527c617f9c47b132fe2b (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000467352479-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-23	20:27:12:745	1566572232.745481: Dead call 7693d21c705d527c617f9c47b132fe2b (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000475685676-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.

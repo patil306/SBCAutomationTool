@@ -1,0 +1,27 @@
+sipp: The following events occured:
+2018-07-17	13:39:21:162	1531814961.162211: Aborting call on unexpected message for Call-Id '1-26351@192.168.6.5': while pausing (index 7), received 'ACK sip:10.133.39.159:5090;transport=TCP;x-b2b-refer-hand-send-hold SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>;tag=1
+CSeq: 1 ACK
+Call-ID: 1-26351@192.168.6.5
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=9;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000461282732-1--s1632-;originator
+Content-Length: 0
+
+'.
+2018-07-17	13:39:33:207	1531814973.207931: Dead call 1-26351@192.168.6.5 (aborted at index 7), received 'BYE sip:10.133.39.159:5090;transport=tcp SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>;tag=1
+CSeq: 2 BYE
+Call-ID: 1-26351@192.168.6.5
+Contact: <sip:81002001@10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=9;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001860162492-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.

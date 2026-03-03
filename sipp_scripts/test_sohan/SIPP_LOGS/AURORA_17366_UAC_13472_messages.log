@@ -1,0 +1,58 @@
+----------------------------------------------- 2019-06-17 14:12:57:513.382
+TLS message sent (476 bytes):
+
+SUBSCRIBE sip:4079@10.133.48.238:5061 SIP/2.0 SIP/2.0
+Accept: application/watcherinfo+xml
+Call-ID: 1-13472@10.133.39.159
+CSeq: 1 SUBSCRIBE
+Expires: 1800
+From: sip:4078@10.133.39.159:6027;tag=1
+To: sip:4079@10.133.48.238:5061
+Via: SIP/2.0/TLS 10.133.39.159:6027;branch=z9hG4bK-13472-1-0
+Content-Length: 0
+Contact: sip:4078@10.133.39.159:6027;transport=TLS
+Max-Forwards: 70
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Event: presence
+
+
+----------------------------------------------- 2019-06-17 14:13:29:527.906
+TLS message received [327] bytes :
+
+SIP/2.0 408 Request Timeout
+From: sip:4078@10.133.39.159:6027;tag=1
+To: sip:4079@10.133.48.238:5061;tag=zXcVbNmbce9e019c
+CSeq: 1 SUBSCRIBE
+Call-ID: 1-13472@10.133.39.159
+Record-Route: <sip:10.133.48.238:5061;ipcs-line=8;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:6027;branch=z9hG4bK-13472-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 408 Request Timeout
+From: sip:4078@10.133.39.159:6027;tag=1
+To: sip:4079@10.133.48.238:5061;tag=zXcVbNmbce9e019c
+CSeq: 1 SUBSCRIBE
+Call-ID: 1-13472@10.133.39.159
+Record-Route: <sip:10.133.48.238:5061;ipcs-line=8;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:6027;branch=z9hG4bK-13472-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 14:13:29:528.799
+TLS message sent (310 bytes):
+
+BYE  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:6027;branch=z9hG4bK-13472-1--1
+From: sip:4078@10.133.39.159:6027;tag=1
+To: sip:4079@10.133.48.238:5061;tag=zXcVbNmbce9e019c
+Call-ID: 1-13472@10.133.39.159
+CSeq: 2 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:6027;transport=TLS>
+Content-Length: 0
+
+

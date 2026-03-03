@@ -1,0 +1,13 @@
+sipp: The following events occured:
+2017-11-02	17:54:41:732	1509625481.732179: Aborting call on unexpected message for Call-Id '1-21305@192.168.6.5': while expecting '180' (index 5), received 'SIP/2.0 500 Server Internal Error
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=zXcVbNm7e1eb8313
+CSeq: 2 INVITE
+Call-ID: 1-21305@192.168.6.5
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=17;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-21305-1-4
+Content-Length: 0
+
+'.

@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+    <title>My Ajax Website</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#nav a').on('click', function (e) {
+                e.preventDefault();
+                var page = $(this).attr('href');
+                $('#content1').load(page);
+            });
+        });
+    </script>
+    <style>
+            .flex-container {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 400px;
+            }
+            .flex-container > div {
+                width: 50%;
+                height: 380px;
+                margin: 12px;
+                border-radius: 3px;
+                background-color: white;
+            }
+            .container1 { 
+                border:2px solid white; 
+                width:95%; 
+                height: 580px; 
+                overflow-y: scroll;
+                align-items: left;
+                margin-left: 1px;
+                margin-top: 1px;
+            }
+            .container {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height:570px;
+                margin: auto;   
+                }
+
+            .one {
+                width: 15%;
+                height: 570px;
+                background: white;
+                float: left;
+            }
+
+            .two {
+                margin-left: 1%;
+                height: 570px;
+                width: 85%;
+                background: white;
+            }
+            a:link, a:visited {
+                /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+                color: black;
+                text-align: left; 
+                text-decoration: none;
+                display: inline-block;
+                border-style: none;
+                margin-bottom: 5px;
+                margin-left: -20px;
+            }
+            a:focus{
+                color: orange;
+            }
+            .collapsible {
+                /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+                background-color:gray;
+                cursor: pointer;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active, .collapsible:hover {
+                background-color:grey;
+            }
+
+            .content {
+                display: none;
+                overflow: hidden;
+            }
+    </style>
+
+</head>
+<body>
+        <section class="container">
+        <div class="one">
+            <div id="nav" class="container1">
+                <a style="text-decoration:none;" class="collapsible"><b>></b> Configuration Profiles</a>
+                <div class="content">
+                <ul style="list-style-type: none;">
+                    <li><a style="text-decoration:none;" href="templates/svrInterworking.html">Server Interworking</a></li>
+                    <li><a style="text-decoration:none;" href="">Media Forking</a></li>
+                    <li><a style="text-decoration:none;" href="">Routing</a></li>
+                    <li><a style="text-decoration:none;" href="">Topology Hiding</a></li>
+                    <li><a style="text-decoration:none;" href="">Signaling Manipulation</a></li>
+                    <li><a style="text-decoration:none;" href="">URI Groups</a></li>
+                    <li><a style="text-decoration:none;" href="">SNMP Traps</a></li>
+                    <li><a style="text-decoration:none;" href="">Time of Day Rules</a></li>
+                    <li><a style="text-decoration:none;" href="">FGDN Groups</a></li>
+                    <li><a style="text-decoration:none;" href="">Reverse Proxy</a></li>
+                    <li><a style="text-decoration:none;" href="">Policy</a></li>
+                    <li><a style="text-decoration:none;" href="">URN Profile</a></li>
+                    <li><a style="text-decoration:none;" href="">Recording Profile</a></li>
+                </ul>
+                </div><br>
+                <a style="text-decoration:none;" class="collapsible"><b>></b> Domain Policies</a>
+                <div class="content">
+                <ul style="list-style-type: none;">
+                    <li><a style="text-decoration:none;" href="">Application Rules</a></li>
+                    <li><a style="text-decoration:none;" href="try.html">Border Rules</a><li>
+                    <li><a style="text-decoration:none;" href="mediaRules.html">Media Rules</a></li>
+                    <li><a style="text-decoration:none;" href="">Security Rules</a></li>
+                    <li><a style="text-decoration:none;" href="">Signaling Rules</a></li>
+                    <li><a style="text-decoration:none;" href="">Charging Rules</a></li>
+                    <li><a style="text-decoration:none;" href="">End Point Policy Groups</a></li>
+                    <li><a style="text-decoration:none;" href="">Session Policies</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content1" class="two">
+        </div>
+        </section>
+        <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                    });
+                }
+            </script>
+</body>
+</html>

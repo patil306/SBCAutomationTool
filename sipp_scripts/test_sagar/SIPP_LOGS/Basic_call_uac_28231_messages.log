@@ -1,0 +1,120 @@
+----------------------------------------------- 2018-07-02 11:32:38:786.959
+TCP message sent (653 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-28231-1-0
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060
+Call-ID: 1-28231@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-07-02 11:32:38:796.374
+TCP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060
+CSeq: 1 INVITE
+Call-ID: 1-28231@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-28231-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-02 11:32:38:798.765
+TCP message received [271] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-28231@10.133.39.159
+Contact: <sip:10.133.48.235:5060;transport=tcp>
+Via:SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-28231-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-02 11:32:38:802.048
+TCP message received [423] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-28231@10.133.39.159
+Contact: <sip:10.133.48.235:5060;transport=tcp>
+Via:SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-28231-1-0
+Content-Type: application/sdp
+Content-Length: 124
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.5
+s=-
+c=IN IP4 10.133.48.235
+t=0 0
+m=audio 35000 RTP/AVP
+a=ptime:20
+
+----------------------------------------------- 2018-07-02 11:32:38:802.356
+TCP message sent (353 bytes):
+
+ACK sip:40006@10.133.48.235:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-28231-1-4
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=1
+Call-ID: 1-28231@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-02 11:32:46:803.773
+TCP message sent (339 bytes):
+
+BYE sip:10.133.48.235:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-28231-1-6
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=1
+Call-ID: 1-28231@10.133.39.159
+Contact: sip:192.168.6.5:5065;transport=TCP
+CSeq: 2 BYE
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-02 11:32:46:811.106
+TCP message received [263] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=1
+CSeq: 2 BYE
+Call-ID: 1-28231@10.133.39.159
+Contact: <sip:10.133.48.235:5060;transport=tcp>
+Via:SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-28231-1-6
+Content-Length: 0
+
+

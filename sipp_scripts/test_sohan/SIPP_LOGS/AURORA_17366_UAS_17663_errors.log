@@ -1,0 +1,15 @@
+sipp: The following events occured:
+2019-06-18	14:09:40:885	1560847180.885302: Dead call W4taHl0OhNOFxIdtNHgUT5g7PJjWXccW (successful), received 'REGISTER sip:10.133.48.238:5060 SIP/2.0
+From: <sip:1001@10.133.48.238>;tag=rV-X3AzbsYSHs.xOpLU1AyYMrmD8ZAri
+To: <sip:1001@10.133.48.238>
+CSeq: 63866 REGISTER
+Call-ID: W4taHl0OhNOFxIdtNHgUT5g7PJjWXccW
+Contact: <sip:1001@192.168.55.79:5060;ob;subid_ipcs=3834789073;transport=udp>
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+User-Agent: PJSUA v2.8 Linux-3.10.3.189/x86_64/glibc-2.17
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-001486776525-1--s1632-
+Expires: 300
+Content-Length: 0
+
+'.

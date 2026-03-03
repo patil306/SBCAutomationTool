@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+<!--      User-to-User: 00FA080001001056965CFB;encoding=hex -->
+
+<scenario name="Basic OPTION UAC">
+<!--
+<send retrans="500">
+<![CDATA[
+	OPTIONS sip:[field1]@[remote_ip]:[remote_port] SIP/2.0
+	Via: SIP/2.0/[transport] [local_ip]:[local_port]
+	From: sip:[field0]@[field2];tag=[call_number]	
+	To: sip:[field1]@[remote_ip]:[remote_port]
+	Call-ID: [call_id]
+	CSeq: 2 OPTIONS
+	Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP
+	Max-Forwards: 70
+	Content-Length: 0
+]]>
+</send>
+-->
+
+<send retrans="500">
+<![CDATA[
+OPTIONS sip:DAL43HOTT0002W80002@10.200.90.12:5060 SIP/2.0
+Via: SIP/2.0/TCP 68.68.123.103:5060
+Max-Forwards: 70
+From: DAL43HOTT0002W80002 <sip:DAL43HOTT0002W80002@68.68.123.103:5060>;tag=dc36f4df15010100
+To: DAL43HOTT0002W80002 <sip:DAL43HOTT0002W80002@10.200.90.12:5060>
+Call-ID: 1-T7100.-2578604497655758592@68.68.123.103
+CSeq: 279467 OPTIONS
+Contact: DAL43HOTT0002W80002 <sip:DAL43HOTT0002W80002@68.68.123.103:5060>
+Content-Length: 0
+]]>
+</send>
+
+
+<recv response="200" rtd="true"/>
+
+</scenario>

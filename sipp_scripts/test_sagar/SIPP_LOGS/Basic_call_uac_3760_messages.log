@@ -1,0 +1,84 @@
+----------------------------------------------- 2018-10-31 15:46:50:265.533
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1495061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3760-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5061
+Call-ID: 1-3760@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 0 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-31 15:46:50:279.794
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5061
+CSeq: 1 INVITE
+Call-ID: 1-3760@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3760-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:47:22:285.464
+TLS message received [324] bytes :
+
+SIP/2.0 503 Service Unavailable
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5061;tag=zXcVbNm070f1129d
+CSeq: 1 INVITE
+Call-ID: 1-3760@10.133.39.159
+Record-Route: <sip:10.133.48.149:5061;ipcs-line=64;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3760-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 503 Service Unavailable
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5061;tag=zXcVbNm070f1129d
+CSeq: 1 INVITE
+Call-ID: 1-3760@10.133.39.159
+Record-Route: <sip:10.133.48.149:5061;ipcs-line=64;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3760-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-31 15:47:22:285.942
+TLS message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3760-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5061;tag=zXcVbNm070f1129d
+Call-ID: 1-3760@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

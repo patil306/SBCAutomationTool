@@ -1,0 +1,66 @@
+#/home/sipp/sipp.svn/sipp -sf uac.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test420.csv -p 5092 -aa -trace_msg  -trace_err -m 1
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAC_media.xml 10.133.48.149:5060 -i 10.133.39.159 -inf test40006.csv -p 5093 -t t1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_16846_update_resp.xml 10.133.48.238:5060 -i 10.133.39.159 -inf test40006.csv -p 5088 -t t1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_16846_update_resp.xml 10.133.48.149:5060 -i 10.133.39.159 -inf test40006.csv -p 5093 -t u1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_Bye_glare_16847.xml 10.133.48.149:5060 -i 10.133.39.159 -inf test40006.csv -p 5093 -t u1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/SCRIPTS/uac.xml 10.133.48.83:5061 -i 10.133.39.159 -inf test40006.csv -p 5096 -t l1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_17473.xml 10.133.48.149:5060 -i 10.133.39.159 -inf test40006.csv -p 5093 -t t1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/SCRIPTS/uac.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test50003.csv -p 5098 -t t1 -aa -trace_msg  -trace_err -r 1
+
+/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sahil/XML/uacAudioBothWays_191.xml 10.133.48.193:5060 -i 10.133.39.159 -inf test50003.csv -p 6021 -t u1 -m 1 -aa -trace_msg  -trace_err -r 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/Options_UAC_2543.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5094 -t t1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_Bye_20063_BYE-Replacing.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5094 -t u1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_Reinvite_22045.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5094 -t u1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_cancel_22395.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5094 -t u1 -aa -trace_msg  -trace_err -r 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_recv_Reinvite_22395.xml 10.133.48.83:5061 -i 10.133.39.159 -inf test40006.csv -p 5096 -t l1 -aa -trace_msg  -trace_err -r 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_486_22395.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5094 -t u1 -aa -trace_msg  -trace_err -r 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_Reinvite_22045_mpro.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5094 -t u1 -aa -trace_msg  -trace_err -m 1
+
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/SCRIPTS/uac.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5060 -t t1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_ReinviteFromUAS.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5060 -t t1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_17473_scenario2.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5096 -t t1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_InviteReplaces.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5096 -t u1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_InviteReplaces_ReplaceUAC.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5096 -t u1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac-486-AURORA-19844.xml 10.133.48.238:5060 -i 10.133.39.159 -inf test40006.csv -p 5088 -t u1 -aa -trace_msg  -trace_err -r 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac-486-AURORA-19844.xml 10.133.36.32:5060 -i 10.133.39.159 -inf test40006.csv -p 5072 -t u1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac-486-AURORA-19844.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5096 -t u1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAC_ANAT_11965.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5094 -t u1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAC_ANAT_ungrouped_16610.xml 10.133.48.83:5060 -i 10.133.39.159 -inf test40006.csv -p 5096 -t u1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf uac_srtp.xml 10.133.48.168:5060 -i 10.133.39.159 -inf test50002.csv -p 6006 -t t1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf uac.xml 10.133.48.168:5060 -i 10.133.39.159 -inf test50001.csv -p 6004 -t t1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAC_16487.xml 10.133.48.168:5060 -i 10.133.39.159 -inf test50001.csv -p 6004 -t t1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAC_16487.xml 10.133.69.211:5060 -i 10.133.39.159 -inf test50001.csv -p 6010 -t t1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf uac_srtp.xml 10.133.48.238:5061 -i 10.133.39.159 -inf test50002.csv -p 6029 -t l1  -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_AURORA-15515.xml 10.133.48.238:5061 -i 10.133.39.159 -inf test50001.csv -p 6010 -t l1 -aa -trace_msg  -trace_err -m 1
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uac_Bye_glare_19460.xml 10.133.48.238:5060 -i 10.133.39.159 -inf test50001.csv -p 5088 -t u1 -aa -trace_msg  -trace_err -m 1
+

@@ -1,0 +1,29 @@
+sipp: The following events occured:
+2018-07-19	12:31:41:309	1531983701.309969: Aborting call on unexpected message for Call-Id '1-3115@192.168.6.5': while expecting 'BYE' (index 9), received 'ACK sip:10.133.39.159:5090;transport=TCP SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>;tag=1
+CSeq: 1 ACK
+Call-ID: 1-3115@192.168.6.5
+Contact: <sip:81002001@10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=3;lr;transport=tcp>
+Supported: replaces, timer, 100rel
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;originator;branch=z9hG4bK-s1632-001908980790-1--s1632-
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+'.
+2018-07-19	12:32:08:351	1531983728.351071: Dead call 1-3115@192.168.6.5 (aborted at index 9), received 'BYE sip:10.133.39.159:5090;transport=tcp SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>;tag=1
+CSeq: 2 BYE
+Call-ID: 1-3115@192.168.6.5
+Contact: <sip:81002001@10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=3;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001436865896-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.

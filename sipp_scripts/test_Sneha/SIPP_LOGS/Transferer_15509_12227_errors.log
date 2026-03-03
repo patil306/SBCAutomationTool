@@ -1,0 +1,27 @@
+sipp: The following events occured:
+2019-03-07	17:43:24:652	1551960804.652195: Dead call 1-12232@10.133.39.159 (successful), received 'ACK sip:192.168.5.12:6020;transport=TCP SIP/2.0
+From: sip:50001@192.168.5.12:6020;tag=1
+To: <sip:50003@192.168.55.80;transport=TCP>;tag=1
+CSeq: 1 ACK
+Call-ID: 1-12232@10.133.39.159
+Contact: <sip:50001@192.168.55.80:5060;transport=tcp>
+Record-Route: <sip:192.168.55.80:5060;ipcs-line=17;lr;transport=tcp>
+Allow: REFER
+Supported: replaces, timer, 100rel
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.80:5060;originator;branch=z9hG4bK-s1632-001464714490-1--s1632-
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+'.
+2019-03-07	17:46:33:221	1551960993.221761: Aborting call on an unexpected BYE for call: 1-12124@10.133.39.159.
+2019-03-07	17:49:29:608	1551961169.608366: Aborting call on unexpected message for Call-Id '1-12262@10.133.39.159': while expecting '202' (index 7), received 'SIP/2.0 481 Call/Transaction Does Not Exist
+From:  sip:50001@192.168.55.80;tag=1
+To:  sip:50001@192.168.5.12:6020;tag=3
+CSeq: 1 REFER
+Call-ID: 1-12262@10.133.39.159
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-001082511260-1--s1632-
+Content-Length: 0
+
+'.

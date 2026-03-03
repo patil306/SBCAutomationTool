@@ -1,0 +1,15 @@
+sipp: The following events occured:
+2018-09-18	11:19:04:997	1537249744.997227: Aborting call on unexpected message for Call-Id '1-28909@10.133.39.159': while expecting 'INVITE' (index 7), received 'REFER sip:40005@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:40006@10.133.48.149:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+CSeq: 1 REFER
+Call-ID: 1-28909@10.133.39.159
+Contact: <sip:40006@10.133.48.149:5060;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=2;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.149:5060;branch=z9hG4bK-s1632-000979306639-1--s1632-
+Subject: Performance Test
+Refer-To: <sip:3001002@10.133.39.159:5075;transport=tcp;user=phone>
+Content-Length: 0
+
+'.

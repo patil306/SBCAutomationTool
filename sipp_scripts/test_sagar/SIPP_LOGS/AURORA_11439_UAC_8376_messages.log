@@ -1,0 +1,81 @@
+----------------------------------------------- 2018-07-27 16:09:03:73.671
+TCP message sent (624 bytes):
+
+INVITE sip:40006@10.133.48.235 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-8376-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5060
+Call-ID: 1-8376@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   179
+
+v=0
+o=- 1490768965 1 IN IP4 10.133.36.50
+s=-
+c=IN IP4 10.133.36.51
+b=TIAS:64000
+t=0 0
+m=audio 2392 RTP/AVP 8 120
+a=sendrecv
+a=rtpmap:120 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-07-27 16:09:03:80.924
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5060
+CSeq: 1 INVITE
+Call-ID: 1-8376@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-8376-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-27 16:09:35:88.206
+TCP message received [323] bytes :
+
+SIP/2.0 503 Service Unavailable
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5060;tag=zXcVbNme9bada310
+CSeq: 1 INVITE
+Call-ID: 1-8376@10.133.39.159
+Record-Route: <sip:10.133.48.235:5060;ipcs-line=2;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-8376-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 503 Service Unavailable
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5060;tag=zXcVbNme9bada310
+CSeq: 1 INVITE
+Call-ID: 1-8376@10.133.39.159
+Record-Route: <sip:10.133.48.235:5060;ipcs-line=2;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-8376-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-27 16:09:35:88.921
+TCP message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-8376-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5060;tag=zXcVbNme9bada310
+Call-ID: 1-8376@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

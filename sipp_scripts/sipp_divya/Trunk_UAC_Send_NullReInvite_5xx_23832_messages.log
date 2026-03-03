@@ -1,0 +1,746 @@
+----------------------------------------------- 2018-10-15 16:01:26:5.433
+UDP message sent (703 bytes):
+
+INVITE sip:81001001@rwtrunk.com SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-0
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060
+Call-ID: 1-23832@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:81002001@10.133.39.159:5060;transport=udp>
+Route: <sip:192.168.6.5:5065;transport=udp>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   202
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-10-15 16:01:26:32.870
+UDP message received [225] bytes :
+
+SIP/2.0 100 Trying
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060
+CSeq: 1 INVITE
+Call-ID: 1-23832@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:26:50.524
+UDP message received [523] bytes :
+
+SIP/2.0 200 OK
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:10.133.73.76:5060;transport=udp>
+Record-Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-0
+Content-Type: application/sdp
+Content-Length: 147
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.5
+s=-
+c=IN IP4 10.133.73.76
+t=0 0
+m=audio 35000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-10-15 16:01:26:50.751
+UDP message sent (416 bytes):
+
+ACK sip:81001001@10.133.73.76:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-3
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+Max-Forwards: 70
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:26:66.071
+UDP message received [679] bytes :
+
+INVITE sip:81002001@10.133.39.159:5060;transport=udp SIP/2.0
+From: sip:81001001@10.133.73.76:5060;tag=1
+To: sip:81002001@rwtrunk.com;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:10.133.73.76:5060;transport=udp>
+Record-Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Record-Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 10.133.73.76:5060;branch=z9hG4bK-s1632-001029709378-1--s1632-;originator
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-0
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:26:66.394
+UDP message sent (605 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.133.73.76:5060;branch=z9hG4bK-s1632-001029709378-1--s1632-;originator, SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-0
+From: sip:81001001@10.133.73.76:5060;tag=1
+To: sip:81002001@rwtrunk.com;tag=1;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 2 INVITE
+Contact: <sip:10.133.39.159:5060;transport=tcp>
+Content-Type: application/sdp
+Content-Length:   202
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-10-15 16:01:26:99.918
+UDP message received [822] bytes :
+
+ACK sip:81002001@10.133.39.159:5060;transport=udp SIP/2.0
+From: sip:81001001@10.133.73.76:5060;tag=1
+To: sip:81002001@rwtrunk.com;tag=1
+CSeq: 2 ACK
+Call-ID: 1-23832@10.133.39.159
+Record-Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 10.133.73.76:5060;branch=z9hG4bK-s1632-000974344938-1--s1632-;originator
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 226
+
+v=0
+o=user1 53655765 2353687638 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.73.76
+t=0 0
+m=audio 35000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=sendonly
+a=ptime:20
+
+----------------------------------------------- 2018-10-15 16:01:26:100.127
+UDP message sent (416 bytes):
+
+INVITE sip:81001001@rwtrunk.com SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-7
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+CSeq: 2 INVITE
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:26:115.954
+UDP message received [231] bytes :
+
+SIP/2.0 100 Trying
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-23832@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-7
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:26:116.284
+UDP message received [263] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-23832@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-7
+Retry-After: 64
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:26:116.488
+UDP message sent (421 bytes):
+
+ACK sip:81001001@10.133.73.76:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-10
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 2 ACK
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+Max-Forwards: 70
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Subject: Performance Test
+Content-Length:     0
+
+
+----------------------------------------------- 2018-10-15 16:01:26:617.106
+UDP message received [263] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-23832@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-7
+Retry-After: 64
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:26:617.386
+UDP message sent (421 bytes):
+
+ACK sip:81001001@10.133.73.76:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-10
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 2 ACK
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+Max-Forwards: 70
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Subject: Performance Test
+Content-Length:     0
+
+
+----------------------------------------------- 2018-10-15 16:01:27:619.308
+UDP message received [263] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-23832@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-7
+Retry-After: 64
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:27:619.526
+UDP message sent (421 bytes):
+
+ACK sip:81001001@10.133.73.76:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-10
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 2 ACK
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+Max-Forwards: 70
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Subject: Performance Test
+Content-Length:     0
+
+
+----------------------------------------------- 2018-10-15 16:01:29:621.026
+UDP message received [263] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-23832@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-7
+Retry-After: 64
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:29:621.332
+UDP message sent (421 bytes):
+
+ACK sip:81001001@10.133.73.76:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-10
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 2 ACK
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+Max-Forwards: 70
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Subject: Performance Test
+Content-Length:     0
+
+
+----------------------------------------------- 2018-10-15 16:01:33:621.997
+UDP message received [263] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-23832@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-7
+Retry-After: 64
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:33:622.475
+UDP message sent (421 bytes):
+
+ACK sip:81001001@10.133.73.76:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-10
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 2 ACK
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+Max-Forwards: 70
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Subject: Performance Test
+Content-Length:     0
+
+
+----------------------------------------------- 2018-10-15 16:01:36:95.412
+UDP message received [815] bytes :
+
+INVITE sip:81002001@10.133.39.159:5060;transport=udp SIP/2.0
+From: sip:81001001@10.133.73.76:5060;tag=1
+To: sip:81002001@rwtrunk.com;tag=1
+CSeq: 3 INVITE
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:10.133.73.76:5060;transport=udp>
+Record-Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Record-Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 10.133.73.76:5060;branch=z9hG4bK-s1632-000277040874-1--s1632-;originator
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 165
+
+v=0
+o=user1 53655765 2353687639 IN IP4 192.168.6.5
+s=-
+c=IN IP4 10.133.73.76
+t=0 0
+a=x-conn-changed
+m=audio 35002 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-10-15 16:01:36:95.803
+UDP message sent (483 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.133.73.76:5060;branch=z9hG4bK-s1632-000277040874-1--s1632-;originator
+From: sip:81001001@10.133.73.76:5060;tag=1
+To: sip:81002001@rwtrunk.com;tag=1;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 3 INVITE
+Contact: <sip:10.133.39.159:5060;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   137
+
+v=0
+o=user1 53655765 2353687638 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2018-10-15 16:01:36:108.998
+UDP message received [625] bytes :
+
+ACK sip:81002001@10.133.39.159:5060;transport=udp SIP/2.0
+From: sip:81001001@10.133.73.76:5060;tag=1
+To: sip:81002001@rwtrunk.com;tag=1
+CSeq: 3 ACK
+Call-ID: 1-23832@10.133.39.159
+Record-Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Record-Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 10.133.73.76:5060;branch=z9hG4bK-s1632-001860841954-1--s1632-;originator
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-0
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:37:623.229
+UDP message received [263] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-23832@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-7
+Retry-After: 64
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:37:623.413
+UDP message sent (421 bytes):
+
+ACK sip:81001001@10.133.73.76:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-10
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 2 ACK
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+Max-Forwards: 70
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Subject: Performance Test
+Content-Length:     0
+
+
+----------------------------------------------- 2018-10-15 16:01:41:625.955
+UDP message received [263] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-23832@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-7
+Retry-After: 64
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:41:626.364
+UDP message sent (421 bytes):
+
+ACK sip:81001001@10.133.73.76:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-10
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 2 ACK
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+Max-Forwards: 70
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Subject: Performance Test
+Content-Length:     0
+
+
+----------------------------------------------- 2018-10-15 16:01:44:110.125
+UDP message sent (422 bytes):
+
+BYE sip:10.133.73.76:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-15
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+CSeq: 3 BYE
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:44:611.124
+UDP message sent (422 bytes):
+
+BYE sip:10.133.73.76:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-15
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+CSeq: 3 BYE
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:45:612.801
+UDP message sent (422 bytes):
+
+BYE sip:10.133.73.76:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-15
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+CSeq: 3 BYE
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:45:627.034
+UDP message received [263] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-23832@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-7
+Retry-After: 64
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:45:627.290
+UDP message sent (421 bytes):
+
+ACK sip:81001001@10.133.73.76:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-10
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 2 ACK
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+Max-Forwards: 70
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Subject: Performance Test
+Content-Length:     0
+
+
+----------------------------------------------- 2018-10-15 16:01:47:614.572
+UDP message sent (422 bytes):
+
+BYE sip:10.133.73.76:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-15
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+CSeq: 3 BYE
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:49:628.932
+UDP message received [263] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-23832@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-7
+Retry-After: 64
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:49:629.198
+UDP message sent (421 bytes):
+
+ACK sip:81001001@10.133.73.76:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-10
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 2 ACK
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+Max-Forwards: 70
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Subject: Performance Test
+Content-Length:     0
+
+
+----------------------------------------------- 2018-10-15 16:01:51:615.781
+UDP message sent (422 bytes):
+
+BYE sip:10.133.73.76:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-15
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+CSeq: 3 BYE
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:53:630.560
+UDP message received [263] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-23832@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-7
+Retry-After: 64
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:53:630.818
+UDP message sent (421 bytes):
+
+ACK sip:81001001@10.133.73.76:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-10
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 2 ACK
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+Max-Forwards: 70
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Subject: Performance Test
+Content-Length:     0
+
+
+----------------------------------------------- 2018-10-15 16:01:55:617.580
+UDP message sent (422 bytes):
+
+BYE sip:10.133.73.76:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-15
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+CSeq: 3 BYE
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:57:631.953
+UDP message received [263] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-23832@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-7
+Retry-After: 64
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:01:57:632.209
+UDP message sent (421 bytes):
+
+ACK sip:81001001@10.133.73.76:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-10
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 2 ACK
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+Max-Forwards: 70
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Subject: Performance Test
+Content-Length:     0
+
+
+----------------------------------------------- 2018-10-15 16:01:59:620.310
+UDP message sent (422 bytes):
+
+BYE sip:10.133.73.76:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-15
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+CSeq: 3 BYE
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:02:03:621.543
+UDP message sent (422 bytes):
+
+BYE sip:10.133.73.76:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-15
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+CSeq: 3 BYE
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:02:07:624.058
+UDP message sent (422 bytes):
+
+BYE sip:10.133.73.76:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-15
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+CSeq: 3 BYE
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:02:11:625.032
+UDP message sent (422 bytes):
+
+BYE sip:10.133.73.76:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1-15
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: 1-23832@10.133.39.159
+Contact: <sip:81002001@10.133.39.159:5060;transport=tcp>
+CSeq: 3 BYE
+Route: <sip:10.133.73.76:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-15 16:02:15:628.172
+UDP message sent (295 bytes):
+
+BYE  SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23832-1--1
+From: sip:81001001@10.133.73.76:5060;tag=1
+To: sip:81002001@rwtrunk.com;tag=1
+Call-ID: 1-23832@10.133.39.159
+CSeq: 4 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:5060;transport=UDP>
+Content-Length: 0
+
+

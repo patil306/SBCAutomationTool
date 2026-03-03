@@ -1,0 +1,78 @@
+<html>
+    <style>
+        		.container1 { 
+			border:2px solid #ccc; 
+			width:97%; 
+			height: 350px; 
+			overflow-y: scroll;
+			align-items: left;
+			margin-left: 15px;
+			margin-top: 5px;
+		}
+    </style>
+    <script>
+        count = 1;
+        function test() {
+        document.getElementById("test1").setAttribute("name","file-upload_" + $count++);
+        }
+    </script>
+<body>
+    <body>
+        <form method="post" action="/get-data" enctype="multipart/form-data">
+        <div class="flex-container">
+                <div>
+                <center>
+                        <h1>Scenario Executer</h1>
+                        <table>
+                        <tr>
+                        <td>
+                        Select Feature  :
+                        <select id = "listOfFeature" name="listOfFeature">
+                            <option value = "All">All</option>
+                            {% for feature in features %}
+
+                            <option value="{{ feature[0] }}">{{ feature[1] }}</option>
+
+                            {% endfor %}
+                        </select>&nbsp&nbsp&nbsp
+
+                        </td>
+                        <td>
+                        Select Configuration    :
+                        <select id = "listOfConfig" name="listOfConfig" action="/test-file">
+                        {% for con in config %}
+                        <option value="{{ con[0] }}">{{ con[1] }}</option>
+
+                        {% endfor %}
+                        </select>&nbsp&nbsp&nbsp
+                        </td>
+                        <td>
+                                <input type="submit" value="Search" name="search" formaction="/test-file">
+                        </td>
+                        </tr>
+
+                </table>
+                </center>
+
+                <b>&nbsp&nbspTest Scenario:<b>
+
+                <div class="container1">
+                    {% for item in rows %}
+                        
+                        <tr style="margin-left: 15px;">
+				<td> <input type="checkbox" onclick='handleClick(this);' id="{{item[3]}}" name="item" value="{{item[3]}}"
+					/></td>
+                            <td>{{item[3]}}</td>
+			    <script>test();</script>
+                    </tr><br>
+                    {% endfor %}
+                </div>
+            <br>
+            <center><input type="submit" value="Get Data" name="getData" formaction="/get-data" ></center>
+            </div>
+            
+    </div>
+
+</body>
+
+</html>

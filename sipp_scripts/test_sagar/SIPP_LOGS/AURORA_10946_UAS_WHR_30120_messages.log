@@ -1,0 +1,27 @@
+----------------------------------------------- 2018-09-18 16:47:31:467.097
+TCP message received [357] bytes :
+
+BYE sip:192.168.6.5:5075;transport=TCP SIP/2.0
+From: sip:40005@192.168.6.242:5060;tag=1
+To: sip:40006@192.168.6.5;tag=1
+CSeq: 4 BYE
+Call-ID: 1-30035@10.133.39.159
+Record-Route: <sip:192.168.6.240:5060;ipcs-line=4;lr;transport=tcp>
+Max-Forwards: 70
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000816429949-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-18 16:47:31:467.891
+TCP message sent (285 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000816429949-1--s1632-
+From: sip:40005@192.168.6.242:5060;tag=1
+To: sip:40006@192.168.6.5;tag=1
+Call-ID: 1-30035@10.133.39.159
+CSeq: 4 BYE
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Length: 0
+
+

@@ -1,0 +1,58 @@
+----------------------------------------------- 2019-10-01 12:12:28:300.589
+UDP message received [836] bytes :
+
+INVITE sip:40007@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.140:5060;tag=1
+To: sip:40007@192.168.5.12:5088
+CSeq: 1 INVITE
+Call-ID: 8803ea490c785d5b86be747f56907f25
+Contact: sip:4078@192.168.55.140:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.140:5060;ipcs-line=3198;lr;transport=udp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.140:5060;branch=z9hG4bK-s1632-001330029402-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 265
+
+o=- 1297654 1 IN IP4 192.168.55.140
+s=-
+c=IN IP4 192.168.55.140
+t=0 0
+m=audio 35004 RTP/AVP 8 0 18 101 111
+c=IN IP4 192.168.55.140
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=rtpmap:111X-nt-inforeq/8000
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-10-01 12:12:28:300.868
+UDP message sent (613 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 192.168.55.140:5060;branch=z9hG4bK-s1632-001330029402-1--s1632-
+From: sip:4078@192.168.55.140:5060;tag=1
+To: sip:40007@192.168.5.12:5088;tag=2
+Call-ID: 8803ea490c785d5b86be747f56907f25
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5088;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   266
+
+v=0
+o=- 1297654 1 IN IP4 172.29.104.30
+s=-
+c=IN IP4 172.29.104.47
+t=0 0
+m=audio 5218 RTP/AVP 8 0 18 101 111
+c=IN IP4 172.29.104.47
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=rtpmap:111X-nt-inforeq/8000
+a=ptime:20
+a=sendrecv
+

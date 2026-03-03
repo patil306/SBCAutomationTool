@@ -1,0 +1,200 @@
+----------------------------------------------- 2018-10-18 14:34:15:614.655
+TCP message received [817] bytes :
+
+INVITE sip:81001001@sbcdev4.com SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@sbcdev4.com
+CSeq: 1 INVITE
+Call-ID: 25a6c73a713d2c4eedff4d3272d91d3a
+Contact: <sip:81002001@10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=12;lr;transport=tcp>
+Supported: 100rel, replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000375489306-1--s1632-
+Subject: Performance Test
+Session-Expires: 1800;refresher=uac
+Min-SE: 90
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 211
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35016 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-10-18 14:34:15:615.238
+TCP message sent (296 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000375489306-1--s1632-
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@sbcdev4.com
+Call-ID: 25a6c73a713d2c4eedff4d3272d91d3a
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5080;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-18 14:34:15:615.439
+TCP message sent (462 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000375489306-1--s1632-
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@sbcdev4.com;tag=1
+Call-ID: 25a6c73a713d2c4eedff4d3272d91d3a
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5080;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   129
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8
+a=ptime:10
+
+----------------------------------------------- 2018-10-18 14:34:15:624.102
+TCP message received [458] bytes :
+
+ACK sip:81001001@10.133.39.159:5080;transport=tcp SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@sbcdev4.com;tag=1
+CSeq: 1 ACK
+Call-ID: 25a6c73a713d2c4eedff4d3272d91d3a
+Contact: <sip:81002001@10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=12;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000007621327-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-18 14:34:20:625.741
+TCP message sent (710 bytes):
+
+INVITE sip:81002001@10.133.73.4:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-6832-1-5
+From: sip:81001001@10.133.39.159:5080;tag=1
+To: sip:81002001@10.133.73.4:5060;tag=1
+Call-ID: 25a6c73a713d2c4eedff4d3272d91d3a
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5080;transport=TCP>
+Content-Type: application/sdp
+Content-Length:  354
+
+v=0
+o=user1 53655765 2353687638 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=image 6000 udptl t38
+a=T38FaxVersion:0
+a=T38maxBitRate:14400
+a=T38FaxFillBitRemoval:0
+a=T38FaxTranscodingMMR:0
+a=T38FaxTranscodingJBIG:0
+a=T38FaxRateManagement:transferredTCF
+a=T38FaxMaxBuffer:260
+a=T38FaxUdpEC:t38UDPRedundancy
+a=T38FaxMaxDatagram:72
+
+----------------------------------------------- 2018-10-18 14:34:20:633.416
+TCP message received [247] bytes :
+
+SIP/2.0 100 Trying
+From: sip:81001001@10.133.39.159:5080;tag=1
+To: sip:81002001@10.133.73.4:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 25a6c73a713d2c4eedff4d3272d91d3a
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-6832-1-5
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 100 Trying
+From: sip:81001001@10.133.39.159:5080;tag=1
+To: sip:81002001@10.133.73.4:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 25a6c73a713d2c4eedff4d3272d91d3a
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-6832-1-5
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-18 14:34:22:641.489
+TCP message received [805] bytes :
+
+SIP/2.0 200 OK
+From: sip:81001001@10.133.39.159:5080;tag=1
+To: sip:81002001@10.133.73.4:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 25a6c73a713d2c4eedff4d3272d91d3a
+Contact: <sip:10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=12;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-6832-1-5
+Require: timer
+Session-Expires: 90;refresher=uas
+Content-Type: application/sdp
+Content-Length: 363
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=image 35018 udptl t38
+a=T38FaxVersion:0
+a=T38maxBitRate:14400
+a=T38FaxFillBitRemoval:0
+a=T38FaxTranscodingMMR:0
+a=T38FaxTranscodingJBIG:0
+a=T38FaxRateManagement:transferredTCF
+a=T38FaxMaxBuffer:260
+a=T38FaxUdpEC:t38UDPRedundancy
+a=T38FaxMaxDatagram:72
+a=sendrecv
+
+-----------------------------------------------
+Dead call 25a6c73a713d2c4eedff4d3272d91d3a recieved a TCP message:
+
+SIP/2.0 200 OK
+From: sip:81001001@10.133.39.159:5080;tag=1
+To: sip:81002001@10.133.73.4:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 25a6c73a713d2c4eedff4d3272d91d3a
+Contact: <sip:10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=12;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-6832-1-5
+Require: timer
+Session-Expires: 90;refresher=uas
+Content-Type: application/sdp
+Content-Length: 363
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=image 35018 udptl t38
+a=T38FaxVersion:0
+a=T38maxBitRate:14400
+a=T38FaxFillBitRemoval:0
+a=T38FaxTranscodingMMR:0
+a=T38FaxTranscodingJBIG:0
+a=T38FaxRateManagement:transferredTCF
+a=T38FaxMaxBuffer:260
+a=T38FaxUdpEC:t38UDPRedundancy
+a=T38FaxMaxDatagram:72
+a=sendrecv
+

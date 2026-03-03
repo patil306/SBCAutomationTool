@@ -1,0 +1,133 @@
+----------------------------------------------- 2021-09-22 13:06:51:373.348
+UDP message received [328] bytes :
+
+CANCEL sip:reddy1@madappa.com SIP/2.0
+From: "sipp" <sip:sipp@196.216.242.95:5060>;tag=29009SIPpTag001
+To: "sut" <sip:reddy1@192.168.56.202:6037>
+CSeq: 1 CANCEL
+Call-ID: f8881b556988e518818dea2cb9304459
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000085022993-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:06:51:373.725
+UDP message sent (337 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000085022993-1--s1632-
+From: "sipp" <sip:sipp@196.216.242.95:5060>;tag=29009SIPpTag001
+To: "sut" <sip:reddy1@192.168.56.202:6037>
+Call-ID: f8881b556988e518818dea2cb9304459
+CSeq: 1 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:06:51:865.321
+UDP message received [900] bytes :
+
+INVITE sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037
+CSeq: 1 INVITE
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Contact: sip:reddy1@196.216.242.95:5060
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=50;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+User-Agent: Avaya J179 IP Phone 4.0.2.1.3 c81fea85c1d6
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Subject: Performance Test
+Remote-LegId: 119
+Content-Type: application/sdp
+User-to-User: 00FA080001003F614ADE14F
+Content-Length: 245
+
+v=0
+o=- 1509186683 1 IN IP4 192.168.57.16
+s=-
+c=IN IP4 196.216.242.95
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 35108 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2021-09-22 13:06:51:865.485
+UDP message sent (312 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:06:51:865.523
+UDP message sent (354 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=2
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2021-09-22 13:06:51:869.210
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=2
+CSeq: 2 PRACK
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=50;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000991906670-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:06:51:869.268
+UDP message sent (346 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000991906670-1--s1632-
+From:  sip:reddy1@196.216.242.95:5060;tag=1
+To:  sip:reddy2@192.168.56.202:6037;tag=2
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 PRACK
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:06:52:81.309
+UDP message sent (353 bytes):
+
+SIP/2.0 180 Ringing
+Via:  SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037;tag=2
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Type: application/sdp
+Content-Length:     0
+
+

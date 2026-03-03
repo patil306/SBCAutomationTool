@@ -1,0 +1,19 @@
+sipp: The following events occured:
+2017-05-17	15:03:42:867	1495013622.867991: Aborting call on unexpected message for Call-Id 'ca9c963baac0f536e5c81838c1940138': while expecting 'ACK' (index 9), received 'SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4070@10.133.73.52:5060;tag=x0hxzrih-CC-148
+CSeq: 1 INVITE
+Call-ID: ca9c963baac0f536e5c81838c1940138
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-25717-1-8
+Content-Length: 0
+
+'.
+2017-05-17	15:03:42:868	1495013622.868348: Dead call ca9c963baac0f536e5c81838c1940138 (aborted at index 9), received 'SIP/2.0 500 Server Internal Error
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4070@10.133.73.52:5060;tag=x0hxzrih-CC-148
+CSeq: 1 INVITE
+Call-ID: ca9c963baac0f536e5c81838c1940138
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-25717-1-8
+Content-Length: 0
+
+'.

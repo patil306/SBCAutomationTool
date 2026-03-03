@@ -1,0 +1,76 @@
+----------------------------------------------- 2020-07-23 11:45:05:932.747
+UDP message received [490] bytes :
+
+REGISTER sip:sbcdev4.com SIP/2.0
+From: sip:37645@192.168.55.75:5060;tag=1
+To: sip:37645@sbcdev4.com
+CSeq: 1 REGISTER
+Call-ID: 1-4231@10.133.39.159
+Contact: <sip:37645@192.168.55.75:5060;rinstance=0ab27c0c969a066d;transport=udp>;+sip.instance="<urn:uuid:28727a07-3c88-4c3e-ad18-bfaee6622003>";reg-id=1
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001030933412-1--s1632-
+Subject: Performance Test
+Expires: 1800
+Content-Length: 0
+
+
+----------------------------------------------- 2020-07-23 11:45:05:933.362
+UDP message sent (410 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001030933412-1--s1632-
+From: sip:37645@192.168.55.75:5060;tag=1
+To: sip:37645@sbcdev4.com;tag=1
+Call-ID: 1-4231@10.133.39.159
+CSeq: 1 REGISTER
+Contact: <sip:37645@192.168.55.75:5060;rinstance=0ab27c0c969a066d;transport=udp>;+sip.instance="<urn:uuid:28727a07-3c88-4c3e-ad18-bfaee6622003>";reg-id=1;expires=1449
+Content-Length: 0
+
+
+----------------------------------------------- 2020-07-23 11:45:15:958.380
+UDP message received [829] bytes :
+
+INVITE sip:reddy2@192.168.5.12:6037 SIP/2.0
+From: sip:reddy1@192.168.55.75:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 1 INVITE
+Call-ID: 1-4231@10.133.39.159
+Contact: sip:reddy1@192.168.55.75:5060;transport=udp
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=28;lr;transport=udp>
+Allow: INVITE, ACK, BYE, CANCEL, PRACK
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000644453088-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 244
+
+v=0
+o=- 1509186683 1 IN IP4 192.168.55.75
+s=-
+c=IN IP4 192.168.55.75
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 35016 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2020-07-23 11:45:15:958.587
+UDP message sent (294 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000644453088-1--s1632-
+From: sip:reddy1@192.168.55.75:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 1-4231@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:6037;transport=UDP>
+Content-Length: 0
+
+

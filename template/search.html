@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <style>
+            .flex-container {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 400px;
+            }
+            .flex-container > div {
+                width: 50%;
+                height: 380px;
+                margin: 12px;
+                border-radius: 3px;
+                background-color: #f1f2f0;
+            }
+            .container1 { 
+                border:2px solid #ccc; 
+                width:95%; 
+                height: 350px; 
+                overflow-y: scroll;
+                align-items: left;
+                margin-left: 15px;
+                margin-top: 12px;
+            }
+        </style>
+        <script>
+            $('[name="searchBy"]').on('change', function() {
+                if ($(this).attr('id') == 'configuration') {
+                    $('#place').text('Configuration');
+                } else if ($(this).attr('id') == 'module') {
+                    $('#place').text('Features');
+                } else {
+                    $('#place').text('Test Scenario');
+                }
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <center>
+            <h1>Search</h1><br>
+            <table>
+                    <tr>
+                    <td>
+                        <input type="radio" name="searchBy" id="configuration" value="configuration">Configuration &nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <input type="radio" name="searchBy" id="module" value="module">Features &nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <input type="radio" name="searchBy" id="testScenario" value="testScenario">Test Scenario &nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    </tr> 
+            </table>
+        </center>
+        <div class="flex-container">
+			<div>
+                <div class="container1">
+                    <h4 style="margin-top: 12px;">
+                        <center><b>Features</b></center>
+                    </h4>
+                    <input type="checkbox" /> This is checkbox <br />
+                    <input type="checkbox" /> This is checkbox <br />
+                    <input type="checkbox" /> This is checkbox <br />
+                </div>
+            </div>
+            <div>                
+                <textarea rows="22" cols="76" id="testCaseDesc" name="testCaseDesc" value="" placeholder='Test Case Description' style="margin-left: 15px; margin-top: 12px;"></textarea><br><br>
+            </div>
+        </div>
+        <br>
+            <!-- <center><input type="submit" value="Add Profile" name="submit"></center> -->
+    </body>
+</html>

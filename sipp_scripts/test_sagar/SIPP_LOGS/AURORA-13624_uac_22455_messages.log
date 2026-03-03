@@ -1,0 +1,54 @@
+----------------------------------------------- 2018-12-25 15:44:27:799.823
+TCP message sent (389 bytes):
+
+OPTIONS sip:40006@trk.com;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22455-1-0
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.168:5060
+Call-ID: 1-22455@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-25 15:44:37:350.605
+TCP message received [253] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.168:5060;tag=zXcVbNma2e8b24f0
+CSeq: 1 OPTIONS
+Call-ID: 1-22455@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22455-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.168:5060;tag=zXcVbNma2e8b24f0
+CSeq: 1 OPTIONS
+Call-ID: 1-22455@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22455-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-25 15:44:37:351.467
+TCP message sent (301 bytes):
+
+BYE  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-22455-1--1
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.168:5060;tag=zXcVbNma2e8b24f0
+Call-ID: 1-22455@10.133.39.159
+CSeq: 2 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Content-Length: 0
+
+

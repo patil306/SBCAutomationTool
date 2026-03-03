@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic UAS responder">
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+
+
+<recv request="REGISTER" crlf="true">
+</recv>
+
+<send>
+<![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:37645@192.168.55.75:5060;rinstance=0ab27c0c969a066d;transport=udp>;expires=900;q=1.0;reg-id=1;+sip.instance="<urn:uuid:28727a07-3c88-4c3e-ad18-bfaee6622003>";reg-id=1
+Content-Length: 0
+]]>
+</send>
+
+
+</scenario>

@@ -1,0 +1,1104 @@
+----------------------------------------------- 2015-11-26 12:22:20:133.634
+TCP message sent (2774 bytes):
+
+INVITE sip:81002001@rwtrunk.com;transport=TCP SIP/2.0
+From: sip:81001001@rwtrunk.com;tag=1
+To: sip:81002001@rwtrunk.com
+Call-ID: 1-20843@192.168.5.12
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-1-0
+Session-Expires: 3600;refresher=uac
+Min-SE: 600
+Call-Info: <sip:10.0.222.133>;method="NOTIFY;Event=telephone-event;Duration=1000"
+Allow: INVITE,BYE,OPTIONS,CANCEL,ACK,REGISTER,NOTIFY,INFO,REFER,SUBSCRIBE,PRACK,UPDATE,MESSAGE,PUBLISH
+Content-Length:  2102
+Max-Forwards: 70
+P-Asserted-Identity: <sip:81001001@rwtrunk.com>
+Contact: "Trunk" <sip:81001001@sbc.com:5060;transport=TCP
+Supported: replaces,
+Content-Type: application/sdp
+
+v=0
+o=251511 1313510207 2738 IN IP4 192.168.5.12
+s=SIP Call RV XTE240
+c=IN IP4 192.168.5.12
+b=AS:1000
+t=0 0
+m=audio 3246 RTP/AVP 119 118 117 116 115 114 123 122 120 107 113 112 9 0 8 101
+a=rtpmap:119 G719/48000
+a=fmtp:119 CBR=64000;max-red=0
+a=rtpmap:118 G719/48000
+a=fmtp:118 CBR=48000;max-red=0
+a=rtpmap:117 G719/48000
+a=fmtp:117 CBR=32000;max-red=0
+a=rtpmap:116 G7221/32000
+a=fmtp:116 bitrate=48000
+a=rtpmap:115 G7221/32000
+a=fmtp:115 bitrate=32000
+a=rtpmap:114 G7221/32000
+a=fmtp:114 bitrate=24000
+a=rtpmap:123 MP4A-LATM/90000
+a=fmtp:123 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:122 MP4A-LATM/90000
+a=fmtp:122 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:120 MP4A-LATM/90000
+a=fmtp:120 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:107 AAC_LC/32000
+a=rtpmap:113 G7221/16000
+a=fmtp:113 bitrate=32000
+a=rtpmap:112 G7221/16000
+a=fmtp:112 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=sendrecv
+m=video 3248 RTP/AVP 97 102 99 105 96 34
+b=TIAS:1000000
+a=content:main
+a=label:11
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42801f;packetization-mode=0;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:102 ulpfec/90000
+a=fmtp:102 protectedPayload=97;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=64001f;packetization-mode=1;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:105 ulpfec/90000
+a=fmtp:105 protectedPayload=99;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:96 H263-1998/90000
+a=fmtp:96 CUSTOM=1024,768,4;CUSTOM=800,600,3;CIF4=1;CUSTOM=704,480,1;CUSTOM=640,480,2;CIF=1;CUSTOM=352,240,1;QCIF=1;SQCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;QCIF=1;SQCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm fir
+a=sendrecv
+m=application 3228 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=sendrecv
+m=application 3000 TCP/BFCP *
+c=IN IP4 192.168.5.12
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+a=setup:actpass
+a=connection:new
+
+----------------------------------------------- 2015-11-26 12:22:20:141.453
+TCP message received [217] bytes :
+
+SIP/2.0 100 Trying
+From: sip:81001001@rwtrunk.com;tag=1
+To: sip:81002001@rwtrunk.com
+CSeq: 1 INVITE
+Call-ID: 1-20843@192.168.5.12
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2015-11-26 12:22:20:234.466
+TCP message sent (2774 bytes):
+
+INVITE sip:81002001@rwtrunk.com;transport=TCP SIP/2.0
+From: sip:81001001@rwtrunk.com;tag=2
+To: sip:81002001@rwtrunk.com
+Call-ID: 2-20843@192.168.5.12
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-2-0
+Session-Expires: 3600;refresher=uac
+Min-SE: 600
+Call-Info: <sip:10.0.222.133>;method="NOTIFY;Event=telephone-event;Duration=1000"
+Allow: INVITE,BYE,OPTIONS,CANCEL,ACK,REGISTER,NOTIFY,INFO,REFER,SUBSCRIBE,PRACK,UPDATE,MESSAGE,PUBLISH
+Content-Length:  2102
+Max-Forwards: 70
+P-Asserted-Identity: <sip:81001001@rwtrunk.com>
+Contact: "Trunk" <sip:81001001@sbc.com:5060;transport=TCP
+Supported: replaces,
+Content-Type: application/sdp
+
+v=0
+o=251511 1313510207 2738 IN IP4 192.168.5.12
+s=SIP Call RV XTE240
+c=IN IP4 192.168.5.12
+b=AS:1000
+t=0 0
+m=audio 3246 RTP/AVP 119 118 117 116 115 114 123 122 120 107 113 112 9 0 8 101
+a=rtpmap:119 G719/48000
+a=fmtp:119 CBR=64000;max-red=0
+a=rtpmap:118 G719/48000
+a=fmtp:118 CBR=48000;max-red=0
+a=rtpmap:117 G719/48000
+a=fmtp:117 CBR=32000;max-red=0
+a=rtpmap:116 G7221/32000
+a=fmtp:116 bitrate=48000
+a=rtpmap:115 G7221/32000
+a=fmtp:115 bitrate=32000
+a=rtpmap:114 G7221/32000
+a=fmtp:114 bitrate=24000
+a=rtpmap:123 MP4A-LATM/90000
+a=fmtp:123 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:122 MP4A-LATM/90000
+a=fmtp:122 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:120 MP4A-LATM/90000
+a=fmtp:120 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:107 AAC_LC/32000
+a=rtpmap:113 G7221/16000
+a=fmtp:113 bitrate=32000
+a=rtpmap:112 G7221/16000
+a=fmtp:112 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=sendrecv
+m=video 3248 RTP/AVP 97 102 99 105 96 34
+b=TIAS:1000000
+a=content:main
+a=label:11
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42801f;packetization-mode=0;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:102 ulpfec/90000
+a=fmtp:102 protectedPayload=97;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=64001f;packetization-mode=1;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:105 ulpfec/90000
+a=fmtp:105 protectedPayload=99;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:96 H263-1998/90000
+a=fmtp:96 CUSTOM=1024,768,4;CUSTOM=800,600,3;CIF4=1;CUSTOM=704,480,1;CUSTOM=640,480,2;CIF=1;CUSTOM=352,240,1;QCIF=1;SQCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;QCIF=1;SQCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm fir
+a=sendrecv
+m=application 3228 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=sendrecv
+m=application 3000 TCP/BFCP *
+c=IN IP4 192.168.5.12
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+a=setup:actpass
+a=connection:new
+
+----------------------------------------------- 2015-11-26 12:22:20:245.494
+TCP message received [217] bytes :
+
+SIP/2.0 100 Trying
+From: sip:81001001@rwtrunk.com;tag=2
+To: sip:81002001@rwtrunk.com
+CSeq: 1 INVITE
+Call-ID: 2-20843@192.168.5.12
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-2-0
+Content-Length: 0
+
+
+----------------------------------------------- 2015-11-26 12:22:20:334.309
+TCP message sent (2774 bytes):
+
+INVITE sip:81002001@rwtrunk.com;transport=TCP SIP/2.0
+From: sip:81001001@rwtrunk.com;tag=3
+To: sip:81002001@rwtrunk.com
+Call-ID: 3-20843@192.168.5.12
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-3-0
+Session-Expires: 3600;refresher=uac
+Min-SE: 600
+Call-Info: <sip:10.0.222.133>;method="NOTIFY;Event=telephone-event;Duration=1000"
+Allow: INVITE,BYE,OPTIONS,CANCEL,ACK,REGISTER,NOTIFY,INFO,REFER,SUBSCRIBE,PRACK,UPDATE,MESSAGE,PUBLISH
+Content-Length:  2102
+Max-Forwards: 70
+P-Asserted-Identity: <sip:81001001@rwtrunk.com>
+Contact: "Trunk" <sip:81001001@sbc.com:5060;transport=TCP
+Supported: replaces,
+Content-Type: application/sdp
+
+v=0
+o=251511 1313510207 2738 IN IP4 192.168.5.12
+s=SIP Call RV XTE240
+c=IN IP4 192.168.5.12
+b=AS:1000
+t=0 0
+m=audio 3246 RTP/AVP 119 118 117 116 115 114 123 122 120 107 113 112 9 0 8 101
+a=rtpmap:119 G719/48000
+a=fmtp:119 CBR=64000;max-red=0
+a=rtpmap:118 G719/48000
+a=fmtp:118 CBR=48000;max-red=0
+a=rtpmap:117 G719/48000
+a=fmtp:117 CBR=32000;max-red=0
+a=rtpmap:116 G7221/32000
+a=fmtp:116 bitrate=48000
+a=rtpmap:115 G7221/32000
+a=fmtp:115 bitrate=32000
+a=rtpmap:114 G7221/32000
+a=fmtp:114 bitrate=24000
+a=rtpmap:123 MP4A-LATM/90000
+a=fmtp:123 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:122 MP4A-LATM/90000
+a=fmtp:122 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:120 MP4A-LATM/90000
+a=fmtp:120 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:107 AAC_LC/32000
+a=rtpmap:113 G7221/16000
+a=fmtp:113 bitrate=32000
+a=rtpmap:112 G7221/16000
+a=fmtp:112 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=sendrecv
+m=video 3248 RTP/AVP 97 102 99 105 96 34
+b=TIAS:1000000
+a=content:main
+a=label:11
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42801f;packetization-mode=0;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:102 ulpfec/90000
+a=fmtp:102 protectedPayload=97;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=64001f;packetization-mode=1;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:105 ulpfec/90000
+a=fmtp:105 protectedPayload=99;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:96 H263-1998/90000
+a=fmtp:96 CUSTOM=1024,768,4;CUSTOM=800,600,3;CIF4=1;CUSTOM=704,480,1;CUSTOM=640,480,2;CIF=1;CUSTOM=352,240,1;QCIF=1;SQCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;QCIF=1;SQCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm fir
+a=sendrecv
+m=application 3228 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=sendrecv
+m=application 3000 TCP/BFCP *
+c=IN IP4 192.168.5.12
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+a=setup:actpass
+a=connection:new
+
+----------------------------------------------- 2015-11-26 12:22:20:345.776
+TCP message received [217] bytes :
+
+SIP/2.0 100 Trying
+From: sip:81001001@rwtrunk.com;tag=3
+To: sip:81002001@rwtrunk.com
+CSeq: 1 INVITE
+Call-ID: 3-20843@192.168.5.12
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-3-0
+Content-Length: 0
+
+
+----------------------------------------------- 2015-11-26 12:22:20:434.220
+TCP message sent (2774 bytes):
+
+INVITE sip:81002001@rwtrunk.com;transport=TCP SIP/2.0
+From: sip:81001001@rwtrunk.com;tag=4
+To: sip:81002001@rwtrunk.com
+Call-ID: 4-20843@192.168.5.12
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-4-0
+Session-Expires: 3600;refresher=uac
+Min-SE: 600
+Call-Info: <sip:10.0.222.133>;method="NOTIFY;Event=telephone-event;Duration=1000"
+Allow: INVITE,BYE,OPTIONS,CANCEL,ACK,REGISTER,NOTIFY,INFO,REFER,SUBSCRIBE,PRACK,UPDATE,MESSAGE,PUBLISH
+Content-Length:  2102
+Max-Forwards: 70
+P-Asserted-Identity: <sip:81001001@rwtrunk.com>
+Contact: "Trunk" <sip:81001001@sbc.com:5060;transport=TCP
+Supported: replaces,
+Content-Type: application/sdp
+
+v=0
+o=251511 1313510207 2738 IN IP4 192.168.5.12
+s=SIP Call RV XTE240
+c=IN IP4 192.168.5.12
+b=AS:1000
+t=0 0
+m=audio 3246 RTP/AVP 119 118 117 116 115 114 123 122 120 107 113 112 9 0 8 101
+a=rtpmap:119 G719/48000
+a=fmtp:119 CBR=64000;max-red=0
+a=rtpmap:118 G719/48000
+a=fmtp:118 CBR=48000;max-red=0
+a=rtpmap:117 G719/48000
+a=fmtp:117 CBR=32000;max-red=0
+a=rtpmap:116 G7221/32000
+a=fmtp:116 bitrate=48000
+a=rtpmap:115 G7221/32000
+a=fmtp:115 bitrate=32000
+a=rtpmap:114 G7221/32000
+a=fmtp:114 bitrate=24000
+a=rtpmap:123 MP4A-LATM/90000
+a=fmtp:123 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:122 MP4A-LATM/90000
+a=fmtp:122 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:120 MP4A-LATM/90000
+a=fmtp:120 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:107 AAC_LC/32000
+a=rtpmap:113 G7221/16000
+a=fmtp:113 bitrate=32000
+a=rtpmap:112 G7221/16000
+a=fmtp:112 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=sendrecv
+m=video 3248 RTP/AVP 97 102 99 105 96 34
+b=TIAS:1000000
+a=content:main
+a=label:11
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42801f;packetization-mode=0;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:102 ulpfec/90000
+a=fmtp:102 protectedPayload=97;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=64001f;packetization-mode=1;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:105 ulpfec/90000
+a=fmtp:105 protectedPayload=99;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:96 H263-1998/90000
+a=fmtp:96 CUSTOM=1024,768,4;CUSTOM=800,600,3;CIF4=1;CUSTOM=704,480,1;CUSTOM=640,480,2;CIF=1;CUSTOM=352,240,1;QCIF=1;SQCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;QCIF=1;SQCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm fir
+a=sendrecv
+m=application 3228 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=sendrecv
+m=application 3000 TCP/BFCP *
+c=IN IP4 192.168.5.12
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+a=setup:actpass
+a=connection:new
+
+----------------------------------------------- 2015-11-26 12:22:20:445.754
+TCP message received [217] bytes :
+
+SIP/2.0 100 Trying
+From: sip:81001001@rwtrunk.com;tag=4
+To: sip:81002001@rwtrunk.com
+CSeq: 1 INVITE
+Call-ID: 4-20843@192.168.5.12
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-4-0
+Content-Length: 0
+
+
+----------------------------------------------- 2015-11-26 12:22:21:535.438
+TCP message sent (2774 bytes):
+
+INVITE sip:81002001@rwtrunk.com;transport=TCP SIP/2.0
+From: sip:81001001@rwtrunk.com;tag=5
+To: sip:81002001@rwtrunk.com
+Call-ID: 5-20843@192.168.5.12
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-5-0
+Session-Expires: 3600;refresher=uac
+Min-SE: 600
+Call-Info: <sip:10.0.222.133>;method="NOTIFY;Event=telephone-event;Duration=1000"
+Allow: INVITE,BYE,OPTIONS,CANCEL,ACK,REGISTER,NOTIFY,INFO,REFER,SUBSCRIBE,PRACK,UPDATE,MESSAGE,PUBLISH
+Content-Length:  2102
+Max-Forwards: 70
+P-Asserted-Identity: <sip:81001001@rwtrunk.com>
+Contact: "Trunk" <sip:81001001@sbc.com:5060;transport=TCP
+Supported: replaces,
+Content-Type: application/sdp
+
+v=0
+o=251511 1313510207 2738 IN IP4 192.168.5.12
+s=SIP Call RV XTE240
+c=IN IP4 192.168.5.12
+b=AS:1000
+t=0 0
+m=audio 3246 RTP/AVP 119 118 117 116 115 114 123 122 120 107 113 112 9 0 8 101
+a=rtpmap:119 G719/48000
+a=fmtp:119 CBR=64000;max-red=0
+a=rtpmap:118 G719/48000
+a=fmtp:118 CBR=48000;max-red=0
+a=rtpmap:117 G719/48000
+a=fmtp:117 CBR=32000;max-red=0
+a=rtpmap:116 G7221/32000
+a=fmtp:116 bitrate=48000
+a=rtpmap:115 G7221/32000
+a=fmtp:115 bitrate=32000
+a=rtpmap:114 G7221/32000
+a=fmtp:114 bitrate=24000
+a=rtpmap:123 MP4A-LATM/90000
+a=fmtp:123 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:122 MP4A-LATM/90000
+a=fmtp:122 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:120 MP4A-LATM/90000
+a=fmtp:120 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:107 AAC_LC/32000
+a=rtpmap:113 G7221/16000
+a=fmtp:113 bitrate=32000
+a=rtpmap:112 G7221/16000
+a=fmtp:112 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=sendrecv
+m=video 3248 RTP/AVP 97 102 99 105 96 34
+b=TIAS:1000000
+a=content:main
+a=label:11
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42801f;packetization-mode=0;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:102 ulpfec/90000
+a=fmtp:102 protectedPayload=97;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=64001f;packetization-mode=1;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:105 ulpfec/90000
+a=fmtp:105 protectedPayload=99;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:96 H263-1998/90000
+a=fmtp:96 CUSTOM=1024,768,4;CUSTOM=800,600,3;CIF4=1;CUSTOM=704,480,1;CUSTOM=640,480,2;CIF=1;CUSTOM=352,240,1;QCIF=1;SQCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;QCIF=1;SQCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm fir
+a=sendrecv
+m=application 3228 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=sendrecv
+m=application 3000 TCP/BFCP *
+c=IN IP4 192.168.5.12
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+a=setup:actpass
+a=connection:new
+
+----------------------------------------------- 2015-11-26 12:22:21:537.322
+TCP message sent (2774 bytes):
+
+INVITE sip:81002001@rwtrunk.com;transport=TCP SIP/2.0
+From: sip:81001001@rwtrunk.com;tag=6
+To: sip:81002001@rwtrunk.com
+Call-ID: 6-20843@192.168.5.12
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-6-0
+Session-Expires: 3600;refresher=uac
+Min-SE: 600
+Call-Info: <sip:10.0.222.133>;method="NOTIFY;Event=telephone-event;Duration=1000"
+Allow: INVITE,BYE,OPTIONS,CANCEL,ACK,REGISTER,NOTIFY,INFO,REFER,SUBSCRIBE,PRACK,UPDATE,MESSAGE,PUBLISH
+Content-Length:  2102
+Max-Forwards: 70
+P-Asserted-Identity: <sip:81001001@rwtrunk.com>
+Contact: "Trunk" <sip:81001001@sbc.com:5060;transport=TCP
+Supported: replaces,
+Content-Type: application/sdp
+
+v=0
+o=251511 1313510207 2738 IN IP4 192.168.5.12
+s=SIP Call RV XTE240
+c=IN IP4 192.168.5.12
+b=AS:1000
+t=0 0
+m=audio 3246 RTP/AVP 119 118 117 116 115 114 123 122 120 107 113 112 9 0 8 101
+a=rtpmap:119 G719/48000
+a=fmtp:119 CBR=64000;max-red=0
+a=rtpmap:118 G719/48000
+a=fmtp:118 CBR=48000;max-red=0
+a=rtpmap:117 G719/48000
+a=fmtp:117 CBR=32000;max-red=0
+a=rtpmap:116 G7221/32000
+a=fmtp:116 bitrate=48000
+a=rtpmap:115 G7221/32000
+a=fmtp:115 bitrate=32000
+a=rtpmap:114 G7221/32000
+a=fmtp:114 bitrate=24000
+a=rtpmap:123 MP4A-LATM/90000
+a=fmtp:123 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:122 MP4A-LATM/90000
+a=fmtp:122 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:120 MP4A-LATM/90000
+a=fmtp:120 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:107 AAC_LC/32000
+a=rtpmap:113 G7221/16000
+a=fmtp:113 bitrate=32000
+a=rtpmap:112 G7221/16000
+a=fmtp:112 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=sendrecv
+m=video 3248 RTP/AVP 97 102 99 105 96 34
+b=TIAS:1000000
+a=content:main
+a=label:11
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42801f;packetization-mode=0;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:102 ulpfec/90000
+a=fmtp:102 protectedPayload=97;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=64001f;packetization-mode=1;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:105 ulpfec/90000
+a=fmtp:105 protectedPayload=99;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:96 H263-1998/90000
+a=fmtp:96 CUSTOM=1024,768,4;CUSTOM=800,600,3;CIF4=1;CUSTOM=704,480,1;CUSTOM=640,480,2;CIF=1;CUSTOM=352,240,1;QCIF=1;SQCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;QCIF=1;SQCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm fir
+a=sendrecv
+m=application 3228 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=sendrecv
+m=application 3000 TCP/BFCP *
+c=IN IP4 192.168.5.12
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+a=setup:actpass
+a=connection:new
+
+----------------------------------------------- 2015-11-26 12:22:21:537.741
+TCP message sent (2774 bytes):
+
+INVITE sip:81002001@rwtrunk.com;transport=TCP SIP/2.0
+From: sip:81001001@rwtrunk.com;tag=7
+To: sip:81002001@rwtrunk.com
+Call-ID: 7-20843@192.168.5.12
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-7-0
+Session-Expires: 3600;refresher=uac
+Min-SE: 600
+Call-Info: <sip:10.0.222.133>;method="NOTIFY;Event=telephone-event;Duration=1000"
+Allow: INVITE,BYE,OPTIONS,CANCEL,ACK,REGISTER,NOTIFY,INFO,REFER,SUBSCRIBE,PRACK,UPDATE,MESSAGE,PUBLISH
+Content-Length:  2102
+Max-Forwards: 70
+P-Asserted-Identity: <sip:81001001@rwtrunk.com>
+Contact: "Trunk" <sip:81001001@sbc.com:5060;transport=TCP
+Supported: replaces,
+Content-Type: application/sdp
+
+v=0
+o=251511 1313510207 2738 IN IP4 192.168.5.12
+s=SIP Call RV XTE240
+c=IN IP4 192.168.5.12
+b=AS:1000
+t=0 0
+m=audio 3246 RTP/AVP 119 118 117 116 115 114 123 122 120 107 113 112 9 0 8 101
+a=rtpmap:119 G719/48000
+a=fmtp:119 CBR=64000;max-red=0
+a=rtpmap:118 G719/48000
+a=fmtp:118 CBR=48000;max-red=0
+a=rtpmap:117 G719/48000
+a=fmtp:117 CBR=32000;max-red=0
+a=rtpmap:116 G7221/32000
+a=fmtp:116 bitrate=48000
+a=rtpmap:115 G7221/32000
+a=fmtp:115 bitrate=32000
+a=rtpmap:114 G7221/32000
+a=fmtp:114 bitrate=24000
+a=rtpmap:123 MP4A-LATM/90000
+a=fmtp:123 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:122 MP4A-LATM/90000
+a=fmtp:122 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:120 MP4A-LATM/90000
+a=fmtp:120 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:107 AAC_LC/32000
+a=rtpmap:113 G7221/16000
+a=fmtp:113 bitrate=32000
+a=rtpmap:112 G7221/16000
+a=fmtp:112 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=sendrecv
+m=video 3248 RTP/AVP 97 102 99 105 96 34
+b=TIAS:1000000
+a=content:main
+a=label:11
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42801f;packetization-mode=0;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:102 ulpfec/90000
+a=fmtp:102 protectedPayload=97;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=64001f;packetization-mode=1;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:105 ulpfec/90000
+a=fmtp:105 protectedPayload=99;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:96 H263-1998/90000
+a=fmtp:96 CUSTOM=1024,768,4;CUSTOM=800,600,3;CIF4=1;CUSTOM=704,480,1;CUSTOM=640,480,2;CIF=1;CUSTOM=352,240,1;QCIF=1;SQCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;QCIF=1;SQCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm fir
+a=sendrecv
+m=application 3228 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=sendrecv
+m=application 3000 TCP/BFCP *
+c=IN IP4 192.168.5.12
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+a=setup:actpass
+a=connection:new
+
+----------------------------------------------- 2015-11-26 12:22:21:538.036
+TCP message sent (2774 bytes):
+
+INVITE sip:81002001@rwtrunk.com;transport=TCP SIP/2.0
+From: sip:81001001@rwtrunk.com;tag=8
+To: sip:81002001@rwtrunk.com
+Call-ID: 8-20843@192.168.5.12
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-8-0
+Session-Expires: 3600;refresher=uac
+Min-SE: 600
+Call-Info: <sip:10.0.222.133>;method="NOTIFY;Event=telephone-event;Duration=1000"
+Allow: INVITE,BYE,OPTIONS,CANCEL,ACK,REGISTER,NOTIFY,INFO,REFER,SUBSCRIBE,PRACK,UPDATE,MESSAGE,PUBLISH
+Content-Length:  2102
+Max-Forwards: 70
+P-Asserted-Identity: <sip:81001001@rwtrunk.com>
+Contact: "Trunk" <sip:81001001@sbc.com:5060;transport=TCP
+Supported: replaces,
+Content-Type: application/sdp
+
+v=0
+o=251511 1313510207 2738 IN IP4 192.168.5.12
+s=SIP Call RV XTE240
+c=IN IP4 192.168.5.12
+b=AS:1000
+t=0 0
+m=audio 3246 RTP/AVP 119 118 117 116 115 114 123 122 120 107 113 112 9 0 8 101
+a=rtpmap:119 G719/48000
+a=fmtp:119 CBR=64000;max-red=0
+a=rtpmap:118 G719/48000
+a=fmtp:118 CBR=48000;max-red=0
+a=rtpmap:117 G719/48000
+a=fmtp:117 CBR=32000;max-red=0
+a=rtpmap:116 G7221/32000
+a=fmtp:116 bitrate=48000
+a=rtpmap:115 G7221/32000
+a=fmtp:115 bitrate=32000
+a=rtpmap:114 G7221/32000
+a=fmtp:114 bitrate=24000
+a=rtpmap:123 MP4A-LATM/90000
+a=fmtp:123 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:122 MP4A-LATM/90000
+a=fmtp:122 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:120 MP4A-LATM/90000
+a=fmtp:120 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:107 AAC_LC/32000
+a=rtpmap:113 G7221/16000
+a=fmtp:113 bitrate=32000
+a=rtpmap:112 G7221/16000
+a=fmtp:112 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=sendrecv
+m=video 3248 RTP/AVP 97 102 99 105 96 34
+b=TIAS:1000000
+a=content:main
+a=label:11
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42801f;packetization-mode=0;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:102 ulpfec/90000
+a=fmtp:102 protectedPayload=97;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=64001f;packetization-mode=1;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:105 ulpfec/90000
+a=fmtp:105 protectedPayload=99;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:96 H263-1998/90000
+a=fmtp:96 CUSTOM=1024,768,4;CUSTOM=800,600,3;CIF4=1;CUSTOM=704,480,1;CUSTOM=640,480,2;CIF=1;CUSTOM=352,240,1;QCIF=1;SQCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;QCIF=1;SQCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm fir
+a=sendrecv
+m=application 3228 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=sendrecv
+m=application 3000 TCP/BFCP *
+c=IN IP4 192.168.5.12
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+a=setup:actpass
+a=connection:new
+
+----------------------------------------------- 2015-11-26 12:22:22:538.711
+TCP message sent (2774 bytes):
+
+INVITE sip:81002001@rwtrunk.com;transport=TCP SIP/2.0
+From: sip:81001001@rwtrunk.com;tag=9
+To: sip:81002001@rwtrunk.com
+Call-ID: 9-20843@192.168.5.12
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-9-0
+Session-Expires: 3600;refresher=uac
+Min-SE: 600
+Call-Info: <sip:10.0.222.133>;method="NOTIFY;Event=telephone-event;Duration=1000"
+Allow: INVITE,BYE,OPTIONS,CANCEL,ACK,REGISTER,NOTIFY,INFO,REFER,SUBSCRIBE,PRACK,UPDATE,MESSAGE,PUBLISH
+Content-Length:  2102
+Max-Forwards: 70
+P-Asserted-Identity: <sip:81001001@rwtrunk.com>
+Contact: "Trunk" <sip:81001001@sbc.com:5060;transport=TCP
+Supported: replaces,
+Content-Type: application/sdp
+
+v=0
+o=251511 1313510207 2738 IN IP4 192.168.5.12
+s=SIP Call RV XTE240
+c=IN IP4 192.168.5.12
+b=AS:1000
+t=0 0
+m=audio 3246 RTP/AVP 119 118 117 116 115 114 123 122 120 107 113 112 9 0 8 101
+a=rtpmap:119 G719/48000
+a=fmtp:119 CBR=64000;max-red=0
+a=rtpmap:118 G719/48000
+a=fmtp:118 CBR=48000;max-red=0
+a=rtpmap:117 G719/48000
+a=fmtp:117 CBR=32000;max-red=0
+a=rtpmap:116 G7221/32000
+a=fmtp:116 bitrate=48000
+a=rtpmap:115 G7221/32000
+a=fmtp:115 bitrate=32000
+a=rtpmap:114 G7221/32000
+a=fmtp:114 bitrate=24000
+a=rtpmap:123 MP4A-LATM/90000
+a=fmtp:123 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:122 MP4A-LATM/90000
+a=fmtp:122 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:120 MP4A-LATM/90000
+a=fmtp:120 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:107 AAC_LC/32000
+a=rtpmap:113 G7221/16000
+a=fmtp:113 bitrate=32000
+a=rtpmap:112 G7221/16000
+a=fmtp:112 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=sendrecv
+m=video 3248 RTP/AVP 97 102 99 105 96 34
+b=TIAS:1000000
+a=content:main
+a=label:11
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42801f;packetization-mode=0;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:102 ulpfec/90000
+a=fmtp:102 protectedPayload=97;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=64001f;packetization-mode=1;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:105 ulpfec/90000
+a=fmtp:105 protectedPayload=99;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:96 H263-1998/90000
+a=fmtp:96 CUSTOM=1024,768,4;CUSTOM=800,600,3;CIF4=1;CUSTOM=704,480,1;CUSTOM=640,480,2;CIF=1;CUSTOM=352,240,1;QCIF=1;SQCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;QCIF=1;SQCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm fir
+a=sendrecv
+m=application 3228 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=sendrecv
+m=application 3000 TCP/BFCP *
+c=IN IP4 192.168.5.12
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+a=setup:actpass
+a=connection:new
+
+----------------------------------------------- 2015-11-26 12:22:22:539.514
+TCP message sent (2777 bytes):
+
+INVITE sip:81002001@rwtrunk.com;transport=TCP SIP/2.0
+From: sip:81001001@rwtrunk.com;tag=10
+To: sip:81002001@rwtrunk.com
+Call-ID: 10-20843@192.168.5.12
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-10-0
+Session-Expires: 3600;refresher=uac
+Min-SE: 600
+Call-Info: <sip:10.0.222.133>;method="NOTIFY;Event=telephone-event;Duration=1000"
+Allow: INVITE,BYE,OPTIONS,CANCEL,ACK,REGISTER,NOTIFY,INFO,REFER,SUBSCRIBE,PRACK,UPDATE,MESSAGE,PUBLISH
+Content-Length:  2102
+Max-Forwards: 70
+P-Asserted-Identity: <sip:81001001@rwtrunk.com>
+Contact: "Trunk" <sip:81001001@sbc.com:5060;transport=TCP
+Supported: replaces,
+Content-Type: application/sdp
+
+v=0
+o=251511 1313510207 2738 IN IP4 192.168.5.12
+s=SIP Call RV XTE240
+c=IN IP4 192.168.5.12
+b=AS:1000
+t=0 0
+m=audio 3246 RTP/AVP 119 118 117 116 115 114 123 122 120 107 113 112 9 0 8 101
+a=rtpmap:119 G719/48000
+a=fmtp:119 CBR=64000;max-red=0
+a=rtpmap:118 G719/48000
+a=fmtp:118 CBR=48000;max-red=0
+a=rtpmap:117 G719/48000
+a=fmtp:117 CBR=32000;max-red=0
+a=rtpmap:116 G7221/32000
+a=fmtp:116 bitrate=48000
+a=rtpmap:115 G7221/32000
+a=fmtp:115 bitrate=32000
+a=rtpmap:114 G7221/32000
+a=fmtp:114 bitrate=24000
+a=rtpmap:123 MP4A-LATM/90000
+a=fmtp:123 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:122 MP4A-LATM/90000
+a=fmtp:122 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:120 MP4A-LATM/90000
+a=fmtp:120 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:107 AAC_LC/32000
+a=rtpmap:113 G7221/16000
+a=fmtp:113 bitrate=32000
+a=rtpmap:112 G7221/16000
+a=fmtp:112 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=sendrecv
+m=video 3248 RTP/AVP 97 102 99 105 96 34
+b=TIAS:1000000
+a=content:main
+a=label:11
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42801f;packetization-mode=0;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:102 ulpfec/90000
+a=fmtp:102 protectedPayload=97;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=64001f;packetization-mode=1;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:105 ulpfec/90000
+a=fmtp:105 protectedPayload=99;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:96 H263-1998/90000
+a=fmtp:96 CUSTOM=1024,768,4;CUSTOM=800,600,3;CIF4=1;CUSTOM=704,480,1;CUSTOM=640,480,2;CIF=1;CUSTOM=352,240,1;QCIF=1;SQCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;QCIF=1;SQCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm fir
+a=sendrecv
+m=application 3228 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=sendrecv
+m=application 3000 TCP/BFCP *
+c=IN IP4 192.168.5.12
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+a=setup:actpass
+a=connection:new
+
+----------------------------------------------- 2015-11-26 12:22:22:540.065
+TCP message sent (2777 bytes):
+
+INVITE sip:81002001@rwtrunk.com;transport=TCP SIP/2.0
+From: sip:81001001@rwtrunk.com;tag=11
+To: sip:81002001@rwtrunk.com
+Call-ID: 11-20843@192.168.5.12
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-11-0
+Session-Expires: 3600;refresher=uac
+Min-SE: 600
+Call-Info: <sip:10.0.222.133>;method="NOTIFY;Event=telephone-event;Duration=1000"
+Allow: INVITE,BYE,OPTIONS,CANCEL,ACK,REGISTER,NOTIFY,INFO,REFER,SUBSCRIBE,PRACK,UPDATE,MESSAGE,PUBLISH
+Content-Length:  2102
+Max-Forwards: 70
+P-Asserted-Identity: <sip:81001001@rwtrunk.com>
+Contact: "Trunk" <sip:81001001@sbc.com:5060;transport=TCP
+Supported: replaces,
+Content-Type: application/sdp
+
+v=0
+o=251511 1313510207 2738 IN IP4 192.168.5.12
+s=SIP Call RV XTE240
+c=IN IP4 192.168.5.12
+b=AS:1000
+t=0 0
+m=audio 3246 RTP/AVP 119 118 117 116 115 114 123 122 120 107 113 112 9 0 8 101
+a=rtpmap:119 G719/48000
+a=fmtp:119 CBR=64000;max-red=0
+a=rtpmap:118 G719/48000
+a=fmtp:118 CBR=48000;max-red=0
+a=rtpmap:117 G719/48000
+a=fmtp:117 CBR=32000;max-red=0
+a=rtpmap:116 G7221/32000
+a=fmtp:116 bitrate=48000
+a=rtpmap:115 G7221/32000
+a=fmtp:115 bitrate=32000
+a=rtpmap:114 G7221/32000
+a=fmtp:114 bitrate=24000
+a=rtpmap:123 MP4A-LATM/90000
+a=fmtp:123 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:122 MP4A-LATM/90000
+a=fmtp:122 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:120 MP4A-LATM/90000
+a=fmtp:120 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:107 AAC_LC/32000
+a=rtpmap:113 G7221/16000
+a=fmtp:113 bitrate=32000
+a=rtpmap:112 G7221/16000
+a=fmtp:112 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=sendrecv
+m=video 3248 RTP/AVP 97 102 99 105 96 34
+b=TIAS:1000000
+a=content:main
+a=label:11
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42801f;packetization-mode=0;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:102 ulpfec/90000
+a=fmtp:102 protectedPayload=97;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=64001f;packetization-mode=1;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:105 ulpfec/90000
+a=fmtp:105 protectedPayload=99;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:96 H263-1998/90000
+a=fmtp:96 CUSTOM=1024,768,4;CUSTOM=800,600,3;CIF4=1;CUSTOM=704,480,1;CUSTOM=640,480,2;CIF=1;CUSTOM=352,240,1;QCIF=1;SQCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;QCIF=1;SQCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm fir
+a=sendrecv
+m=application 3228 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=sendrecv
+m=application 3000 TCP/BFCP *
+c=IN IP4 192.168.5.12
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+a=setup:actpass
+a=connection:new
+
+----------------------------------------------- 2015-11-26 12:22:22:540.548
+TCP message sent (2777 bytes):
+
+INVITE sip:81002001@rwtrunk.com;transport=TCP SIP/2.0
+From: sip:81001001@rwtrunk.com;tag=12
+To: sip:81002001@rwtrunk.com
+Call-ID: 12-20843@192.168.5.12
+CSeq: 1 INVITE
+Via: SIP/2.0/TCP 192.168.5.12:5060;branch=z9hG4bK-20843-12-0
+Session-Expires: 3600;refresher=uac
+Min-SE: 600
+Call-Info: <sip:10.0.222.133>;method="NOTIFY;Event=telephone-event;Duration=1000"
+Allow: INVITE,BYE,OPTIONS,CANCEL,ACK,REGISTER,NOTIFY,INFO,REFER,SUBSCRIBE,PRACK,UPDATE,MESSAGE,PUBLISH
+Content-Length:  2102
+Max-Forwards: 70
+P-Asserted-Identity: <sip:81001001@rwtrunk.com>
+Contact: "Trunk" <sip:81001001@sbc.com:5060;transport=TCP
+Supported: replaces,
+Content-Type: application/sdp
+
+v=0
+o=251511 1313510207 2738 IN IP4 192.168.5.12
+s=SIP Call RV XTE240
+c=IN IP4 192.168.5.12
+b=AS:1000
+t=0 0
+m=audio 3246 RTP/AVP 119 118 117 116 115 114 123 122 120 107 113 112 9 0 8 101
+a=rtpmap:119 G719/48000
+a=fmtp:119 CBR=64000;max-red=0
+a=rtpmap:118 G719/48000
+a=fmtp:118 CBR=48000;max-red=0
+a=rtpmap:117 G719/48000
+a=fmtp:117 CBR=32000;max-red=0
+a=rtpmap:116 G7221/32000
+a=fmtp:116 bitrate=48000
+a=rtpmap:115 G7221/32000
+a=fmtp:115 bitrate=32000
+a=rtpmap:114 G7221/32000
+a=fmtp:114 bitrate=24000
+a=rtpmap:123 MP4A-LATM/90000
+a=fmtp:123 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:122 MP4A-LATM/90000
+a=fmtp:122 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:120 MP4A-LATM/90000
+a=fmtp:120 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:107 AAC_LC/32000
+a=rtpmap:113 G7221/16000
+a=fmtp:113 bitrate=32000
+a=rtpmap:112 G7221/16000
+a=fmtp:112 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=sendrecv
+m=video 3248 RTP/AVP 97 102 99 105 96 34
+b=TIAS:1000000
+a=content:main
+a=label:11
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42801f;packetization-mode=0;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:102 ulpfec/90000
+a=fmtp:102 protectedPayload=97;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:99 H264/90000
+a=fmtp:99 profile-level-id=64001f;packetization-mode=1;max-br=10240;max-mbps=490000;max-fs=8160
+a=rtpmap:105 ulpfec/90000
+a=fmtp:105 protectedPayload=99;RvXorAlgo;RvRsAlgo;MaxRsWindowSize=48;MaxRsFecPackets=8
+a=rtpmap:96 H263-1998/90000
+a=fmtp:96 CUSTOM=1024,768,4;CUSTOM=800,600,3;CIF4=1;CUSTOM=704,480,1;CUSTOM=640,480,2;CIF=1;CUSTOM=352,240,1;QCIF=1;SQCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;QCIF=1;SQCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm fir
+a=sendrecv
+m=application 3228 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=sendrecv
+m=application 3000 TCP/BFCP *
+c=IN IP4 192.168.5.12
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+a=setup:actpass
+a=connection:new
+

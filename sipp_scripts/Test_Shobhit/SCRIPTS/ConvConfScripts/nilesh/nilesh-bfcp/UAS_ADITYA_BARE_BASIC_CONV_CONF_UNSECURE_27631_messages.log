@@ -1,0 +1,267 @@
+----------------------------------------------- 2017-06-21 18:02:26:681.333
+TLS message received [1560] bytes :
+
+INVITE sips:4002@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@192.168.44.232:17065;tag=1
+To: sips:4002@192.168.5.12:5061
+CSeq: 2 INVITE
+Call-ID: 2c492e4b0288862eb70a8b4fd1cffb38
+Contact: <sips:4001@192.168.44.232:5061;transport=tls>
+Record-Route: <sip:192.168.44.232:5061;ipcs-line=40;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.44.232:5061;branch=z9hG4bK-s1632-001422937607-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA0800010001594A675A;encoding=hex
+Content-Length: 891
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.36.239
+s=-
+c=IN IP4 10.133.36.239
+t=0 0
+m=audio 35000 RTP/AVP 0 8 101
+c=IN IP4 10.133.36.239
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:/8FBV5Kpm89giqwC3KRBD5Ev6+cAvv3LQh3PW1ur UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+m=video 35002 RTP/AVP 98
+c=IN IP4 10.133.36.239
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=tcap:2 RTP/SAVP
+a=acap:2 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:+62LfoKa73xKzzLd8HYAl4sl27FAkKNqyf/koHqa UNENCRYPTED_SRTCP
+a=pcfg:1 t=2 a=2
+m=application 35004 TCP/UDP/BFCP *
+c=IN IP4 10.133.36.239
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+
+----------------------------------------------- 2017-06-21 18:02:26:681.793
+TLS message sent (368 bytes):
+
+SIP/2.0 100 Trying
+From: sips:4001@192.168.44.232:17065;tag=1
+To: sips:4002@192.168.5.12:5061
+Call-ID: 2c492e4b0288862eb70a8b4fd1cffb38
+Cseq:2 INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Via: SIP/2.0/TLS 192.168.44.232:5061;branch=z9hG4bK-s1632-001422937607-1--s1632-
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+----------------------------------------------- 2017-06-21 18:02:26:681.882
+TLS message sent (571 bytes):
+
+SIP/2.0 180 Ringing
+From: sips:4001@192.168.44.232:17065;tag=1
+To: sips:4002@192.168.5.12:5061;tag=1
+Call-ID: 2c492e4b0288862eb70a8b4fd1cffb38
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.44.232:5061;branch=z9hG4bK-s1632-001422937607-1--s1632-
+Require: 100rel
+Content-Type: application/sdp
+Record-Route: <sip:192.168.44.232:5061;ipcs-line=40;lr;transport=tls>
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length:     0
+
+
+----------------------------------------------- 2017-06-21 18:02:26:884.099
+TLS message sent (1096 bytes):
+
+SIP/2.0 200 OK
+From: sips:4001@192.168.44.232:17065;tag=1
+To: sips:4002@192.168.5.12:5061;tag=1
+Call-ID: 2c492e4b0288862eb70a8b4fd1cffb38
+Cseq:2 INVITE
+Via: SIP/2.0/TLS 192.168.44.232:5061;branch=z9hG4bK-s1632-001422937607-1--s1632-
+Supported: 100rel
+Record-Route: <sip:192.168.44.232:5061;ipcs-line=40;lr;transport=tls>
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Length:   547
+
+v=0
+o=user1 53655765 1 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+c=IN IP4 10.133.39.159
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+m=video 6002 RTP/AVP 109 34
+c=IN IP4 10.133.39.159
+b=TIAS:512000
+a=sendrecv
+a=avaya-media-connectivity-check-supported
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+m=application 4000 UDP/BFCP *
+c=IN IP4 10.133.39.159
+a=floorctrl:c-only
+
+----------------------------------------------- 2017-06-21 18:02:26:892.520
+TLS message received [609] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@192.168.44.232:17065;tag=1
+To: sips:4002@192.168.5.12:5061;tag=1
+CSeq: 2 ACK
+Call-ID: 2c492e4b0288862eb70a8b4fd1cffb38
+Contact: <sips:4001@192.168.44.232:5061;transport=tls>
+Record-Route: <sips:192.168.44.232:5061;ipcs-line=40;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.44.232:5061;branch=z9hG4bK-s1632-000599976784-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2017-06-21 18:02:41:897.298
+TLS message received [1247] bytes :
+
+INVITE sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@192.168.44.232:17065;tag=1
+To: sips:4002@192.168.5.12:5061;tag=1
+CSeq: 3 INVITE
+Call-ID: 2c492e4b0288862eb70a8b4fd1cffb38
+Contact: <sips:4001@192.168.44.232:5061;transport=tls>
+Record-Route: <sips:192.168.44.232:5061;ipcs-line=40;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.44.232:5061;branch=z9hG4bK-s1632-001107291847-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA0800010001594A675A;encoding=hex
+Content-Length: 571
+
+v=0
+o=user1 53655765 2 IN IP4 10.133.36.239
+s=-
+c=IN IP4 10.133.36.239
+t=0 0
+m=audio 35012 RTP/AVP 0 8 101
+c=IN IP4 10.133.36.239
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+m=video 35014 RTP/AVP 98
+c=IN IP4 10.133.36.239
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+m=application 35016 UDP/BFCP *
+c=IN IP4 10.133.36.239
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+
+----------------------------------------------- 2017-06-21 18:02:41:897.474
+TLS message sent (440 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.44.232:5061;branch=z9hG4bK-s1632-001107291847-1--s1632-
+From: sips:4001@192.168.44.232:17065;tag=1
+To: sips:4002@192.168.5.12:5061;tag=1
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:3 INVITE
+Call-ID: 2c492e4b0288862eb70a8b4fd1cffb38
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2017-06-21 18:02:41:897.567
+TLS message sent (954 bytes):
+
+SIP/2.0 200 OK
+Call-ID: 2c492e4b0288862eb70a8b4fd1cffb38
+Via: SIP/2.0/TLS 192.168.44.232:5061;branch=z9hG4bK-s1632-001107291847-1--s1632-
+From: sips:4001@192.168.44.232:17065;tag=1
+To: sips:4002@192.168.5.12:5061;tag=1
+CSeq:3 INVITE
+Contact: <sips:4001@192.168.5.12:5061;transport=TLS>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   499
+
+v=0
+o=user1 53655765 2 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+c=IN IP4 10.133.39.159
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+m=video 6002 RTP/AVP 98
+c=IN IP4 10.133.39.159
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+m=application 4000 UDP/BFCP *
+c=IN IP4 10.133.39.159
+a=floorctrl:c-only
+
+----------------------------------------------- 2017-06-21 18:02:41:903.059
+TLS message received [609] bytes :
+
+ACK sips:4001@192.168.5.12:5061;transport=tls SIP/2.0
+From: sips:4001@192.168.44.232:17065;tag=1
+To: sips:4002@192.168.5.12:5061;tag=1
+CSeq: 3 ACK
+Call-ID: 2c492e4b0288862eb70a8b4fd1cffb38
+Contact: <sips:4001@192.168.44.232:5061;transport=tls>
+Record-Route: <sips:192.168.44.232:5061;ipcs-line=40;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.44.232:5061;branch=z9hG4bK-s1632-001673782259-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 0
+
+

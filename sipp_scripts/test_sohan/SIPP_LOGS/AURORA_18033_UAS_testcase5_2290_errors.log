@@ -1,0 +1,194 @@
+sipp: The following events occured:
+2019-08-27	15:35:59:299	1566900359.299970: Aborting call on unexpected message for Call-Id 'e55fb25d81ee4c00129028718696ef4e': while expecting 'INVITE' (index 9), received 'ACK sip:4079@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 3 ACK
+Call-ID: e55fb25d81ee4c00129028718696ef4e
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001670280110-1--s1632-
+Content-Length: 0
+
+'.
+2019-08-27	15:36:03:309	1566900363.309446: Dead call e55fb25d81ee4c00129028718696ef4e (aborted at index 9), received 'INVITE sip:4079@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 4 INVITE
+Call-ID: e55fb25d81ee4c00129028718696ef4e
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=2;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001506682349-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 198
+
+v=0
+o=sbc-uk-bs07a 318327808 3 IN IP4 192.168.55.75
+s=sip
+c=IN IP4 192.168.55.75
+t=0 0
+m=image 35008 udptl t38
+a=T38FaxVersion:0
+a=T38MaxBitRate:14400
+a=T38FaxRateManagement:transferredTCF
+'.
+2019-08-27	15:36:03:811	1566900363.811102: Dead call e55fb25d81ee4c00129028718696ef4e (aborted at index 9), received 'INVITE sip:4079@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 4 INVITE
+Call-ID: e55fb25d81ee4c00129028718696ef4e
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=2;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001506682349-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 198
+
+v=0
+o=sbc-uk-bs07a 318327808 3 IN IP4 192.168.55.75
+s=sip
+c=IN IP4 192.168.55.75
+t=0 0
+m=image 35008 udptl t38
+a=T38FaxVersion:0
+a=T38MaxBitRate:14400
+a=T38FaxRateManagement:transferredTCF
+'.
+2019-08-27	15:36:04:811	1566900364.811887: Dead call e55fb25d81ee4c00129028718696ef4e (aborted at index 9), received 'INVITE sip:4079@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 4 INVITE
+Call-ID: e55fb25d81ee4c00129028718696ef4e
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=2;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001506682349-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 198
+
+v=0
+o=sbc-uk-bs07a 318327808 3 IN IP4 192.168.55.75
+s=sip
+c=IN IP4 192.168.55.75
+t=0 0
+m=image 35008 udptl t38
+a=T38FaxVersion:0
+a=T38MaxBitRate:14400
+a=T38FaxRateManagement:transferredTCF
+'.
+2019-08-27	15:36:06:812	1566900366.812924: Dead call e55fb25d81ee4c00129028718696ef4e (aborted at index 9), received 'INVITE sip:4079@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 4 INVITE
+Call-ID: e55fb25d81ee4c00129028718696ef4e
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=2;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001506682349-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 198
+
+v=0
+o=sbc-uk-bs07a 318327808 3 IN IP4 192.168.55.75
+s=sip
+c=IN IP4 192.168.55.75
+t=0 0
+m=image 35008 udptl t38
+a=T38FaxVersion:0
+a=T38MaxBitRate:14400
+a=T38FaxRateManagement:transferredTCF
+'.
+2019-08-27	15:36:10:814	1566900370.814508: Dead call e55fb25d81ee4c00129028718696ef4e (aborted at index 9), received 'INVITE sip:4079@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 4 INVITE
+Call-ID: e55fb25d81ee4c00129028718696ef4e
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=2;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001506682349-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 198
+
+v=0
+o=sbc-uk-bs07a 318327808 3 IN IP4 192.168.55.75
+s=sip
+c=IN IP4 192.168.55.75
+t=0 0
+m=image 35008 udptl t38
+a=T38FaxVersion:0
+a=T38MaxBitRate:14400
+a=T38FaxRateManagement:transferredTCF
+'.
+2019-08-27	15:36:18:815	1566900378.815864: Dead call e55fb25d81ee4c00129028718696ef4e (aborted at index 9), received 'INVITE sip:4079@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 4 INVITE
+Call-ID: e55fb25d81ee4c00129028718696ef4e
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=2;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001506682349-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 198
+
+v=0
+o=sbc-uk-bs07a 318327808 3 IN IP4 192.168.55.75
+s=sip
+c=IN IP4 192.168.55.75
+t=0 0
+m=image 35008 udptl t38
+a=T38FaxVersion:0
+a=T38MaxBitRate:14400
+a=T38FaxRateManagement:transferredTCF
+'.
+2019-08-27	15:36:34:816	1566900394.816509: Dead call e55fb25d81ee4c00129028718696ef4e (aborted at index 9), received 'INVITE sip:4079@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 4 INVITE
+Call-ID: e55fb25d81ee4c00129028718696ef4e
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=2;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001506682349-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 198
+
+v=0
+o=sbc-uk-bs07a 318327808 3 IN IP4 192.168.55.75
+s=sip
+c=IN IP4 192.168.55.75
+t=0 0
+m=image 35008 udptl t38
+a=T38FaxVersion:0
+a=T38MaxBitRate:14400
+a=T38FaxRateManagement:transferredTCF
+'.

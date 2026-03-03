@@ -1,0 +1,66 @@
+----------------------------------------------- 2019-06-27 15:52:13:584.696
+TCP message received [385] bytes :
+
+REGISTER sip:10.133.48.238 SIP/2.0
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 REGISTER
+Call-ID: 1-26377@10.133.39.159
+Contact: <sip:4078@192.168.55.79:5060;transport=tcp;subid_ipcs=2421272691>
+User-Agent: SIPp/Linux
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.79:5060;branch=z9hG4bK-s1632-001637258436-1--s1632-
+Expires: 1800
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 15:52:13:585.009
+TCP message sent (327 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.55.79:5060;branch=z9hG4bK-s1632-001637258436-1--s1632-
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>;tag=2
+Call-ID: 1-26377@10.133.39.159
+CSeq: 1 REGISTER
+Contact: <sip:4078@192.168.55.79:6025;subid_ipcs=2421272691;transport=TCP>
+Content-Length: 0
+Expires: 60
+
+
+----------------------------------------------- 2019-06-27 15:52:13:595.580
+TCP message received [550] bytes :
+
+SUBSCRIBE sip:service@192.168.5.12:6025 SIP/2.0
+From: <sip:4078@sbcdev4.com>;tag=26377SIPpTag001
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 SUBSCRIBE
+Call-ID: 1-26377@10.133.39.159
+Contact: <sip:4078@192.168.55.79:5060;transport=tcp;subid_ipcs=2421272691>
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=35;lr;transport=tcp;subid_ipcs=2421272691>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.79:5060;branch=z9hG4bK-s1632-000965976476-1--s1632-
+Expires: 60
+Accept: application/pidf+xml
+Event: presence
+Allow-Events: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 15:52:13:595.746
+TCP message sent (540 bytes):
+
+NOTIFY sip:4078@192.168.55.79:5060;transport=tcp;subid_ipcs=2421272691 SIP/2.0
+Via: SIP/2.0/TCP 192.168.5.12:6025;rport;branch=z9hG4bK-s1632-001174722495-1--s1632-
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: <sip:4078@sbcdev4.com>;tag=26377SIPpTag001;tag=2
+Call-ID: 1-26377@10.133.39.159
+Contact: <sip:sipp@192.168.5.12:6025>;transport=udp>;expires=300
+Max-Forwards: 70
+CSeq: 11 NOTIFY
+Subscription-State: active;expires=2000
+Server: Avaya Aura Presence Services 7.1.2.0-SNAPSHOT-230
+Event: presence.winfo
+Content-Length: 0
+
+

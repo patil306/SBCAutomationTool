@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic UAS responder">
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<recv request="INVITE" crlf="true">
+</recv>
+  
+<!-- The '[last_*]' keyword is replaced automatically by the          -->
+<!-- specified header if it was present in the last message received  -->
+<!-- (except if it was a retransmission). If the header was not       -->
+<!-- present or if no message has been received, the '[last_*]'       -->
+<!-- keyword is discarded, and all bytes until the end of the line    -->
+<!-- are also discarded.                                              -->
+<!--                                                                  -->
+<!-- If the specified header was present several times in the         -->
+<!-- message, all occurences are concatenated (CRLF seperated)        -->
+<!-- to be used in place of the '[last_*]' keyword.                   -->
+
+<send>
+<![CDATA[
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+<send>
+<![CDATA[
+SIP/2.0 180 Ringing
+[last_Via:]
+[last_From:]
+[last_To:];tag=[call_number]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+<send retrans="500">
+<![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=[call_number]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Type: application/sdp
+Content-Length: [len]
+
+v=0
+o=user1 53655765 2353687637 IN IP[local_ip_type] [local_ip]
+s=-
+c=IN IP[media_ip_type] [media_ip]
+t=0 0
+m=audio [media_port] RTP/SAVP 0
+a=rtpmap:0 PCMU/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:6fjNC4+FS2GgwD58xvKuAhEbACdye5Eg+PglDvp/
+]]>
+</send>
+
+<recv request="ACK" rtd="true" crlf="true">
+    <action>
+      <ereg regexp=": *(.*)" search_in="hdr" header="From" assign_to="_,them"/>
+      <ereg regexp=": *(.*)" search_in="hdr" header="To" assign_to="_,us"/>
+    </action>
+</recv>
+
+
+
+<recv request="INVITE" crlf="true">
+</recv>
+
+<send>
+<![CDATA[
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+<send retrans="500">
+<![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=[call_number]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Type: application/sdp
+Content-Length: [len]
+
+v=0
+o=user1 53655765 2353687637 IN IP[local_ip_type] [local_ip]
+s=-
+c=IN IP[media_ip_type] [media_ip]
+t=0 0
+m=audio [media_port] RTP/SAVP 0
+a=rtpmap:0 PCMU/8000
+a=sendrecv
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:6fjNC4+FS2GgwD58xvKuAhEbACdye5Eg+PglDv2/
+]]>
+</send>
+
+<recv request="ACK" rtd="true" crlf="true">
+</recv>
+
+
+
+<pause milliseconds="10000"/>
+ <send retrans="500">
+     <![CDATA[
+        INVITE sip:[field1]@[remote_ip]:[remote_port];transport=[transport] SIP/2.0
+        Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+        From: [$us]
+        To: [$them]
+        Call-ID: [call_id]
+        CSeq: [cseq] INVITE
+        Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+        Max-Forwards: 70
+        Content-Type: application/sdp
+        Content-Length: [len]
+
+        v=0
+        o=user1 53655765 2353687638 IN IP[local_ip_type] [local_ip]
+        s=-
+        c=IN IP[media_ip_type] [media_ip]
+        t=0 0
+        m=audio [media_port] RTP/SAVP 0 8 101
+        a=rtpmap:0 PCMU/8000
+        a=rtpmap:8 PCMA/8000/1
+        a=rtpmap:101 telephone-event/8000
+        a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:6fjNC4+FS2GgwD58xvKuAhEbACdye5Eg+PglDv2/
+        a=sendrecv
+         ]]>
+</send>
+
+  <recv response="100" optional="true" />
+
+  <recv response="180" optional="true" />
+
+  <recv response="183" optional="true" />
+
+  <recv response="200" rrs="true" />
+
+  <send >
+    <![CDATA[
+
+      ACK [next_url] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: [$us]
+      To: [$them]
+      Call-ID: [call_id]
+      CSeq: [cseq] ACK
+      Contact: sip:[field1]@[local_ip]:[local_port];transport=[transport]
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+<pause milliseconds="5000"/>
+
+  <send>
+    <![CDATA[
+      BYE sip:[field1]@[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: [$us]
+      To: [$them]
+      Call-ID: [call_id]
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      CSeq: 3 BYE
+      [routes]
+      Max-Forwards: 70
+      Subject: Performance Test
+      Content-Length: 0
+   ]]>
+  </send>
+
+<recv response="200"/>
+
+
+</scenario>

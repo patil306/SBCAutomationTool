@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+<!--      User-to-User: 00FA080001001056965CFB;encoding=hex -->
+
+<scenario name="Basic Sipstone UAC">
+<!--<send>
+  <![CDATA[
+  REFER sips:450096@10.133.51.29:5061;subid_ipcs=1278284517;transport=tcp SIP/2.0                                      
+  From: <sip:450096@puneept.avaya.com:5061;transport=tls>;tag=5bdfe72890f641ea8a3905056a6e7b3                          
+  To: "450096" <sip:450096@puneept.avaya.com>                                                                          
+  CSeq: 0 REFER                                                                                                        
+  Call-ID: 5bdfe76490f641ea8a3a05056a6e7b3                                                                             
+  Contact: <sip:450096@10.133.88.194:5061;transport=tls;asm=1>                                                         
+  Supported: histinfo, join, replaces, sdp-anat, timer                                                                 
+  User-Agent: Avaya CM/R018x.01.0.890.0 AVAYA-SM-8.1.0.0.810007                                                        
+  Max-Forwards: 66                                                                                                     
+  Via: SIP/2.0/TLS 10.133.88.196;branch=z9hG4bK485580307769947-AP;ft=968909                                            
+  Via: SIP/2.0/TLS 127.0.0.2:15061;rport=37786;ibmsid=local.1582964454757_9180118_9256712;branch=z9hG4bK485580307769947
+  Via: SIP/2.0/TLS 127.0.0.2:15061;rport;ibmsid=local.1582964454757_9180117_9256711;branch=z9hG4bK978861035887335      
+  Via: SIP/2.0/TLS 10.133.88.196;branch=z9hG4bK5bdfe9da90f641ea8a3b05056a6e7b3-AP;ft=970149;received=10.133.88.196;rport=38796   Via: SIP/2.0/TLS 10.133.88.194;branch=z9hG4bK5bdfe9da90f641ea8a3b05056a6e7b3                                     
+  Refer-To: <sip:450095@10.133.88.194:5061;transport=tls;method=INVITE;response=200>                                   
+  P-Asserted-Identity: <sip:450096@puneept.avaya.com>                                                                  
+  Request-Disposition: no-fork                                                                                         
+  Target-Dialog: 5a7b22e490f641ea8a3305056a6e7b3;remote-tag=5a7b22c690f641ea8a3205056a6e7b3;local-tag=1bc509c0-1916-4157-81e1-b  02791ad5331                                                                                                  
+  Av-Global-Session-ID: 5be06a90-90f6-11ea-a838-005056a61b01                                                           
+  Content-Length: 0
+  ]]>
+  </send>-->
+<send >
+<![CDATA[
+
+REFER sip:4002@10.133.36.32;subid_ipcs=1278284517 SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: sip:4001@10.133.39.159:5073;tag=1
+To: sip:4002@10.133.36.32;
+Call-ID: [call_id]
+CSeq: 1 REFER
+Refer-To: <sip:Agent@[local_ip]:[local_port+17];transport=[transport]>
+Referred-By: sip:4001@10.133.39.159:5073
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+P-Asserted-Identity: <sip:450096@puneept.avaya.com>
+X-InteliServe-Classification: PWD
+X-InteliServe-Persona: GEN
+X-InteliServe-ITSM-Sys: ACME1_SNOW
+X-InteliServe-CTI-Key: INC0000001
+Content-Length: 0
+]]>
+ </send>
+</scenario>

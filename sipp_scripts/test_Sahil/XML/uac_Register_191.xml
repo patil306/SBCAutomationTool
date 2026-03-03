@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+<!--      User-to-User: 00FA080001001056965CFB;encoding=hex -->
+
+<scenario name="Basic Sipstone UAC">
+
+<send retrans="500">
+<![CDATA[
+REGISTER sip:[remote_ip] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: <sip:pqrxyz801@sibtel.bbg.gv.at>;tag=[pid]SIPpTag01[call_number]
+To: <sip:pqrxyz801@sibtel.bbg.gv.at>
+Call-ID: [call_id]
+CSeq: 1 REGISTER
+Contact: <sips:8881100018@135.123.133.220:58438>;q=1;expires=3600;+sip.instance="<urn:uuid:c62d0e4a-501a-48c8-ab70-1138cd24035d>";reg-id=1;+av.sip.iptolerance;+av.sip.sig=4;avaya-actions="presence.initiate-pubsub, presence.redirect"
+Max-Forwards: 70
+Expires: 1800
+User-Agent: pqrxyz
+Content-Length: 0
+
+]]>
+</send>
+
+<recv response="400" optional="false">
+</recv>
+
+
+
+
+<!-- definition of the response time repartition table (unit is ms)   -->
+  <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+<!-- definition of the call length repartition table (unit is ms)     -->
+  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+
+</scenario>

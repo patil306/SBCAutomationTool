@@ -1,0 +1,12 @@
+sipp: The following events occured:
+2018-07-02	16:19:34:851	1530528574.851885: Aborting call on unexpected message for Call-Id 'b476a5175118340249f7d5255263f65f': while expecting '200' (index 8), received 'SIP/2.0 503 Service Unavailable
+From: sip:40006@trk.com;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: b476a5175118340249f7d5255263f65f
+Record-Route: <sip:192.168.6.240:5060;ipcs-line=37;lr;transport=tcp>
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-29759-1-6
+Content-Length: 0
+
+'.

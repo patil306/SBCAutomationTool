@@ -1,0 +1,170 @@
+----------------------------------------------- 2019-06-18 14:15:18:781.060
+UDP message received [564] bytes :
+
+REGISTER sip:10.133.48.238:5060 SIP/2.0
+From: <sip:1001@10.133.48.238>;tag=OROVs2uPX6ZznEIcJek6lOA5Mb8ArQNs
+To: <sip:1001@10.133.48.238>
+CSeq: 63860 REGISTER
+Call-ID: 1-17711@10.133.39.159
+Contact: <sip:1001@192.168.55.79:5060;ob;subid_ipcs=3834789073;transport=udp>
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+User-Agent: PJSUA v2.8 Linux-3.10.3.189/x86_64/glibc-2.17
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-000342644683-1--s1632-
+Expires: 300
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-18 14:15:18:781.302
+UDP message sent (608 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-000126103720-1--s1632-
+From: <sip:1001@10.133.48.238>;tag=OROVs2uPX6ZznEIcJek6lOA5Mb8ArQNs
+To: <sip:1001@10.133.48.238>;tag=r6KBa83t19ymc
+Call-ID: 1-17711@10.133.39.159
+CSeq: 63861 REGISTER
+Contact: <sip:1001@192.168.55.79:5060;ob;subid_ipcs=3834789073;transport=udp>;expires=300
+Date: Tue, 18 Jun 2019 08:24:10 GMT
+User-Agent: FreeSWITCH-mod_sofia/1.6.20~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-18 14:15:19:281.502
+UDP message received [564] bytes :
+
+REGISTER sip:10.133.48.238:5060 SIP/2.0
+From: <sip:1001@10.133.48.238>;tag=OROVs2uPX6ZznEIcJek6lOA5Mb8ArQNs
+To: <sip:1001@10.133.48.238>
+CSeq: 63860 REGISTER
+Call-ID: 1-17711@10.133.39.159
+Contact: <sip:1001@192.168.55.79:5060;ob;subid_ipcs=3834789073;transport=udp>
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+User-Agent: PJSUA v2.8 Linux-3.10.3.189/x86_64/glibc-2.17
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-000342644683-1--s1632-
+Expires: 300
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 1-17711@10.133.39.159 recieved a UDP message:
+
+REGISTER sip:10.133.48.238:5060 SIP/2.0
+From: <sip:1001@10.133.48.238>;tag=OROVs2uPX6ZznEIcJek6lOA5Mb8ArQNs
+To: <sip:1001@10.133.48.238>
+CSeq: 63860 REGISTER
+Call-ID: 1-17711@10.133.39.159
+Contact: <sip:1001@192.168.55.79:5060;ob;subid_ipcs=3834789073;transport=udp>
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+User-Agent: PJSUA v2.8 Linux-3.10.3.189/x86_64/glibc-2.17
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-000342644683-1--s1632-
+Expires: 300
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-18 14:15:20:282.869
+UDP message received [564] bytes :
+
+REGISTER sip:10.133.48.238:5060 SIP/2.0
+From: <sip:1001@10.133.48.238>;tag=OROVs2uPX6ZznEIcJek6lOA5Mb8ArQNs
+To: <sip:1001@10.133.48.238>
+CSeq: 63860 REGISTER
+Call-ID: 1-17711@10.133.39.159
+Contact: <sip:1001@192.168.55.79:5060;ob;subid_ipcs=3834789073;transport=udp>
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+User-Agent: PJSUA v2.8 Linux-3.10.3.189/x86_64/glibc-2.17
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-000342644683-1--s1632-
+Expires: 300
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 1-17711@10.133.39.159 recieved a UDP message:
+
+REGISTER sip:10.133.48.238:5060 SIP/2.0
+From: <sip:1001@10.133.48.238>;tag=OROVs2uPX6ZznEIcJek6lOA5Mb8ArQNs
+To: <sip:1001@10.133.48.238>
+CSeq: 63860 REGISTER
+Call-ID: 1-17711@10.133.39.159
+Contact: <sip:1001@192.168.55.79:5060;ob;subid_ipcs=3834789073;transport=udp>
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+User-Agent: PJSUA v2.8 Linux-3.10.3.189/x86_64/glibc-2.17
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-000342644683-1--s1632-
+Expires: 300
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-18 14:15:22:283.863
+UDP message received [564] bytes :
+
+REGISTER sip:10.133.48.238:5060 SIP/2.0
+From: <sip:1001@10.133.48.238>;tag=OROVs2uPX6ZznEIcJek6lOA5Mb8ArQNs
+To: <sip:1001@10.133.48.238>
+CSeq: 63860 REGISTER
+Call-ID: 1-17711@10.133.39.159
+Contact: <sip:1001@192.168.55.79:5060;ob;subid_ipcs=3834789073;transport=udp>
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+User-Agent: PJSUA v2.8 Linux-3.10.3.189/x86_64/glibc-2.17
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-000342644683-1--s1632-
+Expires: 300
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 1-17711@10.133.39.159 recieved a UDP message:
+
+REGISTER sip:10.133.48.238:5060 SIP/2.0
+From: <sip:1001@10.133.48.238>;tag=OROVs2uPX6ZznEIcJek6lOA5Mb8ArQNs
+To: <sip:1001@10.133.48.238>
+CSeq: 63860 REGISTER
+Call-ID: 1-17711@10.133.39.159
+Contact: <sip:1001@192.168.55.79:5060;ob;subid_ipcs=3834789073;transport=udp>
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+User-Agent: PJSUA v2.8 Linux-3.10.3.189/x86_64/glibc-2.17
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-000342644683-1--s1632-
+Expires: 300
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-18 14:15:26:285.244
+UDP message received [564] bytes :
+
+REGISTER sip:10.133.48.238:5060 SIP/2.0
+From: <sip:1001@10.133.48.238>;tag=OROVs2uPX6ZznEIcJek6lOA5Mb8ArQNs
+To: <sip:1001@10.133.48.238>
+CSeq: 63860 REGISTER
+Call-ID: 1-17711@10.133.39.159
+Contact: <sip:1001@192.168.55.79:5060;ob;subid_ipcs=3834789073;transport=udp>
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+User-Agent: PJSUA v2.8 Linux-3.10.3.189/x86_64/glibc-2.17
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-000342644683-1--s1632-
+Expires: 300
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 1-17711@10.133.39.159 recieved a UDP message:
+
+REGISTER sip:10.133.48.238:5060 SIP/2.0
+From: <sip:1001@10.133.48.238>;tag=OROVs2uPX6ZznEIcJek6lOA5Mb8ArQNs
+To: <sip:1001@10.133.48.238>
+CSeq: 63860 REGISTER
+Call-ID: 1-17711@10.133.39.159
+Contact: <sip:1001@192.168.55.79:5060;ob;subid_ipcs=3834789073;transport=udp>
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+User-Agent: PJSUA v2.8 Linux-3.10.3.189/x86_64/glibc-2.17
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-000342644683-1--s1632-
+Expires: 300
+Content-Length: 0
+
+

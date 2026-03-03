@@ -1,0 +1,302 @@
+----------------------------------------------- 2018-08-13 13:03:41:303.042
+TCP message received [1213] bytes :
+
+INVITE sip:40006@10.133.48.149 SIP/2.0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: a565d214f932b21636c3110f06648200
+Contact: sip:40005@192.168.6.242:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.6.242:5060;ipcs-line=14;lr;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=14;lr;transport=tcp>
+Supported: timer, replaces
+User-Agent: IP Office 10.1.0.0.0 build 237
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.6.242:5060;branch=z9hG4bK-s1632-000468372977-1--s1632-
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17009-1-0
+Proxy-Authorization: Digest username="33982126232",realm="213.152.17.108",nonce="5a02d0e28074b601bf3d17eca645ad8dffdd34c2",response="ae0f13c53790bf0be380d288fe1fa2b6",uri="sip:0607617122@10.69.69.194",algorithm=MD5,qop=auth,nc=00000004,cnonce="d261fb2e8b3784ffa525"
+Content-Type: application/sdp
+Content-Length: 282
+
+v=0
+o=UserA 711462316 843249914 IN IP4 10.69.69.190
+s=Session
+c=IN IP4 192.168.6.242
+t=0 0
+m=audio 35040 RTP/AVP 0 8 18 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2018-08-13 13:03:41:303.539
+TCP message sent (356 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 192.168.6.242:5060;branch=z9hG4bK-s1632-000468372977-1--s1632-, SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17009-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+Call-ID: a565d214f932b21636c3110f06648200
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-13 13:03:41:303.798
+TCP message sent (510 bytes):
+
+SIP/2.0 407 Proxy Authentication Required
+Via: SIP/2.0/TCP 192.168.6.242:5060;branch=z9hG4bK-s1632-000468372977-1--s1632-, SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17009-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+Call-ID: a565d214f932b21636c3110f06648200
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Proxy-Authenticate: Digest realm="213.152.17.108", nonce="5a02d7116139eb992ffb66da730bf04096cb0676", qop="auth", stale=true
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-13 13:03:41:308.803
+TCP message received [419] bytes :
+
+ACK sip:40006@10.133.48.149 SIP/2.0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=1
+CSeq: 1 ACK
+Call-ID: a565d214f932b21636c3110f06648200
+Contact: sip:40005@192.168.6.242:5060;transport=tcp;transport=TCP
+Max-Forwards: 70
+Via: SIP/2.0/TCP 192.168.6.242:5060;branch=z9hG4bK-s1632-000468372977-1--s1632-
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17009-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-13 13:03:41:324.328
+TCP message received [1227] bytes :
+
+INVITE sip:40006@10.133.48.149;transport=udp SIP/2.0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+CSeq: 2 INVITE
+Call-ID: a565d214f932b21636c3110f06648200
+Contact: sip:40005@192.168.6.242:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.6.242:5060;ipcs-line=14;lr;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=14;lr;transport=tcp>
+Supported: timer, replaces
+User-Agent: IP Office 10.1.0.0.0 build 237
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.6.242:5060;branch=z9hG4bK-s1632-000488474887-1--s1632-
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17009-1-4
+Proxy-Authorization: Digest username="33982126232",realm="213.152.17.108",nonce="5a02d7116139eb992ffb66da730bf04096cb0676",response="541aa726f35979763c46020739da95f2",uri="sip:0607617122@10.69.69.194",algorithm=MD5,qop=auth,nc=00000001,cnonce="1d9a3e44837e54fe9e64"
+Content-Type: application/sdp
+Content-Length: 282
+
+v=0
+o=UserA 711462316 843249914 IN IP4 10.69.69.190
+s=Session
+c=IN IP4 192.168.6.242
+t=0 0
+m=audio 35042 RTP/AVP 0 8 18 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2018-08-13 13:03:41:324.609
+TCP message sent (382 bytes):
+
+SIP/2.0 100 Giving a try
+Via: SIP/2.0/TCP 192.168.6.242:5060;branch=z9hG4bK-s1632-000488474887-1--s1632-, SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17009-1-4
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+Call-ID: a565d214f932b21636c3110f06648200
+CSeq: 2 INVITE
+Server: Keyyo-S4-P
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-13 13:03:41:324.939
+TCP message sent (386 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/TCP 192.168.6.242:5060;branch=z9hG4bK-s1632-000488474887-1--s1632-, SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17009-1-4
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=123
+Call-ID: a565d214f932b21636c3110f06648200
+CSeq: 2 INVITE
+Server: Keyyo B2BUA
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-13 13:03:41:325.145
+TCP message sent (761 bytes):
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/TCP 192.168.6.242:5060;branch=z9hG4bK-s1632-000488474887-1--s1632-, SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17009-1-4
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=123
+Call-ID: a565d214f932b21636c3110f06648200
+CSeq: 2 INVITE
+Server: Keyyo B2BUA
+Supported: replaces, x-sipura
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   300
+
+v=0
+o=b2b 206721381 206721381 IN IP4 192.168.22.151
+s=b2b
+c=IN IP4 83.136.164.33
+t=0 0
+m=audio 59968 RTP/AVP 8 18 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=maxptime:150
+a=sendrecv
+a=nortpproxy:yes
+
+----------------------------------------------- 2018-08-13 13:03:41:325.396
+TCP message sent (747 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.6.242:5060;branch=z9hG4bK-s1632-000488474887-1--s1632-, SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17009-1-4
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=123
+Call-ID: a565d214f932b21636c3110f06648200
+CSeq: 2 INVITE
+Server: Keyyo B2BUA
+Supported: replaces, x-sipura
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   300
+
+v=0
+o=b2b 206721381 206721381 IN IP4 192.168.22.151
+s=b2b
+c=IN IP4 83.136.164.33
+t=0 0
+m=audio 59968 RTP/AVP 8 18 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=maxptime:150
+a=sendrecv
+a=nortpproxy:yes
+
+----------------------------------------------- 2018-08-13 13:03:41:352.803
+TCP message received [643] bytes :
+
+ACK sip:40006@192.168.6.5:5075;transport=tcp SIP/2.0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=123
+CSeq: 2 ACK
+Call-ID: a565d214f932b21636c3110f06648200
+Contact: sip:40005@192.168.6.242:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.6.242:5060;ipcs-line=14;lr;transport=tcp>
+Record-Route: <sip:10.133.48.149:5060;ipcs-line=14;lr;transport=tcp>
+Supported: replaces
+User-Agent: IP Office 10.1.0.0.0 build 237
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.6.242:5060;branch=z9hG4bK-s1632-002034821422-1--s1632-
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17009-1-9
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-13 13:03:41:353.002
+TCP message sent (697 bytes):
+
+INVITE sip:40005@192.168.6.242:5060 SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-17006-1-10
+From: sip:40006@192.168.6.5;tag=123
+To: sip:40005@192.168.6.242:5060;tag=1
+Call-ID: a565d214f932b21636c3110f06648200
+CSeq: 3 INVITE
+Contact: sip:40006@192.168.6.5:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+User-Agent: Keyyo B2BUA
+Supported: replaces, x-sipura
+Content-Type: application/sdp
+Content-Length:   253
+
+v=0
+o=b2b 206721381 206721382 IN IP4 192.168.23.234
+s=b2b
+c=IN IP4 83.136.164.33
+t=0 0
+m=audio 59968 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=maxptime:150
+a=sendrecv
+a=nortpproxy:yes
+
+----------------------------------------------- 2018-08-13 13:03:41:361.778
+TCP message received [238] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40006@192.168.6.5;tag=123
+To: sip:40005@192.168.6.242:5060;tag=1
+CSeq: 3 INVITE
+Call-ID: a565d214f932b21636c3110f06648200
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-17006-1-10
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-13 13:03:41:373.080
+TCP message received [606] bytes :
+
+SIP/2.0 200 OK
+From: sip:40006@192.168.6.5;tag=123
+To: sip:40005@192.168.6.242:5060;tag=1;tag=1+1
+CSeq: 3 INVITE
+Call-ID: a565d214f932b21636c3110f06648200
+Contact: <sip:192.168.6.242:5060;transport=tcp>
+Supported: timer, replaces
+User-Agent: IP Office 10.1.0.0.0 build 237
+Via:SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-17006-1-10
+Content-Type: application/sdp
+Content-Length: 211
+
+v=0
+o=UserA 711462316 843249914 IN IP4 10.69.69.190
+s=Session
+c=IN IP4 192.168.6.242
+t=0 0
+m=audio 35042 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2018-08-13 13:03:41:373.378
+TCP message sent (340 bytes):
+
+ACK sip:40005@192.168.6.242:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-17006-1-13
+From: sip:40006@192.168.6.5;tag=123
+To: sip:40005@192.168.6.242:5060;tag=1
+Call-ID: a565d214f932b21636c3110f06648200
+CSeq: 3 ACK
+Contact: sip:40006@192.168.6.5:5075;transport=TCP
+Max-Forwards: 70
+Content-Length: 0
+
+

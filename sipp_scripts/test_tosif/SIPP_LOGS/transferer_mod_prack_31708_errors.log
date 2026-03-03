@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2018-10-30	19:07:51:316	1540906671.316873: Aborting call on unexpected message for Call-Id '887c0658211e117ef8eab56ad726b009': while expecting '200' (index 14), received 'SIP/2.0 400 Bad Request
+From: sip:81002001@10.133.39.159:5080;tag=2
+To: sip:81001001@10.133.73.4:5060;tag=1
+CSeq: 1 BYE
+Call-ID: 887c0658211e117ef8eab56ad726b009
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-31708-1-13
+Content-Length: 0
+
+'.
+2018-10-30	19:07:56:493	1540906676.493776: Aborting call on an unexpected CANCEL for call: 45ce9e3ea5b5546e51281d64d159820e.

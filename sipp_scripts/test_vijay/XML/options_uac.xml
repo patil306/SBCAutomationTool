@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+
+<scenario name="Basic Sipstone UAC">
+
+  <send retrans="500">
+    <![CDATA[
+      OPTIONS sip:[field1]@[field3] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port]
+      Call-ID: [call_id]
+      CSeq: 1 OPTIONS
+      Max-Forwards: 0
+      Subject: Performance Test
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+  <recv response="483" optional="true">
+  </recv>
+</scenario>

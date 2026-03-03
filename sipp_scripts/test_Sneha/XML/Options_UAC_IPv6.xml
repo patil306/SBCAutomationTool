@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+<!--      User-to-User: 00FA080001001056965CFB;encoding=hex -->
+
+<scenario name="Basic OPTION UAC">
+<send retrans="500">
+<![CDATA[
+	OPTIONS sip:[field1]@[remote_ip]:[remote_port] SIP/2.0
+	Via: SIP/2.0/TCP [2001:345b:5674:1923:5060;[field3]
+	From: sip:[field0]@[field2];tag=[call_number]	
+	To: sip:[field1]@[remote_ip]:[remote_port]
+	Call-ID: [call_id]
+	CSeq: 2 OPTIONS
+	Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP
+	Supported: replaces
+	Max-Forwards: 70
+	Subject: Performance Test
+	User-to-User: 00FA080001001056965CFB;encoding=hex
+	Content-Length: 0
+	Accept: application/sdp
+]]>
+</send>
+
+<recv response="200" rtd="true"/>
+
+</scenario>

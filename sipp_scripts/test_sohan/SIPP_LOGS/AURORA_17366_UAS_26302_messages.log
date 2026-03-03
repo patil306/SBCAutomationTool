@@ -1,0 +1,68 @@
+----------------------------------------------- 2019-06-27 15:45:02:959.815
+TCP message received [385] bytes :
+
+REGISTER sip:10.133.48.238 SIP/2.0
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 REGISTER
+Call-ID: 1-26304@10.133.39.159
+Contact: <sip:4078@192.168.55.79:5060;transport=tcp;subid_ipcs=2421272691>
+User-Agent: SIPp/Linux
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.79:5060;branch=z9hG4bK-s1632-001661134350-1--s1632-
+Expires: 1800
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 15:45:02:960.413
+TCP message sent (327 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.55.79:5060;branch=z9hG4bK-s1632-001661134350-1--s1632-
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>;tag=2
+Call-ID: 1-26304@10.133.39.159
+CSeq: 1 REGISTER
+Contact: <sip:4078@192.168.55.79:6025;subid_ipcs=2421272691;transport=TCP>
+Content-Length: 0
+Expires: 60
+
+
+----------------------------------------------- 2019-06-27 15:45:03:30.688
+TCP message received [536] bytes :
+
+SUBSCRIBE sip:service@192.168.5.12:6025 SIP/2.0
+From: <sip:4078@sbcdev4.com>;tag=26304SIPpTag001
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 SUBSCRIBE
+Call-ID: ABCD543
+Contact: <sip:4078@192.168.55.79:5060;transport=tcp;subid_ipcs=2421272691>
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=27;lr;transport=tcp;subid_ipcs=2421272691>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.79:5060;branch=z9hG4bK-s1632-000563209446-1--s1632-
+Expires: 60
+Accept: application/pidf+xml
+Event: presence
+Allow-Events: presence
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SUBSCRIBE sip:service@192.168.5.12:6025 SIP/2.0
+From: <sip:4078@sbcdev4.com>;tag=26304SIPpTag001
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 SUBSCRIBE
+Call-ID: ABCD543
+Contact: <sip:4078@192.168.55.79:5060;transport=tcp;subid_ipcs=2421272691>
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=27;lr;transport=tcp;subid_ipcs=2421272691>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.79:5060;branch=z9hG4bK-s1632-000563209446-1--s1632-
+Expires: 60
+Accept: application/pidf+xml
+Event: presence
+Allow-Events: presence
+Content-Length: 0
+
+

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  /* font-family: Arial; */
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 11px;
+  width:15%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 50%;
+  background-color: white;
+}
+
+/*Table formationg*/
+#servers {
+  /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#servers td, #servers th {
+  border: 1px none white;
+  padding: 8px;
+}
+
+#servers tr:nth-child(even){background-color: #f2f2f2;}
+
+#servers tr:hover {background-color: #ddd;}
+
+#servers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(50, 54, 50);
+  color: white;
+}
+
+/*scrolable*/
+.container2 { 
+    border:2px solid white; 
+    width:80%; 
+    height: 345px; 
+    overflow-y: scroll;
+    align-items: left;
+    margin-left: -90px;
+    margin-top: -40px;
+}
+</style>
+<script>
+    $(function () {
+        $("#referHandling").click(function () {
+            if ($(this).is(":checked")) {
+                $("#URIGroup").removeAttr("disabled");
+                $("#sendHold").removeAttr("disabled");
+                $("#delayedOffer").removeAttr("disabled");
+               
+            } else {
+                $("#URIGroup").attr("disabled", "disabled");
+                $("#sendHold").attr("disabled", "disabled");
+                $("#delayedOffer").attr("disabled", "disabled");
+            }
+        });
+    });
+    $(function () {
+        $("#prackHandling").click(function () {
+            if ($(this).is(":checked")) {
+                $("#Allow18XSDP").removeAttr("disabled");
+            } else {
+                $("#Allow18XSDP").attr("disabled", "disabled");
+            }
+        });
+    });
+    $(function () {
+        $("#3xxHandling").click(function () {
+            if ($(this).is(":checked")) {
+                $("#diversionHeaderSupport").removeAttr("disabled");
+            } else {
+                $("#diversionHeaderSupport").attr("disabled", "disabled");
+            }
+        });
+    });
+    $(function () {
+        $("#diversionManipulation").click(function () {
+            if ($(this).is(":checked")) {
+                $("#diversionCondition").removeAttr("disabled");
+                $("#diversionHeaderURI").removeAttr("disabled");
+            } else {
+                $("#diversionCondition").attr("disabled", "disabled");
+                $("#diversionHeaderURI").attr("disabled", "disabled");
+            }
+        });
+    });
+</script>
+</head>
+<body>
+    
+    
+   <center style="background-color: white;">
+    <h2 style="margin-left: -100px;">Server Interworking</h2>   
+
+    <div style="width: 85%; height: 70%;">
+<button class="tablink" onclick="openPage('General', this, 'orange')" id="defaultOpen" >General</button>
+<button class="tablink" onclick="openPage('Timer', this, 'orange')">Timer</button>
+<button class="tablink" onclick="openPage('Privacy', this, 'orange')">Privacy</button>
+<button class="tablink" onclick="openPage('URIManipulation', this, 'orange')">URI Manipulation</button>
+<button class="tablink" onclick="openPage('HeaderManipulation', this, 'orange')">Header Manipulation</button>
+<button class="tablink" onclick="openPage('Advance', this, 'orange')">Advance</button>
+<form  method="POST" action="/add-config"  enctype="multipart/form-data">
+<div id="General" class="tabcontent">
+    <div class="container2">
+<table id="servers">
+    <th colspan="2">General</th>
+    <tr>
+        <td>Hold Support</td>
+        <td>
+            <input type="radio" name="holdSupport" id="holdSupport" value="None">None<br>
+            <input type="radio" name="holdSupport" id="holdSupport" value="RFC2543 - c=0.0.0.0">RFC2543 - c=0.0.0.0<br>
+            <input type="radio" name="holdSupport" id="holdSupport" value="RFC3264 - a=sendonly">RFC3264 - a=sendonly<br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            180 Handling
+        </td>
+        <td>
+            <input type="radio" name="handling180" id="handling180" value="None">None   &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="handling180" id="handling180" value="SDP">SDP &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="handling180" id="handling180" value="No SDP">No SDP &nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+                181 Handling
+        </td>
+        <td>
+                <input type="radio" name="handling181" id="handling181" value="None">None   &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="handling181" id="handling181" value="SDP">SDP &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="handling181" id="handling181" value="No SDP">No SDP &nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+                182 Handling
+        </td>
+        <td>
+                <input type="radio" name="handling182" id="handling182" value="None">None   &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="handling182" id="handling182" value="SDP">SDP &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="handling182" id="handling182" value="No SDP">No SDP &nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+                183 Handling
+        </td>
+        <td>
+                <input type="radio" name="handling183" id="handling183" value="None">None   &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="handling183" id="handling183" value="SDP">SDP &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="handling183" id="handling183" value="No SDP">No SDP &nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+                Refer Handling
+        </td>
+        <td>
+                <input type="checkbox" name="referHandling" id="referHandling" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <label style="margin-left: 20px;">URI Group</label>
+        </td>
+        <td>
+                <select id = "URIGroup" name="URIGroup" disabled="disabled">
+                    <option value = "None">None</option>
+                    <option value = "Emergency">Emergency</option>
+                </select>&nbsp&nbsp&nbsp
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <label style="margin-left: 20px;">Send Hold</label>
+        </td>
+        <td>
+                <input type="checkbox" name="sendHold" id="sendHold" disabled="disabled"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <label style="margin-left: 20px;">Delayed Offer</label>
+        </td>
+        <td>
+                <input type="checkbox" name="delayedOffer" id="delayedOffer" disabled="disabled" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+                3xx Handling
+        </td>
+        <td>
+                <input type="checkbox" name="handling3xx" id="handling3xx" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <label style="margin-left: 20px;"> Diversion Header Support</label>
+        </td>
+        <td>
+                <input type="checkbox" name="diversionHeaderSupport" id="diversionHeaderSupport" disabled="disabled"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+                Delayed SDP Handling
+        </td>
+        <td>
+                <input type="checkbox" name="delayedSDPHandling" id="delayedSDPHandling" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+                Re-Invite Handling
+        </td>
+        <td>
+                <input type="checkbox" name="reInviteHandling" id="reInviteHandling" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+                Prack Handling
+        </td>
+        <td>
+                <input type="checkbox" name="prackHandling" id="prackHandling" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+               <label style="margin-left: 20px;">Allow 18X SDP</label>
+        </td>
+        <td>
+                <input type="checkbox" name="allow18XSDP" id="allow18XSDP" disabled="disabled"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+                T.38 Support
+        </td>
+        <td>
+                <input type="checkbox" name="T38Support" id="T38Support" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+                URI Scheme
+        </td>
+        <td>
+                <input type="radio" name="URIScheme" id="URIScheme" value="SIP">SIP   &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="URIScheme" id="URIScheme" value="TEL">TEL    &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="URIScheme" id="URIScheme" value="ANY">ANY &nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+                Via Header Format
+        </td>
+        <td>
+                <input type="radio" name="viaHeaderFormat" id="viaHeaderFormat" value="RFC3261">RFC3261<br>
+                <input type="radio" name="viaHeaderFormat" id="viaHeaderFormat" value="RFC2543">RFC2543<br>
+        </td>
+    </tr>
+</table>
+</div>
+</div>
+
+<div id="Timer" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="Privacy" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="URIManipulation" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<div id="HeaderManipulation" class="tabcontent">
+    <h3>About</h3>
+    <p>Who we are and what we do.</p>
+</div>
+
+<div id="Advance" class="tabcontent">
+        <div class="container2">
+                <table id="servers">
+                    <th colspan="2">General</th>
+                    <tr>
+                        <td>Record Routes</td>
+                        <td>
+                            <input type="radio" name="recordRoutes" id="recordRoutes" value="None">None<br>
+                            <input type="radio" name="recordRoutes" id="recordRoutes" value="Single Side">Single Side<br>
+                            <input type="radio" name="recordRoutes" id="recordRoutes" value="Both Sides">Both Sides<br>
+                            <input type="radio" name="recordRoutes" id="recordRoutes" value="Dialog-Initiate Only (Single Side)">Dialog-Initiate Only (Single Side)<br>
+                            <input type="radio" name="recordRoutes" id="recordRoutes" value="Dialog-Initiate Only (Both Sides)">Dialog-Initiate Only (Both Sides)<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Include End Point IP for Context Lookup
+                        </td>
+                        <td>
+                                <input type="checkbox" name="includeEndPoint" id="includeEndPoint" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Extensions
+                        </td>
+                        <td>
+                                <select id = "extensions" name="extensions">
+                                    <option value = "None">None</option>
+                                    <option value = "Avaya">Avaya</option>
+                                    <option value = "Nortel">Nortel</option>
+                                    <option value = "Lync">Lync</option>
+                                    <option value = "Cisco">Cisco</option>
+                                    <option value = "KDDI">KDDI</option>
+                                </select>&nbsp&nbsp&nbsp
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Diversion Manipulation
+                        </td>
+                        <td>
+                                <input type="checkbox" name="diversionManipulation" id="diversionManipulation" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <label style="margin-left: 20px;">Diversion Condition</label>
+                        </td>
+                        <td>
+                                <select id = "diversionCondition" name="diversionCondition" disabled="disabled">
+                                    <option value = "None">None</option>
+                                    <option value = "phone-context">From: phone-context</option>
+                                </select>&nbsp&nbsp&nbsp
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <label style="margin-left: 20px;"> Diversion Header URI</label>
+                        </td>
+                        <td>
+                            <input type="text" name="diversionHeaderURI" id="diversionHeaderURI" disabled="disabled"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Has Remote SBC
+                        </td>
+                        <td>
+                                <input type="checkbox" name="hasRemoteSBC" id="hasRemoteSBC" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Route Response on Via Port
+                        </td>
+                        <td>
+                                <input type="checkbox" name="routeResponse" id="routeResponse" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Relay INVITE Replace for SIPREC
+                        </td>
+                        <td>
+                                <input type="checkbox" name="relayINVITE" id="relayINVITE" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                MOBX Re-INVITE Handling
+                        </td>
+                        <td>
+                                <input type="checkbox" name="MOBXReINVITEHandling" id="MOBXReINVITEHandling" />
+                        </td>
+                    </tr>
+                </table><br><br>
+                <table id="servers">
+                        <th colspan="2">DTMF</th>
+                        <tr>
+                            <td>DTMF Support</td>
+                            <td>
+                                <input type="radio" name="DTMFSupport" id="DTMFSupport" value="None">None<br>
+                                <input type="radio" name="DTMFSupport" id="DTMFSupport" value="SIP Notify">SIP Notify<br>
+                                <input type="radio" name="DTMFSupport" id="DTMFSupport" value="BRFC 2833 Relay & SIP Notify">RFC 2833 Relay & SIP Notify<br>
+                                <input type="radio" name="DTMFSupport" id="DTMFSupport" value="SIP Info">SIP Info<br>
+                                <input type="radio" name="DTMFSupport" id="DTMFSupport" value="RFC 2833 Relay & SIP Info">RFC 2833 Relay & SIP Info<br>
+                                <input type="radio" name="DTMFSupport" id="DTMFSupport" value="Inband">Inband<br>
+                            </td>
+                        </tr>
+                </table>    
+        </div>
+    </div>
+    <input type="submit" value="Submit" style="margin-left: -100px;"/>
+</div>
+</form>
+</center> 
+ 
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 

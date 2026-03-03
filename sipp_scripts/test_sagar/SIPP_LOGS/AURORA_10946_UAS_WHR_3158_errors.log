@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2018-10-17	20:27:53:001	1539788273.001847: Automatic response mode for an unexpected INFO, UPDATE or NOTIFY for call: d6f6a11e2b7ed9136e48da75df3b0128.
+2018-10-17	20:27:53:047	1539788273.047219: Aborting call on unexpected message for Call-Id 'd6f6a11e2b7ed9136e48da75df3b0128': while expecting '200' (index 13), received 'SIP/2.0 500 Server Internal Error
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.242:5060;tag=1
+CSeq: 4 INVITE
+Call-ID: d6f6a11e2b7ed9136e48da75df3b0128
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-3158-1-11
+Content-Length: 0
+
+'.

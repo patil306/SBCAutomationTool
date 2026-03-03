@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2019-06-17	14:26:32:859	1560761792.859029: Aborting call on unexpected message for Call-Id '1-13512@10.133.39.159': while expecting 'NOTIFY' (index 1), received 'SIP/2.0 408 Request Timeout
+From: sip:4078@10.133.39.159:6027;tag=1
+To: sip:4079@10.133.48.238:5061;tag=zXcVbNm3b4d5b378
+CSeq: 1 SUBSCRIBE
+Call-ID: 1-13512@10.133.39.159
+Record-Route: <sip:10.133.48.238:5061;ipcs-line=10;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:6027;branch=z9hG4bK-13512-1-0
+Content-Length: 0
+
+'.

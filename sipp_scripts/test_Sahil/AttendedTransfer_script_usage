@@ -1,0 +1,8 @@
+1. Run run_pjsip_uas_tcp.sh - 192.168.55.78:5092
+2. Run run_pjsip_uas_tcp_2.sh - 10.133.39.159:5094
+3. From SIPP use AttendedT-call-uac-1.sh to start 1 st call - 10.133.39.159:5093
+4. In run_pjsip_uas_tcp.sh accept call
+5. After 1 active call, make call from run_pjsip_uas_tcp.sh i.e. m to sip:40007@192.168.55.78:5060;transport=tcp
+6. Accept the call in run_pjsip_uas_tcp_2.sh.
+7. In run_pjsip_uas_tcp.sh, press X to tranfer the call and enter the ID of first call (ID will be diaplyed when u press X and enter)
+8. Attended Transfer Successfull.

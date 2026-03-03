@@ -1,0 +1,14 @@
+sipp: The following events occured:
+2018-02-22	20:00:02:485	1519309802.485125: Aborting call on unexpected message for Call-Id '5f41d646dd90cf2f58efbc3f82a5317f': while expecting 'BYE' (index 10), received 'ACK sip:4079@10.133.39.159:5065;transport=tcp SIP/2.0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=3
+CSeq: 720433 ACK
+Call-ID: 5f41d646dd90cf2f58efbc3f82a5317f
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=4;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000596058805-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.

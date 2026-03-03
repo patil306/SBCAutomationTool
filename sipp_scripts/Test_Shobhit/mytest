@@ -1,0 +1,13 @@
+#SIPp Test suite
+#Stop flag "stop_automation"
+#Pause flag "pause_automation"
+
+#Register Stations for Basic Features
+Test Case:reg
+timer:20
+sipp: ./sipp -inf mytcp.csv -sf Reg_TCP.xml 172.10.10.5:5060 -t t1 -m 1 -i 172.10.10.222 -p 6001
+
+#Basic Station to Station call
+Test Case:Basic
+timer:30
+sipp: ./sipp -sf ./mytest_basic.xml 172.10.10.5:5060 -i 172.10.10.222 -inf mytest.csv -p 5060 -t t1 -m 1 -aa -trace_msg -trace_err

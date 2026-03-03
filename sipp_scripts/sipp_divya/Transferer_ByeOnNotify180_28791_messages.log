@@ -1,0 +1,203 @@
+----------------------------------------------- 2018-12-05 16:18:04:896.951
+UDP message received [879] bytes :
+
+INVITE sip:192.168.5.12:5065;transport=udp SIP/2.0
+From: sip:81002001@192.168.5.143:5060;tag=1
+To: sip:81001001@10.133.73.76:5060
+CSeq: 1 INVITE
+Call-ID: b21a8f372c8942119498254872b99f01
+Contact: <sip:81002001@192.168.5.143:5060;transport=udp>
+Route: <sip:81001001@rwtrunk.com>
+Record-Route: <sip:192.168.5.143:5060;ipcs-line=3;lr;transport=udp>
+Allow: REFER
+Supported: replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-001900984854-1--s1632-
+Subject: Performance Test
+Session-Expires: 1200
+Min-SE: 1200
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 215
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.143
+s=-
+c=IN IP4 192.168.5.143
+t=0 0
+m=audio 35000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-12-05 16:18:04:897.687
+UDP message sent (310 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-001900984854-1--s1632-
+From: sip:81002001@192.168.5.143:5060;tag=1
+To: sip:81001001@10.133.73.76:5060
+Call-ID: b21a8f372c8942119498254872b99f01
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5065;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-05 16:18:04:897.875
+UDP message sent (482 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-001900984854-1--s1632-
+From: sip:81002001@192.168.5.143:5060;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: b21a8f372c8942119498254872b99f01
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5065;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   135
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6001 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2018-12-05 16:18:04:908.813
+UDP message received [510] bytes :
+
+ACK sip:81001001@192.168.5.12:5065;transport=udp SIP/2.0
+From: sip:81002001@192.168.5.143:5060;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 1 ACK
+Call-ID: b21a8f372c8942119498254872b99f01
+Contact: <sip:81002001@192.168.5.143:5060;transport=udp>
+Record-Route: <sip:192.168.5.143:5060;ipcs-line=3;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-000068086258-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-05 16:18:04:909.004
+UDP message sent (430 bytes):
+
+REFER sip:81002001@192.168.5.143:5060;tag=1 SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5065;branch=z9hG4bK-28791-1-4
+From:  sip:81002001@192.168.5.143:5060;tag=1
+To:  sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: b21a8f372c8942119498254872b99f01
+CSeq: 1 REFER
+Refer-To: <sip:Agent@192.168.5.12:5075;transport=UDP>
+Referred-By: sip:81001001@10.133.73.76:5060
+Contact: <sip:192.168.5.12:5065;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-05 16:18:04:924.794
+UDP message received [249] bytes :
+
+SIP/2.0 202 Accepted
+From: sip:81002001@192.168.5.143:5060;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 1 REFER
+Call-ID: b21a8f372c8942119498254872b99f01
+Via: SIP/2.0/UDP 192.168.5.12:5065;branch=z9hG4bK-28791-1-4
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-05 16:18:09:931.507
+UDP message received [573] bytes :
+
+NOTIFY sip:192.168.5.12:5065;transport=UDP SIP/2.0
+From: sip:81002001@10.133.73.76:5060;tag=1
+To: sip:81001001@192.168.5.12:5075;tag=1
+CSeq: 2 NOTIFY
+Call-ID: b21a8f372c8942119498254872b99f01
+Contact: <sip:81002001@192.168.5.143:5060;transport=udp>
+Record-Route: <sip:192.168.5.143:5060;ipcs-line=3;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-000994531272-1--s1632-;originator
+Subscription-State: active;expires=300
+Event: refer
+Content-Type: message/sipfrag;version=2.0
+Content-Length: 20
+
+SIP/2.0 100 Trying
+
+----------------------------------------------- 2018-12-05 16:18:09:931.660
+UDP message sent (359 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-000994531272-1--s1632-;originator
+From: sip:81002001@10.133.73.76:5060;tag=1
+To: sip:81001001@192.168.5.12:5075;tag=1;tag=1
+Call-ID: b21a8f372c8942119498254872b99f01
+CSeq: 2 NOTIFY
+Contact: <sip:192.168.5.12:5065;transport=UDP>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-05 16:18:09:933.937
+UDP message received [574] bytes :
+
+NOTIFY sip:192.168.5.12:5065;transport=UDP SIP/2.0
+From: sip:81002001@10.133.73.76:5060;tag=1
+To: sip:81001001@192.168.5.12:5075;tag=1
+CSeq: 3 NOTIFY
+Call-ID: b21a8f372c8942119498254872b99f01
+Contact: <sip:81002001@192.168.5.143:5060;transport=udp>
+Record-Route: <sip:192.168.5.143:5060;ipcs-line=3;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-000754324569-1--s1632-;originator
+Subscription-State: active;expires=300
+Event: refer
+Content-Type: message/sipfrag;version=2.0
+Content-Length: 21
+
+SIP/2.0 180 Ringing
+
+----------------------------------------------- 2018-12-05 16:18:09:934.019
+UDP message sent (359 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.5.143:5060;branch=z9hG4bK-s1632-000754324569-1--s1632-;originator
+From: sip:81002001@10.133.73.76:5060;tag=1
+To: sip:81001001@192.168.5.12:5075;tag=1;tag=1
+Call-ID: b21a8f372c8942119498254872b99f01
+CSeq: 3 NOTIFY
+Contact: <sip:192.168.5.12:5065;transport=UDP>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-05 16:18:09:934.066
+UDP message sent (327 bytes):
+
+BYE sip:81002001@192.168.5.143:5060;tag=1 SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5065;branch=z9hG4bK-28791-1-10
+From:  sip:81002001@192.168.5.143:5060;tag=1
+To:  sip:81001001@10.133.73.76:5060;tag=1
+Call-ID: b21a8f372c8942119498254872b99f01
+CSeq: 2 BYE
+Contact: <sip:192.168.5.12:5065;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-05 16:18:09:939.848
+UDP message received [242] bytes :
+
+SIP/2.0 200 OK
+From: sip:81002001@192.168.5.143:5060;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=1
+CSeq: 2 BYE
+Call-ID: b21a8f372c8942119498254872b99f01
+Via: SIP/2.0/UDP 192.168.5.12:5065;branch=z9hG4bK-28791-1-10
+Content-Length: 0
+
+

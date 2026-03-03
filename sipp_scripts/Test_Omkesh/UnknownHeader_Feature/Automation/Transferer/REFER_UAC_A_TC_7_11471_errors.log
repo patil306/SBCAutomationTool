@@ -1,0 +1,20 @@
+sipp: The following events occured:
+2020-09-18	12:48:36:096	1600413516.096403: Aborting call on unexpected message for Call-Id '1-11471@192.168.5.12': while expecting 'BYE' (index 11), received 'NOTIFY sip:6000@192.168.5.12:5063 SIP/2.0
+From: <sip:9000@sipptrunk.com>;tag=1
+To: sip:6000@sippcs.com;tag=1
+CSeq: 3 NOTIFY
+Call-ID: 1-11471@192.168.5.12
+Contact: "Automation" <sip:9000@192.168.45.12:5060;transport=tcp>
+Record-Route: <sip:192.168.45.12:5060;ipcs-line=1429;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.45.12:5060;branch=z9hG4bK-s1632-000951084244-1--s1632-;originator
+Subject: SBC Automation
+Subscription-State: terminated;reason=noresource
+Event: refer
+Content-Type: message/sipfrag;version=2.0
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 16
+
+SIP/2.0 200 OK
+'.

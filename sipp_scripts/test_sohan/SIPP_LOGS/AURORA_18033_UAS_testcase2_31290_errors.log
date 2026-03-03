@@ -1,0 +1,53 @@
+sipp: The following events occured:
+2019-08-26	19:33:18:115	1566828198.115717: Aborting call on unexpected message for Call-Id '7c48e53cb89f0f2df30d897bb8cc3845': while expecting 'INVITE' (index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7c48e53cb89f0f2df30d897bb8cc3845
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=2;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000767834585-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-26	19:33:18:618	1566828198.618046: Dead call 7c48e53cb89f0f2df30d897bb8cc3845 (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7c48e53cb89f0f2df30d897bb8cc3845
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=2;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001700966036-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-26	19:33:19:619	1566828199.619490: Dead call 7c48e53cb89f0f2df30d897bb8cc3845 (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7c48e53cb89f0f2df30d897bb8cc3845
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=2;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-002031936819-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-26	19:33:21:619	1566828201.619135: Dead call 7c48e53cb89f0f2df30d897bb8cc3845 (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7c48e53cb89f0f2df30d897bb8cc3845
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=2;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000298725065-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.

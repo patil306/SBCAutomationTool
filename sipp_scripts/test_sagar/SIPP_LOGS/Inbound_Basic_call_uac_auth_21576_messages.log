@@ -1,0 +1,80 @@
+----------------------------------------------- 2017-12-22 12:01:58:171.502
+TCP message sent (915 bytes):
+
+INVITE sip:4079@sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-21576-1-0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060
+Call-ID: 1-21576@192.168.6.5
+CSeq: 1 INVITE
+Route:<sip:192.168.6.5:5060;lr;transport=tcp>
+Authorization: Digest username="Vola9*9Bj",realm="sbcdev4.com",nonce="BroadWorksXj979w5zlTyinn46BW",response="8cf961363814ecdab391effdd5cbafc7",uri="sip:4079@sbcdev4.com",algorithm=MD5,qop=auth,nc=00000017,cnonce="a9f25494d2cb47b9bbcf"
+Contact: sip:4078@192.168.6.5:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   198
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2017-12-22 12:01:58:178.286
+TCP message received [214] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060
+CSeq: 1 INVITE
+Call-ID: 1-21576@192.168.6.5
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-21576-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2017-12-22 12:01:58:178.379
+TCP message received [250] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=zXcVbNm17cb8a79c
+CSeq: 1 INVITE
+Call-ID: 1-21576@192.168.6.5
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-21576-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=zXcVbNm17cb8a79c
+CSeq: 1 INVITE
+Call-ID: 1-21576@192.168.6.5
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-21576-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2017-12-22 12:01:58:178.645
+TCP message sent (323 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-21576-1-0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=zXcVbNm17cb8a79c
+Call-ID: 1-21576@192.168.6.5
+CSeq: 1 ACK
+Contact: <sip:sipp@192.168.6.5:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!-- This program is free software; you can redistribute it and/or      -->
+
+<scenario name="RTP Echo pause / start test UAC">
+<!-- In client mode (sipp placing calls), the Call-ID MUST be         -->
+  <send retrans="500" start_txn="invite">
+    <![CDATA[
+
+      INVITE sip:[field1]@[remote_ip]:[remote_port] transport=[transport] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field1]@[local_ip]:[local_port];tag=[pid]SIPpTag00[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port]
+      Call-ID: [call_id]
+      CSeq: [cseq] INVITE
+      Contact: sip:[field1]@[local_ip]:[local_port];transport=[transport]
+      Require: sdp-anat
+      Supported: 100rel, histinfo, join, replaces, sdp-anat, timer
+      Content-Type: application/sdp
+      Content-Length: [len]
+
+      v=0
+      o=- 1486167596 1 IN IP4 192.168.1.85
+      s=-
+      c=IN IP4 192.168.3.178
+      b=TIAS:64000
+      t=0 0
+      a=group:ANAT 1 2
+      a=group:ANAT 4
+      m=audio 5004 RTP/AVP 0 9 110 8 18 120
+      c=IN IP4 192.168.3.178
+      a=sendrecv
+      a=rtpmap:110 G726-32/8000
+      a=fmtp:110 bitrate=32000
+      a=fmtp:18 annexb=no
+      a=rtpmap:120 telephone-event/8000
+      a=ptime:30
+      a=mid:4
+      m=video 5006 RTP/AVP 109 34
+      c=IN IP6 ::
+      a=inactive
+      a=rtpmap:109 H264/90000
+      a=fmtp:109 profile-level-id=42e01f;max-br=429496729;max-cpb=306782
+      a=fmtp:34 CIF=1
+      a=mid:1
+      m=video 5006 RTP/AVP 109 34
+      c=IN IP4 0.0.0.0
+      a=inactive
+      a=rtpmap:109 H264/90000
+      a=fmtp:109 profile-level-id=42e01f;max-br=429496729;max-cpb=306782
+      a=fmtp:34 CIF=1
+      a=mid:2
+    ]]>
+  </send>
+
+  <recv response="100" optional="true" response_txn="invite"/>
+
+  <recv response="180" optional="true" response_txn="invite"/>
+
+  <recv response="183" optional="true" response_txn="invite"/>
+
+  <recv response="200" rrs="true" response_txn="invite"/>
+
+  <send ack_txn="invite">
+    <![CDATA[
+
+      ACK [next_url] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field1]@[local_ip]:[local_port];tag=[pid]SIPpTag00[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: [cseq] ACK
+      Contact: sip:[field1]@[local_ip]:[local_port];transport=[transport]
+      Content-Length: 0
+
+    ]]>
+  </send>
+<!--
+  <send ack_txn="invite">
+    <![CDATA[
+      ACK sip:[field1]@[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[pid]SIPpTag00[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 3 ACK
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      Max-Forwards: 70
+      [routes]
+      Subject: Performance Test
+      Content-Length: 0
+     ]]>
+  </send>
+ --> 
+
+  <recv request="BYE"/>
+
+  <send>
+    <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_Record-Route:]
+      [last_From:]
+      [last_To:]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+  <timewait milliseconds="1000"/><!-- retransmit 200's for a while -->
+
+</scenario>

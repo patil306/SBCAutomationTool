@@ -1,0 +1,33 @@
+sipp: The following events occured:
+2018-10-24	15:31:54:413	1540375314.413096: Aborting call on unexpected message for Call-Id 'd413a178b67c145825b36e6c01614f61': while expecting '200' (index 6), received 'SIP/2.0 100 Trying
+From: sip:81001001@10.133.39.159:5080;tag=1
+To: sip:81002001@10.133.73.4:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: d413a178b67c145825b36e6c01614f61
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-2407-1-5
+Content-Length: 0
+
+'.
+2018-10-24	15:31:56:424	1540375316.424497: Dead call d413a178b67c145825b36e6c01614f61 (aborted at index 6), received 'SIP/2.0 200 OK
+From: sip:81001001@10.133.39.159:5080;tag=1
+To: sip:81002001@10.133.73.4:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: d413a178b67c145825b36e6c01614f61
+Contact: <sip:10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=1;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-2407-1-5
+Require: timer
+Session-Expires: 90;refresher=uas
+Content-Type: application/sdp
+Content-Length: 158
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=recvonly
+a=ptime:20
+'.

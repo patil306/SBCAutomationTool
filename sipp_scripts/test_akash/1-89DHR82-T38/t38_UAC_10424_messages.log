@@ -1,0 +1,176 @@
+----------------------------------------------- 2021-11-03 14:27:20:467.729
+UDP message sent (901 bytes):
+
+INVITE sip:Phani@testsbc.com SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-10424-1-0
+From: sip:Shiva@testsbc.com;tag=1
+To: sip:Phani@10.133.48.87:5060
+Call-ID: 1-10424@10.133.39.159
+CSeq: 1 INVITE
+Supported: join, replaces, sdp-anat, timer
+Contact: sip:Shiva@10.133.39.159:6042
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+P-Asserted-Identity: <sip:+499511814633@bt.com>
+Content-Type: application/sdp
+Content-Length:   431
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 41532 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+m=image 35308 udptl t38
+a=T38FaxVersion:0
+a=T38FaxMaxBuffer:1100
+a=T38FaxMaxDatagram:612
+a=T38MaxBitRate:14400
+a=T38FaxRateManagement:transferredTCF
+a=T38FaxUdpEC:t38UDPRedundancy
+
+----------------------------------------------- 2021-11-03 14:27:20:476.431
+UDP message received [252] bytes :
+
+SIP/2.0 100 Trying
+From: sip:Shiva@testsbc.com;tag=1
+To: sip:Phani@10.133.48.87:5060
+CSeq: 1 INVITE
+Call-ID: 1-10424@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-10424-1-0
+Av-Secure-Indication: unsecured
+Content-Length: 0
+
+
+----------------------------------------------- 2021-11-03 14:27:20:483.048
+UDP message received [492] bytes :
+
+SIP/2.0 183 Session Progress
+From: sip:Shiva@testsbc.com;tag=1
+To: sip:Phani@10.133.48.87:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-10424@10.133.39.159
+Contact: <sip:185.247.243.25:5060;transport=udp>
+Record-Route: <sip:185.247.243.25:5060;ipcs-line=70;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-10424-1-0
+Require: 100rel
+Warning: 399 192.168.57.2 "Internal Error 5"
+RSeq: 1
+Content-Type: application/sdp
+Av-Secure-Indication: unsecured
+Content-Length: 0
+
+
+----------------------------------------------- 2021-11-03 14:27:20:483.261
+UDP message sent (414 bytes):
+
+PRACK sip:185.247.243.25:5060;transport=udp SIP/2.0
+Via:SIP/2.0/transport=UDP 10.133.39.159:6042;branch=z9hG4bK-10424-1-3
+From:  sip:Shiva@testsbc.com;tag=1
+To: sip:Phani@10.133.48.87:5060;tag=1
+Call-ID:1-10424@10.133.39.159
+CSeq: 2 PRACK
+RAck: 1 1 INVITE
+Contact:<sip:Shiva@10.133.39.159:6042;transport=UDP>
+Max-Forwards:70
+Subject:Performance Test
+Content-Type:application/sdp
+Content-Length:    0
+
+
+----------------------------------------------- 2021-11-03 14:27:20:486.614
+UDP message received [414] bytes :
+
+SIP/2.0 200 OK
+From: sip:Shiva@testsbc.com;tag=1
+To: sip:Phani@10.133.48.87:5060;tag=1
+CSeq: 2 PRACK
+Call-ID: 1-10424@10.133.39.159
+Contact: <sip:185.247.243.25:5060;transport=udp>
+Record-Route: <sip:185.247.243.25:5060;ipcs-line=70;lr;transport=udp>
+Via: SIP/2.0/transport=UDP 10.133.39.159:6042;branch=z9hG4bK-10424-1-3
+Av-Secure-Indication: unsecured
+ontent-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2021-11-03 14:27:20:487.911
+UDP message received [375] bytes :
+
+SIP/2.0 200 OK
+From: sip:Shiva@testsbc.com;tag=1
+To: sip:Phani@10.133.48.87:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-10424@10.133.39.159
+Contact: <sip:185.247.243.25:5060;transport=udp>
+Record-Route: <sip:185.247.243.25:5060;ipcs-line=70;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-10424-1-0
+Av-Secure-Indication: unsecured
+Content-Length: 0
+
+
+----------------------------------------------- 2021-11-03 14:27:20:488.019
+UDP message sent (408 bytes):
+
+ACK sip:reddy2@192.168.56.202:6037 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-10424-1-6
+From: sip:Shiva@testsbc.com;tag=1
+To: sip:Phani@10.133.48.87:5060;tag=1
+Call-ID: 1-10424@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:Shiva@10.133.39.159:6042;transport=UDP
+Max-Forwards: 70
+Route: <sip:185.247.243.25:5060;ipcs-line=70;lr;transport=udp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2021-11-03 14:27:20:990.173
+UDP message sent (667 bytes):
+
+INVITE sip:Shiva@10.133.48.87:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6042;rport;branch=z9hG4bK-10424-1-8
+From: sipp <sip:sipp@10.133.39.159:6042>;tag=10424SIPpTag001
+To: sut <sip:Shiva@10.133.48.87:5060>
+Call-ID: 1-26145@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:sipp@10.133.39.159:6042;transport=UDP>
+Replaces:1-10424@10.133.39.159;from-tag=1;to-tag=1
+Supported: 100rel
+Max-Forwards: 70
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length:   180
+
+v=0
+o=user1 1 17 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=AS:64
+t=0 0
+m=audio 6000 RTP/AVP 0 96
+a=rtpmap:0 PCMU/8000
+a=rtpmap:96 telephone-event/8000
+a=sendrecv
+
+----------------------------------------------- 2021-11-03 14:27:20:994.204
+UDP message received [300] bytes :
+
+SIP/2.0 100 Trying
+From: "sipp" <sip:sipp@10.133.39.159:6042>;tag=10424SIPpTag001
+To: "sut" <sip:Shiva@10.133.48.87:5060>
+CSeq: 1 INVITE
+Call-ID: 1-26145@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:6042;rport=6042;branch=z9hG4bK-10424-1-8
+Av-Secure-Indication: unsecured
+Content-Length: 0
+
+

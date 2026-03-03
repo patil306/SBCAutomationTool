@@ -1,0 +1,1684 @@
+----------------------------------------------- 2018-08-17 11:49:10:429.689
+TCP message sent (435 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-1-0
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.39.197:5060
+Call-ID: 1-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:10:528.911
+TCP message sent (435 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-2-0
+From: sip:40005@trk.com;tag=2
+To: sip:40006@10.133.39.197:5060
+Call-ID: 2-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:10:535.885
+TCP message received [331] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.39.197:5060
+CSeq: 1 OPTIONS
+Call-ID: 1-3759@10.133.39.159
+Contact: <sip:10.133.39.197:5060;transport=tcp>
+Record-Route: <sip:10.133.39.197:5060;ipcs-line=707;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-17 11:49:10:629.363
+TCP message sent (435 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-3-0
+From: sip:40005@trk.com;tag=3
+To: sip:40006@10.133.39.197:5060
+Call-ID: 3-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:10:630.129
+TCP message received [583] bytes :
+
+OPTIONS sip:81001001@10.133.39.159:5082 SIP/2.0
+From: sip:81002001@10.133.39.197:16455;tag=1
+To: sip:81001001@10.133.39.159:5082
+CSeq: 1 OPTIONS
+Call-ID: dccd9e27a1250978b2ba7031c1f5977b
+Contact: sip:81002001@10.133.39.197:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.39.197:5060;ipcs-line=709;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.197:5060;branch=z9hG4bK-s1632-001176304015-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-17 11:49:10:630.450
+TCP message sent (310 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.39.197:5060;branch=z9hG4bK-s1632-001176304015-1--s1632-
+From: sip:81002001@10.133.39.197:16455;tag=1
+To: sip:81001001@10.133.39.159:5082
+Call-ID: dccd9e27a1250978b2ba7031c1f5977b
+CSeq: 1 OPTIONS
+Contact: <sip:10.133.39.159:5082;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-17 11:49:10:729.640
+TCP message sent (435 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-4-0
+From: sip:40005@trk.com;tag=4
+To: sip:40006@10.133.39.197:5060
+Call-ID: 4-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:10:829.701
+TCP message sent (435 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-5-0
+From: sip:40005@trk.com;tag=5
+To: sip:40006@10.133.39.197:5060
+Call-ID: 5-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:10:928.882
+TCP message sent (435 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-6-0
+From: sip:40005@trk.com;tag=6
+To: sip:40006@10.133.39.197:5060
+Call-ID: 6-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:11:28.459
+TCP message sent (435 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-7-0
+From: sip:40005@trk.com;tag=7
+To: sip:40006@10.133.39.197:5060
+Call-ID: 7-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:11:128.056
+TCP message sent (435 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-8-0
+From: sip:40005@trk.com;tag=8
+To: sip:40006@10.133.39.197:5060
+Call-ID: 8-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:11:229.802
+TCP message sent (435 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-9-0
+From: sip:40005@trk.com;tag=9
+To: sip:40006@10.133.39.197:5060
+Call-ID: 9-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:11:327.906
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-10-0
+From: sip:40005@trk.com;tag=10
+To: sip:40006@10.133.39.197:5060
+Call-ID: 10-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:11:428.626
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-11-0
+From: sip:40005@trk.com;tag=11
+To: sip:40006@10.133.39.197:5060
+Call-ID: 11-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:11:527.925
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-12-0
+From: sip:40005@trk.com;tag=12
+To: sip:40006@10.133.39.197:5060
+Call-ID: 12-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:11:628.933
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-13-0
+From: sip:40005@trk.com;tag=13
+To: sip:40006@10.133.39.197:5060
+Call-ID: 13-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:11:729.270
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-14-0
+From: sip:40005@trk.com;tag=14
+To: sip:40006@10.133.39.197:5060
+Call-ID: 14-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:11:829.375
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-15-0
+From: sip:40005@trk.com;tag=15
+To: sip:40006@10.133.39.197:5060
+Call-ID: 15-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:11:929.540
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-16-0
+From: sip:40005@trk.com;tag=16
+To: sip:40006@10.133.39.197:5060
+Call-ID: 16-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:12:27.636
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-17-0
+From: sip:40005@trk.com;tag=17
+To: sip:40006@10.133.39.197:5060
+Call-ID: 17-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:12:129.462
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-18-0
+From: sip:40005@trk.com;tag=18
+To: sip:40006@10.133.39.197:5060
+Call-ID: 18-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:12:228.265
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-19-0
+From: sip:40005@trk.com;tag=19
+To: sip:40006@10.133.39.197:5060
+Call-ID: 19-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:12:327.967
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-20-0
+From: sip:40005@trk.com;tag=20
+To: sip:40006@10.133.39.197:5060
+Call-ID: 20-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:12:428.544
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-21-0
+From: sip:40005@trk.com;tag=21
+To: sip:40006@10.133.39.197:5060
+Call-ID: 21-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:12:528.604
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-22-0
+From: sip:40005@trk.com;tag=22
+To: sip:40006@10.133.39.197:5060
+Call-ID: 22-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:12:629.557
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-23-0
+From: sip:40005@trk.com;tag=23
+To: sip:40006@10.133.39.197:5060
+Call-ID: 23-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:12:728.062
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-24-0
+From: sip:40005@trk.com;tag=24
+To: sip:40006@10.133.39.197:5060
+Call-ID: 24-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:12:827.999
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-25-0
+From: sip:40005@trk.com;tag=25
+To: sip:40006@10.133.39.197:5060
+Call-ID: 25-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:12:927.766
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-26-0
+From: sip:40005@trk.com;tag=26
+To: sip:40006@10.133.39.197:5060
+Call-ID: 26-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:13:28.432
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-27-0
+From: sip:40005@trk.com;tag=27
+To: sip:40006@10.133.39.197:5060
+Call-ID: 27-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:13:129.452
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-28-0
+From: sip:40005@trk.com;tag=28
+To: sip:40006@10.133.39.197:5060
+Call-ID: 28-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:13:229.633
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-29-0
+From: sip:40005@trk.com;tag=29
+To: sip:40006@10.133.39.197:5060
+Call-ID: 29-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:13:328.613
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-30-0
+From: sip:40005@trk.com;tag=30
+To: sip:40006@10.133.39.197:5060
+Call-ID: 30-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:13:427.614
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-31-0
+From: sip:40005@trk.com;tag=31
+To: sip:40006@10.133.39.197:5060
+Call-ID: 31-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:13:528.470
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-32-0
+From: sip:40005@trk.com;tag=32
+To: sip:40006@10.133.39.197:5060
+Call-ID: 32-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:13:629.004
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-33-0
+From: sip:40005@trk.com;tag=33
+To: sip:40006@10.133.39.197:5060
+Call-ID: 33-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:13:728.915
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-34-0
+From: sip:40005@trk.com;tag=34
+To: sip:40006@10.133.39.197:5060
+Call-ID: 34-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:13:828.687
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-35-0
+From: sip:40005@trk.com;tag=35
+To: sip:40006@10.133.39.197:5060
+Call-ID: 35-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:13:929.008
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-36-0
+From: sip:40005@trk.com;tag=36
+To: sip:40006@10.133.39.197:5060
+Call-ID: 36-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:14:28.361
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-37-0
+From: sip:40005@trk.com;tag=37
+To: sip:40006@10.133.39.197:5060
+Call-ID: 37-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:14:129.520
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-38-0
+From: sip:40005@trk.com;tag=38
+To: sip:40006@10.133.39.197:5060
+Call-ID: 38-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:14:227.722
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-39-0
+From: sip:40005@trk.com;tag=39
+To: sip:40006@10.133.39.197:5060
+Call-ID: 39-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:14:328.545
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-40-0
+From: sip:40005@trk.com;tag=40
+To: sip:40006@10.133.39.197:5060
+Call-ID: 40-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:14:428.464
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-41-0
+From: sip:40005@trk.com;tag=41
+To: sip:40006@10.133.39.197:5060
+Call-ID: 41-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:14:528.194
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-42-0
+From: sip:40005@trk.com;tag=42
+To: sip:40006@10.133.39.197:5060
+Call-ID: 42-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:14:628.258
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-43-0
+From: sip:40005@trk.com;tag=43
+To: sip:40006@10.133.39.197:5060
+Call-ID: 43-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:14:728.492
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-44-0
+From: sip:40005@trk.com;tag=44
+To: sip:40006@10.133.39.197:5060
+Call-ID: 44-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:14:828.259
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-45-0
+From: sip:40005@trk.com;tag=45
+To: sip:40006@10.133.39.197:5060
+Call-ID: 45-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:14:928.551
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-46-0
+From: sip:40005@trk.com;tag=46
+To: sip:40006@10.133.39.197:5060
+Call-ID: 46-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:15:27.804
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-47-0
+From: sip:40005@trk.com;tag=47
+To: sip:40006@10.133.39.197:5060
+Call-ID: 47-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:15:129.410
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-48-0
+From: sip:40005@trk.com;tag=48
+To: sip:40006@10.133.39.197:5060
+Call-ID: 48-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:15:228.226
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-49-0
+From: sip:40005@trk.com;tag=49
+To: sip:40006@10.133.39.197:5060
+Call-ID: 49-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:15:329.487
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-50-0
+From: sip:40005@trk.com;tag=50
+To: sip:40006@10.133.39.197:5060
+Call-ID: 50-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:15:427.635
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-51-0
+From: sip:40005@trk.com;tag=51
+To: sip:40006@10.133.39.197:5060
+Call-ID: 51-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:15:528.197
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-52-0
+From: sip:40005@trk.com;tag=52
+To: sip:40006@10.133.39.197:5060
+Call-ID: 52-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:15:628.575
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-53-0
+From: sip:40005@trk.com;tag=53
+To: sip:40006@10.133.39.197:5060
+Call-ID: 53-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:15:729.717
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-54-0
+From: sip:40005@trk.com;tag=54
+To: sip:40006@10.133.39.197:5060
+Call-ID: 54-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:15:828.618
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-55-0
+From: sip:40005@trk.com;tag=55
+To: sip:40006@10.133.39.197:5060
+Call-ID: 55-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:15:927.643
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-56-0
+From: sip:40005@trk.com;tag=56
+To: sip:40006@10.133.39.197:5060
+Call-ID: 56-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:16:29.233
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-57-0
+From: sip:40005@trk.com;tag=57
+To: sip:40006@10.133.39.197:5060
+Call-ID: 57-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:16:128.448
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-58-0
+From: sip:40005@trk.com;tag=58
+To: sip:40006@10.133.39.197:5060
+Call-ID: 58-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:16:228.147
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-59-0
+From: sip:40005@trk.com;tag=59
+To: sip:40006@10.133.39.197:5060
+Call-ID: 59-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:16:329.310
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-60-0
+From: sip:40005@trk.com;tag=60
+To: sip:40006@10.133.39.197:5060
+Call-ID: 60-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:16:428.115
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-61-0
+From: sip:40005@trk.com;tag=61
+To: sip:40006@10.133.39.197:5060
+Call-ID: 61-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:16:528.642
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-62-0
+From: sip:40005@trk.com;tag=62
+To: sip:40006@10.133.39.197:5060
+Call-ID: 62-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:16:628.579
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-63-0
+From: sip:40005@trk.com;tag=63
+To: sip:40006@10.133.39.197:5060
+Call-ID: 63-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:16:728.623
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-64-0
+From: sip:40005@trk.com;tag=64
+To: sip:40006@10.133.39.197:5060
+Call-ID: 64-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:16:828.375
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-65-0
+From: sip:40005@trk.com;tag=65
+To: sip:40006@10.133.39.197:5060
+Call-ID: 65-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:16:928.467
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-66-0
+From: sip:40005@trk.com;tag=66
+To: sip:40006@10.133.39.197:5060
+Call-ID: 66-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:17:29.047
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-67-0
+From: sip:40005@trk.com;tag=67
+To: sip:40006@10.133.39.197:5060
+Call-ID: 67-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:17:129.240
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-68-0
+From: sip:40005@trk.com;tag=68
+To: sip:40006@10.133.39.197:5060
+Call-ID: 68-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:17:229.726
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-69-0
+From: sip:40005@trk.com;tag=69
+To: sip:40006@10.133.39.197:5060
+Call-ID: 69-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:17:329.294
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-70-0
+From: sip:40005@trk.com;tag=70
+To: sip:40006@10.133.39.197:5060
+Call-ID: 70-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:17:428.140
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-71-0
+From: sip:40005@trk.com;tag=71
+To: sip:40006@10.133.39.197:5060
+Call-ID: 71-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:17:528.674
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-72-0
+From: sip:40005@trk.com;tag=72
+To: sip:40006@10.133.39.197:5060
+Call-ID: 72-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:17:627.766
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-73-0
+From: sip:40005@trk.com;tag=73
+To: sip:40006@10.133.39.197:5060
+Call-ID: 73-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:17:728.333
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-74-0
+From: sip:40005@trk.com;tag=74
+To: sip:40006@10.133.39.197:5060
+Call-ID: 74-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:17:828.947
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-75-0
+From: sip:40005@trk.com;tag=75
+To: sip:40006@10.133.39.197:5060
+Call-ID: 75-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:17:927.966
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-76-0
+From: sip:40005@trk.com;tag=76
+To: sip:40006@10.133.39.197:5060
+Call-ID: 76-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:18:29.437
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-77-0
+From: sip:40005@trk.com;tag=77
+To: sip:40006@10.133.39.197:5060
+Call-ID: 77-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:18:127.930
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-78-0
+From: sip:40005@trk.com;tag=78
+To: sip:40006@10.133.39.197:5060
+Call-ID: 78-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:18:228.630
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-79-0
+From: sip:40005@trk.com;tag=79
+To: sip:40006@10.133.39.197:5060
+Call-ID: 79-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:18:328.461
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-80-0
+From: sip:40005@trk.com;tag=80
+To: sip:40006@10.133.39.197:5060
+Call-ID: 80-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:18:429.072
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-81-0
+From: sip:40005@trk.com;tag=81
+To: sip:40006@10.133.39.197:5060
+Call-ID: 81-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:18:529.177
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-82-0
+From: sip:40005@trk.com;tag=82
+To: sip:40006@10.133.39.197:5060
+Call-ID: 82-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:18:628.719
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-83-0
+From: sip:40005@trk.com;tag=83
+To: sip:40006@10.133.39.197:5060
+Call-ID: 83-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:18:727.637
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-84-0
+From: sip:40005@trk.com;tag=84
+To: sip:40006@10.133.39.197:5060
+Call-ID: 84-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:18:829.478
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-85-0
+From: sip:40005@trk.com;tag=85
+To: sip:40006@10.133.39.197:5060
+Call-ID: 85-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:18:928.941
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-86-0
+From: sip:40005@trk.com;tag=86
+To: sip:40006@10.133.39.197:5060
+Call-ID: 86-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:19:28.971
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-87-0
+From: sip:40005@trk.com;tag=87
+To: sip:40006@10.133.39.197:5060
+Call-ID: 87-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:19:128.433
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-88-0
+From: sip:40005@trk.com;tag=88
+To: sip:40006@10.133.39.197:5060
+Call-ID: 88-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:19:227.977
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-89-0
+From: sip:40005@trk.com;tag=89
+To: sip:40006@10.133.39.197:5060
+Call-ID: 89-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:19:328.507
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-90-0
+From: sip:40005@trk.com;tag=90
+To: sip:40006@10.133.39.197:5060
+Call-ID: 90-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:19:428.973
+TCP message sent (438 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-3759-91-0
+From: sip:40005@trk.com;tag=91
+To: sip:40006@10.133.39.197:5060
+Call-ID: 91-3759@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5082;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+

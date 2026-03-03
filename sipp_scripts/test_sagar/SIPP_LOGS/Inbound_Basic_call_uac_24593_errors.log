@@ -1,0 +1,12 @@
+sipp: The following events occured:
+2017-07-06	14:42:39:384	1499332359.384114: Aborting call on unexpected message for Call-Id '1-24593@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 420 Bad Extension
+From: sip:4070@sbcdev4.com;tag=1
+To: sip:4071@10.133.73.4:5060
+CSeq: 1 INVITE
+Call-ID: 1-24593@10.133.39.159
+Contact: <sip:10.133.73.4:5060;transport=tcp>
+Via:SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-24593-1-0
+Unsupported: sdp-anat
+Content-Length: 0
+
+'.

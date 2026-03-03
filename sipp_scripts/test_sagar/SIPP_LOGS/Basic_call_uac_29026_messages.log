@@ -1,0 +1,155 @@
+----------------------------------------------- 2018-07-02 14:35:45:612.243
+TCP message sent (638 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-29026-1-0
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060
+Call-ID: 1-29026@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   203
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6014 RTP/AVP 18 101
+a=sendrecv
+a=fmtp:18 annexb=yes
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-07-02 14:35:45:629.321
+TCP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060
+CSeq: 1 INVITE
+Call-ID: 1-29026@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-29026-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-02 14:35:45:637.154
+TCP message received [271] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-29026@10.133.39.159
+Contact: <sip:10.133.48.235:5060;transport=tcp>
+Via:SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-29026-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-02 14:35:45:645.203
+TCP message received [538] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-29026@10.133.39.159
+Contact: <sip:10.133.48.235:5060;transport=tcp>
+Via:SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-29026-1-0
+Content-Type: application/sdp
+Content-Length: 239
+
+v=0
+o=- 1509186683 4 IN IP4 100.20.46.46
+s=-
+c=IN IP4 10.133.48.235
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 35044 RTP/AVP 18 101
+a=sendrecv
+a=fmtp:18 annexb=yes
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-07-02 14:35:45:645.586
+TCP message sent (353 bytes):
+
+ACK sip:40006@10.133.48.235:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-29026-1-4
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=1
+Call-ID: 1-29026@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-02 14:35:48:667.655
+TCP message received [936] bytes :
+
+INVITE sip:40005@10.133.39.159:5060;transport=TCP SIP/2.0
+From: sip:40006@trk.com;tag=1
+To: sip:40005@192.168.6.246:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-29026@10.133.39.159
+Contact: sip:40006@10.133.48.235:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.48.235:5060;ipcs-line=22;lr;transport=tcp>
+Record-Route: <sip:192.168.6.240:5060;ipcs-line=22;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.235:5060;branch=z9hG4bK-s1632-000962077561-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-29022-1-6
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 239
+
+v=0
+o=- 1509186683 4 IN IP4 100.20.46.46
+s=-
+c=IN IP4 10.133.48.235
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 35044 RTP/AVP 18 101
+a=sendonly
+a=fmtp:18 annexb=yes
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-07-02 14:35:48:667.925
+TCP message sent (703 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.48.235:5060;branch=z9hG4bK-s1632-000962077561-1--s1632-, SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-29022-1-6
+From: sip:40006@trk.com;tag=1
+To: sip:40005@192.168.6.246:5060;tag=1
+Call-ID: 1-29026@10.133.39.159
+CSeq: 2 INVITE
+Record-Route: <sip:10.133.48.235:5060;ipcs-line=22;lr;transport=tcp>, <sip:192.168.6.240:5060;ipcs-line=22;lr;transport=tcp>
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   201
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6014 RTP/AVP 18 101
+a=recvonly
+a=fmtp:18 annexb=yes
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+

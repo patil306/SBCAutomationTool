@@ -1,0 +1,58 @@
+----------------------------------------------- 2018-08-20 15:43:55:722.178
+TCP message sent (437 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17495-1-0
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060
+Call-ID: 1-17495@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-20 15:44:27:735.628
+TCP message received [317] bytes :
+
+SIP/2.0 408 Request Timeout
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=zXcVbNm875cbb44e
+CSeq: 1 OPTIONS
+Call-ID: 1-17495@10.133.39.159
+Record-Route: <sip:10.133.48.235:5060;ipcs-line=32;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17495-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 408 Request Timeout
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=zXcVbNm875cbb44e
+CSeq: 1 OPTIONS
+Call-ID: 1-17495@10.133.39.159
+Record-Route: <sip:10.133.48.235:5060;ipcs-line=32;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17495-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-20 15:44:27:736.314
+TCP message sent (301 bytes):
+
+BYE  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17495-1--1
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=zXcVbNm875cbb44e
+Call-ID: 1-17495@10.133.39.159
+CSeq: 2 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:5075;transport=TCP>
+Content-Length: 0
+
+

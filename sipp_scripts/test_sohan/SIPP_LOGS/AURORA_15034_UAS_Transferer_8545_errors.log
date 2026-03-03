@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2019-03-28	14:55:55:677	1553765155.677375: Aborting call on unexpected message for Call-Id 'b86cec0fe7a90449c94f1f4ea37af857': while expecting '202' (index 5), received 'SIP/2.0 408 Request Timeout
+From: sip:40006@192.168.5.12:5089;tag=2
+To: sip:40006@192.168.55.79;tag=1
+CSeq: 1 REFER
+Call-ID: b86cec0fe7a90449c94f1f4ea37af857
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.5.12:5089;branch=z9hG4bK-8545-1-4
+Content-Length: 0
+
+'.

@@ -1,0 +1,157 @@
+----------------------------------------------- 2018-09-05 17:00:18:657.320
+TCP message received [884] bytes :
+
+INVITE sip:40006@192.168.6.5:5075;transport=tcp SIP/2.0
+From: sip:40005@192.168.6.240;tag=1
+To: sip:40006@192.168.6.5:5075
+CSeq: 1 INVITE
+Call-ID: 1-26704@10.133.39.159
+Contact: sip:40005@192.168.6.240:5060;transport=tcp;transport=TCP;+av.sip.iptolerance
+Record-Route: <sip:192.168.6.240:5060;ipcs-line=18;lr;transport=tcp>
+Supported: 100rel, histinfo, join, replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000574442751-1--s1632-
+Subject: Performance Test
+Session-Expires: 1200;refresher=uac
+Min-SE: 1200
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 219
+
+v=0
+o=- 1485338250 1 IN IP4 192.168.6.240
+s=-
+c=IN IP4 192.168.6.240
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 35022 RTP/AVP 0 8 127
+a=sendrecv
+a=rtpmap:127 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-05 17:00:18:657.872
+TCP message sent (286 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000574442751-1--s1632-
+From: sip:40005@192.168.6.240;tag=1
+To: sip:40006@192.168.6.5:5075
+Call-ID: 1-26704@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-05 17:00:18:658.095
+TCP message sent (537 bytes):
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000574442751-1--s1632-
+From: sip:40005@192.168.6.240;tag=1
+To: sip:40006@192.168.6.5:5075;tag=1
+Call-ID: 1-26704@10.133.39.159
+CSeq: 1 INVITE
+Require: 100rel
+RSeq: 1
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   174
+
+v=0
+o=- 1 2 IN IP4 172.16.10.110
+s=-
+c=IN IP4 172.16.10.110
+t=0 0
+m=audio 11322 RTP/AVP 0 127
+a=rtpmap:0 PCMU/8000
+a=rtpmap:127 telephone-event/8000
+a=fmtp:127 0-15
+
+----------------------------------------------- 2018-09-05 17:00:18:676.317
+TCP message received [489] bytes :
+
+PRACK sip:40006@192.168.6.5:5075;transport=tcp SIP/2.0
+From: sip:40005@192.168.6.240;tag=1
+To: sip:40006@192.168.6.5:5075;tag=1
+CSeq: 2 PRACK
+Call-ID: 1-26704@10.133.39.159
+Contact: <sip:40005@192.168.6.240:5060;transport=tcp>
+Record-Route: <sip:192.168.6.240:5060;ipcs-line=18;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-001474298123-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-05 17:00:18:676.515
+TCP message sent (287 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-001474298123-1--s1632-
+From: sip:40005@192.168.6.240;tag=1
+To: sip:40006@192.168.6.5:5075;tag=1
+Call-ID: 1-26704@10.133.39.159
+CSeq: 2 PRACK
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-05 17:00:18:676.658
+TCP message sent (423 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-001474298123-1--s1632-
+From: sip:40005@192.168.6.240;tag=1
+To: sip:40006@192.168.6.5:5075;tag=1
+Call-ID: 1-26704@10.133.39.159
+CSeq: 1 INVITE
+Allow: INVITE, CANCEL, BYE, ACK, PRACK, SUBSCRIBE, NOTIFY, REFER, OPTIONS, INFO, PUBLISH, UPDATE
+Session-Expires: 1200;refresher=uac
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-05 17:00:24:884.350
+TCP message received [296] bytes :
+
+CANCEL sip:40006@10.133.48.235:5060;transport=tcp SIP/2.0
+From: sip:40005@192.168.6.240;tag=1
+To: sip:40006@192.168.6.5:5075
+CSeq: 1 CANCEL
+Call-ID: 1-26690@10.133.39.159
+Max-Forwards: 70
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-001898342227-1--s1632-
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-09-05 17:03:18:670.932
+TCP message received [296] bytes :
+
+CANCEL sip:40006@10.133.48.235:5060;transport=tcp SIP/2.0
+From: sip:40005@192.168.6.240;tag=1
+To: sip:40006@192.168.6.5:5075
+CSeq: 1 CANCEL
+Call-ID: 1-26704@10.133.39.159
+Max-Forwards: 70
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000574442751-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-05 17:03:18:672.125
+TCP message sent (282 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000574442751-1--s1632-
+From: sip:40005@192.168.6.240;tag=1
+To: sip:40006@192.168.6.5:5075
+Call-ID: 1-26704@10.133.39.159
+CSeq: 1 CANCEL
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Length: 0
+
+

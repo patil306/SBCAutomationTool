@@ -1,0 +1,336 @@
+----------------------------------------------- 2018-01-04 16:06:36:207.889
+TCP message received [849] bytes :
+
+INVITE sip:sbcdev4.com;transport=tcp SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@sbcdev4.com
+CSeq: 1 INVITE
+Call-ID: 08a63616c11ff17f413cdf2e63c13f1b
+Contact: <sip:81002001@10.133.73.4:5060;transport=tcp>
+Route: <sip:81001001@sbcdev4.com>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=18;lr;transport=tcp>
+Supported: replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001020072677-1--s1632-
+Subject: Performance Test
+Session-Expires: 1800;refresher=uac
+Min-SE: 90
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 211
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35050 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-01-04 16:06:36:208.176
+TCP message sent (296 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001020072677-1--s1632-
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@sbcdev4.com
+Call-ID: 08a63616c11ff17f413cdf2e63c13f1b
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:06:36:208.265
+TCP message sent (462 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001020072677-1--s1632-
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@sbcdev4.com;tag=1
+Call-ID: 08a63616c11ff17f413cdf2e63c13f1b
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   129
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8
+a=ptime:10
+
+----------------------------------------------- 2018-01-04 16:06:36:294.614
+TCP message received [458] bytes :
+
+ACK sip:81001001@10.133.39.159:5060;transport=tcp SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@sbcdev4.com;tag=1
+CSeq: 1 ACK
+Call-ID: 08a63616c11ff17f413cdf2e63c13f1b
+Contact: <sip:81002001@10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=18;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-002116427384-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:06:41:295.338
+TCP message sent (421 bytes):
+
+REFER sip:81002001@10.133.73.4:5060;transport=tcp> SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-17114-1-5
+From:  sip:81001001@sbcdev4.com;tag=1
+To:  sip:81002001@sbcdev4.com;tag=1
+Call-ID: 08a63616c11ff17f413cdf2e63c13f1b
+CSeq: 1 REFER
+Refer-To: <sip:Agent@10.133.39.159:5070;transport=TCP>
+Referred-By: sip:81001001@sbcdev4.com
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:06:41:303.111
+TCP message received [237] bytes :
+
+SIP/2.0 202 Accepted
+From: sip:81001001@sbcdev4.com;tag=1
+To: sip:81002001@sbcdev4.com;tag=1
+CSeq: 1 REFER
+Call-ID: 08a63616c11ff17f413cdf2e63c13f1b
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-17114-1-5
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:06:41:314.424
+TCP message received [833] bytes :
+
+INVITE sip:Agent@sbcdev4.com;transport=tcp SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>
+CSeq: 1 INVITE
+Call-ID: 327d07565eefaa0ac588a54c52d93e05
+Contact: <sip:81002001@10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=18;lr;transport=tcp>
+Supported: replaces, timer, 100rel
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000423008957-1--s1632-;originator
+Subject: Performance Test
+Referred-By: sip:81001001@10.133.39.159:5060
+Session-Expires: 1800;refresher=uac
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 158
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35052 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2018-01-04 16:06:41:314.595
+TCP message sent (320 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000423008957-1--s1632-;originator
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>
+Call-ID: 327d07565eefaa0ac588a54c52d93e05
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:06:41:314.689
+TCP message sent (486 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000423008957-1--s1632-;originator
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>;tag=2
+Call-ID: 327d07565eefaa0ac588a54c52d93e05
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   129
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8
+a=ptime:10
+
+----------------------------------------------- 2018-01-04 16:06:41:318.767
+TCP message received [592] bytes :
+
+NOTIFY sip:10.133.39.159:5060;transport=TCP SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@sbcdev4.com;tag=1
+CSeq: 2 NOTIFY
+Call-ID: 08a63616c11ff17f413cdf2e63c13f1b
+Contact: <sip:81002001@10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=18;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001786238130-1--s1632-;originator
+Subscription-State: active;expires=300
+Event: refer
+Content-Type: message/sipfrag;version=2.0
+Content-Length: 20
+
+SIP/2.0 100 Trying
+
+----------------------------------------------- 2018-01-04 16:06:41:318.897
+TCP message sent (346 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001786238130-1--s1632-;originator
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@sbcdev4.com;tag=1;tag=1
+Call-ID: 08a63616c11ff17f413cdf2e63c13f1b
+CSeq: 2 NOTIFY
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:06:41:318.969
+TCP message sent (322 bytes):
+
+BYE sip:81002001@10.133.73.4:5060;transport=tcp> SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-17114-1-9
+From:  sip:81002001@sbcdev4.com;tag=1
+To:  sip:81001001@sbcdev4.com;tag=1
+Call-ID: 08a63616c11ff17f413cdf2e63c13f1b
+CSeq: 2 BYE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:06:41:329.694
+TCP message received [229] bytes :
+
+SIP/2.0 200 OK
+From: sip:81001001@sbcdev4.com;tag=1
+To: sip:81002001@sbcdev4.com;tag=1
+CSeq: 2 BYE
+Call-ID: 08a63616c11ff17f413cdf2e63c13f1b
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-17114-1-9
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:06:57:336.273
+TCP message received [425] bytes :
+
+ACK sip:10.133.39.159:5060;transport=TCP SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>;tag=2
+CSeq: 1 ACK
+Call-ID: 327d07565eefaa0ac588a54c52d93e05
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=18;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001557374211-1--s1632-;originator
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:06:57:336.372
+TCP message received [425] bytes :
+
+BYE sip:10.133.39.159:5060;transport=TCP SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>;tag=2
+CSeq: 2 BYE
+Call-ID: 327d07565eefaa0ac588a54c52d93e05
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=18;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000429370177-1--s1632-;originator
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:06:57:336.733
+TCP message sent (319 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000429370177-1--s1632-;originator
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>;tag=2
+Call-ID: 327d07565eefaa0ac588a54c52d93e05
+CSeq: 2 BYE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:17:08:636.806
+TCP message received [414] bytes :
+
+BYE sip:10.133.39.159:5060;transport=TCP SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>;tag=2
+CSeq: 2 BYE
+Call-ID: f539e0018120c80c7537947db320ea2e
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=16;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001040132420-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:17:08:637.416
+TCP message sent (308 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001040132420-1--s1632-
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>;tag=2
+Call-ID: f539e0018120c80c7537947db320ea2e
+CSeq: 2 BYE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:17:33:440.121
+TCP message received [414] bytes :
+
+BYE sip:10.133.39.159:5060;transport=TCP SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>;tag=2
+CSeq: 2 BYE
+Call-ID: bf64625994deee3040842b6112700428
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=17;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001843906678-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-04 16:17:33:440.316
+TCP message sent (308 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001843906678-1--s1632-
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>;tag=2
+Call-ID: bf64625994deee3040842b6112700428
+CSeq: 2 BYE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+

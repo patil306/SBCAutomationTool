@@ -1,0 +1,326 @@
+----------------------------------------------- 2019-03-08 12:25:06:463.100
+TCP message received [848] bytes :
+
+INVITE sip:50001@192.168.5.12:6020;transport=tcp SIP/2.0
+From: sip:50001@192.168.55.80;tag=1
+To: sip:50001@192.168.5.12:6020
+CSeq: 1 INVITE
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+Contact: <sip:50001@192.168.55.80:5060;transport=tcp>
+Record-Route: <sip:192.168.55.80:5060;ipcs-line=7;lr;transport=tcp>
+Allow: REFER
+Supported: replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-000941407307-1--s1632-
+Subject: Performance Test
+Session-Expires: 1800;refresher=uac
+Min-SE: 90
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 215
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.168
+s=-
+c=IN IP4 10.133.48.168
+t=0 0
+m=audio 35040 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2019-03-08 12:25:06:463.912
+TCP message sent (299 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-000941407307-1--s1632-
+From: sip:50001@192.168.55.80;tag=1
+To: sip:50001@192.168.5.12:6020
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:6020;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-08 12:25:06:464.095
+TCP message sent (556 bytes):
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-000941407307-1--s1632-
+From: sip:50001@192.168.55.80;tag=1
+To: sip:50001@192.168.5.12:6020;tag=1
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+CSeq: 1 INVITE
+Supported: 100rel, timer
+Contact: <sip:192.168.5.12:6020;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   180
+
+v=0
+o=cs1k 4444 6666 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6004 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+
+----------------------------------------------- 2019-03-08 12:25:06:464.270
+TCP message sent (605 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-000941407307-1--s1632-
+CSeq: 1 INVITE
+From: sip:50001@192.168.55.80;tag=1
+To: sip:50001@192.168.5.12:6020;tag=1
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+Contact: <sip:192.168.5.12:6020;transport=TCP>
+Session-Expires: 1800;refresher=uac
+Supported: 100rel, timer, replaces
+Require: timer
+Content-Type: application/sdp
+Content-Length:   180
+
+v=0
+o=cs1k 4444 6666 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6004 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+
+----------------------------------------------- 2019-03-08 12:25:06:488.537
+TCP message received [493] bytes :
+
+ACK sip:50001@192.168.5.12:6020;transport=tcp SIP/2.0
+From: sip:50001@192.168.55.80;tag=1
+To: sip:50001@192.168.5.12:6020;tag=1
+CSeq: 1 ACK
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+Contact: <sip:50001@192.168.55.80:5060;transport=tcp>
+Record-Route: <sip:192.168.55.80:5060;ipcs-line=7;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-001664846452-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-08 12:25:08:489.740
+TCP message sent (447 bytes):
+
+REFER sip:50002@192.168.55.80:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-001664846452-1--s1632-
+From:  sip:50001@192.168.55.80;tag=1
+To:  sip:50001@192.168.5.12:6020;tag=1
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+CSeq: 1 REFER
+Refer-To: <sip:50003@192.168.5.12:6022;transport=TCP>
+Referred-By: sip:50001@192.168.5.12:6020
+Contact: <sip:40008@192.168.5.12:6020;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-08 12:25:08:504.385
+TCP message received [258] bytes :
+
+SIP/2.0 202 Accepted
+From: sip:50001@192.168.55.80;tag=1
+To: sip:50001@192.168.5.12:6020;tag=1
+CSeq: 1 REFER
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-001664846452-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-08 12:25:08:513.036
+TCP message received [596] bytes :
+
+NOTIFY sip:192.168.5.12:6020;transport=TCP SIP/2.0
+From: sip:50001@192.168.5.12:6020;tag=1
+To: sip:50001@192.168.55.80;tag=1
+CSeq: 2 NOTIFY
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+Contact: <sip:50001@192.168.55.80:5060;transport=tcp>
+Record-Route: <sip:192.168.55.80:5060;ipcs-line=7;lr;transport=tcp>
+Supported: 100rel, timer, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-000832443439-1--s1632-;originator
+Subscription-State: active;expires=300
+Event: refer
+Content-Type: message/sipfrag;version=2.0
+Content-Length: 20
+
+SIP/2.0 100 Trying
+
+----------------------------------------------- 2019-03-08 12:25:08:513.203
+TCP message sent (349 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-000832443439-1--s1632-;originator
+From: sip:50001@192.168.5.12:6020;tag=1
+To: sip:50001@192.168.55.80;tag=1;tag=1
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+CSeq: 2 NOTIFY
+Contact: <sip:192.168.5.12:6020;transport=TCP>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-08 12:25:08:524.217
+TCP message received [597] bytes :
+
+NOTIFY sip:192.168.5.12:6020;transport=TCP SIP/2.0
+From: sip:50001@192.168.5.12:6020;tag=1
+To: sip:50001@192.168.55.80;tag=1
+CSeq: 3 NOTIFY
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+Contact: <sip:50001@192.168.55.80:5060;transport=tcp>
+Record-Route: <sip:192.168.55.80:5060;ipcs-line=7;lr;transport=tcp>
+Supported: 100rel, timer, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-001162664447-1--s1632-;originator
+Subscription-State: active;expires=300
+Event: refer
+Content-Type: message/sipfrag;version=2.0
+Content-Length: 21
+
+SIP/2.0 180 Ringing
+
+----------------------------------------------- 2019-03-08 12:25:08:524.410
+TCP message sent (349 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-001162664447-1--s1632-;originator
+From: sip:50001@192.168.5.12:6020;tag=1
+To: sip:50001@192.168.55.80;tag=1;tag=1
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+CSeq: 3 NOTIFY
+Contact: <sip:192.168.5.12:6020;transport=TCP>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-08 12:25:08:552.232
+TCP message received [602] bytes :
+
+NOTIFY sip:192.168.5.12:6020;transport=TCP SIP/2.0
+From: sip:50001@192.168.5.12:6020;tag=1
+To: sip:50001@192.168.55.80;tag=1
+CSeq: 4 NOTIFY
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+Contact: <sip:50001@192.168.55.80:5060;transport=tcp>
+Record-Route: <sip:192.168.55.80:5060;ipcs-line=7;lr;transport=tcp>
+Supported: 100rel, timer, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-000710757922-1--s1632-;originator
+Subscription-State: terminated;reason=noresource
+Event: refer
+Content-Type: message/sipfrag;version=2.0
+Content-Length: 16
+
+SIP/2.0 200 OK
+
+----------------------------------------------- 2019-03-08 12:25:08:552.440
+TCP message sent (349 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-000710757922-1--s1632-;originator
+From: sip:50001@192.168.5.12:6020;tag=1
+To: sip:50001@192.168.55.80;tag=1;tag=1
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+CSeq: 4 NOTIFY
+Contact: <sip:192.168.5.12:6020;transport=TCP>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-08 12:25:10:555.166
+TCP message received [417] bytes :
+
+BYE sip:192.168.5.12:6020;transport=TCP SIP/2.0
+From: sip:50001@192.168.5.12:6020;tag=1
+To: sip:50001@192.168.55.80;tag=1
+CSeq: 5 BYE
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+Record-Route: <sip:192.168.55.80:5060;ipcs-line=7;lr;transport=tcp>
+Supported: 100rel, timer, replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-000801931567-1--s1632-;originator
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-08 12:25:10:555.475
+TCP message sent (346 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-000801931567-1--s1632-;originator
+From: sip:50001@192.168.5.12:6020;tag=1
+To: sip:50001@192.168.55.80;tag=1;tag=1
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+CSeq: 5 BYE
+Contact: <sip:192.168.5.12:6020;transport=TCP>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-08 12:25:15:557.216
+TCP message sent (607 bytes):
+
+SIP/2.0 200 OK
+Via:  SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-000941407307-1--s1632-
+CSeq:  1 INVITE
+From: sip:50001@192.168.5.12:6020;tag=1
+To: sip:50001@192.168.55.80;tag=1
+Call-ID: 8031473c4353a771b6684e15a4ffd549
+Contact: <sip:192.168.5.12:6020;transport=TCP>
+Session-Expires: 1800;refresher=uac
+Supported: 100rel, timer, replaces
+Require: timer
+Content-Type: application/sdp
+Content-Length:   180
+
+v=0
+o=cs1k 4444 6666 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6004 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+
+----------------------------------------------- 2019-03-08 12:46:45:806.941
+TCP message received [574] bytes :
+
+BYE sip:192.168.5.12:6020;transport=TCP SIP/2.0
+From: <sip:192.168.55.80>;tag=AKpCx2oioUZ4iAH-6so5AlZcedzDJcyv
+To: <sip:50001@192.168.5.12>;tag=f8qDTPIg-8PzFhvlP4v4IV.7WzhtnLKp
+CSeq: 4832 BYE
+Call-ID: 1e198972f8c4655ad963df7fc1996e59
+Record-Route: <sip:192.168.55.80:5060;ipcs-line=6;lr;transport=tcp>
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+Supported: replaces, 100rel, timer, norefersub
+Max-Forwards: 70
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-001993305671-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-08 12:46:45:808.081
+TCP message sent (356 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.55.80:5060;branch=z9hG4bK-s1632-001993305671-1--s1632-
+From: <sip:192.168.55.80>;tag=AKpCx2oioUZ4iAH-6so5AlZcedzDJcyv
+To: <sip:50001@192.168.5.12>;tag=f8qDTPIg-8PzFhvlP4v4IV.7WzhtnLKp
+Call-ID: 1e198972f8c4655ad963df7fc1996e59
+CSeq: 4832 BYE
+Contact: <sip:192.168.5.12:6020;transport=TCP>
+Content-Length: 0
+
+

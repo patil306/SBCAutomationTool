@@ -1,0 +1,221 @@
+----------------------------------------------- 2018-09-12 22:07:19:252.983
+TCP message sent (657 bytes):
+
+INVITE sip:4079@192.168.6.244:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-5969-1-0
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060
+Call-ID: 1-5969@192.168.6.5
+CSeq: 1 INVITE
+Contact: <sip:4078@192.168.6.5:5072;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   198
+
+v=0
+o=user1 53655765 2353687640 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-12 22:07:19:276.779
+TCP message received [217] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060
+CSeq: 1 INVITE
+Call-ID: 1-5969@192.168.6.5
+Via: SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-5969-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 22:07:21:290.574
+TCP message received [564] bytes :
+
+SIP/2.0 183 Session Progress
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-5969@192.168.6.5
+Contact: <sip:192.168.6.244:5060;transport=tcp>
+Supported: replaces
+Via:SIP/2.0/TCP 192.168.6.5:5072;branch=z9hG4bK-5969-1-0
+Require: 100rel
+RSeq: 1
+Content-Type: application/sdp
+Content-Length: 203
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.244
+s=-
+c=IN IP4 192.168.6.244
+t=0 0
+m=audio 35002 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-12 22:07:21:290.929
+TCP message sent (382 bytes):
+
+PRACK sip:192.168.6.244:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/transport=TCP 192.168.6.5:5072;branch=z9hG4bK-5969-1-4
+From:  sip:4078@192.168.6.5:5072;tag=1
+To:   sip:4079@192.168.6.244:5060;tag=2
+Call-ID: 1-5969@192.168.6.5
+CSeq: 2 PRACK
+RAck: 1 1 INVITE
+Contact: <sip:4078@192.168.6.5:5072;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 22:07:21:297.300
+TCP message received [328] bytes :
+
+SIP/2.0 200 OK
+From: sip:4078@192.168.6.5:5072;tag=1
+To: sip:4079@192.168.6.244:5060;tag=2
+CSeq: 2 PRACK
+Call-ID: 1-5969@192.168.6.5
+Contact: <sip:192.168.6.244:5060;transport=tcp>
+Supported: replaces
+Via:SIP/2.0/transport=TCP 192.168.6.5:5072;branch=z9hG4bK-5969-1-4
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 22:07:23:305.816
+TCP message received [623] bytes :
+
+UPDATE sip:4078@192.168.6.5:5072;transport=tcp SIP/2.0
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+CSeq: 3 UPDATE
+Call-ID: 1-5969@192.168.6.5
+Contact: <sip:192.168.6.244:5060;transport=tcp>
+Record-Route: <sip:192.168.6.244:5060;ipcs-line=2;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/TCP 192.168.6.244:5060;branch=z9hG4bK-s1632-001193970535-1--s1632-
+Content-Type: application/sdp
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687638 IN IP4 192.168.6.244
+s=-
+c=IN IP4 192.168.6.244
+t=0 0
+m=audio 35002 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-12 22:07:23:306.036
+TCP message sent (470 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.6.244:5060;branch=z9hG4bK-s1632-001193970535-1--s1632-
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+Call-ID: 1-5969@192.168.6.5
+CSeq: 3 UPDATE
+Contact: <sip:192.168.6.5:5072;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   145
+
+v=0
+o=user1 53655765 2353687641 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-12 22:07:25:381.755
+TCP message received [623] bytes :
+
+UPDATE sip:4078@192.168.6.5:5072;transport=tcp SIP/2.0
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+CSeq: 4 UPDATE
+Call-ID: 1-5969@192.168.6.5
+Contact: <sip:192.168.6.244:5060;transport=tcp>
+Record-Route: <sip:192.168.6.244:5060;ipcs-line=2;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/TCP 192.168.6.244:5060;branch=z9hG4bK-s1632-001353707202-1--s1632-
+Content-Type: application/sdp
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687638 IN IP4 192.168.6.244
+s=-
+c=IN IP4 192.168.6.244
+t=0 0
+m=audio 35002 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-12 22:07:25:382.086
+TCP message sent (470 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.6.244:5060;branch=z9hG4bK-s1632-001353707202-1--s1632-
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+Call-ID: 1-5969@192.168.6.5
+CSeq: 4 UPDATE
+Contact: <sip:192.168.6.5:5072;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   145
+
+v=0
+o=user1 53655765 2353687642 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-12 22:07:27:412.821
+TCP message received [471] bytes :
+
+UPDATE sip:4078@192.168.6.5:5072;transport=tcp SIP/2.0
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+CSeq: 5 UPDATE
+Call-ID: 1-5969@192.168.6.5
+Contact: <sip:192.168.6.244:5060;transport=tcp>
+Record-Route: <sip:192.168.6.244:5060;ipcs-line=2;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/TCP 192.168.6.244:5060;branch=z9hG4bK-s1632-001773297934-1--s1632-
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 22:07:27:413.014
+TCP message sent (321 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.6.244:5060;branch=z9hG4bK-s1632-001773297934-1--s1632-
+From: sip:4079@10.133.39.159:5072;tag=2
+To: sip:4078@10.133.48.152:5060;tag=1
+Call-ID: 1-5969@192.168.6.5
+CSeq: 5 UPDATE
+Contact: <sip:192.168.6.5:5072;transport=TCP>
+Content-Type: application/sdp
+Content-Length: 0
+
+

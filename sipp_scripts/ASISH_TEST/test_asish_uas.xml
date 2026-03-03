@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd"[]>
+<!-- This program is free software; you can redistribute it and/or      -->
+<!-- modify it under the terms of the GNU General Public License as     -->
+<!-- published by the Free Software Foundation; either version 2 of the -->
+<!-- License, or (at your option) any later version.                    -->
+<!--                                                                    -->
+<!-- This program is distributed in the hope that it will be useful,    -->
+<!-- but WITHOUT ANY WARRANTY; without even the implied warranty of     -->
+<!-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the      -->
+<!-- GNU General Public License for more details.                       -->
+<!--                                                                    -->
+<!-- You should have received a copy of the GNU General Public License  -->
+<!-- along with this program; if not, write to the                      -->
+<!-- Free Software Foundation, Inc.,                                    -->
+<!-- 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA             -->
+<!--                                                                    -->
+<!--                 Sipp default 'uas' scenario.                       -->
+<!--                                                                    -->
+<!-- Assumes you have already registered the UAS endpoint -->
+<scenario name="Basic UAS responder">
+  <recv request="INVITE" rrs="true" crlf="true">
+        <action>
+                    <ereg regexp="[0-9]{1,6}" search_in="hdr" header="To:" check_it="true" assign_to="6" />
+                                      <ereg regexp=";tag=.*" search_in="hdr" header="From:" check_it="true" assign_to="5" />
+                                                            </action>
+                                                                                    </recv>
+                                                                                                              <!-- The '[last_*]' keyword is replaced automatically by the          --> specified header if it was present in the last message received  <!-- (except if it was a retransmission). If the header was not       --><!-- present or if no message has been received, the '[last_*]'       --><!-- keyword is discarded, and all bytes until the end of the line    --><!-- are also discarded.                                         
+

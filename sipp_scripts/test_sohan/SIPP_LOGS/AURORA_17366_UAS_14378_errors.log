@@ -1,0 +1,19 @@
+sipp: The following events occured:
+2019-06-17	18:10:16:617	1560775216.617303: Aborting call on unexpected message for Call-Id 'e0e0a811298c3572c2ed2a3f283c322f': while expecting 'REGISTER' (index 0), received 'SUBSCRIBE sips:4079@192.168.5.12:6027 SIP/2.0
+From: sips:4078@192.168.55.79;tag=1
+To: sips:4079@192.168.5.12:6027;tag=2
+CSeq: 1 SUBSCRIBE
+Call-ID: e0e0a811298c3572c2ed2a3f283c322f
+Contact: sips:4078@192.168.55.79:5061;transport=tls;transport=TLS
+Record-Route: <sip:192.168.55.79:5061;ipcs-line=19;lr;transport=tls>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.55.79:5061;branch=z9hG4bK-s1632-002115866607-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+'.
+2019-06-17	18:10:26:604	1560775226.604336: Error on TCP connection, remote peer probably closed the socket: Connection reset by peer.

@@ -1,0 +1,25 @@
+sipp: The following events occured:
+2018-10-18	14:32:44:096	1539853364.096476: Aborting call on unexpected message for Call-Id '43d17059e68294671dbaa52091751714': while expecting '200' (index 6), received 'SIP/2.0 100 Trying
+From: sip:81001001@10.133.39.159:5080;tag=1
+To: sip:81002001@10.133.73.4:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 43d17059e68294671dbaa52091751714
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-6822-1-5
+Content-Length: 0
+
+'.
+2018-10-18	14:32:46:102	1539853366.102884: Dead call 43d17059e68294671dbaa52091751714 (aborted at index 6), received 'SIP/2.0 200 OK
+From: sip:81001001@10.133.39.159:5080;tag=1
+To: sip:81002001@10.133.73.4:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 43d17059e68294671dbaa52091751714
+Contact: <sip:10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=11;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-6822-1-5
+Require: timer
+Warning: 399 192.168.6.223 "Internal Error 5"
+Session-Expires: 90;refresher=uas
+Content-Type: application/sdp
+Content-Length: 0
+
+'.

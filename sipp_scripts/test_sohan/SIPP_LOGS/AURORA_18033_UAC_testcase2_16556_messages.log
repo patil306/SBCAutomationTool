@@ -1,0 +1,208 @@
+----------------------------------------------- 2019-08-23 17:03:59:262.667
+UDP message sent (711 bytes):
+
+INVITE sip:40007@10.133.48.238 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5097;branch=z9hG4bK-16556-1-0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:40007@10.133.48.238:5060
+Call-ID: 1-16556@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:4078@10.133.39.159:5097;transport=UDP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   268
+
+v=0
+o=- 1297654 1 IN IP4 172.29.104.30
+s=-
+c=IN IP4 172.29.104.47
+t=0 0
+m=audio 5218 RTP/AVP 8 0 18 101 111
+c=IN IP4 172.29.104.47
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=rtpmap:111X-nt-inforeq/8000
+a=ptime:20
+a=sendrecv
+
+
+----------------------------------------------- 2019-08-23 17:03:59:294.911
+UDP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:40007@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 1-16556@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5097;branch=z9hG4bK-16556-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-23 17:03:59:303.280
+UDP message received [600] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:40007@10.133.48.238:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-16556@10.133.39.159
+Contact: <sip:10.133.48.87:5060;transport=udp>
+Record-Route: <sip:10.133.48.87:5060;ipcs-line=1;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:5097;branch=z9hG4bK-16556-1-0
+Content-Type: application/sdp
+Content-Length: 225
+
+v=0
+o=sbc-uk-bs07a 319157248 1564513211 IN IP4 147.152.22.181
+s=sip
+c=IN IP4 10.133.48.87
+t=0 0
+m=audio 35000 RTP/AVP 101
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-08-23 17:03:59:306.254
+UDP message received [574] bytes :
+
+SIP/2.0 200 OK
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:40007@10.133.48.238:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-16556@10.133.39.159
+Contact: <sip:10.133.48.87:5060;transport=udp>
+Record-Route: <sip:10.133.48.87:5060;ipcs-line=1;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:5097;branch=z9hG4bK-16556-1-0
+Content-Type: application/sdp
+Content-Length: 204
+
+v=0
+o=sbc-uk-bs07a 319157248 1564513211 IN IP4 147.152.22.181
+s=sip
+c=IN IP4 10.133.48.87
+t=0 0
+m=audio 35000 RTP/AVP 101
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-08-23 17:03:59:306.403
+UDP message sent (412 bytes):
+
+ACK sip:4079@10.133.48.87:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5097;branch=z9hG4bK-16556-1-4
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@10.133.48.87:5060;tag=2
+Call-ID: 1-16556@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:4078@10.133.39.159:5097;transport=TCP
+Max-Forwards: 70
+Route: <sip:10.133.48.87:5060;ipcs-line=1;lr;transport=udp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-23 17:04:03:308.499
+UDP message sent (646 bytes):
+
+INVITE sip:4079@10.133.48.87:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5097;branch=z9hG4bK-16556-1-6
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@10.133.48.87:5060;tag=2
+Call-ID: 1-16556@10.133.39.159
+CSeq: 2 INVITE
+Contact: <sip:4078@10.133.39.159:5097;transport=UDP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   194
+
+v=0
+o=sbc-uk-bs07a 323502080 1564516433 IN IP4 147.152.22.181
+s=sip call
+c=IN IP4 147.152.22.180
+t=0 0
+m=audio 44864 RTP/AVP 8
+a=rtpmap:8 PCMA/8000
+a=silenceSupp:off - - - -
+a=ptime:20
+
+----------------------------------------------- 2019-08-23 17:04:03:312.572
+UDP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@10.133.48.87:5060;tag=2
+CSeq: 2 INVITE
+Call-ID: 1-16556@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5097;branch=z9hG4bK-16556-1-6
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-23 17:04:03:312.748
+UDP message received [236] bytes :
+
+SIP/2.0 488 Not Acceptable Here
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@10.133.48.87:5060;tag=2
+CSeq: 2 INVITE
+Call-ID: 1-16556@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5097;branch=z9hG4bK-16556-1-6
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-23 17:04:03:312.846
+UDP message sent (414 bytes):
+
+ACK sip:4078@10.133.48.87:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5097;branch=z9hG4bK-16556-1-6
+From: sip:4079@10.133.39.159;tag=1
+To: sip:4078@10.133.48.87:5060;tag=2
+Call-ID: 1-16556@10.133.39.159
+CSeq: 2 ACK
+Route: <sip:10.133.48.87:5060;ipcs-line=1;lr;transport=udp>
+Contact: sip:4079@10.133.39.159:5097;transport=TCP
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-23 17:04:15:314.102
+UDP message sent (410 bytes):
+
+BYE sip:10.133.48.87:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5097;branch=z9hG4bK-16556-1-11
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@10.133.48.87:5060;tag=2
+Call-ID: 1-16556@10.133.39.159
+Contact: <sip:4078@10.133.39.159:5097;transport=UDP>
+CSeq: 2 BYE
+Route: <sip:10.133.48.87:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-23 17:04:15:321.629
+UDP message received [333] bytes :
+
+SIP/2.0 200 OK
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@10.133.48.87:5060;tag=2
+CSeq: 2 BYE
+Call-ID: 1-16556@10.133.39.159
+Contact: <sip:10.133.48.87:5060;transport=udp>
+Record-Route: <sip:10.133.48.87:5060;ipcs-line=1;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:5097;branch=z9hG4bK-16556-1-11
+Content-Length: 0
+
+

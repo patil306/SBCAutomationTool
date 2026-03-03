@@ -1,0 +1,196 @@
+----------------------------------------------- 2019-07-04 19:23:38:799.157
+TCP message received [865] bytes :
+
+INVITE sip:Agent@10.133.39.159:5090;transport=tcp SIP/2.0
+From: sip:81002001@10.133.73.4:17730;tag=1
+To: <sip:Agent@10.133.39.159:5090;transport=TCP>
+CSeq: 1 INVITE
+Call-ID: 1bce1147e2f19d08b4cca524cf451103
+Contact: <sip:81002001@10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=18;lr;transport=tcp>
+Supported: replaces, timer, 100rel
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000260364158-1--s1632-;originator
+Subject: Performance Test
+Referred-By: sip:81001001@10.133.39.159:5090
+Session-Expires: 1800;refresher=uac
+Min-SE: 90
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 158
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.73.4
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35008 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-07-04 19:23:38:799.788
+TCP message sent (333 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000260364158-1--s1632-;originator
+From: sip:81002001@10.133.73.4:17730;tag=1
+To: <sip:Agent@10.133.39.159:5090;transport=TCP>
+Call-ID: 1bce1147e2f19d08b4cca524cf451103
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5090;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-07-04 19:23:38:799.959
+TCP message sent (371 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000260364158-1--s1632-;originator
+From: sip:81002001@10.133.73.4:17730;tag=1
+To: <sip:Agent@10.133.39.159:5090;transport=TCP>;tag=1
+Call-ID: 1bce1147e2f19d08b4cca524cf451103
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5090;transport=TCP>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2019-07-04 19:23:38:800.109
+TCP message sent (521 bytes):
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000260364158-1--s1632-;originator
+From: sip:81002001@10.133.73.4:17730;tag=1
+To: <sip:Agent@10.133.39.159:5090;transport=TCP>;tag=1
+Call-ID: 1bce1147e2f19d08b4cca524cf451103
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5090;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   137
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2019-07-04 19:23:38:800.310
+TCP message sent (521 bytes):
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000260364158-1--s1632-;originator
+From: sip:81002001@10.133.73.4:17730;tag=1
+To: <sip:Agent@10.133.39.159:5090;transport=TCP>;tag=1
+Call-ID: 1bce1147e2f19d08b4cca524cf451103
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5090;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   137
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2019-07-04 19:23:38:800.508
+TCP message sent (507 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000260364158-1--s1632-;originator
+From: sip:81002001@10.133.73.4:17730;tag=1
+To: <sip:Agent@10.133.39.159:5090;transport=TCP>;tag=1
+Call-ID: 1bce1147e2f19d08b4cca524cf451103
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5090;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   137
+
+v=0
+o=user1 53655765 2353687638 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2019-07-04 19:23:40:866.694
+TCP message received [491] bytes :
+
+ACK sip:10.133.39.159:5090;transport=TCP SIP/2.0
+From: sip:81002001@10.133.73.4:17730;tag=1
+To: sip:81001001@10.133.39.159:5090;tag=1
+CSeq: 1 ACK
+Call-ID: 1bce1147e2f19d08b4cca524cf451103
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=18;lr;transport=tcp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000836421825-1--s1632-;originator
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2019-07-04 19:44:46:476.186
+TCP message received [449] bytes :
+
+BYE sip:10.133.39.159:5090;transport=TCP SIP/2.0
+From: sip:81002001@10.133.73.4:17728;tag=1
+To: sip:81001001@10.133.39.159:5090;tag=2
+CSeq: 2 BYE
+Call-ID: d8fa560dd3b203650df87b73f23ef263
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=16;lr;transport=tcp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001394122063-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-07-04 19:44:46:477.192
+TCP message sent (308 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001394122063-1--s1632-
+From: sip:81002001@10.133.73.4:17728;tag=1
+To: sip:81001001@10.133.39.159:5090;tag=2
+Call-ID: d8fa560dd3b203650df87b73f23ef263
+CSeq: 2 BYE
+Contact: <sip:10.133.39.159:5090;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-07-04 19:47:38:811.610
+TCP message received [449] bytes :
+
+BYE sip:10.133.39.159:5090;transport=TCP SIP/2.0
+From: sip:81002001@10.133.73.4:17730;tag=1
+To: sip:81001001@10.133.39.159:5090;tag=1
+CSeq: 2 BYE
+Call-ID: 1bce1147e2f19d08b4cca524cf451103
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=18;lr;transport=tcp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-002056892465-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-07-04 19:47:38:812.054
+TCP message sent (308 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-002056892465-1--s1632-
+From: sip:81002001@10.133.73.4:17730;tag=1
+To: sip:81001001@10.133.39.159:5090;tag=1
+Call-ID: 1bce1147e2f19d08b4cca524cf451103
+CSeq: 2 BYE
+Contact: <sip:10.133.39.159:5090;transport=TCP>
+Content-Length: 0
+
+

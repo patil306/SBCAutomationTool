@@ -1,0 +1,2396 @@
+----------------------------------------------- 2018-10-24 17:15:31:361.974
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061
+Call-ID: 1-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:15:31:596.743
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 1-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:31:613.297
+TLS message received [347] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061;tag=10
+CSeq: 1 INVITE
+Call-ID: 1-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=32;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:31:630.037
+TLS message received [663] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061;tag=10
+CSeq: 1 INVITE
+Call-ID: 1-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=32;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-1-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35062 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:15:31:630.657
+TLS message sent (423 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-1-4
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061;tag=10
+Call-ID: 1-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=32;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:36:361.645
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-2-0
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061
+Call-ID: 2-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:15:36:380.029
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 2-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-2-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:36:396.407
+TLS message received [347] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061;tag=11
+CSeq: 1 INVITE
+Call-ID: 2-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=33;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-2-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:36:419.703
+TLS message received [663] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061;tag=11
+CSeq: 1 INVITE
+Call-ID: 2-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=33;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-2-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35064 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:15:36:419.951
+TLS message sent (423 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-2-4
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061;tag=11
+Call-ID: 2-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=33;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:41:361.410
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-3-0
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061
+Call-ID: 3-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:15:41:378.084
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 3-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-3-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:41:398.405
+TLS message received [347] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061;tag=12
+CSeq: 1 INVITE
+Call-ID: 3-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=34;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-3-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:41:414.424
+TLS message received [663] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061;tag=12
+CSeq: 1 INVITE
+Call-ID: 3-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=34;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-3-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35066 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:15:41:414.732
+TLS message sent (423 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-3-4
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061;tag=12
+Call-ID: 3-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=34;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:46:362.012
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-4-0
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061
+Call-ID: 4-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:15:46:382.130
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 4-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-4-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:46:408.920
+TLS message received [347] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061;tag=13
+CSeq: 1 INVITE
+Call-ID: 4-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=35;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-4-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:46:427.037
+TLS message received [663] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061;tag=13
+CSeq: 1 INVITE
+Call-ID: 4-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=35;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-4-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35068 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:15:46:427.296
+TLS message sent (423 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-4-4
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061;tag=13
+Call-ID: 4-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=35;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:51:361.891
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-5-0
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061
+Call-ID: 5-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:15:51:382.886
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 5-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-5-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:51:409.092
+TLS message received [347] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061;tag=14
+CSeq: 1 INVITE
+Call-ID: 5-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=36;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-5-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:51:426.661
+TLS message received [663] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061;tag=14
+CSeq: 1 INVITE
+Call-ID: 5-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=36;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-5-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35070 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:15:51:426.936
+TLS message sent (423 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-5-4
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061;tag=14
+Call-ID: 5-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=36;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:56:361.832
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-6-0
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061
+Call-ID: 6-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:15:56:379.697
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 6-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-6-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:56:394.538
+TLS message received [347] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061;tag=15
+CSeq: 1 INVITE
+Call-ID: 6-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=37;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-6-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:15:56:404.519
+TLS message received [663] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061;tag=15
+CSeq: 1 INVITE
+Call-ID: 6-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=37;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-6-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35072 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:15:56:405.141
+TLS message sent (423 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-6-4
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061;tag=15
+Call-ID: 6-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=37;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:01:361.685
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-7-0
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061
+Call-ID: 7-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:16:01:378.853
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 7-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-7-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:01:393.575
+TLS message received [347] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061;tag=16
+CSeq: 1 INVITE
+Call-ID: 7-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=38;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-7-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:01:406.634
+TLS message received [663] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061;tag=16
+CSeq: 1 INVITE
+Call-ID: 7-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=38;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-7-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35074 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:16:01:407.483
+TLS message sent (423 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-7-4
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061;tag=16
+Call-ID: 7-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=38;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:06:361.309
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-8-0
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061
+Call-ID: 8-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:16:06:381.928
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 8-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-8-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:06:407.504
+TLS message received [347] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061;tag=17
+CSeq: 1 INVITE
+Call-ID: 8-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=39;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-8-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:06:419.348
+TLS message received [663] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061;tag=17
+CSeq: 1 INVITE
+Call-ID: 8-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=39;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-8-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35076 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:16:06:419.672
+TLS message sent (423 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-8-4
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061;tag=17
+Call-ID: 8-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=39;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:11:362.325
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-9-0
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061
+Call-ID: 9-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:16:11:381.415
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 9-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-9-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:11:397.616
+TLS message received [347] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061;tag=18
+CSeq: 1 INVITE
+Call-ID: 9-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=40;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-9-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:11:410.906
+TLS message received [663] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061;tag=18
+CSeq: 1 INVITE
+Call-ID: 9-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=40;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-9-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35078 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:16:11:412.566
+TLS message sent (423 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-9-4
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061;tag=18
+Call-ID: 9-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=40;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:16:362.995
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-10-0
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061
+Call-ID: 10-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:16:16:382.421
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 10-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-10-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:16:401.145
+TLS message received [350] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061;tag=19
+CSeq: 1 INVITE
+Call-ID: 10-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=41;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-10-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:16:413.723
+TLS message received [666] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061;tag=19
+CSeq: 1 INVITE
+Call-ID: 10-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=41;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-10-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35080 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:16:16:415.532
+TLS message sent (426 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-10-4
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061;tag=19
+Call-ID: 10-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=41;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:21:362.333
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-11-0
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061
+Call-ID: 11-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:16:21:382.071
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 11-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-11-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:21:400.064
+TLS message received [350] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061;tag=20
+CSeq: 1 INVITE
+Call-ID: 11-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=42;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-11-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:21:415.419
+TLS message received [666] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061;tag=20
+CSeq: 1 INVITE
+Call-ID: 11-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=42;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-11-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35082 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:16:21:416.320
+TLS message sent (426 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-11-4
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061;tag=20
+Call-ID: 11-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=42;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:26:361.960
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-12-0
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061
+Call-ID: 12-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:16:26:379.806
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 12-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-12-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:26:394.723
+TLS message received [350] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061;tag=21
+CSeq: 1 INVITE
+Call-ID: 12-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=43;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-12-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:26:409.629
+TLS message received [666] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061;tag=21
+CSeq: 1 INVITE
+Call-ID: 12-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=43;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-12-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35084 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:16:26:409.983
+TLS message sent (426 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-12-4
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061;tag=21
+Call-ID: 12-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=43;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:31:362.366
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-13-0
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061
+Call-ID: 13-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:16:31:380.156
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 13-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-13-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:31:395.926
+TLS message received [350] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061;tag=22
+CSeq: 1 INVITE
+Call-ID: 13-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=44;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-13-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:31:411.243
+TLS message received [666] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061;tag=22
+CSeq: 1 INVITE
+Call-ID: 13-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=44;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-13-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35086 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:16:31:411.573
+TLS message sent (426 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-13-4
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061;tag=22
+Call-ID: 13-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=44;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:36:362.688
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-14-0
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061
+Call-ID: 14-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:16:36:378.607
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 14-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-14-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:36:392.059
+TLS message received [350] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061;tag=23
+CSeq: 1 INVITE
+Call-ID: 14-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=45;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-14-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:36:402.894
+TLS message received [666] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061;tag=23
+CSeq: 1 INVITE
+Call-ID: 14-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=45;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-14-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35088 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:16:36:403.192
+TLS message sent (426 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-14-4
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061;tag=23
+Call-ID: 14-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=45;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:41:361.839
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-15-0
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.155:5061
+Call-ID: 15-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:16:41:372.026
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 15-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-15-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:41:378.638
+TLS message received [350] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.155:5061;tag=24
+CSeq: 1 INVITE
+Call-ID: 15-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=46;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-15-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:41:385.159
+TLS message received [666] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.155:5061;tag=24
+CSeq: 1 INVITE
+Call-ID: 15-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=46;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-15-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35090 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:16:41:385.331
+TLS message sent (426 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-15-4
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.155:5061;tag=24
+Call-ID: 15-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=46;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:46:362.236
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-16-0
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.155:5061
+Call-ID: 16-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:16:46:383.244
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 16-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-16-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:46:399.417
+TLS message received [350] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.155:5061;tag=25
+CSeq: 1 INVITE
+Call-ID: 16-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=47;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-16-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:46:411.727
+TLS message received [666] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.155:5061;tag=25
+CSeq: 1 INVITE
+Call-ID: 16-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=47;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-16-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35092 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:16:46:412.141
+TLS message sent (426 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-16-4
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.155:5061;tag=25
+Call-ID: 16-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=47;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:51:361.609
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-17-0
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.155:5061
+Call-ID: 17-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:16:51:380.902
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 17-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-17-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:51:398.872
+TLS message received [350] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.155:5061;tag=26
+CSeq: 1 INVITE
+Call-ID: 17-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=48;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-17-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:51:413.531
+TLS message received [666] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.155:5061;tag=26
+CSeq: 1 INVITE
+Call-ID: 17-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=48;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-17-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35094 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:16:51:413.864
+TLS message sent (426 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-17-4
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.155:5061;tag=26
+Call-ID: 17-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=48;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:56:362.248
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-18-0
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.155:5061
+Call-ID: 18-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:16:56:378.403
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 18-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-18-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:56:399.181
+TLS message received [350] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.155:5061;tag=27
+CSeq: 1 INVITE
+Call-ID: 18-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=49;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-18-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:16:56:412.893
+TLS message received [666] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.155:5061;tag=27
+CSeq: 1 INVITE
+Call-ID: 18-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=49;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-18-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35096 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:16:56:413.166
+TLS message sent (426 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-18-4
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.155:5061;tag=27
+Call-ID: 18-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=49;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:01:361.077
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-19-0
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.155:5061
+Call-ID: 19-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:17:01:379.603
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 19-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-19-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:01:400.634
+TLS message received [350] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.155:5061;tag=28
+CSeq: 1 INVITE
+Call-ID: 19-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=50;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-19-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:01:415.920
+TLS message received [666] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.155:5061;tag=28
+CSeq: 1 INVITE
+Call-ID: 19-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=50;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-19-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35098 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:17:01:416.192
+TLS message sent (426 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-19-4
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.155:5061;tag=28
+Call-ID: 19-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=50;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:06:361.239
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-20-0
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.155:5061
+Call-ID: 20-2897@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:17:06:378.879
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 20-2897@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-20-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:06:394.476
+TLS message received [350] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.155:5061;tag=29
+CSeq: 1 INVITE
+Call-ID: 20-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=51;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-20-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:06:405.837
+TLS message received [666] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.155:5061;tag=29
+CSeq: 1 INVITE
+Call-ID: 20-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=51;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-20-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35100 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:17:06:406.158
+TLS message sent (426 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-20-4
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.155:5061;tag=29
+Call-ID: 20-2897@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=51;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:11:632.957
+TLS message sent (409 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-1-6
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061;tag=10
+Call-ID: 1-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=32;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:11:653.433
+TLS message received [339] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061;tag=10
+CSeq: 2 BYE
+Call-ID: 1-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=32;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-1-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:16:421.278
+TLS message sent (409 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-2-6
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061;tag=11
+Call-ID: 2-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=33;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:16:442.066
+TLS message received [339] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061;tag=11
+CSeq: 2 BYE
+Call-ID: 2-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=33;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-2-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:21:417.704
+TLS message sent (409 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-3-6
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061;tag=12
+Call-ID: 3-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=34;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:21:439.861
+TLS message received [339] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061;tag=12
+CSeq: 2 BYE
+Call-ID: 3-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=34;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-3-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:26:428.879
+TLS message sent (409 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-4-6
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061;tag=13
+Call-ID: 4-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=35;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:26:450.523
+TLS message received [339] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061;tag=13
+CSeq: 2 BYE
+Call-ID: 4-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=35;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-4-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:31:427.993
+TLS message sent (409 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-5-6
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061;tag=14
+Call-ID: 5-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=36;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:31:449.850
+TLS message received [339] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061;tag=14
+CSeq: 2 BYE
+Call-ID: 5-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=36;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-5-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:36:407.802
+TLS message sent (409 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-6-6
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061;tag=15
+Call-ID: 6-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=37;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:36:428.607
+TLS message received [339] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061;tag=15
+CSeq: 2 BYE
+Call-ID: 6-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=37;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-6-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:41:409.111
+TLS message sent (409 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-7-6
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061;tag=16
+Call-ID: 7-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=38;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:41:428.047
+TLS message received [339] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061;tag=16
+CSeq: 2 BYE
+Call-ID: 7-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=38;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-7-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:46:421.386
+TLS message sent (409 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-8-6
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061;tag=17
+Call-ID: 8-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=39;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:46:434.830
+TLS message received [339] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061;tag=17
+CSeq: 2 BYE
+Call-ID: 8-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=39;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-8-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:51:415.308
+TLS message sent (409 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-9-6
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061;tag=18
+Call-ID: 9-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=40;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:51:439.320
+TLS message received [339] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061;tag=18
+CSeq: 2 BYE
+Call-ID: 9-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=40;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-9-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:56:416.533
+TLS message sent (412 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-10-6
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061;tag=19
+Call-ID: 10-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=41;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:17:56:437.197
+TLS message received [342] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061;tag=19
+CSeq: 2 BYE
+Call-ID: 10-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=41;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-10-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:18:01:418.428
+TLS message sent (412 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-11-6
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061;tag=20
+Call-ID: 11-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=42;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:18:01:444.304
+TLS message received [342] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061;tag=20
+CSeq: 2 BYE
+Call-ID: 11-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=42;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-11-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:18:06:412.031
+TLS message sent (412 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-12-6
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061;tag=21
+Call-ID: 12-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=43;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:18:06:434.031
+TLS message received [342] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061;tag=21
+CSeq: 2 BYE
+Call-ID: 12-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=43;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-12-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:18:11:412.762
+TLS message sent (412 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-13-6
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061;tag=22
+Call-ID: 13-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=44;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:18:11:431.773
+TLS message received [342] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061;tag=22
+CSeq: 2 BYE
+Call-ID: 13-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=44;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-13-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:18:16:404.556
+TLS message sent (412 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-14-6
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061;tag=23
+Call-ID: 14-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=45;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:18:16:427.736
+TLS message received [342] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061;tag=23
+CSeq: 2 BYE
+Call-ID: 14-2897@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=45;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-14-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:18:21:387.809
+TLS message sent (412 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-2897-15-6
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.155:5061;tag=24
+Call-ID: 15-2897@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=46;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

@@ -1,0 +1,352 @@
+----------------------------------------------- 2018-11-19 15:08:24:60.051
+TCP message received [463] bytes :
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=b0fd507947a0
+To: <sip:pqr@xyz.com>
+CSeq: 1 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=6;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-000572888142-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=b0fd507947a0
+To: <sip:pqr@xyz.com>
+CSeq: 1 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=6;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-000572888142-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-11-19 15:08:29:51.779
+TCP message received [463] bytes :
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=cadf595cb077
+To: <sip:pqr@xyz.com>
+CSeq: 2 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=8;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001418987622-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4 recieved a TCP message:
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=cadf595cb077
+To: <sip:pqr@xyz.com>
+CSeq: 2 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=8;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001418987622-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-11-19 15:08:34:52.960
+TCP message received [464] bytes :
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=f0c18976da5e
+To: <sip:pqr@xyz.com>
+CSeq: 3 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=10;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001807258215-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4 recieved a TCP message:
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=f0c18976da5e
+To: <sip:pqr@xyz.com>
+CSeq: 3 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=10;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001807258215-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-11-19 15:08:39:55.964
+TCP message received [464] bytes :
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=fddb08638e6e
+To: <sip:pqr@xyz.com>
+CSeq: 4 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=12;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001977251411-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4 recieved a TCP message:
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=fddb08638e6e
+To: <sip:pqr@xyz.com>
+CSeq: 4 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=12;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001977251411-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-11-19 15:08:44:68.667
+TCP message received [464] bytes :
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=cd37922e7f57
+To: <sip:pqr@xyz.com>
+CSeq: 5 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=14;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-000047766870-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4 recieved a TCP message:
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=cd37922e7f57
+To: <sip:pqr@xyz.com>
+CSeq: 5 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=14;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-000047766870-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-11-19 15:08:49:59.517
+TCP message received [464] bytes :
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=6d57aa7a696b
+To: <sip:pqr@xyz.com>
+CSeq: 6 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=16;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001227718622-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4 recieved a TCP message:
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=6d57aa7a696b
+To: <sip:pqr@xyz.com>
+CSeq: 6 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=16;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001227718622-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-11-19 15:08:54:62.761
+TCP message received [464] bytes :
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=d9d91479b4c3
+To: <sip:pqr@xyz.com>
+CSeq: 7 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=18;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-000765622544-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4 recieved a TCP message:
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=d9d91479b4c3
+To: <sip:pqr@xyz.com>
+CSeq: 7 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=18;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-000765622544-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-11-19 15:08:59:62.521
+TCP message received [464] bytes :
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=ab37963302a3
+To: <sip:pqr@xyz.com>
+CSeq: 8 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=21;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001504948142-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4 recieved a TCP message:
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=ab37963302a3
+To: <sip:pqr@xyz.com>
+CSeq: 8 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=21;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001504948142-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-11-19 15:09:04:64.185
+TCP message received [464] bytes :
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=e1fa370250e0
+To: <sip:pqr@xyz.com>
+CSeq: 9 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=23;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001710189082-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4 recieved a TCP message:
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=e1fa370250e0
+To: <sip:pqr@xyz.com>
+CSeq: 9 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=23;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001710189082-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-11-19 15:09:09:67.065
+TCP message received [465] bytes :
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=bc9cd1377925
+To: <sip:pqr@xyz.com>
+CSeq: 10 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=25;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001593529877-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4 recieved a TCP message:
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=bc9cd1377925
+To: <sip:pqr@xyz.com>
+CSeq: 10 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=25;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001593529877-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-11-19 15:09:14:68.976
+TCP message received [465] bytes :
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=ae03137ce094
+To: <sip:pqr@xyz.com>
+CSeq: 11 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=27;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001593663870-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4 recieved a TCP message:
+
+OPTIONS sip:xyz.com:5075 SIP/2.0
+From: <sip:abc@192.168.55.76>;tag=ae03137ce094
+To: <sip:pqr@xyz.com>
+CSeq: 11 OPTIONS
+Call-ID: a16a53514e7fd70a4b289e2753a8f4da10d2b1a0012256090b40b3d8d537eb4
+Contact: <sip:abc@192.168.55.76:5060;transport=tcp>
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=27;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.76:5060;branch=z9hG4bK-s1632-001593663870-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+

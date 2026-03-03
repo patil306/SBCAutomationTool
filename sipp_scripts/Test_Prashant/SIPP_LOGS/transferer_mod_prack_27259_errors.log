@@ -1,0 +1,85 @@
+sipp: The following events occured:
+2018-10-29	22:01:33:351	1540830693.351166: Aborting call on unexpected message for Call-Id '923ff84a022acb6dedb8e0496a3e975e': while pausing (index 5), received 'PRACK sip:81001001@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:81002001@10.133.48.157:16049;tag=1
+To: sip:81001001@10.133.39.159:5075;tag=1
+CSeq: 3 PRACK
+Call-ID: 923ff84a022acb6dedb8e0496a3e975e
+Contact: <sip:10.133.48.157:5060;transport=tcp>
+Record-Route: <sip:10.133.48.157:5060;ipcs-line=1;lr;transport=tcp>
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.48.157:5060;branch=z9hG4bK-s1632-000506629221-1--s1632-
+RAck: 1 1 INVITE
+Content-Length: 0
+
+'.
+2018-10-29	22:02:09:724	1540830729.724987: Dead call a1b88677cb07194dd7357758a91e750f (successful), received 'ACK sip:81001001@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:81002001@10.133.48.157:16049;tag=1
+To: sip:81001001@10.133.48.157:5060;tag=2
+CSeq: 1 ACK
+Call-ID: a1b88677cb07194dd7357758a91e750f
+Contact: <sip:81002001@10.133.48.157:5060;transport=tcp>
+Record-Route: <sip:10.133.48.157:5060;ipcs-line=2;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.157:5060;branch=z9hG4bK-s1632-001498667643-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-29	22:03:15:027	1540830795.027550: Dead call 5cdab57ce8ab7a095c514e394e8c7936 (successful), received 'ACK sip:81001001@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:81002001@10.133.48.157:16049;tag=1
+To: sip:81001001@10.133.48.157:5060;tag=2
+CSeq: 1 ACK
+Call-ID: 5cdab57ce8ab7a095c514e394e8c7936
+Contact: <sip:81002001@10.133.48.157:5060;transport=tcp>
+Record-Route: <sip:10.133.48.157:5060;ipcs-line=3;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.157:5060;branch=z9hG4bK-s1632-000782876664-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-29	22:04:33:348	1540830873.348936: Aborting call on an unexpected CANCEL for call: 923ff84a022acb6dedb8e0496a3e975e.
+2018-10-29	22:07:54:574	1540831074.574609: Dead call ff064e69b4156653c367dc032a19c60e (successful), received 'ACK sip:81001001@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:81002001@10.133.48.157:16049;tag=1
+To: sip:81001001@10.133.48.157:5060;tag=2
+CSeq: 1 ACK
+Call-ID: ff064e69b4156653c367dc032a19c60e
+Contact: <sip:81002001@10.133.48.157:5060;transport=tcp>
+Record-Route: <sip:10.133.48.157:5060;ipcs-line=4;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.157:5060;branch=z9hG4bK-s1632-000723250719-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-29	22:08:38:268	1540831118.268955: Dead call 11017d302118e718715273777b3f140f (successful), received 'ACK sip:81001001@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:81002001@10.133.48.157:16049;tag=1
+To: sip:81001001@10.133.48.157:5060;tag=2
+CSeq: 1 ACK
+Call-ID: 11017d302118e718715273777b3f140f
+Contact: <sip:81002001@10.133.48.157:5060;transport=tcp>
+Record-Route: <sip:10.133.48.157:5060;ipcs-line=5;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.157:5060;branch=z9hG4bK-s1632-001312292933-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-29	22:10:25:785	1540831225.785584: Dead call a1e6be621d36af2698915375c6a43973 (successful), received 'ACK sip:81001001@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:81002001@10.133.48.157:16049;tag=1
+To: sip:81001001@10.133.48.157:5060;tag=2
+CSeq: 1 ACK
+Call-ID: a1e6be621d36af2698915375c6a43973
+Contact: <sip:81002001@10.133.48.157:5060;transport=tcp>
+Record-Route: <sip:10.133.48.157:5060;ipcs-line=6;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.157:5060;branch=z9hG4bK-s1632-000217899478-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-29	22:26:04:722	1540832164.722968: Aborting call on an unexpected BYE for call: a1b88677cb07194dd7357758a91e750f.
+2018-10-29	22:27:10:024	1540832230.024091: Aborting call on an unexpected BYE for call: 5cdab57ce8ab7a095c514e394e8c7936.
+2018-10-29	22:31:49:571	1540832509.571617: Aborting call on an unexpected BYE for call: ff064e69b4156653c367dc032a19c60e.
+2018-10-29	22:32:33:272	1540832553.272027: Aborting call on an unexpected BYE for call: 11017d302118e718715273777b3f140f.
+2018-10-29	22:34:20:893	1540832660.893542: Aborting call on an unexpected BYE for call: a1e6be621d36af2698915375c6a43973.

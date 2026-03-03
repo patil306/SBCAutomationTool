@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic UAS responder">
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<recv request="INVITE" crlf="true">
+</recv>
+  
+<!-- The '[last_*]' keyword is replaced automatically by the          -->
+<!-- specified header if it was present in the last message received  -->
+<!-- (except if it was a retransmission). If the header was not       -->
+<!-- present or if no message has been received, the '[last_*]'       -->
+<!-- keyword is discarded, and all bytes until the end of the line    -->
+<!-- are also discarded.                                              -->
+<!--                                                                  -->
+<!-- If the specified header was present several times in the         -->
+<!-- message, all occurences are concatenated (CRLF seperated)        -->
+<!-- to be used in place of the '[last_*]' keyword.                   -->
+<!--
+<send>
+<![CDATA[
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+-->
+<send>
+<![CDATA[
+SIP/2.0 407 Proxy Authentication Required
+[last_Via:]
+[last_From:]
+[last_To:];tag=[call_number]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Proxy-Authenticate: Digest realm="213.152.17.108", nonce="5a02d7116139eb992ffb66da730bf04096cb0676", qop="auth", stale=true
+Content-Length: 0
+]]>
+</send>
+
+<recv request="ACK" rtd="true" crlf="true"/>
+
+<recv request="INVITE" crlf="true">
+</recv>
+
+<!-- The '[last_*]' keyword is replaced automatically by the          -->
+<!-- specified header if it was present in the last message received  -->
+<!-- (except if it was a retransmission). If the header was not       -->
+<!-- present or if no message has been received, the '[last_*]'       -->
+<!-- keyword is discarded, and all bytes until the end of the line    -->
+<!-- are also discarded.                                              -->
+<!--                                                                  -->
+<!-- If the specified header was present several times in the         -->
+<!-- message, all occurences are concatenated (CRLF seperated)        -->
+<!-- to be used in place of the '[last_*]' keyword.                   -->
+
+<send>
+<![CDATA[
+SIP/2.0 100 Giving a try
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Server: Keyyo-S4-P
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+
+<send>
+<![CDATA[
+SIP/2.0 180 Ringing
+[last_Via:]
+[last_From:]
+[last_To:];tag=123
+[last_Call-ID:]
+[last_CSeq:]
+Server: Keyyo B2BUA
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+<pause milliseconds="500"/> 
+
+
+<send>
+<![CDATA[
+SIP/2.0 183 Session Progress
+[last_Via:]
+[last_From:]
+[last_To:];tag=123
+[last_Call-ID:]
+[last_CSeq:]
+Server: Keyyo B2BUA
+Supported: replaces, x-sipura
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Type: application/sdp
+Content-Length: [len]
+
+v=0
+o=b2b 206721381 206721381 IN IP4 192.168.22.151
+s=b2b
+c=IN IP4 83.136.164.33
+t=0 0
+m=audio 59968 RTP/AVP 8 18 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=maxptime:150
+a=sendrecv
+a=nortpproxy:yes
+]]>
+</send>
+
+<pause milliseconds="6000"/> 
+
+<send retrans="500">
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=123
+      [last_Call-ID:]
+      [last_CSeq:]
+      Server: Keyyo B2BUA
+      Supported: replaces, x-sipura
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Content-Type: application/sdp
+      Content-Length: [len]
+
+      v=0
+      o=b2b 206721381 206721381 IN IP4 192.168.22.151
+      s=b2b
+      c=IN IP4 83.136.164.33
+      t=0 0
+      m=audio 59968 RTP/AVP 8 18 101
+      a=rtpmap:8 PCMA/8000
+      a=rtpmap:18 G729/8000
+      a=fmtp:18 annexb=no
+      a=rtpmap:101 telephone-event/8000
+      a=fmtp:101 0-15
+      a=ptime:20
+      a=maxptime:150
+      a=sendrecv
+      a=nortpproxy:yes
+    ]]>
+</send>
+
+<recv request="ACK" rtd="true" crlf="true"/>
+<!--/recv <sip:[local_ip]:[local_port];transport=[transport]> -->
+<!-- <pause milliseconds="3000"/> -->
+
+<send retrans="500">
+<![CDATA[
+  INVITE sip:[field0]@[remote_ip]:[remote_port] SIP/2.0
+  Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+  From: sip:[field1]@[local_ip];tag=123
+  To: sip:[field0]@[remote_ip]:[remote_port];tag=1
+  [last_Call-ID:]
+  CSeq: 102 INVITE
+  Contact: sip:[field1]@[local_ip]:[local_port];transport=TCP
+  Supported: replaces
+  Max-Forwards: 70
+  User-Agent: Keyyo B2BUA
+  Supported: replaces, x-sipura
+  Content-Type: application/sdp
+  Content-Length: [len]
+
+  v=0
+  o=b2b 206721381 206721382 IN IP4 192.168.23.234
+  s=b2b
+  c=IN IP4 83.136.164.33
+  t=0 0
+  m=audio 59968 RTP/AVP 8 101
+  a=rtpmap:8 PCMA/8000
+  a=rtpmap:101 telephone-event/8000
+  a=fmtp:101 0-15
+  a=ptime:20
+  a=maxptime:150
+  a=sendrecv
+  a=nortpproxy:yes 
+ ]]>
+</send>
+
+<recv response="100"
+        optional="true">
+</recv>
+
+
+<recv response="200" rrs="true">
+</recv>
+
+<send>
+<![CDATA[
+ACK sip:[field0]@[remote_ip]:[remote_port];transport=TCP SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: sip:[field1]@[local_ip];tag=123
+To: sip:[field0]@[remote_ip]:[remote_port][peer_tag_param]
+[last_Call-ID:]
+CSeq: 102 ACK
+[routes]
+Contact: sip:[field1]@[local_ip]:[local_port];transport=TCP
+Max-Forwards: 70
+Content-Length: 0
+]]>
+</send>
+</scenario>

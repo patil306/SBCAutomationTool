@@ -1,0 +1,17 @@
+----------------------------------------------- 2019-06-17 18:05:30:875.658
+TLS message received [607] bytes :
+
+REGISTER sips:40006@192.168.5.12:6027 SIP/2.0
+From: sips:40006@192.168.55.79;tag=1
+To: sips:4078@192.168.5.12:6027
+CSeq: 1 REGISTER
+Call-ID: 0ebd0261ed97b73b95879f23d0188807
+Contact: <sips:4078@192.168.55.79:5061;transport=tls>;q=0;expires=3600;+avaya.gmtoffset="0:00";+avaya.js-ver="1.0";+avaya.model="n/a";+avaya.sn="n/a";+avaya.firmware="n/a";+sip.instance="<urn:uuid:d2336786-cc37-3710-ee15-6984a96f699e>";reg-id=1
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.55.79:5061;branch=z9hG4bK-s1632-000163487193-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+

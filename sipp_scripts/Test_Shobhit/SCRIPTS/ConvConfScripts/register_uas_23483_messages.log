@@ -1,0 +1,422 @@
+----------------------------------------------- 2019-08-02 15:31:16:9.163
+TCP message received [381] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=88896f1a95ba
+To: <sip:123@sbct4.com>
+CSeq: 1 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001296185114-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:31:16:10.895
+TCP message sent (478 bytes):
+
+SIP/2.0 200 OK
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001296185114-1--s1632-
+From: <sip:123@10.133.39.176:16393>;tag=88896f1a95ba
+To:sip:123@sbct4.com;tag=1
+CSeq:1 REGISTER
+Contact: <sip:123@10.133.39.159:5060;transport=TCP>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported:
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2019-08-02 15:31:46:20.266
+TCP message received [381] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=396555703673
+To: <sip:123@sbct4.com>
+CSeq: 2 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001606704963-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=396555703673
+To: <sip:123@sbct4.com>
+CSeq: 2 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001606704963-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:32:16:19.841
+TCP message received [381] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=7d152309a2d2
+To: <sip:123@sbct4.com>
+CSeq: 3 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001966896900-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=7d152309a2d2
+To: <sip:123@sbct4.com>
+CSeq: 3 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001966896900-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:32:46:21.457
+TCP message received [381] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=8cc5d74e5d5d
+To: <sip:123@sbct4.com>
+CSeq: 4 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-000425951181-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=8cc5d74e5d5d
+To: <sip:123@sbct4.com>
+CSeq: 4 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-000425951181-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:32:51:24.455
+TCP message received [381] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=048c693d787a
+To: <sip:123@sbct4.com>
+CSeq: 5 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001027245332-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=048c693d787a
+To: <sip:123@sbct4.com>
+CSeq: 5 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001027245332-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:32:56:25.378
+TCP message received [381] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=5ac6c2586104
+To: <sip:123@sbct4.com>
+CSeq: 6 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-000495574543-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=5ac6c2586104
+To: <sip:123@sbct4.com>
+CSeq: 6 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-000495574543-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:33:01:30.100
+TCP message received [381] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=6c7fe46321e2
+To: <sip:123@sbct4.com>
+CSeq: 7 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001966134917-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=6c7fe46321e2
+To: <sip:123@sbct4.com>
+CSeq: 7 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001966134917-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:33:06:30.989
+TCP message received [381] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=c82ca74f27e1
+To: <sip:123@sbct4.com>
+CSeq: 8 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001662557339-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=c82ca74f27e1
+To: <sip:123@sbct4.com>
+CSeq: 8 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001662557339-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:33:11:32.309
+TCP message received [381] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=1d3e8d2a3d08
+To: <sip:123@sbct4.com>
+CSeq: 9 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001489420821-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=1d3e8d2a3d08
+To: <sip:123@sbct4.com>
+CSeq: 9 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001489420821-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:33:16:34.255
+TCP message received [382] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=453e547e1295
+To: <sip:123@sbct4.com>
+CSeq: 10 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001962895849-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=453e547e1295
+To: <sip:123@sbct4.com>
+CSeq: 10 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001962895849-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:33:21:36.345
+TCP message received [382] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=5a8ae503cae5
+To: <sip:123@sbct4.com>
+CSeq: 11 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001892523426-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=5a8ae503cae5
+To: <sip:123@sbct4.com>
+CSeq: 11 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001892523426-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:33:26:37.950
+TCP message received [382] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=cbd1dd14ec43
+To: <sip:123@sbct4.com>
+CSeq: 12 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-000098767198-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=cbd1dd14ec43
+To: <sip:123@sbct4.com>
+CSeq: 12 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-000098767198-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:33:31:41.113
+TCP message received [382] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=b2bb55169d4b
+To: <sip:123@sbct4.com>
+CSeq: 13 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-000847502638-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=b2bb55169d4b
+To: <sip:123@sbct4.com>
+CSeq: 13 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-000847502638-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:33:36:42.586
+TCP message received [382] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=b7fdd6267ab1
+To: <sip:123@sbct4.com>
+CSeq: 14 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-000142269684-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=b7fdd6267ab1
+To: <sip:123@sbct4.com>
+CSeq: 14 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-000142269684-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:33:41:44.516
+TCP message received [382] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=58a77a64712e
+To: <sip:123@sbct4.com>
+CSeq: 15 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001367698035-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d recieved a TCP message:
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:16393>;tag=58a77a64712e
+To: <sip:123@sbct4.com>
+CSeq: 15 REGISTER
+Call-ID: eb51e36ab446f172be607715a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001367698035-1--s1632-
+Content-Length: 0
+
+

@@ -1,0 +1,17 @@
+sipp: The following events occured:
+2019-06-27	15:45:03:030	1561630503.030823: Aborting call on unexpected message for Call-Id 'ABCD543': while expecting 'REGISTER' (index 0), received 'SUBSCRIBE sip:service@192.168.5.12:6025 SIP/2.0
+From: <sip:4078@sbcdev4.com>;tag=26304SIPpTag001
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 SUBSCRIBE
+Call-ID: ABCD543
+Contact: <sip:4078@192.168.55.79:5060;transport=tcp;subid_ipcs=2421272691>
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=27;lr;transport=tcp;subid_ipcs=2421272691>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.79:5060;branch=z9hG4bK-s1632-000563209446-1--s1632-
+Expires: 60
+Accept: application/pidf+xml
+Event: presence
+Allow-Events: presence
+Content-Length: 0
+
+'.

@@ -1,0 +1,1258 @@
+----------------------------------------------- 2021-09-22 13:09:49:60.526
+UDP message received [900] bytes :
+
+INVITE sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037
+CSeq: 1 INVITE
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: sip:reddy1@196.216.242.95:5060
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+User-Agent: Avaya J179 IP Phone 4.0.2.1.3 c81fea85c1d6
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000466009115-1--s1632-
+Subject: Performance Test
+Remote-LegId: 129
+Content-Type: application/sdp
+User-to-User: 00FA0800010046614ADEC5F
+Content-Length: 245
+
+v=0
+o=- 1509186683 1 IN IP4 192.168.57.16
+s=-
+c=IN IP4 196.216.242.95
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 35114 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2021-09-22 13:09:49:60.802
+UDP message sent (312 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000466009115-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:60.847
+UDP message sent (354 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000466009115-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:64.421
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 2 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001174845988-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:64.470
+UDP message sent (346 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001174845988-1--s1632-
+From:  sip:reddy1@196.216.242.95:5060;tag=1
+To:  sip:reddy2@192.168.56.202:6037;tag=1
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+CSeq: 2 PRACK
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:276.120
+UDP message sent (353 bytes):
+
+SIP/2.0 180 Ringing
+Via:  SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000466009115-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037;tag=2
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:280.995
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:281.061
+UDP message sent (346 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+From:  sip:reddy1@196.216.242.95:5060;tag=1
+To:  sip:reddy2@192.168.56.202:6037;tag=2
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+CSeq: 3 PRACK
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:281.098
+UDP message sent (348 bytes):
+
+SIP/2.0 200 OK
+Via:  SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000466009115-1--s1632-
+From:  sip:reddy1@196.216.242.95:5060;tag=1
+To:  sip:reddy2@192.168.56.202:6037;tag=1
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:782.195
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected UDP message received:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:50:783.467
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:52:85.652
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:52:85.801
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:52:586.490
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:52:586.687
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:52:784.462
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:53:588.287
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:53:588.448
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:55:589.622
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:55:589.830
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:56:785.500
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:59:591.105
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:59:591.253
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:00:787.148
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:03:592.589
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:03:592.749
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:04:789.102
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:07:594.071
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:07:594.256
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:08:790.440
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:11:594.861
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:11:595.022
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:12:791.564
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:15:596.421
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:15:596.579
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:16:792.593
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:19:597.862
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:19:598.011
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:20:794.375
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:23:599.452
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:23:599.612
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:24:794.885
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:27:600.517
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:27:600.688
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:28:796.547
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:31:601.546
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:31:601.709
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:32:797.728
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:35:602.921
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:35:603.093
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:36:798.864
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:39:604.497
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:39:604.664
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:40:800.294
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:43:605.807
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:43:606.007
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:44:801.891
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:47:607.295
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:47:607.460
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:48:802.444
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:51:608.275
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:51:608.432
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:52:803.686
+UDP message received [491] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call ec4ba3291150fc55d6bae46f0935be1d recieved a UDP message:
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 3 PRACK
+Call-ID: ec4ba3291150fc55d6bae46f0935be1d
+Contact: <sip:reddy1@196.216.242.95:5060;transport=udp>
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=53;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-001657168948-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:55:609.731
+UDP message received [297] bytes :
+
+CANCEL sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+CSeq: 2 CANCEL
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+Max-Forwards: 70
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:55:609.924
+UDP message sent (306 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000230307294-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.5.12:6037
+Call-ID: 7f3d9d303cdc2c1e73d9db33b7986e69
+CSeq: 2 CANCEL
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+

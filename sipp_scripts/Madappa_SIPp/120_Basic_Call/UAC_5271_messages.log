@@ -1,0 +1,128 @@
+----------------------------------------------- 2022-02-02 00:34:59:115.026
+UDP message sent (711 bytes):
+
+INVITE sip:reddy2@test.com SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6060;branch=z9hG4bK-5271-1-0
+From: sip:reddy1@test.com;tag=1
+To: sip:reddy2@10.133.48.121:5060
+Call-ID: 1-5271@10.133.39.159
+CSeq: 1 INVITE
+Supported: join, replaces, sdp-anat, timer
+Contact: sip:reddy1@10.133.39.159:6060
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+P-Asserted-Identity: <sip:+499511814633@bt.com>
+Content-Type: application/sdp
+Content-Length:   244
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 41532 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2022-02-02 00:34:59:119.902
+UDP message received [217] bytes :
+
+SIP/2.0 100 Trying
+From: sip:reddy1@test.com;tag=1
+To: sip:reddy2@10.133.48.121:5060
+CSeq: 1 INVITE
+Call-ID: 1-5271@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:6060;branch=z9hG4bK-5271-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2022-02-02 00:34:59:123.920
+UDP message received [273] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:reddy1@test.com;tag=1
+To: sip:reddy2@10.133.48.121:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-5271@10.133.39.159
+Contact: <sip:10.133.48.121:5060;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:6060;branch=z9hG4bK-5271-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2022-02-02 00:34:59:126.731
+UDP message received [759] bytes :
+
+SIP/2.0 200 OK
+From: sip:reddy1@test.com;tag=1
+To: sip:reddy2@10.133.48.121:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-5271@10.133.39.159
+Contact: <sip:10.133.48.121:5060;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:6060;branch=z9hG4bK-5271-1-0
+Content-Type: application/sdp
+Endpoint-View: <sip:69933@corp.pdo.om;gr=50ba05cbf94df38e2991be5be8d9237f>;local-tag=-3f35cca3609a447660fe49a0_T69933148.151.163.232;call-id=6aec18d4b23541ebb6fe0c291ec95;remote-tag=6aec18b6b23541ebb6fd0c291ec95
+Content-Length: 245
+
+v=0
+o=- 1509186683 1 IN IP4 192.168.56.202
+s=-
+c=IN IP4 10.133.48.121
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 35004 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2022-02-02 00:34:59:126.830
+UDP message sent (343 bytes):
+
+ACK sip:reddy2@192.168.56.202:5075 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6060;branch=z9hG4bK-5271-1-4
+From: sip:reddy1@test.com;tag=1
+To: sip:reddy2@10.133.48.121:5060;tag=1
+Call-ID: 1-5271@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:reddy1@10.133.39.159:6060;transport=UDP
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2022-02-02 00:34:59:628.365
+UDP message sent (351 bytes):
+
+BYE sip:10.133.48.121:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6060;branch=z9hG4bK-5271-1-6
+From: sip:reddy1@test.com;tag=1
+To: sip:reddy2@10.133.48.121:5060;tag=1
+Call-ID: 1-5271@10.133.39.159
+Contact: <sip:reddy1@10.133.39.159:6060;transport=UDP>
+CSeq: 2 BYE
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2022-02-02 00:34:59:632.580
+UDP message received [265] bytes :
+
+SIP/2.0 200 OK
+From: sip:reddy1@test.com;tag=1
+To: sip:reddy2@10.133.48.121:5060;tag=1
+CSeq: 2 BYE
+Call-ID: 1-5271@10.133.39.159
+Contact: <sip:10.133.48.121:5060;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:6060;branch=z9hG4bK-5271-1-6
+Content-Length: 0
+
+

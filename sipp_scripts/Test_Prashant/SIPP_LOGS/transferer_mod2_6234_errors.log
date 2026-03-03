@@ -1,0 +1,14 @@
+sipp: The following events occured:
+2018-10-11	14:34:37:604	1539248677.604583: Dead call f71779175406160fdcd333628e138b0f (successful), received 'BYE sip:10.133.39.159:5080;transport=TCP SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@sbcdev4.com;tag=1
+CSeq: 4 BYE
+Call-ID: f71779175406160fdcd333628e138b0f
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=2;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-002112711347-1--s1632-;originator
+Content-Length: 0
+
+'.

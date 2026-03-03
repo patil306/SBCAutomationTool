@@ -1,0 +1,62 @@
+PROXYDEVICES = ["SBC", "SM", "CM", "IPO"]
+USERAGENTS = [ "A_ext", "B_ext", "C_ext", "A_rw", "B_rw", "C_rw","A_int", "B_int", "C_int", "A_EXT", "B_EXT", "C_EXT", "A_RW", "B_RW", "C_RW","A_INT", "B_INT", "C_INT","A_ext", "B_ext", "C_ext", "A_rw", "B_rw", "C_rw","A_int", "B_int", "C_int", "a_ext", "b_ext", "c_ext", "a_rw", "b_rw", "c_rw","a_int", "b_int", "c_int"]
+
+KEYLIST = ["event", "method","direction","dialogid" ,"hascontent","hascontentchanged","targetnodenames","mediadirection","nextnode", "INS_HDR", "REP_HDR", "REM_HDR", "REP_REQURI", "REM_REQURIPARAM", "INS_SDPMLINE", "INS_SDPSESSATTR", "INS_SDPAUDIOCODEC"]
+#node ounters
+EXT_CNT = 0
+INT_CNT = 0
+RW_CNT = 0
+CALLFLOW = ""
+
+##VM details
+EXT1_VM_IP = "10.133.43.54"
+EXT2_VM_IP = "10.133.43.55"
+EXT3_VM_IP = "10.133.43.56"
+INT1_VM_IP = "10.133.43.57"
+INT2_VM_IP = "10.133.43.58"
+RW1_VM_IP = "10.133.43.51"
+RW2_VM_IP = "10.133.43.52"
+RW3_VM_IP = "10.133.43.53"
+CS1_VM_IP = "10.133.43.56"
+INT1_PRIVATE_IP = "192.168.59.101"
+INT2_PRIVATE_IP = "192.168.59.102"
+CS1_PRIVATE_IP = "192.168.59.103"
+CONTROLLERIP = "10.133.99.221"
+CALLFLOWJSONPATH = "/root/useragent/json/"            #this will be common on all the vm
+CLIENTPATH = "/root/useragent/json/linoxiderepo/useragent.py"
+CONFIGJSONPATHMASTER = "/root/JSON/SBC/"
+CONFIGJSONPATHTMP = "/root/JSON/TMP/"
+TMPX ="/root/JSON/TMP"
+SBC_CONFIG_API_CREDENTIALS = {"user": "automation", "password": "Automation_123" }
+SBC_MANAGEMENT_IP = "10.133.48.123"
+#SBCRWINTERFACE = "10.133.60.65"
+SBCRWINTERFACE = "10.133.39.154"
+SBCEXTINTERFACE = "10.133.60.69"
+SBCCSINTERFACE = "192.168.1.80"
+SMIP = "192.168.1.80"
+IPOIP = "x.y.z.w"
+#RW_USER_1 = "7771100101"
+#RW_USER_2 = "7771100102"
+RW_USER_1 = "6661000200"
+RW_USER_3 = "6661000203"
+RW_USER_2 = "8881100003"
+INT_USER_1 = "7771100104"
+INT_USER_2 = "7771100105"
+INT_USER_3 = "7771100106"
+TRK_USER_1 = "8001"
+TRK_USER_2 = "8002"
+TRK_USER_3 = "8003"
+CS_USER_1 = "7771100100"
+CS_USER_2 = "5202"
+GLOBALDOMAIN = "sbcsv.com"
+DISPLAY_RW_1 = "RW1"
+DISPLAY_RW_2 = "RW2"
+DISPLAY_RW_3 = "RW3"
+DISPLAY_EXT_1 = "EXT1"
+DISPLAY_EXT_2 = "EXT2"
+DISPLAY_EXT_3 = "EXT3"
+DISPLAY_INT_1 = "INT1"
+DISPLAY_INT_2 = "INT2"
+DISPLAY_CS_1 = "CS1"
+DISPLAY_CS_2 = "CS2"
+

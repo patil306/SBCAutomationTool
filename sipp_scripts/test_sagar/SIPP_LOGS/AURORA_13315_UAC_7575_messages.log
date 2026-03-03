@@ -1,0 +1,132 @@
+----------------------------------------------- 2018-07-12 20:09:39:424.049
+TCP message sent (1340 bytes):
+
+INVITE sip:40006@10.133.48.235 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-7575-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5060
+Call-ID: 1-7575@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   895
+
+v=0
+o=sips:66070417@20.20.64.92 2 2 IN IP4 20.20.64.92
+s=-
+c=IN IP4 20.20.64.92
+b=TIAS:576000
+a=activetalker:1
+t=0 0
+m=audio 5004 RTP/AVP 116 9 8 0 110 18 109
+a=sendrecv
+a=ptime:20
+a=rtpmap:116 OPUS/48000/2
+a=fmtp:116 maxplaybackrate=16000; sprop-maxcapturerate=16000; maxaveragebitrate=20000; stereo=0; sprop-stereo=0; cbr=0; useinbandfec=0; usedtx=0
+a=minptime:20
+a=maxptime:20
+a=rtpmap:9 G722/8000/1
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:0 PCMU/8000/1
+a=rtpmap:110 G726-32/8000/1
+a=rtpmap:18 G729/8000/1
+a=rtpmap:109 telephone-event/8000
+m=video 5006 RTP/AVP 100 98
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:100 H264/90000
+a=fmtp:100 profile-level-id=640c1e;max-mbps=54000;max-fs=3600;packetization-mode=1
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401e;max-mbps=54000;max-fs=3600;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+
+
+----------------------------------------------- 2018-07-12 20:09:39:441.262
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5060
+CSeq: 1 INVITE
+Call-ID: 1-7575@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-7575-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-12 20:09:39:462.086
+TCP message received [693] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5060;tag=123
+CSeq: 1 INVITE
+Call-ID: 1-7575@10.133.39.159
+Contact: <sip:10.133.48.235:5060;transport=tcp>
+Record-Route: <sip:10.133.48.235:5060;ipcs-line=74;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-7575-1-0
+Content-Type: application/sdp
+Content-Length: 312
+
+v=0
+o=- 1519362456 2 IN IP4 trk.com
+s=-
+c=IN IP4 10.133.48.235
+b=AS:64
+t=0 0
+m=audio 35138 RTP/AVP 0 109
+c=IN IP4 10.133.48.235
+a=sendrecv
+a=rtpmap:109 telephone-event/8000
+a=ptime:20
+m=video 0 RTP/AVP 100 98
+c=IN IP4 0.0.0.0
+a=sendrecv
+a=rtpmap:100 H264/90000
+a=rtpmap:98 H264/90000
+a=ptime:20
+
+----------------------------------------------- 2018-07-12 20:09:39:474.915
+TCP message received [1015] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5060;tag=456
+CSeq: 1 INVITE
+Call-ID: 1-7575@10.133.39.159
+Contact: <sip:10.133.48.235:5060;transport=tcp>
+Record-Route: <sip:10.133.48.235:5060;ipcs-line=74;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-7575-1-0
+Content-Type: application/sdp
+Content-Length: 634
+
+v=0
+o=- 1519362456 2 IN IP4 trk.com
+s=-
+c=IN IP4 10.133.48.235
+b=TIAS:576000
+t=0 0
+a=activetalker:1
+m=audio 35138 RTP/AVP 116 109
+a=sendrecv
+a=rtpmap:116 opus/48000/2
+a=fmtp:116 maxaveragebitrate=20000;maxplaybackrate=16000;stereo=0;cbr=0;useinbandfec=0;usedtx=0;sprop-maxcapturerate=16000;sprop-stereo=0
+a=rtpmap:109 telephone-event/8000
+a=maxptime:20
+a=minptime:20
+a=ptime:20
+m=video 35140 RTP/AVP 100
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:100 H264/90000
+a=fmtp:100 profile-level-id=640c1e;packetization-mode=1;max-mbps=54000;max-fs=3600
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=ptime:20
+

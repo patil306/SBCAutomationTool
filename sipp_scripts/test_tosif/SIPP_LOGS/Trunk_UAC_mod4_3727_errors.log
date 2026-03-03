@@ -1,0 +1,16 @@
+sipp: The following events occured:
+2018-07-19	14:48:45:770	1531991925.770072: Aborting call on unexpected message for Call-Id '1-3727@192.168.6.5': while expecting 'INVITE' (index 5), received 'ACK sip:81001001@192.168.6.5:5063;transport=tcp SIP/2.0
+From: sip:81002001@192.168.6.223:5060;tag=1
+To: sip:81001001@192.168.6.5:5063;tag=1
+CSeq: 1 ACK
+Call-ID: 1-3727@192.168.6.5
+Contact: <sip:81002001@192.168.6.223:5060;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=15;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.6.223:5060;branch=z9hG4bK-s1632-000128543733-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.

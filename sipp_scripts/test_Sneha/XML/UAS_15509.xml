@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic UAS responder">
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<!-- <ereg regexp="sip.*[^;tag]" search_in="hdr" header="From:" assign_to="1"/> -->
+
+<recv request="INVITE" crlf="true">
+  <action>
+<!--          <ereg regexp="sip.*[^;tag]" search_in="hdr" header="From:" assign_to="1"/> -->
+          <ereg regexp="(<?)(sip.*)(>?)(;tag=.*)" search_in="hdr" header="From:" assign_to="5,6"/>
+          <ereg regexp=".*" search_in="hdr" header="CSeq:" assign_to="invite_Cseq"/>
+          <ereg regexp=".*" search_in="hdr" header="Via:" assign_to="invite_Via"/>
+   </action>
+</recv>
+<Reference variables="5,6" />
+  
+<!-- The '[last_*]' keyword is replaced automatically by the          -->
+<!-- specified header if it was present in the last message received  -->
+<!-- (except if it was a retransmission). If the header was not       -->
+<!-- present or if no message has been received, the '[last_*]'       -->
+<!-- keyword is discarded, and all bytes until the end of the line    -->
+<!-- are also discarded.                                              -->
+<!--                                                                  -->
+<!-- If the specified header was present several times in the         -->
+<!-- message, all occurences are concatenated (CRLF seperated)        -->
+<!-- to be used in place of the '[last_*]' keyword.                   -->
+
+<send>
+<![CDATA[
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+  <send >
+    <![CDATA[
+      SIP/2.0 183 Session Progress
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Supported: 100rel, timer
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Record-Route: <sip:SM01@10.96.102.26;av-asset-uid=rw-3a41dd75;lr;transport=TCP>
+      Record-Route: <sip:127.0.0.2:15060;transport=tcp;ibmsid=local.1536031164302_139451_139682;lr>
+      Record-Route: <sip:SM01@10.96.102.26;av-asset-uid=rw-3a41dd75;lr;transport=TCP>
+      Record-Route: <sip:192.168.5.12:5092;ipcs-line=114122;lr;transport=tcp>
+      Content-Type: application/sdp
+      Content-Length: [len]
+
+      v=0
+      o=cs1k 4444 6666 IN IP[local_ip_type] [local_ip]
+      s=-
+      c=IN IP[media_ip_type] [media_ip]
+      t=0 0
+      m=audio [media_port] RTP/AVP 8 101
+      a=rtpmap:8 PCMA/8000
+      a=rtpmap:101 telephone-event/8000
+      a=fmtp:101 0-15
+    ]]>
+  </send>
+
+  <send retrans="500">
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_CSeq:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Session-Expires: 1800;refresher=uac
+      Supported: 100rel, timer, replaces
+      Require: timer
+      Record-Route: <sip:SM01@10.96.102.26;av-asset-uid=rw-3a41dd75;lr;transport=TCP>
+      Record-Route: <sip:127.0.0.2:15060;transport=tcp;ibmsid=local.1536031164302_139451_139682;lr>
+      Record-Route: <sip:SM01@10.96.102.25;av-asset-uid=rw-3a41dd75;lr;transport=TCP>
+      Record-Route:<sip:192.168.6.5:5095;ipcs-line=2;lr;transport=tcp>
+      Record-Route: <sip:192.168.5.12:5092;ipcs-line=114122;lr;transport=tcp>      
+      Content-Type: application/sdp
+      Content-Length: [len]
+
+      v=0
+      o=cs1k 4444 6666 IN IP[local_ip_type] [local_ip]
+      s=-
+      c=IN IP[media_ip_type] [media_ip]
+      t=0 0
+      m=audio [media_port] RTP/AVP 8 101
+      a=rtpmap:8 PCMA/8000
+      a=rtpmap:101 telephone-event/8000
+      a=fmtp:101 0-15
+    ]]>
+  </send>
+
+<!--/recv <sip:[local_ip]:[local_port];transport=[transport]> -->
+<recv request="ACK" rtd="true" crlf="true">
+</recv>
+
+<!-- Send REFER towards SBC to transfer the call to the Agent 
+<pause milliseconds="2000"/>
+
+<send retrans="500">
+<![CDATA[
+
+REFER sip:[field0]@[remote_ip]:[remote_port];transport=[transport] SIP/2.0
+[last_Via:]
+From: [$2]
+To: [$3]
+Call-ID: [call_id]
+CSeq: 1 REFER
+Refer-To: <sip:40008@[local_ip]:5095;transport=[transport]>
+Referred-By: [$4]
+Contact: <sip:40008@[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+
+]]>
+ </send>
+
+<recv response="202" optional="true">
+  </recv>
+
+<recv request="NOTIFY" crlf="true">
+</recv>
+  <send >
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Content-Type: application/sdp
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+<recv request="NOTIFY" crlf="true">
+</recv>
+  <send >
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Content-Type: application/sdp
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+<recv request="NOTIFY" crlf="true">
+</recv>
+  <send >
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Content-Type: application/sdp
+      Content-Length: 0
+
+    ]]>
+  </send>
+<recv request="NOTIFY" crlf="true">
+</recv>
+  <send >
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Content-Type: application/sdp
+      Content-Length: 0
+
+    ]]>
+  </send>
+-->
+
+
+<!-- Send BYE towards SBC to terminate the IVR Session-->
+<!--
+<send >
+<![CDATA[
+
+BYE [$1] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: [$2]
+To: [$3]
+Call-ID: [call_id]
+CSeq: 2 BYE
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+
+]]>
+  </send>
+
+<recv response="200" optional="true">
+  </recv>
+-->
+<recv request="BYE" crlf="true">
+</recv>
+
+<send >
+<![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=[call_number]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Type: application/sdp
+Content-Length: 0
+
+]]>
+</send>
+
+<pause milliseconds="5000"/> 
+ 
+<send retrans="500">
+    <![CDATA[
+      SIP/2.0 200 OK
+      Via: [$invite_Via]
+      CSeq: [$invite_Cseq]
+      [last_From:]
+      [last_To:]
+      [last_Call-ID:]
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Session-Expires: 1800;refresher=uac
+      Supported: 100rel, timer, replaces
+      Require: timer
+      Record-Route: <sip:SM01@10.96.102.26;av-asset-uid=rw-3a41dd75;lr;transport=TCP>
+      Record-Route: <sip:127.0.0.2:15060;transport=tcp;ibmsid=local.1536031164302_139451_139682;lr>
+      Record-Route: <sip:SM01@10.96.102.25;av-asset-uid=rw-3a41dd75;lr;transport=TCP>
+      Record-Route:<sip:192.168.6.5:5095;ipcs-line=2;lr;transport=tcp>
+      Record-Route: <sip:192.168.5.12:5092;ipcs-line=114122;lr;transport=tcp>
+      Content-Type: application/sdp
+      Content-Length: [len]
+
+      v=0
+      o=cs1k 4444 6666 IN IP[local_ip_type] [local_ip]
+      s=-
+      c=IN IP[media_ip_type] [media_ip]
+      t=0 0
+      m=audio [media_port] RTP/AVP 8 101
+      a=rtpmap:8 PCMA/8000
+      a=rtpmap:101 telephone-event/8000
+      a=fmtp:101 0-15
+    ]]>
+  </send>
+
+
+</scenario>

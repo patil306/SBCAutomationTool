@@ -1,0 +1,138 @@
+----------------------------------------------- 2017-11-02 16:17:02:155.752
+TCP message received [1005] bytes :
+
+INVITE sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15297;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 1 INVITE
+Call-ID: 1e97354efcd813033d92551bf6fa4c29
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=5;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000922845446-1--s1632-
+Subject: Performance Test
+Authorization: Digest username="Vola9*9Bj",realm="sbcdev4.com",nonce="BroadWorksXj979w5zlTyinn46BW",response="8cf961363814ecdab391effdd5cbafc7",uri="sip:4079@sbcdev4.com",algorithm=MD5,qop=auth,nc=00000017,cnonce="a9f25494d2cb47b9bbcf"
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 211
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.73.4
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35008 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2017-11-02 16:17:02:156.125
+TCP message sent (301 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000922845446-1--s1632-
+From: sip:4078@10.133.73.4:15297;tag=1
+To: sip:4079@10.133.39.159:5060
+Call-ID: 1e97354efcd813033d92551bf6fa4c29
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2017-11-02 16:17:02:156.252
+TCP message sent (358 bytes):
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000922845446-1--s1632-
+From: sip:4078@10.133.73.4:15297;tag=1
+To: sip:4079@10.133.39.159:5060
+Call-ID: 1e97354efcd813033d92551bf6fa4c29
+CSeq: 1 INVITE
+WWW-Authenticate: DIGEST qop="auth",nonce="BroadWorksXj97drws0T3t0t2hBW",realm="sbcdev4.com",stale=true,algorithm=MD5
+
+
+----------------------------------------------- 2017-11-02 16:17:21:800.563
+TCP message received [1005] bytes :
+
+INVITE sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15297;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 1 INVITE
+Call-ID: 3076c41d3d72f07b435a591485838601
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=6;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000182058093-1--s1632-
+Subject: Performance Test
+Authorization: Digest username="Vola9*9Bj",realm="sbcdev4.com",nonce="BroadWorksXj979w5zlTyinn46BW",response="8cf961363814ecdab391effdd5cbafc7",uri="sip:4079@sbcdev4.com",algorithm=MD5,qop=auth,nc=00000017,cnonce="a9f25494d2cb47b9bbcf"
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 211
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.73.4
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35010 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2017-11-02 16:17:21:800.786
+TCP message sent (301 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000182058093-1--s1632-
+From: sip:4078@10.133.73.4:15297;tag=1
+To: sip:4079@10.133.39.159:5060
+Call-ID: 3076c41d3d72f07b435a591485838601
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2017-11-02 16:17:21:800.874
+TCP message sent (358 bytes):
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000182058093-1--s1632-
+From: sip:4078@10.133.73.4:15297;tag=1
+To: sip:4079@10.133.39.159:5060
+Call-ID: 3076c41d3d72f07b435a591485838601
+CSeq: 1 INVITE
+WWW-Authenticate: DIGEST qop="auth",nonce="BroadWorksXj97drws0T3t0t2hBW",realm="sbcdev4.com",stale=true,algorithm=MD5
+
+
+----------------------------------------------- 2017-11-02 16:17:21:802.475
+TCP message received [352] bytes :
+
+ACK sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15297;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 1 ACK
+Call-ID: 1e97354efcd813033d92551bf6fa4c29
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000922845446-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+ACK sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15297;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 1 ACK
+Call-ID: 1e97354efcd813033d92551bf6fa4c29
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000922845446-1--s1632-
+Content-Length: 0
+
+

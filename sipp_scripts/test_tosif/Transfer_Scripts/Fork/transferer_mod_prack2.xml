@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic UAS responder">
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<!-- <ereg regexp="sip.*[^;tag]" search_in="hdr" header="From:" assign_to="1"/> -->
+
+<recv request="INVITE" crlf="true">
+  <action>
+      <ereg regexp=".*" search_in="hdr" header="Via:" assign_to="1"/>
+   </action>
+</recv>
+  
+<!-- The '[last_*]' keyword is replaced automatically by the          -->
+<!-- specified header if it was present in the last message received  -->
+<!-- (except if it was a retransmission). If the header was not       -->
+<!-- present or if no message has been received, the '[last_*]'       -->
+<!-- keyword is discarded, and all bytes until the end of the line    -->
+<!-- are also discarded.                                              -->
+<!--                                                                  -->
+<!-- If the specified header was present several times in the         -->
+<!-- message, all occurences are concatenated (CRLF seperated)        -->
+<!-- to be used in place of the '[last_*]' keyword.                   -->
+
+<send>
+<![CDATA[
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+<send retrans="500">
+<![CDATA[
+SIP/2.0 180 Ringing
+[last_Via:]
+[last_From:]
+[last_To:];tag=1
+[last_Call-ID:]
+[last_CSeq:]
+Require: 100rel
+RSeq: 1
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Type: application/sdp
+Content-Length: 0
+]]>
+</send>
+
+<recv request="PRACK" rtd="true" crlf="true">
+</recv>
+
+
+  <send retrans="500">
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Content-Type: application/sdp
+      Content-Length: [len]
+    ]]>
+      </send>
+
+<pause milliseconds="5000"/>
+<send retrans="500">
+<![CDATA[
+SIP/2.0 183 Session Progress
+Via:[$1]
+[last_From:]
+To: sip:[field1]@[remote_ip]:[remote_port];tag=1
+[last_Call-ID:]
+CSeq: 1 INVITE
+Require: 100rel
+RSeq: 2
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Type: application/sdp
+Content-Length: 0
+]]>
+</send>
+  <send retrans="500">
+    <![CDATA[
+      SIP/2.0 200 OK
+      Via:[$1]
+      [last_From:]
+      To: sip:[field1]@[remote_ip]:[remote_port];tag=2
+      [last_Call-ID:]
+      CSeq: 1 INVITE
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>i
+      Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+      Content-Type: application/sdp
+      Content-Length: [len]
+
+      v=0
+      o=user1 53655765 2353687637 IN IP[local_ip_type] [local_ip]
+      s=-
+      c=IN IP[media_ip_type] [media_ip]
+      t=0 0
+      m=audio [media_port] RTP/AVP 0 8
+      a=ptime:10
+    ]]>
+  </send>
+
+<recv request="PRACK" rtd="true" crlf="true">
+</recv>
+
+
+  <send retrans="500">
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Content-Type: application/sdp
+      Content-Length: [len]
+    ]]>
+    </send>
+<!--/recv <sip:[local_ip]:[local_port];transport=[transport]> -->
+<recv request="ACK" rtd="true" crlf="true">
+  <action>
+<!--          <ereg regexp=".*" search_in="hdr" header="From:" assign_to="2"/>
+          <ereg regexp=".*" search_in="hdr" header="To:" assign_to="3"/>
+-->   </action>
+</recv>
+
+<pause milliseconds="5000"/>
+
+<!-- Send REFER towards SBC to transfer the call to the Agent -->
+
+
+<pause milliseconds="5000"/>
+
+
+<!-- Send BYE towards SBC to terminate the IVR Session-->
+
+<recv request="BYE" rtd="true" crlf="true">
+</recv>
+
+<send>
+<![CDATA[
+
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+
+]]>
+</send>
+
+<!--
+<send retrans="500">
+<![CDATA[
+
+BYE sip:[field1]@[remote_ip]:[remote_port] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: sip:[field1]@[local_ip]:[local_port];tag=2
+To: sip:[field0]@[remote_ip]:[remote_port];tag=1
+Call-ID: [call_id]
+CSeq: 1 BYE
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+
+]]>
+  </send>
+
+<recv response="200" optional="true">
+  </recv>
+-->
+</scenario>

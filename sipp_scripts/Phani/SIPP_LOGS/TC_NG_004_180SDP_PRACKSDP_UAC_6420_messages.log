@@ -1,0 +1,296 @@
+----------------------------------------------- 2018-09-07 17:55:23:927.044
+TCP message sent (669 bytes):
+
+INVITE sip:4079@10.133.48.151:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5088;branch=z9hG4bK-6420-1-0
+From: sip:4078@10.133.39.159:5088;tag=1
+To: sip:4079@10.133.48.151:5060
+Call-ID: 1-6420@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:4078@10.133.39.159:5088;transport=TCP>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   202
+
+v=0
+o=user1 53655765 2353687640 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-07 17:55:23:938.480
+TCP message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@10.133.39.159:5088;tag=1
+To: sip:4079@10.133.48.151:5060
+CSeq: 1 INVITE
+Call-ID: 1-6420@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5088;branch=z9hG4bK-6420-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-07 17:55:25:947.956
+TCP message received [620] bytes :
+
+SIP/2.0 183 Session Progress
+From: sip:4078@10.133.39.159:5088;tag=1
+To: sip:4079@10.133.48.151:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-6420@10.133.39.159
+Contact: <sip:10.133.48.151:5060;transport=tcp>
+Record-Route: <sip:10.133.48.151:5060;ipcs-line=26;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5088;branch=z9hG4bK-6420-1-0
+Require: 100rel
+RSeq: 1
+Content-Type: application/sdp
+Content-Length: 203
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.151
+s=-
+c=IN IP4 10.133.48.151
+t=0 0
+m=audio 35036 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-07 17:55:25:948.303
+TCP message sent (581 bytes):
+
+PRACK sip:10.133.48.151:5060;transport=tcp SIP/2.0
+Via:SIP/2.0/TCP 10.133.39.159:5088;branch=z9hG4bK-6420-1-3
+From: sip:4078@10.133.39.159:5088;tag=1
+To: sip:4079@10.133.48.151:5060;tag=2
+Call-ID:1-6420@10.133.39.159
+CSeq:2 PRACK
+RAck:1 1 INVITE
+Contact:<sip:4078@10.133.39.159:5088;transport=TCP>
+Max-Forwards:70
+Subject:Performance Test
+Content-Type:application/sdp
+Content-Length:  178
+
+v=0
+o=user1 53655765 2353687641 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-07 17:55:25:955.309
+TCP message received [554] bytes :
+
+SIP/2.0 200 OK
+From: sip:4078@10.133.39.159:5088;tag=1
+To: sip:4079@10.133.48.151:5060;tag=2
+CSeq:2 PRACK
+Call-ID: 1-6420@10.133.39.159
+Contact: <sip:10.133.48.151:5060;transport=tcp>
+Record-Route: <sip:10.133.48.151:5060;ipcs-line=26;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5088;branch=z9hG4bK-6420-1-3
+Content-Type: application/sdp
+Content-Length: 179
+
+v=0
+o=user1 53655765 2353687638 IN IP4 10.133.48.151
+s=-
+c=IN IP4 10.133.48.151
+t=0 0
+m=audio 35036 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-07 17:55:27:962.010
+TCP message received [607] bytes :
+
+UPDATE sip:4078@10.133.39.159:5088;transport=tcp SIP/2.0
+From: sip:4079@10.133.48.151:5060;tag=2
+To: sip:4078@10.133.39.159:5088;tag=1
+CSeq: 2 UPDATE
+Call-ID: 1-6420@10.133.39.159
+Contact: <sip:10.133.48.151:5060;transport=tcp>
+Record-Route: <sip:10.133.48.151:5060;ipcs-line=26;lr;transport=tcp>
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.48.151:5060;branch=z9hG4bK-s1632-000879762701-1--s1632-
+Content-Type: application/sdp
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687639 IN IP4 10.133.48.151
+s=-
+c=IN IP4 10.133.48.151
+t=0 0
+m=audio 35036 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-07 17:55:27:962.262
+TCP message sent (478 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.48.151:5060;branch=z9hG4bK-s1632-000879762701-1--s1632-
+From: sip:4079@10.133.48.151:5060;tag=2
+To: sip:4078@10.133.39.159:5088;tag=1
+Call-ID: 1-6420@10.133.39.159
+CSeq: 2 UPDATE
+Contact: <sip:10.133.39.159:5088;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   149
+
+v=0
+o=user1 53655765 2353687642 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-07 17:55:29:978.897
+TCP message received [607] bytes :
+
+UPDATE sip:4078@10.133.39.159:5088;transport=tcp SIP/2.0
+From: sip:4079@10.133.48.151:5060;tag=2
+To: sip:4078@10.133.39.159:5088;tag=1
+CSeq: 3 UPDATE
+Call-ID: 1-6420@10.133.39.159
+Contact: <sip:10.133.48.151:5060;transport=tcp>
+Record-Route: <sip:10.133.48.151:5060;ipcs-line=26;lr;transport=tcp>
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.48.151:5060;branch=z9hG4bK-s1632-001718927470-1--s1632-
+Content-Type: application/sdp
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687639 IN IP4 10.133.48.151
+s=-
+c=IN IP4 10.133.48.151
+t=0 0
+m=audio 35036 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-07 17:55:29:979.111
+TCP message sent (478 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.48.151:5060;branch=z9hG4bK-s1632-001718927470-1--s1632-
+From: sip:4079@10.133.48.151:5060;tag=2
+To: sip:4078@10.133.39.159:5088;tag=1
+Call-ID: 1-6420@10.133.39.159
+CSeq: 3 UPDATE
+Contact: <sip:10.133.39.159:5088;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   149
+
+v=0
+o=user1 53655765 2353687642 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-07 17:55:29:992.412
+TCP message received [527] bytes :
+
+SIP/2.0 200 OK
+From: sip:4078@10.133.39.159:5088;tag=1
+To: sip:4079@10.133.48.151:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-6420@10.133.39.159
+Contact: <sip:10.133.48.151:5060;transport=tcp>
+Record-Route: <sip:10.133.48.151:5060;ipcs-line=26;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5088;branch=z9hG4bK-6420-1-0
+Content-Type: application/sdp
+Content-Length: 150
+
+v=0
+o=user1 53655765 2353687639 IN IP4 10.133.48.151
+s=-
+c=IN IP4 10.133.48.151
+t=0 0
+m=audio 35036 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-07 17:55:29:992.671
+TCP message sent (410 bytes):
+
+ACK sip:10.133.48.151:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5088;branch=z9hG4bK-6420-1-10
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@10.133.48.151:5060;tag=2
+Call-ID: 1-6420@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:4078@10.133.39.159:5088;transport=TCP
+Max-Forwards: 70
+Route: <sip:10.133.48.151:5060;ipcs-line=26;lr;transport=tcp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-07 17:55:30:507.216
+TCP message received [801] bytes :
+
+INVITE sip:4079@10.133.39.159:5088;transport=tcp SIP/2.0
+From: sip:4079@10.133.48.151:5060;tag=2
+To: sip:4078@sbcdev4.com;tag=1
+CSeq: 4 INVITE
+Call-ID: 1-6420@10.133.39.159
+Contact: <sip:4078@10.133.48.151:5060;transport=tcp>
+Record-Route: <sip:10.133.48.151:5060;ipcs-line=26;lr;transport=tcp>
+Supported: replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.151:5060;branch=z9hG4bK-s1632-001065297900-1--s1632-
+Subject: Performance Test
+Session-Expires: 1201
+Min-SE: 1201
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 203
+
+v=0
+o=user1 53655765 2353687640 IN IP4 10.133.48.151
+s=-
+c=IN IP4 10.133.48.151
+t=0 0
+m=audio 35036 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-07 17:55:30:507.437
+TCP message sent (463 bytes):
+
+SIP/2.0200 OK
+Via: SIP/2.0/TCP 10.133.48.151:5060;branch=z9hG4bK-s1632-001065297900-1--s1632-
+From: sip:4079@10.133.48.151:5060;tag=2
+To: sip:4078@sbcdev4.com;tag=1;
+Call-ID: 1-6420@10.133.39.159
+CSeq: 4 INVITE
+Contact:<sip:10.133.39.159:5088;transport=TCP>
+Content-Type:application/sdp
+Content-Length:  144
+
+v=0
+o=user153655765 2353687642 IN IP4 10.133.39.159
+s=-
+c=INIP4 10.133.39.159
+t=00
+m=audio6000 RTP/AVP 0
+a=rtpmap:0PCMU/8000
+a=ptime:20
+

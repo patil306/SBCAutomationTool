@@ -1,0 +1,14 @@
+sipp: The following events occured:
+2018-10-11	17:05:46:822	1539257746.822480: Dead call 19b07b45213b6577b089742e4fbb967d (successful), received 'BYE sip:10.133.39.159:5080;transport=TCP SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@sbcdev4.com;tag=1
+CSeq: 4 BYE
+Call-ID: 19b07b45213b6577b089742e4fbb967d
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=1;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000108183247-1--s1632-;originator
+Content-Length: 0
+
+'.

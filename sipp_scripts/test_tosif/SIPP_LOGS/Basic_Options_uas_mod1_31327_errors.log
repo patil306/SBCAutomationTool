@@ -1,0 +1,14 @@
+sipp: The following events occured:
+2021-01-08	19:18:33:017	1610113713.017479: Dead call 9a49c62998f237277d7fd72127a3c805d39efbae2788a464729c3ff4034c5ac (successful), received 'OPTIONS sip:sbcdev.com:5063 SIP/2.0
+From: <sip:abc@192.168.5.223:16253>;tag=a290c8767986
+To: <sip:abc@sbcdev.com>
+CSeq: 5840 OPTIONS
+Call-ID: 9a49c62998f237277d7fd72127a3c805d39efbae2788a464729c3ff4034c5ac
+Contact: <sip:abc@192.168.5.223:5060;transport=tcp>
+Record-Route: <sip:192.168.5.223:5060;ipcs-line=5840;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.5.223:5060;branch=z9hG4bK-s1632-001389179902-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.

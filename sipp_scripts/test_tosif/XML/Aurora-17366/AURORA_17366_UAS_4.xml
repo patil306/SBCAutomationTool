@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+
+<scenario name="Late NOTIFY">
+
+<recv request="REGISTER" crlf="true">
+<action>
+<ereg regexp="subid_ipcs=" search_in="hdr" header="Contact" assign_to="4,5"/>
+<assign assign_to="4" variable="5" />
+</action>
+</recv>
+
+
+<send>
+<![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=2
+[last_Call-ID:]
+CSeq: 1 REGISTER
+Contact: <sip:4078@192.168.55.79:[local_port];subid_ipcs=2244603254;transport=[transport]>
+Content-Length: 0
+Expires: 120
+]]>
+</send>
+
+
+<recv request="SUBSCRIBE" crlf="true">
+<action>
+<ereg regexp="tag=.*" search_in="hdr" header="From:" check_it="true" assign_to="9"/>
+
+<ereg regexp="sip:(.*)>" search_in="hdr" header="Contact" assign_to="4,5"/>
+<assign assign_to="4" variable="5" />
+<ereg regexp=".*" search_in="hdr" header="Via:" check_it="true" assign_to="7"/>
+</action>
+</recv>
+
+<send>
+<![CDATA[
+NOTIFY sip:[$5] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];rport;branch=z9hG4bK-s1632-001174722495-1--s1632-
+From: <sip:sipp@[local_ip]>;tag=5
+To:[field1] <sip:[field1]@[field3]>;[$9]
+[last_Call-ID:]
+Contact: <sip:sipp@[local_ip]:[local_port]>;transport=udp>;expires=300
+Max-Forwards: 70
+CSeq: 11 NOTIFY                                                                                                      
+Subscription-State: active;expires=2000                                                                              
+Server: Avaya Aura Presence Services 7.1.2.0-SNAPSHOT-230  
+Event: presence
+Content-Length: 0
+
+]]>
+</send>
+
+<send>
+<![CDATA[
+SIP/2.0 200 OK
+Via: [$7]
+From:<sip:sipp@[local_ip]>;[$9]
+To:[field1] <sip:[field1]@[field3]>;tag=5
+[last_Call-ID:]
+CSeq: 1 SUBSCRIBE
+Contact: <sip:sipp@[local_ip]:[local_port]>
+Content-Length: 0
+Expires: 60
+]]>
+</send>
+<recv response="200">
+</recv>
+
+<recv request="SUBSCRIBE" crlf="true">
+<action>
+<ereg regexp="tag=.*" search_in="hdr" header="From:" check_it="true" assign_to="9"/>
+
+<ereg regexp="sip:(.*)>" search_in="hdr" header="Contact" assign_to="4,5"/>
+<assign assign_to="4" variable="5" />
+<ereg regexp=".*" search_in="hdr" header="Via:" check_it="true" assign_to="7"/>
+</action>
+</recv>
+
+<send>
+<![CDATA[
+NOTIFY sip:[$5] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];rport;branch=z9hG4bK-s1632-001174722495-1--s1632-
+From: <sip:sipp@[local_ip]>;tag=5
+To:[field1] <sip:[field1]@[field3]>;[$9]
+[last_Call-ID:]
+Contact: <sip:sipp@[local_ip]:[local_port]>;transport=udp>;expires=300
+Max-Forwards: 70
+CSeq: 12 NOTIFY                                                                                                      
+Subscription-State: active;expires=2000                                                                              
+Server: Avaya Aura Presence Services 7.1.2.0-SNAPSHOT-230  
+Event: presence
+Content-Length: 0
+
+]]>
+</send>
+
+<send>
+<![CDATA[
+SIP/2.0 200 OK
+Via: [$7]
+From:<sip:sipp@[local_ip]>;[$9]
+To:[field1] <sip:[field1]@[field3]>;tag=5
+[last_Call-ID:]
+CSeq: 2 SUBSCRIBE
+Contact: <sip:sipp@[local_ip]:[local_port]>
+Content-Length: 0
+Expires: 60
+]]>
+</send>
+<recv response="200">
+</recv>
+
+
+
+<!-- definition of the response time repartition table (unit is ms)   -->
+<ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+<!-- definition of the call length repartition table (unit is ms)     -->
+<CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+
+</scenario>

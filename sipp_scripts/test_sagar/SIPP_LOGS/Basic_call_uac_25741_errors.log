@@ -1,0 +1,14 @@
+sipp: The following events occured:
+2018-11-12	15:32:14:972	1542016934.972478: The major watchdog timer 3000ms has been tripped (3007), 10 trips remaining..
+2018-11-12	15:32:14:980	1542016934.980320: Aborting call on unexpected message for Call-Id '1-25741@10.133.39.159': while expecting '100' (index 1), received 'SIP/2.0 403 Forbidden
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5061;tag=zXcVbNm136b114e0
+CSeq: 1 INVITE
+Call-ID: 1-25741@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-25741-1-0
+Via: SIP/2.0/TLS 127.0.0.2:15061;rport=34485;ibmsid=local.1535720411753_5635160_5652512;branch=z9hG4bK90714407181009
+Via: SIP/2.0/TLS 127.0.0.2:15061;rport;ibmsid=local.1535720411753_5635159_5652511;branch=z9hG4bK875007558535803
+Via: SIP/2.0/TLS 192.168.25.6;branch=z9hG4bKafdb47f0d75c41e8b91505056a2e428-AP;ft=1965;received=192.168.25.6;rport=19196
+Content-Length: 0
+
+'.

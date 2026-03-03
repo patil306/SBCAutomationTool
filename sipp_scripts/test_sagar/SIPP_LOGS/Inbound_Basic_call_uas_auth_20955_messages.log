@@ -1,0 +1,298 @@
+----------------------------------------------- 2017-11-02 16:18:50:594.394
+TCP message received [1005] bytes :
+
+INVITE sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15298;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 1 INVITE
+Call-ID: 70ce082382c06573d9c08d26d3afb144
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=7;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000498463181-1--s1632-
+Subject: Performance Test
+Authorization: Digest username="Vola9*9Bj",realm="sbcdev4.com",nonce="BroadWorksXj979w5zlTyinn46BW",response="8cf961363814ecdab391effdd5cbafc7",uri="sip:4079@sbcdev4.com",algorithm=MD5,qop=auth,nc=00000017,cnonce="a9f25494d2cb47b9bbcf"
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 211
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.73.4
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35012 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2017-11-02 16:18:50:594.640
+TCP message sent (301 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000498463181-1--s1632-
+From: sip:4078@10.133.73.4:15298;tag=1
+To: sip:4079@10.133.39.159:5060
+Call-ID: 70ce082382c06573d9c08d26d3afb144
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2017-11-02 16:18:50:594.726
+TCP message sent (239 bytes):
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000498463181-1--s1632-
+From: sip:4078@10.133.73.4:15298;tag=1
+To: sip:4079@10.133.39.159:5060
+Call-ID: 70ce082382c06573d9c08d26d3afb144
+CSeq: 1 INVITE
+
+
+----------------------------------------------- 2017-11-02 16:21:50:602.376
+TCP message received [524] bytes :
+
+CANCEL sip:4079@sbcdev4.com SIP/2.0
+From: sip:4078@10.133.73.4:15298;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 1 CANCEL
+Call-ID: 70ce082382c06573d9c08d26d3afb144
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000498463181-1--s1632-
+Authorization: Digest username="Vola9*9Bj",realm="sbcdev4.com",nonce="BroadWorksXj979w5zlTyinn46BW",response="8cf961363814ecdab391effdd5cbafc7",uri="sip:4079@sbcdev4.com",algorithm=MD5,qop=auth,nc=00000017,cnonce="a9f25494d2cb47b9bbcf"
+Content-Length: 0
+
+
+----------------------------------------------- 2017-11-02 16:21:50:603.109
+TCP message sent (297 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000498463181-1--s1632-
+From: sip:4078@10.133.73.4:15298;tag=1
+To: sip:4079@10.133.39.159:5060
+Call-ID: 70ce082382c06573d9c08d26d3afb144
+CSeq: 1 CANCEL
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2017-11-02 16:21:50:605.742
+TCP message received [352] bytes :
+
+ACK sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15298;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 1 ACK
+Call-ID: 70ce082382c06573d9c08d26d3afb144
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000498463181-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+ACK sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15298;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 1 ACK
+Call-ID: 70ce082382c06573d9c08d26d3afb144
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000498463181-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2017-11-02 16:35:54:580.367
+TCP message received [949] bytes :
+
+INVITE sip:1111@10.133.39.159;transport=tcp SIP/2.0
+From: "sut" <sip:5555@10.133.73.31;transport=tcp>;tag=15415SIPpTag011
+To: "1111" <sip:1111@10.133.39.159;transport=tcp>;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-20999@10.133.39.159
+Contact: <sip:5555@10.133.73.31:5060;transport=tcp>
+Record-Route: <sip:10.133.73.31:5060;ipcs-line=9;lr;transport=tcp>
+Record-Route: <sip:192.168.5.152:5060;ipcs-line=9;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.31:5060;branch=z9hG4bK-s1632-001474848224-1--s1632-
+Via: SIP/2.0/TCP 192.168.5.34:5060;branch=z9hG4bK-15415-1-5
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 290
+
+v=0
+o=user1 53655765 2062039861 IN IP4 127.0.0.1
+s=-
+c=IN IP4 10.133.73.31
+t=0 0
+m=audio 35002 RTP/SAVP 8
+k=base64:ihpPgWzSAuFEz4SLmnYk9LEa9A0TbPooIbRII+5Z
+a=rtpmap:8 PCMA/8000
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:NG+L29DAejSnpv/bPYp02KTBfCMYszhzivfU2k7Y|2^31|1:1
+
+----------------------------------------------- 2017-11-02 16:35:54:580.686
+TCP message sent (402 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.31:5060;branch=z9hG4bK-s1632-001474848224-1--s1632-, SIP/2.0/TCP 192.168.5.34:5060;branch=z9hG4bK-15415-1-5
+From: "sut" <sip:5555@10.133.73.31;transport=tcp>;tag=15415SIPpTag011
+To: "1111" <sip:1111@10.133.39.159;transport=tcp>;tag=1
+Call-ID: 1-20999@10.133.39.159
+CSeq: 2 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2017-11-02 16:35:54:580.772
+TCP message sent (340 bytes):
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/TCP 10.133.73.31:5060;branch=z9hG4bK-s1632-001474848224-1--s1632-, SIP/2.0/TCP 192.168.5.34:5060;branch=z9hG4bK-15415-1-5
+From: "sut" <sip:5555@10.133.73.31;transport=tcp>;tag=15415SIPpTag011
+To: "1111" <sip:1111@10.133.39.159;transport=tcp>;tag=1
+Call-ID: 1-20999@10.133.39.159
+CSeq: 2 INVITE
+
+
+----------------------------------------------- 2017-11-02 16:38:33:456.388
+TCP message received [951] bytes :
+
+INVITE sip:1111@10.133.39.159;transport=tcp SIP/2.0
+From: "sut" <sip:5555@10.133.73.31;transport=tcp>;tag=15486SIPpTag011
+To: "1111" <sip:1111@10.133.39.159;transport=tcp>;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-21009@10.133.39.159
+Contact: <sip:5555@10.133.73.31:5060;transport=tcp>
+Record-Route: <sip:10.133.73.31:5060;ipcs-line=20;lr;transport=tcp>
+Record-Route: <sip:192.168.5.152:5060;ipcs-line=20;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.31:5060;branch=z9hG4bK-s1632-001213880242-1--s1632-
+Via: SIP/2.0/TCP 192.168.5.34:5060;branch=z9hG4bK-15486-1-5
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 290
+
+v=0
+o=user1 53655765 2062039861 IN IP4 127.0.0.1
+s=-
+c=IN IP4 10.133.73.31
+t=0 0
+m=audio 35006 RTP/SAVP 8
+k=base64:ihpPgWzSAuFEz4SLmnYk9LEa9A0TbPooIbRII+5Z
+a=rtpmap:8 PCMA/8000
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:NG+L29DAejSnpv/bPYp02KTBfCMYszhzivfU2k7Y|2^31|1:1
+
+----------------------------------------------- 2017-11-02 16:38:33:456.679
+TCP message sent (402 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.31:5060;branch=z9hG4bK-s1632-001213880242-1--s1632-, SIP/2.0/TCP 192.168.5.34:5060;branch=z9hG4bK-15486-1-5
+From: "sut" <sip:5555@10.133.73.31;transport=tcp>;tag=15486SIPpTag011
+To: "1111" <sip:1111@10.133.39.159;transport=tcp>;tag=1
+Call-ID: 1-21009@10.133.39.159
+CSeq: 2 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2017-11-02 16:38:33:456.770
+TCP message sent (340 bytes):
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/TCP 10.133.73.31:5060;branch=z9hG4bK-s1632-001213880242-1--s1632-, SIP/2.0/TCP 192.168.5.34:5060;branch=z9hG4bK-15486-1-5
+From: "sut" <sip:5555@10.133.73.31;transport=tcp>;tag=15486SIPpTag011
+To: "1111" <sip:1111@10.133.39.159;transport=tcp>;tag=1
+Call-ID: 1-21009@10.133.39.159
+CSeq: 2 INVITE
+
+
+----------------------------------------------- 2017-11-02 16:38:33:458.308
+TCP message received [456] bytes :
+
+ACK sip:1111@10.133.39.159;transport=tcp SIP/2.0
+From: "sut" <sip:5555@10.133.73.31;transport=tcp>;tag=15415SIPpTag011
+To: "1111" <sip:1111@10.133.39.159;transport=tcp>;tag=1
+CSeq: 2 ACK
+Call-ID: 1-20999@10.133.39.159
+Contact: <sip:5555@10.133.73.31:5060;transport=tcp>
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.31:5060;branch=z9hG4bK-s1632-001474848224-1--s1632-
+Via: SIP/2.0/TCP 192.168.5.34:5060;branch=z9hG4bK-15415-1-5
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+ACK sip:1111@10.133.39.159;transport=tcp SIP/2.0
+From: "sut" <sip:5555@10.133.73.31;transport=tcp>;tag=15415SIPpTag011
+To: "1111" <sip:1111@10.133.39.159;transport=tcp>;tag=1
+CSeq: 2 ACK
+Call-ID: 1-20999@10.133.39.159
+Contact: <sip:5555@10.133.73.31:5060;transport=tcp>
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.31:5060;branch=z9hG4bK-s1632-001474848224-1--s1632-
+Via: SIP/2.0/TCP 192.168.5.34:5060;branch=z9hG4bK-15415-1-5
+Content-Length: 0
+
+
+----------------------------------------------- 2017-11-02 16:40:34:819.410
+TCP message received [951] bytes :
+
+INVITE sip:1111@10.133.39.159;transport=tcp SIP/2.0
+From: "sut" <sip:5555@10.133.73.31;transport=tcp>;tag=15507SIPpTag011
+To: "1111" <sip:1111@10.133.39.159;transport=tcp>;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-21014@10.133.39.159
+Contact: <sip:5555@10.133.73.31:5060;transport=tcp>
+Record-Route: <sip:10.133.73.31:5060;ipcs-line=29;lr;transport=tcp>
+Record-Route: <sip:192.168.5.152:5060;ipcs-line=29;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.31:5060;branch=z9hG4bK-s1632-000398433473-1--s1632-
+Via: SIP/2.0/TCP 192.168.5.34:5061;branch=z9hG4bK-15507-1-5
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 290
+
+v=0
+o=user1 53655765 2062039861 IN IP4 127.0.0.1
+s=-
+c=IN IP4 10.133.73.31
+t=0 0
+m=audio 35010 RTP/SAVP 8
+k=base64:ihpPgWzSAuFEz4SLmnYk9LEa9A0TbPooIbRII+5Z
+a=rtpmap:8 PCMA/8000
+a=ptime:20
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:NG+L29DAejSnpv/bPYp02KTBfCMYszhzivfU2k7Y|2^31|1:1
+
+----------------------------------------------- 2017-11-02 16:40:34:819.679
+TCP message sent (402 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.31:5060;branch=z9hG4bK-s1632-000398433473-1--s1632-, SIP/2.0/TCP 192.168.5.34:5061;branch=z9hG4bK-15507-1-5
+From: "sut" <sip:5555@10.133.73.31;transport=tcp>;tag=15507SIPpTag011
+To: "1111" <sip:1111@10.133.39.159;transport=tcp>;tag=1
+Call-ID: 1-21014@10.133.39.159
+CSeq: 2 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2017-11-02 16:40:34:819.767
+TCP message sent (340 bytes):
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/TCP 10.133.73.31:5060;branch=z9hG4bK-s1632-000398433473-1--s1632-, SIP/2.0/TCP 192.168.5.34:5061;branch=z9hG4bK-15507-1-5
+From: "sut" <sip:5555@10.133.73.31;transport=tcp>;tag=15507SIPpTag011
+To: "1111" <sip:1111@10.133.39.159;transport=tcp>;tag=1
+Call-ID: 1-21014@10.133.39.159
+CSeq: 2 INVITE
+
+

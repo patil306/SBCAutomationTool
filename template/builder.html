@@ -1,0 +1,242 @@
+<html>
+	<head></head>
+	<style>
+		/* .flex-container {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			height: 590px;
+		}
+		.flex-container > div {
+			width: 50%;
+			height: 550px;
+			margin: 12px;
+			border-radius: 3px;
+			background-color: #f1f2f0;
+		}
+ */
+		.container {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height:570px;
+                margin: auto;   
+                }
+
+            .one {
+                width: 70%;
+                height: 570px;
+                background: #f1f2f0;
+                float: left;
+            }
+
+            .two {
+                margin-left: 1%;
+                height: 570px;
+                width: 30%;
+                background: #f1f2f0;
+            }
+
+		.container2 { 
+			border:1px solid #ccc; 
+			width:95%; 
+			height: 250px; 
+			overflow-y: scroll;
+			align-items: left;
+		}
+/* 		.container1 { 
+			border:1px solid #ccc; 
+			width:95%; 
+			height: 100px; 
+			overflow-y: scroll;
+			align-items: left;
+		} */
+		a:link, a:visited {
+			font-family: Arial, Helvetica, sans-serif;
+			color: red;
+			height:20px;
+			width:20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			border-style: none;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script>
+	  
+//  $(document).ready(function(){
+//     $("#addValidation").click(function(){
+// 		$("#customFields2").append('<tr valign="top"><td><input type="text" class="code" id="header'+x+'" name="header'+x+'" value="" placeholder="Header" /></td><td><input type="text" class="code" id="parameter'+x+'" name="parameter'+x+'" value="" placeholder="Parameter" /> &nbsp;</td><td> <input type="text" class="code" id="value'+x+'" name="value'+x+'" value="" placeholder="Value" /> &nbsp;</td><td><a href="javascript:void(0);" class="remVal" style="text-decoration:none;" color: hotpink;><b>X<b></a></td></tr>');
+// 		x++;	
+//     });
+//     $("#customFields2").on('click','.remVal',function(){
+//         $(this).parent().parent().remove();
+//     });
+// });
+var x=2;
+$(document).ready(function(){
+    $("#addCF").click(function(){
+		if(x>3){
+            alert("Only 3 textboxes allow");
+            return false;
+		} 
+		$("#customFields").append('<tr valign="top"><td><select class="code" id = "networks'+x+'" name="networks'+x+'"><option value = "externalIp">SBC EXT. IP</option><option value = "internaIP">SBC Int. IP</option></select>&nbsp;</td><td><input type="text" class="code" id="SIPpIp'+x+'" size="13" name="SIPpIp'+x+'" value="" placeholder="xxx.xxx.xxx.xxx" readonly/>&nbsp;</td><td><input type="text" class="code" id="port'+x+'" size="5" name="port'+x+'" value="" placeholder="port" readonly/>&nbsp;</td><td><select class="code" id = "transport'+x+'" name="transport'+x+'"><option value = "tcp">TCP</option><option value = "udp">UDP</option><option value = "tls">TLS</option></select>&nbsp;</td><td><select class="code" id = "fileType'+x+'" name="fileType'+x+'"><option value = "UAC">UAC</option><option value = "UAS">UAS</option></select>&nbsp;</td><td><input type="file" name="file'+x+'" id="fileToUpload'+x+'">&nbsp;</td><td><input type="text" class="code" id="SIPpPort'+x+'" size="6" name="SIPpPort'+x+'" value="" placeholder="SIPpPort" readonly/> &nbsp;</td><td><a href="javascript:void(0);" class="remCF" style="text-decoration:none;" color: hotpink;><b>X<b></a></td></tr>');
+		x++;	
+    });
+    $("#customFields").on('click','.remCF',function(){
+        $(this).parent().parent().remove();
+		x--;
+    });
+}); 
+</script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<body>
+         <!--    <p>
+                    {% with messages = get_flashed_messages() %}
+                      {% if messages %}
+                            <ul class=flashes>
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                      {% endif %}
+                    {% endwith %}
+            </p> -->
+		<form  method="POST" action="/add-testcase" enctype="multipart/form-data">
+		<div class="container">
+			<div class="one">
+			<center>
+				<h1>Scenario Builder</h1>
+<!--	<select name="feature">
+    {% for feature in featurelist %}
+    <option value="{{feature}}">{{feature}}</option>
+            {% endfor %}
+</select>-->
+				<br>
+				<table>
+				<tr>
+				<td>
+				Test Case Name	&nbsp:<br><br>
+				</td>
+				<td colspan='3'>
+				<input type="text" size="45" name="testCase" id="testCase" placeholder='Test Case Name'/><br><br>
+				</td>
+				</tr>
+				<tr>
+				<td>
+				Select Feature	&nbsp&nbsp&nbsp:<br><br>
+				</td>
+				<td>
+				<select id = "listOfFeature" name="listOfFeature">
+					  {% for feature in features %}
+
+<option value="{{ feature[0] }}">{{ feature[1] }}</option>
+
+{% endfor %}
+
+				</select>&nbsp&nbsp&nbsp<br><br>
+				</td>
+				<td>
+				Configuration	&nbsp&nbsp:<br><br>
+				</td>
+				<td>
+				<select id = "listOfConfig" name="listOfConfig">
+					  {% for con in config %}
+
+<option value="{{ con[0] }}">{{ con[1] }}</option>
+
+{% endfor %}
+
+				</select>&nbsp&nbsp&nbsp<br><br>
+				</td>
+				</tr>
+				<!-- <tr>
+				<td>
+				Upload SIPp xml	:<br><br>
+				</td>
+				<td colspan='3'>
+				<input type="file" name="file" id="fileToUpload" multiple><br><br>
+				</td>
+				</tr> -->
+			</table>	
+				
+			</center>
+			<br><br>
+			<div class="container2"  style="margin-left: 13px;">
+				<input type="button" id="addCF" value="Add" style="margin-left: 750px;margin-top: 12px;">
+				<table class="form-table" id="customFields" style="margin-left:15px; margin-top: 12px;">
+					<tr >
+						<td>
+							<select class="code" id = "networks1" name="networks1">
+								<option value = "externalIp">SBC EXT. IP</option>
+								<option value = "internaIP">SBC Int. IP</option>
+							</select>&nbsp
+						</td>
+						<td>
+							<input type="text" class="code" id="SIPpIp1" size="13" name="SIPpIp1" value="" placeholder="xxx.xxx.xxx.xxx" readonly/>&nbsp
+						</td>
+						<td>
+							<input type="text" class="code" id="port1" size="5" name="port1" value="" placeholder="port" readonly/> &nbsp
+						</td>
+						<td>
+							<select class="code" id = "transport1" name="transport1">
+								<option value = "tcp">TCP</option>
+								<option value = "udp">UDP</option>
+								<option value = "tls">TLS</option>
+							</select>&nbsp
+						</td>
+						<td>
+							<select class="code" id = "fileType1" name="fileType1">
+								<option value = "UAC">UAC</option>
+								<option value = "UAS">UAS</option>
+							</select>&nbsp
+						</td>
+						<td>
+							<input type="file" name="file1" id="fileToUpload1">&nbsp
+						</td>
+						<td>
+							<input type="text" class="code" id="SIPpPort1" size="6" name="SIPpPort1" value="" placeholder="SIPpPort" readonly/> &nbsp
+						</td>
+						<td>
+						</td>
+					</tr>
+				</table>
+			</div>
+			{% for message in get_flashed_messages() %}
+				<center><p><h2 style="color: green;">{{ message }}</h2></p></center>
+			{% endfor %}
+			<!-- <b>&nbsp&nbspValidation	:</b>
+			<div class="container2"  style="margin-left: 13px;">
+				<input type="button" id="addCF" value="Add" style="margin-left: 750px;margin-top: 12px;">
+				<table class="form-table" id="customFields1" style="margin-left:30px; margin-top: 12px;">
+					<tr>
+						<td>
+							<input type="text" class="code" id="header" name="header" value="" placeholder="Header" />&nbsp;&nbsp;
+						</td>
+						<td>
+							<input type="text" class="code" id="parameter" name="parameter" value="" placeholder="Parameter" /> &nbsp;
+						</td>
+						<td>
+							<input type="text" class="code" id="value" name="value" value="" placeholder="Value" /> &nbsp;
+						</td>
+						<td>
+						</td>
+					</tr>
+				</table>
+			</div> -->
+		</div>
+			<div class="two">
+				<textarea rows="18" cols="47" id="testCaseDesc" name="testCaseDesc" value="" placeholder='Test Case Description'></textarea><br>
+				<textarea rows="7" cols="47" id="featureDesc" name="featureDesc" value="" placeholder='Feature Description'></textarea><br>
+				<textarea rows="7" cols="47" id="configDesc" name="configDesc" value="" placeholder='Config Description'></textarea><br>
+				<p align="center">
+                <!-- <input type="submit" value="UPLOAD" name="submit" align="center"> -->
+                <input type="submit" value="Submit">
+				</p>
+				
+			</div>
+		</div>
+		</form>
+</body>
+</html>

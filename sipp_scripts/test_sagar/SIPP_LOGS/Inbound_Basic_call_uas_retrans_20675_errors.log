@@ -1,0 +1,32 @@
+sipp: The following events occured:
+2017-05-16	18:05:22:929	1494938122.929428: Aborting call on unexpected message for Call-Id '2efe5617ae57060daa26513d30956e72': while expecting 'ACK' (index 7), received 'SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4070@10.133.73.52:5060;tag=x0hxzrih-CC-148
+CSeq: 1 INVITE
+Call-ID: 2efe5617ae57060daa26513d30956e72
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-20675-1-6
+Content-Length: 0
+
+'.
+2017-05-16	18:05:22:929	1494938122.929665: Dead call 2efe5617ae57060daa26513d30956e72 (aborted at index 7), received 'SIP/2.0 491 Request Pending
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4070@10.133.73.52:5060;tag=x0hxzrih-CC-148
+CSeq: 1 INVITE
+Call-ID: 2efe5617ae57060daa26513d30956e72
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-20675-1-6
+Content-Length: 0
+
+'.
+2017-05-16	18:05:22:932	1494938122.932820: Dead call 2efe5617ae57060daa26513d30956e72 (aborted at index 7), received 'ACK sip:4071@10.133.39.159:5060;transport=tcp SIP/2.0
+From: sip:4070@sbcdev4.com;tag=x0hxzrih-CC-148
+To: sip:4071@192.168.6.221:5060;tag=1
+CSeq: 1 ACK
+Call-ID: 2efe5617ae57060daa26513d30956e72
+Contact: sip:4070@10.133.73.52:5060;transport=tcp;transport=TCP
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.52:5060;branch=z9hG4bK-s1632-000209311457-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-20680-1-4
+Subject: Performance Test
+Content-Length: 0
+
+'.

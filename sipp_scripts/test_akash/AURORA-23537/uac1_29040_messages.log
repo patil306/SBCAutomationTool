@@ -1,0 +1,178 @@
+----------------------------------------------- 2021-09-22 13:09:49:52.708
+UDP message sent (692 bytes):
+
+INVITE sip:reddy2@sip SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-29040-1-0
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060
+Call-ID: 1-29040@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:reddy1@10.133.39.159:6042
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-Agent: Avaya J179 IP Phone 4.0.2.1.3 c81fea85c1d6
+User-to-User: 00F
+Content-Type: application/sdp
+Content-Length:   246
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 41532 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+
+----------------------------------------------- 2021-09-22 13:09:49:60.321
+UDP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060
+CSeq: 1 INVITE
+Call-ID: 1-29040@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-29040-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:62.815
+UDP message received [378] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-29040@10.133.39.159
+Contact: <sip:185.247.243.25:5060;transport=udp>
+Record-Route: <sip:185.247.243.25:5060;ipcs-line=53;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-29040-1-0
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:62.924
+UDP message sent (379 bytes):
+
+PRACK sip:185.247.243.25:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-29040-1-3
+From:  sip:reddy1@test2.com;tag=1
+To:   sip:reddy2@10.133.48.87:5060;tag=1
+Call-ID: 1-29040@10.133.39.159
+CSeq: 2 PRACK
+RAck: 1 1 INVITE
+Contact: <sip:reddy1@10.133.39.159:6042;transport=UDP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:65.817
+UDP message received [372] bytes :
+
+SIP/2.0 200 OK
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060;tag=1
+CSeq: 2 PRACK
+Call-ID: 1-29040@10.133.39.159
+Contact: <sip:185.247.243.25:5060;transport=udp>
+Record-Route: <sip:185.247.243.25:5060;ipcs-line=53;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-29040-1-3
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:279.067
+UDP message received [378] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-29040@10.133.39.159
+Contact: <sip:185.247.243.25:5060;transport=udp>
+Record-Route: <sip:185.247.243.25:5060;ipcs-line=53;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-29040-1-0
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:279.167
+UDP message sent (443 bytes):
+
+PRACK sip:185.247.243.25:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-29040-1-6
+From:  sip:reddy1@test2.com;tag=1
+To:   sip:reddy2@10.133.48.87:5060;tag=1
+Call-ID: 1-29040@10.133.39.159
+CSeq: 3 PRACK
+RAck: 1 1 INVITE
+Contact: <sip:reddy1@10.133.39.159:6042;transport=UDP>
+Max-Forwards: 70
+Route: <sip:185.247.243.25:5060;ipcs-line=53;lr;transport=udp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:09:49:283.928
+UDP message received [373] bytes :
+
+SIP/2.0 200 OK
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-29040@10.133.39.159
+Contact: <sip:185.247.243.25:5060;transport=udp>
+Record-Route: <sip:185.247.243.25:5060;ipcs-line=53;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-29040-1-0
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:53:283.194
+UDP message received [304] bytes :
+
+SIP/2.0 408 Request Timeout
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060;tag=1
+CSeq: 3 PRACK
+Call-ID: 1-29040@10.133.39.159
+Record-Route: <sip:185.247.243.25:5060;ipcs-line=53;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-29040-1-6
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected UDP message received:
+
+SIP/2.0 408 Request Timeout
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060;tag=1
+CSeq: 3 PRACK
+Call-ID: 1-29040@10.133.39.159
+Record-Route: <sip:185.247.243.25:5060;ipcs-line=53;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-29040-1-6
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-22 13:10:53:283.530
+UDP message sent (289 bytes):
+
+BYE  SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6042;branch=z9hG4bK-29040-1--1
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060;tag=1
+Call-ID: 1-29040@10.133.39.159
+CSeq: 4 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:6042;transport=UDP>
+Content-Length: 0
+
+

@@ -1,0 +1,14 @@
+#/home/sipp/sipp.svn/sipp -sf TRUNK_UAC_TC_2.xml 10.133.48.59 -i 10.133.39.159 -inf Ext_to_Ent.csv -p 5069 -t t1 -m 1 -trace_err
+#/home/sipp/sipp.svn/sipp -sf TRUNK_UAC_TC_3.xml 10.133.48.59 -i 10.133.39.159 -inf Ext_to_Ent.csv -p 5069 -t t1 -m 1 -trace_err
+#/home/sipp/sipp.svn/sipp -sf TRUNK_NO_GSID_UAC.xml 192.168.45.12 -i 192.168.5.12 -inf alphonso.csv -p 5063 -t u1 -m 1 -trace_err
+#/home/sipp/sipp.svn/sipp -sf TRUNK_NO_GSID_UAC.xml 192.168.45.12 -i 192.168.5.12 -inf alphonso.csv -p 5063 -t u1 -m 1 -trace_err
+#/home/sipp/sipp.svn/sipp -sf TRUNK_UAC_TC_4.xml 10.133.48.59 -i 10.133.39.159 -inf Ext_to_Ent.csv -p 5069 -t t1 -m 1 -trace_err
+#/home/sipp/sipp.svn/sipp -sf REFER_B_TC_1.xml 10.133.48.59 -i 10.133.39.159 -inf Ext_to_Ent.csv -p 5069 -t t1 -m 1 -trace_err
+#/home/sipp/sipp.svn/sipp -sf REFER_B_TC_2.xml 10.133.48.59 -i 10.133.39.159 -inf Ext_to_Ent.csv -p 5069 -t t1 -m 1 -trace_err
+#/home/sipp/sipp.svn/sipp -sf REFER_B_TC_3.xml 10.133.48.59 -i 10.133.39.159 -inf Ext_to_Ent.csv -p 5069 -t t1 -m 1 -trace_err
+#/home/sipp/sipp.svn/sipp -sf REFER_B_TC_5.xml 10.133.48.59 -i 10.133.39.159 -inf Ext_to_Ent.csv -p 5069 -t t1 -m 1 -trace_err
+/home/sipp/sipp.svn/sipp -sf REFER_B_TC_7.xml 10.133.48.59 -i 10.133.39.159 -inf Ext_to_Ent.csv -p 5069 -t t1 -m 1 -trace_err
+#/home/sipp/sipp.svn/sipp -sf REFER_B_TC_8.xml 10.133.48.59 -i 10.133.39.159 -inf Ext_to_Ent.csv -p 5069 -t t1 -m 1 -trace_err
+#/home/sipp/sipp.svn/sipp -sf REFER_B_TC_10.xml 10.133.48.59 -i 10.133.39.159 -inf Ext_to_Ent.csv -p 5069 -t t1 -m 1 -trace_err
+#/home/sipp/sipp.svn/sipp -sf REFER_B_TC_12.xml 10.133.48.59 -i 10.133.39.159 -inf Ext_to_Ent.csv -p 5069 -t t1 -m 1 -trace_err
+#/home/sipp/sipp.svn/sipp -sf REFER_B_TC_16.xml 10.133.48.59 -i 10.133.39.159 -inf Ext_to_Ent.csv -p 5069 -t t1 -m 1 -trace_err

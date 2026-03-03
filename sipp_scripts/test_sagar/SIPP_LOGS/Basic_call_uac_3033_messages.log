@@ -1,0 +1,2180 @@
+----------------------------------------------- 2018-10-24 17:53:26:855.071
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061
+Call-ID: 1-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:53:26:903.039
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 1-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:26:950.932
+TLS message received [347] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-3033@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=112;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:26:959.456
+TLS message received [663] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-3033@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=112;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-1-0
+Content-Type: application/sdp
+Content-Length: 288
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.155
+s=-
+c=IN IP4 10.133.48.155
+t=0 0
+m=audio 35086 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:K9ZGmjsAxYh7duZ9VAnUVbTABiVzQZmaYPbrqejZfX4SpQNug4RGiPNn9+mBYA==
+
+----------------------------------------------- 2018-10-24 17:53:26:959.728
+TLS message sent (423 bytes):
+
+ACK sip:40006@10.133.48.155:5061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-1-4
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061;tag=1
+Call-ID: 1-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Route: <sip:10.133.48.155:5061;ipcs-line=112;lr;transport=tls>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:31:853.512
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-2-0
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061
+Call-ID: 2-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:53:31:864.577
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 2-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-2-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:31:867.706
+TLS message received [304] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm09d5f63d8
+CSeq: 1 INVITE
+Call-ID: 2-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-2-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm09d5f63d8
+CSeq: 1 INVITE
+Call-ID: 2-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-2-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:31:868.453
+TLS message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-2-0
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm09d5f63d8
+Call-ID: 2-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:31:886.239
+TLS message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm09d5f63d8
+CSeq: 1 ACK
+Call-ID: 2-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-2-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 2-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm09d5f63d8
+CSeq: 1 ACK
+Call-ID: 2-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-2-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:36:854.980
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-3-0
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061
+Call-ID: 3-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:53:36:864.840
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 3-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-3-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:36:865.844
+TLS message received [304] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmad92265ed
+CSeq: 1 INVITE
+Call-ID: 3-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-3-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmad92265ed
+CSeq: 1 INVITE
+Call-ID: 3-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-3-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:36:866.371
+TLS message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-3-0
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmad92265ed
+Call-ID: 3-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:36:868.235
+TLS message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmad92265ed
+CSeq: 1 ACK
+Call-ID: 3-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-3-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 3-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmad92265ed
+CSeq: 1 ACK
+Call-ID: 3-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-3-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:41:852.904
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-4-0
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061
+Call-ID: 4-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:53:41:864.360
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 4-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-4-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:41:865.230
+TLS message received [304] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmbdd86b174
+CSeq: 1 INVITE
+Call-ID: 4-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-4-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmbdd86b174
+CSeq: 1 INVITE
+Call-ID: 4-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-4-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:41:865.514
+TLS message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-4-0
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmbdd86b174
+Call-ID: 4-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:41:866.987
+TLS message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmbdd86b174
+CSeq: 1 ACK
+Call-ID: 4-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-4-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 4-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmbdd86b174
+CSeq: 1 ACK
+Call-ID: 4-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-4-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:46:852.723
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-5-0
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061
+Call-ID: 5-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:53:46:857.197
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 5-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-5-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:46:857.613
+TLS message received [304] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm4c3d3544e
+CSeq: 1 INVITE
+Call-ID: 5-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-5-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm4c3d3544e
+CSeq: 1 INVITE
+Call-ID: 5-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-5-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:46:857.786
+TLS message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-5-0
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm4c3d3544e
+Call-ID: 5-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:46:858.534
+TLS message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm4c3d3544e
+CSeq: 1 ACK
+Call-ID: 5-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-5-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 5-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm4c3d3544e
+CSeq: 1 ACK
+Call-ID: 5-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-5-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:51:853.194
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-6-0
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061
+Call-ID: 6-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:53:51:858.130
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 6-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-6-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:51:858.226
+TLS message received [304] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNma7aa2a752
+CSeq: 1 INVITE
+Call-ID: 6-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-6-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNma7aa2a752
+CSeq: 1 INVITE
+Call-ID: 6-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-6-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:51:858.359
+TLS message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-6-0
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNma7aa2a752
+Call-ID: 6-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:51:859.177
+TLS message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNma7aa2a752
+CSeq: 1 ACK
+Call-ID: 6-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-6-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 6-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNma7aa2a752
+CSeq: 1 ACK
+Call-ID: 6-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-6-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:56:854.462
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-7-0
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061
+Call-ID: 7-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:53:56:863.483
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 7-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-7-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:56:863.601
+TLS message received [304] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmf51cec0bc
+CSeq: 1 INVITE
+Call-ID: 7-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-7-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmf51cec0bc
+CSeq: 1 INVITE
+Call-ID: 7-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-7-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:56:863.915
+TLS message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-7-0
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmf51cec0bc
+Call-ID: 7-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:53:56:865.650
+TLS message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmf51cec0bc
+CSeq: 1 ACK
+Call-ID: 7-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-7-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 7-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmf51cec0bc
+CSeq: 1 ACK
+Call-ID: 7-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-7-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:01:854.540
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-8-0
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061
+Call-ID: 8-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:54:01:865.947
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 8-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-8-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:01:866.379
+TLS message received [304] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNme53d84474
+CSeq: 1 INVITE
+Call-ID: 8-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-8-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNme53d84474
+CSeq: 1 INVITE
+Call-ID: 8-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-8-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:01:866.825
+TLS message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-8-0
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNme53d84474
+Call-ID: 8-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:01:868.682
+TLS message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNme53d84474
+CSeq: 1 ACK
+Call-ID: 8-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-8-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 8-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNme53d84474
+CSeq: 1 ACK
+Call-ID: 8-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-8-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:06:854.798
+TLS message sent (791 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-9-0
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061
+Call-ID: 9-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:54:06:864.177
+TLS message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 9-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-9-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:06:865.122
+TLS message received [304] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm0f9fd712f
+CSeq: 1 INVITE
+Call-ID: 9-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-9-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm0f9fd712f
+CSeq: 1 INVITE
+Call-ID: 9-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-9-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:06:865.722
+TLS message sent (331 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-9-0
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm0f9fd712f
+Call-ID: 9-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:06:867.175
+TLS message received [243] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm0f9fd712f
+CSeq: 1 ACK
+Call-ID: 9-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-9-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 9-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm0f9fd712f
+CSeq: 1 ACK
+Call-ID: 9-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-9-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:11:853.729
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-10-0
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061
+Call-ID: 10-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:54:11:862.937
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 10-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-10-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:11:863.942
+TLS message received [307] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm7cdf721f2
+CSeq: 1 INVITE
+Call-ID: 10-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-10-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm7cdf721f2
+CSeq: 1 INVITE
+Call-ID: 10-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-10-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:11:864.215
+TLS message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-10-0
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm7cdf721f2
+Call-ID: 10-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:11:866.612
+TLS message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm7cdf721f2
+CSeq: 1 ACK
+Call-ID: 10-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-10-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 10-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm7cdf721f2
+CSeq: 1 ACK
+Call-ID: 10-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-10-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:16:852.890
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-11-0
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061
+Call-ID: 11-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:54:16:864.416
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 11-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-11-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:16:865.630
+TLS message received [307] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm52c4c41d3
+CSeq: 1 INVITE
+Call-ID: 11-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-11-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm52c4c41d3
+CSeq: 1 INVITE
+Call-ID: 11-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-11-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:16:866.104
+TLS message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-11-0
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm52c4c41d3
+Call-ID: 11-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:16:868.001
+TLS message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm52c4c41d3
+CSeq: 1 ACK
+Call-ID: 11-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-11-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 11-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm52c4c41d3
+CSeq: 1 ACK
+Call-ID: 11-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-11-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:21:853.836
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-12-0
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061
+Call-ID: 12-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:54:21:863.194
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 12-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-12-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:21:863.984
+TLS message received [307] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmebacd04a4
+CSeq: 1 INVITE
+Call-ID: 12-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-12-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmebacd04a4
+CSeq: 1 INVITE
+Call-ID: 12-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-12-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:21:864.415
+TLS message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-12-0
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmebacd04a4
+Call-ID: 12-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:21:867.598
+TLS message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmebacd04a4
+CSeq: 1 ACK
+Call-ID: 12-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-12-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 12-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmebacd04a4
+CSeq: 1 ACK
+Call-ID: 12-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-12-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:26:853.085
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-13-0
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061
+Call-ID: 13-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:54:26:862.859
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 13-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-13-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:26:863.626
+TLS message received [307] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmb124ed16f
+CSeq: 1 INVITE
+Call-ID: 13-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-13-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmb124ed16f
+CSeq: 1 INVITE
+Call-ID: 13-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-13-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:26:863.870
+TLS message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-13-0
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmb124ed16f
+Call-ID: 13-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:26:866.120
+TLS message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmb124ed16f
+CSeq: 1 ACK
+Call-ID: 13-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-13-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 13-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmb124ed16f
+CSeq: 1 ACK
+Call-ID: 13-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-13-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:31:852.878
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-14-0
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061
+Call-ID: 14-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:54:31:864.533
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 14-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-14-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:31:864.802
+TLS message received [307] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm0598f11eb
+CSeq: 1 INVITE
+Call-ID: 14-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-14-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm0598f11eb
+CSeq: 1 INVITE
+Call-ID: 14-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-14-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:31:865.057
+TLS message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-14-0
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm0598f11eb
+Call-ID: 14-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:31:867.464
+TLS message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm0598f11eb
+CSeq: 1 ACK
+Call-ID: 14-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-14-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 14-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm0598f11eb
+CSeq: 1 ACK
+Call-ID: 14-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-14-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:36:855.068
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-15-0
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.155:5061
+Call-ID: 15-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:54:36:868.290
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 15-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-15-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:36:869.626
+TLS message received [307] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm9817f576f
+CSeq: 1 INVITE
+Call-ID: 15-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-15-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm9817f576f
+CSeq: 1 INVITE
+Call-ID: 15-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-15-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:36:869.960
+TLS message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-15-0
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm9817f576f
+Call-ID: 15-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:36:872.097
+TLS message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm9817f576f
+CSeq: 1 ACK
+Call-ID: 15-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-15-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 15-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm9817f576f
+CSeq: 1 ACK
+Call-ID: 15-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-15-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:41:853.651
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-16-0
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.155:5061
+Call-ID: 16-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:54:41:865.490
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 16-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-16-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:41:867.142
+TLS message received [307] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmf4869e5da
+CSeq: 1 INVITE
+Call-ID: 16-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-16-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmf4869e5da
+CSeq: 1 INVITE
+Call-ID: 16-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-16-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:41:867.622
+TLS message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-16-0
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmf4869e5da
+Call-ID: 16-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:41:871.245
+TLS message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmf4869e5da
+CSeq: 1 ACK
+Call-ID: 16-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-16-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 16-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmf4869e5da
+CSeq: 1 ACK
+Call-ID: 16-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-16-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:46:854.076
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-17-0
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.155:5061
+Call-ID: 17-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:54:46:863.372
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 17-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-17-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:46:864.355
+TLS message received [307] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmbeb09d0c9
+CSeq: 1 INVITE
+Call-ID: 17-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-17-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmbeb09d0c9
+CSeq: 1 INVITE
+Call-ID: 17-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-17-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:46:864.614
+TLS message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-17-0
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmbeb09d0c9
+Call-ID: 17-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:46:867.036
+TLS message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmbeb09d0c9
+CSeq: 1 ACK
+Call-ID: 17-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-17-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 17-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNmbeb09d0c9
+CSeq: 1 ACK
+Call-ID: 17-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-17-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:51:854.059
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-18-0
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.155:5061
+Call-ID: 18-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:54:51:859.034
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 18-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-18-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:51:860.001
+TLS message received [307] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm27744b2e8
+CSeq: 1 INVITE
+Call-ID: 18-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-18-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm27744b2e8
+CSeq: 1 INVITE
+Call-ID: 18-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-18-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:51:860.187
+TLS message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-18-0
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm27744b2e8
+Call-ID: 18-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:51:861.245
+TLS message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm27744b2e8
+CSeq: 1 ACK
+Call-ID: 18-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-18-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 18-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm27744b2e8
+CSeq: 1 ACK
+Call-ID: 18-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-18-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:56:854.779
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-19-0
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.155:5061
+Call-ID: 19-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:54:56:864.658
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 19-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-19-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:56:865.199
+TLS message received [307] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm8ff99a338
+CSeq: 1 INVITE
+Call-ID: 19-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-19-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm8ff99a338
+CSeq: 1 INVITE
+Call-ID: 19-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-19-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:56:865.477
+TLS message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-19-0
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm8ff99a338
+Call-ID: 19-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:54:56:867.066
+TLS message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm8ff99a338
+CSeq: 1 ACK
+Call-ID: 19-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-19-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 19-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm8ff99a338
+CSeq: 1 ACK
+Call-ID: 19-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-19-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:55:01:854.420
+TLS message sent (794 bytes):
+
+INVITE sip:40006@10.133.48.1555061;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-20-0
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.155:5061
+Call-ID: 20-3033@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40005@10.133.39.159:5076;transport=TLS>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   326
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/SAVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+
+----------------------------------------------- 2018-10-24 17:55:01:866.098
+TLS message received [223] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.155:5061
+CSeq: 1 INVITE
+Call-ID: 20-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-20-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:55:01:866.565
+TLS message received [307] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm5d04d01c0
+CSeq: 1 INVITE
+Call-ID: 20-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-20-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm5d04d01c0
+CSeq: 1 INVITE
+Call-ID: 20-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-20-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:55:01:866.926
+TLS message sent (334 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-20-0
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm5d04d01c0
+Call-ID: 20-3033@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:55:01:869.068
+TLS message received [246] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm5d04d01c0
+CSeq: 1 ACK
+Call-ID: 20-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-20-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 20-3033@10.133.39.159 recieved a TLS message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.155:5061;tag=zXcVbNm5d04d01c0
+CSeq: 1 ACK
+Call-ID: 20-3033@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-20-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:55:06:962.715
+TLS message sent (409 bytes):
+
+BYE sip:10.133.48.155:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-1-6
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061;tag=1
+Call-ID: 1-3033@10.133.39.159
+Contact: sip:10.133.39.159:5076;transport=TLS
+CSeq: 2 BYE
+Route: <sip:10.133.48.155:5061;ipcs-line=112;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-24 17:55:06:974.670
+TLS message received [339] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.155:5061;tag=1
+CSeq: 2 BYE
+Call-ID: 1-3033@10.133.39.159
+Contact: <sip:10.133.48.155:5061;transport=tls>
+Record-Route: <sip:10.133.48.155:5061;ipcs-line=112;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-3033-1-6
+Content-Length: 0
+
+

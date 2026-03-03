@@ -1,0 +1,33 @@
+sipp: The following events occured:
+2017-05-16	18:15:39:648	1494938739.648241: Aborting call on unexpected message for Call-Id '950cf36d930061686912c621290bba6b': while expecting 'ACK' (index 8), received 'SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4070@10.133.73.52:5060;tag=x0hxzrih-CC-148
+CSeq: 1 INVITE
+Call-ID: 950cf36d930061686912c621290bba6b
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-22039-1-7
+Content-Length: 0
+
+'.
+2017-05-16	18:15:39:651	1494938739.651465: Dead call 950cf36d930061686912c621290bba6b (aborted at index 8), received 'ACK sip:4071@10.133.39.159:5060;transport=tcp SIP/2.0
+From: sip:4070@sbcdev4.com;tag=x0hxzrih-CC-148
+To: sip:4071@192.168.6.221:5060;tag=1
+CSeq: 1 ACK
+Call-ID: 950cf36d930061686912c621290bba6b
+Contact: sip:4070@10.133.73.52:5060;transport=tcp;transport=TCP
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.52:5060;branch=z9hG4bK-s1632-000216558613-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-22041-1-4
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2017-05-16	18:15:39:967	1494938739.967195: Dead call 950cf36d930061686912c621290bba6b (aborted at index 8), received 'SIP/2.0 500 Server Internal Error
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4070@10.133.73.52:5060;tag=x0hxzrih-CC-148
+CSeq: 1 INVITE
+Call-ID: 950cf36d930061686912c621290bba6b
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-22039-1-7
+Content-Length: 0
+
+'.
+2017-05-16	18:29:22:928	1494939562.928759: Aborting call on an unexpected BYE for call: 2efe5617ae57060daa26513d30956e72.

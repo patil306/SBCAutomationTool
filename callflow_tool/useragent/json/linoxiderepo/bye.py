@@ -1,0 +1,87 @@
+from uasession import UASession
+from sipmessage import SipHeaders, SipMessage
+from sipconstants import SipHeaders, CRLF
+from util import createBranchID, getMyHostIP, Util
+import authenticate
+from parserandbuilder import parseHeaders
+import copy
+import time
+
+
+def sendBye(uaSession:UASession):    
+    time.sleep(Util.timeLapseBeforeBye)
+    bye = buildBye(uaSession)    
+    return bye
+
+def buildBye(uaSession:UASession):
+    bye_msg = SipMessage()
+    bye_msg.setRequestLine(f'BYE {uaSession.getRemoteURL()} SIP/2.0')
+    hdr_callid = uaSession.getCallID()
+    bye_msg.addHeader(SipHeaders.CALLID.value,hdr_callid)
+    hdr_frm = f'{uaSession.getFromHeader()}'
+    bye_msg.addHeader(SipHeaders.FROM.value, hdr_frm)
+    hdr_to = uaSession.getToHeader() 
+    bye_msg.addHeader(SipHeaders.TO.value, hdr_to) 
+    branch_id= createBranchID()
+    hdr_via = f'SIP/2.0/{uaSession.getTransport()} {getMyHostIP()};branch={branch_id}'
+    bye_msg.addHeader(SipHeaders.VIA.value, hdr_via)
+    port = 5060
+    if uaSession.getUserType() in ["RW", "INT"]:
+        port = uaSession.getSigSocket().getEphemeralPort()
+    hdr_contact = f'"{uaSession.getUserDisplayName()}"<sip:{uaSession.getUserName()}@{getMyHostIP()}:{port};transport={uaSession.getTransport()}>'
+    bye_msg.addHeader(SipHeaders.CONTACT.value, hdr_contact)
+    if uaSession.getProxyAuth():
+        hdr_auth = authenticate.calcDigestResp(uaSession, uaSession.getUserName(), uaSession.getPassword(), 'BYE')
+        bye_msg.addHeader(SipHeaders.PROXYAUTHORIZATION.value,hdr_auth)
+    bye_msg.addHeader(SipHeaders.MAXFORWARDS.value, '70')
+    cseq = uaSession.getLastCSeq() + 1
+    hdr_cseq = f'{cseq} BYE'
+    bye_msg.addHeader(SipHeaders.CSEQ.value, hdr_cseq)
+    uaSession.setCSeq(cseq)
+    bye_msg.addHeader(SipHeaders.CONTENTLENGTH.value, 0) 
+    route_set = uaSession.getRouteSet()
+    print("route_set in BYE", route_set)
+    bye_msg.removeHeader(SipHeaders.ROUTE.value)
+    for route in route_set:
+        bye_msg.addHeader(SipHeaders.ROUTE.value, route)
+    return bye_msg
+
+
+
+def sendByeWithAuth(uaSession:UASession):
+    byeWithAuth = buildByeWithAuth(uaSession)    
+    return byeWithAuth
+
+def buildByeWithAuth(uaSession:UASession):
+    bye_msg = uaSession.getMsgObj('BYE')
+    byeWithAuth = copy.deepcopy(bye_msg)
+    hdr_via = f'SIP/2.0/{uaSession.getTransport()} {getMyHostIP()};branch={createBranchID()}'
+    byeWithAuth.replaceHeader(SipHeaders.VIA.value, hdr_via)
+    cseq = uaSession.getLastCSeq() + 1
+    hdr_cseq = f'{cseq} BYE'
+    byeWithAuth.replaceHeader(SipHeaders.CSEQ.value, hdr_cseq)
+    uaSession.setCSeq(cseq)
+    hdr_auth = authenticate.calcDigestResp(uaSession, uaSession.getUserName(), uaSession.getPassword(), 'BYE')
+    byeWithAuth.addHeader(SipHeaders.PROXYAUTHORIZATION.value,hdr_auth)
+    return byeWithAuth
+
+def recvBye(uaSession:UASession, raw_msg):
+    raw_msg = raw_msg.split(CRLF+CRLF)
+    bye_msg = parseHeaders(raw_msg[0])
+    return bye_msg
+
+def send200Bye(uaSession:UASession):
+    bye200 = build200Bye(uaSession)
+    return bye200
+
+def build200Bye(uaSession:UASession):
+    last_msg = uaSession.getMsgObj('BYE')
+    bye_200Msg = copy.deepcopy(last_msg)
+    bye_200Msg.setRequestLine(f'SIP/2.0 200 OK')
+    bye_200Msg.removeHeader(SipHeaders.CONTACT.value)
+    return bye_200Msg
+
+def recv200Bye(uaSession:UASession, raw_msg):
+    raw_msg = raw_msg.split(CRLF+CRLF)
+    bye200_msg = parseHeaders(raw_msg[0])
+    return bye200_msg

@@ -1,0 +1,345 @@
+----------------------------------------------- 2020-03-17 12:54:27:168.781
+TCP message received [892] bytes :
+
+INVITE sip:81001001@sbc1.sbct4.com:5063 SIP/2.0
+From: sip:81002001@192.168.5.223:12807;tag=1
+To: sip:81001001@sbc1.sbct4.com:5063
+CSeq: 1 INVITE
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+Contact: <sip:81002001@192.168.5.223:5060;transport=tcp>
+Record-Route: <sip:192.168.5.223:5060;ipcs-line=10;lr;transport=tcp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.5.223:5060;branch=z9hG4bK-s1632-000975528647-1--s1632-
+Subject: Performance Test
+Session-Expires: 1800;refresher=uac
+Min-SE: 90
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 215
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.223
+s=-
+c=IN IP4 192.168.5.223
+t=0 0
+m=audio 35024 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2020-03-17 12:54:27:169.481
+TCP message sent (313 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 192.168.5.223:5060;branch=z9hG4bK-s1632-000975528647-1--s1632-
+From: sip:81002001@192.168.5.223:12807;tag=1
+To: sip:81001001@sbc1.sbct4.com:5063
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5063;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2020-03-17 12:54:27:169.564
+TCP message sent (477 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.5.223:5060;branch=z9hG4bK-s1632-000975528647-1--s1632-
+From: sip:81002001@192.168.5.223:12807;tag=1
+To: sip:81001001@sbc1.sbct4.com:5063;tag=2
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5063;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   127
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6000 RTP/AVP 0 8
+a=ptime:10
+
+----------------------------------------------- 2020-03-17 12:54:27:178.693
+TCP message received [479] bytes :
+
+ACK sip:81001001@192.168.5.12:5063;transport=tcp SIP/2.0
+From: sip:81002001@192.168.5.223:12807;tag=1
+To: sip:81001001@sbc1.sbct4.com:5063;tag=2
+CSeq: 1 ACK
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+Contact: <sip:81002001@192.168.5.223:5060;transport=tcp>
+Record-Route: <sip:192.168.5.223:5060;ipcs-line=10;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.5.223:5060;branch=z9hG4bK-s1632-001243797123-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2020-03-17 12:54:27:178.826
+TCP message sent (695 bytes):
+
+INVITE sip:81001001@192.168.5.223:5060 transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.5.12:5063;branch=z9hG4bK-31976-1-4
+From: sip:81001001@192.168.5.12:5063; sip:81001001@sbc1.sbct4.com:5063;tag=2
+To: sip:81001001@192.168.5.223:5060; sip:81002001@192.168.5.223:12807;tag=1
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+CSeq: 1 INVITE
+Contact: sip:81001001@192.168.5.12:5063;transport=TCP
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Record-Route: <sip:recordroute1@sbc1.sbct4.com;lr;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   127
+
+v=0
+o=user1 53655765 2353687638 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6000 RTP/AVP 0 8
+a=sendonly
+
+----------------------------------------------- 2020-03-17 12:54:27:184.009
+TCP message received [314] bytes :
+
+SIP/2.0 100 Trying
+From: sip:81001001@192.168.5.12:5063;sip:81001001@sbc1.sbct4.com:5063;tag=2
+To: sip:81001001@192.168.5.223:5060;sip:81002001@192.168.5.223:12807;tag=1
+CSeq: 1 INVITE
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+Via: SIP/2.0/TCP 192.168.5.12:5063;branch=z9hG4bK-31976-1-4
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 100 Trying
+From: sip:81001001@192.168.5.12:5063;sip:81001001@sbc1.sbct4.com:5063;tag=2
+To: sip:81001001@192.168.5.223:5060;sip:81002001@192.168.5.223:12807;tag=1
+CSeq: 1 INVITE
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+Via: SIP/2.0/TCP 192.168.5.12:5063;branch=z9hG4bK-31976-1-4
+Content-Length: 0
+
+
+----------------------------------------------- 2020-03-17 12:54:27:189.687
+TCP message received [674] bytes :
+
+SIP/2.0 200 OK
+From: sip:81001001@192.168.5.12:5063;sip:81001001@sbc1.sbct4.com:5063;tag=2
+To: sip:81001001@192.168.5.223:5060;sip:81002001@192.168.5.223:12807;tag=1
+CSeq: 1 INVITE
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+Contact: <sip:192.168.5.223:5060;transport=tcp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Via:SIP/2.0/TCP 192.168.5.12:5063;branch=z9hG4bK-31976-1-4
+Require: timer
+Session-Expires: 90;refresher=uas
+Content-Type: application/sdp
+Content-Length: 162
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.223
+s=-
+c=IN IP4 192.168.5.223
+t=0 0
+m=audio 35024 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=recvonly
+a=ptime:20
+
+-----------------------------------------------
+Dead call 19203535b9436f0127de8d3c37f0913f recieved a TCP message:
+
+SIP/2.0 200 OK
+From: sip:81001001@192.168.5.12:5063;sip:81001001@sbc1.sbct4.com:5063;tag=2
+To: sip:81001001@192.168.5.223:5060;sip:81002001@192.168.5.223:12807;tag=1
+CSeq: 1 INVITE
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+Contact: <sip:192.168.5.223:5060;transport=tcp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Via:SIP/2.0/TCP 192.168.5.12:5063;branch=z9hG4bK-31976-1-4
+Require: timer
+Session-Expires: 90;refresher=uas
+Content-Type: application/sdp
+Content-Length: 162
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.223
+s=-
+c=IN IP4 192.168.5.223
+t=0 0
+m=audio 35024 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=recvonly
+a=ptime:20
+
+----------------------------------------------- 2020-03-17 12:54:27:693.240
+TCP message received [674] bytes :
+
+SIP/2.0 200 OK
+From: sip:81001001@192.168.5.12:5063;sip:81001001@sbc1.sbct4.com:5063;tag=2
+To: sip:81001001@192.168.5.223:5060;sip:81002001@192.168.5.223:12807;tag=1
+CSeq: 1 INVITE
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+Contact: <sip:192.168.5.223:5060;transport=tcp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Via:SIP/2.0/TCP 192.168.5.12:5063;branch=z9hG4bK-31976-1-4
+Require: timer
+Session-Expires: 90;refresher=uas
+Content-Type: application/sdp
+Content-Length: 162
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.223
+s=-
+c=IN IP4 192.168.5.223
+t=0 0
+m=audio 35024 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=recvonly
+a=ptime:20
+
+-----------------------------------------------
+Dead call 19203535b9436f0127de8d3c37f0913f recieved a TCP message:
+
+SIP/2.0 200 OK
+From: sip:81001001@192.168.5.12:5063;sip:81001001@sbc1.sbct4.com:5063;tag=2
+To: sip:81001001@192.168.5.223:5060;sip:81002001@192.168.5.223:12807;tag=1
+CSeq: 1 INVITE
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+Contact: <sip:192.168.5.223:5060;transport=tcp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Via:SIP/2.0/TCP 192.168.5.12:5063;branch=z9hG4bK-31976-1-4
+Require: timer
+Session-Expires: 90;refresher=uas
+Content-Type: application/sdp
+Content-Length: 162
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.223
+s=-
+c=IN IP4 192.168.5.223
+t=0 0
+m=audio 35024 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=recvonly
+a=ptime:20
+
+----------------------------------------------- 2020-03-17 12:54:28:195.914
+TCP message received [674] bytes :
+
+SIP/2.0 200 OK
+From: sip:81001001@192.168.5.12:5063;sip:81001001@sbc1.sbct4.com:5063;tag=2
+To: sip:81001001@192.168.5.223:5060;sip:81002001@192.168.5.223:12807;tag=1
+CSeq: 1 INVITE
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+Contact: <sip:192.168.5.223:5060;transport=tcp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Via:SIP/2.0/TCP 192.168.5.12:5063;branch=z9hG4bK-31976-1-4
+Require: timer
+Session-Expires: 90;refresher=uas
+Content-Type: application/sdp
+Content-Length: 162
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.223
+s=-
+c=IN IP4 192.168.5.223
+t=0 0
+m=audio 35024 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=recvonly
+a=ptime:20
+
+-----------------------------------------------
+Dead call 19203535b9436f0127de8d3c37f0913f recieved a TCP message:
+
+SIP/2.0 200 OK
+From: sip:81001001@192.168.5.12:5063;sip:81001001@sbc1.sbct4.com:5063;tag=2
+To: sip:81001001@192.168.5.223:5060;sip:81002001@192.168.5.223:12807;tag=1
+CSeq: 1 INVITE
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+Contact: <sip:192.168.5.223:5060;transport=tcp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Via:SIP/2.0/TCP 192.168.5.12:5063;branch=z9hG4bK-31976-1-4
+Require: timer
+Session-Expires: 90;refresher=uas
+Content-Type: application/sdp
+Content-Length: 162
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.223
+s=-
+c=IN IP4 192.168.5.223
+t=0 0
+m=audio 35024 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=recvonly
+a=ptime:20
+
+----------------------------------------------- 2020-03-17 12:54:29:197.364
+TCP message received [674] bytes :
+
+SIP/2.0 200 OK
+From: sip:81001001@192.168.5.12:5063;sip:81001001@sbc1.sbct4.com:5063;tag=2
+To: sip:81001001@192.168.5.223:5060;sip:81002001@192.168.5.223:12807;tag=1
+CSeq: 1 INVITE
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+Contact: <sip:192.168.5.223:5060;transport=tcp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Via:SIP/2.0/TCP 192.168.5.12:5063;branch=z9hG4bK-31976-1-4
+Require: timer
+Session-Expires: 90;refresher=uas
+Content-Type: application/sdp
+Content-Length: 162
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.223
+s=-
+c=IN IP4 192.168.5.223
+t=0 0
+m=audio 35024 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=recvonly
+a=ptime:20
+
+-----------------------------------------------
+Dead call 19203535b9436f0127de8d3c37f0913f recieved a TCP message:
+
+SIP/2.0 200 OK
+From: sip:81001001@192.168.5.12:5063;sip:81001001@sbc1.sbct4.com:5063;tag=2
+To: sip:81001001@192.168.5.223:5060;sip:81002001@192.168.5.223:12807;tag=1
+CSeq: 1 INVITE
+Call-ID: 19203535b9436f0127de8d3c37f0913f
+Contact: <sip:192.168.5.223:5060;transport=tcp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Via:SIP/2.0/TCP 192.168.5.12:5063;branch=z9hG4bK-31976-1-4
+Require: timer
+Session-Expires: 90;refresher=uas
+Content-Type: application/sdp
+Content-Length: 162
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.223
+s=-
+c=IN IP4 192.168.5.223
+t=0 0
+m=audio 35024 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=recvonly
+a=ptime:20
+

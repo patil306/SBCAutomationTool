@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!DOCTYPE scenario (View Source for full doctype...)> 
+<!--                  Sipp default 'uas' scenario.                       
+--> 
+<!--                                                                     
+--> 
+<scenario name="Basic UAS responder">
+
+<recv request="INVITE" crlf="true"/>
+
+
+<send>
+<![CDATA[
+
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:];
+[last_Call-ID:]
+[last_CSeq:]
+  Supported: timer,100rel
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+
+]]>
+
+</send>
+
+<send>
+<![CDATA[
+SIP/2.0 180 Ringing
+[last_Via:]
+[last_From:]
+[last_To:];tag=[call_number]1001
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,INFO,REFER,NOTIFY,PRACK,UPDATE
+Content-Length:0
+]]>
+</send>
+
+<send>
+<![CDATA[
+
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=[call_number]1001
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+P-Asserted-Identity: <sip:81002001@rwtrunk.com>
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,INFO,REFER,NOTIFY,PRACK,UPDATE
+Content-Type: application/sdp
+Content-Length:[len]
+v=0                                                                                                                         
+o=sips:20003@148.147.155.127 1 14 IN IP4 148.147.155.127                                                                    
+s=sips:20003@148.147.155.127                                                                                                
+c=IN IP4 148.147.155.127                                                                                                    
+b=TIAS:4160000                                                                                                              
+t=0 0                                                                                                                       
+a=activetalker                                                                                                              
+m=audio 5020 RTP/SAVP 9 120                                                                                                 
+b=TIAS:64000                                                                                                                
+a=ptime:60                                                                                                                  
+a=rtpmap:9 G722/8000/1                                                                                                      
+a=rtpmap:120 telephone-event/8000/1                                                                                         
+a=crypto:1 AES_256_CM_HMAC_SHA1_80 inline:OjiVScBw0ch4/54AvodUmpoV+HIxOk7uZdU0rkMQ0hSBrEvyTHlb4Non8WGBGQ== UNENCRYPTED_SRTCP
+a=acfg:1 t=1 a=1                                                                                                            
+m=video 5026 RTP/SAVP 110 112                                                                                               
+b=TIAS:4096000                                                                                                              
+a=rtpmap:110 H264/90000                                                                                                     
+a=fmtp:110 profile-level-id=640028;packetization-mode=1;parameter-add=0                                                     
+a=rtpmap:112 H264/90000                                                                                                     
+a=fmtp:112 profile-level-id=640028;parameter-add=0                                                                          
+a=rtcp-fb:110 ccm fir                                                                                                       
+a=rtcp-fb:110 ccm tmmbr                                                                                                     
+a=crypto:1 AES_256_CM_HMAC_SHA1_80 inline:nDEQcCCI0B7bUFmmT/GZ6QXZgq06CF1dAnhhVoLtLr/qBlSi0joOkO639AhQZA== UNENCRYPTED_SRTCP
+a=acfg:1 t=3 a=3
+]]>
+
+</send>
+
+<recv request="ACK" crlf="true"/>
+
+<recv request="REINVITE" crlf="true"/>
+
+<send>
+<![CDATA[
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:];
+[last_Call-ID:]
+[last_CSeq:]
+  Supported: timer,100rel
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+
+]]>
+<send>
+
+<![CDATA[
+
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=[call_number]1001
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+P-Asserted-Identity: <sip:81002001@rwtrunk.com>
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,INFO,REFER,NOTIFY,PRACK,UPDATE
+Content-Type: application/sdp
+Content-Length:[len]
+
+v=0                                                                                                                                
+o=sips:20003@summitsv.com 1 14 IN IP4 148.147.155.127                                                                              
+s=sips:20003@summitsv.com                                                                                                          
+c=IN IP4 148.147.155.127                                                                                                           
+b=TIAS:4160000                                                                                                                     
+t=0 0                                                                                                                              
+a=activetalker                                                                                                                     
+m=audio 5020 RTP/AVP 9 0 8 110 18 120                                                                                              
+b=TIAS:64000                                                                                                                       
+a=rtpmap:9 G722/8000/1                                                                                                             
+a=rtpmap:0 PCMU/8000/1                                                                                                             
+a=rtpmap:8 PCMA/8000/1                                                                                                             
+a=rtpmap:110 G726-32/8000/1                                                                                                        
+a=rtpmap:18 G729/8000/1                                                                                                            
+a=fmtp:18 annexb=yes                                                                                                               
+a=rtpmap:120 telephone-event/8000/1                                                                                                
+a=maxptime:60                                                                                                                      
+a=tcap:1 RTP/SAVP                                                                                                                  
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:jN4/t3mguQ2aGRP9xZsl1S/Miw8Bp22XKmHsURgO UNENCRYPTED_SRTCP                        
+a=acap:3 crypto:2 AES_256_CM_HMAC_SHA1_80 inline:OjiVScBw0ch4/54AvodUmpoV+HIxOk7uZdU0rkMQ0hSBrEvyTHlb4Non8WGBGQ== UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1                                                                                                                   
+a=pcfg:3 t=1 a=3                                                                                                                   
+m=video 5026 RTP/AVP 109 111 110 112                                                                                               
+b=TIAS:4096000                                                                                                                     
+a=rtpmap:109 H264/90000                                                                                                            
+a=fmtp:109 profile-level-id=420028;parameter-add=0                                                                                 
+a=rtpmap:111 H264/90000                                                                                                            
+a=fmtp:111 profile-level-id=420028;packetization-mode=1;parameter-add=0                                                            
+]]>
+
+</send>
+<recv request="ACK" crlf="true"/>
+
+<send>
+<![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=[call_number]1001
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+P-Asserted-Identity: <sip:81002001@rwtrunk.com>
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,INFO,REFER,NOTIFY,PRACK,UPDATE
+Content-Type: application/sdp
+Content-Length:[len]
+v=0                                                                                                                         
+o=sips:20003@148.147.155.127 1 14 IN IP4 148.147.155.127                                                                    
+s=sips:20003@148.147.155.127                                                                                                
+c=IN IP4 148.147.155.127                                                                                                    
+b=TIAS:4160000                                                                                                              
+t=0 0                                                                                                                       
+a=activetalker                                                                                                              
+m=audio 5020 RTP/SAVP 9 120                                                                                                 
+b=TIAS:64000                                                                                                                
+a=ptime:60                                                                                                                  
+a=rtpmap:9 G722/8000/1                                                                                                      
+a=rtpmap:120 telephone-event/8000/1                                                                                         
+a=crypto:1 AES_256_CM_HMAC_SHA1_80 inline:OjiVScBw0ch4/54AvodUmpoV+HIxOk7uZdU0rkMQ0hSBrEvyTHlb4Non8WGBGQ== UNENCRYPTED_SRTCP
+a=acfg:1 t=1 a=1                                                                                                            
+m=video 5026 RTP/SAVP 110 112                                                                                               
+b=TIAS:4096000                                                                                                              
+a=rtpmap:110 H264/90000                                                                                                     
+a=fmtp:110 profile-level-id=640028;packetization-mode=1;parameter-add=0                                                     
+a=rtpmap:112 H264/90000                                                                                                     
+a=fmtp:112 profile-level-id=640028;parameter-add=0                                                                          
+a=rtcp-fb:110 ccm fir                                                                                                       
+a=rtcp-fb:110 ccm tmmbr                                                                                                     
+a=crypto:1 AES_256_CM_HMAC_SHA1_80 inline:nDEQcCCI0B7bUFmmT/GZ6QXZgq06CF1dAnhhVoLtLr/qBlSi0joOkO639AhQZA== UNENCRYPTED_SRTCP
+a=acfg:1 t=3 a=3
+]]>
+<recv request="REINVITE" crlf="true"/>
+<send>
+<![CDATA[
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:];
+[last_Call-ID:]
+[last_CSeq:]
+  Supported: timer,100rel
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+
+]]>
+<send>
+
+<![CDATA[
+
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=[call_number]1001
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+P-Asserted-Identity: <sip:81002001@rwtrunk.com>
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,INFO,REFER,NOTIFY,PRACK,UPDATE
+Content-Type: application/sdp
+Content-Length:[len]
+
+v=0                                                                                                                                
+o=sips:20003@summitsv.com 1 14 IN IP4 148.147.155.127                                                                              
+s=sips:20003@summitsv.com                                                                                                          
+c=IN IP4 148.147.155.127                                                                                                           
+b=TIAS:4160000                                                                                                                     
+t=0 0                                                                                                                              
+a=activetalker                                                                                                                     
+m=audio 5020 RTP/AVP 9 0 8 110 18 120                                                                                              
+b=TIAS:64000                                                                                                                       
+a=rtpmap:9 G722/8000/1                                                                                                             
+a=rtpmap:0 PCMU/8000/1                                                                                                             
+a=rtpmap:8 PCMA/8000/1                                                                                                             
+a=rtpmap:110 G726-32/8000/1                                                                                                        
+a=rtpmap:18 G729/8000/1                                                                                                            
+a=fmtp:18 annexb=yes                                                                                                               
+a=rtpmap:120 telephone-event/8000/1                                                                                                
+a=maxptime:60                                                                                                                      
+a=tcap:1 RTP/SAVP                                                                                                                  
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:jN4/t3mguQ2aGRP9xZsl1S/Miw8Bp22XKmHsURgO UNENCRYPTED_SRTCP                        
+a=acap:3 crypto:2 AES_256_CM_HMAC_SHA1_80 inline:OjiVScBw0ch4/54AvodUmpoV+HIxOk7uZdU0rkMQ0hSBrEvyTHlb4Non8WGBGQ== UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1                                                                                                                   
+a=pcfg:3 t=1 a=3                                                                                                                   
+m=video 5026 RTP/AVP 109 111 110 112                                                                                               
+b=TIAS:4096000                                                                                                                     
+a=rtpmap:109 H264/90000                                                                                                            
+a=fmtp:109 profile-level-id=420028;parameter-add=0                                                                                 
+a=rtpmap:111 H264/90000                                                                                                            
+a=fmtp:111 profile-level-id=420028;packetization-mode=1;parameter-add=0                                                            
+]]>
+
+</send>
+
+</send>
+<recv request="BYE" />
+
+<send>
+<![CDATA[
+
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+
+]]>
+</send>
+
+</scenario>
+
+
+

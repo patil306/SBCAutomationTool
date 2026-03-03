@@ -1,0 +1,30 @@
+----------------------------------------------- 2019-08-02 15:41:44:973.381
+TCP message received [381] bytes :
+
+REGISTER sip:sbct4.com:5060 SIP/2.0
+From: <sip:123@10.133.39.176:18482>;tag=663c3f58ea91
+To: <sip:123@sbct4.com>
+CSeq: 2 REGISTER
+Call-ID: 0790071c5e7871080001b265a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Contact: <sip:123@10.133.39.176:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001687413828-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-02 15:41:44:973.953
+TCP message sent (478 bytes):
+
+SIP/2.0 200 OK
+Call-ID: 0790071c5e7871080001b265a1f82edd5b51bcaa79612255a251096f6b2eb6d
+Via: SIP/2.0/TCP 10.133.39.176:5060;branch=z9hG4bK-s1632-001687413828-1--s1632-
+From: <sip:123@10.133.39.176:18482>;tag=663c3f58ea91
+To:sip:123@sbct4.com;tag=1
+CSeq:2 REGISTER
+Contact: <sip:123@10.133.39.159:5060;transport=TCP>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported:
+Content-Type: application/sdp
+Content-Length:     0
+
+

@@ -1,0 +1,26 @@
+----------------------------------------------- 2018-09-05 18:46:47:666.890
+UDP message received [352] bytes :
+
+CANCEL sip:3001002@192.168.6.5:5075;transport=udp;user=phone SIP/2.0
+From: sip:40005@192.168.6.240:5060;tag=1
+To: <sip:3001002@192.168.6.5:5075;transport=UDP;user=phone>
+CSeq: 1 CANCEL
+Call-ID: 1-27551@10.133.39.159
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.6.240:5060;branch=z9hG4bK-s1632-001100374299-1--s1632-;originator
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-05 18:46:47:667.730
+UDP message sent (327 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.6.240:5060;branch=z9hG4bK-s1632-001100374299-1--s1632-;originator
+From: sip:40005@192.168.6.240:5060;tag=1
+To: <sip:3001002@192.168.6.5:5075;transport=UDP;user=phone>
+Call-ID: 1-27551@10.133.39.159
+CSeq: 1 CANCEL
+Contact: <sip:192.168.6.5:5075;transport=UDP>
+Content-Length: 0
+
+

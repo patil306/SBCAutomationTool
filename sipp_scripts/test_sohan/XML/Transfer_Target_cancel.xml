@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic UAS responder">
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<!-- <ereg regexp="sip.*[^;tag]" search_in="hdr" header="From:" assign_to="1"/> -->
+
+<recv request="INVITE" crlf="true">
+</recv>
+  <!-- <action>
+          <ereg regexp="sip.*[^;tag]" search_in="hdr" header="From:" assign_to="1"/>
+          <ereg regexp="sip.*[^;]" search_in="hdr" header="To:" assign_to="4"/>
+   </action> -->
+  
+<!-- The '[last_*]' keyword is replaced automatically by the          -->
+<!-- specified header if it was present in the last message received  -->
+<!-- (except if it was a retransmission). If the header was not       -->
+<!-- present or if no message has been received, the '[last_*]'       -->
+<!-- keyword is discarded, and all bytes until the end of the line    -->
+<!-- are also discarded.                                              -->
+<!--                                                                  -->
+<!-- If the specified header was present several times in the         -->
+<!-- message, all occurences are concatenated (CRLF seperated)        -->
+<!-- to be used in place of the '[last_*]' keyword.                   -->
+
+<send>
+<![CDATA[
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+
+
+
+<send>
+<![CDATA[
+CANCEL sip:[field1]@[remote_ip]:[remote_port];transport=[transport] SIP/2.0
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+CSeq: 1 CANCEL
+Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length: 0
+]]>
+</send>
+
+
+
+<recv response="481" rrs="true">
+</recv>
+
+
+<send>
+<![CDATA[
+ACK sip:[field1]@[remote_ip]:[remote_port];transport=[transport] SIP/2.0
+[last_Via:]
+[last_From:]
+To: sip:[field0]@[field2];tag=3
+[last_Call-ID:]
+CSeq: 1 ACK
+Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+Max-Forwards: 70
+[routes]
+Subject: Performance Test
+Content-Length: 0
+]]>
+</send>
+
+
+
+
+<!-- Send REFER towards SBC to transfer the call to the Agent -->
+
+
+<recv request="BYE" />
+
+<send>
+<![CDATA[
+
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+
+]]>
+</send>
+
+
+</scenario>

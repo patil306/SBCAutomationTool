@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic UAS responder">
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+  
+<!-- The '[last_*]' keyword is replaced automatically by the          -->
+<!-- specified header if it was present in the last message received  -->
+<!-- (except if it was a retransmission). If the header was not       -->
+<!-- present or if no message has been received, the '[last_*]'       -->
+<!-- keyword is discarded, and all bytes until the end of the line    -->
+<!-- are also discarded.                                              -->
+<!--                                                                  -->
+<!-- If the specified header was present several times in the         -->
+<!-- message, all occurences are concatenated (CRLF seperated)        -->
+<!-- to be used in place of the '[last_*]' keyword.                   -->
+
+  <send>
+    <![CDATA[
+      SIP/2.0 481 Call/Transaction Does Not Exist
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]info[pid]
+      To: sip:[field1]@[remote_ip]:[remote_port];tag=[pid]info[call_number]
+      Call-ID: [call_id]
+      CSeq: 20 NOTIFY
+      Contact: sip:[field0]@[local_ip]:[local_port];transport=[transport]
+      Supported: replaces
+      Max-Forwards: 70
+      Subject: Performance Test
+      User-Agent: pqrxyz
+      Content-Length: 0
+    ]]>
+  </send>
+
+</scenario>

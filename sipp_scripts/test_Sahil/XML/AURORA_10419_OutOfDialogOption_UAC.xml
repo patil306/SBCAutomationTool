@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+<!--      User-to-User: 00FA080001001056965CFB;encoding=hex -->
+
+<scenario name="Basic OPTION UAC">
+<send retrans="500">
+<![CDATA[
+	OPTIONS sip:[field1]@[remote_ip]:[remote_port] SIP/2.0
+	Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+	From: sip:[field0]@[field2];tag=[call_number]	
+	To: sip:[field1]@[remote_ip]:[remote_port]
+	Call-ID: [call_id]
+	CSeq: 2 OPTIONS
+	Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP
+	Supported: replaces
+	Max-Forwards: 70
+	Subject: Performance Test
+	User-to-User: 00FA080001001056965CFB;encoding=hex
+	Content-Length: 0
+	Accept: application/sdp
+]]>
+</send>
+
+<recv response="200" rtd="true"/>
+
+<!--
+<send>
+<![CDATA[
+    PRACK sip:[field1]@[remote_ip]:[remote_port] SIP/2.0
+    Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+    From: sip:[field0]@[field2];tag=[call_number]
+    To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+    Call-ID: [call_id]
+    CSeq: 3 PRACK
+    Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP
+    Supported: replaces
+    Max-Forwards: 70
+    Rack: 1 1 INVITE
+    Subject: Performance Test
+    User-to-User: 00FA080001001056965CFB;encoding=hex
+    Content-Length: 0
+]]>
+</send>
+
+<recv response="200" rtd="true"/>
+
+<recv response="200" rrs="true">
+        <action>
+                   <ereg regexp="sip.*[^>]" search_in="hdr" header="Contact:" assign_to="1"/>
+                           </action>
+                           </recv> 
+
+  <send>
+    <![CDATA[
+      ACK sip:[field1]@[remote_ip]:[remote_port];transport=TCP SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 1 ACK
+      Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP
+      Max-Forwards: 70
+      [routes]
+      Subject: Performance Test
+      Content-Length: 0
+     ]]>
+  </send>
+<pause milliseconds="3000"/> 
+    <![CDATA[
+      BYE [$1] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      CSeq: 2 BYE
+      [routes]
+      Max-Forwards: 70
+      Subject: Performance Test
+      Content-Length: 0
+   ]]>
+  </send>
+  <recv response="200" rtd="true">
+-->
+</scenario>

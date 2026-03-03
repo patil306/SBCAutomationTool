@@ -1,0 +1,303 @@
+----------------------------------------------- 2017-10-11 20:08:45:238.218
+TCP message sent (474 bytes):
+
+REGISTER sip:sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-0
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+Call-ID: 1-31545@10.133.39.159
+CSeq: 1 REGISTER
+Contact: <sip:4071@10.133.39.159:5060;transport=TLS>;q=1;expires=3600;avaya-actions="presence.initiate-pubsub";reg-id=1;+sip.instance="<urn:uuid:4071e96aa1e6-11a9-550b-a009-4071>"
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:08:45:244.235
+TCP message received [213] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+CSeq: 1 REGISTER
+Call-ID: 1-31545@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:08:45:247.469
+TCP message received [396] bytes :
+
+SIP/2.0 200 OK
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com;tag=1
+CSeq: 1 REGISTER
+Call-ID: 1-31545@10.133.39.159
+Contact: <sip:4071@10.133.39.159:5060;transport=tls>;q=1;expires=3600;avaya-actions="presence.initiate-pubsub";reg-id=1;+sip.instance="<urn:uuid:4071e96aa1e6-11a9-550b-a009-4071>"
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:08:45:247.595
+TCP message sent (474 bytes):
+
+REGISTER sip:sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+Call-ID: 1-31545@10.133.39.159
+CSeq: 2 REGISTER
+Contact: <sip:4071@10.133.39.159:5060;transport=TLS>;q=1;expires=3600;avaya-actions="presence.initiate-pubsub";reg-id=1;+sip.instance="<urn:uuid:4071e96aa1e6-11a9-550b-a009-4071>"
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:08:45:251.678
+TCP message received [213] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+CSeq: 2 REGISTER
+Call-ID: 1-31545@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:08:49:254.515
+TCP message sent (474 bytes):
+
+REGISTER sip:sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+Call-ID: 1-31545@10.133.39.159
+CSeq: 2 REGISTER
+Contact: <sip:4071@10.133.39.159:5060;transport=TLS>;q=1;expires=3600;avaya-actions="presence.initiate-pubsub";reg-id=1;+sip.instance="<urn:uuid:4071e96aa1e6-11a9-550b-a009-4071>"
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:08:49:256.688
+TCP message received [213] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+CSeq: 2 REGISTER
+Call-ID: 1-31545@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:08:53:258.630
+TCP message sent (474 bytes):
+
+REGISTER sip:sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+Call-ID: 1-31545@10.133.39.159
+CSeq: 2 REGISTER
+Contact: <sip:4071@10.133.39.159:5060;transport=TLS>;q=1;expires=3600;avaya-actions="presence.initiate-pubsub";reg-id=1;+sip.instance="<urn:uuid:4071e96aa1e6-11a9-550b-a009-4071>"
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:08:53:260.404
+TCP message received [213] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+CSeq: 2 REGISTER
+Call-ID: 1-31545@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:08:57:261.548
+TCP message sent (474 bytes):
+
+REGISTER sip:sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+Call-ID: 1-31545@10.133.39.159
+CSeq: 2 REGISTER
+Contact: <sip:4071@10.133.39.159:5060;transport=TLS>;q=1;expires=3600;avaya-actions="presence.initiate-pubsub";reg-id=1;+sip.instance="<urn:uuid:4071e96aa1e6-11a9-550b-a009-4071>"
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:08:57:264.013
+TCP message received [213] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+CSeq: 2 REGISTER
+Call-ID: 1-31545@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:09:01:265.384
+TCP message sent (474 bytes):
+
+REGISTER sip:sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+Call-ID: 1-31545@10.133.39.159
+CSeq: 2 REGISTER
+Contact: <sip:4071@10.133.39.159:5060;transport=TLS>;q=1;expires=3600;avaya-actions="presence.initiate-pubsub";reg-id=1;+sip.instance="<urn:uuid:4071e96aa1e6-11a9-550b-a009-4071>"
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:09:01:267.660
+TCP message received [213] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+CSeq: 2 REGISTER
+Call-ID: 1-31545@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:09:05:269.836
+TCP message sent (474 bytes):
+
+REGISTER sip:sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+Call-ID: 1-31545@10.133.39.159
+CSeq: 2 REGISTER
+Contact: <sip:4071@10.133.39.159:5060;transport=TLS>;q=1;expires=3600;avaya-actions="presence.initiate-pubsub";reg-id=1;+sip.instance="<urn:uuid:4071e96aa1e6-11a9-550b-a009-4071>"
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:09:05:272.534
+TCP message received [213] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+CSeq: 2 REGISTER
+Call-ID: 1-31545@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:09:09:273.832
+TCP message sent (474 bytes):
+
+REGISTER sip:sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+Call-ID: 1-31545@10.133.39.159
+CSeq: 2 REGISTER
+Contact: <sip:4071@10.133.39.159:5060;transport=TLS>;q=1;expires=3600;avaya-actions="presence.initiate-pubsub";reg-id=1;+sip.instance="<urn:uuid:4071e96aa1e6-11a9-550b-a009-4071>"
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:09:09:276.504
+TCP message received [213] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+CSeq: 2 REGISTER
+Call-ID: 1-31545@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:09:13:277.831
+TCP message sent (474 bytes):
+
+REGISTER sip:sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+Call-ID: 1-31545@10.133.39.159
+CSeq: 2 REGISTER
+Contact: <sip:4071@10.133.39.159:5060;transport=TLS>;q=1;expires=3600;avaya-actions="presence.initiate-pubsub";reg-id=1;+sip.instance="<urn:uuid:4071e96aa1e6-11a9-550b-a009-4071>"
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:09:13:280.265
+TCP message received [213] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com
+CSeq: 2 REGISTER
+Call-ID: 1-31545@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:09:17:254.692
+TCP message received [243] bytes :
+
+SIP/2.0 408 Request Timeout
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com;tag=zXcVbNm0c14bc6ff
+CSeq: 2 REGISTER
+Call-ID: 1-31545@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 408 Request Timeout
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com;tag=zXcVbNm0c14bc6ff
+CSeq: 2 REGISTER
+Call-ID: 1-31545@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2017-10-11 20:09:17:255.045
+TCP message sent (296 bytes):
+
+BYE  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-31545-1--1
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4071@sbcdev4.com;tag=zXcVbNm0c14bc6ff
+Call-ID: 1-31545@10.133.39.159
+CSeq: 3 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+

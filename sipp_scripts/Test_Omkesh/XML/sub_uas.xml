@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario>
+<recv request="SUBSCRIBE"  optional="false">
+<action>
+<ereg regexp="<([^>]*)" search_in="hdr" start_line="true" header="Contact:" assign_to="tempRemoteContact"/>
+<ereg regexp="[^<].*" search_in="var" variable="tempRemoteContact" assign_to="remoteContact" check_it="true" />
+
+<ereg regexp=".*" search_in="hdr" start_line="true" header="CSeq:" check_it="true" assign_to="invCseq"/>
+<ereg regexp="[0-9]+" search_in="var" variable="invCseq" assign_to="invCseq" check_it="true" />
+
+<ereg regexp=".*" search_in="hdr" header="From" assign_to="3"/>
+<ereg regexp="sip:(.*)>" search_in="hdr" header="Contact" assign_to="4,5"/>
+<assign assign_to="4" variable="5" />
+
+<!--
+     <ereg regexp=".*" search_in="hdr" start_line="true" header="From:" assign_to="remoteHdr" check_it="true" />
+     <ereg regexp=".*" search_in="hdr" start_line="true" header="To:" assign_to="invTo" check_it="true" />
+     -->
+</action>
+</recv>
+<send>
+<![CDATA[
+
+
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=2
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Type: application/sdp
+Expires: 60
+Content-Length: [len]
+
+]]>
+</send>
+
+<pause milliseconds = "5000" />
+
+<send>
+<![CDATA[
+
+NOTIFY sip:[$5] SIP/2.0
+Subscription-State: active;expires=10
+From: <sip:[$localNo]@[local_ip]>;tag=2
+To[$3]
+Cseq: 2 NOTIFY
+[last_Call-ID:]
+Via: SIP/2.0/[$localTransport] [local_ip]:[local_port];branch=[branch]
+Contact: [$localContact]
+Max-Forwards: 69
+User-Agent: AvayaTest
+Event: nena-ServiceState
+Service-State: Normal
+Content-Type: multipart/mixed;boundary="Boundary-1579758416180"
+Content-Length: [len]
+
+--Boundary-1579758416180
+Content-Type: application/dialog-info+xml
+
+<?xml version="1.0"?>
+<dialog-info xmlns="urn:ietf:params:xml:ns:dialog-info"
+xmlns:av="urn:avaya:xml:ns:ext:dialog-info"
+xmlns:sa="urn:avaya:xml:ns:ext:dialog-info"
+version="0" state="full"
+entity="sip:4001@ci.com">
+</dialog-info>
+--Boundary-1579758416180
+Content-Type: application/dialog-info+xml
+
+<?xml version="1.0"?>
+<dialog-info xmlns="urn:ietf:params:xml:ns:dialog-info"
+xmlns:av="urn:avaya:xml:ns:ext:dialog-info"
+xmlns:sa="urn:avaya:xml:ns:ext:dialog-info"
+version="0" state="full"
+entity="sip:4002@ci.com">
+</dialog-info>
+
+--Boundary-1579758416180--
+]]>
+</send>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:180-->
+
+<recv response="200"  optional="false">
+</recv>
+</scenario>
+

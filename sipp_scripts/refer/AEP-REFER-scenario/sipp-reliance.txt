@@ -1,0 +1,55 @@
+***SBC configuration:
+
+Configure routing profile as default for both UAC and UAC legs.
+
+172.16.2.35
+
+./sipp.svn
+
+UAC
+/root/mahi/sipp-3.4.1/sipp-3.4.1/sipp  -sf Trunk_UAC.xml 2-rp 2000 192.168.5.168:5060 -i 192.168.5.36 -inf testdemo.csv -p 5060 -t t1 -m 3000 -trace_msg
+
+AEP
+/root/mahi/sipp-3.4.1/sipp -sf  Transferer.xml 172.16.2.151:5060 -i 172.16.2.35 -inf testdemo.csv -p 5060 -t t1 -m 3000 -trace_msg
+
+Agent
+/root/mahi/sipp-3.4.1/sipp -sf  Transfer_Target.xml 172.16.2.151:5060 -i 172.16.2.35 -inf testdemo.csv -p 5070 -t t1 -m 3000 -trace_msg
+
+
+~/mahi/sipp-3.4.1# sipp -sf  /root/Reliance/Transfer_Target.xml 172.16.2.151:5060 -i 172.16.2.35 -p 5070 -t t1 -m 3000 -trace_msg
+
+
+root@kali:~/mahi/sipp-3.4.1# sipp -sf /root/Reliance/Transferer.xml 172.16.2.151:5060 -i 172.16.2.35 -inf /root/Reliance/testdemo.csv -p 5060 -t t1 -m 3000 -trace_msg
+
+
+Ashish errors:
+
+2016-04-17      08:20:02.002752 1460895602.002752: Unable to bind main socket, errno = 98 (Address already in use).
+
+root@kali:~/Reliance# netstat -tunap | grep 5060
+tcp        0      0 192.168.5.36:5060       0.0.0.0:*               LISTEN      6345/sipp
+root@kali:~/Reliance# ps -eaf | grep sipp
+root      6345  3825  0 Apr16 pts/0    00:10:48 /root/mahi/sipp-3.4.1/sipp -sf Transferer.xml -r 1 -rp 1 192.168.5.168 -i 192.168.5.36 -inf testdemo.csv -p 5060 -t t1 -m 1 -trace_msg
+root      6346  6235  0 Apr16 pts/1    00:10:48 /root/mahi/sipp-3.4.1/sipp -sf Transfer_Target.xml -r 1 -rp 1 192.168.5.168 -i 192.168.5.36 -inf testdemo.csv -p 5065 -t t1 -m 1 -trace_msg
+root      9855  9697  0 08:25 pts/2    00:00:00 grep sipp
+root@kali:~/Reliance# kill
+
+another issue:
+
+Transferer.xml: line 2: syntax error near unexpected token `<'
+Transferer.xml: line 2: `<!DOCTYPE scenario SYSTEM "sipp.dtd">'
+root@kali:~/Reliance# /root/mahi/sipp-3.4.1/sipp -sf  Transferer.xml 172.16.2.151:5060 -i 172.16.2.35 -inf testdemo.csv -p 5060 -t t1 -m 3000 -trace_msg
+/root/mahi/sipp-3.4.1/sipp: line 1: syntax error near unexpected token `newline'
+/root/mahi/sipp-3.4.1/sipp: line 1: `<?xml version="1.0" encoding="ISO-8859-1" ?>'
+root@kali:~/Reliance# /root/mahi/sipp-3.4.1/sipp -sf  Trunk_UAC.xml 172.16.2.151:5060 -i 172.16.2.35 -inf testdemo.csv -p 5060 -t t1 -m 3000 -trace_msg
+/root/mahi/sipp-3.4.1/sipp: line 1: syntax error near unexpected token `newline'
+/root/mahi/sipp-3.4.1/sipp: line 1: `<?xml version="1.0" encoding="ISO-8859-1" ?>'
+root@kali:~/Reliance# reboot
+
+Broadcast message from root@kali (pts/4) (Sun Apr 17 09:19:44 2016):
+
+The system is going down for reboot NOW!
+root@kali:~/Reliance#
+
+
+Mahender: 10.133.36.41 root/SIPera_123

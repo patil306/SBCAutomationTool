@@ -1,0 +1,183 @@
+----------------------------------------------- 2019-03-29 12:32:15:727.168
+TCP message sent (776 bytes):
+
+INVITE sip:40007@10.133.48.238 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:6027;branch=z9hG4bK-15796-1-0
+From: sip:40006@rwtrunk.com;tag=1
+To: sip:40007@10.133.48.238:5060
+Call-ID: 1-15796@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40006@10.133.39.159:6027;transport=tcp>
+Route: <sip:10.133.39.191:5060;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   279
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+c=IN IP4 10.133.39.159
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+m=video 5006 RTP/AVP 100 98
+c=IN IP4 10.133.39.159
+a=sendrecv
+
+----------------------------------------------- 2019-03-29 12:32:15:742.010
+TCP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40006@rwtrunk.com;tag=1
+To: sip:40007@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 1-15796@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:6027;branch=z9hG4bK-15796-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-29 12:32:15:761.496
+TCP message received [678] bytes :
+
+SIP/2.0 200 OK
+From: sip:40006@rwtrunk.com;tag=1
+To: sip:40007@10.133.48.238:5060;tag=2
+CSeq: 1 INVITE
+Call-ID: 1-15796@10.133.39.159
+Contact: <sip:10.133.48.238:5060;transport=tcp>
+Record-Route: <sip:10.133.48.238:5060;ipcs-line=12;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:6027;branch=z9hG4bK-15796-1-0
+Content-Type: application/sdp
+Content-Length: 304
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.12
+s=-
+t=0 0
+m=audio 35044 RTP/AVP 0 8 101
+c=IN IP4 10.133.48.238
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+m=video 35046 RTP/AVP 100 98
+c=IN IP4 10.133.48.238
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-03-29 12:32:15:761.769
+TCP message sent (408 bytes):
+
+ACK sip:40006@10.133.48.238:5060 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:6027;branch=z9hG4bK-15796-1-3
+From: sip:40006@rwtrunk.com;tag=1
+To: sip:40006@10.133.48.238:5060;tag=2
+Call-ID: 1-15796@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:40006@10.133.39.159:6027;transport=tcp>
+Max-Forwards: 70
+Route: <sip:10.133.48.238:5060;ipcs-line=12;lr;transport=tcp>
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-29 12:32:15:779.094
+TCP message received [827] bytes :
+
+INVITE sip:40006@10.133.39.159:6027;transport=tcp SIP/2.0
+From: sip:40007@10.133.48.238:5060;tag=2
+To: sip:40006@rwtrunk.com;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-15796@10.133.39.159
+Contact: <sip:10.133.48.238:5060;transport=tcp>
+Record-Route: <sip:10.133.48.238:5060;ipcs-line=12;lr;transport=tcp>
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=12;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.238:5060;branch=z9hG4bK-s1632-001764506763-1--s1632-;originator
+Content-Type: application/sdp
+Content-Length: 292
+
+v=0
+o=user1 53655765 2353687638 IN IP4 192.168.5.12
+s=-
+t=0 0
+m=audio 35044 RTP/AVP 0 8 101
+c=IN IP4 0.0.0.0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=sendonly
+a=ptime:20
+m=video 35046 RTP/AVP 100 98
+c=IN IP4 0.0.0.0
+a=sendonly
+a=ptime:20
+
+----------------------------------------------- 2019-03-29 12:32:15:779.520
+TCP message sent (597 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.48.238:5060;branch=z9hG4bK-s1632-001764506763-1--s1632-;originator
+From: sip:40007@10.133.48.238:5060;tag=2
+To: sip:40006@rwtrunk.com;tag=1;tag=1
+Call-ID: 1-15796@10.133.39.159
+CSeq: 2 INVITE
+Contact: <sip:10.133.39.159:6027;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   255
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+c=IN IP4 10.133.39.159
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+m=video 5006 RTP/AVP 100 98
+c=IN IP4 10.133.39.159
+
+----------------------------------------------- 2019-03-29 12:32:15:800.006
+TCP message received [622] bytes :
+
+ACK sip:40006@10.133.39.159:6027;transport=tcp SIP/2.0
+From: sip:40007@10.133.48.238:5060;tag=2
+To: sip:40006@rwtrunk.com;tag=1
+CSeq: 2 ACK
+Call-ID: 1-15796@10.133.39.159
+Record-Route: <sip:10.133.48.238:5060;ipcs-line=12;lr;transport=tcp>
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=12;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.238:5060;branch=z9hG4bK-s1632-000707462552-1--s1632-;originator
+Via: SIP/2.0/TCP 10.133.39.159:6027;branch=z9hG4bK-15796-1-0
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-29 12:32:23:803.047
+TCP message sent (416 bytes):
+
+BYE sip:10.133.48.238:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:6027;branch=z9hG4bK-15796-1-8
+From: sip:40006@rwtrunk.com;tag=1
+To: sip:40006@10.133.48.238:5060;tag=2
+Call-ID: 1-15796@10.133.39.159
+Contact: <sip:40006@10.133.39.159:6027;transport=tcp>
+CSeq: 2 BYE
+Route: <sip:10.133.48.238:5060;ipcs-line=12;lr;transport=tcp>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

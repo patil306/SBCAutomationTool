@@ -1,0 +1,26 @@
+----------------------------------------------- 2018-07-23 20:21:42:471.261
+TCP message received [321] bytes :
+
+CANCEL sip:Agent@sbcdev4.com;transport=tcp SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>
+CSeq: 1 CANCEL
+Call-ID: 7aae383a2a454c63b63e697d62763e23
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000815298289-1--s1632-;originator
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-23 20:21:42:472.088
+TCP message sent (316 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000815298289-1--s1632-;originator
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:Agent@sbcdev4.com;transport=TCP>
+Call-ID: 7aae383a2a454c63b63e697d62763e23
+CSeq: 1 CANCEL
+Contact: <sip:10.133.39.159:5090;transport=TCP>
+Content-Length: 0
+
+

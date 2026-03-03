@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!-- This program is free software; you can redistribute it and/or      -->
+
+<scenario name="RTP Echo pause / start test UAS">
+<!-- In client mode (sipp placing calls), the Call-ID MUST be         -->
+
+  <label id = "label_1"/>
+  <recv request="REGISTER" rrs="true" next ="label_2"/>
+
+  <label id = "label_2"/>
+  <send next="label_1">
+    <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_Record-Route:]
+      [last_From:]
+      [last_To:];tag=[pid]SIPpTag01[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: sip:[field1]@[local_ip]:[local_port];transport=[transport]
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+<pause milliseconds="100"/>
+
+<!--
+<send next="label_1">
+    <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_Record-Route:]
+      [last_From:]
+      [last_To:];tag=[pid]SIPpTag01[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: sip:[field1]@[local_ip]:[local_port];transport=[transport]
+      Content-Length: 0
+
+    ]]>
+  </send>
+  -->
+</scenario><!-- vim: set ts=8 sw=2 sts=2 et ai: -->

@@ -1,0 +1,18 @@
+sipp: The following events occured:
+2018-10-15	16:13:58:545	1539600238.545893: Aborting call on unexpected message for Call-Id '1-23884@10.133.39.159': while expecting 'INVITE' (index 11), received 'ACK sip:81002001@10.133.39.159:5060;transport=udp SIP/2.0
+From: sip:81001001@10.133.73.76:5060;tag=1
+To: sip:81002001@rwtrunk.com;tag=1
+CSeq: 2 ACK
+Call-ID: 1-23884@10.133.39.159
+Record-Route: <sip:10.133.73.76:5060;ipcs-line=2;lr;transport=udp>
+Record-Route: <sip:10.133.73.76:5060;ipcs-line=2;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 10.133.73.76:5060;branch=z9hG4bK-s1632-001096846046-1--s1632-;originator
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-23884-1-0
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+'.

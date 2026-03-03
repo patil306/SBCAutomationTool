@@ -1,0 +1,27 @@
+----------------------------------------------- 2018-09-05 17:47:33:281.886
+UDP message received [369] bytes :
+
+BYE sip:192.168.6.5:5075;transport=UDP SIP/2.0
+From: sip:40005@192.168.6.240:5060;tag=1
+To: sip:40006@192.168.6.5;tag=1
+CSeq: 3 BYE
+Call-ID: 1-27008@10.133.39.159
+Record-Route: <sip:192.168.6.240:5060;ipcs-line=28;lr;transport=udp>
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.6.240:5060;branch=z9hG4bK-s1632-000064221909-1--s1632-;originator
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-05 17:47:33:282.823
+UDP message sent (296 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.6.240:5060;branch=z9hG4bK-s1632-000064221909-1--s1632-;originator
+From: sip:40005@192.168.6.240:5060;tag=1
+To: sip:40006@192.168.6.5;tag=1
+Call-ID: 1-27008@10.133.39.159
+CSeq: 3 BYE
+Contact: <sip:192.168.6.5:5075;transport=UDP>
+Content-Length: 0
+
+

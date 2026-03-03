@@ -1,0 +1,57 @@
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAS_16846_updateWithSdp.xml 192.168.55.79:5060 -i 192.168.5.12 -inf test50001.csv -p 5092 -t t1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas.xml 192.168.55.78:5061 -i 192.168.5.12 -inf test50001.csv -p 5097 -t l1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas_Bye_glare_16847.xml 192.168.55.76:5060 -i 192.168.5.12 -inf test50001.csv -p 5092 -t u1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas_17473.xml 192.168.55.76:5060 -i 192.168.5.12 -inf test50001.csv -p 5092 -t t1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas_Bye_glare_16847.xml 192.168.55.78:5060 -i 192.168.5.12 -inf test50001.csv -p 5097 -t u1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas.xml 192.168.55.78:5060 -i 192.168.5.12 -inf test50001.csv -p 5092 -t t1  -aa -trace_msg  -trace_err
+
+/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sahil/XML/uasPendingMsgReInv200Rcvd.xml 192.168.25.218:5060 -i 192.168.5.12 -inf test50003.csv -p 6025 -t u1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAS_InviteReplaces_ReplaceUAC_488.xml 192.168.55.78:5060 -i 192.168.5.12 -inf test50001.csv -p 5097 -t u1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas_recv_reinvite_22045.xml 192.168.55.78:5061 -i 192.168.5.12 -inf test50001.csv -p 5096 -t l1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas_send_reinvite_22395.xml 192.168.55.78:5061 -i 192.168.5.12 -inf test50001.csv -p 5097 -t l1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas_486_22395.xml 192.168.55.78:5060 -i 192.168.5.12 -inf test50001.csv -p 5097 -t u1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas_Reinvite.xml 192.168.55.78:5061 -i 192.168.5.12 -inf test50001.csv -p 5097 -t l1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas_17473_scenario2.xml 192.168.55.78:5060 -i 192.168.5.12 -inf test50001.csv -p 5097 -t t1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAS_InviteReplaces.xml 192.168.55.78:5060 -i 192.168.5.12 -inf test50001.csv -p 5097 -t u1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAS_InviteReplaces_ReplaceUAC.xml 192.168.55.78:5060 -i 192.168.5.12 -inf test50001.csv -p 5097 -t u1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas-486-AURORA-19844.xml 192.168.55.78:5060 -i 192.168.5.12 -inf test50001.csv -p 5097 -t t1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas-486-AURORA-19844.xml 192.168.55.79:5060 -i 192.168.5.12 -inf test50001.csv -p 5092 -t t1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas-486-AURORA-19844.xml 192.168.5.141:5060 -i 192.168.5.12 -inf test50001.csv -p 5074 -t t1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas_Bye_glare_16847.xml 192.168.55.78:5060 -i 192.168.5.12 -inf test50001.csv -p 5097 -t u1  -aa -trace_msg  -trace_err
+
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAS_16846_updateWithSdp.xml 192.168.55.76:5060 -i 192.168.5.12 -inf test50001.csv -p 5092 -t u1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAS_media.xml 192.168.55.76:5060 -i 192.168.5.12 -inf test50001.csv -p 5092 -t t1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAS_ANAT_ungrouped_16610.xml 192.168.55.78:5060 -i 192.168.5.12 -inf test50001.csv -p 5097 -t u1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf uas_srtp.xml 192.168.55.78:5060 -i 192.168.5.12 -inf test50001.csv -p 6005 -t t1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf uas_srtp.xml 192.168.55.78:5060 -i 192.168.5.12 -inf test50001.csv -p 6008 -t l1  -aa -trace_msg  -trace_err 
+#/home/sipp/sipp.svn/sipp -sf uas_forking.xml 192.168.55.80:5061 -i 192.168.5.12 -inf test50001.csv -p 6020 -t t1  -m 1 -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAS_16487.xml 192.168.55.80:5061 -i 192.168.5.12 -inf test50001.csv -p 6020 -t t1  -m 1 -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/UAS_16487.xml 192.168.9.54:5060 -i 192.168.5.12 -inf test50001.csv -p 6011 -t t1  -m 1 -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas_AURORA-15515.xml 192.168.55.79:5061 -i 192.168.5.12 -inf test50001.csv -p 6027 -t l1  -aa -trace_msg  -trace_err
+
+#/home/sipp/sipp.svn/sipp -sf /home/sipp/test_Sneha/XML/uas_Bye_glare_19460.xml 192.168.55.79:5061 -i 192.168.5.12 -inf test50001.csv -p 5092 -t t1 -aa -trace_msg  -trace_err

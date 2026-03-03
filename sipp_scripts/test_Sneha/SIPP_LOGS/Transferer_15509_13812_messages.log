@@ -1,0 +1,138 @@
+----------------------------------------------- 2019-03-08 00:17:51:277.265
+TCP message received [786] bytes :
+
+INVITE sip:40006@192.168.5.12:5092;transport=tcp SIP/2.0
+From: sip:40006@192.168.55.78;tag=1
+To: sip:40006@192.168.5.12:5092
+CSeq: 1 INVITE
+Call-ID: e3178654b22562476b1b3e6e54aa480e
+Contact: <sip:40006@192.168.55.78:5060;transport=tcp>
+Record-Route: <sip:192.168.55.78:5060;ipcs-line=2;lr;transport=tcp>
+Allow: REFER
+Supported: replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-000011980922-1--s1632-
+Subject: Performance Test
+Session-Expires: 1800;refresher=uac
+Min-SE: 90
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 153
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.48.83
+s=-
+c=IN IP4 10.133.48.83
+t=0 0
+m=audio 35004 RTP/AVP 18 18
+a=rtpmap:18 G729/8000
+a=ptime:20
+
+----------------------------------------------- 2019-03-08 00:17:51:278.079
+TCP message sent (299 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-000011980922-1--s1632-
+From: sip:40006@192.168.55.78;tag=1
+To: sip:40006@192.168.5.12:5092
+Call-ID: e3178654b22562476b1b3e6e54aa480e
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5092;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-08 00:17:51:278.273
+TCP message sent (556 bytes):
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-000011980922-1--s1632-
+From: sip:40006@192.168.55.78;tag=1
+To: sip:40006@192.168.5.12:5092;tag=1
+Call-ID: e3178654b22562476b1b3e6e54aa480e
+CSeq: 1 INVITE
+Supported: 100rel, timer
+Contact: <sip:192.168.5.12:5092;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   180
+
+v=0
+o=cs1k 4444 6666 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6001 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+
+----------------------------------------------- 2019-03-08 00:17:51:278.458
+TCP message sent (605 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-000011980922-1--s1632-
+CSeq: 1 INVITE
+From: sip:40006@192.168.55.78;tag=1
+To: sip:40006@192.168.5.12:5092;tag=1
+Call-ID: e3178654b22562476b1b3e6e54aa480e
+Contact: <sip:192.168.5.12:5092;transport=TCP>
+Session-Expires: 1800;refresher=uac
+Supported: 100rel, timer, replaces
+Require: timer
+Content-Type: application/sdp
+Content-Length:   180
+
+v=0
+o=cs1k 4444 6666 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6001 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+
+----------------------------------------------- 2019-03-08 00:17:51:303.293
+TCP message received [493] bytes :
+
+ACK sip:40006@192.168.5.12:5092;transport=tcp SIP/2.0
+From: sip:40006@192.168.55.78;tag=1
+To: sip:40006@192.168.5.12:5092;tag=1
+CSeq: 1 ACK
+Call-ID: e3178654b22562476b1b3e6e54aa480e
+Contact: <sip:40006@192.168.55.78:5060;transport=tcp>
+Record-Route: <sip:192.168.55.78:5060;ipcs-line=2;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-001058697319-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-08 00:17:53:305.159
+TCP message sent (447 bytes):
+
+REFER sip:40006@192.168.55.78:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-001058697319-1--s1632-
+From:  sip:40006@192.168.55.78;tag=1
+To:  sip:40006@192.168.5.12:5092;tag=1
+Call-ID: e3178654b22562476b1b3e6e54aa480e
+CSeq: 1 REFER
+Refer-To: <sip:50003@192.168.5.12:6022;transport=TCP>
+Referred-By: sip:40006@192.168.5.12:5092
+Contact: <sip:40008@192.168.5.12:5092;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-03-08 00:17:53:335.409
+TCP message received [258] bytes :
+
+SIP/2.0 202 Accepted
+From: sip:40006@192.168.55.78;tag=1
+To: sip:40006@192.168.5.12:5092;tag=1
+CSeq: 1 REFER
+Call-ID: e3178654b22562476b1b3e6e54aa480e
+Via: SIP/2.0/TCP 192.168.55.78:5060;branch=z9hG4bK-s1632-001058697319-1--s1632-
+Content-Length: 0
+
+

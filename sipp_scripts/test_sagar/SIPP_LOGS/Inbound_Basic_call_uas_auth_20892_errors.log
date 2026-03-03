@@ -1,0 +1,13 @@
+sipp: The following events occured:
+2017-11-02	16:13:00:007	1509619380.007615: Aborting call on an unexpected CANCEL for call: 368986503ff2257a0ccfd70863e1a821.
+2017-11-02	16:13:00:009	1509619380.009833: Aborting call on unexpected message for Call-Id '368986503ff2257a0ccfd70863e1a821': while expecting 'INVITE' (index 0), received 'ACK sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15295;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 1 ACK
+Call-ID: 368986503ff2257a0ccfd70863e1a821
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000472870472-1--s1632-
+Content-Length: 0
+
+'.

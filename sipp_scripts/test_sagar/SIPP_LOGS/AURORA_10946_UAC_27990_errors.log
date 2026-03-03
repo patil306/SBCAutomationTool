@@ -1,0 +1,16 @@
+sipp: The following events occured:
+2018-09-05	20:32:03:088	1536159723.088650: Aborting call on unexpected message for Call-Id '1-27990@10.133.39.159': while pausing (index 11), received 'INVITE sip:40005@10.133.39.159:5075 SIP/2.0
+From: sip:40006@10.133.48.235:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+CSeq: 3 INVITE
+Call-ID: 1-27990@10.133.39.159
+Contact: <sip:10.133.48.235:5060;transport=udp>
+Record-Route: <sip:10.133.48.235:5060;ipcs-line=7;lr;transport=udp>
+Allow: INVITE, CANCEL, BYE, ACK, PRACK, SUBSCRIBE, NOTIFY, REFER, OPTIONS, INFO, PUBLISH, UPDATE
+Max-Forwards: 70
+Via: SIP/2.0/UDP 10.133.48.235:5060;branch=z9hG4bK-s1632-002088720741-1--s1632-;originator
+Session-Expires: 1200;refresher=uas
+Min-SE: 1200
+Content-Length: 0
+
+'.

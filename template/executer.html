@@ -1,0 +1,156 @@
+<html>
+	<head></head>
+	<style>
+		.flex-container {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			height: 590px;
+		}
+		.flex-container > div {
+			width: 50%;
+			height: 550px;
+			margin: 12px;
+			border-radius: 3px;
+			background-color: #f1f2f0;
+		}
+		.container1 { 
+			border:2px solid #ccc; 
+			width:95%; 
+			height: 350px; 
+			overflow-y: scroll;
+			align-items: left;
+			margin-left: 15px;
+		}
+		.container2 { 
+			border:2px solid #ccc; 
+			width:99%; 
+			height: 260px; 
+			overflow-y: scroll;
+			align-items: left;
+			
+		}
+		#Validation {
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		#Validation td, #Validation th {
+			border: 1px solid #ddd;
+			padding: 8px;
+		}
+
+		#Validation tr:nth-child(even){background-color: #f2f2f2;}
+
+		#Validation tr:hover {background-color: #ddd;}
+
+		#Validation th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			background-color: #808787;
+			color: white;
+		}
+	</style>
+	<script>
+function toggle(source) {
+  checkboxes = document.getElementsByName('item');
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
+	</script>
+	<body>
+		<form method="post" action="/execute-file" enctype="multipart/form-data">
+		<div class="flex-container">
+			<div>
+			<center>
+				<h1>Scenario Executer</h1>
+				<table>
+				<tr>
+				<td>
+				Select Feature	:
+				<select id = "listOfFeature" name="listOfFeature">
+					<option value = "All">All</option>
+         {% for feature in features %}
+
+<option value="{{ feature[0] }}">{{ feature[1] }}</option>
+
+{% endfor %}
+
+				</select>&nbsp&nbsp&nbsp
+				
+				</td>
+				<td>
+				Select Configuration	:
+				<select id = "listOfConfig" name="listOfConfig" action="/test-file">
+				{% for con in config %}
+				<option value="{{ con[0] }}">{{ con[1] }}</option>
+
+				{% endfor %}
+				</select>
+				</td>
+				<td>
+					<input type="submit" value="Search" name="search" formaction="/test-file">
+				</td>
+				</tr>
+
+			</table>	
+			</center>
+			
+			<b>&nbsp&nbspTest Scenario:<b>
+			
+			<div class="container1">
+				<input type="checkbox" onClick="toggle(this)" /> Select All<br/>
+				{% for item in rows %}
+				<tr style="margin-left: 30px;">
+					<td> <input type="checkbox" onclick='handleClick(this);' id="{{item[0]}}" name="item" value="{{item[0]}}"/></td>
+					<td>{{item[3]}}</td>
+				</tr><br>
+				{% endfor %}
+			</div>
+			<br>
+            <center><input type="submit" value="Get Data" name="getData" formaction="/get-data" ></center>
+
+			
+		</div>
+			<div>
+				<textarea rows="12" cols="78" id="testCaseDesc" name="testCaseDesc" value="" placeholder='Test Case Description' readonly>
+					{% for item in tcConf %}
+					{{item[4]}}
+{% endfor %}
+				</textarea><br><br>
+				<!--<b>Validation	:</b><br>-->
+			
+				<div id="div" class="container2">
+				<table id= "Validation">
+					<tr>
+						<th>Networks</th>
+						<th>Transports</th>
+						<th>xmlType</th>
+					</tr>
+					{% for item in tcConf %}
+					<tr>
+						<td>{{item[7]}}</td>
+						<td>{{item[9]}}</td>
+						<td>{{item[10]}}</td>
+					</tr>
+	                                {% endfor %}
+				</table>
+				</div>
+				<p align="center">
+				<input type="submit" value="EXECUTE" name="submit" align="center">
+				</p>
+			</div>
+		</div>
+		</form>
+</body>
+        <script>
+        function handleClick(cb) {
+  display("Clicked, new value = " + cb.checked);
+		formaction("/test-file");
+}
+        </script>
+
+</html>

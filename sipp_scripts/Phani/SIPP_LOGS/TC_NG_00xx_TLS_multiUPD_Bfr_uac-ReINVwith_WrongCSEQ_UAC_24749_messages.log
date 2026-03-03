@@ -1,0 +1,41 @@
+----------------------------------------------- 2018-09-11 20:58:59:239.961
+TLS message sent (781 bytes):
+
+INVITE sips:4079@10.133.48.152:5061 SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5073;branch=z9hG4bK-24749-1-0
+From: sips:4078@10.133.39.159:5073;tag=1
+To: sips:4079@10.133.48.152:5061
+Call-ID: 1-24749@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:4078@10.133.39.159:5073;transport=TLS
+Supported: replaces ,
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   323
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/SAVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=acfg:1 t=1 a=1
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+----------------------------------------------- 2018-09-11 20:58:59:254.777
+TLS message received [227] bytes :
+
+SIP/2.0 100 Trying
+From: sips:4078@10.133.39.159:5073;tag=1
+To: sips:4079@10.133.48.152:5061
+CSeq: 1 INVITE
+Call-ID: 1-24749@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5073;branch=z9hG4bK-24749-1-0
+Content-Length: 0
+
+

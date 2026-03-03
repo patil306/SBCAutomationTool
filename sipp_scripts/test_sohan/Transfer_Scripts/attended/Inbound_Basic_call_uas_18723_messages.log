@@ -1,0 +1,856 @@
+----------------------------------------------- 2018-01-12 18:42:07:500.149
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=1a4bba2e0f31
+To: <sip:abc@vega.com>
+CSeq: 600 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001269077317-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=1a4bba2e0f31
+To: <sip:abc@vega.com>
+CSeq: 600 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001269077317-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:10:714.502
+TCP message received [753] bytes :
+
+INVITE sip:sbcdev4.com;transport=tcp SIP/2.0
+From: sip:81002002@sbcdev4.com;tag=1
+To: sip:81001002@sbcdev4.com
+CSeq: 1 INVITE
+Call-ID: 1212e6532a60f05a1357c817bc750311
+Contact: sip:81002002@10.133.73.4:5060;transport=tcp;transport=TCP
+Route: <sip:81001002@sbcdev4.com>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=5;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000107457646-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: 211
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35008 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-01-12 18:42:10:714.705
+TCP message sent (296 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000107457646-1--s1632-
+From: sip:81002002@sbcdev4.com;tag=1
+To: sip:81001002@sbcdev4.com
+Call-ID: 1212e6532a60f05a1357c817bc750311
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5062;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:10:714.826
+TCP message sent (480 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000107457646-1--s1632-
+From: sip:81002002@sbcdev4.com;tag=1
+To: sip:81001002@sbcdev4.com;tag=2
+Call-ID: 1212e6532a60f05a1357c817bc750311
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5062;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   147
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+ptime=20
+
+----------------------------------------------- 2018-01-12 18:42:12:65.754
+TCP message received [460] bytes :
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=e6e2024af5d7
+To: <sip:a@sbcdev4.com>
+CSeq: 527 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1297;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-002118305306-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=e6e2024af5d7
+To: <sip:a@sbcdev4.com>
+CSeq: 527 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1297;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-002118305306-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:12:502.932
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=6c3e843ea779
+To: <sip:abc@vega.com>
+CSeq: 601 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000127785998-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=6c3e843ea779
+To: <sip:abc@vega.com>
+CSeq: 601 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000127785998-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:17:507.181
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=05ce4d1ee5a6
+To: <sip:abc@vega.com>
+CSeq: 602 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001351327196-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=05ce4d1ee5a6
+To: <sip:abc@vega.com>
+CSeq: 602 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001351327196-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:21:66.696
+TCP message received [460] bytes :
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=03f6b85f71f1
+To: <sip:a@sbcdev4.com>
+CSeq: 528 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1299;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-000352067860-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 recieved a TCP message:
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=03f6b85f71f1
+To: <sip:a@sbcdev4.com>
+CSeq: 528 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1299;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-000352067860-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:22:513.690
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=4844732a79db
+To: <sip:abc@vega.com>
+CSeq: 603 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000822127542-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=4844732a79db
+To: <sip:abc@vega.com>
+CSeq: 603 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000822127542-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:26:285.532
+TCP message received [366] bytes :
+
+REGISTER sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=78059502fbdd
+To: <sip:a@sbcdev4.com>
+CSeq: 122 REGISTER
+Call-ID: d031c5486194372d29a5c021d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001684410287-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+REGISTER sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=78059502fbdd
+To: <sip:a@sbcdev4.com>
+CSeq: 122 REGISTER
+Call-ID: d031c5486194372d29a5c021d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001684410287-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:27:511.896
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=e743121ceb6b
+To: <sip:abc@vega.com>
+CSeq: 604 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001611335790-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=e743121ceb6b
+To: <sip:abc@vega.com>
+CSeq: 604 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001611335790-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:30:69.587
+TCP message received [460] bytes :
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=a06a703b527e
+To: <sip:a@sbcdev4.com>
+CSeq: 529 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1303;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-000911105945-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 recieved a TCP message:
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=a06a703b527e
+To: <sip:a@sbcdev4.com>
+CSeq: 529 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1303;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-000911105945-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:32:513.871
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=e7f05e6b8e7a
+To: <sip:abc@vega.com>
+CSeq: 605 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000925195960-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=e7f05e6b8e7a
+To: <sip:abc@vega.com>
+CSeq: 605 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000925195960-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:37:515.247
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=69324e41e022
+To: <sip:abc@vega.com>
+CSeq: 606 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001261485340-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=69324e41e022
+To: <sip:abc@vega.com>
+CSeq: 606 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001261485340-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:39:70.963
+TCP message received [460] bytes :
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=2f7a9f5be58a
+To: <sip:a@sbcdev4.com>
+CSeq: 530 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1305;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001923679718-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 recieved a TCP message:
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=2f7a9f5be58a
+To: <sip:a@sbcdev4.com>
+CSeq: 530 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1305;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001923679718-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:42:516.694
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=218b7e69c465
+To: <sip:abc@vega.com>
+CSeq: 607 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001094384983-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=218b7e69c465
+To: <sip:abc@vega.com>
+CSeq: 607 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001094384983-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:47:518.577
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=9f41ae6b1c81
+To: <sip:abc@vega.com>
+CSeq: 608 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001092080674-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=9f41ae6b1c81
+To: <sip:abc@vega.com>
+CSeq: 608 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001092080674-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:48:71.565
+TCP message received [460] bytes :
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=0cb2d628be67
+To: <sip:a@sbcdev4.com>
+CSeq: 531 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1307;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001737973739-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 recieved a TCP message:
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=0cb2d628be67
+To: <sip:a@sbcdev4.com>
+CSeq: 531 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1307;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001737973739-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:52:520.958
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=6aa9560b095d
+To: <sip:abc@vega.com>
+CSeq: 609 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001684000818-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=6aa9560b095d
+To: <sip:abc@vega.com>
+CSeq: 609 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001684000818-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:57:74.489
+TCP message received [460] bytes :
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=d44c3b757a5b
+To: <sip:a@sbcdev4.com>
+CSeq: 532 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1309;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001426981822-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 recieved a TCP message:
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=d44c3b757a5b
+To: <sip:a@sbcdev4.com>
+CSeq: 532 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1309;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001426981822-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:42:57:529.505
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=a0d86a44a6c8
+To: <sip:abc@vega.com>
+CSeq: 610 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000561400435-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=a0d86a44a6c8
+To: <sip:abc@vega.com>
+CSeq: 610 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000561400435-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:43:02:525.831
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=2ba99b588805
+To: <sip:abc@vega.com>
+CSeq: 611 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000392752849-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=2ba99b588805
+To: <sip:abc@vega.com>
+CSeq: 611 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000392752849-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:43:05:287.101
+TCP message received [366] bytes :
+
+REGISTER sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=87ee48111260
+To: <sip:a@sbcdev4.com>
+CSeq: 123 REGISTER
+Call-ID: d031c5486194372d29a5c021d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001388291704-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+REGISTER sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=87ee48111260
+To: <sip:a@sbcdev4.com>
+CSeq: 123 REGISTER
+Call-ID: d031c5486194372d29a5c021d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001388291704-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:43:06:76.738
+TCP message received [460] bytes :
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=6de2fb7e4c02
+To: <sip:a@sbcdev4.com>
+CSeq: 533 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1312;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-002143710018-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 recieved a TCP message:
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=6de2fb7e4c02
+To: <sip:a@sbcdev4.com>
+CSeq: 533 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1312;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-002143710018-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:43:07:528.288
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=dfcffb5a92cf
+To: <sip:abc@vega.com>
+CSeq: 612 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000219861410-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=dfcffb5a92cf
+To: <sip:abc@vega.com>
+CSeq: 612 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000219861410-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:43:12:530.232
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=1d31ca7d1d18
+To: <sip:abc@vega.com>
+CSeq: 613 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001738863669-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=1d31ca7d1d18
+To: <sip:abc@vega.com>
+CSeq: 613 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001738863669-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:43:15:78.674
+TCP message received [460] bytes :
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=065425207343
+To: <sip:a@sbcdev4.com>
+CSeq: 534 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1315;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001503110125-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 recieved a TCP message:
+
+OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=065425207343
+To: <sip:a@sbcdev4.com>
+CSeq: 534 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1315;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001503110125-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:43:17:536.219
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=a11cbc771370
+To: <sip:abc@vega.com>
+CSeq: 614 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000006373084-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=a11cbc771370
+To: <sip:abc@vega.com>
+CSeq: 614 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000006373084-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:43:22:532.946
+TCP message received [393] bytes :
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=8d1467362e9a
+To: <sip:abc@vega.com>
+CSeq: 615 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001255548535-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 recieved a TCP message:
+
+OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=8d1467362e9a
+To: <sip:abc@vega.com>
+CSeq: 615 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001255548535-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+

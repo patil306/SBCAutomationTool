@@ -1,0 +1,292 @@
+----------------------------------------------- 2019-08-23 20:26:57:199.990
+UDP message received [841] bytes :
+
+INVITE sip:40007@192.168.5.12:5097 SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+CSeq: 1 INVITE
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4078@192.168.55.75:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000074372402-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 228
+
+v=0
+o=- 1297654 1 IN IP4 192.168.55.75
+s=-
+c=IN IP4 192.168.55.75
+t=0 0
+m=audio 35000 RTP/AVP 18 101
+c=IN IP4 192.168.55.75
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-08-23 20:26:57:200.326
+UDP message sent (601 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000074372402-1--s1632-
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097;tag=2
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5097;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   256
+
+v=0
+o=sbc-uk-bs07a 319157248 1564513211 IN IP4 147.152.22.181
+s=sip call
+c=IN IP4 147.152.22.180
+t=0 0
+m=audio 44698 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-08-23 20:26:57:215.990
+UDP message received [584] bytes :
+
+OPTIONS sip:40007@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097;tag=2
+CSeq: 2 OPTIONS
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4078@192.168.55.75:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000310622071-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-23 20:26:57:216.086
+UDP message sent (319 bytes):
+
+SIP/2.0 501 Not Implemented
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000310622071-1--s1632-
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097;tag=2
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+CSeq: 2 OPTIONS
+Contact: <sip:192.168.5.12:5097;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-23 20:26:57:216.137
+UDP message sent (599 bytes):
+
+SIP/2.0 200 OK
+Via:  SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000074372402-1--s1632-
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097;tag=2
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5097;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   258
+
+v=0
+o=sbc-uk-bs07a 319157248 1564513211 IN IP4 147.152.22.181
+s=sip call
+c=IN IP4 147.152.22.180
+t=0 0
+m=audio 44864 RTP/AVP 18 101
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-08-23 20:26:57:230.530
+UDP message received [471] bytes :
+
+ACK sip:4079@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4078@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000696677068-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-23 20:27:05:241.097
+UDP message received [471] bytes :
+
+ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-002023387626-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected UDP message received:
+
+ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-002023387626-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-23 20:27:05:742.857
+UDP message received [471] bytes :
+
+ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000165747675-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 7693d21c705d527c617f9c47b132fe2b recieved a UDP message:
+
+ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000165747675-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-23 20:27:06:743.333
+UDP message received [471] bytes :
+
+ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001223137972-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 7693d21c705d527c617f9c47b132fe2b recieved a UDP message:
+
+ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001223137972-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-23 20:27:08:744.276
+UDP message received [471] bytes :
+
+ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000467352479-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 7693d21c705d527c617f9c47b132fe2b recieved a UDP message:
+
+ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000467352479-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-23 20:27:12:745.412
+UDP message received [471] bytes :
+
+ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000475685676-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 7693d21c705d527c617f9c47b132fe2b recieved a UDP message:
+
+ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 7693d21c705d527c617f9c47b132fe2b
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000475685676-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+

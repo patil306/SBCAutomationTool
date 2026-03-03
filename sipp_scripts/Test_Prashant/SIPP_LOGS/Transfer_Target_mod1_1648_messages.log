@@ -1,0 +1,82 @@
+----------------------------------------------- 2018-10-10 15:17:03:71.805
+TCP message received [834] bytes :
+
+INVITE sip:850001@sbcdev4.com;transport=tcp SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:850001@sbcdev4.com;transport=TCP>
+CSeq: 1 INVITE
+Call-ID: 361a1e6dca08e125027f617d5cf8ba56
+Contact: <sip:81002001@10.133.73.4:5060;transport=tcp>
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=6;lr;transport=tcp>
+Supported: replaces, timer, 100rel
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000003911546-1--s1632-;originator
+Subject: Performance Test
+Referred-By: sip:81001001@10.133.39.159:5090
+Session-Expires: 1800;refresher=uac
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 158
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35002 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2018-10-10 15:17:03:72.050
+TCP message sent (321 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000003911546-1--s1632-;originator
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:850001@sbcdev4.com;transport=TCP>
+Call-ID: 361a1e6dca08e125027f617d5cf8ba56
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5090;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 15:17:03:72.141
+TCP message sent (328 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000003911546-1--s1632-;originator
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:850001@sbcdev4.com;transport=TCP>;tag=1
+Call-ID: 361a1e6dca08e125027f617d5cf8ba56
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5090;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 15:17:18:91.953
+TCP message received [323] bytes :
+
+CANCEL sip:850001@sbcdev4.com;transport=tcp SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:850001@sbcdev4.com;transport=TCP>
+CSeq: 1 CANCEL
+Call-ID: 361a1e6dca08e125027f617d5cf8ba56
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000003911546-1--s1632-;originator
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-10 15:17:18:92.242
+TCP message sent (317 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000003911546-1--s1632-;originator
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:850001@sbcdev4.com;transport=TCP>
+Call-ID: 361a1e6dca08e125027f617d5cf8ba56
+CSeq: 1 CANCEL
+Contact: <sip:10.133.39.159:5090;transport=TCP>
+Content-Length: 0
+
+

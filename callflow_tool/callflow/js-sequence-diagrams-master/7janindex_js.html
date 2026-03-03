@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #3e758e;
+  }
+
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #myInput:focus {
+    outline: 3px solid #ddd;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    top: 80px;
+    right: 160px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .dropdown-top-right {
+    top: -10px;
+    right: -10px;
+  }
+
+  .dropdown-top-right::before,
+  .dropdown-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+
+  .dropdown-top-right::before {
+    top: 0;
+    left: 0;
+  }
+
+  .dropdown-top-right::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  .dropdown-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+  }
+
+  /* common */
+  .ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .ribbon::before,
+  .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+  }
+
+  .ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: #3498db;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* top right*/
+  .ribbon-top-right {
+    top: -10px;
+    right: -10px;
+  }
+
+  .ribbon-top-right::before,
+  .ribbon-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+
+  .ribbon-top-right::before {
+    top: 0;
+    left: 0;
+  }
+
+  .ribbon-top-right::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  .ribbon-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+  }
+  .switch-toggle {
+  width: 10em;
+}
+
+.switch-toggle label:not(.disabled) {
+  cursor: pointer;
+}
+</style>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="google-site-verification" content="ozgnqb925nLPkhlk9qBcSvdsrY8xIZyrpnBOoDyY1hE" />
+
+  <link href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" rel="stylesheet" />
+
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- CSS only -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js" type="text/javascript" charset="utf-8"></script-->
+
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <link rel="stylesheet" type="text/css" href="{{url_for ('static', filename = 'css/style.css')}}" media="screen" />
+  <link rel="stylesheet" type="text/css" href="{{url_for ('static', filename = 'css/sequence-diagram-min.css') }}"
+    media="screen" />
+
+  <title>js-sequence-diagrams by bramp</title>
+  <link rel="canonical" href="https://bramp.github.io/js-sequence-diagrams/" />
+
+
+</head>
+
+<body>
+  <header>
+    <div class="inner">
+      <h1>Callflow-diagrams</h1>
+      <!--<h2>Draws simple UML sequence diagrams from a textual representation</h2>-->
+      <h2>Turns text into UML sequence diagrams</h2>
+      <!--
+        <a href="https://github.com/bramp/svg-js-sequence-diagrams" class="button">
+        <small>View project on</small>GitHub</a>
+      -->
+    </div>
+    <!--a href="https://github.com/bramp/js-sequence-diagrams"-->
+    <a href="{{ url_for ('static', filename = 'help.html') }}">
+      <div class="ribbon ribbon-top-right"><span>HELP</span></div>
+
+    </a>
+    <div class="dropdown">
+      <button onclick="FliterHelp()" class="dropbtn">Search</button>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href="#hdr">HDR [HDR_TO='abc.avaya.com']</a>
+        <a href="#sdp">SDP</a>
+        <a href="#param">HDRPARAM</a>
+        <a href="#transport">Transport [transport="TCP"]</a>
+        <a href="#custom">xyz</a>
+        <a href="#support">xyz</a>
+        <a href="#tools">xyz</a>
+      </div>
+    </div>
+  </header>
+
+  <div id="main">
+<!-- here we are adding for modal input's html-->
+<div class="modal fade" id="infoModal" role="dialog" style="margin-top: 14%">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Row Information</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover">
+          <thead class="thead-dark">
+            <th scope="col">#</th>
+            <th scope="col">Modifier</th>
+            <th>#</th>
+            <th scope="col">Verifier<input id="expect_chk" type="checkbox"></th>
+          </thead>
+          <tr>
+               <th><label>transport</label></th>
+               <th>         
+                <div class="switch-toggle switch-3 switch-candy">
+                  <input id="udp" name="state-d" type="radio" checked="" />
+                  <label for="udp" onclick="">UDP</label>
+
+                  <input id="tcp" name="state-d" type="radio" checked="checked" />
+                  <label for="tcp" class="disabled" onclick="">TCP</label>
+
+                  <input id="tls" name="state-d" type="radio" />
+                  <label for="tls" onclick="">TLS</label>
+
+                  <a></a>
+                </div>
+               </th>
+          </tr>
+          <tr>
+            <th><label>INS_HDR: </label></th>
+            <th><input id="ins_hdr" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>REM_HDR: </label></th>
+            <th><input id="rem_hdr" type="text"></th>
+            <th><label>EXP_HDR: </label></th>
+            <th><input id="exp_hdr" type="text" disabled><input id="invexp_hdr" type="checkbox"></th>
+          </tr>
+          <tr>
+            <th><label>REP_REQURI: </label></th>
+            <th><input id="rep_requri" type="text"></th>
+            <th><label>EXP_REQURI: </label></th>
+            <th><input id="exp_requri" type="text" disabled><input id="invexp_requri" type="checkbox"></th>
+          </tr>
+          <tr>
+            <th><label>INS_REQURIPARAM: </label></th>
+            <th><input id="ins_requriparam" type="text"></th>
+            <th><label>EXP_REQURIPARAM: </label></th>
+            <th><input id="exp_requriparam" type="text" disabled><input id="invexp_requriparam" type="checkbox"></th>
+          </tr>
+          <tr>
+            <th><label>REM_REQURIPARAM: </label></th>
+            <th><input id="rem_requriparam" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>INS_SDPSESSATTR: </label></th>
+            <th><input id="ins_sdpsessattr" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>INS_SDPMLINE: </label></th>
+            <th><input id="ins_sdpmline" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>HASSDP: </label></th>
+            <th><input id="hassdp" type="checkbox"></th>
+          </tr>
+      </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="close_id" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--END OF modal input html-->
+
+    <section id="demo">
+      <table align="center" class="inner">
+        <tr>
+          <td>
+            <h3>Demo. Try editing me below</h3>
+            <div class="editor-wrapper">
+              <div class="editor">A_ext->SBC: INVITE
+SBC->B_rw: INVITE
+B_rw->SBC: 200
+SBC->A_ext: 200</div>
+            </div>
+            Theme:
+            <select class="theme">
+              <option value="simple" selected>Simple</option>
+              <option value="hand">Hand drawn</option>
+            </select>
+            | <a href="#" class="download">Download as SVG</a>
+
+            <button onclick="passData(this)">Execute Flow</button>
+
+
+          </td>
+          <td class="diagram">This should be a diagram! If you don't see it you need Javascript enabled</td>
+        </tr>
+
+       
+      </table>
+
+    </section>
+    <section id = "x">
+        <div class="container">
+          <h2>Tracesbc</h2>
+          <p></p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="http://127.0.0.1:8888/?hostname=10.133.48.189&username=ipcs&password=U0lQZXJhXzEyMw=="></iframe>
+          </div>
+            </div>
+      
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.13/ace.js" type="text/javascript"
+      charset="utf-8"></script>
+
+    <!--script src="{{url_for ('static', filename = 'bower_components/jquery/dist/jquery.min.js') }}"></script-->
+
+    <!-- Needed for the text editor -->
+
+    <script src="{{ url_for ('static', filename = 'bower_components/bower-webfontloader/webfont.js') }}"></script>
+    <script src="{{ url_for ('static', filename = 'bower_components/snap.svg/dist/snap.svg-min.js') }}"></script>
+    <script src="{{ url_for ('static', filename = 'bower_components/underscore/underscore-min.js') }}"></script>
+    <script
+      src="{{ url_for ('static', filename = 'bower_components/js-sequence-diagrams/dist/sequence-diagram-min.js') }}"></script>
+    <script src="{{ url_for ('static', filename = 'js/svginnerhtml.min.js') }}"></script>
+    <script src="https://ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js"></script>
+    <script src="https://ajaxorg.github.io/ace-builds/src-min-noconflict/ext-language_tools.js"></script>
+    <script type="text/javascript">
+
+      function setup_editor(div) {
+
+        var editor_div = div.find(".editor");
+        var diagram_div = div.find(".diagram");
+        var theme_div = div.find(".theme");
+        var download_link = div.find('.download');
+
+        // Setup the editor diagram
+
+        var editor = ace.edit(editor_div.get(0));
+        editor.setTheme("ace/theme/crimson_editor");
+        editor.getSession().setMode("ace/mode/asciidoc");
+        editor.getSession().on('change', _.debounce(on_change, 100));
+
+
+        download_link.click(function (ev) {
+          var svg = diagram_div.find('svg')[0];
+          var width = parseInt(svg.width.baseVal.value);
+          var height = parseInt(svg.height.baseVal.value);
+          var data = editor.getValue();
+          var xml = '<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="' + width + '" height="' + height + '" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[' + data + ']]></source>' + svg.innerHTML + '</svg>';
+
+          var a = $(this);
+          a.attr("download", "diagram.svg"); // TODO I could put title here
+          a.attr("href", "data:image/svg+xml," + encodeURIComponent(xml));
+        });
+
+        theme_div.change(on_change);
+        on_change();
+
+        function on_change() {
+          try {
+           
+            var diagram = Diagram.parse(editor.getValue().replace(/\[(.+?)\]/g, ""));   //yogesh replaced editor.getValue() by editor.getValue().replace(/\[(.+?)\]/g, "") this will remove square brackets from diagram
+            //custom changes by yogesh for threedots
+            if(editor.getValue().includes("?")){
+                console.log("The value of the input field was changed.");
+                  $("#infoModal").modal();
+
+             }
+            //custom changes by yogesh ends for threedots
+            editor.getSession().setAnnotations([]);
+
+            // Clear out old diagram
+            diagram_div.html('');
+
+            var options = {
+              theme: theme_div.val(),
+              scale: 1
+            };
+
+            // Draw
+            diagram.drawSVG(diagram_div.get(0), options);
+
+
+          } catch (err) {
+            var annotation = {
+              type: "error", // also warning and information
+              column: 0,
+              row: 0,
+              text: err.message
+            };
+            if (err instanceof Diagram.ParseError) {
+              annotation.row = err.loc.first_line - 1;
+              annotation.column = err.loc.first_column;
+            }
+            editor.getSession().setAnnotations([annotation]);
+            throw err;
+          }
+        }
+      }
+
+      function allowAC(div) {
+        var editor_div = div.find(".editor");
+        console.log("in allowAC");
+        var langTools = ace.require("ace/ext/language_tools");
+        var aceEditor = ace.edit(editor_div.get(0)).setOptions({
+          enableBasicAutocompletion: true,
+          enableLiveAutocompletion: true,
+          enableSnippets: false
+        });
+
+        var msgList = ["SBC", "SM", "IPO", "a_ext", "a_int", "a_rw", "b_ext", "b_int", "b_rw" , "INVITE", "REINVITE", "UPDATE", "ACK", "CANCEL", "BYE", "100", "180", "200", "409", "497" ]
+
+        var myCompleter = {
+          identifierRegexps: [/[^\W]+/],
+          getCompletions: function (editor, session, pos, prefix, callback) {
+            console.info("myCompleter prefix:", prefix);
+            callback(null,
+              msgList.filter(entry => {
+                return entry.includes(prefix);
+              }).map(entry => {
+                return {
+                  value: entry
+                };
+              })
+            );
+          }
+        }
+
+        langTools.addCompleter(myCompleter);
+
+      }
+
+      $(document).ready(function () {
+        // Example diagrams
+        //$('.diagram').sequenceDiagram();
+
+        // Setup all the editors
+
+        setup_editor($('#demo'));
+        allowAC($('#demo'));
+
+        //setup_editor($('#example1'));
+        //setup_editor($('#example2'));
+        //setup_editor($('#example3'));
+      });
+    </script>
+    <script>
+      function passData(elemnt) {
+        var x = $('#demo').find(".editor");
+        var hhh = ace.edit(x.get(0));
+        processCallflow(hhh.getValue())
+      //  alert(hhh.getValue());
+
+        fetch(``, {
+          method: 'POST',
+          credentials: 'include',
+          body: JSON.stringify({ "ajson": hhh.getValue() }, null, 2),
+          cache: "no-cache",
+          headers: new Headers({
+            'content-type': "application/json"
+          })
+        })
+
+
+      }
+    </script>
+    <script>
+      //This script is for manipulating expect fields on check
+      $(function () {
+          $('#expect_chk').on('change', function () {
+              var checked = $(this).prop('checked');
+              $('#exp_hdr').prop('disabled', !checked);
+              $('#exp_requri').prop('disabled', !checked);
+              $('#exp_requriparam').prop('disabled', !checked);
+              
+          });
+      });
+    </script>
+    <script>
+      //This script is for doing this after clicking button on modal
+      document.getElementById("close_id").addEventListener("click", print_values);
+
+      function print_values(){
+    var content ="";
+      if(content == "")
+        content = content + "INS_HDR:" + document.getElementById("ins_hdr").value;      
+      else
+        content = content +',' +"INS_HDR:" +document.getElementById("ins_hdr").value;
+      /*if(content == "")
+        content = content + "REP_HDR:" + document.getElementById("rep_hdr").value;
+      else
+        content = content +',' +"REP_HDR:" +document.getElementById("rep_hdr").value*/
+      if(content == "")
+        content = content + "REM_HDR:" + document.getElementById("rem_hdr").value;
+      else
+        content = content +',' +"REM_HDR:" + document.getElementById("rem_hdr").value
+      if(content == "")
+        content = content + "REP_REQURI:" + document.getElementById("rep_requri").value;
+      else
+        content = content +',' +"REP_REQURI:" + document.getElementById("rep_requri").value
+      if(content == "")
+        content = content + "INS_REQURIPARAM:" + document.getElementById("ins_requriparam").value;
+      else
+        content = content +',' +"REM_REQURIPARAM:" + document.getElementById("rem_requriparam").value
+      if(content == "")
+        content = content + "REM_REQURIPARAM:" + document.getElementById("rem_requriparam").value;
+      else
+        content = content +',' +"REM_REQURIPARAM:" + document.getElementById("rem_requriparam").value
+      if(content == "")
+        content = content + "INS_SDPMLINE:" + document.getElementById("ins_sdpmline").value;
+      else
+        content = content +',' +"INS_SDPMLINE:" + document.getElementById("ins_sdpmline").value
+      if(content == "")
+        content = content + "INS_SDPSESSATTR:" + document.getElementById("ins_sdpsessattr").value;
+      else
+        content = content +',' +"INS_SDPSESSATTR:" + document.getElementById("ins_sdpsessattr").value  
+
+      if(content == "" && document.getElementById("hassdp").checked)
+        content = content + "HASSDP:" + "TRUE";
+      else if (document.getElementById("hassdp").checked)
+        content = content +',' +"HASSDP:" + "TRUE";        
+      alert(content);
+        var ed = $('#demo').find(".editor");
+        var edx = ace.edit(ed.get(0));
+        var existing_content = edx.getValue();
+        var new_content = existing_content.replace("?", content)
+        edx.setValue(new_content);
+        var lines = edx.session.doc.getAllLines()
+        //This part hides the content enclosed in [] from text editor 
+        var Range=require("ace/range").Range;
+        for (var i = 0, l = lines.length; i < l; i++) {
+          if (lines[i].indexOf('[') != -1){
+            index_sq_start = lines[i].indexOf('[')
+            if (lines[i].indexOf(']') != -1){
+              index_sq_end = lines[i].indexOf(']')+1
+              edx.session.addFold("yogesh", new Range(i,index_sq_start,i,index_sq_end))
+            }
+          }
+          
+        }
+       // alert(new_content);
+
+  }
+   
+      //end This script is for doing this after clicking button on modal
+
+    </script>
+    <script>
+      function FliterHelp() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+
+    <script>
+      //this is function to parse the entire text which is inside the text-box
+      PROXYDEVICES = ["SBC", "SM", "CM", "IPO", ""]
+      KEYLIST = ["method", "direction", "callid", "hassdp", "targetnodenames", "nextnode", "INS_HDR", "REP_HDR", "REM_HDR", "REP_REQURI", "REM_REQURIPARAM", "APP_REQURIPARAM", "INS_SDPLINE"]
+      var CALLFLOW;
+      var EXT_CNT = 0;
+      var INT_CNT = 0;
+      var RW_CNT = 0;
+      function find_count_clients(callflow_str) {
+        client_list = []
+        lines = callflow_str.split('\n');
+        //console.log(lines)
+        for (jindex = 0; jindex < lines.length; jindex++) {
+          parts = lines[jindex].split(":");
+          parts = parts[0].split("->");
+          // console.log(parts);
+          for (lindex = 0; lindex < parts.length; lindex++) {
+            if (PROXYDEVICES.includes(parts[lindex]) == false) {
+              client_list.push(parts[lindex])
+            }
+          }
+
+        }
+        console.log(client_list);
+        /* for line in lines:
+                 parts = re.split(":", line)
+                 parts = re.split("->", parts[0])
+                 #print(parts)
+                 for i in parts:
+                         if i not in PROXYDEVICES + client_list:
+                                 client_list.append(i)
+    
+         return (client_list, len(client_list))*/
+        return client_list;
+      }
+
+
+      function FindsLineRequiredforNode(NodeName, callflow_str) {
+
+        CALLFLOW = callflow_str
+        related_lines = []
+        lines = callflow_str.split('\n');
+        for (l = 0; l < lines.length; l++) {
+          parts = lines[l].split(":")
+          flow = parts[0].split("->")
+          if (flow.includes(NodeName) && !PROXYDEVICES.includes(NodeName)) {
+            related_lines.push(lines[l])
+          }
+        }
+
+
+        return related_lines
+        //pass
+      }
+
+      function GetInfo(data, line, NodeName) {
+        console.log("THE LINE currently being proccessed for getting data is :" + line);
+        parts = line.split(":")
+        met = parts[1].split("\[")
+        data["method"] = met[0]
+        parts = line.split("->")
+        if (parts[0] == NodeName)
+          data["direction"] = "send";
+        else
+          data["direction"] = "recv";
+
+
+        start = line.indexOf("[") + 1;
+        end = line.indexOf("]");
+        if ((start != -1) && (end != -1)) {
+          line = line.substring(start, end)
+          parts = line.split(",")
+          x = {}
+          y = {}
+          z = {}
+          INSHDR = []
+          REPHDR = []
+          REMHDR = []
+          INSSDPLINE = []
+          for (i = 0; i < parts.length; i++) {
+            if (parts[i].includes("INS_HDR")) {
+              if (parts[i][3] == "_") {
+                k = parts[i]
+                s = k.indexOf('\"') + 1;
+                e = k.lastIndexOf('\"');
+                if ((s != -1) && (e != -1)) {
+                  console.log(k)
+                  INSHDR.push(k.substring(s, e))
+                }
+              }
+            }
+            if (parts[i].includes("REP_HDR")) {
+              if (parts[i][3] == "_") {
+                k = parts[i]
+                s = k.indexOf('\"') + 1;
+                e = k.lastIndexOf('\"');
+                if ((s != -1) && (e != -1)) {
+                  console.log(k)
+                  REPHDR.push(k.substring(s, e))
+                }
+              }
+            }
+            if (parts[i].includes("REM_HDR")) {
+              if (parts[i][3] == "_") {
+                k = parts[i]
+                s = k.indexOf('\"') + 1;
+                e = k.lastIndexOf('\"');
+                if ((s != -1) && (e != -1)) {
+                  console.log(k)
+                  REMHDR.push(k.substring(s, e))
+                }
+              }
+            }
+            if (parts[i].includes("INS_SDPLINE")) {
+              if (parts[i][3] == "_") {
+                k = parts[i]
+                s = k.indexOf('\"') + 1;
+                e = k.lastIndexOf('\"');
+                if ((s != -1) && (e != -1)) {
+                  console.log(k)
+                  INSSDPLINE.push(k.substring(s, e))
+                }
+              }
+            }
+            console.log("DSDS")
+            console.log(x)
+            data["INSHDR"] = INSHDR
+            data["REPHDR"] = REPHDR
+            data["REMHDR"] = REMHDR
+            data["INSSDPLINE"] = INSSDPLINE
+          }
+
+        }
+
+
+
+        return data;
+      }
+
+      function MakeDictionaryWithInfo(NodeName, related_lines) {
+        seq_count = 0
+        Dict = {}
+        console.log("MakeDictionaryWithInfo")
+        console.log("LINES RELATED TO " + NodeName + " ARE " + related_lines)
+        if (NodeName.slice(-3) === "ext" || NodeName.slice(-3) === "EXT") {
+          Dict["type"] = "EXT"
+          EXT_CNT = EXT_CNT + 1
+          Dict["extn"] = "700" + EXT_CNT
+          Dict["domain"] = "at&t.com"
+        }
+        if (NodeName.slice(-3) === "int" || NodeName.slice(-3) === "INT") {
+          Dict["type"] = "INT"
+          INT_CNT = INT_CNT + 1
+          Dict["extn"] = "800" + INT_CNT
+          Dict["domain"] = "avaya.com"
+        }
+        if (NodeName.slice(-2) === "rw" || NodeName.slice(-2) === "RW") {
+          Dict["type"] = "RW"
+          RW_CNT = RW_CNT + 1
+          Dict["extn"] = "900" + RW_CNT
+          Dict["domain"] = "avaya.com"
+        }
+        for (index = 0; index < related_lines.length; index++) {
+          data_for_node = {}
+          data_for_node = GetInfo(data_for_node, related_lines[index], NodeName)
+          Dict[seq_count] = data_for_node
+          seq_count = seq_count + 1
+        }
+        console.log(Dict);
+        return Dict;
+      }
+
+      function processNode(NodeName, callflow_str) {
+        lines_related_to_node = FindsLineRequiredforNode(NodeName, callflow_str)
+        console.log("Lines related to " + NodeName + "are" + lines_related_to_node)
+        if (lines_related_to_node.length > 0) {
+          nodeDict = MakeDictionaryWithInfo(NodeName, lines_related_to_node)
+          return nodeDict
+        }
+        else {
+          console.log(("Node " + NodeName + " has no related flow in diagram"));
+        }
+      }
+      function processCallflow(callflow_str) {
+
+        //callflow_str = "A_ext->SBC:INVITE[INS_HDR='TO:abc.xyz.com', INS_HDR='FROM:abc.avaya.cmom']\nSBC->B_rw:INVITE\nB_rw->SBC: 200\nSBC->A_ext: 200\nA_ext->SBC:INVITE\nSBC->C_ext:INVITE\nC_ext->SBC: 200\nSBC->A_ext: 200\n"
+        console.log("HELLO");
+        clients = find_count_clients(callflow_str)
+        console.log(clients);
+        NodeInfo = {}
+        //onsole.log("NUMBER OF NODES is "+ str(number_of_clients))
+        console.log(clients)
+        for (j = 0; j < clients.length; j++) {
+          NodeInfo[clients[j]] = processNode(clients[j], callflow_str)
+        }
+        console.log("TOTAL CALLFLOW IS AS FOLLOW")
+        console.log(JSON.stringify(NodeInfo, undefined, 4));
+      }
+    </script>
+</body>
+
+</html>

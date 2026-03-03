@@ -1,0 +1,190 @@
+----------------------------------------------- 2018-07-19 18:36:12:497.922
+TCP message received [800] bytes :
+
+INVITE sip:81001001@10.133.39.159:5082 SIP/2.0
+From: sip:81002001@10.133.39.197:17327;tag=1
+To: sip:81001001@10.133.39.159:5082
+CSeq: 1 INVITE
+Call-ID: a5d5410dfba68a616d106066d9411001
+Contact: <sip:81002001@10.133.39.197:5060;transport=tcp>
+Record-Route: <sip:10.133.39.197:5060;ipcs-line=6;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.197:5060;branch=z9hG4bK-s1632-001739821821-1--s1632-
+Subject: Performance Test
+Session-Expires: 1800;refresher=uac
+Min-SE: 90
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 203
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.197
+s=-
+c=IN IP4 10.133.39.197
+t=0 0
+m=audio 35010 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-07-19 18:36:12:498.563
+TCP message sent (313 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.39.197:5060;branch=z9hG4bK-s1632-001739821821-1--s1632-
+From: sip:81002001@10.133.39.197:17327;tag=1
+To: sip:81001001@10.133.39.159:5082
+Call-ID: a5d5410dfba68a616d106066d9411001
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5082;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-19 18:36:12:498.801
+TCP message sent (496 bytes):
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/TCP 10.133.39.197:5060;branch=z9hG4bK-s1632-001739821821-1--s1632-
+From: sip:81002001@10.133.39.197:17327;tag=1
+To: sip:81001001@10.133.39.159:5082;tag=1
+Call-ID: a5d5410dfba68a616d106066d9411001
+CSeq: 1 INVITE
+Require: 100rel
+RSeq: 1
+Contact: <sip:10.133.39.159:5082;transport=TCP>
+Content-Length:   137
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2018-07-19 18:36:12:526.349
+TCP message received [667] bytes :
+
+PRACK sip:81001001@10.133.39.159:5082;transport=tcp SIP/2.0
+From: sip:81002001@10.133.39.197:17327;tag=1
+To: sip:81001001@10.133.39.159:5082;tag=1
+CSeq: 2 PRACK
+Call-ID: a5d5410dfba68a616d106066d9411001
+Contact: <sip:81002001@10.133.39.197:5060;transport=tcp>
+Record-Route: <sip:10.133.39.197:5060;ipcs-line=6;lr;transport=tcp>
+Supported: replaces, timer, 100rel
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.197:5060;branch=z9hG4bK-s1632-000654817955-1--s1632-
+Subject: Performance Test
+RAck: 1 1 INVITE
+Session-Expires: 1800;refresher=uac
+Min-SE: 90
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-19 18:36:12:526.584
+TCP message sent (478 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.39.197:5060;branch=z9hG4bK-s1632-000654817955-1--s1632-
+From: sip:81002001@10.133.39.197:17327;tag=1
+To: sip:81001001@10.133.39.159:5082;tag=1
+Call-ID: a5d5410dfba68a616d106066d9411001
+CSeq: 2 PRACK
+Contact: <sip:10.133.39.159:5082;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   129
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8
+a=ptime:10
+
+----------------------------------------------- 2018-07-19 18:36:12:542.382
+TCP message received [478] bytes :
+
+ACK sip:81001001@10.133.39.159:5082;transport=tcp SIP/2.0
+From: sip:81002001@10.133.39.197:17327;tag=1
+To: sip:81001001@10.133.39.159:5082;tag=1
+CSeq: 1 ACK
+Call-ID: a5d5410dfba68a616d106066d9411001
+Contact: <sip:81002001@10.133.39.197:5060;transport=tcp>
+Record-Route: <sip:10.133.39.197:5060;ipcs-line=6;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.197:5060;branch=z9hG4bK-s1632-000080536139-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-19 18:36:18:911.682
+TCP message received [310] bytes :
+
+CANCEL sip:81001001@192.168.9.115:5060 SIP/2.0
+From: sip:81002001@10.133.39.197:17326;tag=1
+To: sip:81001001@10.133.39.159:5082
+CSeq: 1 CANCEL
+Call-ID: 5082e1610ebacb59ba62fd10507ef203
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.39.197:5060;branch=z9hG4bK-s1632-000299705463-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-19 18:36:18:912.596
+TCP message sent (309 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.39.197:5060;branch=z9hG4bK-s1632-000299705463-1--s1632-
+From: sip:81002001@10.133.39.197:17326;tag=1
+To: sip:81001001@10.133.39.159:5082
+Call-ID: 5082e1610ebacb59ba62fd10507ef203
+CSeq: 1 CANCEL
+Contact: <sip:10.133.39.159:5082;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-19 18:36:22:544.858
+TCP message sent (445 bytes):
+
+REFER sip:81002001@10.133.39.197:5060;transport=tcp> SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-4885-1-8
+From:  sip:81001001@10.133.39.159:5082;tag=1
+To:  sip:81002001@10.133.39.197:17327;tag=1
+Call-ID: a5d5410dfba68a616d106066d9411001
+CSeq: 1 REFER
+Refer-To: <sip:850001@10.133.39.159:5092;transport=TCP>
+Referred-By: sip:81001001@10.133.39.159:5082
+Contact: <sip:10.133.39.159:5082;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-19 18:36:54:552.448
+TCP message received [327] bytes :
+
+SIP/2.0 408 Request Timeout
+From: sip:81001001@10.133.39.159:5082;tag=1
+To: sip:81002001@10.133.39.197:17327;tag=1
+CSeq: 1 REFER
+Call-ID: a5d5410dfba68a616d106066d9411001
+Record-Route: <sip:10.133.39.197:5060;ipcs-line=6;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-4885-1-8
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 408 Request Timeout
+From: sip:81001001@10.133.39.159:5082;tag=1
+To: sip:81002001@10.133.39.197:17327;tag=1
+CSeq: 1 REFER
+Call-ID: a5d5410dfba68a616d106066d9411001
+Record-Route: <sip:10.133.39.197:5060;ipcs-line=6;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-4885-1-8
+Content-Length: 0
+
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic UAS responder">
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<!-- <ereg regexp="sip.*[^;tag]" search_in="hdr" header="From:" assign_to="1"/> -->
+
+<recv request="INVITE" crlf="true">
+  <action>
+   </action>
+</recv>
+  
+<!-- The '[last_*]' keyword is replaced automatically by the          -->
+<!-- specified header if it was present in the last message received  -->
+<!-- (except if it was a retransmission). If the header was not       -->
+<!-- present or if no message has been received, the '[last_*]'       -->
+<!-- keyword is discarded, and all bytes until the end of the line    -->
+<!-- are also discarded.                                              -->
+<!--                                                                  -->
+<!-- If the specified header was present several times in the         -->
+<!-- message, all occurences are concatenated (CRLF seperated)        -->
+<!-- to be used in place of the '[last_*]' keyword.                   -->
+
+<nop>
+<action>
+<assignstr assign_to="support" value=" "/>
+</action>
+</nop>
+
+  <send>
+    <![CDATA[
+      SIP/2.0 180 Ringing
+Record-Route: <sip:[local_ip]:[local_port];transport=[transport]>
+      [last_Via:]
+      [last_To:];tag=[pid]SIPpTag01[call_number]
+      [last_From:]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: <sip:bob@[local_ip]:[local_port]>
+User-Agent: MU Test Tool
+P-Access-Network-Info: IEEE-802.11a;cgi-3gpp=default
+P-Charging-Vector: icid-value=1234bc9876e;icid-generated-at=10.0.0.1;orig-ioi=example.com
+P-Charging-Function-Addresses: ccf=10.0.0.1;ecf=ecf.example.com
+      Content-Length: 0
+      Supported:[$support]
+     100rel
+    ]]>
+  </send>
+
+
+  <send>
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Supported:[$support]
+    ]]>
+  </send>
+
+<!--/recv <sip:[local_ip]:[local_port];transport=[transport]> -->
+<recv request="ACK" rtd="true" crlf="true">
+  <action>
+   </action>
+</recv>
+
+<!-- Received BYE towards SBC to terminate the IVR Session-->
+
+<recv request="BYE" crlf="true">
+</recv>
+
+
+  <send >
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+</scenario>

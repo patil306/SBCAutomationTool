@@ -1,0 +1,70 @@
+----------------------------------------------- 2019-08-14 16:56:09:405.740
+UDP message received [841] bytes :
+
+INVITE sip:40007@192.168.5.12:5097 SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+CSeq: 1 INVITE
+Call-ID: 81a0e3076a8cef2df4854279e0e0965a
+Contact: sip:4078@192.168.55.75:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001134712681-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 228
+
+v=0
+o=- 1297654 1 IN IP4 192.168.55.75
+s=-
+c=IN IP4 192.168.55.75
+t=0 0
+m=audio 35008 RTP/AVP 18 101
+c=IN IP4 192.168.55.75
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-08-14 16:56:09:406.083
+UDP message sent (303 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001134712681-1--s1632-
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+Call-ID: 81a0e3076a8cef2df4854279e0e0965a
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5097;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-14 16:56:09:406.180
+UDP message sent (570 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001134712681-1--s1632-
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097;tag=2
+Call-ID: 81a0e3076a8cef2df4854279e0e0965a
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5097;transport=UDP>
+Content-Length:   256
+
+v=0
+o=sbc-uk-bs07a 319157248 1564513211 IN IP4 147.152.22.181
+s=sip call
+c=IN IP4 147.152.22.180
+t=0 0
+m=audio 44698 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:20
+

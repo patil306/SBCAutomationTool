@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!DOCTYPE scenario (View Source for full doctype...)> 
+<!--                  Sipp default 'uas' scenario.                       
+--> 
+<!--                                                                     
+--> 
+<scenario name="Basic UAS responder">
+
+<recv request="INVITE" crlf="true"/>
+
+<send>
+<![CDATA[
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+  Supported: timer,100rel
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+<send>
+<![CDATA[
+SIP/2.0 488 Not acceptable here
+[last_From:]
+To: sip:81002001@rwtrunk.com;tag=11002
+[last_Call-ID:]
+CSeq: 1 INVITE
+[last_Via:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+<!--
+<send>
+<![CDATA[
+SIP/2.0 180 Ringing 
+[last_Via:]
+[last_From:]
+[last_To:];tag=[call_number]1001
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,INFO,REFER,NOTIFY,PRACK,UPDATE      
+Content-Length:0 
+]]>
+</send>
+-->
+
+</scenario>
+
+
+

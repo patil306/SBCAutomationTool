@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2017-11-02	15:21:55:029	1509616315.029802: Aborting call on unexpected message for Call-Id '1-20719@192.168.6.5': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=zXcVbNm20068c7e8
+CSeq: 1 INVITE
+Call-ID: 1-20719@192.168.6.5
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-20719-1-0
+Warning: 304 192.168.6.223 "Media Type is not allowed by codec policy"
+Content-Length: 0
+
+'.

@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+class AA
+{public:
+ int a;
+ a = fun(10);
+};
+int AA::fun(int c)
+ {
+ return c;
+ }
+
+
+class BB
+{public:
+ int b;
+ b= fun(20);
+};
+int BB::fun(int d)
+{
+return d;
+}
+ 
+int main()
+{
+AA *p = new AA();
+int e = p->fun();
+cout <<e;
+return 0;
+}

@@ -1,0 +1,39 @@
+{
+    "A_ext": {
+        "type": "EXT",
+        "extn": "7001",
+        "domain": "at&t.com",
+        "0": {
+            "method": " INVITE",
+            "direction": "send",
+            "callid": null,
+            "hassdp": null,
+            "targetnodenames": [
+                "B_rw"
+            ],
+            "nextnode": "SBC",
+            "INS_HDR": null,
+            "REP_HDR": null,
+            "REM_HDR": null,
+            "REP_REQURI": null,
+            "REM_REQURIPARAM": null,
+            "APP_REQURIPARAM": null,
+            "INS_SDPLINE": null
+        },
+        "1": {
+            "method": " 200",
+            "direction": "recv",
+            "callid": null,
+            "hassdp": null,
+            "targetnodenames": null,
+            "nextnode": null,
+            "INS_HDR": null,
+            "REP_HDR": null,
+            "REM_HDR": null,
+            "REP_REQURI": null,
+            "REM_REQURIPARAM": null,
+            "APP_REQURIPARAM": null,
+            "INS_SDPLINE": null
+        }
+    }
+}

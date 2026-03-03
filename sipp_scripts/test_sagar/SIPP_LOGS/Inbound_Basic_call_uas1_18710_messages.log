@@ -1,0 +1,155 @@
+----------------------------------------------- 2017-07-20 16:36:54:951.470
+TCP message received [1387] bytes :
+
+INVITE sip:4073@sbcdev4.com SIP/2.0
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060
+CSeq: 1 INVITE
+Call-ID: bd75554acda3ec2ec92fc3727572c474
+Contact: sip:4072@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=2;lr;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=2;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000431955906-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-18714-1-0
+Subject: Performance Test
+Call-Info: <sip:7773503@10.10.107.35;token=1256;gsid=ac1e11a0-0f0e-11e7-ade0-000c29e8fe38>;purpose=isfocus;gsid=AC21BB2F0F0E11E7B490517EE20C303F, <sip:7773503@10.10.107.35>;purpose=ccmp, <http://tryeqnx-confms.avayadxbdemo.ae:80/viewer.php?token=AC247A500F0E11E7B490517EE20C303F&participantId=AC21BB2F0F0E11E7B490517EE20C303F&meeting_id=1256&mode=JOIN&login=73505@10.10.107.35>;purpose=application, <https://tryeqnx-conf.avayadxbdemo.ae:443/uwd/ws?ticket=AC21BB2F0F0E11E7B490517EE20C303F>;purpose=UCCP
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 211
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.5
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35002 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2017-07-20 16:36:54:951.780
+TCP message sent (350 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000431955906-1--s1632-, SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-18714-1-0
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060
+Call-ID: bd75554acda3ec2ec92fc3727572c474
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2017-07-20 16:36:54:951.879
+TCP message sent (534 bytes):
+
+SIP/2.0 407 Proxy Authentication Required
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000431955906-1--s1632-, SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-18714-1-0
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060
+Call-ID: bd75554acda3ec2ec92fc3727572c474
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Proxy-Authenticate: Digest realm="auto.com",qop="auth",opaque="1234567890abcedef",nonce="152afcdf6746b96593b7e0501fa1031db24323effd7",algorithm=MD5,stale=false
+Content-Length: 0
+
+
+----------------------------------------------- 2017-07-20 16:36:54:953.737
+TCP message received [399] bytes :
+
+ACK sip:4073@sbcdev4.com SIP/2.0
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060
+CSeq: 1 ACK
+Call-ID: bd75554acda3ec2ec92fc3727572c474
+Contact: sip:4072@10.133.73.4:5060;transport=tcp;transport=TCP
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000431955906-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-18714-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+ACK sip:4073@sbcdev4.com SIP/2.0
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060
+CSeq: 1 ACK
+Call-ID: bd75554acda3ec2ec92fc3727572c474
+Contact: sip:4072@10.133.73.4:5060;transport=tcp;transport=TCP
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000431955906-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-18714-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2017-07-20 16:36:54:954.415
+TCP message received [1656] bytes :
+
+INVITE sip:4073@sbcdev4.com SIP/2.0
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060
+CSeq: 2 INVITE
+Call-ID: bd75554acda3ec2ec92fc3727572c474
+Contact: sip:4072@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=2;lr;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=2;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000064712221-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-18714-1-0
+Subject: Performance Test
+Call-Info: <sip:7773503@10.10.107.35;token=1256;gsid=ac1e11a0-0f0e-11e7-ade0-000c29e8fe38>;purpose=isfocus;gsid=AC21BB2F0F0E11E7B490517EE20C303F, <sip:7773503@10.10.107.35>;purpose=ccmp, <http://tryeqnx-confms.avayadxbdemo.ae:80/viewer.php?token=AC247A500F0E11E7B490517EE20C303F&participantId=AC21BB2F0F0E11E7B490517EE20C303F&meeting_id=1256&mode=JOIN&login=73505@10.10.107.35>;purpose=application, <https://tryeqnx-conf.avayadxbdemo.ae:443/uwd/ws?ticket=AC21BB2F0F0E11E7B490517EE20C303F>;purpose=UCCP
+Proxy-Authorization: Digest username="4072", realm="auto.com", nonce="152afcdf6746b96593b7e0501fa1031db24323effd7", uri="sip:sbcdev4.com", response="2cba7c739c93aaa30723d0df790fe070", algorithm=MD5, cnonce="0a4f113b", opaque="1234567890abcedef", qop=auth, nc=00000002
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 211
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.5
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35002 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+-----------------------------------------------
+Dead call bd75554acda3ec2ec92fc3727572c474 recieved a TCP message:
+
+INVITE sip:4073@sbcdev4.com SIP/2.0
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060
+CSeq: 2 INVITE
+Call-ID: bd75554acda3ec2ec92fc3727572c474
+Contact: sip:4072@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=2;lr;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=2;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000064712221-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-18714-1-0
+Subject: Performance Test
+Call-Info: <sip:7773503@10.10.107.35;token=1256;gsid=ac1e11a0-0f0e-11e7-ade0-000c29e8fe38>;purpose=isfocus;gsid=AC21BB2F0F0E11E7B490517EE20C303F, <sip:7773503@10.10.107.35>;purpose=ccmp, <http://tryeqnx-confms.avayadxbdemo.ae:80/viewer.php?token=AC247A500F0E11E7B490517EE20C303F&participantId=AC21BB2F0F0E11E7B490517EE20C303F&meeting_id=1256&mode=JOIN&login=73505@10.10.107.35>;purpose=application, <https://tryeqnx-conf.avayadxbdemo.ae:443/uwd/ws?ticket=AC21BB2F0F0E11E7B490517EE20C303F>;purpose=UCCP
+Proxy-Authorization: Digest username="4072", realm="auto.com", nonce="152afcdf6746b96593b7e0501fa1031db24323effd7", uri="sip:sbcdev4.com", response="2cba7c739c93aaa30723d0df790fe070", algorithm=MD5, cnonce="0a4f113b", opaque="1234567890abcedef", qop=auth, nc=00000002
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 211
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.5
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35002 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+

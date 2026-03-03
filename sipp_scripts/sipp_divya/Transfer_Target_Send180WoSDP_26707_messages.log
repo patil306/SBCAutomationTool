@@ -1,0 +1,121 @@
+----------------------------------------------- 2018-10-01 13:41:30:787.021
+UDP message received [930] bytes :
+
+INVITE sip:Agent@192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>
+CSeq: 1 INVITE
+Call-ID: 00230d070fe5c549d43326083384601c
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces, 100rel, timer
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-000909722060-1--s1632-;originator
+Subject: Performance Test
+Referred-By: sip:81001001@192.168.6.5:5075
+Session-Expires: 1200
+Min-SE: 1200
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 225
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.43
+s=-
+c=IN IP4 192.168.6.43
+t=0 0
+m=audio 35002 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2018-10-01 13:41:30:787.209
+UDP message sent (330 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-000909722060-1--s1632-;originator
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>
+Call-ID: 00230d070fe5c549d43326083384601c
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5075;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-01 13:41:30:787.302
+UDP message sent (331 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-000909722060-1--s1632-;originator
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>
+Call-ID: 00230d070fe5c549d43326083384601c
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5075;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-10-01 13:41:40:787.973
+UDP message sent (500 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-000909722060-1--s1632-;originator
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+Call-ID: 00230d070fe5c549d43326083384601c
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5075;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   133
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6001 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2018-10-01 13:41:41:290.961
+UDP message sent (500 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-000909722060-1--s1632-;originator
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+Call-ID: 00230d070fe5c549d43326083384601c
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5075;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   133
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6001 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2018-10-01 13:41:41:294.242
+UDP message received [578] bytes :
+
+ACK sip:192.168.6.5:5075;transport=UDP SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 1 ACK
+Call-ID: 00230d070fe5c549d43326083384601c
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces, 100rel
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;originator;branch=z9hG4bK-s1632-000664848095-1--s1632-
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+

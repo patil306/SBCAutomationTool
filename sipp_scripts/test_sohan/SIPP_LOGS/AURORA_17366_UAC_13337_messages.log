@@ -1,0 +1,59 @@
+----------------------------------------------- 2019-06-17 13:52:27:301.016
+UDP message sent (521 bytes):
+
+SUBSCRIBE sip:4079@10.133.48.238:5060 SIP/2.0 SIP/2.0
+Accept: application/watcherinfo+xml
+Call-ID: 1-13337@10.133.39.159
+CSeq: 1 SUBSCRIBE
+Expires: 1800
+From: sip:4078@10.133.39.159:5088;tag=1
+To: sip:4079@10.133.48.238:5060
+Via: SIP/2.0/UDP 10.133.39.159:5088;branch=z9hG4bK-13337-1-0
+Content-Length: 0
+Contact: sip:4078@10.133.39.159:5088;transport=UDP
+Max-Forwards: 70
+User-Agent: Sipp v1.1-TLS, version 20061124
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Event: presence
+
+
+----------------------------------------------- 2019-06-17 13:52:59:313.139
+UDP message received [327] bytes :
+
+SIP/2.0 408 Request Timeout
+From: sip:4078@10.133.39.159:5088;tag=1
+To: sip:4079@10.133.48.238:5060;tag=zXcVbNmccffb05e1
+CSeq: 1 SUBSCRIBE
+Call-ID: 1-13337@10.133.39.159
+Record-Route: <sip:10.133.48.238:5060;ipcs-line=4;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:5088;branch=z9hG4bK-13337-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected UDP message received:
+
+SIP/2.0 408 Request Timeout
+From: sip:4078@10.133.39.159:5088;tag=1
+To: sip:4079@10.133.48.238:5060;tag=zXcVbNmccffb05e1
+CSeq: 1 SUBSCRIBE
+Call-ID: 1-13337@10.133.39.159
+Record-Route: <sip:10.133.48.238:5060;ipcs-line=4;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:5088;branch=z9hG4bK-13337-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 13:52:59:314.083
+UDP message sent (310 bytes):
+
+BYE  SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5088;branch=z9hG4bK-13337-1--1
+From: sip:4078@10.133.39.159:5088;tag=1
+To: sip:4079@10.133.48.238:5060;tag=zXcVbNmccffb05e1
+Call-ID: 1-13337@10.133.39.159
+CSeq: 2 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:5088;transport=UDP>
+Content-Length: 0
+
+

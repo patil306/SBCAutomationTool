@@ -1,0 +1,72 @@
+----------------------------------------------- 2019-08-26 22:46:25:84.292
+UDP message received [836] bytes :
+
+INVITE sip:40007@192.168.5.12:5097 SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+CSeq: 1 INVITE
+Call-ID: 4952106a4052345afe228564d5416844
+Contact: sip:4078@192.168.55.75:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=1;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001943573918-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 223
+
+o=- 1297654 1 IN IP4 192.168.55.75
+s=-
+c=IN IP4 192.168.55.75
+t=0 0
+m=audio 35000 RTP/AVP 18 101
+c=IN IP4 192.168.55.75
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-08-26 22:46:25:84.614
+UDP message sent (316 bytes):
+
+SIP/2.0 488 Not Acceptable Here
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001943573918-1--s1632-
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+Call-ID: 4952106a4052345afe228564d5416844
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5097;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-26 22:46:25:87.742
+UDP message received [357] bytes :
+
+ACK sip:40007@192.168.5.12:5097 SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+CSeq: 1 ACK
+Call-ID: 4952106a4052345afe228564d5416844
+Contact: sip:4078@192.168.55.75:5060;transport=udp;transport=UDP
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001943573918-1--s1632-
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected UDP message received:
+
+ACK sip:40007@192.168.5.12:5097 SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+CSeq: 1 ACK
+Call-ID: 4952106a4052345afe228564d5416844
+Contact: sip:4078@192.168.55.75:5060;transport=udp;transport=UDP
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001943573918-1--s1632-
+Content-Length: 0
+
+

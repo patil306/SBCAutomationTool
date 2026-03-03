@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+<!--      User-to-User: 00FA080001001056965CFB;encoding=hex -->
+
+<scenario name="Basic Sipstone UAC">
+
+<send retrans="500">
+<![CDATA[
+  INVITE sips:[field1]@[remote_ip] SIP/2.0
+  Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+  From: sips:[field0]@[local_ip];tag=[call_number]
+  To: sips:[field1]@[remote_ip]:[remote_port];
+  Call-ID: [call_id]
+  CSeq: 1 INVITE
+  Contact: sips:[field0]@[local_ip]:[local_port];transport=TLS
+  Supported: replaces
+  Max-Forwards: 70
+  Subject: Performance Test
+  User-to-User: 00FA080001001056965CFB;encoding=hex
+  Content-Type: application/sdp
+  Content-Length: 0
+  
+]]>
+</send>
+
+<recv response="100" optional="true">
+</recv>
+<recv response="200" rrs="true">
+        <action>
+                   <ereg regexp="sip.*[^>]" search_in="hdr" header="Contact:" assign_to="1"/>
+                           </action>
+                           </recv> 
+<!-- Packet lost can be simulated in any send/recv message by         -->
+<!-- by adding the 'lost = "10"'. Value can be [1-100] percent.       -->
+<!-- ACK sip:[service]@[remote_ip]:[remote_port] SIP/2.0 -->
+
+<send>
+<![CDATA[
+  ACK sip:[field1]@[remote_ip]:[remote_port];transport=TCP SIP/2.0
+  Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+  From: sip:[field0]@[local_ip];tag=[call_number]
+  To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+  Call-ID: [call_id]
+  CSeq: 1 ACK
+  Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP
+  Max-Forwards: 70
+  [routes]
+  Subject: Performance Test
+  Content-Type: application/sdp
+  Content-Length: [len]
+
+  v=0
+  o=- 1519362456 2 IN IP4 10.133.67.25
+  s=-
+  c=IN IP4 10.133.67.137
+  b=AS:64
+  t=0 0
+  m=audio 35064 RTP/AVP 0 109
+  c=IN IP4 10.133.67.137
+  a=sendrecv
+  a=rtpmap:109 telephone-event/8000
+  a=acfg:1 t=1 a=1
+  m=video 0 RTP/AVP 100 98
+  c=IN IP4 0.0.0.0
+  a=sendrecv
+  a=rtpmap:100 H264/90000
+  a=rtpmap:98 H264/90000
+ ]]>
+</send>
+
+<pause milliseconds="3000"/> 
+<!-- This delay can be customized by the -d command-line option       -->
+<!-- or by adding a 'milliseconds = "value"' option here.             -->
+
+<!-- The 'crlf' option inserts a blank line in the statistics report. -->
+<!-- BYE sip:[service]@[remote_ip]:[remote_port] SIP/2.0 -->
+<!-- original: BYE sip:[field1]@[remote_ip]:[remote_port];transport=TCP SIP/2.0  -->
+<!-- original: Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP -->
+
+<send retrans="500">
+<![CDATA[
+  BYE [$1] SIP/2.0
+  Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+  From: sip:[field0]@[local_ip];tag=[call_number]
+  To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+  [last_Call-ID:]
+  Contact: sip:[local_ip]:[local_port];transport=TCP
+  CSeq: 3 BYE
+  [routes]
+  Max-Forwards: 70
+  Subject: Performance Test
+  Content-Length: 0
+]]>
+</send>
+  
+<recv response="200" rtd="true">
+</recv>
+
+-->
+<!-- definition of the response time repartition table (unit is ms)   -->
+  <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+<!-- definition of the call length repartition table (unit is ms)     -->
+  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+
+</scenario>

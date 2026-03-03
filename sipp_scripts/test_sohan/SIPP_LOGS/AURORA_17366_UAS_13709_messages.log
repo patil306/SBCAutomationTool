@@ -1,0 +1,37 @@
+----------------------------------------------- 2019-06-17 15:13:39:93.859
+TLS message received [600] bytes :
+
+SUBSCRIBE sips:4079@192.168.5.12:6027 SIP/2.0
+From: sips:4078@192.168.55.79;tag=1
+To: sips:4079@192.168.5.12:6027
+CSeq: 1 SUBSCRIBE
+Call-ID: 67594e5f37235530aecdcd1d395aa512
+Contact: sips:4078@192.168.55.79:5061;transport=tls;transport=TLS
+Record-Route: <sip:192.168.55.79:5061;ipcs-line=11;lr;transport=tls>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.55.79:5061;branch=z9hG4bK-s1632-000347633670-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 15:13:39:94.528
+TLS message sent (435 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/TLS 192.168.5.12:6027;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sips:4078@192.168.55.79;tag=1
+Call-ID: 67594e5f37235530aecdcd1d395aa512
+Contact: <sip:sipp@192.168.5.12:6027>;transport=TLS
+Max-Forwards: 70
+CSeq: 11 NOTIFY
+Subscription-State: active;expires=2000
+Server: Avaya Aura Presence Services 7.1.2.0-SNAPSHOT-230
+Event: presence.winfo
+Content-Length: 0
+
+

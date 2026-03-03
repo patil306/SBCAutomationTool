@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2021-11-23	20:39:08:221	1637680148.221968: Aborting call on UDP retransmission timeout for Call-ID '1-9938@10.133.39.159'.
+2021-11-23	20:39:08:222	1637680148.222894: Dead call 1-9938@10.133.39.159 (aborted at index 10), received 'SIP/2.0 400 Bad Request
+From: <sip:50003@192.168.56.202:5092;transport=UDP>;tag=1
+To: sip:reddy1@10.133.39.159:5060;tag=1
+CSeq: 3 BYE
+Call-ID: 1-9938@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-9938-1--1
+Content-Length: 0
+
+'.

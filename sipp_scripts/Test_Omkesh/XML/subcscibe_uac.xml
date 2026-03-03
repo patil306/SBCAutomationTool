@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario>
+<send>
+<![CDATA[
+
+SUBSCRIBE sips:8881100021@sbcsv.com SIP/2.0
+From: <sips:8881100021@sbcsv.com>;tag=1
+To: <sips:8881100021@sbcsv.com>
+Call-ID: [call_id]
+CSeq: 1 SUBSCRIBE
+Contact: <sips:8881100021@10.133.43.151:52497;transport=tls>
+Max-Forwards: 70
+Supported: 100rel,sdp-anat,eventlist
+Via: SIP/2.0/TLS [local_ip]:[local_port];branch=[branch]
+Event: nena-ServiceState
+Expires: 60
+Content-Length: 0
+
+
+]]>
+</send>
+
+<recv response="200"  optional="true">
+</recv>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:NOTIFY-->
+
+<recv request="NOTIFY" optional="false">
+</recv>
+
+
+<send>
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Content-Length: 0
+  ]]>
+</send>
+
+

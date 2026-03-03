@@ -1,0 +1,45 @@
+----------------------------------------------- 2019-07-03 16:02:27:437.207
+TCP message sent (706 bytes):
+
+INVITE sip:40007@10.133.48.238 SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:6027;branch=z9hG4bK-21033-1-0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:40007@10.133.48.238:5060
+Call-ID: 1-21033@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:4078@10.133.39.159:6027;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+MyHeader: SOHAN
+Content-Type: application/sdp
+Content-Length:   246
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 41532 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+
+----------------------------------------------- 2019-07-03 16:02:27:462.306
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:40007@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 1-21033@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:6027;branch=z9hG4bK-21033-1-0
+Content-Length: 0
+
+

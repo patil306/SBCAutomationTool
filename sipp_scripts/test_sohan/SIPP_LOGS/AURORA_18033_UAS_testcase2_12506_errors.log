@@ -1,0 +1,287 @@
+sipp: The following events occured:
+2019-08-22	20:49:55:754	1566487195.754613: Aborting call on unexpected message for Call-Id '10d5313dd363ae60feff320683cb4424': while expecting 'BYE' (index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001688278008-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:49:56:256	1566487196.256253: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000034077108-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:49:57:256	1566487197.256775: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001325274194-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:49:59:258	1566487199.258973: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000105213019-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:03:259	1566487203.259980: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000951689125-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:07:260	1566487207.260633: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001892599754-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:07:756	1566487207.756882: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'BYE sip:192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 3 BYE
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000208963728-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:08:258	1566487208.258037: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'BYE sip:192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 3 BYE
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000208963728-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:09:258	1566487209.258921: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'BYE sip:192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 3 BYE
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000208963728-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:11:259	1566487211.259391: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'BYE sip:192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 3 BYE
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000208963728-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:11:263	1566487211.263519: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000390386907-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:15:260	1566487215.260151: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'BYE sip:192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 3 BYE
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000208963728-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:15:263	1566487215.263765: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001951185684-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:19:260	1566487219.260795: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'BYE sip:192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 3 BYE
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000208963728-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:19:263	1566487219.263349: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000512948334-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:23:261	1566487223.261951: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'BYE sip:192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 3 BYE
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000208963728-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:23:264	1566487223.264320: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001280004539-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:27:262	1566487227.262886: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'BYE sip:192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 3 BYE
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000208963728-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:27:265	1566487227.265327: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'ACK sip:4078@192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4079@192.168.55.75:5060;tag=1
+To: sip:4078@192.168.5.12:5097;tag=2
+CSeq: 1 ACK
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: sip:4079@192.168.55.75:5060;transport=udp;transport=TCP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-001087153866-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:31:263	1566487231.263565: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'BYE sip:192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 3 BYE
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000208963728-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:35:264	1566487235.264395: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'BYE sip:192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 3 BYE
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000208963728-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2019-08-22	20:50:39:265	1566487239.265215: Dead call 10d5313dd363ae60feff320683cb4424 (aborted at index 6), received 'BYE sip:192.168.5.12:5097;transport=udp SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:4079@192.168.5.12:5097;tag=2
+CSeq: 3 BYE
+Call-ID: 10d5313dd363ae60feff320683cb4424
+Contact: <sip:4078@192.168.55.75:5060;transport=udp>
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=7;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-000208963728-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.

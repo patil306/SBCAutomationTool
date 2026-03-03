@@ -1,0 +1,60 @@
+----------------------------------------------- 2019-08-30 13:59:05:361.559
+UDP message received [880] bytes :
+
+INVITE sip:40007@192.168.5.12:5097 SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+CSeq: 1 INVITE
+Call-ID: d09745508b0f54030271d74ec3b1420a
+Contact: sip:4078@192.168.55.75:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.75:5060;ipcs-line=4;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-002026768243-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 267
+
+v=0
+o=- 1297654 1 IN IP4 192.168.55.75
+s=-
+c=IN IP4 192.168.55.75
+t=0 0
+m=audio 35020 RTP/AVP 18 101 8 0 111
+c=IN IP4 192.168.55.75
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=rtpmap:111X-nt-inforeq/8000
+a=sendrecv
+a=ptime:20
+
+----------------------------------------------- 2019-08-30 13:59:05:361.967
+UDP message sent (316 bytes):
+
+SIP/2.0 488 Not Acceptable Here
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-002026768243-1--s1632-
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+Call-ID: d09745508b0f54030271d74ec3b1420a
+CSeq: 1 INVITE
+Contact: <sip:192.168.5.12:5097;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2019-08-30 13:59:05:364.149
+UDP message received [357] bytes :
+
+ACK sip:40007@192.168.5.12:5097 SIP/2.0
+From: sip:4078@192.168.55.75:5060;tag=1
+To: sip:40007@192.168.5.12:5097
+CSeq: 1 ACK
+Call-ID: d09745508b0f54030271d74ec3b1420a
+Contact: sip:4078@192.168.55.75:5060;transport=udp;transport=UDP
+Max-Forwards: 70
+Via: SIP/2.0/UDP 192.168.55.75:5060;branch=z9hG4bK-s1632-002026768243-1--s1632-
+Content-Length: 0
+
+

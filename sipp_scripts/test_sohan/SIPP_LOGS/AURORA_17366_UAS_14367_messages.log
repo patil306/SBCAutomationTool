@@ -1,0 +1,71 @@
+----------------------------------------------- 2019-06-17 18:09:19:648.276
+TLS message received [607] bytes :
+
+REGISTER sips:40006@192.168.5.12:6027 SIP/2.0
+From: sips:40006@192.168.55.79;tag=1
+To: sips:4078@192.168.5.12:6027
+CSeq: 1 REGISTER
+Call-ID: cf78b56c4712b70d54d7805e446d2157
+Contact: <sips:4078@192.168.55.79:5061;transport=tls>;q=0;expires=3600;+avaya.gmtoffset="0:00";+avaya.js-ver="1.0";+avaya.model="n/a";+avaya.sn="n/a";+avaya.firmware="n/a";+sip.instance="<urn:uuid:d2336786-cc37-3710-ee15-6984a96f699e>";reg-id=1
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.55.79:5061;branch=z9hG4bK-s1632-000492587857-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 18:09:19:648.840
+TLS message sent (322 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TLS 192.168.55.79:5061;branch=z9hG4bK-s1632-000492587857-1--s1632-
+From: sips:40006@192.168.55.79;tag=1
+To: sips:4078@192.168.5.12:6027;tag=2
+Call-ID: cf78b56c4712b70d54d7805e446d2157
+CSeq: 1 REGISTER
+Contact: <sip:sipp@192.168.5.12:6027>;transport=TLS
+Content-Length: 0
+Expires: 60
+
+
+----------------------------------------------- 2019-06-17 18:09:19:660.408
+TLS message received [606] bytes :
+
+SUBSCRIBE sips:4079@192.168.5.12:6027 SIP/2.0
+From: sips:4078@192.168.55.79;tag=1
+To: sips:4079@192.168.5.12:6027;tag=2
+CSeq: 1 SUBSCRIBE
+Call-ID: 6bdba534df92637f44f219727a98a815
+Contact: sips:4078@192.168.55.79:5061;transport=tls;transport=TLS
+Record-Route: <sip:192.168.55.79:5061;ipcs-line=17;lr;transport=tls>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.55.79:5061;branch=z9hG4bK-s1632-001750815851-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SUBSCRIBE sips:4079@192.168.5.12:6027 SIP/2.0
+From: sips:4078@192.168.55.79;tag=1
+To: sips:4079@192.168.5.12:6027;tag=2
+CSeq: 1 SUBSCRIBE
+Call-ID: 6bdba534df92637f44f219727a98a815
+Contact: sips:4078@192.168.55.79:5061;transport=tls;transport=TLS
+Record-Route: <sip:192.168.55.79:5061;ipcs-line=17;lr;transport=tls>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.55.79:5061;branch=z9hG4bK-s1632-001750815851-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+

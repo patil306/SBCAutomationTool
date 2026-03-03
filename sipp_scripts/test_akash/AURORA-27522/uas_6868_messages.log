@@ -1,0 +1,91 @@
+----------------------------------------------- 2021-09-17 17:36:54:394.076
+UDP message received [897] bytes :
+
+INVITE sip:reddy2@madappa.com SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037
+CSeq: 1 INVITE
+Call-ID: 46e7b71154aa2478a59b5759d53fe647
+Contact: sip:reddy1@196.216.242.95:5060
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=1;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: replaces
+User-Agent: Avaya J179 IP Phone 4.0.2.1.3 c81fea85c1d6
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000095113402-1--s1632-
+Subject: Performance Test
+Remote-LegId: 2
+Content-Type: application/sdp
+User-to-User: 00FA080001000161448286F
+Content-Length: 245
+
+v=0
+o=- 1509186683 1 IN IP4 192.168.57.16
+s=-
+c=IN IP4 196.216.242.95
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 35000 RTP/AVP 8 100
+a=rtpmap:8 PCMA/8000
+a=rtpmap:100 telephone-event/8000
+a=fmtp:100 0-15
+a=ptime:20
+
+----------------------------------------------- 2021-09-17 17:36:54:394.396
+UDP message sent (312 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000095113402-1--s1632-
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037
+Call-ID: 46e7b71154aa2478a59b5759d53fe647
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-17 17:36:54:394.434
+UDP message sent (597 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-000095113402-1--s1632-
+From:  sip:reddy1@196.216.242.95:5060;tag=1
+To:  sip:reddy2@192.168.56.202:6037;tag=1
+Call-ID: 46e7b71154aa2478a59b5759d53fe647
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   246
+
+v=0
+o=- 1509186683 1 IN IP4 192.168.56.202
+s=-
+c=IN IP4 192.168.56.202
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 41532 RTP/AVP 8 100
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2021-09-17 17:36:54:401.630
+UDP message received [468] bytes :
+
+ACK sip:reddy2@192.168.56.202 SIP/2.0
+From: sip:reddy1@196.216.242.95:5060;tag=1
+To: sip:reddy2@192.168.56.202:6037;tag=1
+CSeq: 1 ACK
+Call-ID: 46e7b71154aa2478a59b5759d53fe647
+Contact: sip:reddy1@196.216.242.95:5060;transport=udp;transport=UDP
+Record-Route: <sip:196.216.242.95:5060;ipcs-line=1;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 196.216.242.95:5060;branch=z9hG4bK-s1632-002032924198-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+

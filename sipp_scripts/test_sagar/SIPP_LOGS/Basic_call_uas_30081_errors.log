@@ -1,0 +1,14 @@
+sipp: The following events occured:
+2018-11-13	13:44:51:491	1542096891.491424: Aborting call on unexpected message for Call-Id '4e175d0b98237c159d3e7e0f47ca7841': while pausing (index 5), received 'ACK sips:40006@192.168.6.5:5076;transport=tls SIP/2.0
+From: sips:40005@192.168.6.242;tag=1
+To: sips:40006@192.168.6.5:5076;tag=1
+CSeq: 1 ACK
+Call-ID: 4e175d0b98237c159d3e7e0f47ca7841
+Record-Route: <sips:192.168.6.242:5061;ipcs-line=13;lr;transport=tls>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.6.242:5061;branch=z9hG4bK-s1632-000608469576-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.

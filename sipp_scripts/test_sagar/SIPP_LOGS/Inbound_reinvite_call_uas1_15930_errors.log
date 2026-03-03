@@ -1,0 +1,18 @@
+sipp: The following events occured:
+2018-02-09	19:07:14:048	1518183434.048273: Aborting call on unexpected message for Call-Id 'e0252e6ffbbd8505d9229663ce026d74': while expecting 'ACK' (index 4), received 'INVITE sip:4079@sbcdev4.com SIP/2.0
+From: sip:4078@10.133.69.213:17698;tag=1
+To: sip:4079@10.133.39.159:5080;tag=1
+CSeq: 2 INVITE
+Call-ID: e0252e6ffbbd8505d9229663ce026d74
+Contact: sip:4078@10.133.69.213:5060;transport=tcp;transport=TCP
+Route: <sip:10.133.39.159:5080;lr;transport=tcp>
+Record-Route: <sip:10.133.69.213:5060;ipcs-line=317057;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.69.213:5060;branch=z9hG4bK-s1632-001561046872-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+'.

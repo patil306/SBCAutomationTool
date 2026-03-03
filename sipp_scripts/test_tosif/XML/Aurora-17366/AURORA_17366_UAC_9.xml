@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+<!--      User-to-User: 00FA080001001056965CFB;encoding=hex -->
+
+<scenario name="Basic Sipstone UAC">
+
+<send>
+<![CDATA[
+REGISTER sip:[remote_ip] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: <sip:[field0]@[field1]>;tag=[call_number]
+To: <sip:[field0]@[field1]>
+Call-ID: [call_id]
+CSeq: 1 REGISTER
+Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+Max-Forwards: 70
+Expires: 1800
+User-Agent: SIPp/Linux
+Content-Length: 0
+
+]]>
+</send>
+
+<recv response="100" optional="true">
+</recv>
+
+<recv response="200" crlf="true">
+</recv>
+
+
+<send>
+<![CDATA[
+SUBSCRIBE sip:[service]@[remote_ip]:[remote_port] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: <sip:[field0]@[field1]>;tag=[pid]SIPpTag00[call_number]
+To: <sip:[field0]@[field1]>
+Call-ID: [call_id]
+CSeq: 1 SUBSCRIBE
+Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+Max-Forwards: 70
+Event: presence
+Expires: 60
+Accept: application/pidf+xml
+Allow-Events: presence
+Content-Length: 0
+
+]]>
+</send>
+
+<recv response="100" optional="true">
+</recv>
+
+<recv request="NOTIFY" rrs="true" crlf="true">
+<action>
+<ereg regexp="tag=.*" search_in="hdr" header="From:" check_it="true" assign_to="9"/>
+<ereg regexp="tag=.*" search_in="hdr" header="To:" check_it="true" assign_to="10"/>
+
+<ereg regexp="sip:(.*)>" search_in="hdr" header="Contact" assign_to="4,5"/>
+<assign assign_to="4" variable="5" />
+<ereg regexp=".*" search_in="hdr" header="Via:" check_it="true" assign_to="7"/>
+</action>
+</recv>
+
+<recv response="200" rrs="true">
+</recv>
+
+<send>
+<![CDATA[
+SIP/2.0 200 OK
+Via:[$7]
+From:<sip:sipp@[local_ip]>;[$9]
+To:[field1] <sip:[field1]@[field3]>;[$10]
+[last_Call-ID:]
+CSeq: 11 NOTIFY
+Contact: <sip:[local_ip]:[local_port]>
+Content-Length: 0
+Expires: 60
+Max-Forwards: 70
+]]>
+</send>
+
+<recv request="NOTIFY" rrs="true" crlf="true">
+</recv>
+<send>
+<![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port]>
+Content-Length: 0
+Expires: 60
+Max-Forwards: 70
+]]>
+</send>
+
+
+<!--
+<send>
+<![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=2
+[last_Call-ID:]
+CSeq: 1 SUBSCRIBE
+Contact: <sip:sipp@[local_ip]:[local_port]>
+Content-Length: 0
+Expires: 60
+]]>
+</send>
+-->
+
+<!-- definition of the response time repartition table (unit is ms)   -->
+  <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+<!-- definition of the call length repartition table (unit is ms)     -->
+  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+
+</scenario>

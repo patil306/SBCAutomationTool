@@ -1,0 +1,17 @@
+sipp: The following events occured:
+2019-03-07	17:50:41:065	1551961241.065053: Dead call 1-12283@10.133.39.159 (successful), received 'ACK sip:192.168.5.12:6020;transport=TCP SIP/2.0
+From: sip:50001@192.168.5.12:6020;tag=1
+To: <sip:50003@192.168.55.80;transport=TCP>;tag=1
+CSeq: 1 ACK
+Call-ID: 1-12283@10.133.39.159
+Contact: <sip:50001@192.168.55.80:5060;transport=tcp>
+Record-Route: <sip:192.168.55.80:5060;ipcs-line=19;lr;transport=tcp>
+Allow: REFER
+Supported: replaces, timer, 100rel
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.55.80:5060;originator;branch=z9hG4bK-s1632-000046088034-1--s1632-
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+'.

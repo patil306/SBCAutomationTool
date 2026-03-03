@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2017-06-01	17:17:42:187	1496317662.187210: Aborting call on unexpected message for Call-Id '1-2351@192.168.6.5': while pausing (index 7), received 'SIP/2.0 200 OK
+From: sip:4070@5060[local_ip;tag=1
+To: sip:4071@192.168.6.221:5060;tag=2
+CSeq: 1 INFO
+Call-ID: 1-2351@192.168.6.5
+Record-Route: <sip:192.168.6.5:5060>
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-2351-1-6
+Content-Length: 0
+
+'.

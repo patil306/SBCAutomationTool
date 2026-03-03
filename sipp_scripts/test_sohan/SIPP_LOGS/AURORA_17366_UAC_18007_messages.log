@@ -1,0 +1,75 @@
+----------------------------------------------- 2019-06-18 16:07:30:845.139
+UDP message sent (509 bytes):
+
+REGISTER sip:10.133.48.238:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.48.180:6000;rport;branch=z9hG4bKPjsveyVyjEpkmjhn6EeQ7pWqM4OFIE0SJV
+Max-Forwards: 70
+From: <sip:1001@10.133.48.238>;tag=1
+To: <sip:1001@10.133.48.238>
+Call-ID: 1-18007@10.133.39.159
+CSeq: 63860 REGISTER
+User-Agent: PJSUA v2.8 Linux-3.10.3.189/x86_64/glibc-2.17
+Contact: <sip:1001@10.133.48.180:6000;ob>
+Expires: 300
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+Content-Length:  0
+
+
+----------------------------------------------- 2019-06-18 16:07:30:853.286
+UDP message received [260] bytes :
+
+SIP/2.0 100 Trying
+From: <sip:1001@10.133.48.238>;tag=1
+To: <sip:1001@10.133.48.238>
+CSeq: 63860 REGISTER
+Call-ID: 1-18007@10.133.39.159
+Via: SIP/2.0/UDP 10.133.48.180:6000;rport=5060;branch=z9hG4bKPjsveyVyjEpkmjhn6EeQ7pWqM4OFIE0SJV
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-18 16:07:30:859.463
+UDP message received [596] bytes :
+
+SIP/2.0 401 Unauthorized
+From: <sip:1001@10.133.48.238>;tag=1
+To: <sip:1001@10.133.48.238>;tag=399UXHX11Bm2B
+CSeq: 63860 REGISTER
+Call-ID: 1-18007@10.133.39.159
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+User-Agent: FreeSWITCH-mod_sofia/1.6.20~64bit
+Via: SIP/2.0/UDP 10.133.48.180:6000;rport=5060;branch=z9hG4bKPjsveyVyjEpkmjhn6EeQ7pWqM4OFIE0SJV
+WWW-Authenticate: Digest realm="10.133.48.238", nonce="017a8b4e-91b5-11e9-ba2f-cd3dda5858ad", algorithm=MD5, qop="auth"
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected UDP message received:
+
+SIP/2.0 401 Unauthorized
+From: <sip:1001@10.133.48.238>;tag=1
+To: <sip:1001@10.133.48.238>;tag=399UXHX11Bm2B
+CSeq: 63860 REGISTER
+Call-ID: 1-18007@10.133.39.159
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+User-Agent: FreeSWITCH-mod_sofia/1.6.20~64bit
+Via: SIP/2.0/UDP 10.133.48.180:6000;rport=5060;branch=z9hG4bKPjsveyVyjEpkmjhn6EeQ7pWqM4OFIE0SJV
+WWW-Authenticate: Digest realm="10.133.48.238", nonce="017a8b4e-91b5-11e9-ba2f-cd3dda5858ad", algorithm=MD5, qop="auth"
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-18 16:07:30:860.117
+UDP message sent (327 bytes):
+
+BYE sip:1001@10.133.48.238 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-18007-1--1
+From: <sip:1001@10.133.48.238>;tag=1
+To: <sip:1001@10.133.48.238>;tag=399UXHX11Bm2B
+Call-ID: 1-18007@10.133.39.159
+CSeq: 63861 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:5060;transport=UDP>
+Content-Length: 0
+
+

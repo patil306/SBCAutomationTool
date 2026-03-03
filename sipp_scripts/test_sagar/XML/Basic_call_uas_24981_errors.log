@@ -1,0 +1,25 @@
+sipp: The following events occured:
+2019-01-25	12:10:10:712	1548398410.712808: Aborting call on unexpected message for Call-Id '8d247058f91de31228aff36f57e9847f': while expecting '200' (index 7), received 'SIP/2.0 481 Call/Transaction Does Not Exist
+From: sip:40006@192.168.5.12;tag=2
+To: sip:40005@192.168.55.75:5060;tag=2
+CSeq: 1 BYE
+Call-ID: 8d247058f91de31228aff36f57e9847f
+Via: SIP/2.0/TCP 192.168.5.12:5097;branch=z9hG4bK-24981-2-6
+Via: SIP/2.0/TLS 127.0.0.2:15061;rport=25983;ibmsid=local.1536222863252_65680596_65678346;branch=z9hG4bK275291644388129
+Via: SIP/2.0/TLS 172.16.10.6;branch=z9hG4bKbcefbe26d75c41e8a9a2050568d886e-AP;ft=11192297;received=172.16.10.6;rport=34578
+Via: SIP/2.0/TLS 172.16.10.2;branch=z9hG4bKbcefbe26d75c41e8a9a2050568d886e
+Content-Length: 0
+
+'.
+2019-01-25	12:10:22:167	1548398422.167841: Aborting call on unexpected message for Call-Id '45bd4951cb628a2e6ef8f06322d15544': while expecting '200' (index 7), received 'SIP/2.0 481 Call/Transaction Does Not Exist
+From: sip:40006@192.168.5.12;tag=3
+To: sip:40005@192.168.55.75:5060;tag=3
+CSeq: 1 BYE
+Call-ID: 45bd4951cb628a2e6ef8f06322d15544
+Via: SIP/2.0/TCP 192.168.5.12:5097;branch=z9hG4bK-24981-3-6
+Via: SIP/2.0/TLS 127.0.0.2:15061;rport=25983;ibmsid=local.1536222863252_65680596_65678346;branch=z9hG4bK275291644388129
+Via: SIP/2.0/TLS 172.16.10.6;branch=z9hG4bKbcefbe26d75c41e8a9a2050568d886e-AP;ft=11192297;received=172.16.10.6;rport=34578
+Via: SIP/2.0/TLS 172.16.10.2;branch=z9hG4bKbcefbe26d75c41e8a9a2050568d886e
+Content-Length: 0
+
+'.

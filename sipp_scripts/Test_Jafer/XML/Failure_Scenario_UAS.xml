@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!DOCTYPE scenario (View Source for full doctype...)> 
+<!--                  Sipp default 'uas' scenario.                       
+--> 
+<!--                                                                     
+--> 
+<scenario name="Basic UAS responder">
+
+<recv request="INVITE" crlf="true"/>
+
+
+<send>
+<![CDATA[
+
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:];
+[last_Call-ID:]
+[last_CSeq:]
+  Supported: timer,100rel
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+
+]]>
+
+</send>
+
+<send>
+
+<![CDATA[
+
+SIP/2.0 408 Request Timeout
+[last_Via:]
+[last_From:]
+[last_To:];tag=408_[call_number]1002
+[last_Call-ID:]
+[last_CSeq:]
+Content-Length:0 
+]]>
+
+</send>
+
+<recv request="ACK" rtd="true" crlf="true"/>
+
+</scenario>
+
+
+

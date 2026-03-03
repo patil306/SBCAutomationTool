@@ -1,0 +1,25 @@
+sipp: The following events occured:
+2017-11-02	16:21:50:602	1509619910.602663: Aborting call on an unexpected CANCEL for call: 70ce082382c06573d9c08d26d3afb144.
+2017-11-02	16:21:50:605	1509619910.605808: Aborting call on unexpected message for Call-Id '70ce082382c06573d9c08d26d3afb144': while expecting 'INVITE' (index 0), received 'ACK sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15298;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 1 ACK
+Call-ID: 70ce082382c06573d9c08d26d3afb144
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000498463181-1--s1632-
+Content-Length: 0
+
+'.
+2017-11-02	16:38:33:458	1509620913.458379: Aborting call on unexpected message for Call-Id '1-20999@10.133.39.159': while expecting 'INVITE' (index 3), received 'ACK sip:1111@10.133.39.159;transport=tcp SIP/2.0
+From: "sut" <sip:5555@10.133.73.31;transport=tcp>;tag=15415SIPpTag011
+To: "1111" <sip:1111@10.133.39.159;transport=tcp>;tag=1
+CSeq: 2 ACK
+Call-ID: 1-20999@10.133.39.159
+Contact: <sip:5555@10.133.73.31:5060;transport=tcp>
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.31:5060;branch=z9hG4bK-s1632-001474848224-1--s1632-
+Via: SIP/2.0/TCP 192.168.5.34:5060;branch=z9hG4bK-15415-1-5
+Content-Length: 0
+
+'.

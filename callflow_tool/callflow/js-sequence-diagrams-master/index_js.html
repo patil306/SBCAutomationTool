@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #3e758e;
+  }
+
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #myInput:focus {
+    outline: 3px solid #ddd;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    top: 80px;
+    right: 160px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .dropdown-top-right {
+    top: -10px;
+    right: -10px;
+  }
+
+  .dropdown-top-right::before,
+  .dropdown-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+
+  .dropdown-top-right::before {
+    top: 0;
+    left: 0;
+  }
+
+  .dropdown-top-right::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  .dropdown-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+  }
+
+  /* common */
+  .ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .ribbon::before,
+  .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+  }
+
+  .ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: #3498db;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* top right*/
+  .ribbon-top-right {
+    top: -10px;
+    right: -10px;
+  }
+
+  .ribbon-top-right::before,
+  .ribbon-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+
+  .ribbon-top-right::before {
+    top: 0;
+    left: 0;
+  }
+
+  .ribbon-top-right::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  .ribbon-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+  }
+  .switch-toggle {
+  width: 10em;
+}
+
+.switch-toggle label:not(.disabled) {
+  cursor: pointer;
+}
+.modal:nth-of-type(even) {
+    z-index: 1052 !important;
+}
+.modal-backdrop.show:nth-of-type(even) {
+    z-index: 1051 !important;
+}
+  
+#decsleepbtn,#incsleepbtn,#sleeptimer {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+}
+
+#decsleepbtn,#incsleepbtn {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+
+#decsleepbtn,#incsleepbtn  {
+  background-color: #eeeeee;
+  min-width: 38px;
+  width: auto;
+  transition: all 300ms ease;
+}
+
+#decsleepbtn,#incsleepbtn, 
+#decsleepbtn,#incsleepbtn{
+  font-weight: bold;
+  height: 38px;
+  padding: 0;
+  width: 38px;
+  position: relative;
+}
+
+#sleeptimer {
+  position: relative;
+  height: 38px;
+  left: -6px;
+  text-align: center;
+  width: 62px;
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 0 5px;
+  resize: vertical;
+}
+
+#incsleepbtn {
+  left: -13px;
+}
+
+#sleeptimer {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+  
+</style>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="google-site-verification" content="ozgnqb925nLPkhlk9qBcSvdsrY8xIZyrpnBOoDyY1hE" />
+
+  <link href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" rel="stylesheet" />
+
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- CSS only -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js" type="text/javascript" charset="utf-8"></script-->
+
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <link rel="stylesheet" type="text/css" href="{{url_for ('static', filename = 'css/style.css')}}" media="screen" />
+  <link rel="stylesheet" type="text/css" href="{{url_for ('static', filename = 'css/sequence-diagram-min.css') }}"
+    media="screen" />
+
+  <title>js-sequence-diagrams by bramp</title>
+  <link rel="canonical" href="https://bramp.github.io/js-sequence-diagrams/" />
+
+
+</head>
+
+<body>
+  <header style="height: 160px;">
+    <div class="inner">
+      <h1 style="font-size:45px; text-align:center;">SIP Testcase Callflow</h1>
+      <button type="button" id="new_xyz" class="btn btn-danger" value="xyz">Expert Mode</button>
+      <!--<h2>Draws simple UML sequence diagrams from a textual representation</h2>-->
+     
+      <!--
+        <a href="https://github.com/bramp/svg-js-sequence-diagrams" class="button">
+        <small>View project on</small>GitHub</a>
+      -->
+    </div>
+    <!--a href="https://github.com/bramp/js-sequence-diagrams"-->
+    <a href="{{ url_for ('static', filename = 'help.html') }}">
+      <div class="ribbon ribbon-top-right"><span>HELP</span></div>
+
+    </a>
+    <div class="dropdown">
+      <button onclick="FliterHelp()" class="dropbtn">Search</button>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href="#hdr">HDR [HDR_TO='abc.avaya.com']</a>
+        <a href="#sdp">SDP</a>
+        <a href="#param">HDRPARAM</a>
+        <a href="#transport">Transport [transport="TCP"]</a>
+        <a href="#custom">xyz</a>
+        <a href="#support">xyz</a>
+        <a href="#tools">xyz</a>
+      </div>
+    </div>
+  </header>
+
+  <div id="main">
+<!-- here we are adding for modal input's html-->
+<form role="form" action="" id="Q_A">
+<div class="modal fade" id="infoModal" role="dialog" style="margin-top: 14%">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Row Information</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover">
+          <thead class="thead-dark" data-toggle="collapse" data-target=".collapse">
+            <th scope="col">#</th>
+            <th scope="col">Value</th>
+          </thead>
+                    
+          <tr>
+            <th>
+            Transport Type
+            <input id="transudp" type="radio" name="radio" value="udp"/>
+            UDP
+            <input id="transtcp" type="radio" name="radio" value="tcp" checked="checked"/>
+            TCP
+            <input id="transtls" type="radio" name="radio" value="tls"/>
+            TLS
+          </th>
+         </tr>
+          <tr>
+            <th><label>Feature Tag(s): </label></th>
+            <th><input id="feature_tag" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>Allow-Header Value(s): </label></th>
+            <th><input id="allow_header" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>Client Timeout (sec): </label></th>
+            <th><input id="client_timeout" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>Time Lapse Before Bye (sec): </label></th>
+            <th><input id="time_lapse_before_bye" type="text"></th>
+          </tr>
+          <tr>
+            <th>
+            Reliable Response
+            True
+            <input id="truerel" type="radio" name="radio" value="true"/>
+            False
+            <input id="falserel" type="radio" name="radio" value="false"/>
+          </th>
+          </tr>
+          <tr>              <!--Session level attributes to be added here -->
+            <th><label>SRTP: </label></th>
+            <th><input id="issrtp" type="checkbox"></th>
+          </tr>
+
+        </table>
+        <table class="table table-hover">
+          <thead class="thead-dark">
+            <th scope="col">#</th>
+            <th scope="col">Modifier</th>
+            <th>#</th>
+            <th scope="col">Verifier<input id="expect_chk" type="checkbox"></th>
+          </thead>
+          <tr style="display: none;"><a data-toggle="modal" href="#infoModalwithSess"  id="dialogattrbtn"></a></tr>
+          <!---
+          <tr>
+               <th><label>Transport Type</label></th>
+                  <input id="udp" name="state-d" type="radio" checked="" />
+                  <label for="udp" onclick="">UDP</label>
+
+                  <input id="tcp" name="state-d" type="radio" checked="checked" />
+                  <label for="tcp" class="disabled" onclick="">TCP</label>
+
+                  <input id="tls" name="state-d" type="radio" />
+                  <label for="tls" onclick="">TLS</label>
+
+                  <a></a>
+               
+               
+          </tr> --->
+          <tr>
+            <th><label>OOD Request: </label></th>
+            <th><input id="isOOD" type="checkbox"></th>
+          </tr>
+          <tr>
+            <th><label>Increment SDP Version: </label></th>
+            <th><input id="hassdpchanged" type="checkbox"></th>
+          </tr>      
+          <tr>
+            <th><label>Invite with Replaces: </label></th>
+            <th><input id="hasreplaces" type="checkbox"></th>
+          </tr>
+          <tr>
+            <th><label>Call Pickup: </label></th>
+            <th><input id="callpickup" type="checkbox"></th>
+          </tr>          
+          <tr>
+            <th><label>Transfer Target: </label></th>
+            <th><input id="transfer_target" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>INS_HDR: </label></th>
+            <th><input id="ins_hdr" type="text"></th>
+            <th><label>EXP_HDR: </label></th>
+            <th><input id="exp_hdr" type="text" disabled><label for="invexp_hdr"> INV</label><input id="invexp_hdr" type="checkbox"></th>
+           
+          </tr>
+          <tr>
+            <th><label>REM_HDR: </label></th>
+            <th><input id="rem_hdr" type="text"></th>
+            <th><label>EXP_HDRVALUE: </label></th>
+            <th><input id="exp_hdrval" type="text" disabled><label for="invexp_hdrval"> INV</label><input id="invexp_hdrval" type="checkbox"></th>
+           
+          </tr>
+          <tr>
+            <th><label>REP_REQURI: </label></th>
+            <th><input id="rep_requri" type="text"></th>
+            <th><label>EXP_REQURI: </label></th>
+            <th><input id="exp_requri" type="text" disabled><label for="invexp_requri"> INV</label><input id="invexp_requri" type="checkbox" aria-label="inv"></th>
+            
+          </tr>
+          <tr>
+            <th><label>INS_REQURIPARAM: </label></th>
+            <th><input id="ins_requriparam" type="text"></th>
+            <th><label>EXP_REQURIPARAM: </label></th>
+            <th><input id="exp_requriparam" type="text" disabled><label for="invexp_requriparam"> INV</label><input id="invexp_requriparam" type="checkbox"></th>
+            
+          </tr>
+          <tr>
+            <th><label>REM_REQURIPARAM: </label></th>
+            <th><input id="rem_requriparam" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>INS_SDPSESSATTR: </label></th>
+            <th><input id="ins_sdpsessattr" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>INS_SDPMLINE: </label></th>
+            <th><input id="ins_sdpmline" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>INS_SDPAUDIOCODEC: </label></th>
+            <th><input id="ins_sdpaudiocodec" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>Media Direction: </label></th>
+            <th><input id="mediadirection" type="text"></th>
+          </tr>
+
+          <tr>
+            <th><label>Sleep(sec): </label></th>
+            <th>
+              <div class="input-group">
+                <input type="button" id="decsleepbtn" value="-" class="button-minus" data-field="quantity">
+                <input type="number" id="sleeptimer" step="1" max="" value="0" name="quantity" class="quantity-field">
+                <input type="button" id="incsleepbtn" value="+" class="button-plus" data-field="quantity">
+              </div>
+
+            </th>
+          </tr>
+          
+      </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="close_id" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+<!--END OF modal input html-->
+<!--start of Modal with Session atttr-->
+<!--
+<div class="modal fade" id="infoModalwithSess" role="dialog" style="margin-top: 14%">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modify Dialog Attr</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover">
+          <thead class="thead-dark">
+            <th scope="col">#</th>
+            <th scope="col">Value</th>
+          </thead>
+         
+          <tr>
+            <th>
+            Transport
+            <input id="transudp" type="radio" name="radio" value="udp"/>
+            UDP
+            <input id="transtcp" type="radio" name="radio" value="tcp" checked="checked"/>
+            TCP
+            <input id="transtls" type="radio" name="radio" value="tls"/>
+            TLS
+          </th>
+         </tr> 
+          <tr>
+            <th><label>Feature Tag(s): </label></th>
+            <th><input id="feature_tag" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>Allow-Header Value(s): </label></th>
+            <th><input id="allow_header" type="text"></th>
+          </tr>
+           <tr>
+            <th><label>Client Timeout (sec): </label></th>
+            <th><input id="client_timeout" type="text"></th>
+          </tr>
+          <tr>
+            <th><label>Time Lapse Before Bye (sec): </label></th>
+            <th><input id="time_lapse_before_bye" type="text"></th>
+          </tr>
+          <tr>
+            <th>
+            Reliable Response
+            True
+            <input id="truerel" type="radio" name="radio" value="true"/>
+            False
+            <input id="falserel" type="radio" name="radio" value="false"/>
+          </th>
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="close_sess_id" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<-->
+<!--end of Modal with session attrs-->
+<!--start of Modal for saving testcase-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="savetcmodal">
+  <div class="modal-dialog modal-lg">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Save Testcase</h4>
+      </div>
+      <div style="text-align: center;">
+        <input type="text" placeholder="Enter text Description" id="testdescription">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id = "cnfsavebtn">Save Testcase</button>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<!--end of Modal for saving testcase-->
+<!-- start of modal for json editing--->
+<div class="modal fade" id="configsbcModal" tabindex="-1" role="dialog"  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">SBC CONfig Editor</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div id="summernote"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id = "savejsonbtn">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--end of modal for json editing--->
+<!--start of Modal for editing controller config file-->
+<div class="modal fade" id="config_controller" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <textarea rows="20" cols="60" id="configtext"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="new_save" value="abc">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end of Modal for editing controller config file-->
+    <section id="demo">
+      <table align="center" class="inner">
+        <tr>
+          <td>
+            <h3>Demo. Try editing me below</h3>
+            <div class="editor-wrapper">
+              <div class="editor">A_ext->SBC: INVITE
+SBC->B_rw: INVITE
+B_rw->SBC: 200
+SBC->A_ext: 200</div>
+            </div>
+            <div hidden>  <!--hiding since we have took decision this should be only in template specific-->
+            <select class="configdevice", id= "configdevice">
+              <option value="SBC" selected>SBC</option>
+              <option value="CM">CM</option>
+            </select>
+            <select class="interfacetype", id= "interfacetype">
+              <option value="RW" selected>RW</option>
+              <option value="INT">INT</option>
+              <option value="EXT">EXT</option>
+            </select>
+            <select class="proxydeviceconfig", id= "proxydeviceconfig">
+              {% for item in configfiles %}
+              <option value="{{item}}" selected>{{item}}</option>
+              {% endfor %}
+              <!--option value="SessionPolicies.json">SessionPolicies.json</option-->
+            </select>
+            | <a href="#" id=test class="download">Config SBC</a>
+          </div>
+            <button onclick="passData(this)">Execute Flow</button>
+            <button onclick="" style="color: blue;" data-toggle="modal" data-target="#savetcmodal">Save testcase</button>
+
+          </td>
+          <td class="diagram">This should be a diagram! If you don't see it you need Javascript enabled</td>
+        </tr>
+       
+       
+      </table>
+
+    </section>
+    <section id = "x">
+        <div class="container">
+          <h2>Tracesbc</h2>
+          <p>
+            <select id="proxylocation" onchange="setIframeSource()"> 
+              <option value="http://10.133.99.221:8888/?hostname=10.133.48.189&username=ipcs&password=U0lQZXJhXzEyMw==">SBC</option> 
+              <option value="http://10.133.99.221:8888/?hostname=10.133.48.189&username=ipcs&password=U0lQZXJhXzEyMw==">SM</option> 
+              <option value="http://10.133.99.221:8888/" selected>CUSTOM</option> 
+           </select>
+          </p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe id = "proxyIframe"class="embed-responsive-item" src="http://127.0.0.1:8888/?hostname=10.133.48.189&username=ipcs&password=U0lQZXJhXzEyMw=="></iframe>
+          </div>
+            </div>
+      
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.13/ace.js" type="text/javascript"
+      charset="utf-8"></script>
+
+    <!--script src="{{url_for ('static', filename = 'bower_components/jquery/dist/jquery.min.js') }}"></script-->
+
+    <!-- Needed for the text editor -->
+
+    <script src="{{ url_for ('static', filename = 'bower_components/bower-webfontloader/webfont.js') }}"></script>
+    <script src="{{ url_for ('static', filename = 'bower_components/snap.svg/dist/snap.svg-min.js') }}"></script>
+    <script src="{{ url_for ('static', filename = 'bower_components/underscore/underscore-min.js') }}"></script>
+    <script
+      src="{{ url_for ('static', filename = 'bower_components/js-sequence-diagrams/dist/sequence-diagram-min.js') }}"></script>
+    <script src="{{ url_for ('static', filename = 'js/svginnerhtml.min.js') }}"></script>
+    <script src="https://ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js"></script>
+    <script src="https://ajaxorg.github.io/ace-builds/src-min-noconflict/ext-language_tools.js"></script>
+    <script type="text/javascript">
+
+      function setup_editor(div) {
+
+        var editor_div = div.find(".editor");
+        var diagram_div = div.find(".diagram");
+        var theme_div = div.find(".theme");
+        var download_link = div.find('.download');
+
+        // Setup the editor diagram
+
+        var editor = ace.edit(editor_div.get(0));
+        editor.setTheme("ace/theme/crimson_editor");
+        editor.getSession().setMode("ace/mode/asciidoc");
+        editor.getSession().on('change', _.debounce(on_change, 100));
+
+
+        download_link.click(function (ev) {
+          var svg = diagram_div.find('svg')[0];
+          var width = parseInt(svg.width.baseVal.value);
+          var height = parseInt(svg.height.baseVal.value);
+          var data = editor.getValue();
+          var xml = '<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="' + width + '" height="' + height + '" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[' + data + ']]></source>' + svg.innerHTML + '</svg>';
+
+          var a = $(this);
+          a.attr("download", "diagram.svg"); // TODO I could put title here
+          a.attr("href", "data:image/svg+xml," + encodeURIComponent(xml));
+        });
+
+        theme_div.change(on_change);
+        on_change();
+
+        function on_change() {
+          try {
+            //editor.toUpperCase();
+            var diagram = Diagram.parse(editor.getValue().replace(/\[(.+?)\]/g, ""));   //yogesh replaced editor.getValue() by editor.getValue().replace(/\[(.+?)\]/g, "") this will remove square brackets from diagram
+            //custom changes by yogesh for threedots
+            if(editor.getValue().includes("?")){
+//
+              
+//
+              var currline = editor.getSelectionRange().start.row;
+              
+              var wholelinetxt = editor.session.getLine(currline);
+             // alert("WWW"+ wholelinetxt)
+              if(wholelinetxt.includes("UPDATE") || wholelinetxt.includes("INVITE")){
+                  $("#dialogattrbtn").attr('enabled', 'enabled');
+               //   alert("WWWW");
+              }
+              else{
+                  $("#dialogattrbtn").attr('disabled', 'disabled');
+              }
+              /*if(!wholelinetxt.includes("REFER")){
+                $("#transfer_target").attr("disabled", "disabled")
+              }
+              else{
+                $("#transfer_target").attr("enabled", "enabled")
+              }*/
+                console.log("The value of the input field was changed.");
+                 $("#infoModal").modal();
+
+             }
+            //custom changes by yogesh ends for threedots
+            editor.getSession().setAnnotations([]);
+
+            // Clear out old diagram
+            diagram_div.html('');
+
+            var options = {
+              theme: 'simple',//theme_div.val(),
+              scale: 1
+            };
+
+            // Draw
+            diagram.drawSVG(diagram_div.get(0), options);
+
+
+          } catch (err) {
+            var annotation = {
+              type: "error", // also warning and information
+              column: 0,
+              row: 0,
+              text: err.message
+            };
+            if (err instanceof Diagram.ParseError) {
+              annotation.row = err.loc.first_line - 1;
+              annotation.column = err.loc.first_column;
+            }
+            editor.getSession().setAnnotations([annotation]);
+            throw err;
+          }
+        }
+      }
+
+      function allowAC(div) {
+        var editor_div = div.find(".editor");
+        console.log("in allowAC");
+        var langTools = ace.require("ace/ext/language_tools");
+        var aceEditor = ace.edit(editor_div.get(0)).setOptions({
+          enableBasicAutocompletion: true,
+          enableLiveAutocompletion: true,
+          enableSnippets: false
+        });
+
+        var msgList = ["SBC", "SM", "IPO", "a_ext", "a_int", "a_rw", "b_ext", "b_int", "b_rw" , "INVITE", "REINVITE", "UPDATE", "ACK", "CANCEL", "BYE", "100", "180", "200", "409", "497" ]
+
+        var myCompleter = {
+          identifierRegexps: [/[^\W]+/],
+          getCompletions: function (editor, session, pos, prefix, callback) {
+            console.info("myCompleter prefix:", prefix);
+            callback(null,
+              msgList.filter(entry => {
+                return entry.includes(prefix);
+              }).map(entry => {
+                return {
+                  value: entry
+                };
+              })
+            );
+          }
+        }
+
+        langTools.addCompleter(myCompleter);
+
+      }
+
+      $(document).ready(function () {
+        // Example diagrams
+        //$('.diagram').sequenceDiagram();
+
+        // Setup all the editors
+
+        setup_editor($('#demo'));
+        allowAC($('#demo'));
+
+        //setup_editor($('#example1'));
+        //setup_editor($('#example2'));
+        //setup_editor($('#example3'));
+      });
+    </script>
+    <script>
+      function passData(elemnt) {
+        var x = $('#demo').find(".editor");
+        var hhh = ace.edit(x.get(0));
+        processCallflow(hhh.getValue())
+      //  alert(hhh.getValue());
+
+        fetch(``, {
+          method: 'POST',
+          credentials: 'include',
+          body: JSON.stringify({ "ajson": hhh.getValue(), "temp_controller_config": document.getElementById("configtext").value.replaceAll(" ", "") }, null, 2),
+          cache: "no-cache",
+          headers: new Headers({
+            'content-type': "application/json"
+          })
+        })
+
+
+      }
+    </script>
+    <script>
+      function findGetParameter(parameterName) {
+        var result = null,
+            tmp = [];
+        location.search
+            .substr(1)
+            .split("&")
+            .forEach(function (item) {
+              tmp = item.split("=");
+              if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+            });
+        return result;
+    };
+      $(document).ready(function () {
+        console.log("ddd")
+        console.log(findGetParameter("call_str"))
+        if(findGetParameter("call_str")){
+          var x = $('#demo').find(".editor");
+          var hhh = ace.edit(x.get(0));
+          hhh.setValue(findGetParameter("call_str"));
+          console.log("SSS")
+        }        
+      });
+    </script>
+    <script>
+      //This script is for manipulating expect fields on check
+      $(function () {
+          $('#expect_chk').on('change', function () {
+              var checked = $(this).prop('checked');
+              $('#exp_hdr').prop('disabled', !checked);
+              $('#exp_requri').prop('disabled', !checked);
+              $('#exp_requriparam').prop('disabled', !checked);
+              $('#exp_hdrval').prop('disabled', !checked);
+              
+          });
+      });
+    </script>
+    <script>
+      var lineBylineAttrMap={}
+      //This script is for doing this after clicking button on modal
+      document.getElementById("close_id").addEventListener("click", print_values);
+
+      function print_values(){
+    var content ="";
+      if(content == "")
+        content = content + "INS_HDR:\"" + document.getElementById("ins_hdr").value+"\"";      
+      else
+        content = content +',' +"INS_HDR:\"" +document.getElementById("ins_hdr").value+"\"";
+      if(content == "")
+        content = content + "TRANSFERTARGET:\"" + document.getElementById("transfer_target").value+"\"";
+      else
+        content = content +',' +"TRANSFERTARGET:\"" +document.getElementById("transfer_target").value+"\"";
+      if(content == "")
+        content = content + "REM_HDR:\"" + document.getElementById("rem_hdr").value+"\"";
+      else
+        content = content +',' +"REM_HDR:\"" + document.getElementById("rem_hdr").value+"\"";
+      if(content == "")
+        content = content + "REP_REQURI:\"" + document.getElementById("rep_requri").value+"\"";
+      else
+        content = content +',' +"REP_REQURI:\"" + document.getElementById("rep_requri").value+"\"";
+      if(content == "")
+        content = content + "INS_REQURIPARAM:\"" + document.getElementById("ins_requriparam").value+"\"";
+      else
+        content = content +',' +"REM_REQURIPARAM:\"" + document.getElementById("rem_requriparam").value+"\"";
+      if(content == "")
+        content = content + "REM_REQURIPARAM:\"" + document.getElementById("rem_requriparam").value+"\"";
+      else
+        content = content +',' +"REM_REQURIPARAM:\"" + document.getElementById("rem_requriparam").value+"\"";
+      if(content == "")
+        content = content + "INS_SDPMLINE:\"" + document.getElementById("ins_sdpmline").value+"\"";
+      else
+        content = content +',' +"INS_SDPMLINE:\"" + document.getElementById("ins_sdpmline").value+"\"";
+      if(content == "")
+        content = content + "INS_SDPSESSATTR:\"" + document.getElementById("ins_sdpsessattr").value+"\"";
+      else
+        content = content +',' +"INS_SDPSESSATTR:\"" + document.getElementById("ins_sdpsessattr").value+"\"";
+      if(content == "")
+        content = content + "INS_SDPAUDIOCODEC:\"" + document.getElementById("ins_sdpaudiocodec").value+"\"";
+      else
+        content = content +',' +"INS_SDPAUDIOCODEC:\"" + document.getElementById("ins_sdpaudiocodec").value+"\"";   
+     /* if(content == "")
+        content = content + "dialogid:\"" + document.getElementById("dialogid").value+"\"";
+      else
+        content = content +',' +"dialogid:\"" + document.getElementById("dialogid").value+"\"";*/
+      if(content == "")
+        content = content + "mediadirection:\"" + document.getElementById("mediadirection").value+"\"";
+      else
+        content = content +',' +"mediadirection:\"" + document.getElementById("mediadirection").value+"\"";  
+      
+      if(content == "")
+        content = content + "EXP_HDR:\"" + document.getElementById("exp_hdr").value+"\"";
+      else
+        content = content +',' +"EXP_HDR:\"" + document.getElementById("exp_hdr").value+"\"";
+      if(content == "")
+        content = content + "EXP_HDRVALUE:\"" + document.getElementById("exp_hdrval").value+"\"";
+      else
+        content = content +',' +"EXP_HDRVALUE:\"" + document.getElementById("exp_hdrval").value+"\"";
+      if(content == "")
+        content = content + "EXP_REQURI:\"" + document.getElementById("exp_requri").value+"\"";
+      else
+        content = content +',' +"EXP_REQURI:\"" + document.getElementById("exp_requri").value+"\"";        
+      if(content == "" && document.getElementById("isOOD").checked)
+        content = content + "isOOD:" + "TRUE";
+      else if (document.getElementById("isOOD").checked)
+        content = content +',' +"isOOD:" + "TRUE";
+      if (content == "" && document.getElementById("hasreplaces").checked)
+        content = content + "hasreplaces:" + "TRUE";
+      else if (document.getElementById("hasreplaces").checked)
+        content = content +',' +"hasreplaces:" + "TRUE";
+      if(content == "" && document.getElementById("hassdpchanged").checked)
+        content = content + "HASSDPCHANGED:" + "TRUE";
+      else if (document.getElementById("hassdpchanged").checked)
+        content = content +',' +"HASSDPCHANGED:" + "TRUE";
+      if(content == "" && document.getElementById("callpickup").checked)
+        content = content + "callpickup:" + "TRUE";
+      else if (document.getElementById("callpickup").checked)
+        content = content +',' +"callpickup:" + "TRUE";    
+      if(content == "")
+        content = content + "featuretags:\"" + document.getElementById("feature_tag").value;
+      else
+        content = content +',' +"featuretags:\"" + document.getElementById("feature_tag").value+"\"";
+      if(content == "")
+        content = content + "sleeptimer:\"" + document.getElementById("sleeptimer").value;
+      else
+        content = content +',' +"sleeptimer:\"" + document.getElementById("sleeptimer").value+"\"";        
+      if(content == "")
+        content = content + "allow:\"" + document.getElementById("allow_header").value+"\"";
+      else
+        content = content +',' +"allow:\"" + document.getElementById("allow_header").value+"\"";
+      if(content == "")
+        content = content + "clienttimeout:\"" + document.getElementById("client_timeout").value+"\"";
+      else
+        content = content +',' +"clienttimeout:\"" + document.getElementById("client_timeout").value+"\"";
+      if(content == "")
+        content = content + "timelapsebeforebye:\"" + document.getElementById("time_lapse_before_bye").value+"\"";
+      else
+        content = content +',' +"timelapsebeforebye:\"" + document.getElementById("time_lapse_before_bye").value+"\"";
+      if(content == "" && document.getElementById("truerel").checked)
+        content = content + "isreliable:" + "true";
+      else if (document.getElementById("truerel").checked)
+        content = content +',' +"isreliable:" + "true";  
+      if(content == "" && document.getElementById("issrtp").checked)
+        content = content + "isSrtp:" + "TRUE";
+      else if (document.getElementById("issrtp").checked)
+        content = content +',' +"isSrtp:" + "TRUE";    
+      if(content == "" && document.getElementById("transudp").checked)
+        content = content + "transport:" + "udp";
+      else if (document.getElementById("transudp").checked)
+        content = content +',' +"transport:" + "udp";      
+      if(content == "" && document.getElementById("transtcp").checked)
+        content = content + "transport:" + "tcp";
+      else if (document.getElementById("transtcp").checked)
+        content = content +',' +"transport:" + "tcp";
+      if(content == "" && document.getElementById("transtls").checked)
+        content = content + "transport:" + "tls";
+      else if (document.getElementById("transtls").checked)
+        content = content +',' +"transport:" + "tls";
+
+
+
+      //alert(content);
+        var ed = $('#demo').find(".editor");
+        var edx = ace.edit(ed.get(0));
+        var existing_content = edx.getValue();
+        content =  '[' + content +']';
+       // var new_content = existing_content.replace("?", content)
+       edx.session.insert(edx.getCursorPosition(), content)        //11-02-2022 change
+//     edx.setValue(new_content);                                  //commented on 11-02-2022
+        var lines = edx.session.doc.getAllLines()
+        //This part hides the content enclosed in [] from text editor 
+        var Range=require("ace/range").Range;
+        for (var i = 0, l = lines.length; i < l; i++) {
+          if (lines[i].indexOf('[') != -1){
+            index_sq_start = lines[i].indexOf('[')
+            if (lines[i].indexOf(']') != -1){
+              index_sq_end = lines[i].indexOf(']')+1
+              edx.session.addFold("yogesh", new Range(i,index_sq_start,i,index_sq_end))
+             
+            }
+          }
+          
+        }
+          //14-02-2022 starts
+          var i = edx.getCursorPosition().row;
+          lineBylineAttrMap[i] = {}
+          lineBylineAttrMap[i]["ins_hdr"]=document.getElementById("ins_hdr").value;
+              lineBylineAttrMap[i]["rem_hdr"]=document.getElementById("rem_hdr").value;
+              lineBylineAttrMap[i]["rep_requri"]=document.getElementById("rep_requri").value;
+              lineBylineAttrMap[i]["ins_requriparam"]=document.getElementById("ins_requriparam").value;
+              lineBylineAttrMap[i]["rem_requriparam"]=document.getElementById("rem_requriparam").value;
+              lineBylineAttrMap[i]["ins_sdpmline"]=document.getElementById("ins_sdpmline").value;
+              lineBylineAttrMap[i]["ins_sdpsessattr"]=document.getElementById("ins_sdpsessattr").value;
+              lineBylineAttrMap[i]["ins_sdpaudiocodec"]=document.getElementById("ins_sdpaudiocodec").value;
+              lineBylineAttrMap[i]["mediadirection"]=document.getElementById("mediadirection").value;
+              lineBylineAttrMap[i]["exp_hdr"]=document.getElementById("exp_hdr").value;
+              lineBylineAttrMap[i]["exp_hdrval"]=document.getElementById("exp_hdrval").value;
+              lineBylineAttrMap[i]["exp_requri"]=document.getElementById("exp_requri").value;
+              //lineBylineAttrMap[i]["isOOD"]=document.getElementById("exp_hdr").checked;
+              lineBylineAttrMap[i]["hassdpchanged"]=document.getElementById("hassdpchanged").checked;
+              lineBylineAttrMap[i]["feature_tag"]=document.getElementById("feature_tag").value;
+              lineBylineAttrMap[i]["allow_header"]=document.getElementById("allow_header").value;
+              lineBylineAttrMap[i]["client_timeout"]=document.getElementById("client_timeout").value;
+              lineBylineAttrMap[i]["time_lapse_before_bye"]=document.getElementById("time_lapse_before_bye").value;
+              lineBylineAttrMap[i]["truerel"]=document.getElementById("truerel").checked;
+              lineBylineAttrMap[i]["transudp"]=document.getElementById("transudp").checked;
+              lineBylineAttrMap[i]["transtcp"]=document.getElementById("transtcp").checked;
+              lineBylineAttrMap[i]["transtls"]=document.getElementById("transtls").checked;
+              lineBylineAttrMap[i]["sleeptimer"]=document.getElementById("sleeptimer").value;
+              lineBylineAttrMap[i]["isOOD"]=document.getElementById("isOOD").checked;
+              lineBylineAttrMap[i]["callpickup"]=document.getElementById("callpickup").checked;
+              lineBylineAttrMap[i]["transfer_target"]=document.getElementById("transfer_target").value;
+              lineBylineAttrMap[i]["hasreplaces"]=document.getElementById("hasreplaces").checked;
+              lineBylineAttrMap[i]["sleeptimer"]=document.getElementById("sleeptimer").value;
+
+              //14-02-2022 ends
+       // alert(new_content);
+      
+       $('#Q_A').trigger("reset");
+
+  }
+   
+      //end This script is for doing this after clicking button on modal
+
+    </script>
+    <script>
+      function FliterHelp() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+
+    <script>
+      //this is function to parse the entire text which is inside the text-box
+      PROXYDEVICES = ["SBC", "SM", "CM", "IPO", ""]
+      KEYLIST = ["method", "direction", "callid", "hassdp", "targetnodenames", "nextnode", "INS_HDR", "REP_HDR", "REM_HDR", "REP_REQURI", "REM_REQURIPARAM", "APP_REQURIPARAM", "INS_SDPLINE"]
+      var CALLFLOW;
+      var EXT_CNT = 0;
+      var INT_CNT = 0;
+      var RW_CNT = 0;
+      function find_count_clients(callflow_str) {
+        client_list = []
+        lines = callflow_str.split('\n');
+        //console.log(lines)
+        for (jindex = 0; jindex < lines.length; jindex++) {
+          parts = lines[jindex].split(":");
+          parts = parts[0].split("->");
+          // console.log(parts);
+          for (lindex = 0; lindex < parts.length; lindex++) {
+            if (PROXYDEVICES.includes(parts[lindex]) == false) {
+              client_list.push(parts[lindex])
+            }
+          }
+
+        }
+        console.log(client_list);
+        /* for line in lines:
+                 parts = re.split(":", line)
+                 parts = re.split("->", parts[0])
+                 #print(parts)
+                 for i in parts:
+                         if i not in PROXYDEVICES + client_list:
+                                 client_list.append(i)
+    
+         return (client_list, len(client_list))*/
+        return client_list;
+      }
+
+
+      function FindsLineRequiredforNode(NodeName, callflow_str) {
+
+        CALLFLOW = callflow_str
+        related_lines = []
+        lines = callflow_str.split('\n');
+        for (l = 0; l < lines.length; l++) {
+          parts = lines[l].split(":")
+          flow = parts[0].split("->")
+          if (flow.includes(NodeName) && !PROXYDEVICES.includes(NodeName)) {
+            related_lines.push(lines[l])
+          }
+        }
+
+
+        return related_lines
+        //pass
+      }
+
+      function GetInfo(data, line, NodeName) {
+        console.log("THE LINE currently being proccessed for getting data is :" + line);
+        parts = line.split(":")
+        met = parts[1].split("\[")
+        data["method"] = met[0]
+        parts = line.split("->")
+        if (parts[0] == NodeName)
+          data["direction"] = "send";
+        else
+          data["direction"] = "recv";
+
+
+        start = line.indexOf("[") + 1;
+        end = line.indexOf("]");
+        if ((start != -1) && (end != -1)) {
+          line = line.substring(start, end)
+          parts = line.split(",")
+          x = {}
+          y = {}
+          z = {}
+          INSHDR = []
+          REPHDR = []
+          REMHDR = []
+          INSSDPLINE = []
+          for (i = 0; i < parts.length; i++) {
+            if (parts[i].includes("INS_HDR")) {
+              if (parts[i][3] == "_") {
+                k = parts[i]
+                s = k.indexOf('\"') + 1;
+                e = k.lastIndexOf('\"');
+                if ((s != -1) && (e != -1)) {
+                  console.log(k)
+                  INSHDR.push(k.substring(s, e))
+                }
+              }
+            }
+            if (parts[i].includes("REP_HDR")) {
+              if (parts[i][3] == "_") {
+                k = parts[i]
+                s = k.indexOf('\"') + 1;
+                e = k.lastIndexOf('\"');
+                if ((s != -1) && (e != -1)) {
+                  console.log(k)
+                  REPHDR.push(k.substring(s, e))
+                }
+              }
+            }
+            if (parts[i].includes("REM_HDR")) {
+              if (parts[i][3] == "_") {
+                k = parts[i]
+                s = k.indexOf('\"') + 1;
+                e = k.lastIndexOf('\"');
+                if ((s != -1) && (e != -1)) {
+                  console.log(k)
+                  REMHDR.push(k.substring(s, e))
+                }
+              }
+            }
+            if (parts[i].includes("INS_SDPLINE")) {
+              if (parts[i][3] == "_") {
+                k = parts[i]
+                s = k.indexOf('\"') + 1;
+                e = k.lastIndexOf('\"');
+                if ((s != -1) && (e != -1)) {
+                  console.log(k)
+                  INSSDPLINE.push(k.substring(s, e))
+                }
+              }
+            }
+            console.log("DSDS")
+            console.log(x)
+            data["INSHDR"] = INSHDR
+            data["REPHDR"] = REPHDR
+            data["REMHDR"] = REMHDR
+            data["INSSDPLINE"] = INSSDPLINE
+          }
+
+        }
+
+
+
+        return data;
+      }
+
+      function MakeDictionaryWithInfo(NodeName, related_lines) {
+        seq_count = 0
+        Dict = {}
+        console.log("MakeDictionaryWithInfo")
+        console.log("LINES RELATED TO " + NodeName + " ARE " + related_lines)
+        if (NodeName.slice(-3) === "ext" || NodeName.slice(-3) === "EXT") {
+          Dict["type"] = "EXT"
+          EXT_CNT = EXT_CNT + 1
+          Dict["extn"] = "700" + EXT_CNT
+          Dict["domain"] = "at&t.com"
+        }
+        if (NodeName.slice(-3) === "int" || NodeName.slice(-3) === "INT") {
+          Dict["type"] = "INT"
+          INT_CNT = INT_CNT + 1
+          Dict["extn"] = "800" + INT_CNT
+          Dict["domain"] = "avaya.com"
+        }
+        if (NodeName.slice(-2) === "rw" || NodeName.slice(-2) === "RW") {
+          Dict["type"] = "RW"
+          RW_CNT = RW_CNT + 1
+          Dict["extn"] = "900" + RW_CNT
+          Dict["domain"] = "avaya.com"
+        }
+        for (index = 0; index < related_lines.length; index++) {
+          data_for_node = {}
+          data_for_node = GetInfo(data_for_node, related_lines[index], NodeName)
+          Dict[seq_count] = data_for_node
+          seq_count = seq_count + 1
+        }
+        console.log(Dict);
+        return Dict;
+      }
+
+      function processNode(NodeName, callflow_str) {
+        lines_related_to_node = FindsLineRequiredforNode(NodeName, callflow_str)
+        console.log("Lines related to " + NodeName + "are" + lines_related_to_node)
+        if (lines_related_to_node.length > 0) {
+          nodeDict = MakeDictionaryWithInfo(NodeName, lines_related_to_node)
+          return nodeDict
+        }
+        else {
+          console.log(("Node " + NodeName + " has no related flow in diagram"));
+        }
+      }
+      function processCallflow(callflow_str) {
+
+        //callflow_str = "A_ext->SBC:INVITE[INS_HDR='TO:abc.xyz.com', INS_HDR='FROM:abc.avaya.cmom']\nSBC->B_rw:INVITE\nB_rw->SBC: 200\nSBC->A_ext: 200\nA_ext->SBC:INVITE\nSBC->C_ext:INVITE\nC_ext->SBC: 200\nSBC->A_ext: 200\n"
+        console.log("HELLO");
+        clients = find_count_clients(callflow_str)
+        console.log(clients);
+        NodeInfo = {}
+        //onsole.log("NUMBER OF NODES is "+ str(number_of_clients))
+        console.log(clients)
+        for (j = 0; j < clients.length; j++) {
+          NodeInfo[clients[j]] = processNode(clients[j], callflow_str)
+        }
+        console.log("TOTAL CALLFLOW IS AS FOLLOW")
+        console.log(JSON.stringify(NodeInfo, undefined, 4));
+      }
+    </script>
+
+<script type="text/javascript">
+  //this script is for checking tracepage
+  function setIframeSource() {
+      var theSelect = document.getElementById('proxylocation');
+      var theIframe = document.getElementById('proxyIframe');
+      var theUrl;
+
+      theUrl = theSelect.options[theSelect.selectedIndex].value;
+      theIframe.src = theUrl;
+  }
+</script>
+<script>
+    ///this script is used for changing sleep value
+    function incrementSleep(e) {
+      document.getElementById("sleeptimer").value = +document.getElementById("sleeptimer").value +  1;
+
+    }
+
+    function decrementSleep(e) {
+      document.getElementById("sleeptimer").value = +document.getElementById("sleeptimer").value - 1;
+    }
+
+    $('.input-group').on('click', '.button-plus', function(e) {
+      incrementSleep(e);
+    });
+
+    $('.input-group').on('click', '.button-minus', function(e) {
+      decrementSleep(e);
+    });
+
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<!-- BS JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+
+<script type=text/javascript>
+        
+        $(function() {
+          $('a#test').on('click', function(e) {
+            var masterfilename_selected = document.getElementById("proxydeviceconfig").value;
+            alert(masterfilename_selected)
+            
+            e.preventDefault()
+            $.getJSON('/background_process_test',
+                { que_token: masterfilename_selected },
+                function(data) {
+                
+                alert(data.var);
+                $('#configsbcModal').modal("show");
+                  $('#summernote').summernote({
+                          code: data.var,
+                          placeholder: 'Edit this json...',
+                          tabsize: 2,
+                          height: 100
+                        });
+ 
+                  $("#summernote").summernote('code', data.var);
+                  $("#summernote").summernote('codeview.activate');
+                   $('#savejsonbtn').on("click", function(){
+                     alert("asd"+$("#summernote").summernote("code"));
+                     $.getJSON('\savejsontotemp',
+                        {newconfig_temp: $("#summernote").summernote("code"), masterfilename: masterfilename_selected},
+                        function(data) {
+                            alert(data);
+                        });
+                   });
+                });
+            
+            return false;
+          });
+        });
+</script>
+
+<script>
+  //this script is useful in controller config file
+  controller_config_default_text = `EXT1_VM_IP = "10.133.43.54"
+  EXT2_VM_IP = "10.133.43.55"
+  INT1_VM_IP = "10.133.43.56"
+  INT2_VM_IP = "10.133.43.57"
+  RW1_VM_IP = "10.133.43.51"
+  RW2_VM_IP = "10.133.43.52"
+  RW3_VM_IP = "10.133.43.53"
+  INT1_PRIVATE_IP = "192.168.59.101"
+  INT2_PRIVATE_IP = "192.168.59.102"
+  CONTROLLERIP = "10.133.99.221"
+  CALLFLOWJSONPATH = "/root/useragent/json/"
+  CLIENTPATH = "/root/useragent/json/linoxiderepo/useragent.py"
+  CONFIGJSONPATHMASTER = "/root/JSON/SBC/"
+  CONFIGJSONPATHTMP = "/root/JSON/TMP/"
+  SBCRWINTERFACE = "10.133.60.65"
+  SBCEXTINTERFACE = "10.133.60.69"
+  SBCINTINTERFACE = ""
+  SMIP = "192.168.1.80"
+  IPOIP = "x.y.z.w"
+  RW_USER_1 = "4441000024"
+  RW_USER_2 = "4441000025"
+  RW_USER_3 = "4441000026"
+  INT_USER_1 = "4441000027"
+  INT_USER_2 = "4441000028"
+  INT_USER_3 = "4441000029"
+  TRK_USER_1 = "8001"
+  TRK_USER_2 = "8002"
+  TRK_USER_3 = "8003"
+  GLOBALDOMAIN = "sbcsv.com"
+  DISPLAY_RW_1 = "RW1"
+  DISPLAY_RW_2 = "RW2"
+  DISPLAY_RW_3 = "RW3"
+  DISPLAY_EXT_1 = "EXT1"
+  DISPLAY_EXT_2 = "EXT2"
+  DISPLAY_INT_1 = "INT1"
+  DISPLAY_INT_2 = "INT2"`;
+
+  /*$('#new_save').on("click", function(){
+   
+    $.getJSON('\\new_xyz',
+                        {config: document.getElementById("new_save").value},
+                        function(data) {
+                            alert(data.response);
+                        });
+  });*/
+  $('#new_xyz').on("click", function(){
+    $('#config_controller').modal("show");
+    
+  });
+  $('#config_controller').on('shown.bs.modal', function (e) {
+    document.getElementById("configtext").value = controller_config_default_text;
+  });
+</script>
+
+<script>
+  //this script is useful in storing testcase flow at DB
+  $('#cnfsavebtn').on("click", function(){
+        var ed = $('#demo').find(".editor");
+        var edx = ace.edit(ed.get(0));
+        var existing_content = edx.getValue();
+    $.getJSON('\savetestcasetoDB',
+                        {test_description: document.getElementById("testdescription").value, call_str: existing_content},
+                        function(data) {
+                            alert(data.response);
+                        });
+  });
+</script>
+
+<script>
+  $(document).keyup(function(e) {     
+    if(e.keyCode== 27) {
+        if(!$('#infoModal').hasClass('in')){
+              if (confirm('Are you sure you want to use msg attrs at current row')) {
+                console.log('Esc key is press');
+                var ed = $('#demo').find(".editor");
+                var edx = ace.edit(ed.get(0));
+                var currline = edx.getSelectionRange().start.row;
+                var row = edx.selection.lead.row
+                var Range = require("ace/range").Range
+
+                var wholelinetxt = edx.session.getLine(currline);
+                if(wholelinetxt.includes("UPDATE") || wholelinetxt.includes("INVITE")){
+                  $("#dialogattrbtn").attr('enabled', 'enabled');
+                }
+                else{
+                  $("#dialogattrbtn").attr('disabled', 'disabled');
+                }
+              if(edx.session.getLine(row).indexOf("[") != -1)      
+                edx.session.replace(new Range(row, edx.session.getLine(row).indexOf("["), row, Number.MAX_VALUE), "")
+              
+              //14-02-2022 start
+              if(lineBylineAttrMap[row]){
+                console.log("ROW "+row +"is present in lineBylineAttrMap")
+              document.getElementById("ins_hdr").value = lineBylineAttrMap[row]["ins_hdr"];
+              document.getElementById("rem_hdr").value = lineBylineAttrMap[row]["rem_hdr"];
+              document.getElementById("rep_requri").value = lineBylineAttrMap[row]["rep_requri"];
+              document.getElementById("ins_requriparam").value = lineBylineAttrMap[row]["ins_requriparam"];
+              document.getElementById("rem_requriparam").value = lineBylineAttrMap[row]["rem_requriparam"];
+              document.getElementById("rep_requri").value = lineBylineAttrMap[row]["rep_requri"];
+              document.getElementById("ins_sdpmline").value = lineBylineAttrMap[row]["ins_sdpmline"];
+              document.getElementById("ins_sdpsessattr").value = lineBylineAttrMap[row]["ins_sdpsessattr"];
+              document.getElementById("ins_sdpaudiocodec").value = lineBylineAttrMap[row]["ins_sdpaudiocodec"];
+              document.getElementById("mediadirection").value = lineBylineAttrMap[row]["mediadirection"];
+              document.getElementById("exp_hdr").value = lineBylineAttrMap[row]["exp_hdr"];
+              document.getElementById("exp_hdrval").value = lineBylineAttrMap[row]["exp_hdrval"];
+              document.getElementById("exp_requri").value = lineBylineAttrMap[row]["exp_requri"];
+              //document.getElementById("exp_hdr").checked = lineBylineAttrMap[row]["isOOD"];
+              document.getElementById("hassdpchanged").checked = lineBylineAttrMap[row]["hassdpchanged"];
+              document.getElementById("feature_tag").value = lineBylineAttrMap[row]["feature_tag"];
+              document.getElementById("allow_header").value = lineBylineAttrMap[row]["allow_header"];
+              document.getElementById("client_timeout").value = lineBylineAttrMap[row]["client_timeout"];
+              document.getElementById("time_lapse_before_bye").value = lineBylineAttrMap[row]["time_lapse_before_bye"];
+              document.getElementById("truerel").checked = lineBylineAttrMap[row]["truerel"];
+              document.getElementById("transudp").checked = lineBylineAttrMap[row]["transudp"];
+              document.getElementById("transtcp").checked = lineBylineAttrMap[row]["transtcp"];
+              document.getElementById("transtls").checked = lineBylineAttrMap[row]["transtls"];
+              document.getElementById("isOOD").checked = lineBylineAttrMap[row]["isOOD"];
+              document.getElementById("callpickup").checked = lineBylineAttrMap[row]["callpickup"];
+              document.getElementById("hasreplaces").checked = lineBylineAttrMap[row]["hasreplaces"];
+              document.getElementById("sleeptimer").value = lineBylineAttrMap[row]["sleeptimer"];
+             
+              
+              }
+              //14-02-2022 ends
+              $("#infoModal").modal();
+            }
+            else{
+              console.log("Did Not confirmed")
+            }
+        }
+      
+    } 
+});
+</script>
+
+</body>
+
+</html>

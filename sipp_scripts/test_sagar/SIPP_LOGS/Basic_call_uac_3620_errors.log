@@ -1,0 +1,495 @@
+sipp: The following events occured:
+2018-10-31	15:17:48:176	1540979268.176552: Aborting call on unexpected message for Call-Id '1-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme32750565
+CSeq: 1 INVITE
+Call-ID: 1-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-1-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:48:178	1540979268.178474: Dead call 1-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme32750565
+CSeq: 1 ACK
+Call-ID: 1-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-1-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:48:371	1540979268.371874: Aborting call on unexpected message for Call-Id '2-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm12b94b62f
+CSeq: 1 INVITE
+Call-ID: 2-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-2-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:48:373	1540979268.373636: Dead call 2-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=2
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm12b94b62f
+CSeq: 1 ACK
+Call-ID: 2-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-2-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:48:572	1540979268.572456: Aborting call on unexpected message for Call-Id '3-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm0d4561595
+CSeq: 1 INVITE
+Call-ID: 3-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-3-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:48:574	1540979268.574504: Dead call 3-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=3
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm0d4561595
+CSeq: 1 ACK
+Call-ID: 3-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-3-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:48:771	1540979268.771300: Aborting call on unexpected message for Call-Id '4-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmc64ee54ff
+CSeq: 1 INVITE
+Call-ID: 4-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-4-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:48:772	1540979268.772636: Dead call 4-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=4
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmc64ee54ff
+CSeq: 1 ACK
+Call-ID: 4-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-4-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:48:972	1540979268.972581: Aborting call on unexpected message for Call-Id '5-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm2a4e5b38d
+CSeq: 1 INVITE
+Call-ID: 5-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-5-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:48:974	1540979268.974008: Dead call 5-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=5
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm2a4e5b38d
+CSeq: 1 ACK
+Call-ID: 5-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-5-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:49:172	1540979269.172574: Aborting call on unexpected message for Call-Id '6-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb7687a297
+CSeq: 1 INVITE
+Call-ID: 6-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-6-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:49:174	1540979269.174160: Dead call 6-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=6
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb7687a297
+CSeq: 1 ACK
+Call-ID: 6-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-6-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:49:372	1540979269.372847: Aborting call on unexpected message for Call-Id '7-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm1af2136dc
+CSeq: 1 INVITE
+Call-ID: 7-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-7-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:49:374	1540979269.374861: Dead call 7-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=7
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm1af2136dc
+CSeq: 1 ACK
+Call-ID: 7-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-7-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:49:573	1540979269.573099: Aborting call on unexpected message for Call-Id '8-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmce73292b5
+CSeq: 1 INVITE
+Call-ID: 8-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-8-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:49:574	1540979269.574654: Dead call 8-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=8
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmce73292b5
+CSeq: 1 ACK
+Call-ID: 8-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-8-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:49:767	1540979269.767683: Aborting call on unexpected message for Call-Id '9-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmd7b07a00b
+CSeq: 1 INVITE
+Call-ID: 9-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-9-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:49:768	1540979269.768894: Dead call 9-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=9
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmd7b07a00b
+CSeq: 1 ACK
+Call-ID: 9-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-9-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:49:968	1540979269.968662: Aborting call on unexpected message for Call-Id '10-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm250623640
+CSeq: 1 INVITE
+Call-ID: 10-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-10-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:49:969	1540979269.969597: Dead call 10-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=10
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm250623640
+CSeq: 1 ACK
+Call-ID: 10-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-10-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:50:171	1540979270.171507: Aborting call on unexpected message for Call-Id '11-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmef2e6b11e
+CSeq: 1 INVITE
+Call-ID: 11-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-11-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:50:172	1540979270.172973: Dead call 11-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=11
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmef2e6b11e
+CSeq: 1 ACK
+Call-ID: 11-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-11-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:50:373	1540979270.373124: Aborting call on unexpected message for Call-Id '12-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNma2a0d243f
+CSeq: 1 INVITE
+Call-ID: 12-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-12-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:50:374	1540979270.374647: Dead call 12-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=12
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNma2a0d243f
+CSeq: 1 ACK
+Call-ID: 12-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-12-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:50:571	1540979270.571485: Aborting call on unexpected message for Call-Id '13-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmdc2cdd5d0
+CSeq: 1 INVITE
+Call-ID: 13-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-13-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:50:572	1540979270.572721: Dead call 13-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=13
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmdc2cdd5d0
+CSeq: 1 ACK
+Call-ID: 13-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-13-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:50:771	1540979270.771127: Aborting call on unexpected message for Call-Id '14-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme41c4372d
+CSeq: 1 INVITE
+Call-ID: 14-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-14-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:50:772	1540979270.772489: Dead call 14-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=14
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNme41c4372d
+CSeq: 1 ACK
+Call-ID: 14-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-14-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:50:972	1540979270.972403: Aborting call on unexpected message for Call-Id '15-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm146fb762f
+CSeq: 1 INVITE
+Call-ID: 15-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-15-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:50:973	1540979270.973658: Dead call 15-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=15
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm146fb762f
+CSeq: 1 ACK
+Call-ID: 15-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-15-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:51:171	1540979271.171788: Aborting call on unexpected message for Call-Id '16-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm968f946db
+CSeq: 1 INVITE
+Call-ID: 16-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-16-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:51:173	1540979271.173169: Dead call 16-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=16
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm968f946db
+CSeq: 1 ACK
+Call-ID: 16-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-16-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:51:372	1540979271.372092: Aborting call on unexpected message for Call-Id '17-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm53652072c
+CSeq: 1 INVITE
+Call-ID: 17-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-17-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:51:373	1540979271.373248: Dead call 17-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=17
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm53652072c
+CSeq: 1 ACK
+Call-ID: 17-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-17-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:51:571	1540979271.571991: Aborting call on unexpected message for Call-Id '18-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm5e0c97199
+CSeq: 1 INVITE
+Call-ID: 18-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-18-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:51:573	1540979271.573397: Dead call 18-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=18
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm5e0c97199
+CSeq: 1 ACK
+Call-ID: 18-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-18-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:51:772	1540979271.772555: Aborting call on unexpected message for Call-Id '19-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm96018c7d7
+CSeq: 1 INVITE
+Call-ID: 19-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-19-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:51:774	1540979271.774168: Dead call 19-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=19
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm96018c7d7
+CSeq: 1 ACK
+Call-ID: 19-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-19-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:51:971	1540979271.971989: Aborting call on unexpected message for Call-Id '20-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm50c7a8789
+CSeq: 1 INVITE
+Call-ID: 20-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-20-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:51:973	1540979271.973640: Dead call 20-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=20
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm50c7a8789
+CSeq: 1 ACK
+Call-ID: 20-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-20-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:52:171	1540979272.171270: Aborting call on unexpected message for Call-Id '21-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=21
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm645df3308
+CSeq: 1 INVITE
+Call-ID: 21-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-21-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:52:172	1540979272.172543: Dead call 21-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=21
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm645df3308
+CSeq: 1 ACK
+Call-ID: 21-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-21-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:52:371	1540979272.371124: Aborting call on unexpected message for Call-Id '22-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=22
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmd57395282
+CSeq: 1 INVITE
+Call-ID: 22-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-22-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:52:372	1540979272.372407: Dead call 22-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=22
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmd57395282
+CSeq: 1 ACK
+Call-ID: 22-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-22-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:52:570	1540979272.570544: Aborting call on unexpected message for Call-Id '23-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=23
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm399a10640
+CSeq: 1 INVITE
+Call-ID: 23-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-23-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:52:571	1540979272.571831: Dead call 23-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=23
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm399a10640
+CSeq: 1 ACK
+Call-ID: 23-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-23-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:52:771	1540979272.771098: Aborting call on unexpected message for Call-Id '24-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=24
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmfa6dd059e
+CSeq: 1 INVITE
+Call-ID: 24-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-24-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:52:772	1540979272.772571: Dead call 24-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=24
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmfa6dd059e
+CSeq: 1 ACK
+Call-ID: 24-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-24-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:52:969	1540979272.969819: Aborting call on unexpected message for Call-Id '25-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=25
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb5186166f
+CSeq: 1 INVITE
+Call-ID: 25-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-25-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:52:971	1540979272.971180: Dead call 25-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=25
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNmb5186166f
+CSeq: 1 ACK
+Call-ID: 25-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-25-0
+Content-Length: 0
+
+'.
+2018-10-31	15:17:53:171	1540979273.171416: Aborting call on unexpected message for Call-Id '26-3620@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 488 Not Acceptable Here
+From: sip:40005@10.133.39.159;tag=26
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm43a3a8559
+CSeq: 1 INVITE
+Call-ID: 26-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-26-0
+Warning: 399 10.133.48.149 "Secure media rejected by security policy or sdp protocol error"
+Content-Length: 0
+
+'.
+2018-10-31	15:17:53:172	1540979273.172655: Dead call 26-3620@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=26
+To: sip:40006@10.133.48.149:5060;tag=zXcVbNm43a3a8559
+CSeq: 1 ACK
+Call-ID: 26-3620@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-3620-26-0
+Content-Length: 0
+
+'.

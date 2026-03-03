@@ -1,0 +1,80 @@
+----------------------------------------------- 2019-01-16 00:13:43:956.578
+TCP message sent (719 bytes):
+
+INVITE sip:40006@rwtrunk.com:5075;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5094;branch=z9hG4bK-3704-1-0
+From: sip:40006@rwtrunk.com;tag=1
+To: sip:40006@10.133.48.83:5060
+Call-ID: 1-3704@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:40006@10.133.39.159:5094;transport=TCP>
+Supported: replaces, timer
+Max-Forwards: 70
+Min-SE: 90
+Session-Expires: 1800;refresher=uac
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   202
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2019-01-16 00:13:43:965.743
+TCP message received [217] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40006@rwtrunk.com;tag=1
+To: sip:40006@10.133.48.83:5060
+CSeq: 1 INVITE
+Call-ID: 1-3704@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5094;branch=z9hG4bK-3704-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-01-16 00:13:43:966.484
+TCP message received [253] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40006@rwtrunk.com;tag=1
+To: sip:40006@10.133.48.83:5060;tag=zXcVbNmeac88f425
+CSeq: 1 INVITE
+Call-ID: 1-3704@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5094;branch=z9hG4bK-3704-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40006@rwtrunk.com;tag=1
+To: sip:40006@10.133.48.83:5060;tag=zXcVbNmeac88f425
+CSeq: 1 INVITE
+Call-ID: 1-3704@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5094;branch=z9hG4bK-3704-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-01-16 00:13:43:967.155
+TCP message sent (328 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5094;branch=z9hG4bK-3704-1-0
+From: sip:40006@rwtrunk.com;tag=1
+To: sip:40006@10.133.48.83:5060;tag=zXcVbNmeac88f425
+Call-ID: 1-3704@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5094;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

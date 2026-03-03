@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2019-10-03	17:12:55:671	1570102975.671310: Aborting call on unexpected message for Call-Id '1-31345@10.133.39.159': while expecting '501' (index 4), received 'SIP/2.0 408 Request Timeout
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:40007@10.133.48.87:5060;tag=2
+CSeq: 1 OPTIONS
+Call-ID: 1-31345@10.133.39.159
+Record-Route: <sip:10.133.48.140:5060;ipcs-line=44;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:5088;branch=z9hG4bK-31345-1-3
+Content-Length: 0
+
+'.

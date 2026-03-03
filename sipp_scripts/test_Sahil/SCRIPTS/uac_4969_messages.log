@@ -1,0 +1,73 @@
+----------------------------------------------- 2020-06-09 15:21:41:748.303
+TLS message sent (555 bytes):
+
+INVITE sip:40006@10.133.48.83:5061 transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5096;branch=z9hG4bK-4969-1-0
+From: sip:40006@10.133.39.159:5096;tag=4969SIPpTag001
+To: sip:40006@10.133.48.83:5061
+Call-ID: 1-4969@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40006@10.133.39.159:5096;transport=TLS
+P-Asserted-Identity: "Invite" <sip:Invite@avaya.com>
+Content-Type: application/sdp
+Content-Length:   138
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 18
+a=fmtp:18 annexb=yes
+
+----------------------------------------------- 2020-06-09 15:21:42:67.098
+TLS message received [237] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40006@10.133.39.159:5096;tag=4969SIPpTag001
+To: sip:40006@10.133.48.83:5061
+CSeq: 1 INVITE
+Call-ID: 1-4969@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5096;branch=z9hG4bK-4969-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-09 15:22:14:94.851
+TLS message received [271] bytes :
+
+SIP/2.0 503 Service Unavailable
+From: sip:40006@10.133.39.159:5096;tag=4969SIPpTag001
+To: sip:40006@10.133.48.83:5061;tag=zXcVbNm12794e637
+CSeq: 1 INVITE
+Call-ID: 1-4969@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5096;branch=z9hG4bK-4969-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 503 Service Unavailable
+From: sip:40006@10.133.39.159:5096;tag=4969SIPpTag001
+To: sip:40006@10.133.48.83:5061;tag=zXcVbNm12794e637
+CSeq: 1 INVITE
+Call-ID: 1-4969@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5096;branch=z9hG4bK-4969-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2020-06-09 15:22:14:95.808
+TLS message sent (348 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5096;branch=z9hG4bK-4969-1-0
+From: sip:40006@10.133.39.159:5096;tag=4969SIPpTag001
+To: sip:40006@10.133.48.83:5061;tag=zXcVbNm12794e637
+Call-ID: 1-4969@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5096;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

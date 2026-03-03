@@ -1,0 +1,19 @@
+sipp: The following events occured:
+2018-07-20	18:21:04:843	1532091064.843017: Aborting call on unexpected message for Call-Id '1-9547@192.168.6.5': while pausing (index 14), received 'INVITE sip:81002001@192.168.6.5:5063;transport=TCP SIP/2.0
+From: sip:81001001@192.168.6.223:5060;tag=1
+To: sip:81002001@192.168.6.5:5063;tag=1
+CSeq: 4 INVITE
+Call-ID: 1-9547@192.168.6.5
+Contact: <sip:192.168.6.223:5060;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=1;lr;transport=tcp>
+Allow: INVITE,INFO,BYE,CANCEL,ACK,PRACK,NOTIFY,OPTIONS,REFER
+Supported: replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.6.223:5060;branch=z9hG4bK-s1632-001721081879-1--s1632-;originator
+Subject: Performance Test
+Session-Expires: 90;refresher=uas
+Min-SE: 90
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+'.

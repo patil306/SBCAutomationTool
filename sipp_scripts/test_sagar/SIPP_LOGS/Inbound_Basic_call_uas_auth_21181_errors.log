@@ -1,0 +1,75 @@
+sipp: The following events occured:
+2017-11-02	17:24:03:827	1509623643.827291: Aborting call on unexpected message for Call-Id '44d60e533633e40b2202c731b586f97c': while expecting 'INVITE' (index 3), received 'ACK sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15300;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 1 ACK
+Call-ID: 44d60e533633e40b2202c731b586f97c
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001483969454-1--s1632-
+Content-Length: 0
+
+'.
+2017-11-02	17:24:03:834	1509623643.834455: Dead call 44d60e533633e40b2202c731b586f97c (aborted at index 3), received 'INVITE sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15300;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 2 INVITE
+Call-ID: 44d60e533633e40b2202c731b586f97c
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=9;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000948067853-1--s1632-
+Subject: Performance Test
+Authorization: Digest username="Vola9*9Bj",realm="sbcdev4.com",nonce="BroadWorksXj97drws0T3t0t2hBW",response="fc812054a4d778a74101b8e42ced8cf8",uri="sip:4079@sbcdev4.com",algorithm=MD5,qop=auth,nc=00000001,cnonce="1bd824a8eca9cfc50f6c"
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 198
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.73.4
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+'.
+2017-11-02	17:28:55:494	1509623935.494465: Aborting call on unexpected message for Call-Id 'e35fbb7df999504f21f00430505c9508': while expecting 'INVITE' (index 3), received 'ACK sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15300;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 1 ACK
+Call-ID: e35fbb7df999504f21f00430505c9508
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000112719147-1--s1632-
+Content-Length: 0
+
+'.
+2017-11-02	17:28:55:499	1509623935.499976: Dead call e35fbb7df999504f21f00430505c9508 (aborted at index 3), received 'INVITE sip:4079@10.133.39.159:5060 SIP/2.0
+From: sip:4078@10.133.73.4:15300;tag=1
+To: sip:4079@10.133.39.159:5060
+CSeq: 2 INVITE
+Call-ID: e35fbb7df999504f21f00430505c9508
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=10;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001830096937-1--s1632-
+Subject: Performance Test
+Authorization: Digest username="Vola9*9Bj",realm="sbcdev4.com",nonce="BroadWorksXj97drws0T3t0t2hBW",response="fc812054a4d778a74101b8e42ced8cf8",uri="sip:4079@sbcdev4.com",algorithm=MD5,qop=auth,nc=00000001,cnonce="1bd824a8eca9cfc50f6c"
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 198
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.73.4
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+'.

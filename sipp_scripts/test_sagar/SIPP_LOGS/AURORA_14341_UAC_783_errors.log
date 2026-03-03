@@ -1,0 +1,29 @@
+sipp: The following events occured:
+2018-08-30	22:04:41:890	1535646881.890769: Aborting call on unexpected message for Call-Id '1-783@10.133.39.159': while pausing (index 10), received 'INVITE sip:40005@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:40006@10.133.48.235:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+CSeq: 2 INVITE
+Call-ID: 1-783@10.133.39.159
+Contact: <sip:40006@10.133.48.235:5060;transport=tcp>
+Record-Route: <sip:10.133.48.235:5060;ipcs-line=4;lr;transport=tcp>
+Supported: replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.235:5060;branch=z9hG4bK-s1632-000127193364-1--s1632-
+Session-Expires: 1201;refresher=uas
+Min-SE: 1201
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 197
+
+v=0
+o=- 1503558667 3 IN IP4 10.133.48.235
+s=-
+c=IN IP4 10.133.48.235
+b=AS:64
+t=0 0
+m=audio 35004 RTP/AVP 18 96
+a=sendrecv
+a=fmtp:18 annexb=no
+a=rtpmap:96 telephone-event/8000
+a=ptime:20
+'.

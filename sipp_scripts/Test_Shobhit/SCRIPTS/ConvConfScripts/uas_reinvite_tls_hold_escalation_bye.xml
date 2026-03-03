@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario>
+
+
+<!-- SIPPTA_VERSION2 --> 
+<nop> 
+<action>
+<assign assign_to="localCseqNum" value="1" />
+<assignstr assign_to="localCseq" value="[$localCseqNum]" />
+<ereg regexp="[0-9]+" search_in="var" variable="localCseq" assign_to="localCseq" check_it="true" />
+
+<assign assign_to="localRseqNum" value="0" />
+<assignstr assign_to="localRseq" value="[$localRseqNum]" />
+<ereg regexp="[0-9]+" search_in="var" variable="localRseq" assign_to="localRseq" check_it="true" />
+
+<assign assign_to="sdpVersionNum" value="1" />
+<assignstr assign_to="sdpVer" value="[$sdpVersionNum]" />
+<ereg regexp="[0-9]+" search_in="var" variable="sdpVer" assign_to="sdpVer" check_it="true" />
+
+<assignstr assign_to="sdpVer" value="1" />
+<ereg regexp="[0-9]+" search_in="var" variable="sdpVer" assign_to="sdpVer" check_it="true" />
+
+<assignstr assign_to="domain" value="[field2]" />
+<assignstr assign_to="uriType" value="[field3]" />
+<assignstr assign_to="localTransport" value="[field4]" />
+<assignstr assign_to="localNo" value="[field0]" />
+<assignstr assign_to="remoteNo" value="[field1]" />
+<assignstr assign_to="localContact" value="<[$uriType]:[$localNo]@[local_ip]:[local_port];transport=[$localTransport]>" />
+<assignstr assign_to="remoteContact" value="[$uriType]:[$remoteNo]@[$domain];transport=[$localTransport]" />
+<assignstr assign_to="remoteContactOffHook" value="[$uriType]:[$localNo]@[$domain];avaya-cm-fnu=off-hook;transport=[$localTransport]" />
+<assignstr assign_to="remoteContactFNU" value="[$uriType]:[$localNo]@[$domain]" />
+<assignstr assign_to="localHdr" value="[$uriType]:[$localNo]@[$domain];tag=1" />
+<assignstr assign_to="remoteHdrOffHook" value="<[$uriType]:[$localNo]@[$domain];avaya-cm-fnu=off-hook>" />
+<assignstr assign_to="remoteHdrFNU" value="<[$uriType]:[$localNo]@[$domain]>" />
+<assignstr assign_to="remoteHdrInitInv" value="[$uriType]:[$remoteNo]@[$domain]" />
+<assignstr assign_to="callid2nd" value="A///[call_id]" />
+</action>
+</nop>
+
+<Reference variables="localRseq" />
+<Reference variables="localCseq" />
+<Reference variables="remoteNo" />
+<Reference variables="domain" />
+<Reference variables="sdpVer" />
+<Reference variables="uriType" />
+<Reference variables="localTransport" />
+<Reference variables="localNo" />
+<Reference variables="localContact" />
+<Reference variables="remoteContact" />
+<Reference variables="localHdr" />
+<Reference variables="remoteHdrInitInv" />
+<Reference variables="remoteHdrOffHook" />
+<Reference variables="callid2nd" />
+<Reference variables="remoteContactFNU" />
+<Reference variables="remoteHdrFNU" />
+<Reference variables="remoteContactOffHook" />
+
+<!--CMDEV SIPP DISPLAY NAME:INV SDP-->
+<recv request="INVITE"  optional="false" rrs="true">
+<action>
+<ereg regexp="<([^>]*)" search_in="hdr" start_line="true" header="Contact:" assign_to="tempRemoteContact"/>
+<ereg regexp="[^<].*" search_in="var" variable="tempRemoteContact" assign_to="remoteContact" check_it="true" />
+
+<ereg regexp=".*" search_in="hdr" start_line="true" header="CSeq:" check_it="true" assign_to="invCseq"/>
+<ereg regexp="[0-9]+" search_in="var" variable="invCseq" assign_to="invCseq" check_it="true" />
+
+<ereg regexp=".*" search_in="hdr" start_line="true" header="From:" assign_to="remoteHdr" check_it="true" />
+<ereg regexp=".*" search_in="hdr" start_line="true" header="To:" assign_to="invTo" check_it="true" />
+</action>
+
+</recv>
+
+
+<nop>
+<action>
+<assignstr assign_to="invVia" value="[last_Via:]" />
+</action>
+</nop>
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:100-->
+
+
+<send retrans="500">
+<![CDATA[
+
+
+SIP/2.0 100 Trying
+From:[$remoteHdr]
+To:[$invTo]
+[last_Call-ID:]
+Cseq:[$invCseq] INVITE
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+[$invVia]
+User-Agent: AvayaTest
+Content-Length: 0
+
+
+]]>
+</send>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:180-->
+
+
+<send retrans="500">
+<![CDATA[
+
+
+SIP/2.0 180 Ringing
+From:[$remoteHdr]
+To:[$invTo];tag=1
+[last_Call-ID:]
+Cseq:[$invCseq] INVITE
+[$invVia]
+Require: 100rel
+Content-Type: application/sdp
+[last_Record-route:]
+User-Agent: Auto SIPP
+Supported: 100rel
+Contact: [$localContact]
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Length: [len]
+
+
+]]>
+</send>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:PAUSE 200-->
+
+<pause milliseconds="200" crlf="true" />
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:200 INVITE SDP-->
+
+
+<send retrans="500">
+<![CDATA[
+
+
+SIP/2.0 200 OK
+From:[$remoteHdr]
+To:[$invTo];tag=1
+[last_Call-ID:]
+Cseq:[$invCseq] INVITE
+[$invVia]
+Supported: 100rel
+[last_Record-route:]
+Content-Type: application/sdp
+User-Agent: Auto SIPP
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Contact: [$localContact]
+Content-Length: [len]
+
+v=0
+o=user1 53655765 [$sdpVer] IN IP[local_ip_type] [local_ip]
+s=-
+c=IN IP[media_ip_type] [media_ip]
+t=0 0
+m=audio [media_port+0] RTP/SAVP 0 8 101
+c=IN IP[media_ip_type] [media_ip]
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=avaya-media-connectivity-check-supported
+a=acfg:1 t=1 a=1
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+
+]]>
+</send>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:ACK-->
+<recv request="ACK"  optional="false">
+<action>
+<ereg regexp=".*" search_in="hdr" start_line="true" header="To:" check_it="true" assign_to="localHdr"/>
+<ereg regexp=".*" search_in="hdr" start_line="true" header="From:" check_it="true" assign_to="remoteHdr"/>
+</action>
+
+</recv>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:REINV SDP-->
+<recv request="INVITE"  optional="false">
+<action>
+<ereg regexp="<([^>]*)" search_in="hdr" start_line="true" header="Contact:" assign_to="tempRemoteContact"/>
+<ereg regexp="[^<].*" search_in="var" variable="tempRemoteContact" assign_to="remoteContact" check_it="true" />
+
+<ereg regexp=".*" search_in="hdr" start_line="true" header="CSeq:" check_it="true" assign_to="remoteCseq"/>
+<ereg regexp="[0-9]+" search_in="var" variable="remoteCseq" assign_to="remoteCseq" check_it="true" />
+</action>
+
+</recv>
+
+
+<nop>
+<action>
+<assignstr assign_to="remoteVia" value="[last_Via:]" />
+</action>
+</nop>
+<Reference variables="remoteVia" />
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:100-->
+
+
+<send retrans="500">
+<![CDATA[
+
+
+SIP/2.0 100 Trying
+[$remoteVia]
+From:[$remoteHdr]
+To:[$localHdr]
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:[$remoteCseq] INVITE
+[last_Call-ID:]
+Contact: [$localContact]
+Content-Type: application/sdp
+Content-Length: [len]
+
+
+]]>
+</send>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:200 REINV SDP-->
+
+<nop>
+<action>
+<add assign_to="sdpVersionNum" value="2" />
+<assignstr assign_to="sdpVer" value="[$sdpVersionNum]" />
+<ereg regexp="[0-9]+" search_in="var" variable="sdpVer" assign_to="sdpVer" check_it="true" />
+</action>
+</nop>
+
+
+<send retrans="500">
+<![CDATA[
+
+
+SIP/2.0 200 OK
+[last_Call-ID:]
+[$remoteVia]
+From:[$remoteHdr]
+To:[$localHdr]
+CSeq:[$remoteCseq] INVITE
+Contact: [$localContact]
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length: [len]
+
+v=0
+o=user1 53655765 [$sdpVer] IN IP[local_ip_type] [local_ip]
+s=-
+c=IN IP[media_ip_type] [media_ip]
+t=0 0
+m=audio [media_port+0] RTP/SAVP 0 8 101
+c=IN IP[media_ip_type] [media_ip]
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=acfg:1 t=1 a=1
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+
+]]>
+</send>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:ACK-->
+<recv request="ACK"  optional="false">
+</recv>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:REINV SDP-->
+
+<nop>
+<action>
+<add assign_to="localCseqNum" value="1" />
+<assignstr assign_to="localCseq" value="[$localCseqNum]" />
+<ereg regexp="[0-9]+" search_in="var" variable="localCseq" assign_to="localCseq" check_it="true" />
+
+<add assign_to="sdpVersionNum" value="1" />
+<assignstr assign_to="sdpVer" value="[$sdpVersionNum]" />
+<ereg regexp="[0-9]+" search_in="var" variable="sdpVer" assign_to="sdpVer" check_it="true" />
+
+</action>
+</nop>
+
+
+<send retrans="500">
+<![CDATA[
+
+
+INVITE [$remoteContact] SIP/2.0
+Via: SIP/2.0/[$localTransport] [local_ip]:[local_port];branch=[branch]
+From: [$localHdr]
+To:[$remoteHdr]
+Call-ID: [call_id]
+CSeq: [$localCseq] INVITE
+Contact: [$localContact]
+Supported: 100rel
+  [routes]
+Max-Forwards: 70
+Subject: Performance Test
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Type: application/sdp
+Content-Length: [len]
+
+v=0
+o=user1 53655765 [$sdpVer] IN IP[local_ip_type] [local_ip]
+s=-
+t=0 0
+m=audio [media_port+0] RTP/AVP 0 8 101
+c=IN IP[media_ip_type] [media_ip]
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendonly
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_CM_128_HMAC_SHA1_80 inline:dV1MERK54BScK3r05xdy5eCgIEgeLbalnjzESYAw UNENCRYPTED_SRTCP
+a=pcfg:1 t=1 a=1
+
+
+]]>
+</send>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:100-->
+<recv response="100"  optional="true">
+</recv>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:200 REINV SDP-->
+<recv response="200"  optional="false">
+<action>
+<ereg regexp=".*" search_in="hdr" start_line="true" header="CSeq:" check_it="true" assign_to="localCseq"/>
+<ereg regexp="[0-9]+" search_in="var" variable="localCseq" assign_to="localCseq" check_it="true" />
+</action>
+
+</recv>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:ACK-->
+
+
+<send retrans="500">
+<![CDATA[
+
+
+ACK [$remoteContact] SIP/2.0
+Via: SIP/2.0/[$localTransport] [local_ip]:[local_port];branch=[branch]
+From: [$localHdr]
+To:[$remoteHdr]
+Call-ID: [call_id]
+CSeq: 2 ACK
+Contact: [$localContact]
+  [routes]
+Max-Forwards: 70
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length: [len]
+
+
+]]>
+</send>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:REINV SDP-->
+<recv request="INVITE"  optional="false">
+<action>
+<ereg regexp="<([^>]*)" search_in="hdr" start_line="true" header="Contact:" assign_to="tempRemoteContact"/>
+<ereg regexp="[^<].*" search_in="var" variable="tempRemoteContact" assign_to="remoteContact" check_it="true" />
+
+<ereg regexp=".*" search_in="hdr" start_line="true" header="CSeq:" check_it="true" assign_to="remoteCseq"/>
+<ereg regexp="[0-9]+" search_in="var" variable="remoteCseq" assign_to="remoteCseq" check_it="true" />
+</action>
+
+</recv>
+
+
+<nop>
+<action>
+<assignstr assign_to="remoteVia" value="[last_Via:]" />
+</action>
+</nop>
+<Reference variables="remoteVia" />
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:100-->
+
+
+<send retrans="500">
+<![CDATA[
+
+
+SIP/2.0 100 Trying
+[$remoteVia]
+From:[$remoteHdr]
+To:[$localHdr]
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Cseq:[$remoteCseq] INVITE
+[last_Call-ID:]
+Contact: [$localContact]
+Content-Type: application/sdp
+Content-Length: [len]
+
+
+]]>
+</send>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:200 REINV SDP-->
+
+<nop>
+<action>
+<add assign_to="sdpVersionNum" value="2" />
+<assignstr assign_to="sdpVer" value="[$sdpVersionNum]" />
+<ereg regexp="[0-9]+" search_in="var" variable="sdpVer" assign_to="sdpVer" check_it="true" />
+</action>
+</nop>
+
+
+<send retrans="500">
+<![CDATA[
+
+
+SIP/2.0 200 OK
+[last_Call-ID:]
+[$remoteVia]
+From:[$remoteHdr]
+To:[$localHdr]
+CSeq:[$remoteCseq] INVITE
+Contact: [$localContact]
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length: [len]
+
+v=0
+o=user1 53655765 [$sdpVer] IN IP[local_ip_type] [local_ip]
+s=-
+c=IN IP[media_ip_type] 10.133.39.159
+t=0 0
+m=audio [media_port+0] RTP/SAVP 0 8 101
+c=IN IP[media_ip_type] 10.133.39.159
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=acfg:1 t=1 a=1
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+m=video [media_port+2] RTP/SAVP 98
+c=IN IP[media_ip_type] [media_ip]
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=acfg:1 t=1 a=1
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+
+
+]]>
+</send>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:ACK-->
+<recv request="ACK"  optional="false">
+</recv>
+
+<!--
+m=video [media_port+2] RTP/SAVP 98
+c=IN IP[media_ip_type] [media_ip]
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=acfg:1 t=1 a=1
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:k8FuMlkO/O4uy4OnGiN5VIC3lxcc5MlmjuAcY0a7 UNENCRYPTED_SRTCP
+<recv request="BYE"  optional="false">
+<action>
+<ereg regexp=".*" search_in="hdr" start_line="true" header="CSeq:" check_it="true" assign_to="remoteCseq"/>
+<ereg regexp="[0-9]+" search_in="var" variable="remoteCseq" assign_to="remoteCseq" check_it="true" />
+</action>
+
+</recv>  -->
+
+
+<recv request="BYE"  optional="false">
+<action>
+<ereg regexp=".*" search_in="hdr" start_line="true" header="CSeq:" check_it="true" assign_to="remoteCseq"/>
+<ereg regexp="[0-9]+" search_in="var" variable="remoteCseq" assign_to="remoteCseq" check_it="true" />
+</action>
+
+</recv> 
+ 
+<nop>
+<action>
+<assignstr assign_to="remoteVia" value="[last_Via:]" />
+</action>
+</nop>
+<Reference variables="remoteVia" />
+
+<nop>
+<action>
+<add assign_to="sdpVersionNum" value="1" />
+<assignstr assign_to="sdpVer" value="[$sdpVersionNum]" />
+<ereg regexp="[0-9]+" search_in="var" variable="sdpVer" assign_to="sdpVer" check_it="true" />
+</action>
+</nop>
+
+
+<send retrans="500">
+<![CDATA[
+
+
+SIP/2.0 200 OK
+[last_Call-ID:]
+[$remoteVia]
+From:[$remoteHdr]
+To:[$localHdr]
+CSeq:[$remoteCseq] BYE
+Contact: [$localContact]
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length: [len]
+
+
+]]>
+</send> 
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+
+
+</scenario>

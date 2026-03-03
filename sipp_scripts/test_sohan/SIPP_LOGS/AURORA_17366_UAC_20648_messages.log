@@ -1,0 +1,18 @@
+----------------------------------------------- 2019-06-26 17:19:16:46.963
+UDP message sent (531 bytes):
+
+SUBSCRIBE sip:4079@10.133.48.238:5060 SIP/2.0 SIP/2.0
+Accept: application/watcherinfo+xml
+Call-ID: hf8wqJHKaavKqzlf8C2-oMzULVainWuD
+CSeq: 1 SUBSCRIBE
+Expires: 1800
+From: sip:4078@10.133.39.159:5060;tag=1
+To: sip:4079@10.133.48.238:5060;tag=2
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-20648-1-0
+Content-Length: 0
+Contact: sip:4078@10.133.39.159:5060;ob;subid_ipcs=3834789073;transport=udp>;expires=300
+Max-Forwards: 70
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Event: presence
+
+

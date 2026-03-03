@@ -1,0 +1,14 @@
+sipp: The following events occured:
+2017-11-24	15:13:17:260	1511516597.260016: Aborting call on unexpected message for Call-Id '1-15879@192.168.6.5': while expecting '183' (index 2), received 'SIP/2.0 180 Ringing
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-15879@192.168.6.5
+Contact: <sip:192.168.6.223:5060;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=3;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-15879-1-0
+Content-Length: 0
+
+'.

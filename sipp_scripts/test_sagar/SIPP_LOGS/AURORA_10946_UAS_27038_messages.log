@@ -1,0 +1,72 @@
+----------------------------------------------- 2018-09-05 17:49:44:871.836
+UDP message received [903] bytes :
+
+INVITE sip:40006@192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:40005@192.168.6.240:5060;tag=1
+To: sip:40006@192.168.6.5:5075
+CSeq: 1 INVITE
+Call-ID: 1-27036@10.133.39.159
+Contact: sip:40005@192.168.6.240:5060;transport=udp;transport=UDP;+av.sip.iptolerance
+Record-Route: <sip:192.168.6.240:5060;ipcs-line=31;lr;transport=udp>
+Allow: REFER
+Supported: 100rel, histinfo, join, replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.240:5060;branch=z9hG4bK-s1632-000094557807-1--s1632-
+Subject: Performance Test
+Session-Expires: 1200;refresher=uac
+Min-SE: 1200
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 219
+
+v=0
+o=- 1485338250 1 IN IP4 192.168.6.240
+s=-
+c=IN IP4 192.168.6.240
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 35054 RTP/AVP 0 8 127
+a=sendrecv
+a=rtpmap:127 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-09-05 17:49:44:872.633
+UDP message sent (291 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.6.240:5060;branch=z9hG4bK-s1632-000094557807-1--s1632-
+From: sip:40005@192.168.6.240:5060;tag=1
+To: sip:40006@192.168.6.5:5075
+Call-ID: 1-27036@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5075;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-05 17:49:44:872.917
+UDP message sent (542 bytes):
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/UDP 192.168.6.240:5060;branch=z9hG4bK-s1632-000094557807-1--s1632-
+From: sip:40005@192.168.6.240:5060;tag=1
+To: sip:40006@192.168.6.5:5075;tag=1
+Call-ID: 1-27036@10.133.39.159
+CSeq: 1 INVITE
+Require: 100rel
+RSeq: 1
+Contact: <sip:192.168.6.5:5075;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   174
+
+v=0
+o=- 1 2 IN IP4 172.16.10.110
+s=-
+c=IN IP4 172.16.10.110
+t=0 0
+m=audio 11322 RTP/AVP 0 127
+a=rtpmap:0 PCMU/8000
+a=rtpmap:127 telephone-event/8000
+a=fmtp:127 0-15
+

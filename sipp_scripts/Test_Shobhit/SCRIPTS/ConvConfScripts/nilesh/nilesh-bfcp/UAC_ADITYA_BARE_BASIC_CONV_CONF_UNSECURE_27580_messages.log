@@ -1,0 +1,276 @@
+----------------------------------------------- 2017-06-21 17:51:10:858.456
+TLS message sent (1146 bytes):
+
+INVITE sips:4002@sbcdev4.com;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-27580-1-2
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+Call-ID: 1-27580@10.133.39.159
+CSeq: 2 INVITE
+Contact: <sips:4001@10.133.39.159:5061;transport=TLS>
+Supported: 100rel
+Max-Forwards: 70
+Subject: Performance Test
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Type: application/sdp
+Content-Length:   660
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+c=IN IP4 10.133.39.159
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=avaya-media-connectivity-check-supported
+m=video 5030 RTP/AVP 98
+c=IN IP4 10.133.39.159
+b=TIAS:512000
+a=sendrecv
+a=rtcp-mux
+a=avaya-media-connectivity-check-supported
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+m=application 3000 TCP/UDP/BFCP *
+c=IN IP4 10.133.39.159
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+
+----------------------------------------------- 2017-06-21 17:51:10:868.431
+TLS message received [213] bytes :
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com
+CSeq: 2 INVITE
+Call-ID: 1-27580@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-27580-1-2
+Content-Length: 0
+
+
+----------------------------------------------- 2017-06-21 17:51:10:874.840
+TLS message received [532] bytes :
+
+SIP/2.0 180 Ringing
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Cseq:2 INVITE
+Call-ID: 1-27580@10.133.39.159
+Contact: <sips:4001@10.133.36.239:5061;transport=tls>
+Record-Route: <sips:10.133.36.239:5061;ipcs-line=34;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+User-Agent: Auto SIPP
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-27580-1-2
+Require: 100rel
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2017-06-21 17:51:11:81.662
+TLS message received [1087] bytes :
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Cseq:2 INVITE
+Call-ID: 1-27580@10.133.39.159
+Contact: <sips:4001@10.133.36.239:5061;transport=tls>
+Record-Route: <sips:10.133.36.239:5061;ipcs-line=34;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+User-Agent: Auto SIPP
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-27580-1-2
+Content-Type: application/sdp
+Content-Length: 575
+
+v=0
+o=user1 53655765 1 IN IP4 10.133.36.239
+s=-
+c=IN IP4 10.133.36.239
+t=0 0
+m=audio 35006 RTP/AVP 0 8 101
+c=IN IP4 10.133.36.239
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=avaya-media-connectivity-check-required
+m=video 35008 RTP/AVP 109 34
+c=IN IP4 10.133.36.239
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+m=application 35010 UDP/BFCP *
+c=IN IP4 10.133.36.239
+a=floorctrl:c-only
+
+----------------------------------------------- 2017-06-21 17:51:11:81.844
+TLS message sent (538 bytes):
+
+ACK sips:4001@10.133.36.239:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-27580-1-6
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 1-27580@10.133.39.159
+CSeq: 1 ACK
+Contact: <sips:4001@10.133.39.159:5061;transport=TLS>
+Route: <sips:10.133.36.239:5061;ipcs-line=34;lr;transport=tls>
+Max-Forwards: 70
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2017-06-21 17:51:26:84.246
+TLS message sent (1476 bytes):
+
+INVITE sips:4001@10.133.36.239:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-27580-1-9
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 1-27580@10.133.39.159
+CSeq: 3 INVITE
+Contact: <sips:4001@10.133.39.159:5061;transport=TLS>
+Supported: 100rel
+Route: <sips:10.133.36.239:5061;ipcs-line=34;lr;transport=tls>
+Max-Forwards: 70
+Subject: Performance Test
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Type: application/sdp
+Content-Length:   913
+
+v=0
+o=user1 53655765 2 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 9 TLS/RTP/AVP 0 8 101
+c=IN IP4 10.133.39.159
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp-mux
+a=setup:active
+a=connection:new
+a=fingerprint:SHA-1 C1:00:55:77:DC:B7:2B:D1:AB:8E:4C:E1:9F:04:C0:34:83:78:7C:E2
+m=video 9 TLS/RTP/AVP 98
+b=TIAS:512000
+c=IN IP4 10.133.39.159
+a=sendrecv
+a=rtcp-mux
+a=setup:active
+a=connection:new
+a=fingerprint:SHA-1 08:6D:F9:EF:6B:83:46:95:91:28:C1:AE:C3:40:29:69:B0:A6:B7:48
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+m=application 9 TLS/BFCP *
+c=IN IP4 10.133.39.159
+a=floorctrl:c-s
+a=confid:1
+a=userid:1
+a=floorid:2 mstrm:12
+a=setup:actpass
+a=connection:new
+a=fingerprint:SHA-1 E6:6C:16:52:59:3F:9B:D2:7A:A4:4C:4A:FE:DE:12:75:30:2E:9E:A0
+
+----------------------------------------------- 2017-06-21 17:51:26:89.731
+TLS message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq: 3 INVITE
+Call-ID: 1-27580@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-27580-1-9
+Content-Length: 0
+
+
+----------------------------------------------- 2017-06-21 17:51:26:93.801
+TLS message received [1391] bytes :
+
+SIP/2.0 200 OK
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+CSeq:3 INVITE
+Call-ID: 1-27580@10.133.39.159
+Contact: <sips:4001@10.133.36.239:5061;transport=tls>
+Record-Route: <sips:10.133.36.239:5061;ipcs-line=34;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-27580-1-9
+Content-Type: application/sdp
+Content-Length: 902
+
+v=0
+o=user1 53655765 2 IN IP4 10.133.36.239
+s=-
+c=IN IP4 10.133.36.239
+t=0 0
+m=audio 443 TLS/RTP/AVP 0 8 101
+c=IN IP4 10.133.36.239
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=ptime:20
+a=fingerprint:SHA-1 E6:6C:16:52:59:3F:9B:D2:7A:A4:4C:4A:FE:DE:12:75:30:2E:9E:A0
+a=connection:new
+a=setup:passive
+a=rtcp-mux
+m=video 443 TLS/RTP/AVP 98
+c=IN IP4 10.133.36.239
+b=TIAS:512000
+a=sendrecv
+a=rtpmap:98 H264/90000
+a=fmtp:98 profile-level-id=42401f;packetization-mode=0
+a=rtcp-fb:* ccm fir
+a=rtcp-fb:* nack pli
+a=ptime:20
+a=fingerprint:SHA-1 E6:6C:16:52:59:3F:9B:D2:7A:A4:4C:4A:FE:DE:12:75:30:2E:9E:A0
+a=connection:new
+a=setup:passive
+a=rtcp-mux
+m=application 443 TLS/BFCP *
+c=IN IP4 10.133.36.239
+a=floorctrl:c-only
+a=fingerprint:SHA-1 E6:6C:16:52:59:3F:9B:D2:7A:A4:4C:4A:FE:DE:12:75:30:2E:9E:A0
+a=setup:passive
+a=connection:new
+
+----------------------------------------------- 2017-06-21 17:51:26:93.952
+TLS message sent (539 bytes):
+
+ACK sips:4001@10.133.36.239:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5061;branch=z9hG4bK-27580-1-12
+From: sips:4001@sbcdev4.com;tag=1
+To: sips:4002@sbcdev4.com;tag=1
+Call-ID: 1-27580@10.133.39.159
+CSeq: 3 ACK
+Contact: <sips:4001@10.133.39.159:5061;transport=TLS>
+Route: <sips:10.133.36.239:5061;ipcs-line=34;lr;transport=tls>
+Max-Forwards: 70
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Subject: Performance Test
+Content-Type: application/sdp
+Content-Length:     0
+
+

@@ -1,0 +1,14 @@
+sipp: The following events occured:
+2018-10-17	14:45:39:740	1539767739.740974: Automatic response mode for an unexpected INFO, UPDATE or NOTIFY for call: e64c8051a1edff3bf8702b719eab2b7c.
+2018-10-17	14:46:12:141	1539767772.141208: Aborting call on unexpected message for Call-Id 'e64c8051a1edff3bf8702b719eab2b7c': while expecting '200' (index 13), received 'SIP/2.0 503 Service Unavailable
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.242:5060;tag=1
+CSeq: 7 INVITE
+Call-ID: e64c8051a1edff3bf8702b719eab2b7c
+Record-Route: <sip:192.168.6.242:5060;ipcs-line=1;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-1254-1-11
+Content-Length: 0
+
+'.

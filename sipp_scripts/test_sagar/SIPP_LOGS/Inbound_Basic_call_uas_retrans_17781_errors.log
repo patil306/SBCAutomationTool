@@ -1,0 +1,23 @@
+sipp: The following events occured:
+2017-05-16	15:12:55:448	1494927775.448045: Aborting call on unexpected message for Call-Id '6355a2092367152a5bb36819c198a47a': while expecting 'ACK' (index 7), received 'SIP/2.0 481 Call/Transaction Does Not Exist
+From: sip:4071@sbcdev4.com;tag=1
+To:sip:4070@10.133.73.52:5060;tag=x0hxzrih-CC-148
+CSeq: 1 INVITE
+Call-ID: 6355a2092367152a5bb36819c198a47a
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-17781-1-6
+Content-Length: 0
+
+'.
+2017-05-16	15:13:03:447	1494927783.447539: Dead call 6355a2092367152a5bb36819c198a47a (aborted at index 7), received 'BYE sip:10.133.39.159:5060;transport=tcp SIP/2.0
+From: sip:4070@sbcdev4.com;tag=1
+To: sip:4071@192.168.6.221:5060;tag=1
+CSeq: 2 BYE
+Call-ID: 6355a2092367152a5bb36819c198a47a
+Contact: sip:4070@10.133.73.52:5060;transport=tcp;transport=TCP
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.52:5060;branch=z9hG4bK-s1632-000418125985-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-17783-1-6
+Subject: Performance Test
+Content-Length: 0
+
+'.

@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2018-09-11	20:44:00:619	1536678840.619215: Aborting call on unexpected message for Call-Id '1-24695@10.133.39.159': while expecting '183' (index 2), received 'SIP/2.0 500 Server Internal Error
+From: sips:4078@10.133.39.159:5073;tag=1
+To: sips:4079@10.133.48.152:5061;tag=zXcVbNma155a81f5
+CSeq: 1 INVITE
+Call-ID: 1-24695@10.133.39.159
+Record-Route: <sips:10.133.48.152:5061;ipcs-line=2;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5073;branch=z9hG4bK-24695-1-0
+Content-Length: 0
+
+'.

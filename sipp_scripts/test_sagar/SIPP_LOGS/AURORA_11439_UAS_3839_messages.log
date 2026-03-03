@@ -1,0 +1,169 @@
+----------------------------------------------- 2018-07-19 15:06:16:618.466
+TLS message received [979] bytes :
+
+INVITE sips:40006@trk.com SIP/2.0
+From: sips:40005@trk.com;tag=1
+To: sips:40006@trk.com
+CSeq: 1 INVITE
+Call-ID: 841ce7501ca11e545a8d5e07a2ba7d36
+Contact: sips:40005@192.168.6.240:5061;transport=tls;transport=TCP;+av.sip.iptolerance
+Record-Route: <sip:192.168.6.240:5061;ipcs-line=4;lr;transport=tls>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.6.240:5061;branch=z9hG4bK-s1632-000085449601-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 420
+
+v=0
+o=- 1490768965 1 IN IP4 trk.com
+s=-
+c=IN IP4 192.168.6.240
+b=TIAS:64000
+t=0 0
+m=audio 35006 RTP/AVP 0
+a=sendrecv
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+a=tcap:1 RTP/SAVP
+a=acap:1 crypto:1 AES_256_CM_HMAC_SHA1_32 inline:zZDoO7ckfbCwSff3APoWnAUb+8TFsE5oGyUJlKhlihnpc5GmmRWgYblfbEu/RA==
+a=acap:2 crypto:2 AES_CM_128_HMAC_SHA1_80 inline:yUnEz4Xsq/VBc0dxyj6Xxb998edCEn6Xcqrk7K+u
+a=pcfg:1 t=1 a=1
+a=pcfg:2 t=1 a=2
+
+----------------------------------------------- 2018-07-19 15:06:16:619.106
+TLS message sent (284 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TLS 192.168.6.240:5061;branch=z9hG4bK-s1632-000085449601-1--s1632-
+From: sips:40005@trk.com;tag=1
+To: sips:40006@trk.com
+Call-ID: 841ce7501ca11e545a8d5e07a2ba7d36
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5076;transport=TLS>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-19 15:06:16:619.325
+TLS message sent (322 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/TLS 192.168.6.240:5061;branch=z9hG4bK-s1632-000085449601-1--s1632-
+From: sips:40005@trk.com;tag=1
+To: sips:40006@trk.com;tag=1
+Call-ID: 841ce7501ca11e545a8d5e07a2ba7d36
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5076;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-19 15:06:16:619.525
+TLS message sent (616 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TLS 192.168.6.240:5061;branch=z9hG4bK-s1632-000085449601-1--s1632-
+From: sips:40005@trk.com;tag=1
+To: sips:40006@trk.com;tag=1
+Call-ID: 841ce7501ca11e545a8d5e07a2ba7d36
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5076;transport=TLS>
+Content-Type: application/sdp
+Content-Length:   295
+
+v=0
+o=- 1490826587 2 IN IP4 192.168.1.85
+s=-
+c=IN IP4 192.168.8.59
+b=TIAS:64000
+t=0 0
+m=audio 35028 RTP/SAVP 0 120
+a=sendrecv
+a=rtpmap:120 telephone-event/8000
+a=acfg:1 t=1 a=1
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:dRUAwS/uBSKS2u5N2FQd35rRiMtPgZMge3N/k24Xa5odDmHycWHwkbB2zGPgnA==
+
+----------------------------------------------- 2018-07-19 15:06:16:644.916
+TLS message received [479] bytes :
+
+ACK sips:40006@192.168.6.5:5076;transport=tls SIP/2.0
+From: sips:40005@trk.com;tag=1
+To: sips:40006@trk.com;tag=1
+CSeq: 1 ACK
+Call-ID: 841ce7501ca11e545a8d5e07a2ba7d36
+Contact: sips:40005@192.168.6.240:5061;transport=tls;transport=TCP
+Record-Route: <sips:192.168.6.240:5061;ipcs-line=4;lr;transport=tls>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TLS 192.168.6.240:5061;branch=z9hG4bK-s1632-000064657033-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-19 15:06:19:647.046
+TLS message sent (756 bytes):
+
+INVITE sip:40005@192.168.6.240:5060 SIP/2.0
+Via: SIP/2.0/TLS 192.168.6.5:5076;branch=z9hG4bK-3839-1-6
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+Call-ID: 841ce7501ca11e545a8d5e07a2ba7d36
+CSeq: 2 INVITE
+Contact: sip:40006@192.168.6.5:5076;transport=TLS
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   294
+
+v=0
+o=- 1490826587 2 IN IP4 192.168.1.85
+s=-
+c=IN IP4 192.168.8.59
+b=TIAS:64000
+t=0 0
+m=audio 35028 RTP/SAVP 0 120
+c=IN IP4 192.168.8.59
+a=sendrecv
+a=rtpmap:120 telephone-event/8000
+a=acfg:1 t=1 a=1
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:KlMd+RqpCeYwA1uSnto5NqYmaGQ/IXfC1RE0fevJ
+
+----------------------------------------------- 2018-07-19 15:06:19:654.548
+TLS message received [236] bytes :
+
+SIP/2.0 100 Trying
+From: sips:40006@192.168.6.5;tag=1
+To: sips:40005@192.168.6.240:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 841ce7501ca11e545a8d5e07a2ba7d36
+Via: SIP/2.0/TLS 192.168.6.5:5076;branch=z9hG4bK-3839-1-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-19 15:06:19:655.293
+TLS message received [245] bytes :
+
+SIP/2.0 491 Request Pending
+From: sips:40006@192.168.6.5;tag=1
+To: sips:40005@192.168.6.240:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 841ce7501ca11e545a8d5e07a2ba7d36
+Via: SIP/2.0/TLS 192.168.6.5:5076;branch=z9hG4bK-3839-1-6
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 491 Request Pending
+From: sips:40006@192.168.6.5;tag=1
+To: sips:40005@192.168.6.240:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 841ce7501ca11e545a8d5e07a2ba7d36
+Via: SIP/2.0/TLS 192.168.6.5:5076;branch=z9hG4bK-3839-1-6
+Content-Length: 0
+
+

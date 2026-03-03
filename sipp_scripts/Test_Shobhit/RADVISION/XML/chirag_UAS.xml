@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+  <!DOCTYPE scenario (View Source for full doctype...)> 
+ <!--                  Sipp default 'uas' scenario.                       
+  --> 
+ <!--                                                                     
+  --> 
+
+ <scenario name="Basic UAS responder">
+
+
+<recv request="INVITE" crlf="true">
+</recv>
+
+<send>
+<![CDATA[
+
+      SIP/2.0 100 Trying
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Supported: timer,100rel
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Content-Length: 0
+
+    ]]>
+
+</send>
+
+<send>
+
+<![CDATA[
+
+      SIP/2.0 180 Ringing 
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,INFO,REFER,NOTIFY,PRACK,UPDATE      
+      Content-Length:0 
+  ]]>
+
+</send>
+
+<pause milliseconds="300"/>
+
+<send retrans="500">
+
+ <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_Record-Route:]
+      [last_CSeq:]
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,INFO,REFER,NOTIFY,PRACK,UPDATE
+      Content-Type: application/sdp
+      Content-Length:[len]
+      
+      v=0
+      o=user1 53655765 2353687637 IN IP4 [local_ip]
+      s=-
+      c=IN IP[media_ip_type] [media_ip]
+      t=0 0
+m=audio 8888 RTP/AVP 0 18 100
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:100 X-NSE/8000
+a=fmtp:100 200-202
+m=video 1240 RTP/AVP 0 18 100
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:100 X-NSE/8000
+m=application 1400 RTP/AVP 18 100
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:100 X-NSE/8000
+a=sendrecv
+m=application 4002 TCP/TLS/BFCP *
+a=setup:passive
+a=connection:new
+a=fingerprint:SHA-1 4A:AD:B9:B1:3F:82:18:3B:54:02:12:DF:3E:5D:49:6B:19:E5:7C:AB
+a=floorctrl:s-only
+a=confid:4321
+a=userid:1234
+a=floorid:1 m-stream:10
+a=floorid:2 m-stream:12
+
+]]>
+
+</send>
+
+<recv request="ACK" rtd="true" crlf="true" />
+
+
+
+
+<recv request="INVITE" crlf="true">
+</recv>
+
+
+<send>
+<![CDATA[
+
+      SIP/2.0 100 Trying
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Supported: timer,100rel
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Content-Length: 0
+
+    ]]>
+
+</send>
+
+ 
+<send retrans="500">
+
+ <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_Record-Route:]
+      [last_CSeq:]
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,INFO,REFER,NOTIFY,PRACK,UPDATE
+      Content-Type: application/sdp
+      Content-Length:[len]
+
+      v=0
+      o=user1 53655765 2353687637 IN IP4 [local_ip]
+      s=-
+      c=IN IP[media_ip_type] [media_ip]
+      t=0 0
+m=audio 8888 RTP/AVP 0 18 100
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:100 X-NSE/8000
+a=fmtp:100 200-202
+m=video 1240 RTP/AVP 0 18 100
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:100 X-NSE/8000
+m=application 1400 RTP/AVP 18 100
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:100 X-NSE/8000
+a=sendrecv
+m=application 4000 TCP/TLS/BFCP *
+a=setup:passive
+a=connection:new
+a=fingerprint:SHA-1 4A:AD:B9:B1:3F:82:18:3B:54:02:12:DF:3E:5D:49:6B:19:E5:7C:AB
+a=floorctrl:s-only
+a=confid:4321
+a=userid:1234
+a=floorid:1 m-stream:10
+a=floorid:2 m-stream:12
+
+]]>
+
+</send>
+
+<recv request="ACK" rtd="true" crlf="true" >
+</recv>
+
+<recv request="BYE" />
+
+<send>
+<![CDATA[
+
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+      Content-Length: 0
+
+    ]]>
+</send>
+
+  </scenario>
+
+
+

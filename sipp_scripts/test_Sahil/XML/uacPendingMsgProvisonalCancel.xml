@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+<!--      User-to-User: 00FA080001001056965CFB;encoding=hex -->
+
+<scenario name="Basic Sipstone UAC">
+  <label id="1"/>
+
+  <send retrans="500">
+    <![CDATA[
+      INVITE sip:[field1]@192.168.5.12:6025 SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port]
+      Call-ID: [call_id]
+      CSeq: 1 INVITE
+      Contact: sip:[field0]@[local_ip]:[local_port];transport=[transport]
+      Supported: replaces
+      Max-Forwards: 70
+      Subject: Performance Test
+      User-to-User: 00FA080001001056965CFB;encoding=hex
+      Content-Type: application/sdp
+      Content-Length: [len]
+      
+      v=0
+      o=- 1509186683 1 IN IP4 [local_ip]
+      s=-
+      c=IN IP4 [local_ip]
+      b=TIAS:64000
+      t=0 0
+      a=avf:avc=n prio=n
+      a=csup:avf-v0
+      m=audio 41532 RTP/AVP 8 101
+      a=rtpmap:8 PCMA/8000
+      a=rtpmap:101 telephone-event/8000
+      a=fmtp:101 0-15
+      a=ptime:20
+    ]]>
+  </send>
+
+  <recv response="100" optional="true">
+  </recv>
+
+  <recv response="180">
+  </recv>
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+
+<pause milliseconds="1000"/>
+
+  <send>
+    <![CDATA[
+      CANCEL sip:[field1]@192.168.5.12:6025 SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 1 CANCEL
+      Max-Forwards: 70
+      Content-Length: 0
+     ]]>
+  </send>
+
+
+
+<recv request="BYE">
+    <action>
+      <ereg regexp=": *(.*)" search_in="hdr" header="CSeq" assign_to="_,Bye1Cseq"/>
+      <ereg regexp=": *(.*)" search_in="hdr" header="From" assign_to="_,Bye1From"/>
+      <ereg regexp=": *(.*)" search_in="hdr" header="To" assign_to="_,Bye1To"/>
+    </action>
+</recv>
+
+
+<send>
+<![CDATA[
+
+SIP/2.0 200 OK
+[last_Via:]
+From: [$Bye1From]
+To: [$Bye1To]
+[last_Call-ID:]
+CSeq: [$Bye1Cseq]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+
+]]>
+</send>
+
+
+<!-- definition of the response time repartition table (unit is ms)   -->
+  <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+<!-- definition of the call length repartition table (unit is ms)     -->
+  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+
+</scenario>

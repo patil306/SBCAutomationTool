@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+
+<scenario name="Late NOTIFY">
+
+<recv request="REGISTER" crlf="true">
+</recv>
+
+<recv request="REGISTER" crlf="true">
+</recv>
+
+<recv request="REGISTER" crlf="true">
+</recv>
+
+<recv request="REGISTER" crlf="true">
+</recv>
+
+<recv request="REGISTER" crlf="true">
+</recv>
+
+<recv request="REGISTER" crlf="true">
+</recv>
+
+<recv request="REGISTER" crlf="true">
+</recv>
+
+</scenario>
+

@@ -1,0 +1,12 @@
+sipp: The following events occured:
+2018-08-27	12:34:40:393	1535353480.393647: Aborting call on unexpected message for Call-Id '1-17359@10.133.39.159': while expecting '200' (index 2), received 'SIP/2.0 180 Ringing
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-17359@10.133.39.159
+Contact: <sip:10.133.48.235:5060;transport=tcp>
+Record-Route: <sip:10.133.48.235:5060;ipcs-line=1;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-17359-1-0
+Content-Length: 0
+
+'.

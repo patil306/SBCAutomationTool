@@ -1,0 +1,871 @@
+----------------------------------------------- 2019-06-17 13:52:27:308.371
+UDP message received [645] bytes :
+
+SUBSCRIBE sip:4079@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:4079@192.168.5.12:5088
+CSeq: 1 SUBSCRIBE
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=4;lr;transport=udp>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+User-Agent: Sipp v1.1-TLS, version 20061124
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-001977434339-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 13:52:27:308.954
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:27:809.746
+UDP message received [645] bytes :
+
+SUBSCRIBE sip:4079@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:4079@192.168.5.12:5088
+CSeq: 1 SUBSCRIBE
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=4;lr;transport=udp>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+User-Agent: Sipp v1.1-TLS, version 20061124
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-001977434339-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 13:52:27:809.969
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:27:810.087
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:28:810.822
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:28:811.106
+UDP message received [645] bytes :
+
+SUBSCRIBE sip:4079@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:4079@192.168.5.12:5088
+CSeq: 1 SUBSCRIBE
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=4;lr;transport=udp>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+User-Agent: Sipp v1.1-TLS, version 20061124
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-001977434339-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 13:52:28:811.310
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:30:812.512
+UDP message received [645] bytes :
+
+SUBSCRIBE sip:4079@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:4079@192.168.5.12:5088
+CSeq: 1 SUBSCRIBE
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=4;lr;transport=udp>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+User-Agent: Sipp v1.1-TLS, version 20061124
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-001977434339-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 13:52:30:812.769
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:30:812.981
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:34:813.881
+UDP message received [645] bytes :
+
+SUBSCRIBE sip:4079@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:4079@192.168.5.12:5088
+CSeq: 1 SUBSCRIBE
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=4;lr;transport=udp>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+User-Agent: Sipp v1.1-TLS, version 20061124
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-001977434339-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 13:52:34:814.100
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:34:814.155
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:38:815.016
+UDP message received [645] bytes :
+
+SUBSCRIBE sip:4079@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:4079@192.168.5.12:5088
+CSeq: 1 SUBSCRIBE
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=4;lr;transport=udp>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+User-Agent: Sipp v1.1-TLS, version 20061124
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-001977434339-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 13:52:38:815.251
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:38:815.312
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:42:816.228
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:42:816.518
+UDP message received [645] bytes :
+
+SUBSCRIBE sip:4079@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:4079@192.168.5.12:5088
+CSeq: 1 SUBSCRIBE
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=4;lr;transport=udp>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+User-Agent: Sipp v1.1-TLS, version 20061124
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-001977434339-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 13:52:42:816.645
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:46:817.477
+UDP message received [645] bytes :
+
+SUBSCRIBE sip:4079@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:4079@192.168.5.12:5088
+CSeq: 1 SUBSCRIBE
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=4;lr;transport=udp>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+User-Agent: Sipp v1.1-TLS, version 20061124
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-001977434339-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 13:52:46:817.715
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:46:817.777
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:50:818.939
+UDP message received [645] bytes :
+
+SUBSCRIBE sip:4079@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:4079@192.168.5.12:5088
+CSeq: 1 SUBSCRIBE
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=4;lr;transport=udp>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+User-Agent: Sipp v1.1-TLS, version 20061124
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-001977434339-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 13:52:50:819.159
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:50:819.241
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:54:820.087
+UDP message received [645] bytes :
+
+SUBSCRIBE sip:4079@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:4079@192.168.5.12:5088
+CSeq: 1 SUBSCRIBE
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=4;lr;transport=udp>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+User-Agent: Sipp v1.1-TLS, version 20061124
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-001977434339-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 13:52:54:820.438
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:54:820.537
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+
+----------------------------------------------- 2019-06-17 13:52:58:821.536
+UDP message received [645] bytes :
+
+SUBSCRIBE sip:4079@192.168.5.12:5088 SIP/2.0
+From: sip:4078@192.168.55.79:5060;tag=1
+To: sip:4079@192.168.5.12:5088
+CSeq: 1 SUBSCRIBE
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Contact: sip:4078@192.168.55.79:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.55.79:5060;ipcs-line=4;lr;transport=udp>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Supported: replaces
+User-Agent: Sipp v1.1-TLS, version 20061124
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.55.79:5060;branch=z9hG4bK-s1632-001977434339-1--s1632-
+Expires: 1800
+Accept: application/watcherinfo+xml
+Event: presence
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 13:52:58:821.767
+UDP message sent (918 bytes):
+
+NOTIFY sip: SIP/2.0
+Via: SIP/2.0/UDP 192.168.5.12:5088;rport;branch=z9hG4bKPj01
+From: sipp <sip:sipp@192.168.5.12>;tag=1
+To:: sip:4078@192.168.55.79:5060;tag=1
+Call-ID: 2c419f55078ec66acaa2a71b8fc29902
+Cseq: 1 NOTIFY
+Contact: sip:sipp@192.168.5.12:5088
+Max-Forwards: 70
+Event: presence
+Subscription-State: active;expires=10
+Content-Type: application/pidf+xml
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:op="urn:oma:xml:prs:pidf:oma-pres" entity="sip:moto_red@ptt.intra.genaker.net">
+<tuple id="17415d5738f332a64a2f1d8cfb4ab0a5">
+<status>
+<basic>open</basic>
+</status>
+<op:willingness>
+<op:basic>closed</op:basic>
+</op:willingness>
+<op:barring-state>active</op:barring-state>
+<op:service-description>
+<op:service-id>org.openmobilealliance:PoC-session</op:service-id>
+<op:version>1.0</op:version>
+</op:service-description>
+</tuple>
+</presence>
+
+

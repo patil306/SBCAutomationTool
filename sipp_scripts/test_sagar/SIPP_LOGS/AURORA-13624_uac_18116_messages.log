@@ -1,0 +1,31 @@
+----------------------------------------------- 2018-08-20 17:36:29:925.055
+TCP message sent (406 bytes):
+
+OPTIONS sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-18116-1-0
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060
+Call-ID: 1-18116@10.133.39.159
+CSeq: 1 OPTIONS
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-20 17:36:29:945.759
+TCP message received [331] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060
+CSeq: 1 OPTIONS
+Call-ID: 1-18116@10.133.39.159
+Contact: <sip:10.133.48.235:5060;transport=tcp>
+Record-Route: <sip:10.133.48.235:5060;ipcs-line=2;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-18116-1-0
+Content-Length: 0
+
+

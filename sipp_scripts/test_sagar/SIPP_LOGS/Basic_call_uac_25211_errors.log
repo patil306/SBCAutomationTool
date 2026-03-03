@@ -1,0 +1,12 @@
+sipp: The following events occured:
+2018-11-20	12:37:09:398	1542697629.398131: The minor watchdog timer 500ms has been tripped (1001), 120 trips remaining..
+2018-11-20	12:37:41:452	1542697661.452937: Aborting call on unexpected message for Call-Id '1-25211@192.168.5.12': while expecting '180' (index 2), received 'SIP/2.0 503 Service Unavailable
+From: sip:40005@192.168.5.12;tag=1
+To: sip:40006@192.168.55.76:5060;tag=zXcVbNmd8dc8155e
+CSeq: 1 INVITE
+Call-ID: 1-25211@192.168.5.12
+Record-Route: <sip:192.168.55.76:5060;ipcs-line=1;lr;transport=tcp>
+Via: SIP/2.0/TCP 192.168.5.12:5075;branch=z9hG4bK-25211-1-0
+Content-Length: 0
+
+'.

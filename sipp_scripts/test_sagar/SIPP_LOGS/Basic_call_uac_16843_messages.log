@@ -1,0 +1,4558 @@
+----------------------------------------------- 2018-06-29 14:24:33:405.562
+TCP message sent (653 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-1-0
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.238:5060
+Call-ID: 1-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:33:416.949
+TCP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 1-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:417.107
+TCP message received [252] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7901c54c4
+CSeq: 1 INVITE
+Call-ID: 1-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7901c54c4
+CSeq: 1 INVITE
+Call-ID: 1-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:417.599
+TCP message sent (327 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-1-0
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7901c54c4
+Call-ID: 1-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:418.994
+TCP message received [239] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7901c54c4
+CSeq: 1 ACK
+Call-ID: 1-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 1-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7901c54c4
+CSeq: 1 ACK
+Call-ID: 1-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:504.399
+TCP message sent (653 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-2-0
+From: sip:40005@trk.com;tag=2
+To: sip:40006@10.133.48.238:5060
+Call-ID: 2-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:33:514.158
+TCP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=2
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 2-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-2-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:514.988
+TCP message received [252] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=2
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm021c7e143
+CSeq: 1 INVITE
+Call-ID: 2-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-2-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=2
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm021c7e143
+CSeq: 1 INVITE
+Call-ID: 2-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-2-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:515.201
+TCP message sent (327 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-2-0
+From: sip:40005@trk.com;tag=2
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm021c7e143
+Call-ID: 2-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:516.430
+TCP message received [239] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=2
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm021c7e143
+CSeq: 1 ACK
+Call-ID: 2-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-2-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 2-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=2
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm021c7e143
+CSeq: 1 ACK
+Call-ID: 2-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-2-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:604.386
+TCP message sent (653 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-3-0
+From: sip:40005@trk.com;tag=3
+To: sip:40006@10.133.48.238:5060
+Call-ID: 3-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:33:614.451
+TCP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=3
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 3-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-3-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:614.962
+TCP message received [252] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=3
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm9793643e2
+CSeq: 1 INVITE
+Call-ID: 3-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-3-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=3
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm9793643e2
+CSeq: 1 INVITE
+Call-ID: 3-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-3-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:615.155
+TCP message sent (327 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-3-0
+From: sip:40005@trk.com;tag=3
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm9793643e2
+Call-ID: 3-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:616.470
+TCP message received [239] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=3
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm9793643e2
+CSeq: 1 ACK
+Call-ID: 3-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-3-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 3-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=3
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm9793643e2
+CSeq: 1 ACK
+Call-ID: 3-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-3-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:704.651
+TCP message sent (653 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-4-0
+From: sip:40005@trk.com;tag=4
+To: sip:40006@10.133.48.238:5060
+Call-ID: 4-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:33:714.797
+TCP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=4
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 4-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-4-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:714.898
+TCP message received [252] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=4
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1f09f36f3
+CSeq: 1 INVITE
+Call-ID: 4-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-4-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=4
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1f09f36f3
+CSeq: 1 INVITE
+Call-ID: 4-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-4-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:715.068
+TCP message sent (327 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-4-0
+From: sip:40005@trk.com;tag=4
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1f09f36f3
+Call-ID: 4-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:716.495
+TCP message received [239] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=4
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1f09f36f3
+CSeq: 1 ACK
+Call-ID: 4-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-4-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 4-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=4
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1f09f36f3
+CSeq: 1 ACK
+Call-ID: 4-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-4-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:805.391
+TCP message sent (653 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-5-0
+From: sip:40005@trk.com;tag=5
+To: sip:40006@10.133.48.238:5060
+Call-ID: 5-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:33:815.948
+TCP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=5
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 5-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-5-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:816.049
+TCP message received [252] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=5
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1295f1324
+CSeq: 1 INVITE
+Call-ID: 5-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-5-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=5
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1295f1324
+CSeq: 1 INVITE
+Call-ID: 5-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-5-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:816.282
+TCP message sent (327 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-5-0
+From: sip:40005@trk.com;tag=5
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1295f1324
+Call-ID: 5-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:817.712
+TCP message received [239] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=5
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1295f1324
+CSeq: 1 ACK
+Call-ID: 5-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-5-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 5-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=5
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1295f1324
+CSeq: 1 ACK
+Call-ID: 5-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-5-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:906.153
+TCP message sent (653 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-6-0
+From: sip:40005@trk.com;tag=6
+To: sip:40006@10.133.48.238:5060
+Call-ID: 6-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:33:916.247
+TCP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=6
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 6-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-6-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:916.926
+TCP message received [252] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=6
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmff20ba52b
+CSeq: 1 INVITE
+Call-ID: 6-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-6-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=6
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmff20ba52b
+CSeq: 1 INVITE
+Call-ID: 6-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-6-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:917.401
+TCP message sent (327 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-6-0
+From: sip:40005@trk.com;tag=6
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmff20ba52b
+Call-ID: 6-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:33:918.670
+TCP message received [239] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=6
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmff20ba52b
+CSeq: 1 ACK
+Call-ID: 6-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-6-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 6-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=6
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmff20ba52b
+CSeq: 1 ACK
+Call-ID: 6-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-6-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:5.222
+TCP message sent (653 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-7-0
+From: sip:40005@trk.com;tag=7
+To: sip:40006@10.133.48.238:5060
+Call-ID: 7-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:34:14.779
+TCP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=7
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 7-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-7-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:15.117
+TCP message received [252] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=7
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNme6ed6b70c
+CSeq: 1 INVITE
+Call-ID: 7-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-7-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=7
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNme6ed6b70c
+CSeq: 1 INVITE
+Call-ID: 7-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-7-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:15.366
+TCP message sent (327 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-7-0
+From: sip:40005@trk.com;tag=7
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNme6ed6b70c
+Call-ID: 7-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:16.900
+TCP message received [239] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=7
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNme6ed6b70c
+CSeq: 1 ACK
+Call-ID: 7-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-7-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 7-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=7
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNme6ed6b70c
+CSeq: 1 ACK
+Call-ID: 7-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-7-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:105.471
+TCP message sent (653 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-8-0
+From: sip:40005@trk.com;tag=8
+To: sip:40006@10.133.48.238:5060
+Call-ID: 8-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:34:116.521
+TCP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=8
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 8-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-8-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:117.163
+TCP message received [252] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=8
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm54407f31a
+CSeq: 1 INVITE
+Call-ID: 8-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-8-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=8
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm54407f31a
+CSeq: 1 INVITE
+Call-ID: 8-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-8-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:117.377
+TCP message sent (327 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-8-0
+From: sip:40005@trk.com;tag=8
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm54407f31a
+Call-ID: 8-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:119.197
+TCP message received [239] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=8
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm54407f31a
+CSeq: 1 ACK
+Call-ID: 8-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-8-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 8-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=8
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm54407f31a
+CSeq: 1 ACK
+Call-ID: 8-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-8-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:204.761
+TCP message sent (653 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-9-0
+From: sip:40005@trk.com;tag=9
+To: sip:40006@10.133.48.238:5060
+Call-ID: 9-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:34:215.294
+TCP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=9
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 9-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-9-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:216.032
+TCP message received [252] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=9
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm3e71e32bb
+CSeq: 1 INVITE
+Call-ID: 9-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-9-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=9
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm3e71e32bb
+CSeq: 1 INVITE
+Call-ID: 9-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-9-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:216.242
+TCP message sent (327 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-9-0
+From: sip:40005@trk.com;tag=9
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm3e71e32bb
+Call-ID: 9-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:217.598
+TCP message received [239] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=9
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm3e71e32bb
+CSeq: 1 ACK
+Call-ID: 9-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-9-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 9-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=9
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm3e71e32bb
+CSeq: 1 ACK
+Call-ID: 9-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-9-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:306.562
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-10-0
+From: sip:40005@trk.com;tag=10
+To: sip:40006@10.133.48.238:5060
+Call-ID: 10-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:34:311.524
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=10
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 10-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-10-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:311.611
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=10
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmd54a565b7
+CSeq: 1 INVITE
+Call-ID: 10-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-10-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=10
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmd54a565b7
+CSeq: 1 INVITE
+Call-ID: 10-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-10-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:311.814
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-10-0
+From: sip:40005@trk.com;tag=10
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmd54a565b7
+Call-ID: 10-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:312.559
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=10
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmd54a565b7
+CSeq: 1 ACK
+Call-ID: 10-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-10-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 10-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=10
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmd54a565b7
+CSeq: 1 ACK
+Call-ID: 10-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-10-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:405.659
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-11-0
+From: sip:40005@trk.com;tag=11
+To: sip:40006@10.133.48.238:5060
+Call-ID: 11-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:34:415.346
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=11
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 11-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-11-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:415.976
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=11
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm35b6ae17e
+CSeq: 1 INVITE
+Call-ID: 11-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-11-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=11
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm35b6ae17e
+CSeq: 1 INVITE
+Call-ID: 11-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-11-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:416.171
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-11-0
+From: sip:40005@trk.com;tag=11
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm35b6ae17e
+Call-ID: 11-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:417.399
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=11
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm35b6ae17e
+CSeq: 1 ACK
+Call-ID: 11-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-11-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 11-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=11
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm35b6ae17e
+CSeq: 1 ACK
+Call-ID: 11-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-11-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:505.437
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-12-0
+From: sip:40005@trk.com;tag=12
+To: sip:40006@10.133.48.238:5060
+Call-ID: 12-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:34:516.478
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=12
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 12-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-12-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:516.795
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=12
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm8f17ef2bf
+CSeq: 1 INVITE
+Call-ID: 12-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-12-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=12
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm8f17ef2bf
+CSeq: 1 INVITE
+Call-ID: 12-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-12-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:517.058
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-12-0
+From: sip:40005@trk.com;tag=12
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm8f17ef2bf
+Call-ID: 12-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:518.256
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=12
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm8f17ef2bf
+CSeq: 1 ACK
+Call-ID: 12-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-12-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 12-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=12
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm8f17ef2bf
+CSeq: 1 ACK
+Call-ID: 12-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-12-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:606.226
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-13-0
+From: sip:40005@trk.com;tag=13
+To: sip:40006@10.133.48.238:5060
+Call-ID: 13-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:34:616.310
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=13
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 13-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-13-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:616.639
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=13
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm9439ad148
+CSeq: 1 INVITE
+Call-ID: 13-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-13-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=13
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm9439ad148
+CSeq: 1 INVITE
+Call-ID: 13-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-13-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:617.352
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-13-0
+From: sip:40005@trk.com;tag=13
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm9439ad148
+Call-ID: 13-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:618.636
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=13
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm9439ad148
+CSeq: 1 ACK
+Call-ID: 13-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-13-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 13-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=13
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm9439ad148
+CSeq: 1 ACK
+Call-ID: 13-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-13-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:705.315
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-14-0
+From: sip:40005@trk.com;tag=14
+To: sip:40006@10.133.48.238:5060
+Call-ID: 14-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:34:714.590
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=14
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 14-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-14-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:715.578
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=14
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb4beae10a
+CSeq: 1 INVITE
+Call-ID: 14-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-14-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=14
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb4beae10a
+CSeq: 1 INVITE
+Call-ID: 14-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-14-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:715.961
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-14-0
+From: sip:40005@trk.com;tag=14
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb4beae10a
+Call-ID: 14-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:717.374
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=14
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb4beae10a
+CSeq: 1 ACK
+Call-ID: 14-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-14-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 14-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=14
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb4beae10a
+CSeq: 1 ACK
+Call-ID: 14-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-14-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:805.263
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-15-0
+From: sip:40005@trk.com;tag=15
+To: sip:40006@10.133.48.238:5060
+Call-ID: 15-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:34:814.714
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=15
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 15-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-15-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:815.162
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=15
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7419ca26b
+CSeq: 1 INVITE
+Call-ID: 15-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-15-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=15
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7419ca26b
+CSeq: 1 INVITE
+Call-ID: 15-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-15-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:815.375
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-15-0
+From: sip:40005@trk.com;tag=15
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7419ca26b
+Call-ID: 15-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:816.775
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=15
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7419ca26b
+CSeq: 1 ACK
+Call-ID: 15-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-15-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 15-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=15
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7419ca26b
+CSeq: 1 ACK
+Call-ID: 15-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-15-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:905.097
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-16-0
+From: sip:40005@trk.com;tag=16
+To: sip:40006@10.133.48.238:5060
+Call-ID: 16-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:34:914.829
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=16
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 16-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-16-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:915.437
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=16
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7754f349b
+CSeq: 1 INVITE
+Call-ID: 16-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-16-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=16
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7754f349b
+CSeq: 1 INVITE
+Call-ID: 16-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-16-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:915.657
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-16-0
+From: sip:40005@trk.com;tag=16
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7754f349b
+Call-ID: 16-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:34:917.063
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=16
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7754f349b
+CSeq: 1 ACK
+Call-ID: 16-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-16-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 16-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=16
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7754f349b
+CSeq: 1 ACK
+Call-ID: 16-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-16-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:5.990
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-17-0
+From: sip:40005@trk.com;tag=17
+To: sip:40006@10.133.48.238:5060
+Call-ID: 17-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:35:15.252
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=17
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 17-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-17-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:15.913
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=17
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmd7ae1a039
+CSeq: 1 INVITE
+Call-ID: 17-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-17-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=17
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmd7ae1a039
+CSeq: 1 INVITE
+Call-ID: 17-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-17-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:16.167
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-17-0
+From: sip:40005@trk.com;tag=17
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmd7ae1a039
+Call-ID: 17-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:17.832
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=17
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmd7ae1a039
+CSeq: 1 ACK
+Call-ID: 17-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-17-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 17-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=17
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmd7ae1a039
+CSeq: 1 ACK
+Call-ID: 17-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-17-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:104.762
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-18-0
+From: sip:40005@trk.com;tag=18
+To: sip:40006@10.133.48.238:5060
+Call-ID: 18-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:35:113.555
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=18
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 18-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-18-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:113.980
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=18
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm92955c18f
+CSeq: 1 INVITE
+Call-ID: 18-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-18-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=18
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm92955c18f
+CSeq: 1 INVITE
+Call-ID: 18-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-18-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:114.189
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-18-0
+From: sip:40005@trk.com;tag=18
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm92955c18f
+Call-ID: 18-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:115.534
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=18
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm92955c18f
+CSeq: 1 ACK
+Call-ID: 18-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-18-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 18-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=18
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm92955c18f
+CSeq: 1 ACK
+Call-ID: 18-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-18-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:206.323
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-19-0
+From: sip:40005@trk.com;tag=19
+To: sip:40006@10.133.48.238:5060
+Call-ID: 19-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:35:215.280
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=19
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 19-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-19-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:215.844
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=19
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm32776f733
+CSeq: 1 INVITE
+Call-ID: 19-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-19-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=19
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm32776f733
+CSeq: 1 INVITE
+Call-ID: 19-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-19-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:216.078
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-19-0
+From: sip:40005@trk.com;tag=19
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm32776f733
+Call-ID: 19-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:217.479
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=19
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm32776f733
+CSeq: 1 ACK
+Call-ID: 19-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-19-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 19-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=19
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm32776f733
+CSeq: 1 ACK
+Call-ID: 19-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-19-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:305.342
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-20-0
+From: sip:40005@trk.com;tag=20
+To: sip:40006@10.133.48.238:5060
+Call-ID: 20-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:35:313.820
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=20
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 20-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-20-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:314.197
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=20
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm0786cb640
+CSeq: 1 INVITE
+Call-ID: 20-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-20-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=20
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm0786cb640
+CSeq: 1 INVITE
+Call-ID: 20-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-20-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:314.414
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-20-0
+From: sip:40005@trk.com;tag=20
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm0786cb640
+Call-ID: 20-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:315.556
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=20
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm0786cb640
+CSeq: 1 ACK
+Call-ID: 20-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-20-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 20-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=20
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm0786cb640
+CSeq: 1 ACK
+Call-ID: 20-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-20-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:404.433
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-21-0
+From: sip:40005@trk.com;tag=21
+To: sip:40006@10.133.48.238:5060
+Call-ID: 21-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:35:414.490
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=21
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 21-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-21-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:414.896
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=21
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm643b48473
+CSeq: 1 INVITE
+Call-ID: 21-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-21-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=21
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm643b48473
+CSeq: 1 INVITE
+Call-ID: 21-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-21-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:415.096
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-21-0
+From: sip:40005@trk.com;tag=21
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm643b48473
+Call-ID: 21-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:417.048
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=21
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm643b48473
+CSeq: 1 ACK
+Call-ID: 21-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-21-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 21-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=21
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm643b48473
+CSeq: 1 ACK
+Call-ID: 21-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-21-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:504.467
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-22-0
+From: sip:40005@trk.com;tag=22
+To: sip:40006@10.133.48.238:5060
+Call-ID: 22-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:35:513.321
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=22
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 22-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-22-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:514.039
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=22
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm0532ec54c
+CSeq: 1 INVITE
+Call-ID: 22-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-22-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=22
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm0532ec54c
+CSeq: 1 INVITE
+Call-ID: 22-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-22-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:514.273
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-22-0
+From: sip:40005@trk.com;tag=22
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm0532ec54c
+Call-ID: 22-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:515.474
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=22
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm0532ec54c
+CSeq: 1 ACK
+Call-ID: 22-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-22-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 22-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=22
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm0532ec54c
+CSeq: 1 ACK
+Call-ID: 22-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-22-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:606.241
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-23-0
+From: sip:40005@trk.com;tag=23
+To: sip:40006@10.133.48.238:5060
+Call-ID: 23-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:35:614.939
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=23
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 23-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-23-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:615.610
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=23
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNme10e985f6
+CSeq: 1 INVITE
+Call-ID: 23-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-23-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=23
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNme10e985f6
+CSeq: 1 INVITE
+Call-ID: 23-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-23-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:615.870
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-23-0
+From: sip:40005@trk.com;tag=23
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNme10e985f6
+Call-ID: 23-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:617.102
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=23
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNme10e985f6
+CSeq: 1 ACK
+Call-ID: 23-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-23-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 23-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=23
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNme10e985f6
+CSeq: 1 ACK
+Call-ID: 23-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-23-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:706.451
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-24-0
+From: sip:40005@trk.com;tag=24
+To: sip:40006@10.133.48.238:5060
+Call-ID: 24-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:35:715.038
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=24
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 24-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-24-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:715.725
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=24
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmec8ae0181
+CSeq: 1 INVITE
+Call-ID: 24-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-24-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=24
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmec8ae0181
+CSeq: 1 INVITE
+Call-ID: 24-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-24-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:715.957
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-24-0
+From: sip:40005@trk.com;tag=24
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmec8ae0181
+Call-ID: 24-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:717.447
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=24
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmec8ae0181
+CSeq: 1 ACK
+Call-ID: 24-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-24-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 24-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=24
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmec8ae0181
+CSeq: 1 ACK
+Call-ID: 24-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-24-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:805.066
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-25-0
+From: sip:40005@trk.com;tag=25
+To: sip:40006@10.133.48.238:5060
+Call-ID: 25-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:35:813.519
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=25
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 25-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-25-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:814.069
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=25
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm272bf1518
+CSeq: 1 INVITE
+Call-ID: 25-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-25-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=25
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm272bf1518
+CSeq: 1 INVITE
+Call-ID: 25-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-25-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:814.292
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-25-0
+From: sip:40005@trk.com;tag=25
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm272bf1518
+Call-ID: 25-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:815.835
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=25
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm272bf1518
+CSeq: 1 ACK
+Call-ID: 25-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-25-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 25-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=25
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm272bf1518
+CSeq: 1 ACK
+Call-ID: 25-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-25-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:905.423
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-26-0
+From: sip:40005@trk.com;tag=26
+To: sip:40006@10.133.48.238:5060
+Call-ID: 26-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:35:914.669
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=26
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 26-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-26-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:915.411
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=26
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb0a3d428f
+CSeq: 1 INVITE
+Call-ID: 26-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-26-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=26
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb0a3d428f
+CSeq: 1 INVITE
+Call-ID: 26-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-26-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:915.645
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-26-0
+From: sip:40005@trk.com;tag=26
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb0a3d428f
+Call-ID: 26-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:35:917.063
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=26
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb0a3d428f
+CSeq: 1 ACK
+Call-ID: 26-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-26-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 26-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=26
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb0a3d428f
+CSeq: 1 ACK
+Call-ID: 26-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-26-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:5.209
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-27-0
+From: sip:40005@trk.com;tag=27
+To: sip:40006@10.133.48.238:5060
+Call-ID: 27-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:36:14.227
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=27
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 27-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-27-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:14.589
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=27
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmf7540f3dd
+CSeq: 1 INVITE
+Call-ID: 27-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-27-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=27
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmf7540f3dd
+CSeq: 1 INVITE
+Call-ID: 27-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-27-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:14.940
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-27-0
+From: sip:40005@trk.com;tag=27
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmf7540f3dd
+Call-ID: 27-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:16.229
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=27
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmf7540f3dd
+CSeq: 1 ACK
+Call-ID: 27-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-27-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 27-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=27
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmf7540f3dd
+CSeq: 1 ACK
+Call-ID: 27-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-27-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:106.448
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-28-0
+From: sip:40005@trk.com;tag=28
+To: sip:40006@10.133.48.238:5060
+Call-ID: 28-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:36:115.084
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=28
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 28-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-28-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:115.474
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=28
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm075bd8606
+CSeq: 1 INVITE
+Call-ID: 28-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-28-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=28
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm075bd8606
+CSeq: 1 INVITE
+Call-ID: 28-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-28-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:115.685
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-28-0
+From: sip:40005@trk.com;tag=28
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm075bd8606
+Call-ID: 28-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:117.034
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=28
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm075bd8606
+CSeq: 1 ACK
+Call-ID: 28-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-28-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 28-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=28
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm075bd8606
+CSeq: 1 ACK
+Call-ID: 28-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-28-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:205.008
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-29-0
+From: sip:40005@trk.com;tag=29
+To: sip:40006@10.133.48.238:5060
+Call-ID: 29-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:36:213.929
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=29
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 29-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-29-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:214.052
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=29
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmbf8471209
+CSeq: 1 INVITE
+Call-ID: 29-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-29-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=29
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmbf8471209
+CSeq: 1 INVITE
+Call-ID: 29-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-29-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:214.280
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-29-0
+From: sip:40005@trk.com;tag=29
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmbf8471209
+Call-ID: 29-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:215.770
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=29
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmbf8471209
+CSeq: 1 ACK
+Call-ID: 29-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-29-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 29-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=29
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmbf8471209
+CSeq: 1 ACK
+Call-ID: 29-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-29-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:305.407
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-30-0
+From: sip:40005@trk.com;tag=30
+To: sip:40006@10.133.48.238:5060
+Call-ID: 30-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:36:314.860
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=30
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 30-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-30-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:314.982
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=30
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm310d0f1da
+CSeq: 1 INVITE
+Call-ID: 30-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-30-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=30
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm310d0f1da
+CSeq: 1 INVITE
+Call-ID: 30-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-30-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:315.152
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-30-0
+From: sip:40005@trk.com;tag=30
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm310d0f1da
+Call-ID: 30-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:316.370
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=30
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm310d0f1da
+CSeq: 1 ACK
+Call-ID: 30-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-30-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 30-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=30
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm310d0f1da
+CSeq: 1 ACK
+Call-ID: 30-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-30-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:406.288
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-31-0
+From: sip:40005@trk.com;tag=31
+To: sip:40006@10.133.48.238:5060
+Call-ID: 31-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:36:415.251
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=31
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 31-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-31-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:415.696
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=31
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm196a182a0
+CSeq: 1 INVITE
+Call-ID: 31-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-31-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=31
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm196a182a0
+CSeq: 1 INVITE
+Call-ID: 31-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-31-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:415.921
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-31-0
+From: sip:40005@trk.com;tag=31
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm196a182a0
+Call-ID: 31-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:417.147
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=31
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm196a182a0
+CSeq: 1 ACK
+Call-ID: 31-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-31-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 31-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=31
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm196a182a0
+CSeq: 1 ACK
+Call-ID: 31-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-31-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:505.176
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-32-0
+From: sip:40005@trk.com;tag=32
+To: sip:40006@10.133.48.238:5060
+Call-ID: 32-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:36:514.924
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=32
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 32-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-32-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:515.040
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=32
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmef9c52140
+CSeq: 1 INVITE
+Call-ID: 32-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-32-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=32
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmef9c52140
+CSeq: 1 INVITE
+Call-ID: 32-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-32-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:515.248
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-32-0
+From: sip:40005@trk.com;tag=32
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmef9c52140
+Call-ID: 32-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:516.524
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=32
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmef9c52140
+CSeq: 1 ACK
+Call-ID: 32-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-32-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 32-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=32
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmef9c52140
+CSeq: 1 ACK
+Call-ID: 32-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-32-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:605.212
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-33-0
+From: sip:40005@trk.com;tag=33
+To: sip:40006@10.133.48.238:5060
+Call-ID: 33-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:36:613.817
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=33
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 33-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-33-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:614.158
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=33
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb6c13b70e
+CSeq: 1 INVITE
+Call-ID: 33-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-33-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=33
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb6c13b70e
+CSeq: 1 INVITE
+Call-ID: 33-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-33-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:614.454
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-33-0
+From: sip:40005@trk.com;tag=33
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb6c13b70e
+Call-ID: 33-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:615.798
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=33
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb6c13b70e
+CSeq: 1 ACK
+Call-ID: 33-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-33-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 33-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=33
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmb6c13b70e
+CSeq: 1 ACK
+Call-ID: 33-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-33-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:705.696
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-34-0
+From: sip:40005@trk.com;tag=34
+To: sip:40006@10.133.48.238:5060
+Call-ID: 34-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:36:714.422
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=34
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 34-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-34-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:715.070
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=34
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm056c387cd
+CSeq: 1 INVITE
+Call-ID: 34-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-34-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=34
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm056c387cd
+CSeq: 1 INVITE
+Call-ID: 34-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-34-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:715.327
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-34-0
+From: sip:40005@trk.com;tag=34
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm056c387cd
+Call-ID: 34-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:716.776
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=34
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm056c387cd
+CSeq: 1 ACK
+Call-ID: 34-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-34-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 34-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=34
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm056c387cd
+CSeq: 1 ACK
+Call-ID: 34-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-34-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:805.314
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-35-0
+From: sip:40005@trk.com;tag=35
+To: sip:40006@10.133.48.238:5060
+Call-ID: 35-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:36:814.478
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=35
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 35-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-35-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:814.598
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=35
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmfba43b280
+CSeq: 1 INVITE
+Call-ID: 35-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-35-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=35
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmfba43b280
+CSeq: 1 INVITE
+Call-ID: 35-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-35-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:814.797
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-35-0
+From: sip:40005@trk.com;tag=35
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmfba43b280
+Call-ID: 35-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:816.185
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=35
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmfba43b280
+CSeq: 1 ACK
+Call-ID: 35-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-35-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 35-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=35
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmfba43b280
+CSeq: 1 ACK
+Call-ID: 35-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-35-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:904.786
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-36-0
+From: sip:40005@trk.com;tag=36
+To: sip:40006@10.133.48.238:5060
+Call-ID: 36-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:36:914.160
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=36
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 36-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-36-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:914.279
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=36
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmab013727b
+CSeq: 1 INVITE
+Call-ID: 36-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-36-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=36
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmab013727b
+CSeq: 1 INVITE
+Call-ID: 36-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-36-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:914.468
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-36-0
+From: sip:40005@trk.com;tag=36
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmab013727b
+Call-ID: 36-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:36:915.911
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=36
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmab013727b
+CSeq: 1 ACK
+Call-ID: 36-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-36-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 36-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=36
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmab013727b
+CSeq: 1 ACK
+Call-ID: 36-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-36-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:6.019
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-37-0
+From: sip:40005@trk.com;tag=37
+To: sip:40006@10.133.48.238:5060
+Call-ID: 37-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:37:14.262
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=37
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 37-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-37-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:15.059
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=37
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm14a3e44ba
+CSeq: 1 INVITE
+Call-ID: 37-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-37-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=37
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm14a3e44ba
+CSeq: 1 INVITE
+Call-ID: 37-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-37-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:15.276
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-37-0
+From: sip:40005@trk.com;tag=37
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm14a3e44ba
+Call-ID: 37-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:16.564
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=37
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm14a3e44ba
+CSeq: 1 ACK
+Call-ID: 37-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-37-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 37-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=37
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm14a3e44ba
+CSeq: 1 ACK
+Call-ID: 37-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-37-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:104.802
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-38-0
+From: sip:40005@trk.com;tag=38
+To: sip:40006@10.133.48.238:5060
+Call-ID: 38-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:37:113.719
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=38
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 38-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-38-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:113.950
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=38
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1c77b006b
+CSeq: 1 INVITE
+Call-ID: 38-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-38-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=38
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1c77b006b
+CSeq: 1 INVITE
+Call-ID: 38-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-38-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:114.174
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-38-0
+From: sip:40005@trk.com;tag=38
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1c77b006b
+Call-ID: 38-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:115.630
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=38
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1c77b006b
+CSeq: 1 ACK
+Call-ID: 38-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-38-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 38-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=38
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm1c77b006b
+CSeq: 1 ACK
+Call-ID: 38-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-38-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:205.211
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-39-0
+From: sip:40005@trk.com;tag=39
+To: sip:40006@10.133.48.238:5060
+Call-ID: 39-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:37:216.111
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=39
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 39-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-39-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:216.837
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=39
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm18be19096
+CSeq: 1 INVITE
+Call-ID: 39-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-39-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=39
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm18be19096
+CSeq: 1 INVITE
+Call-ID: 39-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-39-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:217.060
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-39-0
+From: sip:40005@trk.com;tag=39
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm18be19096
+Call-ID: 39-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:218.203
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=39
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm18be19096
+CSeq: 1 ACK
+Call-ID: 39-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-39-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 39-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=39
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm18be19096
+CSeq: 1 ACK
+Call-ID: 39-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-39-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:304.559
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-40-0
+From: sip:40005@trk.com;tag=40
+To: sip:40006@10.133.48.238:5060
+Call-ID: 40-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:37:315.697
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=40
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 40-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-40-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:316.411
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=40
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm45e9037fa
+CSeq: 1 INVITE
+Call-ID: 40-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-40-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=40
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm45e9037fa
+CSeq: 1 INVITE
+Call-ID: 40-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-40-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:316.725
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-40-0
+From: sip:40005@trk.com;tag=40
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm45e9037fa
+Call-ID: 40-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:317.960
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=40
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm45e9037fa
+CSeq: 1 ACK
+Call-ID: 40-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-40-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 40-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=40
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm45e9037fa
+CSeq: 1 ACK
+Call-ID: 40-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-40-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:404.654
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-41-0
+From: sip:40005@trk.com;tag=41
+To: sip:40006@10.133.48.238:5060
+Call-ID: 41-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:37:413.691
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=41
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 41-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-41-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:413.831
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=41
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7a43c543b
+CSeq: 1 INVITE
+Call-ID: 41-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-41-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=41
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7a43c543b
+CSeq: 1 INVITE
+Call-ID: 41-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-41-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:414.022
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-41-0
+From: sip:40005@trk.com;tag=41
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7a43c543b
+Call-ID: 41-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:415.979
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=41
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7a43c543b
+CSeq: 1 ACK
+Call-ID: 41-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-41-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 41-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=41
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm7a43c543b
+CSeq: 1 ACK
+Call-ID: 41-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-41-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:504.911
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-42-0
+From: sip:40005@trk.com;tag=42
+To: sip:40006@10.133.48.238:5060
+Call-ID: 42-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:37:514.276
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=42
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 42-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-42-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:514.378
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=42
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmec820c6fa
+CSeq: 1 INVITE
+Call-ID: 42-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-42-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=42
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmec820c6fa
+CSeq: 1 INVITE
+Call-ID: 42-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-42-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:514.543
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-42-0
+From: sip:40005@trk.com;tag=42
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmec820c6fa
+Call-ID: 42-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:516.705
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=42
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmec820c6fa
+CSeq: 1 ACK
+Call-ID: 42-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-42-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 42-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=42
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNmec820c6fa
+CSeq: 1 ACK
+Call-ID: 42-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-42-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:604.931
+TCP message sent (656 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-43-0
+From: sip:40005@trk.com;tag=43
+To: sip:40006@10.133.48.238:5060
+Call-ID: 43-16843@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   218
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 5004 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-06-29 14:24:37:614.088
+TCP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=43
+To: sip:40006@10.133.48.238:5060
+CSeq: 1 INVITE
+Call-ID: 43-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-43-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:614.558
+TCP message received [255] bytes :
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=43
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm2bbfc82c5
+CSeq: 1 INVITE
+Call-ID: 43-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-43-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TCP message received:
+
+SIP/2.0 500 Server Internal Error
+From: sip:40005@trk.com;tag=43
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm2bbfc82c5
+CSeq: 1 INVITE
+Call-ID: 43-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-43-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:614.788
+TCP message sent (330 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-43-0
+From: sip:40005@trk.com;tag=43
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm2bbfc82c5
+Call-ID: 43-16843@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=TCP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-06-29 14:24:37:616.087
+TCP message received [242] bytes :
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=43
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm2bbfc82c5
+CSeq: 1 ACK
+Call-ID: 43-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-43-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Dead call 43-16843@10.133.39.159 recieved a TCP message:
+
+SIP/2.0 400 Bad Request
+From: sip:40005@trk.com;tag=43
+To: sip:40006@10.133.48.238:5060;tag=zXcVbNm2bbfc82c5
+CSeq: 1 ACK
+Call-ID: 43-16843@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-16843-43-0
+Content-Length: 0
+
+

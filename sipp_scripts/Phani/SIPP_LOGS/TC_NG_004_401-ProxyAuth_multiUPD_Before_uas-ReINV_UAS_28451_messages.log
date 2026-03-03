@@ -1,0 +1,114 @@
+----------------------------------------------- 2018-09-12 15:46:04:373.963
+UDP message received [814] bytes :
+
+INVITE sip:4079@10.133.39.159:5072;transport=udp SIP/2.0
+From: sip:4078@10.133.48.152:5060;tag=1
+To: sip:4079@10.133.39.159:5072
+CSeq: 1 INVITE
+Call-ID: 2e39c6186d5218023c08ad766654986d
+Contact: <sip:4078@10.133.48.152:5060;transport=udp>
+Record-Route: <sip:10.133.48.152:5060;ipcs-line=25;lr;transport=udp>
+Supported: replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-000811886665-1--s1632-
+Subject: Performance Test
+Session-Expires: 1201
+Min-SE: 1201
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 203
+
+v=0
+o=user1 53655765 2353687640 IN IP4 10.133.48.152
+s=-
+c=IN IP4 10.133.48.152
+t=0 0
+m=audio 35040 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-12 15:46:04:374.242
+UDP message sent (316 bytes):
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-000811886665-1--s1632-
+From: sip:4078@10.133.48.152:5060;tag=1
+To: sip:4079@10.133.39.159:5072;tag=2
+Call-ID: 2e39c6186d5218023c08ad766654986d
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5072;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 15:46:04:376.279
+UDP message received [365] bytes :
+
+ACK sip:4079@10.133.39.159:5072;transport=udp SIP/2.0
+From: sip:4078@10.133.48.152:5060;tag=1
+To: sip:4079@10.133.39.159:5072;tag=2
+CSeq: 1 ACK
+Call-ID: 2e39c6186d5218023c08ad766654986d
+Contact: <sip:4078@10.133.48.152:5060;transport=udp>
+Max-Forwards: 70
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-000811886665-1--s1632-
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 15:46:07:392.632
+UDP message received [814] bytes :
+
+INVITE sip:4079@10.133.39.159:5072;transport=udp SIP/2.0
+From: sip:4078@10.133.48.152:5060;tag=1
+To: sip:4079@10.133.39.159:5072
+CSeq: 2 INVITE
+Call-ID: e41bbf39b139e2133c6b1053bd8fbc62
+Contact: <sip:4078@10.133.48.152:5060;transport=udp>
+Record-Route: <sip:10.133.48.152:5060;ipcs-line=26;lr;transport=udp>
+Supported: replaces, timer
+Max-Forwards: 69
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-001461795742-1--s1632-
+Subject: Performance Test
+Session-Expires: 1201
+Min-SE: 1201
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 203
+
+v=0
+o=user1 53655765 2353687640 IN IP4 10.133.48.152
+s=-
+c=IN IP4 10.133.48.152
+t=0 0
+m=audio 35042 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-09-12 15:46:07:393.491
+UDP message sent (316 bytes):
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-001461795742-1--s1632-
+From: sip:4078@10.133.48.152:5060;tag=1
+To: sip:4079@10.133.39.159:5072;tag=2
+Call-ID: e41bbf39b139e2133c6b1053bd8fbc62
+CSeq: 2 INVITE
+Contact: <sip:10.133.39.159:5072;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-12 15:46:07:395.397
+UDP message received [365] bytes :
+
+ACK sip:4079@10.133.39.159:5072;transport=udp SIP/2.0
+From: sip:4078@10.133.48.152:5060;tag=1
+To: sip:4079@10.133.39.159:5072;tag=2
+CSeq: 2 ACK
+Call-ID: e41bbf39b139e2133c6b1053bd8fbc62
+Contact: <sip:4078@10.133.48.152:5060;transport=udp>
+Max-Forwards: 70
+Via: SIP/2.0/UDP 10.133.48.152:5060;branch=z9hG4bK-s1632-001461795742-1--s1632-
+Content-Length: 0
+
+

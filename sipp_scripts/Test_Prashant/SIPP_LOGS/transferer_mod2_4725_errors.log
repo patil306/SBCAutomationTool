@@ -1,0 +1,13 @@
+sipp: The following events occured:
+2018-07-19	18:13:12:619	1532004192.619789: Aborting call on an unexpected CANCEL for call: 12f14216f562f56f142a3473233ba300.
+2018-07-19	18:13:27:603	1532004207.603324: Aborting call on an unexpected CANCEL for call: 22172970248ac402ed62aa0cc776d444.
+2018-07-19	18:14:10:389	1532004250.389206: Aborting call on unexpected message for Call-Id 'fcf6761692d94646b53d7f24da6da428': while expecting '202' (index 9), received 'SIP/2.0 408 Request Timeout
+From: sip:81001001@sbcdev4.com;tag=4
+To: sip:81002001@sbcdev4.com;tag=1
+CSeq: 1 REFER
+Call-ID: fcf6761692d94646b53d7f24da6da428
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=24;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5080;branch=z9hG4bK-4725-4-8
+Content-Length: 0
+
+'.

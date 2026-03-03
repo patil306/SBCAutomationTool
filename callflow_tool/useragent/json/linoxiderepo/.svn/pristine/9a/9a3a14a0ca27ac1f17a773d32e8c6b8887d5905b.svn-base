@@ -1,0 +1,760 @@
+from collections import OrderedDict
+import response
+from prack import sendPrack, recvPrack
+from sipconstants import SipCallState, SipRespCode, SipHeaders, Direction, SipRespCodeMap, CRLF, TestCaseResult, Transport, TestCaseStatus, SDPState
+from transport import SignalingSocket
+from sipmessage import SipMessage
+from uasession import UASession
+from registration import UARegistration
+from parserandbuilder import parseCallFlow, parseContent, parseHeaders, parseInputAndBuildContent, parseJson, parseInputAndModifyMessage, parseInputAndVerifyMessage, buildMessage
+from register import sendFinalRegister, sendInitialRegister, sendUnregister, recvReg200OK, recvUnreg200OK
+from util import getMyHostIP, Util, createCallID, isInErrorResponseCode
+from invite import recvInvACK, recvInvite, recvProvResponse, sendInvite, sendProvResponse, sendInvAck, send407Ack, sendInvWithAuth, send100Trying, sendReInvite, sendInvWithReplaces, sendAckForErrorResponse
+from subscribe import sendSubscribe, recvSubscribe, send200Subscribe, recv200Subscribe
+from bye import sendBye, recvBye, send200Bye, sendByeWithAuth
+from refer import sendRefer, recvNotify, recvRefer, recv202Accepted
+from messagebuffer import MessageBuffer, readFromStringBuffer
+from media import Media, procSDPAndGetMediaParams, procSDPAndGetMedDirection
+from update import sendUpdate, recvUpdate, sendUpdateWithAuth
+from testreport import TestReport
+import authenticate
+from listenthread import startListening, acceptClient
+import unexpectedmessage
+import time
+import os
+import re
+
+from threading import Thread
+from queue import Queue, Empty
+#from multiprocessing import Process, Queue
+import sys     
+
+def main():
+    Util.my_ip = sys.argv[1]
+    sessionId_map = OrderedDict()
+    data = parseJson()
+    userType = data.get("type")
+    userName = data.get("extn") 
+    displayName = data.get("displayname")   
+    domain = data.get("domain")    
+    transport = data.get("transport")
+    transport = Transport.TCP.value if transport == "tcp" else Transport.UDP.value
+    outbound_ip = data.get("outboundip")
+    displayName = data.get("displayname")
+    isReliable = data.get("isreliable")
+    featuretags = data.get("featuretags")
+    allowmethods = data.get("allowmethods")
+    isSRTP = data.get("issrtp")
+    msg_dict = parseCallFlow(data)
+    isServer = True if msg_dict.get(0)[1].get("direction") == "recv" else False
+    isServer = True if isServer and userType in ["EXT", "CS"] else False
+    msg_buffer = MessageBuffer()
+    sigSocket = SignalingSocket(Util.my_ip,5060,outbound_ip,5060,transport)
+    print("tcp handshake should start here")
+    sigSocket.connect()
+    time.sleep(1)    
+    #listen_thread = listenthread.ListenThread()
+    th_acceptClient = None
+    rcvr_queue = Queue()
+    msg_queue = Queue()
+    sockclose_trigger_queue = Queue()
+
+    if userType == "EXT":
+        th_acceptClient = Thread(target=acceptClient, args=(sigSocket, rcvr_queue))
+        th_acceptClient.start()
+    th_startListening = Thread(target=startListening, args=(sigSocket,rcvr_queue, sockclose_trigger_queue))
+    th_startListening.start()
+    th_readfromBuffer = Thread(target=readFromStringBuffer, args=(msg_queue, rcvr_queue))
+    th_readfromBuffer.start()
+    
+    exp_evtList = []
+    recv_evt_cnt = 0
+    
+    print("##########isServer#############", isServer)
+    try:             
+        
+        if userType == "RW" or userType == "INT":            
+            uaRegSession = UARegistration()
+            uaRegSession.setUserName(userName)
+            uaRegSession.setSigSocket(sigSocket)
+            sendInitialRegister(uaRegSession, userName, domain, transport)
+            start_time = time.time()
+            stop_time = start_time + 10
+            while True:   
+                if  time.time() >= stop_time:
+                    return
+                try:                                   
+                    evt, data = msg_queue.get(True, 3) #recvMsgFromTransport(uaRegSession)  
+                    if evt == '100':
+                        pass
+                    elif evt == '401':  
+                        print("evt 401 found, start processing")                  
+                        authenticate.recv401Unauthorised(uaRegSession, data)
+                        sendFinalRegister(uaRegSession, userName, domain, transport)
+                    elif evt in ['200', '400', '500']:
+                        recvReg200OK()
+                        break                      
+                except Empty:
+                    continue                          
+                
+        
+        for e, v in msg_dict.items():
+            if v[1].get('direction') == 'recv':
+                exp_evtList.append(v[0])   
+        
+        uaSession = None           
+        for key,key_value in msg_dict.items():
+            while True: 
+                # this while block is essential to address a recevied 
+                # message that was expected but not intended. for example
+                # intended message was NOTIFY for REFER but NOTIFY received
+                # for some other event.
+                evt = key_value[0]
+                usr_input = key_value[1]
+                direction = usr_input.get('direction')
+                has_content = usr_input.get('hascontent')
+                hascontentchanged = usr_input.get('hascontentchanged')        
+                target_ext = usr_input.get('targetextn') 
+                has_replaces = usr_input.get('hasreplaces')            
+                sdpsessattrs = usr_input.get('INS_SDPSESSATTR')
+                sdpmlines = usr_input.get('INS_SDPMLINE')
+                dialogId = usr_input.get('dialogid')
+                isOODialog = usr_input.get('isOOD')
+                method = usr_input.get('method')
+                med_dir = usr_input.get("mediadirection")   
+                audio_codecs = usr_input.get("audiocodecs")
+                expect_msg = ""
+                sleep_timer = int(usr_input.get('SLEEP_TIMER')) if usr_input.get('SLEEP_TIMER') else 0
+                print("####### evt & direction", evt, direction)
+                isNewDialog = False                
+                '''
+                if dialogId:
+                    if dialogId in sessionId_map:                
+                        uaSession = sessionId_map.get(dialogId)
+                    else:
+                        uaSession = UASession()
+                        sessionId_map[dialogId] = uaSession
+                        isNewDialog = True
+                else:
+                    if sessionId_map:
+                        # keys = sessionId_map.keys()
+                        dialogId = next(reversed(sessionId_map))
+                        uaSession = sessionId_map.get(dialogId)
+                    else:
+                        uaSession = UASession()
+                        dialogId = 1
+                        sessionId_map[dialogId] = uaSession 
+                        isNewDialog = True
+                '''
+                if evt == "FAILOVER":
+                    print("***evt Failover")
+                    sockclose_trigger = sockclose_trigger_queue.get()
+                    print("remote server closed trigger received", sockclose_trigger)
+                    if sigSocket.reConnect():
+                        print("*** reconnect post failover succesful, resetting listener process")
+                        # if userType == "EXT":
+                        #     th_acceptClient.terminate()
+                        #     th_acceptClient = Thread(target=acceptClientAndReceiveMessage, args=(sigSocket, rcvr_queue))
+                        #     th_acceptClient.start()
+                        # th_startListening.terminate()
+                        # th_startListening = Process(target=startListening, args=(sigSocket, rcvr_queue, sockclose_trigger_queue))
+                        # th_startListening.start()
+                        break
+                    else:
+                        print("***reconnection Failed, returning from call")
+                        return
+
+                if evt.startswith("SLEEP"):
+                    timer = int(re.search("\((.*)\)", evt).group(1).strip()) if re.search("\((.*)\)", evt).group(1).strip() else 0
+                    time.sleep(timer)
+                    break
+
+                if direction == 'recv':
+                    print("****Expecting Event", evt)
+                    start_time = time.time()
+                    stop_time = start_time + 60
+                    while True: 
+                        if time.time() >= stop_time:
+                            print("****recv Timeout, returning")
+                            return                
+                        # buff_evt, msg = msg_buffer.popTopMessage() 
+                        try:                            
+                            buff_evt, msg = msg_queue.get(True, 5)   
+                                           
+                            if not buff_evt:
+                                continue
+                            if buff_evt == '407':
+                                if uaSession.getSipCallState() == SipCallState.COMPLETE.value:
+                                    continue
+                                sip_msg = authenticate.recv407ProxyAuth(uaSession,msg)
+                                method = sip_msg.getMethod()
+                                uaSession.setCurSipMessage(sip_msg)
+                                uaSession.AddMsgObj(sip_msg,buff_evt)  
+                                                    
+                                if sip_msg.getMethod() == 'INVITE' and uaSession.getSipCallState() == SipCallState.INVITE_SENT.value:
+                                    ack_407 = send407Ack(uaSession)
+                                    raw_msg = buildMessage(ack_407, "")
+                                    sock_obj = uaSession.getSigSocket()
+                                    sock_obj.sendMessage(raw_msg)                            
+                                    invWithAuth = sendInvWithAuth(uaSession)
+                                    uaSession.setCurSipMessage(invWithAuth)
+                                    uaSession.AddMsgObj("INVITE", invWithAuth)
+                                    cur_sdp = uaSession.getCurSDP()
+                                    content = cur_sdp.buildContentFromSDP() if cur_sdp else ""
+                                    raw_msg = buildMessage(invWithAuth, content)
+                                    sock_obj = uaSession.getSigSocket()
+                                    sock_obj.sendMessage(raw_msg)   
+
+                                elif sip_msg.getMethod() == 'UPDATE' and uaSession.getSipCallState() == SipCallState.UPDATE_SENT.value:
+                                    updateWithAuth = sendUpdateWithAuth(uaSession)
+                                    uaSession.setCurSipMessage(updateWithAuth)
+                                    uaSession.AddMsgObj("UPDATE", updateWithAuth)
+                                    cur_sdp = uaSession.getCurSDP()
+                                    content = cur_sdp.buildContentFromSDP() if cur_sdp else ""
+                                    raw_msg = buildMessage(updateWithAuth, content)
+                                    sock_obj = uaSession.getSigSocket()
+                                    sock_obj.sendMessage(raw_msg) 
+                                    
+                                elif sip_msg.getMethod() == 'BYE' and uaSession.getSipCallState() == SipCallState.BYE_SENT.value:
+                                    byeWithAuth = sendByeWithAuth(uaSession)
+                                    uaSession.setCurSipMessage(byeWithAuth)
+                                    uaSession.AddMsgObj("BYE", byeWithAuth)
+                                    raw_msg = buildMessage(byeWithAuth, "")
+                                    sock_obj = uaSession.getSigSocket()
+                                    sock_obj.sendMessage(raw_msg)
+                                else:
+                                    continue
+                            else:
+                                if buff_evt == "100":
+                                    continue
+                                ### new trail changes start ####
+                                tmp_msg = msg.split(CRLF+CRLF)[0]  
+                                tmp_msg_obj = parseHeaders(tmp_msg)
+                                callId = tmp_msg_obj.getCallID().strip()
+                                # if len(tmp_msg) > 1 and tmp_msg_obj.getHeader(SipHeaders.CONTENTTYPE.value)[0] == "application/sdp":
+                                #     has_content = True
+                                msg_isRequest = tmp_msg_obj.isRequest()
+                                method_name = tmp_msg_obj.getMethod()
+                                msg_to_tag = tmp_msg_obj.getToTag()
+                                print("=====call-ID",callId)
+                                if callId in sessionId_map.keys():
+                                    print("====Known message received")
+                                    uaSession = sessionId_map.get(callId)
+                                    if buff_evt not in exp_evtList:
+                                        print("======Unexpected Evt with matching dialog Found", buff_evt)
+                                        if msg_isRequest:
+                                            unexpectedmessage.handleUnexpectedIndialogRequest(uaSession, msg)
+                                        else:
+                                            unexpectedmessage.handleUnexpectedIndialogResponse(uaSession, msg)
+                                        continue
+                                    elif buff_evt == evt:
+                                        print("=====Buff Event and Expected Event Matched with matching dialog=====")                                                                         
+                                        expect_msg = msg  
+                                        recv_evt_cnt += 1                      
+                                        break
+                                    else:
+                                        print("====Event received before expected")
+                                        # msg_buffer.appendMessage(msg)
+                                        # msg_dict[key] = key_value
+                                        continue
+                                else:
+                                    print("===Unknown message received")
+                                    #check if this is indialog message
+                                    if msg_to_tag:
+                                        # this is a unknown indialog message
+                                        print("=====Unknown message has to-tag")
+                                        if  msg_isRequest:
+                                            # respond with 481
+                                            print("===== Rejecting unknown Request with 481")
+                                            resp_481 = response.build481Response(tmp_msg_obj)
+                                            raw_msg = buildMessage(resp_481, "")
+                                            sigSocket.sendMessage(raw_msg)
+                                        
+                                        continue
+                                    else:  
+                                                                        
+                                        if buff_evt not in exp_evtList:
+                                            print("======OOD Unexpected Evt received", buff_evt)
+                                            if msg_isRequest:
+                                                resp_msg = None
+                                                if method_name == "OPTIONS":
+                                                    resp_msg = unexpectedmessage.handleOption(tmp_msg_obj)
+                                                else:
+                                                    resp_msg = unexpectedmessage.handleUnexpectedOODmessage(tmp_msg_obj)
+                                                raw_msg= buildMessage(resp_msg, "")
+                                                sigSocket.sendMessage(raw_msg)
+                                            continue
+                                        elif buff_evt == evt:
+                                            print("=====OOD Buff Event and Expected Event Matched =====")  
+                                            if msg_isRequest:
+                                                uaSession = UASession()
+                                                sessionId_map[callId] = uaSession
+                                                isNewDialog = True                                                                                                               
+                                            expect_msg = msg  
+                                            recv_evt_cnt += 1                      
+                                            break
+                                        else:
+                                            msg_buffer.appendMessage(msg)                         
+                                            continue                                                                   
+                        except Empty:
+                            continue  
+                #### new trail changes start ####
+                else:   # direction is send
+                    if evt == "INVITE":
+                        if isOODialog:
+                            uaSession = UASession()
+                            callId =  createCallID()
+                            uaSession.setCallID(callId)
+                            print("######call-ID",callId)
+                            sessionId_map[callId] = uaSession 
+                            isNewDialog = True                    
+                ##### new trial changes end   ####             
+                if evt == "INVITE":
+                    
+                    if  isNewDialog:                                   
+                        uaSession.setSigSocket(sigSocket)
+                        uaSession.setUserName(userName)
+                        uaSession.setUserType(userType)
+                        uaSession.setDomain(domain)
+                        uaSession.setTargetExtn(target_ext)
+                        uaSession.setFeatureTags(featuretags)
+                        uaSession.setAllowedMethods(allowmethods)                
+                        uaSession.setTransport(transport)
+                        uaSession.setReliable(isReliable)
+                        uaSession.setUserDisplayName(displayName)
+                                        
+                    if direction == 'send':                                       
+                        content = ""
+                        if has_content:                                                 
+                            content = parseInputAndBuildContent(uaSession,sdpsessattrs,sdpmlines,med_dir,audio_codecs,hascontentchanged,isSRTP)
+                            sdp_obj = parseContent(content)
+                            uaSession.setCurSDP(sdp_obj)  
+                            uaSession.setLocalSDP(sdp_obj)
+                            uaSession.setSDPstate(SDPState.SDP_SENT.value)
+                        else:
+                            uaSession.setCurSDP(None)       
+                        # invite_msg = sendInvite(uaSession) if isNewDialog else sendReInvite(uaSession)
+                        invite_msg = None
+                        if isNewDialog:
+                            if has_replaces:
+                                for callid,sess in sessionId_map.items():
+                                    if sess.getReplaces():
+                                        invite_msg = sendInvWithReplaces(uaSession, sess)
+                                        break    
+                            else:
+                                invite_msg = sendInvite(uaSession) 
+                        else:
+                            invite_msg = sendReInvite(uaSession)
+                        parseInputAndModifyMessage(usr_input, invite_msg)
+                        uaSession.setCurSipMessage(invite_msg)
+                        uaSession.AddMsgObj(evt, invite_msg)
+                        uaSession.setSipCallState(SipCallState.INVITE_SENT.value)
+                        raw_msg = buildMessage(invite_msg, content)
+                        sock_obj = uaSession.getSigSocket()
+                        sock_obj.sendMessage(raw_msg)
+                                        
+                    else: # direction is receive
+                        raw_msg = expect_msg #recvMsgFromTransport(uaSession)                                                                                                                
+                        inv_msg = recvInvite(uaSession, raw_msg)  
+                        parseInputAndVerifyMessage(usr_input, inv_msg)                 
+                        uaSession.setCurSipMessage(inv_msg)
+                        uaSession.AddMsgObj(evt, inv_msg)
+                        uaSession.setSipCallState(SipCallState.INVITE_RCVD.value)
+
+                        
+                elif evt == '100':
+                    if direction == 'recv':
+                        raw_msg = expect_msg #recvMsgFromTransport(uaSession)
+                    else:
+                        trying_msg = send100Trying(uaSession)                        
+                        raw_msg = buildMessage(trying_msg, "")
+                        sock_obj = uaSession.getSigSocket()
+                        sock_obj.sendMessage(raw_msg) 
+                         
+                elif evt in ['180', '181', '182', '183']:              
+                    if direction == 'send':
+                        respcode = evt
+                        content = ""                    
+                        if has_content:                            
+                            content = parseInputAndBuildContent(uaSession, sdpsessattrs,sdpmlines,med_dir,audio_codecs,hascontentchanged,isSRTP)
+                            sdp_obj = parseContent(content)
+                            uaSession.setCurSDP(sdp_obj)
+                            uaSession.setLocalSDP(sdp_obj)
+                            uaSession.setSDPstate(SDPState.SDP_SENT.value)
+                        else:
+                            uaSession.setCurSDP(None)
+                        provResp_msg = sendProvResponse(uaSession, respcode)                        
+                        parseInputAndModifyMessage(usr_input, provResp_msg)
+                        uaSession.setCurSipMessage(provResp_msg)
+                        uaSession.AddMsgObj(evt, provResp_msg)
+                        uaSession.setSipCallState(SipCallState.PROVRESP_SENT.value)
+                        raw_msg = buildMessage(provResp_msg, content)
+                        sock_obj = uaSession.getSigSocket()
+                        sock_obj.sendMessage(raw_msg)                                           
+                    else:
+                        raw_msg = expect_msg #recvMsgFromTransport(uaSession)
+                        recv_provResp = recvProvResponse(uaSession, raw_msg)
+                        parseInputAndVerifyMessage(usr_input, recv_provResp)
+                        uaSession.setCurSipMessage(recv_provResp)
+                        uaSession.AddMsgObj(evt, recv_provResp)
+                        uaSession.setSipCallState(SipCallState.PRACK_RCVD.value)
+
+
+                elif evt == 'UPDATE':              
+                    if direction == 'send':
+                        content = ""
+                        if has_content:                            
+                            content = parseInputAndBuildContent(uaSession, sdpsessattrs,sdpmlines,med_dir,audio_codecs,hascontentchanged,isSRTP)
+                            sdp_obj = parseContent(content)
+                            uaSession.setCurSDP(sdp_obj)
+                            uaSession.setLocalSDP(sdp_obj)
+                            uaSession.setSDPstate(SDPState.SDP_SENT.value)
+                        else:
+                            uaSession.setCurSDP(None)
+                        update_msg = sendUpdate(uaSession)                        
+                        parseInputAndModifyMessage(usr_input, update_msg)
+                        uaSession.setCurSipMessage(update_msg)
+                        uaSession.AddMsgObj(evt, update_msg)
+                        uaSession.setSipCallState(SipCallState.UPDATE_SENT.value)
+                        raw_msg = buildMessage(update_msg, content)
+                        sock_obj = uaSession.getSigSocket()
+                        sock_obj.sendMessage(raw_msg)                                           
+                    else:
+                        raw_msg = expect_msg #recvMsgFromTransport(uaSession)
+                        recv_update = recvUpdate(uaSession, raw_msg)
+                        parseInputAndVerifyMessage(usr_input, recv_update)
+                        uaSession.setCurSipMessage(recv_update)
+                        uaSession.AddMsgObj(evt, recv_update)
+                        uaSession.setSipCallState(SipCallState.UPDATE_RCVD.value)
+
+
+                elif evt == "PRACK":
+                    if direction == 'send':
+                        content = ""
+                        if has_content:                            
+                            content = parseInputAndBuildContent(uaSession, sdpsessattrs,sdpmlines,med_dir,audio_codecs,hascontentchanged,isSRTP)
+                            sdp_obj = parseContent(content)
+                            uaSession.setCurSDP(sdp_obj)
+                            uaSession.setLocalSDP(sdp_obj)
+                            uaSession.setSDPstate(SDPState.SDP_SENT.value)
+                        else:
+                            uaSession.setCurSDP(None)
+                        prack_msg = sendPrack(uaSession)
+                        parseInputAndModifyMessage(usr_input, prack_msg)
+                        uaSession.setCurSipMessage(prack_msg)
+                        uaSession.AddMsgObj(evt, prack_msg)
+                        uaSession.setSipCallState(SipCallState.PROVRESP_SENT.value)
+                        raw_msg = buildMessage(prack_msg, content)
+                        sock_obj = uaSession.getSigSocket()
+                        sock_obj.sendMessage(raw_msg)                    
+                    else:
+                        raw_msg =  expect_msg #recvMsgFromTransport(uaSession) 
+                        prack_msg = recvPrack(uaSession, raw_msg) 
+                        uaSession.setCurSipMessage(prack_msg) 
+                        uaSession.AddMsgObj(evt, prack_msg)
+                        uaSession.setSipCallState(SipCallState.PRACK_RCVD.value)
+
+                        
+                elif evt == "200":                    
+                    if not method:
+                        cur_msg = uaSession.getCurSipMessage()
+                        method = cur_msg.getMethod()
+                    if direction == 'send': 
+                        print("*** in 200 Send")            
+                        content = ""
+                        if has_content:                            
+                            content = parseInputAndBuildContent(uaSession, sdpsessattrs,sdpmlines,med_dir,audio_codecs,hascontentchanged,isSRTP)
+                            sdp_obj = parseContent(content)
+                            uaSession.setCurSDP(sdp_obj)
+                            uaSession.setLocalSDP(sdp_obj)
+                            uaSession.setSDPstate(SDPState.SDP_SENT.value)
+                        else:
+                            uaSession.setCurSDP(None)
+                        msg_200 = response.sendResponse(uaSession, evt, method)
+                        parseInputAndModifyMessage(usr_input, msg_200)
+                        uaSession.setCurSipMessage(msg_200)                        
+                        uaSession.AddMsgObj(evt, msg_200)
+                        if method == "INVITE":
+                            uaSession.setSipCallState(SipCallState.SUCCESSFULRESP_SENT.value)
+                        else:
+                            uaSession.setSipCallState(SipCallState.COMPLETE.value)
+                        raw_msg = buildMessage(msg_200, content)
+                        sock_obj = uaSession.getSigSocket()
+                        sock_obj.sendMessage(raw_msg)                    
+                    else:
+                        raw_msg =  expect_msg 
+                        recv_200OK = response.recvFinalResponse(uaSession, raw_msg, evt)
+                        method = recv_200OK.getMethod()
+                        evt_new = evt + method
+                        uaSession.setCurSipMessage(recv_200OK)
+                        uaSession.AddMsgObj(evt_new, recv_200OK)
+                        if method == "INVITE":
+                            uaSession.setSipCallState(SipCallState.SUCCESSFULRESP_RCVD.value)
+                        else:
+                            uaSession.setSipCallState(SipCallState.COMPLETE.value)
+
+                elif evt == 'ACK':                   
+                    if direction == 'send':
+                        content = ""
+                        ack_msg = None
+                        if has_content:                            
+                            content = parseInputAndBuildContent(uaSession, sdpsessattrs,sdpmlines,med_dir,audio_codecs,hascontentchanged,isSRTP)
+                            sdp_obj = parseContent(content)
+                            uaSession.setCurSDP(sdp_obj)
+                            uaSession.setLocalSDP(sdp_obj)
+                            uaSession.setSDPstate(SDPState.SDP_SENT.value)
+                        else:
+                            uaSession.setCurSDP(None)
+                        if uaSession.getSipCallState() == SipCallState.SUCCESSFULRESP_RCVD.value:
+                            ack_msg = sendInvAck(uaSession)
+                        else:
+                            ack_msg = sendAckForErrorResponse(uaSession)
+                        parseInputAndModifyMessage(usr_input, ack_msg)
+                        uaSession.setCurSipMessage(ack_msg)
+                        uaSession.AddMsgObj(evt, ack_msg)
+                        raw_msg = buildMessage(ack_msg, content)
+                        sock_obj = uaSession.getSigSocket()
+                        sock_obj.sendMessage(raw_msg)                                                      
+                    else:
+                        raw_msg =  expect_msg #recvMsgFromTransport(uaSession) 
+                        ack_msg = recvInvACK(uaSession, raw_msg) 
+                        uaSession.setCurSipMessage(ack_msg) 
+                        uaSession.AddMsgObj(evt, ack_msg)
+                    uaSession.setSipCallState(SipCallState.COMPLETE.value)
+                    uaSession.setActiveCall(True)
+                    ''' once ACK is sent or recevied, need to start the
+                        media thread to send/receive RTP packets. below code 
+                        initiate medial flow '''
+                    if uaSession.getSDPState() == SDPState.COMPLETE.value:
+                        if not uaSession.getMediaObject():
+                            rem_sdp = uaSession.getRemoteSDP()
+                            loc_sdp = uaSession.getLocalSDP()
+                            rem_medIP, rem_medport, rem_meddir, pref_audiocodec = procSDPAndGetMediaParams(rem_sdp)
+                            loc_medip, loc_medport, loc_meddir, pref_audiocodec = procSDPAndGetMediaParams(loc_sdp)
+                            media_obj = Media(loc_medip,loc_medport,rem_medIP,rem_medport)
+                            media_dir = "sendrecv" if rem_meddir == "sendrecv" and loc_meddir == "sendrecv" else "inactive"
+                            uaSession.setMediaObject(media_obj)
+                            media_obj.initiateMedia(media_dir, pref_audiocodec)
+                    ''' End of Initiate Media flow code block '''
+                    ##### End of Media Handler #####
+
+                elif evt == 'SUBSCRIBE':
+                    if direction == 'send':
+                        content = ""
+                        subscribe_msg = sendSubscribe(uaSession)
+                        parseInputAndModifyMessage(usr_input, subscribe_msg)
+                        uaSession.setCurSipMessage(subscribe_msg)
+                        uaSession.AddMsgObj(evt, subscribe_msg)
+                        #uaSession.setSipCallState(SipCallState.SUBSCRIBE_SENT.value)
+                        raw_msg = buildMessage(subscribe_msg, content)
+                        sock_obj = uaSession.getSigSocket()
+                        sock_obj.sendMessage(raw_msg)                                     
+                    else:
+                        raw_msg =  expect_msg
+                        subscribe_msg = recvSubscribe(uaSession, raw_msg)
+                        uaSession.setCurSipMessage(subscribe_msg) 
+                        uaSession.AddMsgObj(evt, subscribe_msg)
+                        #uaSession.setSipCallState(SipCallState.BYE_RCVD.value)
+
+
+                elif evt == 'BYE':                
+                    if direction == 'send':
+                        content = ""
+                        bye_msg = sendBye(uaSession)
+                        parseInputAndModifyMessage(usr_input, bye_msg)
+                        uaSession.setCurSipMessage(bye_msg)
+                        uaSession.AddMsgObj(evt, bye_msg)
+                        uaSession.setSipCallState(SipCallState.BYE_SENT.value)
+                        raw_msg = buildMessage(bye_msg, content)
+                        sock_obj = uaSession.getSigSocket()
+                        sock_obj.sendMessage(raw_msg)                                     
+                    else:
+                        raw_msg =  expect_msg
+                        bye_msg = recvBye(uaSession, raw_msg)
+                        uaSession.setCurSipMessage(bye_msg) 
+                        uaSession.AddMsgObj(evt, bye_msg)
+                        uaSession.setSipCallState(SipCallState.BYE_RCVD.value)
+                    uaSession.setActiveCall(False)
+                    if uaSession.getMediaObject():
+                        uaSession.getMediaObject().stopMedia()
+
+                elif evt == 'REFER':
+                    if direction == 'send':
+                        content = ""
+                        uaSession.setCurSDP(None)
+                        other_uaSession = None
+                        if len(sessionId_map) > 1:
+                            for k,v in sessionId_map.items():
+                                if v != uaSession:
+                                    other_uaSession = v
+                        refer_msg = sendRefer(uaSession, target_ext, other_uaSession)
+                        parseInputAndModifyMessage(usr_input, refer_msg)
+                        uaSession.setCurSipMessage(refer_msg)
+                        uaSession.AddMsgObj(evt, refer_msg)
+                        uaSession.setSipCallState(SipCallState.REFER_SENT.value)
+                        raw_msg = buildMessage(refer_msg, content)
+                        sock_obj = uaSession.getSigSocket()
+                        sock_obj.sendMessage(raw_msg)
+                    else:
+                        raw_msg = expect_msg
+                        refer_msg = recvRefer(uaSession, raw_msg)
+                        uaSession.setCurSipMessage(refer_msg)
+                        uaSession.AddMsgObj(evt, refer_msg)
+                        uaSession.setSipCallState(SipCallState.REF_RCVD.value)
+                        
+                elif evt == "NOTIFY":
+                    if direction == 'send':
+                        pass
+                    
+                    else:
+                        raw_msg =  expect_msg
+                        notify_msg = recvNotify(uaSession, raw_msg)
+                        msg_event = notify_msg.getEvent() 
+                        print("*******EVENT IS", msg_event)                     
+                        if msg_event.strip() != 'refer':
+                            unexpectedmessage.handleUnexpectedIndialogRequest(uaSession.getSigSocket(), raw_msg)
+                            recv_evt_cnt -= 1
+                            continue
+                        uaSession.AddMsgObj('NOTIFY', notify_msg)
+                        uaSession.setSipCallState(SipCallState.NOTIFY_RCVD.value)
+                        uaSession.setCurSipMessage(notify_msg)
+
+                elif evt == "202":
+                    if not method:
+                        cur_msg = uaSession.getCurSipMessage()
+                        method = cur_msg.getMethod()
+                    error_msg = ""
+                    if direction == 'send':
+                        pass
+                    else:
+                        raw_msg = expect_msg  # recvMsgFromTransport(uaSession)
+                        msg_202 = recv202Accepted(uaSession, raw_msg)
+                        parseInputAndVerifyMessage(usr_input, msg_202)
+                        uaSession.setCurSipMessage(msg_202)
+                        uaSession.AddMsgObj(evt+method, msg_202)
+                        uaSession.setSipCallState(SipCallState.COMPLETE.value)
+
+
+                elif isInErrorResponseCode(evt):
+                    if not method:
+                        cur_msg = uaSession.getCurSipMessage()
+                        method = cur_msg.getMethod()
+                    respcode = evt
+                    if direction == 'send':
+                        error_msg = response.sendErrorResponse(uaSession, respcode,method)
+                        uaSession.setCurSipMessage(error_msg)
+                        uaSession.AddMsgObj(evt+method, error_msg)
+                        if method == "INVITE":
+                            uaSession.setSipCallState(SipCallState.COMPLETE.value)
+                        raw_msg = buildMessage(error_msg, "")
+                        sock_obj = uaSession.getSigSocket()
+                        sock_obj.sendMessage(raw_msg)
+                    else:
+                        raw_msg = expect_msg  # recvMsgFromTransport(uaSession)
+                        error_msg = response.recvErrorResponse(uaSession, raw_msg)
+                        parseInputAndVerifyMessage(usr_input, error_msg)
+                        uaSession.setCurSipMessage(error_msg)
+                        uaSession.AddMsgObj(evt+method, error_msg)
+                        uaSession.setSipCallState(SipCallState.COMPLETE.value)
+                
+                if sleep_timer > 0:
+                    time.sleep(sleep_timer)
+
+                ''' below code block will handle the media flow for indialog
+                    offer answer. '''
+
+                if has_content:
+                    med_obj = uaSession.getMediaObject()
+                    if med_obj: 
+                        media_dir == 'sendrecv'
+                        if direction == 'recv':
+                            sdp = uaSession.getRemoteSDP() 
+                            rem_medIP, rem_medport, media_dir = procSDPAndGetMediaParams(rem_sdp)   
+                            med_obj.setRemoteMediaAddress(rem_medIP, rem_medport)           
+                        else:
+                            sdp = uaSession.getLocalSDP()
+                            media_dir = procSDPAndGetMedDirection(sdp)
+                        if media_dir == "sendrecv":
+                            med_obj.resumeMedia()
+                        else:
+                            med_obj.inactivateMedia()
+                
+                ''' End of indialog offer/answer negotiation code block'''
+               
+                break # this will break the first while True after the for loop.
+                    
+    finally:
+        
+        for callid in sessionId_map:
+            uaSession:UASession = sessionId_map.get(callid)
+            if uaSession.hasActiveCall():
+                bye_msg = sendBye(uaSession)
+                uaSession.AddMsgObj("BYE", bye_msg)               
+                raw_msg = buildMessage(bye_msg, "")
+                sock_obj = uaSession.getSigSocket()
+                sock_obj.sendMessage(raw_msg)
+                start_time = time.time()
+                stop_time = start_time + 5
+                while True:
+                    if time.time() >= stop_time:
+                        break
+                    try:
+                        buff_evt, msg = msg_queue.get(True, 3)
+                        if buff_evt == "407":
+                            sip_msg = authenticate.recv407ProxyAuth(uaSession,msg)
+                            bye_msg = sendByeWithAuth(uaSession)
+                            raw_msg = buildMessage(bye_msg, "")
+                            sock_obj.sendMessage(raw_msg)
+                        else:
+                            break                                    
+                    except Empty:
+                        continue
+        if userType == "RW" or userType == "INT":
+            sendUnregister(uaRegSession, userName, domain, transport)
+            time.sleep(1)
+            
+        print("***Stop Receiving signaling packet***")
+        if sigSocket:
+            sigSocket.setStopRecv(True)
+
+        print("====Terminating Child Processes****")   
+        # listen_thread.setStopThread(True)
+        # msg_buffer.stopReading()
+        if th_acceptClient:
+            th_acceptClient.join()
+        print("***acceptClient Thread Joined")
+        if th_startListening:
+            th_startListening.join()
+        print("***StrartListening Thread Joined")
+        if sigSocket:
+            sigSocket.closeSocket()
+            print("***All signalling sockets closed")
+        if th_readfromBuffer:
+            Util.stop_reading_msgBuff = True
+            th_readfromBuffer.join()
+        print("***readFromBuffer Thread Joined")
+        
+        for dlgid in sessionId_map:
+            medobj:Media = sessionId_map.get(dlgid).getMediaObject()
+            if medobj:
+                medobj.stopMedia()   
+                medobj.closeSocket()                                 
+                medobj.getReceiverThread().join()   
+                medobj.getSenderThread().join()  
+        
+        
+        ''' create json test report and copy
+            in a local file '''
+        test_report = TestReport.getInstance()
+        test_report.setTestCaseStatus(TestCaseStatus.COMPLETE.value)        
+        if len(exp_evtList) == recv_evt_cnt:
+            test_report.setSignalingReport(TestCaseResult.PASS.value)
+        else:
+            test_report.setSignalingReport(TestCaseResult.FAIL.value, "Call Flow Failed")
+        test_report_json = test_report.getTestReportInJson()
+        with open("/root/useragent/testreport.json", "w") as file:
+            file.write(test_report_json)
+
+main()
+
+

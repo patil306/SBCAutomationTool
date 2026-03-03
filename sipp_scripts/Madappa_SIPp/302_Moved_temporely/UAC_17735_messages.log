@@ -1,0 +1,86 @@
+----------------------------------------------- 2021-09-27 16:57:32:700.662
+UDP message sent (714 bytes):
+
+INVITE sip:reddy2@test2.com SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-17735-1-0
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.36.32:5060
+Call-ID: 1-17735@10.133.39.159
+CSeq: 1 INVITE
+Supported: join, replaces, sdp-anat, timer
+Contact: sip:reddy1@10.133.39.159:5060
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+P-Asserted-Identity: <sip:+499511814633@bt.com>
+Content-Type: application/sdp
+Content-Length:   244
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 41532 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2021-09-27 16:57:32:706.120
+UDP message received [219] bytes :
+
+SIP/2.0 100 Trying
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.36.32:5060
+CSeq: 1 INVITE
+Call-ID: 1-17735@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-17735-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-27 16:57:32:709.551
+UDP message received [342] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.36.32:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-17735@10.133.39.159
+Contact: <sip:10.133.36.32:5060;transport=udp>
+Record-Route: <sip:10.133.36.32:5060;ipcs-line=4;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-17735-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected UDP message received:
+
+SIP/2.0 180 Ringing
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.36.32:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-17735@10.133.39.159
+Contact: <sip:10.133.36.32:5060;transport=udp>
+Record-Route: <sip:10.133.36.32:5060;ipcs-line=4;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-17735-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2021-09-27 16:57:32:709.840
+UDP message sent (294 bytes):
+
+CANCEL  SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-17735-1-0
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.36.32:5060;tag=1
+Call-ID: 1-17735@10.133.39.159
+CSeq: 1 CANCEL
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:5060;transport=UDP>
+Content-Length: 0
+
+

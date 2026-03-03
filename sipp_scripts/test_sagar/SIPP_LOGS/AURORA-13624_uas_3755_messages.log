@@ -1,0 +1,1865 @@
+----------------------------------------------- 2018-08-17 11:49:10:529.895
+TCP message received [569] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=1
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: ccf4aa5030a14617c3e8f05f4907350f
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=707;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000701178688-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-17 11:49:10:530.304
+TCP message sent (303 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000701178688-1--s1632-
+From: sip:40005@192.168.9.115:18212;tag=1
+To: sip:40006@192.168.5.12:5063
+Call-ID: ccf4aa5030a14617c3e8f05f4907350f
+CSeq: 1 OPTIONS
+Contact: <sip:10.133.39.159:5061;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-17 11:49:10:530.448
+TCP message sent (437 bytes):
+
+OPTIONS sip:81001001@rwtrunk.com SIP/2.0
+Via: SIP/2.0/TCP 192.168.5.12:5063;branch=z9hG4bK-3755-1-2
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@192.168.9.115:5060
+Call-ID: 1234
+CSeq: 1 OPTIONS
+Contact: sip:81002001@192.168.5.12:5063;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:     0
+
+
+----------------------------------------------- 2018-08-17 11:49:10:533.332
+TCP message received [569] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=2
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: cb96cf23ea268106f0e8257f5c479f05
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=708;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000625913248-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:10:633.997
+TCP message received [569] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=3
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: a8c0e47c6dc3e73830f77106110a4738
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=710;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001653953539-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:10:636.106
+TCP message received [324] bytes :
+
+SIP/2.0 200 OK
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@192.168.9.115:5060
+CSeq: 1 OPTIONS
+Call-ID: 1234
+Contact: <sip:192.168.9.115:5060;transport=tcp>
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=709;lr;transport=tcp>
+Via: SIP/2.0/TCP 192.168.5.12:5063;branch=z9hG4bK-3755-1-2
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:10:733.512
+TCP message received [569] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=4
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: b4588f4114a2d22d06cff554725ece7c
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=711;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000917867853-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:10:833.427
+TCP message received [569] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=5
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: a2d0b8691ee6de69c63766662fe33b33
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=712;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001622044703-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:10:933.283
+TCP message received [569] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=6
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 065b3110fbd7e603f73ad678c9432270
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=713;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001636800966-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:11:32.333
+TCP message received [569] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=7
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 97e8241e95daf1132f069d1987d14a1d
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=714;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000320593733-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:11:138.424
+TCP message received [569] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=8
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: beffb95f649fe94492479a1171ba2a11
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=715;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000428941809-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:11:236.790
+TCP message received [569] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=9
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 959b2f74197b0f0e92586979c692a17a
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=716;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001082234149-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:11:335.065
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=10
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: dfe51e307aeb303c3e272974e6b41405
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=717;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001180075306-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:11:433.994
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=11
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 5e97d7548885cd6e0b30de2224cf3d3b
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=718;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000956254700-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:11:531.572
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=12
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: d1c96d042b2a6f4bb240f025c804447d
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=719;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000571041975-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:11:636.576
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=13
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: f71f0c3960ed681b8948834f2626a952
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=720;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000999386612-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:11:739.415
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=14
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 7a6a1469e52563324b5e9d7d0db2ae7a
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=721;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000951303911-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:11:836.784
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=15
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 70f31e3ea24dde6e6f5b9d51034c8837
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=722;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001133371478-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:11:933.022
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=16
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 99e0f317e231a767e2cbb025d8071d0c
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=723;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001769988200-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:12:31.039
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=17
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: cf15b05e369ff460506c895bda458e01
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=724;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001824253640-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:12:132.893
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=18
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 07d5927dab0ffc058598a167ba158323
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=725;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000473067098-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:12:232.769
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=19
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 7a063323b1358f5cd401a91e034fb672
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=726;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000054531188-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:12:336.258
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=20
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: bbc05c577eb9ca5bbd819b61071ffa54
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=727;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000792222680-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:12:434.469
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=21
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 13622925771219132db9574582bdc676
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=728;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001450797963-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:12:532.701
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=22
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 9699d72e1b9eba0e5d90483278658854
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=729;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001252089466-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:12:633.706
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=23
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 2577041f477b38332945cc7b76e38d7a
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=730;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000450340339-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:12:732.855
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=24
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 84b3fe177db82078cdd0c23a094ca07f
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=731;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000885440801-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:12:832.960
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=25
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 41e5023e8352d322e903337815e7ab5c
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=732;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000463719991-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:12:931.732
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=26
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: c15f6b27d0a70834055b54717ee10609
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=733;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000361341319-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:13:32.396
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=27
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 90c6cd479143302e4fd91b1cbd7f250d
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=734;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000151176919-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:13:133.397
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=28
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: c937bd665319fd3b2e9fb13326c80519
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=735;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000620167443-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:13:233.710
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=29
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 2245894e4c3f0a3813fabd434b8a554a
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=736;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000277184204-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:13:332.654
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=30
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 35bb8478cf3d54623fdbb82a028c4733
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=737;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000848831170-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:13:431.453
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=31
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 77a95c4643714a715cdcc70460ad8f3e
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=738;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001643416025-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:13:532.425
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=32
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: e37d511a210dfb652800ff01e8d8a50b
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=739;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001307990104-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:13:633.189
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=33
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 00c7010b789f73533032321d4fa01d27
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=740;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001862397599-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:13:732.898
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=34
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 4333294218d8da0d8938961c71d2da75
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=741;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001620647734-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:13:832.794
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=35
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 55b71b2d931764448bdfea5e69b1d970
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=742;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000652255295-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:13:932.889
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=36
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 4d0283119e6c5e69aedf0d718cdd3b3c
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=743;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000247046623-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:14:32.304
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=37
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 8769025303879802e369f00de445ca57
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=744;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000480639136-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:14:133.531
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=38
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 3bc2e65bc7c31b728441232763c2e55d
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=745;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001093153891-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:14:231.695
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=39
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 233025166389e768283c355153625733
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=746;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-002109840560-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:14:332.857
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=40
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 5e5bce3196958075cb01e01de893644e
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=747;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000268773810-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:14:432.229
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=41
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 0aa2c0443d4b807b9b7fbf2f9581ab23
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=748;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001801152520-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:14:532.560
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=42
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 7a21793ee2832e354469b8552901872f
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=749;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001817836710-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:14:632.105
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=43
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 72e80274c7cb4e0094b0535ad51c2b35
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=750;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000042560176-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:14:731.884
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=44
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 5c746f4c5a5e4e5c66501b3a0c11314a
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=751;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001547013634-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:14:831.722
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=45
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: c9d90223344d661bd1f0ca257c030833
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=752;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001920175741-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:14:931.964
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=46
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 67864b1b4705e8507b3c991b6feea606
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=753;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001295296659-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:15:31.355
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=47
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: b88719170b6e6636e62854395f847303
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=754;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000363374417-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:15:132.715
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=48
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: c8ac826ea3ed2b59ae906624360eed5f
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=755;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001960808325-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:15:231.663
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=49
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 5ffbef26a8f6ef534f1bd94bf3ab4301
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=756;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001267355528-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:15:332.806
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=50
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 52a90e284f20b34dd8716965b8f92962
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=757;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000152769406-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:15:430.980
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=51
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 5500dd5781d32c05907e4a3326f1a77d
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=758;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000400830811-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:15:531.450
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=52
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 23277f008e77f31844dc1c099e63181c
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=759;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000942987005-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:15:632.000
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=53
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 9583c51e56eb313308d400567bac1958
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=760;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000530212349-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:15:733.156
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=54
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 8e63e04a43599c46595dd10f3cf4466f
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=761;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000916811701-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:15:831.801
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=55
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: e1ac5b5b9bef3616225e797a30c83427
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=762;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000646539130-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:15:930.917
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=56
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: a07194038271434fdebb2d6578e3fd68
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=763;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000393911183-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:16:32.504
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=57
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 3aed117dcee3da40bc3e9a36ca6b5c30
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=764;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000829254458-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:16:131.878
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=58
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: b915cf6eed92db30824c7657fef1eb77
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=765;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001048761588-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:16:234.958
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=59
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 80b210779375b116e1e125008886114d
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=766;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001291056779-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:16:336.160
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=60
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 9751cb3616eaf117527b6735f0ae9c46
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=767;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001858806287-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:16:434.261
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=61
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: cce2f05bd15bf821eecd6f1def406a56
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=768;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000121167443-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:16:532.757
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=62
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 7d69ea348fb2fe59849570185c25181a
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=769;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001227695105-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:16:631.981
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=63
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: be00de4996122a17d679d7037a3f7800
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=770;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001123849736-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:16:732.516
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=64
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: ca4e5a423455476f4d1162784d9bd019
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=771;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001199996512-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:16:832.810
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=65
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: d8075645cd4de110c5bce47db9e97b45
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=772;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001731413810-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:16:932.120
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=66
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: d4deaf6c503b477c6cbee475275a1722
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=773;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001576195157-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:17:32.826
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=67
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: bf9c1d7df33c087e1146dc64ad6a8d1a
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=774;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001122232896-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:17:132.873
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=68
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 136a092e2bd4774f7230712e97ff7946
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=775;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001416789474-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:17:233.288
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=69
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 7ac66d71550058101d0cba0050404575
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=776;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001771043207-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:17:332.841
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=70
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 7d8a40481a8f9f3704951700ca9ba240
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=777;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000282083280-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:17:432.844
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=71
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 36dc4a67a2a3f80534785162fb982f65
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=778;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001366305383-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:17:532.215
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=72
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 8a4c4440d077df51acc8bb47f60a2936
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=779;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001265929563-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:17:632.280
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=73
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: ecb29f0ab5a74633ea0eff71fef87b6f
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=780;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001945555447-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:17:732.346
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=74
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: cd8c71461163851d8de64b1d3fbde274
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=781;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001305743970-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:17:832.411
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=75
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 14e0db06b9835066fd62577431ec9507
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=782;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001677681320-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:17:931.551
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=76
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: cda22705ae76d64f23533513d1373f05
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=783;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001536541705-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:18:32.878
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=77
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 8b7da56407148a6c1ab67116bff5f646
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=784;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000276370040-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:18:131.508
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=78
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 7643e66149423b07d3249923220ca229
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=785;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001371122947-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:18:232.115
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=79
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: caf68f170ebf4134f4f4aa70b4058f09
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=786;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001029983551-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:18:332.007
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=80
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 57077f3e819200501d1b4341e4edca5b
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=787;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000599635980-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:18:432.399
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=81
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: c57d4225f9cda66279d3332bc3e09919
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=788;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001155747776-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:18:532.660
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=82
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 8297c9069083c11ed930133aa6eafe19
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=789;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001782364714-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:18:632.187
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=83
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 51438c4a3168a47e69cf8a106cf9fd60
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=790;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000604027746-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:18:731.094
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=84
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 6c7c4462e23ce4423aa0d64c3fa1dd05
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=791;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001167810032-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:18:832.794
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=85
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 79ed3a0a09986d1d1208c8206ee2e57a
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=792;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001820739844-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:18:933.208
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=86
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 3f30fd763cdbc805a9d72f150080e03b
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=793;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000962914757-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:19:34.558
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=87
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: a2a5d67779531467c539a544cd5f1362
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=794;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000722163970-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:19:135.308
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=88
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 55bd6663a690261ca2d5dc07b7786707
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=795;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001843260156-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:19:231.509
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=89
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: d33d81062148f21763cdb047c39b1c4c
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=796;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-001722995703-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:19:331.951
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=90
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: 450a950afd3bf318cd65140049531b77
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=797;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-002050409613-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting
+----------------------------------------------- 2018-08-17 11:49:19:432.473
+TCP message received [570] bytes :
+
+OPTIONS sip:40006@192.168.5.12:5063 SIP/2.0
+From: sip:40005@192.168.9.115:18212;tag=91
+To: sip:40006@192.168.5.12:5063
+CSeq: 1 OPTIONS
+Call-ID: d6fd811d5c5be317e50b141e949b7e44
+Contact: sip:40005@192.168.9.115:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.9.115:5060;ipcs-line=798;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.9.115:5060;branch=z9hG4bK-s1632-000590227831-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+Discarded message for new calls while quitting

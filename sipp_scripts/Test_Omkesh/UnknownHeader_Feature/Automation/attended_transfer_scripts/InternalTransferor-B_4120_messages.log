@@ -1,0 +1,263 @@
+----------------------------------------------- 2020-09-16 20:40:33:897.461
+TCP control message received [46] bytes :
+
+Call-ID: a979be05b6118505d13b1a430470e525
+
+
+----------------------------------------------- 2020-09-16 20:40:36:898.733
+TCP message sent (781 bytes):
+
+INVITE sip:8005@192.168.45.12:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.5.12:5067;branch=z9hG4bK-4120-1-3
+From: 6000 <sip:6000@192.168.5.12:5067>;tag=4120SIPpTag021
+To: <sip:8005@192.168.45.12:5060>
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+CSeq: 1 INVITE
+P-Asserted-Identity: <sip:6000@192.168.5.12;user=phone>
+Contact: <sip:6000@192.168.5.12:5067;transport=TCP>
+P-Location: SM;orginator="werwerewr"
+Max-Forwards: 70
+Subject: Performance Test
+Av-Global-Session-ID: ff012148-46b1-4c6f-8dfd-472b51b9edb3
+Supported: timer
+Content-Type: application/sdp
+Content-Length:   176
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6004 RTP/AVP 0 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000/1
+
+----------------------------------------------- 2020-09-16 20:40:36:906.740
+TCP message received [263] bytes :
+
+SIP/2.0 100 Trying
+From: "6000" <sip:6000@192.168.5.12:5067>;tag=4120SIPpTag021
+To: <sip:8005@192.168.45.12:5060>
+CSeq: 1 INVITE
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+Via: SIP/2.0/TCP 192.168.5.12:5067;branch=z9hG4bK-4120-1-3
+Content-Length: 0
+
+
+----------------------------------------------- 2020-09-16 20:40:36:912.548
+TCP message received [485] bytes :
+
+SIP/2.0 180 Ringing
+From: "6000" <sip:6000@192.168.5.12:5067>;tag=4120SIPpTag021
+To: <sip:8005@192.168.45.12:5060>;tag=1
+CSeq: 1 INVITE
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+Contact: <sip:8005@192.168.45.12:5060;transport=tcp>
+Record-Route: <sip:192.168.45.12:5060;ipcs-line=30;lr;transport=tcp>
+Via: SIP/2.0/TCP 192.168.5.12:5067;branch=z9hG4bK-4120-1-3
+Content-Type: application/sdp
+Av-Global-Session-ID: ff012148-46b1-4c6f-8dfd-472b51b9edb3
+Content-Length: 0
+
+
+----------------------------------------------- 2020-09-16 20:40:36:917.318
+TCP message received [643] bytes :
+
+SIP/2.0 183 Session Progress
+From: "6000" <sip:6000@192.168.5.12:5067>;tag=4120SIPpTag021
+To: <sip:8005@192.168.45.12:5060>;tag=1
+CSeq: 1 INVITE
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+Contact: <sip:8005@192.168.45.12:5060;transport=tcp>
+Record-Route: <sip:192.168.45.12:5060;ipcs-line=30;lr;transport=tcp>
+Via: SIP/2.0/TCP 192.168.5.12:5067;branch=z9hG4bK-4120-1-3
+Content-Type: application/sdp
+Av-Global-Session-ID: ff012148-46b1-4c6f-8dfd-472b51b9edb3
+Content-Length: 147
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sippcs.com
+s=-
+c=IN IP4 192.168.45.12
+t=0 0
+m=audio 35004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-09-16 20:40:36:921.692
+TCP message received [629] bytes :
+
+SIP/2.0 200 OK
+From: "6000" <sip:6000@192.168.5.12:5067>;tag=4120SIPpTag021
+To: <sip:8005@192.168.45.12:5060>;tag=1
+CSeq: 1 INVITE
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+Contact: <sip:8005@192.168.45.12:5060;transport=tcp>
+Record-Route: <sip:192.168.45.12:5060;ipcs-line=30;lr;transport=tcp>
+Via: SIP/2.0/TCP 192.168.5.12:5067;branch=z9hG4bK-4120-1-3
+Content-Type: application/sdp
+Av-Global-Session-ID: ff012148-46b1-4c6f-8dfd-472b51b9edb3
+Content-Length: 147
+
+v=0
+o=user1 53655765 2353687638 IN IP4 sippcs.com
+s=-
+c=IN IP4 192.168.45.12
+t=0 0
+m=audio 35004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-09-16 20:40:36:922.386
+TCP message sent (461 bytes):
+
+ACK sip:8005@192.168.45.12:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 192.168.5.12:5067;branch=z9hG4bK-4120-1-8
+From: 6000 <sip:6000@192.168.5.12:5067>;tag=4120SIPpTag021
+To: <sip:8005@192.168.45.12:5060>;tag=1
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+CSeq: 1 ACK
+Contact: <sip:6000@192.168.5.12:5067;transport=TCP>
+Av-Global-Session-ID: ff012148-46b1-4c6f-8dfd-472b51b9edb3
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length:     0
+
+
+----------------------------------------------- 2020-09-16 20:40:36:922.513
+TCP message sent (793 bytes):
+
+INVITE sip:8005@192.168.45.12:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 192.168.5.12:5067;branch=z9hG4bK-4120-1-9
+From: 6000 <sip:6000@192.168.5.12:5067>;tag=4120SIPpTag021
+To: <sip:8005@192.168.45.12:5060>
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+CSeq: 2 INVITE
+P-Asserted-Identity: <sip:6000@192.168.5.12;user=phone>
+Contact: <sip:6000@192.168.5.12:5067;transport=TCP>
+P-Location: SM;orginator="werwerewr"
+Max-Forwards: 70
+Av-Global-Session-ID: ff012148-46b1-4c6f-8dfd-472b51b9edb3
+Subject: Performance Test
+Supported: timer
+Content-Type: application/sdp
+Content-Length:   188
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.5.12
+s=-
+c=IN IP4 192.168.5.12
+t=0 0
+m=audio 6004 RTP/AVP 0 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000/1
+a=sendonly
+
+----------------------------------------------- 2020-09-16 20:40:36:930.772
+TCP message received [269] bytes :
+
+SIP/2.0 100 Trying
+From: "6000" <sip:6000@192.168.5.12:5067>;tag=4120SIPpTag021
+To: <sip:8005@192.168.45.12:5060>;tag=1
+CSeq: 2 INVITE
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+Via: SIP/2.0/TCP 192.168.5.12:5067;branch=z9hG4bK-4120-1-9
+Content-Length: 0
+
+
+----------------------------------------------- 2020-09-16 20:40:36:936.289
+TCP message received [647] bytes :
+
+SIP/2.0 200 OK
+From: "6000" <sip:6000@192.168.5.12:5067>;tag=4120SIPpTag021
+To: <sip:8005@192.168.45.12:5060>;tag=1;tag=1
+CSeq: 2 INVITE
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+Contact: <sip:8005@192.168.45.12:5060;transport=tcp>
+Record-Route: <sip:192.168.45.12:5060;ipcs-line=30;lr;transport=tcp>
+Via: SIP/2.0/TCP 192.168.5.12:5067;branch=z9hG4bK-4120-1-9
+Content-Type: application/sdp
+Av-Global-Session-ID: ff012148-46b1-4c6f-8dfd-472b51b9edb3
+Content-Length: 159
+
+v=0
+o=user1 53655765 2353687639 IN IP4 sippcs.com
+s=-
+c=IN IP4 192.168.45.12
+t=0 0
+m=audio 35004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=recvonly
+a=ptime:20
+
+----------------------------------------------- 2020-09-16 20:40:36:936.668
+TCP message sent (462 bytes):
+
+ACK sip:8005@192.168.45.12:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 192.168.5.12:5067;branch=z9hG4bK-4120-1-12
+From: 6000 <sip:6000@192.168.5.12:5067>;tag=4120SIPpTag021
+To: <sip:8005@192.168.45.12:5060>;tag=1
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+CSeq: 2 ACK
+Contact: <sip:6000@192.168.5.12:5067;transport=TCP>
+Av-Global-Session-ID: ff012148-46b1-4c6f-8dfd-472b51b9edb3
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length:     0
+
+
+----------------------------------------------- 2020-09-16 20:40:36:936.794
+TCP control message sent (671 bytes):
+
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+200 OK
+From: "6000" <sip:6000@192.168.5.12:5067>;tag=4120SIPpTag021
+To: <sip:8005@192.168.45.12:5060>;tag=1
+CSeq: 1 INVITE
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+Contact: <sip:8005@192.168.45.12:5060;transport=tcp>
+Record-Route: <sip:192.168.45.12:5060;ipcs-line=30;lr;transport=tcp>
+Via: SIP/2.0/TCP 192.168.5.12:5067;branch=z9hG4bK-4120-1-3
+Content-Type: application/sdp
+Av-Global-Session-ID: ff012148-46b1-4c6f-8dfd-472b51b9edb3
+Content-Length: 147
+
+v=0
+o=user1 53655765 2353687638 IN IP4 sippcs.com
+s=-
+c=IN IP4 192.168.45.12
+t=0 0
+m=audio 35004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+
+----------------------------------------------- 2020-09-16 20:40:38:970.035
+TCP message received [522] bytes :
+
+BYE sip:6000@192.168.5.12:5067;transport=TCP SIP/2.0
+From: <sip:8005@192.168.45.12:5060>;tag=1
+To: "6000" <sip:6000@192.168.5.12:5067>;tag=4120SIPpTag021
+CSeq: 1 BYE
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+Record-Route: <sip:192.168.45.12:5060;ipcs-line=29;lr;transport=tcp>
+Supported: timer
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.45.12:5060;branch=z9hG4bK-s1632-000999458080-1--s1632-;originator
+Subject: Performance Test
+P-Asserted-Identity: <sip:6000@192.168.5.12;user=phone>
+Content-Length: 0
+
+
+----------------------------------------------- 2020-09-16 20:40:38:970.134
+TCP message sent (354 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.45.12:5060;branch=z9hG4bK-s1632-000999458080-1--s1632-;originator
+From: <sip:8005@192.168.45.12:5060>;tag=1
+To: "6000" <sip:6000@192.168.5.12:5067>;tag=4120SIPpTag021
+Call-ID: 123///a979be05b6118505d13b1a430470e525
+CSeq: 1 BYE
+Av-Global-Session-ID: ff012148-46b1-4c6f-8dfd-472b51b9edb3
+Content-Length: 0
+
+

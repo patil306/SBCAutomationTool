@@ -1,0 +1,54 @@
+----------------------------------------------- 2019-06-18 11:58:53:131.440
+TLS message sent (549 bytes):
+
+REGISTER sip:40006@10.133.48.237 SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:6027;branch=z9hG4bK-17271-1-0
+From: sip:40006@10.133.48.237;tag=1
+To: sip:4078@sbcdev4.com
+Call-ID: 1-17271@10.133.39.159
+CSeq: 1 REGISTER
+Contact: <sip:4078@10.133.39.159:6027;transport=TLS>;q=0;expires=3600;+avaya.gmtoffset="0:00";+avaya.js-ver="1.0";+avaya.model="n/a";+avaya.sn="n/a";+avaya.firmware="n/a";+sip.instance="<urn:uuid:d2336786-cc37-3710-ee15-6984a96f699e>";reg-id=1
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-18 11:58:53:139.827
+TLS message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40006@10.133.48.237;tag=1
+To: sip:4078@sbcdev4.com
+CSeq: 1 REGISTER
+Call-ID: 1-17271@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:6027;branch=z9hG4bK-17271-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 100 Trying
+From: sip:40006@10.133.48.237;tag=1
+To: sip:4078@sbcdev4.com
+CSeq: 1 REGISTER
+Call-ID: 1-17271@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:6027;branch=z9hG4bK-17271-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-18 11:58:53:140.496
+TLS message sent (278 bytes):
+
+BYE  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:6027;branch=z9hG4bK-17271-1--1
+From: sip:40006@10.133.48.237;tag=1
+To: sip:4078@sbcdev4.com
+Call-ID: 1-17271@10.133.39.159
+CSeq: 2 BYE
+Max-Forwards: 70
+Contact: <sip:sipp@10.133.39.159:6027;transport=TLS>
+Content-Length: 0
+
+

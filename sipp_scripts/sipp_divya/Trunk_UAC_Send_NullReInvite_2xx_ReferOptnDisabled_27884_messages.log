@@ -1,0 +1,81 @@
+----------------------------------------------- 2018-12-05 13:15:05:622.800
+UDP message sent (703 bytes):
+
+INVITE sip:81001001@rwtrunk.com SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-27884-1-0
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060
+Call-ID: 1-27884@10.133.39.159
+CSeq: 1 INVITE
+Contact: <sip:81002001@10.133.39.159:5060;transport=udp>
+Route: <sip:192.168.6.5:5065;transport=udp>
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   202
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-12-05 13:15:05:629.927
+UDP message received [225] bytes :
+
+SIP/2.0 100 Trying
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060
+CSeq: 1 INVITE
+Call-ID: 1-27884@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-27884-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-05 13:15:37:633.328
+UDP message received [327] bytes :
+
+SIP/2.0 503 Service Unavailable
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=zXcVbNm9dc1d25ae
+CSeq: 1 INVITE
+Call-ID: 1-27884@10.133.39.159
+Record-Route: <sip:10.133.73.76:5060;ipcs-line=2;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-27884-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected UDP message received:
+
+SIP/2.0 503 Service Unavailable
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=zXcVbNm9dc1d25ae
+CSeq: 1 INVITE
+Call-ID: 1-27884@10.133.39.159
+Record-Route: <sip:10.133.73.76:5060;ipcs-line=2;lr;transport=udp>
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-27884-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-12-05 13:15:37:633.828
+UDP message sent (336 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-27884-1-0
+From: sip:81002001@rwtrunk.com;tag=1
+To: sip:81001001@10.133.73.76:5060;tag=zXcVbNm9dc1d25ae
+Call-ID: 1-27884@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5060;transport=UDP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!-- This program is free software; you can redistribute it and/or      -->
+
+<scenario name="RTP Echo pause / start test UAC">
+<!-- In client mode (sipp placing calls), the Call-ID MUST be         -->
+  <send retrans="500" start_txn="notify">
+    <![CDATA[
+
+      NOTIFY sip:[field1]@[remote_ip]:[remote_port];subid_ipcs=3546778592; transport=[transport] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field1]@[local_ip]:[local_port];tag=[pid]SIPpTag00[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port]
+      Call-ID: [call_id]
+      CSeq: [cseq] INVITE
+      Contact: sip:[field1]@[local_ip]:[local_port];transport=[transport]
+      Subscription-State: active;expires=2921
+      Event: dialog
+      Content-Type: application/dialog-info+xml
+      Content-Length: [len]
+
+      <?xml version="1.0"?>
+      <dialog-info xmlns="urn:ietf:params:xml:ns:dialog-info"
+      xmlns:av="urn:avaya:xml:ns:ext:dialog-info"
+      xmlns:sa="urn:avaya:xml:ns:ext:dialog-info"
+      version="1" state="partial"
+      entity="sips:6210@sip.boe.antenna.no10.gov.uk">
+      <dialog id="534240744"
+      direction="recipient"
+      call-id="534240744@172.19.69.8" local-tag="534240744lcltg" remote-tag="534240744rmtg">
+      <state>confirmed</state>
+      <local>
+      <identity display="4NetTestRB">sips:6210@sip.boe.antenna.no10.gov.uk</identity>
+      <target uri="sips:6210@172.19.69.8:5061;transport=tls;gsid=8fd9f830-9669-11e9-983e-0050568e373f">
+      <param pname="+avaya-cm-line" pval="1"/>
+      </target>
+      </local>
+      <remote>
+      <identity display="Anonymous">sip:anonymous@sip.boe.antenna.no10.gov.uk</identity>
+      <target uri="sip:anonymous@172.19.69.8:5061;transport=tls;gsid=8fd9f830-9669-11e9-983e-0050568e373f"/>
+      </remote>
+      </dialog>
+      </dialog-info>
+
+    ]]>
+  </send>
+
+
+  <recv response="200" rrs="true" response_txn="notify"/>
+
+</scenario>

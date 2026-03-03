@@ -1,0 +1,13 @@
+sipp: The following events occured:
+2018-01-29	11:48:43:762	1517206723.762090: Aborting call on unexpected message for Call-Id '1-32587@192.168.6.5': while expecting '200' (index 12), received 'SIP/2.0 408 Request Timeout
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@192.168.6.223:5060;tag=1
+CSeq: 3 BYE
+Call-ID: 1-32587@192.168.6.5
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=2;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-32587-1-11
+Content-Length: 0
+
+'.

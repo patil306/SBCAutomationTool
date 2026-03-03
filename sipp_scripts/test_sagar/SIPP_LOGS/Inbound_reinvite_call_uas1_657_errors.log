@@ -1,0 +1,27 @@
+sipp: The following events occured:
+2018-01-29	14:51:36:731	1517217696.731012: Aborting call on unexpected message for Call-Id '5b0b8729f12b6361d4520352ecfaf91c': while expecting 'BYE' (index 7), received 'ACK sip:4079@t1.test.avaya.com:5065;transport=tcp SIP/2.0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+CSeq: 2 ACK
+Call-ID: 5b0b8729f12b6361d4520352ecfaf91c
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=11;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001772048280-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-01-29	14:51:44:737	1517217704.737833: Dead call 5b0b8729f12b6361d4520352ecfaf91c (aborted at index 7), received 'BYE sip:t1.test.avaya.com:5065;transport=tcp SIP/2.0
+From: sip:4078@sbcdev4.com;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+CSeq: 3 BYE
+Call-ID: 5b0b8729f12b6361d4520352ecfaf91c
+Contact: sip:4078@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=11;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000259897435-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.

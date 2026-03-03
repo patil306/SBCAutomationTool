@@ -1,0 +1,53 @@
+#include "framethrower.h"
+
+
+U8 token[50];
+
+variable_str var;
+call_info_t call_info[MAX_NUM_CALLS + 1]; //  one extra for reception of packets at ETPA side
+packet_t packet_info[MAX_RTP_PACKETS];
+
+U8 first_packet_recvd[MAX_NUM_CALLS];
+
+extern void update_call_info(U32 packet_type);
+extern void open_pater_ft_ports();
+extern void open_aoip_ft_ports();
+extern void open_aoip_ft_port_for_call(S32 call_id);
+extern void open_pater_ft_port_for_call(S32 call_id);
+extern void read_ports(FILE *);
+extern void read_config(FILE *);
+extern void get_call_info(FILE *,S32);
+extern void initialize_ft(void);
+extern U8 validate_params(U32 packet_type);
+extern U8 pater_send_packets(void);
+extern U8 send_pkt_single_group(U16 call_index);
+extern U8 send_pkt_multi_group(U16 call_index);
+extern U8 aoip_send_packets(void);
+extern void get_packet_info(FILE *fp, S32 packet_indx_start, S32 packet_indx_end);
+extern void listen_challenger_port(U32 packet_type);
+extern void print_rtpc_packet(U8 *p,S32 length);
+extern void print_rtp_packet(U8 *p,S32 length);
+extern void display_counters();
+extern void validate_packet(S32 call_indx, U8 *buffer, S32 len, S32 ft_type, U16 seq_no);
+extern void validate_packet_sequence_number(S32 call_indx, U8 *buffer, S32 len, S32 ft_type, U16 seq_no);
+extern void validate_packet_contents(S32 call_indx, U8 *buffer, S32 len, S32 ft_type, U16 seq_no);
+extern S32 check_string(S8 *str);
+
+extern U8 send_rtp_packet(S32 length , S32 call_index, S32 packet_index);
+extern U8 send_rtpc_packet(S32 length , S32 call_index, U8 hscsd_indx, S32 packet_index);
+
+extern void hexdump_payload(U8 **p,S32 length);
+extern void send_ping_message(S32 ft_type);
+extern void fill_payload(U8* pdata, S8 *str,U16 *len);
+
+extern void *pater_recv_routine();
+extern void *aoip_recv_routine();
+extern void *pater_send_routine();
+extern void *aoip_send_routine();
+
+extern variable_str var;
+extern U8 log_flag;
+extern call_info_t call_info[MAX_NUM_CALLS + 1];
+extern packet_t packet_info[MAX_RTP_PACKETS];
+
+

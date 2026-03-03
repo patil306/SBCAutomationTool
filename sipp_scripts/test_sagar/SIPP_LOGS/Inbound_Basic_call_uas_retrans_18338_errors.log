@@ -1,0 +1,63 @@
+sipp: The following events occured:
+2017-05-16	17:30:31:997	1494936031.997247: Aborting call on unexpected message for Call-Id '93fec67d29e8ac293e05c922181a1b48': while expecting 'ACK' (index 8), received 'SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4070@10.133.73.52:5060;tag=x0hxzrih-CC-148
+CSeq: 1 INVITE
+Call-ID: 93fec67d29e8ac293e05c922181a1b48
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-18338-1-7
+Content-Length: 0
+
+'.
+2017-05-16	17:30:32:000	1494936032.000637: Dead call 93fec67d29e8ac293e05c922181a1b48 (aborted at index 8), received 'ACK sip:4071@10.133.39.159:5060;transport=tcp SIP/2.0
+From: sip:4070@sbcdev4.com;tag=x0hxzrih-CC-148
+To: sip:4071@192.168.6.221:5060;tag=1
+CSeq: 1 ACK
+Call-ID: 93fec67d29e8ac293e05c922181a1b48
+Contact: sip:4070@10.133.73.52:5060;transport=tcp;transport=TCP
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.52:5060;branch=z9hG4bK-s1632-002104090416-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-18347-1-4
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2017-05-16	17:30:32:318	1494936032.318194: Dead call 93fec67d29e8ac293e05c922181a1b48 (aborted at index 8), received 'SIP/2.0 500 Server Internal Error
+From: sip:4071@sbcdev4.com;tag=1
+To: sip:4070@10.133.73.52:5060;tag=x0hxzrih-CC-148
+CSeq: 1 INVITE
+Call-ID: 93fec67d29e8ac293e05c922181a1b48
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-18338-1-7
+Content-Length: 0
+
+'.
+2017-05-16	17:30:42:100	1494936042.100779: Aborting call on unexpected message for Call-Id 'a880a8790b12a45ade422844b633916c': while expecting 'ACK' (index 8), received 'SIP/2.0 100 Trying
+From: sip:4071@sbcdev4.com;tag=2
+To: sip:4070@10.133.73.52:5060;tag=x0hxzrih-CC-148
+CSeq: 1 INVITE
+Call-ID: a880a8790b12a45ade422844b633916c
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-18338-2-7
+Content-Length: 0
+
+'.
+2017-05-16	17:30:42:104	1494936042.104390: Dead call a880a8790b12a45ade422844b633916c (aborted at index 8), received 'ACK sip:4071@10.133.39.159:5060;transport=tcp SIP/2.0
+From: sip:4070@sbcdev4.com;tag=x0hxzrih-CC-148
+To: sip:4071@192.168.6.221:5060;tag=2
+CSeq: 1 ACK
+Call-ID: a880a8790b12a45ade422844b633916c
+Contact: sip:4070@10.133.73.52:5060;transport=tcp;transport=TCP
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.52:5060;branch=z9hG4bK-s1632-001249276765-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-18350-1-4
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2017-05-16	17:30:42:107	1494936042.107399: Dead call a880a8790b12a45ade422844b633916c (aborted at index 8), received 'SIP/2.0 500 Server Internal Error
+From: sip:4071@sbcdev4.com;tag=2
+To: sip:4070@10.133.73.52:5060;tag=x0hxzrih-CC-148
+CSeq: 1 INVITE
+Call-ID: a880a8790b12a45ade422844b633916c
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-18338-2-7
+Content-Length: 0
+
+'.

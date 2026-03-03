@@ -1,0 +1,319 @@
+sipp: The following events occured:
+2018-01-12	18:42:07:500	1515762727.500443: Aborting call on unexpected message for Call-Id 'f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45': while expecting 'INVITE' (index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=1a4bba2e0f31
+To: <sip:abc@vega.com>
+CSeq: 600 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001269077317-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:12:066	1515762732.066193: Aborting call on unexpected message for Call-Id 'f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0': while expecting 'INVITE' (index 0), received 'OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=e6e2024af5d7
+To: <sip:a@sbcdev4.com>
+CSeq: 527 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1297;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-002118305306-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:12:503	1515762732.503033: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=6c3e843ea779
+To: <sip:abc@vega.com>
+CSeq: 601 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000127785998-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:17:507	1515762737.507285: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=05ce4d1ee5a6
+To: <sip:abc@vega.com>
+CSeq: 602 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001351327196-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:21:066	1515762741.066786: Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 (aborted at index 0), received 'OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=03f6b85f71f1
+To: <sip:a@sbcdev4.com>
+CSeq: 528 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1299;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-000352067860-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:22:514	1515762742.514030: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=4844732a79db
+To: <sip:abc@vega.com>
+CSeq: 603 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000822127542-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:26:285	1515762746.285695: Aborting call on unexpected message for Call-Id 'd031c5486194372d29a5c021d88fa30a8db570c278db9558b56c8a8215183c0': while expecting 'INVITE' (index 0), received 'REGISTER sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=78059502fbdd
+To: <sip:a@sbcdev4.com>
+CSeq: 122 REGISTER
+Call-ID: d031c5486194372d29a5c021d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001684410287-1--s1632-
+Content-Length: 0
+
+'.
+2018-01-12	18:42:27:511	1515762747.511987: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=e743121ceb6b
+To: <sip:abc@vega.com>
+CSeq: 604 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001611335790-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:30:069	1515762750.069800: Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 (aborted at index 0), received 'OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=a06a703b527e
+To: <sip:a@sbcdev4.com>
+CSeq: 529 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1303;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-000911105945-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:32:513	1515762752.513957: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=e7f05e6b8e7a
+To: <sip:abc@vega.com>
+CSeq: 605 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000925195960-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:37:515	1515762757.515419: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=69324e41e022
+To: <sip:abc@vega.com>
+CSeq: 606 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001261485340-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:39:071	1515762759.071064: Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 (aborted at index 0), received 'OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=2f7a9f5be58a
+To: <sip:a@sbcdev4.com>
+CSeq: 530 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1305;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001923679718-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:42:517	1515762762.517060: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=218b7e69c465
+To: <sip:abc@vega.com>
+CSeq: 607 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001094384983-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:47:519	1515762767.519278: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=9f41ae6b1c81
+To: <sip:abc@vega.com>
+CSeq: 608 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001092080674-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:48:071	1515762768.071707: Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 (aborted at index 0), received 'OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=0cb2d628be67
+To: <sip:a@sbcdev4.com>
+CSeq: 531 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1307;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001737973739-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:52:521	1515762772.521325: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=6aa9560b095d
+To: <sip:abc@vega.com>
+CSeq: 609 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001684000818-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:57:074	1515762777.074602: Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 (aborted at index 0), received 'OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=d44c3b757a5b
+To: <sip:a@sbcdev4.com>
+CSeq: 532 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1309;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001426981822-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:42:57:529	1515762777.529636: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=a0d86a44a6c8
+To: <sip:abc@vega.com>
+CSeq: 610 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000561400435-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:43:02:525	1515762782.525942: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=2ba99b588805
+To: <sip:abc@vega.com>
+CSeq: 611 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000392752849-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:43:05:287	1515762785.287266: Aborting call on unexpected message for Call-Id 'd031c5486194372d29a5c021d88fa30a8db570c278db9558b56c8a8215183c0': while expecting 'INVITE' (index 0), received 'REGISTER sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=87ee48111260
+To: <sip:a@sbcdev4.com>
+CSeq: 123 REGISTER
+Call-ID: d031c5486194372d29a5c021d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001388291704-1--s1632-
+Content-Length: 0
+
+'.
+2018-01-12	18:43:06:077	1515762786.077263: Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 (aborted at index 0), received 'OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=6de2fb7e4c02
+To: <sip:a@sbcdev4.com>
+CSeq: 533 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1312;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-002143710018-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:43:07:528	1515762787.528411: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=dfcffb5a92cf
+To: <sip:abc@vega.com>
+CSeq: 612 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000219861410-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:43:12:530	1515762792.530342: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=1d31ca7d1d18
+To: <sip:abc@vega.com>
+CSeq: 613 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001738863669-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:43:15:078	1515762795.078819: Dead call f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0 (aborted at index 0), received 'OPTIONS sip:sbcdev4.com SIP/2.0
+From: <sip:a@sbcdev4.com>;tag=065425207343
+To: <sip:a@sbcdev4.com>
+CSeq: 534 OPTIONS
+Call-ID: f9cb237bb2425b60f7c7a011d88fa30a8db570c278db9558b56c8a8215183c0
+Contact: <sip:a@10.133.73.48:5060;transport=tcp>
+Record-Route: <sip:10.133.73.48:5060;ipcs-line=1315;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.48:5060;branch=z9hG4bK-s1632-001503110125-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:43:17:536	1515762797.536404: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=a11cbc771370
+To: <sip:abc@vega.com>
+CSeq: 614 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-000006373084-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.
+2018-01-12	18:43:22:533	1515762802.533045: Dead call f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45 (aborted at index 0), received 'OPTIONS sip:vega.com:5062 SIP/2.0
+From: <sip:abc@vega.com>;tag=8d1467362e9a
+To: <sip:abc@vega.com>
+CSeq: 615 OPTIONS
+Call-ID: f59bd608ee43707b96a53b212e57d6cb1686c49f07424c070ba238462bd4f45
+Contact: <sip:abc@10.133.39.173:5060;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.39.173:5060;branch=z9hG4bK-s1632-001255548535-1--s1632-
+Accept: application/sdp
+Content-Length: 0
+
+'.

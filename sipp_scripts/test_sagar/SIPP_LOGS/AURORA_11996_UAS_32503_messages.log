@@ -1,0 +1,386 @@
+----------------------------------------------- 2018-07-25 20:43:32:43.252
+TCP message received [800] bytes :
+
+INVITE sip:40006@trk.com SIP/2.0
+From: sip:40005@trk.com;tag=1
+To: sip:40006@trk.com
+CSeq: 1 INVITE
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+Contact: sip:40005@192.168.6.240:5060;transport=tcp;transport=TCP;+av.sip.iptolerance
+Record-Route: <sip:192.168.6.240:5060;ipcs-line=1;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000642498791-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 245
+
+v=0
+o=BroadWorks 268608086 1 IN IP4 trk.com
+s=-
+c=IN IP4 192.168.6.240
+t=0 0
+m=audio 35000 RTP/AVP 18 96
+a=rtpmap:96 telephone-event/8000
+a=maxptime:20
+a=msi:mavodi-0-14d-423-2-ffffffff-@84.241.240.42
+a=rtpmap:18 G729/8000
+a=ptime:20
+
+----------------------------------------------- 2018-07-25 20:43:32:43.817
+TCP message sent (282 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000642498791-1--s1632-
+From: sip:40005@trk.com;tag=1
+To: sip:40006@trk.com
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-25 20:43:32:43.989
+TCP message sent (289 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000642498791-1--s1632-
+From: sip:40005@trk.com;tag=1
+To: sip:40006@trk.com;tag=1
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-25 20:43:32:44.223
+TCP message sent (513 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000642498791-1--s1632-
+From: sip:40005@trk.com;tag=1
+To: sip:40006@trk.com;tag=1
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+CSeq: 1 INVITE
+Contact: <sip:192.168.6.5:5075;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   194
+
+v=0
+o=- 1503558667 2 IN IP4 10.175.59.10
+s=-
+c=IN IP4 10.175.59.14
+b=AS:64
+t=0 0
+m=audio 2224 RTP/AVP 18 96
+a=sendrecv
+a=fmtp:18 annexb=no
+a=rtpmap:96 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-07-25 20:43:32:244.589
+TCP message received [474] bytes :
+
+ACK sip:40006@192.168.6.5:5075;transport=tcp SIP/2.0
+From: sip:40005@trk.com;tag=1
+To: sip:40006@trk.com;tag=1
+CSeq: 1 ACK
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+Contact: sip:40005@192.168.6.240:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.6.240:5060;ipcs-line=1;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000726411028-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-25 20:43:35:245.203
+TCP message sent (657 bytes):
+
+INVITE sip:40005@192.168.6.240:5060 SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-32503-1-6
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+CSeq: 2 INVITE
+Contact: sip:40006@192.168.6.5:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   194
+
+v=0
+o=- 1503558667 3 IN IP4 10.175.59.10
+s=-
+c=IN IP4 10.175.59.14
+b=AS:64
+t=0 0
+m=audio 2224 RTP/AVP 18 96
+a=sendonly
+a=fmtp:18 annexb=no
+a=rtpmap:96 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-07-25 20:43:35:261.038
+TCP message received [235] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-32503-1-6
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-25 20:43:35:334.138
+TCP message received [681] bytes :
+
+SIP/2.0 200 OK
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+Contact: <sip:192.168.6.240:5060;transport=tcp>
+Record-Route: <sip:192.168.6.240:5060;ipcs-line=1;lr;transport=tcp>
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-32503-1-6
+Content-Type: application/sdp
+Content-Length: 278
+
+v=0
+o=BroadWorks 268608086 2 IN IP4 trk.com
+s=-
+c=IN IP4 192.168.6.240
+t=0 0
+m=audio 35000 RTP/AVP 18 96
+a=recvonly
+a=maxptime:20
+a=msi:mavodi-0-14d-423-2-ffffffff-@84.241.240.42
+a=rtpmap:96 telephone-event/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=ptime:20
+
+----------------------------------------------- 2018-07-25 20:43:35:334.492
+TCP message sent (426 bytes):
+
+ACK sip:40005@192.168.6.240:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-32503-1-9
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+CSeq: 2 ACK
+Route: <sip:192.168.6.240:5060;ipcs-line=1;lr;transport=tcp>
+Contact: sip:40006@192.168.6.5:5075;transport=TCP
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-25 20:43:38:335.523
+TCP message sent (646 bytes):
+
+INVITE sip:40005@192.168.6.240:5060 SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-32503-1-11
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+CSeq: 3 INVITE
+Contact: sip:40006@192.168.6.5:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   182
+
+v=0
+o=- 1503558667 4 IN IP4 10.175.59.10
+s=-
+c=IN IP4 10.175.59.14
+b=AS:64
+t=0 0
+m=audio 2224 RTP/AVP 18 96
+a=sendrecv
+a=fmtp:18 annexb=no
+a=rtpmap:96 telephone-event/8000
+
+----------------------------------------------- 2018-07-25 20:43:38:348.924
+TCP message received [236] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+CSeq: 3 INVITE
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-32503-1-11
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-25 20:43:38:425.601
+TCP message received [682] bytes :
+
+SIP/2.0 200 OK
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+CSeq: 3 INVITE
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+Contact: <sip:192.168.6.240:5060;transport=tcp>
+Record-Route: <sip:192.168.6.240:5060;ipcs-line=1;lr;transport=tcp>
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-32503-1-11
+Content-Type: application/sdp
+Content-Length: 278
+
+v=0
+o=BroadWorks 268608086 3 IN IP4 trk.com
+s=-
+c=IN IP4 192.168.6.240
+t=0 0
+m=audio 35000 RTP/AVP 18 96
+a=sendrecv
+a=maxptime:20
+a=msi:mavodi-0-14d-423-2-ffffffff-@84.241.240.42
+a=rtpmap:96 telephone-event/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=ptime:20
+
+----------------------------------------------- 2018-07-25 20:43:38:425.856
+TCP message sent (427 bytes):
+
+ACK sip:40005@192.168.6.240:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-32503-1-14
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+CSeq: 3 ACK
+Route: <sip:192.168.6.240:5060;ipcs-line=1;lr;transport=tcp>
+Contact: sip:40006@192.168.6.5:5075;transport=TCP
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-25 20:43:41:428.252
+TCP message sent (687 bytes):
+
+INVITE sip:40005@192.168.6.240:5060 SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-32503-1-16
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+CSeq: 4 INVITE
+Contact: sip:40006@192.168.6.5:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   223
+
+v=0
+o=- 1503558667 5 IN IP4 10.175.59.10
+s=-
+c=IN IP4 10.175.59.23
+b=AS:64
+t=0 0
+m=audio 2186 RTP/AVP 18 101
+a=sendrecv
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+a=silencesupp:off - - - -
+
+----------------------------------------------- 2018-07-25 20:43:41:441.287
+TCP message received [236] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+CSeq: 4 INVITE
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-32503-1-16
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-25 20:43:41:496.726
+TCP message received [684] bytes :
+
+SIP/2.0 200 OK
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+CSeq: 4 INVITE
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+Contact: <sip:192.168.6.240:5060;transport=tcp>
+Record-Route: <sip:192.168.6.240:5060;ipcs-line=1;lr;transport=tcp>
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-32503-1-16
+Content-Type: application/sdp
+Content-Length: 280
+
+v=0
+o=BroadWorks 268608086 4 IN IP4 trk.com
+s=-
+c=IN IP4 192.168.6.240
+t=0 0
+m=audio 35000 RTP/AVP 18 101
+a=sendrecv
+a=maxptime:20
+a=msi:mavodi-0-14d-423-2-ffffffff-@84.241.240.42
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-07-25 20:43:41:496.961
+TCP message sent (427 bytes):
+
+ACK sip:40005@192.168.6.240:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-32503-1-19
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.240:5060;tag=1
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+CSeq: 4 ACK
+Route: <sip:192.168.6.240:5060;ipcs-line=1;lr;transport=tcp>
+Contact: sip:40006@192.168.6.5:5075;transport=TCP
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-25 20:43:49:519.172
+TCP message received [477] bytes :
+
+BYE sip:192.168.6.5:5075;transport=tcp SIP/2.0
+From: sip:40005@192.168.6.240:5060;tag=1
+To: sip:40006@192.168.6.5;tag=1
+CSeq: 2 BYE
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+Contact: sip:192.168.6.240:5060;transport=tcp;transport=TCP
+Record-Route: <sip:192.168.6.240:5060;ipcs-line=1;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000513828111-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-25 20:43:49:519.431
+TCP message sent (296 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.6.240:5060;branch=z9hG4bK-s1632-000513828111-1--s1632-
+From: sip:40005@192.168.6.240:5060;tag=1
+To: sip:40006@192.168.6.5;tag=1
+Call-ID: c85bdf01a2fd26151da7a57b46245e5c
+CSeq: 2 BYE
+Contact: <sip:192.168.6.5:5060;transport=TCP>
+Content-Length: 0
+
+

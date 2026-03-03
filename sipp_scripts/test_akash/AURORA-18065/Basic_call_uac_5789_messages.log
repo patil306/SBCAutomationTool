@@ -1,0 +1,61 @@
+----------------------------------------------- 2021-03-18 13:41:34:826.460
+UDP message sent (677 bytes):
+
+INVITE sip:abaab.com@crash.sbct4.com SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6041;branch=z9hG4bK-19849-1-0
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@test2.com:5060
+Call-ID: 1-5789@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:reddy1@10.133.39.159:6041
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   244
+
+v=0
+o=- 1509186683 1 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 41532 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2021-03-18 13:41:34:853.053
+UDP message received [215] bytes :
+
+SIP/2.0 100 Trying
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@test2.com:5060
+CSeq: 1 INVITE
+Call-ID: 1-5789@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:6041;branch=z9hG4bK-19849-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2021-03-18 13:41:34:853.366
+UDP message sent (487 bytes):
+
+CANCEL sip:abaab.com@test2.com;transport=UDP SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:6041;branch=z9hG4bK-19849-1-0
+From: sip:reddy1@test2.com;tag=1
+To: sip:reddy2@10.133.48.87:5060
+Call-ID: 1-5789@10.133.39.159
+CSeq: 1 CANCEL
+Contact: sip:reddy1@10.133.39.159:6041
+Supported: 100rel,sdp-anat
+Max-Forwards: 70
+Subject: Performance Test
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Content-Type: application/sdp
+Content-Length:     0
+
+

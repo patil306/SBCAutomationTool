@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>\
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic UAS responder">
+
+
+  <send retrans="500">
+    <![CDATA[
+      INVITE sip:[field1]@[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: "TOSIF"<sip:4008@[field2]>;tag=[call_number]
+      To: <sip:[field0]@[remote_ip]:[remote_port]>
+      Call-ID: [call_id]
+      CSeq: 2 INVITE
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      Supported: replaces
+      REQUIRE: replaces
+      REFERRED-BY: <sip:+49691532218047@sip.pstnhub.microsoft.com:5061;user=phone>
+      REPLACES: 8523166148cb9642b1a6362a6b986d59;from-tag=1;to-tag=1
+      Max-Forwards: 70
+      Subject: Performance Test
+      User-to-User: 00FA080001001056965CFB;encoding=hex
+      Content-Type: application/sdp
+      Content-Length: [len]
+
+      v=0
+      o=- 1509186684 1 IN IP4 [local_ip]
+      s=-
+      c=IN IP4 192.168.55.78
+      b=TIAS:64000
+      t=0 0
+      a=avf:avc=n prio=n
+      a=csup:avf-v0
+      m=audio 41532 RTP/AVP 0 101
+      a=rtpmap:0 PCMU/8000
+      a=rtpmap:101 telephone-event/8000
+      a=fmtp:101 0-15
+      a=ptime:20
+      a=sendrecv
+    ]]>
+  </send>
+
+  <recv response="100" optional="true">
+  </recv>
+
+<recv response="200" rrs="true">
+ </recv>
+<!-- Packet lost can be simulated in any send/recv message by         -->
+<!-- by adding the 'lost = "10"'. Value can be [1-100] percent.       -->
+<!-- ACK sip:[service]@[remote_ip]:[remote_port] SIP/2.0 -->
+
+
+<recv request="BYE" crlf="true"/>
+
+<send>
+<![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+
+</scenario>

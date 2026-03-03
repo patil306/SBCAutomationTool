@@ -1,0 +1,256 @@
+sipp: The following events occured:
+2018-10-15	16:01:37:626	1539599497.626315: Aborting call on unexpected message for Call-Id '3b5b602c1c71ae0df629c85147b61c73': while expecting 'BYE' (index 6), received 'ACK sip:81001001@192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 1 ACK
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001375561243-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:01:41:632	1539599501.632124: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'ACK sip:81001001@192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 1 ACK
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-000608767869-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:01:44:119	1539599504.119852: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'BYE sip:192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 2 BYE
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001111222691-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:01:44:621	1539599504.621651: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'BYE sip:192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 2 BYE
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001111222691-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:01:45:622	1539599505.622657: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'BYE sip:192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 2 BYE
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001111222691-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:01:45:632	1539599505.632040: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'ACK sip:81001001@192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 1 ACK
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001803689448-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:01:47:623	1539599507.623844: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'BYE sip:192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 2 BYE
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001111222691-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:01:49:634	1539599509.634725: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'ACK sip:81001001@192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 1 ACK
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-000843992043-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:01:51:625	1539599511.625029: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'BYE sip:192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 2 BYE
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001111222691-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:01:53:637	1539599513.637029: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'ACK sip:81001001@192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 1 ACK
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-000262020600-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:01:55:626	1539599515.626622: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'BYE sip:192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 2 BYE
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001111222691-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:01:57:639	1539599517.639782: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'ACK sip:81001001@192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 1 ACK
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001566932606-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:01:59:628	1539599519.628879: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'BYE sip:192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 2 BYE
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001111222691-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:02:03:630	1539599523.630715: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'BYE sip:192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 2 BYE
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001111222691-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:02:07:631	1539599527.631458: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'BYE sip:192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 2 BYE
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001111222691-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:02:11:633	1539599531.633653: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'BYE sip:192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 2 BYE
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001111222691-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.
+2018-10-15	16:02:15:635	1539599535.635001: Dead call 3b5b602c1c71ae0df629c85147b61c73 (aborted at index 6), received 'BYE sip:192.168.6.5:5075;transport=udp SIP/2.0
+From: sip:81002001@192.168.6.43:5060;tag=1
+To: <sip:Agent@192.168.6.5:5075;transport=UDP>;tag=1
+CSeq: 2 BYE
+Call-ID: 3b5b602c1c71ae0df629c85147b61c73
+Contact: <sip:81002001@192.168.6.43:5060;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=1;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.6.43:5060;branch=z9hG4bK-s1632-001111222691-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.

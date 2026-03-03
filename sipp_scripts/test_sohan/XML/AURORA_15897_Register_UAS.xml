@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic UAS responder">
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<recv request="REGISTER" crlf="true">
+</recv>
+  
+<!-- The '[last_*]' keyword is replaced automatically by the          -->
+<!-- specified header if it was present in the last message received  -->
+<!-- (except if it was a retransmission). If the header was not       -->
+<!-- present or if no message has been received, the '[last_*]'       -->
+<!-- keyword is discarded, and all bytes until the end of the line    -->
+<!-- are also discarded.                                              -->
+<!--                                                                  -->
+<!-- If the specified header was present several times in the         -->
+<!-- message, all occurences are concatenated (CRLF seperated)        -->
+<!-- to be used in place of the '[last_*]' keyword.                   -->
+
+  <send>
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=2
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: <sip:7181990053@10.4.3.170:5060;transport=tcp;avaya-sc-enabled;subid_ipcs=3311101480>;expires=3068;q=1.0;reg-id=1;+sip.instance="<urn:uuid:00000000-0000-1000-8000-c81fea891fce>";+avaya.model="J179";+avaya.js-ver="1.0";+av.sdp.anat;+av.sip.media="4";+avaya.gmtoffset="-08:00";+av.sip.sig="4";+avaya.firmware="4.0.0.0.21";+avaya.sn="18WZ40400524";+av.ip.mode="4";avaya-actions="presence.initiate-pubsub,presence.redirect", <sip:7181990053@10.4.3.170;transport=tcp;subid_ipcs=2829272988>;ex
+      pires=1891;q=0.0;reg-id=1;+sip.instance="<urn:uuid:d2336786-cc37-3710-ee15-6984a96f699e>";+avaya.model="n/a";+avaya.js-ver="1.0";+avaya.gmtoffset="0:00";+avaya.firmware="n/a";+avaya.sn="n/a"
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+</scenario>

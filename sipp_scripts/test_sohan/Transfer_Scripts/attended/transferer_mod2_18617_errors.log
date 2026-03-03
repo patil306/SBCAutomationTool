@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2018-01-12	18:08:31:500	1515760711.500964: Aborting call on unexpected message for Call-Id '9d8621162994e80938f286278461cd2c': while expecting '200' (index 7), received 'SIP/2.0 503 Service Unavailable
+From: sip:81001001@sbcdev4.com;tag=1
+To: sip:81002001@10.133.73.4:5060;tag=1
+CSeq: 2 INVITE
+Call-ID: 9d8621162994e80938f286278461cd2c
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=3;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-18617-1-5
+Content-Length: 0
+
+'.

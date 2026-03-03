@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+<!--      User-to-User: 00FA080001001056965CFB;encoding=hex -->
+
+<scenario name="Basic Sipstone UAC">
+
+<send>
+<![CDATA[
+REGISTER sip:[remote_ip] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: <sip:[field0]@[field1]>;tag=[call_number]
+To: <sip:[field0]@[field1]>
+Call-ID: [call_id]
+CSeq: 1 REGISTER
+Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+Max-Forwards: 70
+Expires: 1800
+User-Agent: SIPp/Linux
+Content-Length: 0
+
+]]>
+</send>
+<pause milliseconds="90" crlf="true" />
+
+<send>
+<![CDATA[
+REGISTER sip:[remote_ip] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: <sip:reddy3@reddy4>;tag=[call_number]
+To: <sip:reddy3@reddy4>
+Call-ID: [call_id]
+CSeq: 2 REGISTER
+Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+Max-Forwards: 70
+Expires: 1800
+User-Agent: SIPp/Linux
+Content-Length: 0
+
+]]>
+</send>
+<pause milliseconds="90" crlf="true" />
+
+<send>
+<![CDATA[
+REGISTER sip:[remote_ip] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: <sip:reddy5@reddy6>;tag=[call_number]
+To: <sip:reddy5@reddy6>
+Call-ID: [call_id]
+CSeq: 3 REGISTER
+Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+Max-Forwards: 70
+Expires: 1800
+User-Agent: SIPp/Linux
+Content-Length: 0
+
+]]>
+</send>
+
+<pause milliseconds="90" crlf="true" />
+<send>
+<![CDATA[
+REGISTER sip:[remote_ip] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: <sip:reddy7@reddy8>;tag=[call_number]
+To: <sip:reddy7@reddy8>
+Call-ID: [call_id]
+CSeq: 4 REGISTER
+Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+Max-Forwards: 70
+Expires: 1800
+User-Agent: SIPp/Linux
+Content-Length: 0
+
+]]>
+</send>
+
+<pause milliseconds="90" crlf="true" />
+<send>
+<![CDATA[
+REGISTER sip:[remote_ip] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: <sip:reddy9@reddy10>;tag=[call_number]
+To: <sip:reddy9@reddy10>
+Call-ID: [call_id]
+CSeq: 5 REGISTER
+Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+Max-Forwards: 70
+Expires: 1800
+User-Agent: SIPp/Linux
+Content-Length: 0
+
+]]>
+</send>
+
+<pause milliseconds="90" crlf="true" />
+<send>
+<![CDATA[
+REGISTER sip:[remote_ip] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: <sip:reddy11@reddy12>;tag=[call_number]
+To: <sip:reddy11@reddy12>
+Call-ID: [call_id]
+CSeq: 6 REGISTER
+Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+Max-Forwards: 70
+Expires: 1800
+User-Agent: SIPp/Linux
+Content-Length: 0
+
+]]>
+</send>
+<!--
+<recv response="100" optional="true">
+</recv>
+
+<send>
+<![CDATA[
+REGISTER sip:[remote_ip] SIP/2.0
+Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+From: <sip:[field0]@[field1]>;tag=[call_number]
+To: <sip:[field0]@[field1]>
+Call-ID: [call_id]
+CSeq: 7 REGISTER
+Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+Max-Forwards: 70
+Expires: 1800
+User-Agent: SIPp/Linux
+Content-Length: 0
+
+]]>
+</send>
+
+<recv response="100" optional="true">
+</recv>
+-->
+</scenario>
+

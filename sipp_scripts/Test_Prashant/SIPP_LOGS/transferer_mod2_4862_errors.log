@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2018-07-19	18:32:54:402	1532005374.402138: Aborting call on unexpected message for Call-Id 'bc6d9f61e122a15d10a45e72e559ab3b': while expecting '202' (index 9), received 'SIP/2.0 408 Request Timeout
+From: sip:81001001@10.133.39.159:5082;tag=1
+To: sip:81002001@10.133.39.197:17325;tag=1
+CSeq: 1 REFER
+Call-ID: bc6d9f61e122a15d10a45e72e559ab3b
+Record-Route: <sip:10.133.39.197:5060;ipcs-line=4;lr;transport=tcp>
+Via: SIP/2.0/TCP 10.133.39.159:5082;branch=z9hG4bK-4862-1-8
+Content-Length: 0
+
+'.

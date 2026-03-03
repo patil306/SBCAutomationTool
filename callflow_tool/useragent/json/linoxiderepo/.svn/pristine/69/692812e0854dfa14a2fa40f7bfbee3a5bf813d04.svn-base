@@ -1,0 +1,91 @@
+from sipconstants import CRLF, SipHeaders, SipRespCodeMap
+from sipmessage import SipMessage
+from uasession import UASession
+import parserandbuilder
+import invite
+import prack
+import update
+import refer
+import bye
+import copy
+
+def sendSuccessResponse(uaSession:UASession, respcode, method):
+    if respcode == '200':
+        print("**** respcode is 200 and method is ",method)
+        if method == "INVITE":
+            return invite.send200InvResp(uaSession)
+        elif method == "PRACK":
+            return prack.send200Prack(uaSession)
+        elif method == "UPDATE":
+            return update.send200OkUpdate(uaSession)
+        elif method == "NOTIFY":
+            return refer.send200Notify(uaSession)
+        elif method == "BYE":
+            print("*** sending 200OK BYE")
+            return bye.send200Bye(uaSession)
+    else:
+        pass
+        
+def sendErrorResponse(uaSession:UASession, respcode, method):
+    last_msg = uaSession.getMsgObj(method)
+    error_msg = copy.deepcopy(last_msg)
+    respText = SipRespCodeMap.get(respcode)
+    resp_line = f'SIP/2.0 {respcode} {respText}'
+    error_msg.setResponseLine(resp_line)
+    content_len = 0
+    error_msg.replaceHeader(SipHeaders.CONTENTLENGTH.value, content_len)
+    return error_msg
+
+        
+def sendResponse(uaSession:UASession, respcode, method):
+    print("**** In SendResponse")
+    if respcode in ['200', '202']:
+        return sendSuccessResponse(uaSession,respcode,method)
+    elif str(respcode).startswith('4') or str(respcode).startswith('5'):
+        return sendErrorResponse(uaSession,respcode,method)
+
+def recvFinalResponse(uaSession:UASession, raw_msg, resp_code) -> SipMessage:
+    sig_msg = raw_msg.split(CRLF+CRLF)[0]
+    sig_hdrs = sig_msg.split(CRLF)
+    method = ""
+    for hdr in sig_hdrs:
+        if hdr.startswith('CSeq:'):
+            method = hdr.split(' ')[-1]
+    if resp_code == '200':
+        return recv200Response(uaSession, raw_msg, method)
+    elif resp_code == '202':
+        pass
+    elif resp_code in ['301', '302']:
+        pass
+    else:
+        return recvErrorResponse(uaSession, raw_msg)
+        
+def recv200Response(uaSession:UASession, raw_msg, method):    
+    if  method == "INVITE":
+        return invite.recv200Invite(uaSession, raw_msg)
+    elif method == "PRACK":
+        return prack.recv200Prack(uaSession, raw_msg)
+    elif method == "UPDATE":
+        return update.recv200Update(uaSession, raw_msg)
+    elif method == "BYE":
+        return bye.recv200Bye(uaSession, raw_msg)
+
+def recvErrorResponse(uaSession, raw_msg):
+    raw_msg = raw_msg.split(CRLF+CRLF)
+    sip_hdrs = raw_msg[0]    
+    recv_errResp = parserandbuilder.parseHeaders(sip_hdrs)    
+    uaSession.setRemoteTarget(recv_errResp.getHeader(SipHeaders.CONTACT.value))
+    # uaSession.setRemoteTag(recv_errResp.getToTag())
+    uaSession.setToHeader(recv_errResp.getHeader(SipHeaders.TO.value))
+    uaSession.setRouteSet(recv_errResp.getRecordRoutes(True))
+    return recv_errResp
+
+def build481Response(msg:SipMessage):
+    resp_481 = copy.deepcopy(msg)
+    resp_481.setResponseLine(f'SIP/2.0 481 Call Leg/Transaction Does Not Exist')
+    resp_481.replaceHeader(SipHeaders.CONTENTLENGTH.value,0)
+    resp_481.removeHeader(SipHeaders.CONTACT.value)
+    
+    return resp_481
+    
+    

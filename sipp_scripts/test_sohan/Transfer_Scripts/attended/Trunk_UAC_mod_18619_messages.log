@@ -1,0 +1,82 @@
+----------------------------------------------- 2018-01-12 18:07:54:434.700
+TCP message sent (752 bytes):
+
+INVITE sip:81001001@sbcdev4.com SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-18619-1-0
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@192.168.6.223:5060
+Call-ID: 1-18619@192.168.6.5
+CSeq: 1 INVITE
+Contact: <sip:81002001@192.168.6.5:5060;transport=TCP>
+Route: <sip:10.133.39.159:5060;transport=tcp>
+Supported: replaces, timer
+Max-Forwards: 70
+Min-SE: 90
+Session-Expires: 1800;refresher=uac
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   198
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.5
+s=-
+c=IN IP4 192.168.6.5
+t=0 0
+m=audio 6000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2018-01-12 18:07:54:457.643
+TCP message received [222] bytes :
+
+SIP/2.0 100 Trying
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@192.168.6.223:5060
+CSeq: 1 INVITE
+Call-ID: 1-18619@192.168.6.5
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-18619-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-01-12 18:07:54:471.979
+TCP message received [538] bytes :
+
+SIP/2.0 200 OK
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@192.168.6.223:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-18619@192.168.6.5
+Contact: <sip:192.168.6.223:5060;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=3;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-18619-1-0
+Content-Type: application/sdp
+Content-Length: 128
+
+v=0
+o=user1 53655765 2353687637 IN IP4 sbcdev4.com
+s=-
+c=IN IP4 192.168.6.223
+t=0 0
+m=audio 35000 RTP/AVP 0 8
+a=ptime:10
+
+----------------------------------------------- 2018-01-12 18:07:54:472.177
+TCP message sent (413 bytes):
+
+ACK sip:81001001@192.168.6.223:5060 SIP/2.0
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-18619-1-4
+From: sip:81002001@sbcdev4.com;tag=1
+To: sip:81001001@192.168.6.223:5060;tag=1
+Call-ID: 1-18619@192.168.6.5
+CSeq: 1 ACK
+Contact: <sip:81002001@192.168.6.5:5060;transport=TCP>
+Max-Forwards: 70
+Route: <sip:192.168.6.223:5060;ipcs-line=3;lr;transport=tcp>
+Subject: Performance Test
+Content-Length: 0
+
+

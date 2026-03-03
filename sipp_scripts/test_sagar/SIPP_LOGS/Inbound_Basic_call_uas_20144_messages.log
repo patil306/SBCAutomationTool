@@ -1,0 +1,132 @@
+----------------------------------------------- 2017-07-28 15:52:35:546.308
+TCP message received [1433] bytes :
+
+INVITE sip:4073@sbcdev4.com SIP/2.0
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060
+CSeq: 1 INVITE
+Call-ID: edd9a118af5fcd4b6b2e6633ded5851b
+Contact: sip:4072@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=3;lr;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=3;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001468578180-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-20147-1-0
+Subject: Performance Test
+Call-Info: <sip:7773503@10.10.107.35;token=1256;gsid=ac1e11a0-0f0e-11e7-ade0-000c29e8fe38>;purpose=isfocus;gsid=AC21BB2F0F0E11E7B490517EE20C303F, <sip:7773503@10.10.107.35>;purpose=ccmp, <http://tryeqnx-confms.avayadxbdemo.ae:80/viewer.php?token=AC247A500F0E11E7B490517EE20C303F&participantId=AC21BB2F0F0E11E7B490517EE20C303F&meeting_id=1256&mode=JOIN&login=73505@10.10.107.35>;purpose=application, <https://tryeqnx-conf.avayadxbdemo.ae:443/uwd/ws?ticket=AC21BB2F0F0E11E7B490517EE20C303F>;purpose=UCCP
+Remote-Address: MTkyLjE2OC42LjU6NjAwMToxOjE=
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 211
+
+v=0
+o=user1 53655765 2353687637 IN IP4 192.168.6.5
+s=-
+c=IN IP4 10.133.73.4
+t=0 0
+m=audio 35000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2017-07-28 15:52:35:546.683
+TCP message sent (350 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001468578180-1--s1632-, SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-20147-1-0
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060
+Call-ID: edd9a118af5fcd4b6b2e6633ded5851b
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2017-07-28 15:52:35:546.841
+TCP message sent (357 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001468578180-1--s1632-, SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-20147-1-0
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060;tag=1
+Call-ID: edd9a118af5fcd4b6b2e6633ded5851b
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2017-07-28 15:52:35:547.010
+TCP message sent (534 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001468578180-1--s1632-, SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-20147-1-0
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060;tag=1
+Call-ID: edd9a118af5fcd4b6b2e6633ded5851b
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   147
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+ptime=20
+
+----------------------------------------------- 2017-07-28 15:52:35:558.948
+TCP message received [610] bytes :
+
+ACK sip:4073@10.133.39.159:5060;transport=tcp SIP/2.0
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060;tag=1
+CSeq: 1 ACK
+Call-ID: edd9a118af5fcd4b6b2e6633ded5851b
+Contact: sip:4072@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=3;lr;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=3;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000772023382-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-20147-1-4
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2017-07-28 15:52:43:562.458
+TCP message received [605] bytes :
+
+BYE sip:10.133.39.159:5060;transport=tcp SIP/2.0
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060;tag=1
+CSeq: 2 BYE
+Call-ID: edd9a118af5fcd4b6b2e6633ded5851b
+Contact: sip:4072@10.133.73.4:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=3;lr;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=3;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001385851624-1--s1632-
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-20147-1-6
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2017-07-28 15:52:43:562.711
+TCP message sent (349 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001385851624-1--s1632-, SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-20147-1-6
+From: sip:4072@sbcdev4.com;tag=1
+To: sip:4073@192.168.6.223:5060;tag=1
+Call-ID: edd9a118af5fcd4b6b2e6633ded5851b
+CSeq: 2 BYE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+

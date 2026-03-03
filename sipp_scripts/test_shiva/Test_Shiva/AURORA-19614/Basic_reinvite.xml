@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--      Sipp default 'uac' scenario.   -->
+<!--      User-to-User: 00FA080001001056965CFB;encoding=hex -->
+
+<scenario name="Basic Sipstone UAC">
+
+  <send>
+    <![CDATA[
+      INVITE sip:[field1]@[field3] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port]
+      Call-ID: [call_id]
+      CSeq: 1 INVITE
+      Contact: sip:[field0]@[local_ip]:[local_port];transport=[transport]
+      Supported: timer
+      Max-Forwards: 70
+      Subject: Performance Test
+      Authorization: Digest username="9075622277",realm="private-trunk.acsalaska.net",nonce="ec48b3525050",response="ec9ca162ed6fb7bd1b3c20f82f1cdd88",uri="sip:18002662278@private-trunk.acsalaska.net",algorithm=MD5,qop=auth,nc=00000002,cnonce="e5220aa0216af5a12e8d"
+      User-to-User: 00FA080001001056965CFB;encoding=hex
+      P-Asserted-Identity: "9075622277" <sip:9075622277@192.168.20.230:5060>
+      Content-Type: application/sdp
+      Content-Length: [len]
+      
+      v=0
+      o=- 1509186683 1 IN IP4 [local_ip]
+      s=-
+      c=IN IP4 [local_ip]
+      b=TIAS:64000
+      t=0 0
+      a=avf:avc=n prio=n
+      a=csup:avf-v0
+      m=audio 41532 RTP/AVP 8 101
+      a=rtpmap:8 PCMA/8000
+      a=rtpmap:101 telephone-event/8000
+      a=fmtp:101 0-15
+      a=ptime:20
+    ]]>
+  </send>
+
+  <recv response="100" optional="true">
+  </recv>
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<recv response="401" rrs="true"> 
+</recv> 
+<!-- Packet lost can be simulated in any send/recv message by         -->
+<!-- by adding the 'lost = "10"'. Value can be [1-100] percent.       -->
+<!-- ACK sip:[service]@[remote_ip]:[remote_port] SIP/2.0 -->
+
+  <send>
+    <![CDATA[
+      ACK sip:[field1]@[remote_ip]:[remote_port];transport=UDP SIP/2.0
+      [last_Via:]
+      From: sip:[field0]@[field2];tag=1
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 1 ACK
+      Contact: sip:[field0]@[local_ip]:[local_port];transport=[transport]
+      Max-Forwards: 70
+      [routes]
+      Authorization: Digest username="9075622277",realm="private-trunk.acsalaska.net",nonce="ec48b3525050",response="8305b8bdc6190fa2a6353586230cb010",uri="sip:18002662278@private-trunk.acsalaska.net",algorithm=MD5,qop=auth,nc=00000003,cnonce="7fb0b9a9e8a4b768af5a"
+      Subject: Performance Test
+      Content-Length: 0
+     ]]>
+  </send>
+ 
+<!-- This delay can be customized by the -d command-line option       -->
+<!-- or by adding a 'milliseconds = "value"' option here.             -->
+
+<!-- The 'crlf' option inserts a blank line in the statistics report. -->
+<!-- BYE sip:[service]@[remote_ip]:[remote_port] SIP/2.0 -->
+<!-- original: BYE sip:[field1]@[remote_ip]:[remote_port];transport=TCP SIP/2.0  -->
+<!-- original: Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP -->
+
+  <send>
+    <![CDATA[
+      INVITE sip:[field1]@[field3] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port]
+      Call-ID: [call_id]
+      CSeq: 2 INVITE
+      Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP
+      Supported: replaces
+      Max-Forwards: 70
+      Subject: Performance Test
+      User-to-User: 00FA080001001056965CFB;encoding=hex
+      Content-Type: application/sdp
+      Content-Length: [len]
+
+      v=0
+      o=- 1509186683 1 IN IP4 [local_ip]
+      s=-
+      c=IN IP4 [local_ip]
+      b=TIAS:64000
+      t=0 0
+      a=avf:avc=n prio=n
+      a=csup:avf-v0
+      m=audio 41532 RTP/AVP 8 101
+      a=rtpmap:8 PCMA/8000
+      a=rtpmap:101 telephone-event/8000
+      a=fmtp:101 0-15
+      a=ptime:20
+    ]]>
+  </send>
+
+ <recv response="100" optional="true">
+  </recv>
+
+  <recv response="180" optional="true">
+  </recv>
+
+<!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+<!-- are saved and used for following messages sent. Useful to test   -->
+<!-- against stateful SIP proxies/B2BUAs.                             -->
+
+<recv response="200" rrs="true"> 
+</recv>
+<!-- Packet lost can be simulated in any send/recv message by         -->
+<!-- by adding the 'lost = "10"'. Value can be [1-100] percent.       -->
+<!-- ACK sip:[service]@[remote_ip]:[remote_port] SIP/2.0 -->
+
+  <send>
+    <![CDATA[
+      ACK sip:[field1]@[remote_ip]:[remote_port];transport=TCP SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 2 ACK
+      Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP
+      Max-Forwards: 70
+      [routes]
+      Subject: Performance Test
+      Content-Length: 0
+     ]]>
+  </send>
+
+<pause milliseconds="10000"/>
+<send>
+  <![CDATA[  
+  INVITE sip:[service]@[remote_ip]:[remote_port] SIP/2.0
+  Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+  From: sip:[field0]@[field2];tag=[call_number]
+  To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+  P-Asserted-Identity: <sip:1234567@[local_ip];user=phone>
+  Call-ID: [call_id]
+  Supported: timer 
+  CSeq: 3 INVITE
+  Contact: sip:reddy1@10.133.39.159:6012;transport=UDP 
+  Content-Type: application/sdp
+  Content-Length: [len]
+  
+  v=0
+  o=- 1509186683 1 IN IP4 [local_ip]
+  s=-
+  t=0 0
+  c=IN IP[media_ip_type] [media_ip]
+  m=audio [media_port] RTP/AVP 0
+  a=rtpmap:0 PCMU/8000
+  ]]>
+ </send>
+ 
+  <recv response="100" rtd="true">
+  </recv>
+  <recv response="200" rrs="true">
+        <action>
+                   <ereg regexp="sip.*[^>]" search_in="hdr" header="Contact:" assign_to="1"/>
+                           </action>
+                           </recv>
+ 
+
+  <send>
+    <![CDATA[
+      ACK sip:[field1]@[remote_ip]:[remote_port];transport=TCP SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 3 ACK
+      Contact: sip:[field0]@[local_ip]:[local_port];transport=TCP
+      Max-Forwards: 70
+      [routes]
+      Subject: Performance Test
+      Content-Length: 0
+     ]]>
+  </send>
+
+ <send retrans="500">
+    <![CDATA[
+      BYE [$1] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sip:[field0]@[field2];tag=[call_number]
+      To: sip:[field1]@[remote_ip]:[remote_port][peer_tag_param]
+      Call-ID: [call_id]
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      CSeq: 3 BYE
+      [routes]
+      Max-Forwards: 70
+      Subject: Performance Test
+      Content-Length: 0
+   ]]>
+  </send>
+  <recv response="200" rtd="true">
+  </recv>
+
+
+  <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+<!-- definition of the call length repartition table (unit is ms)     -->
+  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+
+</scenario>

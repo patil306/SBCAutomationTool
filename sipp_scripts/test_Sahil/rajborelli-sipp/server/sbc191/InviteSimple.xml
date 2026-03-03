@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!-- This program is free software; you can redistribute it and/or      -->
+<!-- modify it under the terms of the GNU General Public License as     -->
+<!-- published by the Free Software Foundation; either version 2 of the -->
+<!-- License, or (at your option) any later version.                    -->
+<!--                                                                    -->
+<!-- This program is distributed in the hope that it will be useful,    -->
+<!-- but WITHOUT ANY WARRANTY; without even the implied warranty of     -->
+<!-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the      -->
+<!-- GNU General Public License for more details.                       -->
+<!--                                                                    -->
+<!-- You should have received a copy of the GNU General Public License  -->
+<!-- along with this program; if not, write to the                      -->
+<!-- Free Software Foundation, Inc.,                                    -->
+<!-- 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA             -->
+<!--                                                                    -->
+<!--                 Sipp default 'uas' scenario.                       -->
+<!--                                                                    -->
+
+<scenario name="Basic UAS responder">
+  <!-- By adding rrs="true" (Record Route Sets), the route sets         -->
+  <!-- are saved and used for following messages sent. Useful to test   -->
+  <!-- against stateful SIP proxies/B2BUAs.                             -->
+
+  <!-- The '[last_*]' keyword is replaced automatically by the          -->
+  <!-- specified header if it was present in the last message received  -->
+  <!-- (except if it was a retransmission). If the header was not       -->
+  <!-- present or if no message has been received, the '[last_*]'       -->
+  <!-- keyword is discarded, and all bytes until the end of the line    -->
+  <!-- are also discarded.                                              -->
+  <!--                                                                  -->
+  <!-- If the specified header was present several times in the         -->
+  <!-- message, all occurences are concatenated (CRLF seperated)        -->
+  <!-- to be used in place of the '[last_*]' keyword.                   -->
+
+
+  <recv request="REGISTER" rtd="true" crlf="true">
+
+  </recv>
+
+  <send>
+    <![CDATA[
+
+      SIP/2.0 401 Unauthorized
+      WWW-Authenticate: Digest realm="hautelook.local",qop="auth",opaque="1234567890abcedef",nonce="16d6523f8425d0d479e886d8de76a0112f8f452162f",algorithm=MD5,stale=false
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Av-Global-Session-ID: e092d220-df10-11e9-b2b2-0050569b4bef
+      Server: AVAYA-SM-7.0.1.2.701230
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+
+  <recv request="REGISTER" rtd="true" crlf="true">
+
+  </recv>
+
+  <send>
+    <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      [last_Contact:]
+      Feature-Caps: *;+sip.avaya-sips-handling
+      Av-Global-Session-ID: e0c1aa50-df10-11e9-b2b2-0050569b4bef
+      Server: AVAYA-SM-7.0.1.2.701230
+      Date: Tue, 24 Sep 2019 21:18:39 GMT
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+
+  <recv request="SUBSCRIBE" rtd="true" crlf="true">
+  </recv>
+
+  <send>
+    <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      Expires: 3600
+      [last_CSeq:]
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+
+   <pause/>
+
+  <send>
+    <![CDATA[
+
+        NOTIFY sip:[field0]@[field4];transport=[transport];[field3] SIP/2.0
+        Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+        From: <sip:[field0]@[field2]>;tag=[call_number]
+        To: <sip:[field0]@[field2]>;tag=[call_number]
+        Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+        [last_Call-ID:]
+        Subscription-State: active;expires=300
+        Event: avaya-cm-feature-status
+        Content-Type: application/avaya-cm-feature-status+xml
+        CSeq: 1 NOTIFY
+        Content-Length: [len]
+
+        <?xml version="1.0"?>
+        <feature-status entity="sip:pkupgrp_0@[field2]" version="0" state="full"">
+        <feature name="group-call-pickup" status="off">
+        </feature>
+        </feature-status>
+
+    ]]>
+  </send>
+
+  <recv response="200">
+  </recv>
+
+
+  <recv request="SUBSCRIBE" rtd="true" crlf="true">
+  </recv>
+
+  <send>
+    <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      Expires: 3600
+      [last_CSeq:]
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+  <pause/>
+
+
+  <send>
+    <![CDATA[
+
+        NOTIFY sip:[field0]@[field4];transport=[transport];[field3] SIP/2.0
+        Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+        From: <sip:[field0]@[field2]>;tag=[call_number]
+        To: <sip:[field0]@[field2]>;tag=[call_number]
+        Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+        [last_Call-ID:]
+        Subscription-State: active;expires=300
+        Event: message-summary
+        Content-Type: application/simple-message-summary
+        CSeq: 2 NOTIFY
+        Content-Length: 68
+
+        Messages-Waiting: no
+        Message-Account: sip:5112141005@multism2.com
+
+    ]]>
+  </send>
+
+  <recv response="200">
+  </recv>
+
+  <recv request="SUBSCRIBE" rtd="true" crlf="true">
+  </recv>
+
+  <send>
+    <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      Expires: 3600
+      [last_CSeq:]
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+  <pause/>
+
+  <send>
+    <![CDATA[
+
+        NOTIFY sip:[field0]@[field4];transport=[transport];[field3] SIP/2.0
+        Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+        From: <sip:[field0]@[field2]>;tag=[call_number]
+        To: <sip:[field0]@[field2]>;tag=[call_number]
+        Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+        [last_Call-ID:]
+        Subscription-State: active;expires=300
+        Event: avaya-ccs-profile
+        CSeq: 3 NOTIFY
+        Content-Length: 0
+
+    ]]>
+  </send>
+
+  <recv response="200">
+  </recv>
+
+  <recv request="SUBSCRIBE" rtd="true" crlf="true">
+  </recv>
+
+  <send>
+    <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      Expires: 3600
+      [last_CSeq:]
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+  <pause/>
+
+
+  <send>
+    <![CDATA[
+
+        NOTIFY sip:[field0]@[field4];transport=[transport];[field3] SIP/2.0
+        Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+        From: <sip:[field0]@[field2]>;tag=[call_number]
+        To: <sip:[field0]@[field2]>;tag=[call_number]
+        Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+        [last_Call-ID:]
+        Subscription-State: active;expires=300
+        Event: dialog
+        Content-Type: application/dialog-info+xml
+        CSeq: 4 NOTIFY
+        Content-Length: [len]
+
+        <?xml version="1.0"?>
+        <dialog-info xmlns="urn:ietf:params:xml:ns:dialog-info"
+        xmlns:av="urn:avaya:xml:ns:ext:dialog-info"
+        xmlns:sa="urn:avaya:xml:ns:ext:dialog-info"
+        version="0" state="full"
+        entity="sip:[field0]@[field2]">
+        </dialog-info>
+
+    ]]>
+  </send>
+
+  <recv response="200">
+  </recv>
+
+
+
+
+<recv request="SUBSCRIBE" rtd="true" crlf="true">
+  </recv>
+
+  <send>
+    <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[call_number]
+      [last_Call-ID:]
+      Expires: 3600
+      [last_CSeq:]
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+  <pause/>
+
+  <send>
+    <![CDATA[
+
+        NOTIFY sip:[field0]@[field4];transport=[transport];[field3] SIP/2.0
+        Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+	From: <sip:[field0]@[field2]>;tag=[call_number]
+        To: <sip:[field0]@[field2]>;tag=[call_number] 
+        Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+        [last_Call-ID:]
+        Subscription-State: active;expires=300
+        Event: reg
+        Content-Type: application/reginfo+xml  
+        CSeq: 5 NOTIFY
+        Content-Length: [len]
+
+        <?xml version="1.0"?> 
+        <reginfo xmlns="urn:ietf:params:xml:ns:reginfo"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        version="57" state="full">
+        <registration aor="sip:[field0]@[field2]" id="a30921" state="active">
+        <contact id="c30921-799177971-527618098-1" state="active" event="registered" duration-registered="21151" q="1.0">
+        <uri>[local_ip]</uri>
+        <unknown-param name="+sip.instance"> "&lt;urn:uuid:00000000-0000-1000-8000-2cf4c5f7848e&gt;" </unknown-param>
+        <unknown-param name="reg-id"> "1" </unknown-param>
+        <unknown-param name="+avaya.sn"> "12WZ0766023H" </unknown-param>
+        <unknown-param name="+avaya.firmware"> "S96x1_SALBR6_4_0r24_V4r83.tar" </unknown-param>
+        <unknown-param name="+avaya.js-ver"> "1.0" </unknown-param>
+        <unknown-param name="+avaya.model"> "9611" </unknown-param>
+        <unknown-param name="+avaya.gmtoffset"> "0:00" </unknown-param>
+        </contact>                                                                                           
+        </registration>
+        </reginfo>
+          
+    ]]>
+  </send>
+
+  <recv response="200">
+  </recv>
+
+
+<recv request="INVITE" crlf="true">
+</recv>
+
+<send>
+<![CDATA[
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+
+
+<send>
+<![CDATA[
+SIP/2.0 180 Ringing
+[last_Via:]
+[last_From:]
+[last_To:];tag=[pid][call_number]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Content-Length: 0
+]]>
+</send>
+
+<send retrans="500">
+<![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=[pid][call_number]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:[local_ip]:[local_port];transport=[transport]>
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Type: application/sdp
+Content-Length: [len]
+
+v=0
+o=user1 53655765 2353687637 IN IP[local_ip_type] [local_ip]
+s=-
+c=IN IP[media_ip_type] [media_ip]
+t=0 0
+m=audio [media_port] RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+]]>
+</send>
+
+<recv request="ACK" rtd="true" crlf="true">
+<!--
+    <action>
+      <ereg regexp=": *(.*)" search_in="hdr" header="From" assign_to="_,them"/>
+      <ereg regexp=": *(.*)" search_in="hdr" header="To" assign_to="_,us"/>
+    </action>
+    -->
+</recv>
+
+
+  <!-- Keep the call open for a while in case the 200 is lost to be     -->
+  <!-- able to retransmit it if we receive the BYE again.               -->
+
+
+  <!-- definition of the response time repartition table (unit is ms)   -->
+  <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+  <!-- definition of the call length repartition table (unit is ms)     -->
+  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+
+</scenario>
+

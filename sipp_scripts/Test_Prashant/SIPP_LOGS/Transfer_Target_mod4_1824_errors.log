@@ -1,0 +1,25 @@
+sipp: The following events occured:
+2018-10-10	15:21:10:099	1539165070.099098: Aborting call on unexpected message for Call-Id 'db813520a78036525311cb4bf675de69': while pausing (index 3), received 'PRACK sip:10.133.39.159:5090;transport=TCP;x-b2b-refer-hand-send-hold SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:850001@sbcdev4.com;transport=TCP>;tag=1
+CSeq: 2 PRACK
+Call-ID: db813520a78036525311cb4bf675de69
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=7;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000369626718-1--s1632-;originator
+RAck: 1 1 INVITE
+Content-Length: 0
+
+'.
+2018-10-10	15:21:25:109	1539165085.109692: Dead call db813520a78036525311cb4bf675de69 (aborted at index 3), received 'CANCEL sip:850001@sbcdev4.com;transport=tcp SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:850001@sbcdev4.com;transport=TCP>;tag=1
+CSeq: 1 CANCEL
+Call-ID: db813520a78036525311cb4bf675de69
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-001592703694-1--s1632-;originator
+Content-Length: 0
+
+'.

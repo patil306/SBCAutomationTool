@@ -1,0 +1,58 @@
+sipp: The following events occured:
+2018-10-19	13:07:18:352	1539934638.352457: Aborting call on unexpected message for Call-Id '29-11256@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=29
+To: sip:40006@10.133.48.155:5060;tag=zXcVbNm4b85756fe
+CSeq: 1 INVITE
+Call-ID: 29-11256@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-11256-29-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+'.
+2018-10-19	13:07:18:354	1539934638.354413: Dead call 29-11256@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=29
+To: sip:40006@10.133.48.155:5060;tag=zXcVbNm4b85756fe
+CSeq: 1 ACK
+Call-ID: 29-11256@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-11256-29-0
+Content-Length: 0
+
+'.
+2018-10-19	13:07:18:548	1539934638.548367: Aborting call on unexpected message for Call-Id '30-11256@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=30
+To: sip:40006@10.133.48.155:5060;tag=zXcVbNm60841f550
+CSeq: 1 INVITE
+Call-ID: 30-11256@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-11256-30-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+'.
+2018-10-19	13:07:18:549	1539934638.549624: Dead call 30-11256@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=30
+To: sip:40006@10.133.48.155:5060;tag=zXcVbNm60841f550
+CSeq: 1 ACK
+Call-ID: 30-11256@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-11256-30-0
+Content-Length: 0
+
+'.
+2018-10-19	13:07:18:751	1539934638.751735: Aborting call on unexpected message for Call-Id '31-11256@10.133.39.159': while expecting '180' (index 2), received 'SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=31
+To: sip:40006@10.133.48.155:5060;tag=zXcVbNmdfc1a1035
+CSeq: 1 INVITE
+Call-ID: 31-11256@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-11256-31-0
+Warning: 399 10.133.48.155 "Internal Error 27"
+Content-Length: 0
+
+'.
+2018-10-19	13:07:18:753	1539934638.753221: Dead call 31-11256@10.133.39.159 (aborted at index 2), received 'SIP/2.0 400 Bad Request
+From: sip:40005@10.133.39.159;tag=31
+To: sip:40006@10.133.48.155:5060;tag=zXcVbNmdfc1a1035
+CSeq: 1 ACK
+Call-ID: 31-11256@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5075;branch=z9hG4bK-11256-31-0
+Content-Length: 0
+
+'.

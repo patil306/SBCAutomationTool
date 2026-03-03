@@ -1,0 +1,27 @@
+sipp: The following events occured:
+2018-07-09	12:44:32:361	1531120472.361032: Aborting call on unexpected message for Call-Id '1-25072@192.168.6.5': while pausing (index 3), received 'ACK sip:10.133.39.159:5090;transport=TCP SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:850001@sbcdev4.com;transport=TCP>;tag=1
+CSeq: 1 ACK
+Call-ID: 1-25072@192.168.6.5
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=5;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000939697466-1--s1632-;originator
+Content-Length: 0
+
+'.
+2018-07-09	12:44:32:363	1531120472.363555: Dead call 1-25072@192.168.6.5 (aborted at index 3), received 'BYE sip:10.133.39.159:5090;transport=TCP SIP/2.0
+From: sip:81002001@sbcdev4.com;tag=1
+To: <sip:850001@sbcdev4.com;transport=TCP>;tag=1
+CSeq: 2 BYE
+Call-ID: 1-25072@192.168.6.5
+Record-Route: <sip:10.133.73.4:5060;ipcs-line=5;lr;transport=tcp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.133.73.4:5060;branch=z9hG4bK-s1632-000820877169-1--s1632-;originator
+Content-Length: 0
+
+'.

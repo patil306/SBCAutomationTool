@@ -1,0 +1,18 @@
+sipp: The following events occured:
+2018-10-25	12:56:23:574	1540452383.574478: Aborting call on unexpected message for Call-Id '1-7225@10.133.39.159': while expecting '500' (index 7), received 'ACK sip:81002001@10.133.39.159:5060;transport=udp SIP/2.0
+From: sip:81001001@10.133.73.76:5060;tag=1
+To: sip:81002001@rwtrunk.com;tag=1
+CSeq: 1 ACK
+Call-ID: 1-7225@10.133.39.159
+Record-Route: <sip:10.133.73.76:5060;ipcs-line=4;lr;transport=udp>
+Record-Route: <sip:192.168.6.43:5060;ipcs-line=4;lr;transport=udp>
+Allow: REFER
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 10.133.73.76:5060;branch=z9hG4bK-s1632-001719651606-1--s1632-;originator
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-7225-1-0
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+'.

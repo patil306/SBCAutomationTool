@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic UAS OneX simulator receives INVITE and Receives BYE">
+
+  <recv request="INVITE" rrs="true" crlf="true">
+  </recv>
+
+<nop>
+<action>
+<assignstr assign_to="via1" value="[last_Via:]" />
+<assignstr assign_to="cseq1" value="[last_CSeq:]" />
+<assignstr assign_to="rr1" value="[last_Record-Route:]" />
+<assignstr assign_to="to1" value="[last_To:]" />
+</action>
+</nop>
+    <send>
+    <![CDATA[
+
+      SIP/2.0 100 Trying
+      [last_From:]
+      [last_To:]
+      [last_Call-ID:]
+      [last_CSeq:]
+      [last_Via:]
+      [last_Record-Route:]
+      Content-Length: 0
+      User-Agent: Avaya one-X Emulator
+
+    ]]>
+   </send>
+
+	
+    <pause milliseconds="10000"/>
+    
+    <send>
+    <![CDATA[
+
+      SIP/2.0 183 Session Progress
+      [last_From:]
+      [last_To:];tag=1
+      [last_Call-ID:]
+      [last_CSeq:]
+      [last_Via:]
+      [last_Record-Route:]
+      Contact: <sip:50001@[local_ip]:[local_port];transport=[transport]>
+      Allow: INVITE,CANCEL,BYE,ACK,SUBSCRIBE,NOTIFY,MESSAGE,INFO,PUBLISH,REFER,UPDATE,PRACK
+      User-Agent: Avaya one-X Emulator
+      Require: 100rel
+      RSeq: 1
+      Content-Type: application/sdp
+      Content-Length: [len]
+
+      v=0
+      o=user1 1 200 IN IP[local_ip_type] [local_ip]
+      s=-
+      c=IN IP4 [local_ip]
+      t=0 0
+      m=audio [media_port] RTP/AVP 0 120
+      a=rtpmap:0 PCMU/8000
+      a=rtpmap:120 telephone-event/8000
+
+    ]]>
+   </send>
+
+  <recv request="PRACK" rrs="true" crlf="true">
+  </recv>
+
+
+  <send retrans="1500">
+    <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_From:]
+      [last_To:]
+      [last_Call-ID:]
+      [last_CSeq:]
+      [last_Via:]
+      [last_Record-Route:]
+      Allow: INVITE,CANCEL,BYE,ACK,SUBSCRIBE,NOTIFY,MESSAGE,INFO,PUBLISH,REFER,UPDATE,PRACK
+      Contact: <sip:50001@[local_ip]:[local_port];transport=[transport]>
+      Accept-Language: en
+      User-Agent: Avaya one-X Emulator
+      Content-Length: [len]
+
+    ]]>
+  </send>
+
+  <pause milliseconds="1000"/>
+
+  <send retrans="1500">
+    <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_From:]
+      [$to1];tag=1
+      [last_Call-ID:]
+      [$cseq1]
+      [$via1]
+      [$rr1]
+      Allow: INVITE,CANCEL,BYE,ACK,SUBSCRIBE,NOTIFY,MESSAGE,INFO,PUBLISH,REFER,UPDATE,PRACK
+      Contact: <sip:50001@[local_ip]:[local_port];transport=[transport]>
+      Accept-Language: en
+      User-Agent: Avaya one-X Emulator
+      Content-Length: [len]
+
+    ]]>
+  </send>
+
+  <recv request="ACK" rtd="true" crlf="true">
+  </recv>
+
+  <recv request="BYE" rtd="true">
+  </recv>
+
+  <send retrans="1500">
+    <![CDATA[
+
+      SIP/2.0 200 OK
+      [last_From:]
+      [last_To:]
+      [last_Call-ID:]
+      [last_CSeq:]
+      [last_Via:]
+      User-Agent: Avaya one-X Emulator
+      Content-Length: [len]
+
+    ]]>
+  </send>
+
+  <!-- Keep the call open for a while in case the 200 is lost to be     -->
+  <!-- able to retransmit it if we receive the BYE again.               -->
+  <timewait milliseconds="4000"/>
+
+
+  <!-- definition of the response time repartition table (unit is ms)   -->
+  <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+  <!-- definition of the call length repartition table (unit is ms)     -->
+  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+
+</scenario>
+
+

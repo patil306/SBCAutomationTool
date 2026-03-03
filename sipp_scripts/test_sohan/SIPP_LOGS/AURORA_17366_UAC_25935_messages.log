@@ -1,0 +1,88 @@
+----------------------------------------------- 2019-06-27 15:03:25:897.963
+UDP message sent (328 bytes):
+
+REGISTER sip:10.133.48.238 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-25935-1-0
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>
+Call-ID: 1-25935@10.133.39.159
+CSeq: 1 REGISTER
+Contact: sip:4078@10.133.39.159:5060
+Max-Forwards: 70
+Expires: 1800
+User-Agent: SIPp/Linux
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 15:03:25:907.352
+UDP message received [217] bytes :
+
+SIP/2.0 100 Trying
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 REGISTER
+Call-ID: 1-25935@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-25935-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 15:03:29:910.366
+UDP message sent (328 bytes):
+
+REGISTER sip:10.133.48.238 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-25935-1-0
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>
+Call-ID: 1-25935@10.133.39.159
+CSeq: 1 REGISTER
+Contact: sip:4078@10.133.39.159:5060
+Max-Forwards: 70
+Expires: 1800
+User-Agent: SIPp/Linux
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 15:03:29:913.955
+UDP message received [217] bytes :
+
+SIP/2.0 100 Trying
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>
+CSeq: 1 REGISTER
+Call-ID: 1-25935@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-25935-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 15:03:33:418.930
+UDP message received [285] bytes :
+
+SIP/2.0 200 OK
+From: <sip:4078@sbcdev4.com>;tag=1
+To: <sip:4078@sbcdev4.com>;tag=2
+CSeq: 1 REGISTER
+Call-ID: 1-25935@10.133.39.159
+Contact: <sip:sipp@192.168.5.12:5060;transport=UDP>
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-25935-1-0
+Expires: 60
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-27 15:03:33:419.142
+UDP message sent (428 bytes):
+
+SUBSCRIBE sip:service@10.133.48.238:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5060;branch=z9hG4bK-25935-1-3
+From: sipp <sip:sipp@10.133.39.159:5060>;tag=25935SIPpTag001
+To: sut <sip:service@10.133.48.238:5060>
+Call-ID: 1-25935@10.133.39.159
+CSeq: 1 SUBSCRIBE
+Contact: sip:sipp@10.133.39.159:5060
+Max-Forwards: 70
+Event: presence
+Expires: 60
+Accept: application/pidf+xml
+Allow-Events: presence
+Content-Length: 0
+
+

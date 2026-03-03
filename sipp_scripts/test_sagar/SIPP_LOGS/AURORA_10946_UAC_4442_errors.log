@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2018-09-07	10:51:50:766	1536297710.766774: Aborting call on unexpected message for Call-Id '1-4442@10.133.39.159': while pausing (index 11), received 'SIP/2.0 500 Server Internal Error
+From: sip:40005@10.133.39.159;tag=1
+To: <sip:3001002@ci.com;transport=UDP;user=phone>;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-4442@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5075;branch=z9hG4bK-4442-1-0
+Warning: 399 192.168.6.5 "Internal Error 27"
+Content-Length: 0
+
+'.

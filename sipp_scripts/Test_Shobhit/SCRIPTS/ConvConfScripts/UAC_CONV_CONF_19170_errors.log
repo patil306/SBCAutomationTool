@@ -1,0 +1,17 @@
+sipp: The following events occured:
+2019-07-17	20:54:07:148	1563377047.148620: Aborting call on unexpected message for Call-Id '1-19170@10.133.39.159': while expecting '183' (index 4), received 'SIP/2.0 180 Ringing
+From: sip:4001@sbcdev4.com;tag=1
+To: sip:4002@sbcdev4.com;tag=1
+Cseq:2 INVITE
+Call-ID: 1-19170@10.133.39.159
+Contact: <sip:4001@10.133.39.176:5061;transport=tls>
+Record-Route: <sip:10.133.39.176:5061;ipcs-line=2;lr;transport=tls>
+Allow: INVITE,ACK,BYE,CANCEL,SUBSCRIBE,NOTIFY,MESSAGE,REFER,INFO,PRACK,PUBLISH,UPDATE
+Supported: 100rel, replaces
+User-Agent: Auto SIPP
+Via:SIP/2.0/TCP 10.133.39.159:5061;branch=z9hG4bK-19170-1-2
+Require: 100rel
+Content-Type: application/sdp
+Content-Length: 0
+
+'.

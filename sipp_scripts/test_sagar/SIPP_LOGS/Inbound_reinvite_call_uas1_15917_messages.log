@@ -1,0 +1,74 @@
+----------------------------------------------- 2018-02-09 19:05:41:689.556
+TCP message received [708] bytes :
+
+INVITE sip:4079@10.133.39.159:5080 SIP/2.0
+From: sip:4078@10.133.69.213:17696;tag=1
+To: sip:4079@10.133.39.159:5080
+CSeq: 1 INVITE
+Call-ID: 5fea8212b4a3993fc44d0e6abb07f525
+Contact: sip:4078@10.133.69.213:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.69.213:5060;ipcs-line=317020;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.69.213:5060;branch=z9hG4bK-s1632-001791434696-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 138
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.69.213
+s=-
+c=IN IP4 10.133.69.213
+t=0 0
+m=audio 35006 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2018-02-09 19:05:41:690.154
+TCP message sent (309 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.69.213:5060;branch=z9hG4bK-s1632-001791434696-1--s1632-
+From: sip:4078@10.133.69.213:17696;tag=1
+To: sip:4079@10.133.39.159:5080
+Call-ID: 5fea8212b4a3993fc44d0e6abb07f525
+CSeq: 1 INVITE
+Contact: <sip:t1.test.avaya.com:5080;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-02-09 19:05:41:690.355
+TCP message sent (316 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/TCP 10.133.69.213:5060;branch=z9hG4bK-s1632-001791434696-1--s1632-
+From: sip:4078@10.133.69.213:17696;tag=1
+To: sip:4079@10.133.39.159:5080;tag=1
+Call-ID: 5fea8212b4a3993fc44d0e6abb07f525
+CSeq: 1 INVITE
+Contact: <sip:t1.test.avaya.com:5080;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2018-02-09 19:05:41:690.508
+TCP message sent (493 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.69.213:5060;branch=z9hG4bK-s1632-001791434696-1--s1632-
+From: sip:4078@10.133.69.213:17696;tag=1
+To: sip:4079@10.133.39.159:5080;tag=1
+Call-ID: 5fea8212b4a3993fc44d0e6abb07f525
+CSeq: 1 INVITE
+Contact: <sip:t1.test.avaya.com:5080;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   147
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+ptime=20
+

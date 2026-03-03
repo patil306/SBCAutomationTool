@@ -1,0 +1,82 @@
+----------------------------------------------- 2018-08-08 19:43:20:421.997
+TLS message sent (735 bytes):
+
+INVITE sip:40006@10.133.48.235 SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-27959-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5061
+Call-ID: 1-27959@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5076;transport=TLS
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   288
+
+v=0
+o=- 1490768965 1 IN IP4 10.133.36.50
+s=-
+c=IN IP4 10.133.36.51
+b=TIAS:64000
+t=0 0
+m=audio 2392 RTP/SAVP 8 120
+a=sendrecv
+a=ptime:20
+a=rtpmap:120 telephone-event/8000
+a=crypto:1 AES_256_CM_HMAC_SHA1_32 inline:PHIQ2djx8pWR8ZkGd/SuSIWF7S5t1S8NL7gqpnQbW5gQuj3KGBb9HUHwNZdZHw==
+
+----------------------------------------------- 2018-08-08 19:43:20:429.955
+TLS message received [222] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5061
+CSeq: 1 INVITE
+Call-ID: 1-27959@10.133.39.159
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-27959-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-08 19:43:52:434.291
+TLS message received [326] bytes :
+
+SIP/2.0 503 Service Unavailable
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5061;tag=zXcVbNm6bc5fe204
+CSeq: 1 INVITE
+Call-ID: 1-27959@10.133.39.159
+Record-Route: <sip:10.133.48.235:5061;ipcs-line=12;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-27959-1-0
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected TLS message received:
+
+SIP/2.0 503 Service Unavailable
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5061;tag=zXcVbNm6bc5fe204
+CSeq: 1 INVITE
+Call-ID: 1-27959@10.133.39.159
+Record-Route: <sip:10.133.48.235:5061;ipcs-line=12;lr;transport=tls>
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-27959-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-08-08 19:43:52:434.733
+TLS message sent (333 bytes):
+
+ACK  SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:5076;branch=z9hG4bK-27959-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.235:5061;tag=zXcVbNm6bc5fe204
+Call-ID: 1-27959@10.133.39.159
+CSeq: 1 ACK
+Contact: <sip:sipp@10.133.39.159:5076;transport=TLS>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

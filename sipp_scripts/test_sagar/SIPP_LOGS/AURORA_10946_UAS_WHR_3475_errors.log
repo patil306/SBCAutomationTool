@@ -1,0 +1,11 @@
+sipp: The following events occured:
+2018-10-17	22:03:59:369	1539794039.369481: Automatic response mode for an unexpected INFO, UPDATE or NOTIFY for call: d5b5c512298125674dd2a90305cfff0e.
+2018-10-17	22:03:59:407	1539794039.407906: Aborting call on unexpected message for Call-Id 'd5b5c512298125674dd2a90305cfff0e': while expecting '200' (index 13), received 'SIP/2.0 491 Request Pending
+From: sip:40006@192.168.6.5;tag=1
+To: sip:40005@192.168.6.242:5060;tag=1
+CSeq: 5 INVITE
+Call-ID: d5b5c512298125674dd2a90305cfff0e
+Via: SIP/2.0/TCP 192.168.6.5:5075;branch=z9hG4bK-3475-1-11
+Content-Length: 0
+
+'.

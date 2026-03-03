@@ -1,0 +1,96 @@
+----------------------------------------------- 2018-07-02 14:33:55:110.676
+TCP message sent (638 bytes):
+
+INVITE sip:40006@trk.com SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-29016-1-0
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060
+Call-ID: 1-29016@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   203
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6014 RTP/AVP 18 101
+a=sendrecv
+a=fmtp:18 annexb=yes
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+
+----------------------------------------------- 2018-07-02 14:33:55:128.508
+TCP message received [216] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060
+CSeq: 1 INVITE
+Call-ID: 1-29016@10.133.39.159
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-29016-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-02 14:33:55:136.105
+TCP message received [271] bytes :
+
+SIP/2.0 180 Ringing
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-29016@10.133.39.159
+Contact: <sip:10.133.48.235:5060;transport=tcp>
+Via:SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-29016-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-07-02 14:33:55:144.167
+TCP message received [538] bytes :
+
+SIP/2.0 200 OK
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-29016@10.133.39.159
+Contact: <sip:10.133.48.235:5060;transport=tcp>
+Via:SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-29016-1-0
+Content-Type: application/sdp
+Content-Length: 239
+
+v=0
+o=- 1509186683 4 IN IP4 100.20.46.46
+s=-
+c=IN IP4 10.133.48.235
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 35042 RTP/AVP 18 101
+a=sendrecv
+a=fmtp:18 annexb=yes
+a=rtpmap:101 telephone-event/8000
+a=ptime:20
+
+----------------------------------------------- 2018-07-02 14:33:55:144.569
+TCP message sent (353 bytes):
+
+ACK sip:40006@10.133.48.235:5060;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.133.39.159:5060;branch=z9hG4bK-29016-1-4
+From: sip:40005@trk.com;tag=1
+To: sip:40006@10.133.48.235:5060;tag=1
+Call-ID: 1-29016@10.133.39.159
+CSeq: 1 ACK
+Contact: sip:40005@10.133.39.159:5060;transport=TCP
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

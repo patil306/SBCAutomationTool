@@ -1,0 +1,48 @@
+----------------------------------------------- 2019-06-17 18:09:19:608.083
+TLS message sent (549 bytes):
+
+REGISTER sip:40006@10.133.48.237 SIP/2.0
+Via: SIP/2.0/TLS 10.133.39.159:6027;branch=z9hG4bK-14369-1-0
+From: sip:40006@10.133.48.237;tag=1
+To: sip:4078@sbcdev4.com
+Call-ID: 1-14369@10.133.39.159
+CSeq: 1 REGISTER
+Contact: <sip:4078@10.133.39.159:6027;transport=TLS>;q=0;expires=3600;+avaya.gmtoffset="0:00";+avaya.js-ver="1.0";+avaya.model="n/a";+avaya.sn="n/a";+avaya.firmware="n/a";+sip.instance="<urn:uuid:d2336786-cc37-3710-ee15-6984a96f699e>";reg-id=1
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 18:09:19:653.335
+TLS message received [299] bytes :
+
+SIP/2.0 200 OK
+From: sip:40006@10.133.48.237;tag=1
+To: sip:4078@sbcdev4.com;tag=2
+CSeq: 1 REGISTER
+Call-ID: 1-14369@10.133.39.159
+Contact: <sip:sipp@10.133.48.238:5061;transport=tls>;transport=TLS
+Via: SIP/2.0/TLS 10.133.39.159:6027;branch=z9hG4bK-14369-1-0
+Expires: 60
+Content-Length: 0
+
+
+----------------------------------------------- 2019-06-17 18:09:19:653.676
+TLS message sent (482 bytes):
+
+SUBSCRIBE sip:4079@10.133.48.238:5061 SIP/2.0 SIP/2.0
+Accept: application/watcherinfo+xml
+Call-ID: 1-14369@10.133.39.159
+CSeq: 1 SUBSCRIBE
+Expires: 1800
+From: sip:4078@10.133.39.159:6027;tag=1
+To: sip:4079@10.133.48.238:5061;tag=2
+Via: SIP/2.0/TLS 10.133.39.159:6027;branch=z9hG4bK-14369-1-2
+Content-Length: 0
+Contact: sip:4078@10.133.39.159:6027;transport=TLS
+Max-Forwards: 70
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY,MESSAGE,SUBSCRIBE,INFO
+Event: presence
+
+

@@ -1,0 +1,126 @@
+----------------------------------------------- 2018-09-20 14:02:17:93.748
+UDP message sent (662 bytes):
+
+INVITE sip:40006@10.133.48.149 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5075;branch=z9hG4bK-6826-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+Call-ID: 1-6826@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   217
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+
+
+----------------------------------------------- 2018-09-20 14:02:17:594.524
+UDP message sent (662 bytes):
+
+INVITE sip:40006@10.133.48.149 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5075;branch=z9hG4bK-6826-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+Call-ID: 1-6826@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   217
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+
+
+----------------------------------------------- 2018-09-20 14:02:18:595.232
+UDP message sent (662 bytes):
+
+INVITE sip:40006@10.133.48.149 SIP/2.0
+Via: SIP/2.0/UDP 10.133.39.159:5075;branch=z9hG4bK-6826-1-0
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+Call-ID: 1-6826@10.133.39.159
+CSeq: 1 INVITE
+Contact: sip:40005@10.133.39.159:5075;transport=TCP
+Supported: replaces
+Max-Forwards: 70
+Subject: Performance Test
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Type: application/sdp
+Content-Length:   217
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+b=TIAS:64000
+t=0 0
+a=avf:avc=y prio=n
+a=csup:avf-v0
+m=audio 6000 RTP/AVP 8 101
+a=sendrecv
+a=rtpmap:101 telephone-event/8000
+
+
+----------------------------------------------- 2018-09-20 14:02:20:392.247
+UDP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 1-6826@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5075;branch=z9hG4bK-6826-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-20 14:02:20:414.119
+UDP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 1-6826@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5075;branch=z9hG4bK-6826-1-0
+Content-Length: 0
+
+
+----------------------------------------------- 2018-09-20 14:02:20:416.691
+UDP message received [220] bytes :
+
+SIP/2.0 100 Trying
+From: sip:40005@10.133.39.159;tag=1
+To: sip:40006@10.133.48.149:5060
+CSeq: 1 INVITE
+Call-ID: 1-6826@10.133.39.159
+Via: SIP/2.0/UDP 10.133.39.159:5075;branch=z9hG4bK-6826-1-0
+Content-Length: 0
+
+

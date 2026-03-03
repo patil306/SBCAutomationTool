@@ -1,0 +1,16 @@
+sipp: The following events occured:
+2017-11-24	15:53:17:152	1511518997.152107: Aborting call on unexpected message for Call-Id '1-16046@192.168.6.5': while expecting '100' (index 5), received 'SIP/2.0 200 OK
+From: sip:4079@192.168.6.223:5060;tag=1
+To: sip:4079@sbcdev4.com;tag=1
+CSeq: 1 INVITE
+Call-ID: 1-16046@192.168.6.5
+Contact: <sip:50001@192.168.6.223:5060;transport=tcp>
+Record-Route: <sip:192.168.6.223:5060;ipcs-line=9;lr;transport=tcp>
+Allow: INVITE,CANCEL,BYE,ACK,SUBSCRIBE,NOTIFY,MESSAGE,INFO,PUBLISH,REFER,UPDATE,PRACK
+Supported: replaces
+User-Agent: Avaya one-X Emulator
+Via: SIP/2.0/TCP 192.168.6.5:5060;branch=z9hG4bK-16046-1-0
+Accept-Language: en
+Content-Length: 0
+
+'.

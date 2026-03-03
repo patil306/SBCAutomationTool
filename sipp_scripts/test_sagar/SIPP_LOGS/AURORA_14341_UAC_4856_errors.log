@@ -1,0 +1,14 @@
+sipp: The following events occured:
+2018-08-31	15:53:01:487	1535710981.487957: Aborting call on unexpected message for Call-Id '1-4856@10.133.39.159': while expecting 'INVITE' (index 10), received 'ACK sip:40005@10.133.39.159:5075;transport=tcp SIP/2.0
+From: sip:40006@10.133.48.235:5060;tag=1
+To: sip:40005@10.133.39.159;tag=1
+CSeq: 2 ACK
+Call-ID: 1-4856@10.133.39.159
+Contact: <sip:40006@10.133.48.235:5060;transport=tcp>
+Record-Route: <sip:10.133.48.235:5060;ipcs-line=4;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.48.235:5060;branch=z9hG4bK-s1632-001082076143-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+'.

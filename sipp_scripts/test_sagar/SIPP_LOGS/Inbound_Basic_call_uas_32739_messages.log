@@ -1,0 +1,82 @@
+----------------------------------------------- 2017-06-07 14:58:01:872.122
+TCP message received [559] bytes :
+
+INVITE sip:4071@10.133.39.159:5060 SIP/2.0
+From: sip:4070@10.133.73.52:17632;tag=1
+To: sip:4071@10.133.39.159:5060
+CSeq: 1 INVITE
+Call-ID: f8365936789d1a7cff39b756090f241f
+Contact: sip:4070@10.133.73.52:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.52:5060;ipcs-line=3;lr;transport=tcp>
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.52:5060;branch=z9hG4bK-s1632-001825754346-1--s1632-
+Subject: Performance Test
+Content-Type: application/sdp
+User-to-User: 00FA080001001056965CFB;encoding=hex
+Content-Length: 0
+
+
+----------------------------------------------- 2017-06-07 14:58:01:872.320
+TCP message sent (303 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 10.133.73.52:5060;branch=z9hG4bK-s1632-001825754346-1--s1632-
+From: sip:4070@10.133.73.52:17632;tag=1
+To: sip:4071@10.133.39.159:5060
+Call-ID: f8365936789d1a7cff39b756090f241f
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2017-06-07 14:58:01:872.402
+TCP message sent (310 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/TCP 10.133.73.52:5060;branch=z9hG4bK-s1632-001825754346-1--s1632-
+From: sip:4070@10.133.73.52:17632;tag=1
+To: sip:4071@10.133.39.159:5060;tag=1
+Call-ID: f8365936789d1a7cff39b756090f241f
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Length: 0
+
+
+----------------------------------------------- 2017-06-07 14:58:01:872.479
+TCP message sent (477 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.133.73.52:5060;branch=z9hG4bK-s1632-001825754346-1--s1632-
+From: sip:4070@10.133.73.52:17632;tag=1
+To: sip:4071@10.133.39.159:5060;tag=1
+Call-ID: f8365936789d1a7cff39b756090f241f
+CSeq: 1 INVITE
+Contact: <sip:10.133.39.159:5060;transport=TCP>
+Content-Type: application/sdp
+Content-Length:   137
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.133.39.159
+s=-
+c=IN IP4 10.133.39.159
+t=0 0
+m=audio 6000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2017-06-07 14:58:01:891.925
+TCP message received [470] bytes :
+
+ACK sip:4071@10.133.39.159:5060;transport=tcp SIP/2.0
+From: sip:4070@10.133.73.52:17632;tag=1
+To: sip:4071@10.133.39.159:5060;tag=1
+CSeq: 1 ACK
+Call-ID: f8365936789d1a7cff39b756090f241f
+Contact: sip:4070@10.133.73.52:5060;transport=tcp;transport=TCP
+Record-Route: <sip:10.133.73.52:5060;ipcs-line=3;lr;transport=tcp>
+Max-Forwards: 69
+Via: SIP/2.0/TCP 10.133.73.52:5060;branch=z9hG4bK-s1632-000833992672-1--s1632-
+Subject: Performance Test
+Content-Length: 0
+
+

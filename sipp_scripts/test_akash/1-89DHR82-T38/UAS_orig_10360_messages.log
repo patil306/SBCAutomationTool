@@ -1,0 +1,153 @@
+----------------------------------------------- 2021-11-03 14:19:00:697.122
+UDP message received [1237] bytes :
+
+INVITE sip:Phani@192.168.56.202:6037 SIP/2.0
+From: sip:Shiva@192.168.57.2:5060;tag=1
+To: sip:Phani@192.168.56.202:6037
+CSeq: 1 INVITE
+Call-ID: 7ac209060461c05ada4ff54096504412
+Contact: sip:Shiva@192.168.57.2:5060;transport=udp
+Record-Route: <sip:192.168.57.2:5060;ipcs-line=66;lr;transport=udp>
+Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, REFER
+Supported: join, replaces, timer
+Supported: replaces
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.57.2:5060;branch=z9hG4bK-s1632-002069731270-1--s1632-
+Subject: Performance Test
+P-Asserted-Identity: <sip:+499511814633@192.168.57.2:5060>
+Remote-LegId: 197
+Content-Type: application/sdp
+User-to-User: 00FA080001004261824F1B;encoding=hex
+Av-Secure-Indication: unsecured
+Av-Global-Session-ID: 0d96f26b-7d11-41be-92a7-97a13851b672
+Content-Length: 429
+
+v=0
+o=- 1509186683 1 IN IP4 192.168.57.2
+s=-
+c=IN IP4 192.168.57.2
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 35390 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+m=image 35392 udptl t38
+a=T38FaxVersion:0
+a=T38FaxMaxBuffer:1100
+a=T38FaxMaxDatagram:612
+a=T38MaxBitRate:14400
+a=T38FaxRateManagement:transferredTCF
+a=T38FaxUdpEC:t38UDPRedundancy
+
+----------------------------------------------- 2021-11-03 14:19:00:697.443
+UDP message sent (306 bytes):
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.57.2:5060;branch=z9hG4bK-s1632-002069731270-1--s1632-
+From: sip:Shiva@192.168.57.2:5060;tag=1
+To: sip:Phani@192.168.56.202:6037
+Call-ID: 7ac209060461c05ada4ff54096504412
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Length: 0
+
+
+----------------------------------------------- 2021-11-03 14:19:00:697.501
+UDP message sent (629 bytes):
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/UDP 192.168.57.2:5060;branch=z9hG4bK-s1632-002069731270-1--s1632-
+From: sip:Shiva@192.168.57.2:5060;tag=1
+To: sip:Phani@192.168.56.202:6037;tag=1
+Call-ID: 7ac209060461c05ada4ff54096504412
+CSeq: 1 INVITE
+Require: 100rel
+RSeq: 1
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   246
+
+v=0
+o=- 1509186683 1 IN IP4 192.168.56.202
+s=-
+c=IN IP4 192.168.56.202
+b=TIAS:64000
+t=0 0
+a=avf:avc=n prio=n
+a=csup:avf-v0
+m=audio 41532 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+----------------------------------------------- 2021-11-03 14:19:00:721.983
+UDP message received [602] bytes :
+
+PRACK sip:192.168.56.202:6037;transport=udp SIP/2.0
+From: sip:Shiva@192.168.57.2:5060;tag=1
+To: sip:Phani@192.168.56.202:6037;tag=1
+CSeq: 2 PRACK
+Call-ID: 7ac209060461c05ada4ff54096504412
+Contact: <sip:Shiva@192.168.57.2:5060;transport=udp>
+Record-Route: <sip:192.168.57.2:5060;ipcs-line=66;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.57.2:5060;branch=z9hG4bK-s1632-000896133435-1--s1632-
+Subject:Performance Test
+RAck: 1 1 INVITE
+Content-Type:application/sdp
+Av-Secure-Indication: unsecured
+Av-Global-Session-ID: 0d96f26b-7d11-41be-92a7-97a13851b672
+Content-Length: 0
+
+
+----------------------------------------------- 2021-11-03 14:19:00:722.119
+UDP message sent (342 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.57.2:5060;branch=z9hG4bK-s1632-000896133435-1--s1632-
+From:  sip:Shiva@192.168.57.2:5060;tag=1
+To:  sip:Phani@192.168.56.202:6037;tag=1
+Call-ID: 7ac209060461c05ada4ff54096504412
+CSeq: 2 PRACK
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+ontent-Type: application/sdp
+Content-Length:    0
+
+
+----------------------------------------------- 2021-11-03 14:19:00:722.148
+UDP message sent (373 bytes):
+
+SIP/2.0 200 OK
+Via:  SIP/2.0/UDP 192.168.57.2:5060;branch=z9hG4bK-s1632-002069731270-1--s1632-
+From: sip:Shiva@192.168.57.2:5060;tag=1
+To: sip:Phani@192.168.56.202:6037;tag=1
+Call-ID: 7ac209060461c05ada4ff54096504412
+CSeq: 1 INVITE
+Contact: <sip:192.168.56.202:6037;transport=UDP>
+Av-Global-Session-ID: 00fe2c47-42d9-4801-9379-5b83ad7d0000
+Content-Length:     0
+
+
+----------------------------------------------- 2021-11-03 14:19:00:731.084
+UDP message received [556] bytes :
+
+ACK sip:reddy2@192.168.56.202:6037 SIP/2.0
+From: sip:Shiva@192.168.57.2:5060;tag=1
+To: sip:Phani@192.168.56.202:6037;tag=1
+CSeq: 1 ACK
+Call-ID: 7ac209060461c05ada4ff54096504412
+Contact: sip:Shiva@192.168.57.2:5060;transport=udp;transport=UDP
+Record-Route: <sip:192.168.57.2:5060;ipcs-line=66;lr;transport=udp>
+Max-Forwards: 69
+Via: SIP/2.0/UDP 192.168.57.2:5060;branch=z9hG4bK-s1632-001306951528-1--s1632-
+Subject: Performance Test
+Av-Secure-Indication: unsecured
+Av-Global-Session-ID: 0d96f26b-7d11-41be-92a7-97a13851b672
+Content-Length: 0
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario>
+<send>
+<![CDATA[
+
+SUBSCRIBE sip:sbcdev4.com SIP/2.0
+From: [field0]@[field1];tag=1
+To: [field0]@[field1]
+Call-ID: [call_id]
+CSeq: 1 SUBSCRIBE
+Contact: [$localContact]
+Max-Forwards: 70
+Supported: 100rel,sdp-anat,eventlist
+Via: SIP/2.0/[$localTransport] [local_ip]:[local_port];branch=[branch]
+Event: dialog
+Expires: 86400
+Content-Length: 0
+
+
+]]>
+</send>
+
+<recv response="200"  optional="true">
+</recv>
+
+<!--CMDEV SIPP MESSAGE DELIMITOR-->
+<!--CMDEV SIPP DISPLAY NAME:NOTIFY-->
+
+<recv request="NOTIFY" optional="false">
+</recv>
+
+<send>
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Content-Length: 0
+    ]]>
+</send>
+</scenario>
+
